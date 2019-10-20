@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IoT and Embedded Computer Vendor&#9;https://prodrive-technologies.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Prodrive-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Prodrive-DeviceRule95701886-2124-478a-b9fa-28846ff67ed3"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Prodrive" expression="Prodrive-DeviceRule95701886-2124-478a-b9fa-28846ff67ed3Checka9cd7f72-747a-4272-89d6-68ec939c13fb" name="Prodrive-DeviceRule95701886-2124-478a-b9fa-28846ff67ed3" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Prodrive" description="MAC OUI CONTAINS Prodrive" name="Prodrive-DeviceRule95701886-2124-478a-b9fa-28846ff67ed3Checka9cd7f72-747a-4272-89d6-68ec939c13fb" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

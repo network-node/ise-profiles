@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Digital Radiology Equipment and detectors&#9;http://www.senao.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Senao-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Senao-DeviceRule690c8427-740a-402a-9ea4-d1fd2fc2e996"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Senao" expression="Senao-DeviceRule690c8427-740a-402a-9ea4-d1fd2fc2e996Check3d950716-06dd-435d-bc2f-233bcc1278d3" name="Senao-DeviceRule690c8427-740a-402a-9ea4-d1fd2fc2e996" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Senao" description="MAC OUI CONTAINS Senao" name="Senao-DeviceRule690c8427-740a-402a-9ea4-d1fd2fc2e996Check3d950716-06dd-435d-bc2f-233bcc1278d3" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

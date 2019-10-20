@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Platium-F5-Phone" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Platium-F5-PhoneRulee68f2d39-d584-4dc2-b3d5-6ca91d3ca0a5"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="IP_User-Agent_CONTAINS_Platinum_F5" expression="Platium-F5-PhoneRulee68f2d39-d584-4dc2-b3d5-6ca91d3ca0a5Check6acc1bd3-64c8-4002-a0cc-d2b395b652cb" name="Platium-F5-PhoneRulee68f2d39-d584-4dc2-b3d5-6ca91d3ca0a5" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="User-Agent" attributeValue="Platinum_F5" description="IP User-Agent CONTAINS Platinum_F5" name="Platium-F5-PhoneRulee68f2d39-d584-4dc2-b3d5-6ca91d3ca0a5Check6acc1bd3-64c8-4002-a0cc-d2b395b652cb" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

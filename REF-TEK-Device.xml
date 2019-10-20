@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="REF TEK develops and manufactures digital recording instruments for seismic and earthquake engineering systems to government, scientific research, and structural monitoring organizations&#9;https://www.reftek.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="REF-TEK-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cd_copy5"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Refraction_Technology" expression="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cdCheck1a291cb9-b092-462b-a876-62edc49266c2_copy5" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cd_copy5" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Refraction Technology" description="MAC OUI CONTAINS Refraction Technology" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cdCheck1a291cb9-b092-462b-a876-62edc49266c2_copy5" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Rockwell Automation" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Rockwell-Automation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Rockwell-AutomationRule9ccf2134-7ad7-48b5-8a79-c2d68f5c0402"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Rockwell_Automation" expression="Rockwell-AutomationRule9ccf2134-7ad7-48b5-8a79-c2d68f5c0402Check2fce7c4a-78f7-440c-8249-b4d41a8b11e2" name="Rockwell-AutomationRule9ccf2134-7ad7-48b5-8a79-c2d68f5c0402" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Rockwell Automation" description="MAC OUI CONTAINS Rockwell Automation" name="Rockwell-AutomationRule9ccf2134-7ad7-48b5-8a79-c2d68f5c0402Check2fce7c4a-78f7-440c-8249-b4d41a8b11e2" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

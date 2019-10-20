@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Sensormatic-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Sensormatic-DeviceRuleae922f1e-9070-4fed-8973-a07b13f027f7"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Sensormatic_Electronics" expression="Sensormatic-DeviceRuleae922f1e-9070-4fed-8973-a07b13f027f7Check3bf482cd-2b0e-4124-b42e-b9d92c63fa78" name="Sensormatic-DeviceRuleae922f1e-9070-4fed-8973-a07b13f027f7" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Sensormatic Electronics" description="MAC OUI CONTAINS Sensormatic Electronics" name="Sensormatic-DeviceRuleae922f1e-9070-4fed-8973-a07b13f027f7Check3bf482cd-2b0e-4124-b42e-b9d92c63fa78" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

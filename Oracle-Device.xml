@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Oracle-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Oracle-DeviceRule3d1e43d2-bb1f-4ef9-9a53-12c52a867f0b"/>
+<PolicyRule certaintyFactor="-3" name="Oracle-DeviceRule1ab7d3c5-f473-4b44-ae3e-920ea90e510b"/>
+<PolicyRule certaintyFactor="30" name="Oracle-DeviceRule5e490ffd-5258-4787-bab6-926ad0c260d8"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="SNMP_sysDescr_CONTAINS_Sun_SNMP" expression="Oracle-DeviceRule3d1e43d2-bb1f-4ef9-9a53-12c52a867f0bCheck35e5a39a-5d1f-4060-bc41-3979c9421c3e" name="Oracle-DeviceRule3d1e43d2-bb1f-4ef9-9a53-12c52a867f0b" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Oracle" expression="Oracle-DeviceRule1ab7d3c5-f473-4b44-ae3e-920ea90e510bCheck07811f91-14d3-4fda-a386-4932f905d20c" name="Oracle-DeviceRule1ab7d3c5-f473-4b44-ae3e-920ea90e510b" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Oracle" expression="Oracle-DeviceRule5e490ffd-5258-4787-bab6-926ad0c260d8Check5fc2fbc5-5e24-49e9-b446-c95162f51fbf" name="Oracle-DeviceRule5e490ffd-5258-4787-bab6-926ad0c260d8" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="sysDescr" attributeValue="Sun SNMP" description="SNMP sysDescr CONTAINS Sun SNMP" name="Oracle-DeviceRule3d1e43d2-bb1f-4ef9-9a53-12c52a867f0bCheck35e5a39a-5d1f-4060-bc41-3979c9421c3e" operator="Contains" type="Snmp"/>
+<Check attributeName="OUI" attributeValue="Oracle" description="MAC OUI CONTAINS Oracle" name="Oracle-DeviceRule1ab7d3c5-f473-4b44-ae3e-920ea90e510bCheck07811f91-14d3-4fda-a386-4932f905d20c" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Oracle" description="MAC OUI CONTAINS Oracle" name="Oracle-DeviceRule5e490ffd-5258-4787-bab6-926ad0c260d8Check5fc2fbc5-5e24-49e9-b446-c95162f51fbf" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

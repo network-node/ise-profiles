@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Manufacturer of electronic access control system - https://www.saltosystems.com/en/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Salto-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Salto-DeviceRulecc16dd2f-57de-4cf5-a6dc-0df0e0e9ebf9"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_SALTO_SYSTEMS" expression="Salto-DeviceRulecc16dd2f-57de-4cf5-a6dc-0df0e0e9ebf9Checkbfb43f1d-f8a3-4ccd-a1c6-b2202b915672" name="Salto-DeviceRulecc16dd2f-57de-4cf5-a6dc-0df0e0e9ebf9" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="SALTO SYSTEMS" description="MAC OUI CONTAINS SALTO SYSTEMS" name="Salto-DeviceRulecc16dd2f-57de-4cf5-a6dc-0df0e0e9ebf9Checkbfb43f1d-f8a3-4ccd-a1c6-b2202b915672" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

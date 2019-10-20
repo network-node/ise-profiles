@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Saunders-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Saunders-DeviceRule4bb760ae-6eda-4011-8fa5-d8e691616b6a"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Saunders_Electronics" expression="Saunders-DeviceRule4bb760ae-6eda-4011-8fa5-d8e691616b6aChecka8aff985-e115-4aae-91f4-f547f6d4f110" name="Saunders-DeviceRule4bb760ae-6eda-4011-8fa5-d8e691616b6a" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Saunders Electronics" description="MAC OUI CONTAINS Saunders Electronics" name="Saunders-DeviceRule4bb760ae-6eda-4011-8fa5-d8e691616b6aChecka8aff985-e115-4aae-91f4-f547f6d4f110" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="1-abc-Test-conditions" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRulec1079e5b-0e4d-40c0-af2c-c57d38cb64db"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRule493396f3-8b71-4e69-976c-e48795ba7ebf"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRule634d200a-c32e-4c58-8a84-0556434789c7"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRule91d8c2ce-77ae-4212-9ec7-42f42c6834b9"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRule85239d46-4084-455b-87af-9181d616590b"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRule06e2bd28-5e07-4e8c-bf6c-533696af0765"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRulead0dd2b4-9cea-45af-b996-9fb2c5b90579"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRule54c08753-e51b-497a-8396-2c520e064cc6"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRuleb8bf6c79-09d8-42e2-9f4f-7af6e29f1d13"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRule35c70be2-4fbb-48bb-bb90-6a25e276a906"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRulebfacad34-65a4-4f80-b0a7-8bf9478ca0ab"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRule15dbacaa-3b8e-4c04-ad10-ee8c776aa2b4"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRulef9cb9916-1373-490b-a69d-f60726b868d1"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRulea85d1e37-33d5-4b20-a2cb-a22713f305a5"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRule5d9a70fa-35fe-4669-bb48-a5004841dd5c"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRuled1a6f546-1f2f-416b-8fa0-5a7a274282bf"/>
+<PolicyRule certaintyFactor="10" name="Test-conditionsRulee9a0b978-0747-47e5-b949-08ca133e9400"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRule671cf8bd-b16d-421e-a99c-89e6063c9d9e"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRuled6757845-e501-434e-b0f0-45723e17c81f"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRuleaa4edd8c-adcf-4f98-88c5-8a45e618ae1c"/>
+<PolicyRule certaintyFactor="10" name="1-abc-Test-conditionsRulebce239ce-c5dd-47d1-89a7-b9c0f7c1cd97"/>
+<PolicyRule certaintyFactor="10" name="Test-conditionsRuleb945ef80-3b18-44eb-9b35-e145af1e6107"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="CDP_cdpCacheDeviceId_CONTAINS_2" expression="1-abc-Test-conditionsRulec1079e5b-0e4d-40c0-af2c-c57d38cb64dbCheckdafd5ad6-60e2-4850-b48d-477eb7d8173d" name="1-abc-Test-conditionsRulec1079e5b-0e4d-40c0-af2c-c57d38cb64db" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_ENDSWITH_QWRQ" expression="1-abc-Test-conditionsRule493396f3-8b71-4e69-976c-e48795ba7ebfCheckdf5404c4-d22c-46c2-a90e-53db353ac36a" name="1-abc-Test-conditionsRule493396f3-8b71-4e69-976c-e48795ba7ebf" ruleType="Regular"/>
+<Rule description="SNMP_hrDeviceDescr_EQUALS_blah" expression="1-abc-Test-conditionsRule634d200a-c32e-4c58-8a84-0556434789c7Check51e7a510-446e-4556-94c1-d6c798b760ab" name="1-abc-Test-conditionsRule634d200a-c32e-4c58-8a84-0556434789c7" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_Android" expression="1-abc-Test-conditionsRule91d8c2ce-77ae-4212-9ec7-42f42c6834b9Checkdc4b54c1-a34a-45dc-b1b0-c448778353d8" name="1-abc-Test-conditionsRule91d8c2ce-77ae-4212-9ec7-42f42c6834b9" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_blah" expression="1-abc-Test-conditionsRule85239d46-4084-455b-87af-9181d616590bCheck375e617a-547a-48bd-8430-feba6166a293" name="1-abc-Test-conditionsRule85239d46-4084-455b-87af-9181d616590b" ruleType="Regular"/>
+<Rule description="ACIDEX_device-type_CONTAINS_ios" expression="1-abc-Test-conditionsRule06e2bd28-5e07-4e8c-bf6c-533696af0765Check981e8f04-66e9-4b53-9066-5d286a455a3f" name="1-abc-Test-conditionsRule06e2bd28-5e07-4e8c-bf6c-533696af0765" ruleType="Regular"/>
+<Rule description="LLDP_lldpChassisId_CONTAINS_24" expression="1-abc-Test-conditionsRulead0dd2b4-9cea-45af-b996-9fb2c5b90579Check756b8fb6-0887-4cdd-9837-692c17ecf731" name="1-abc-Test-conditionsRulead0dd2b4-9cea-45af-b996-9fb2c5b90579" ruleType="Regular"/>
+<Rule description="CDP_cdpCachePlatform_CONTAINS_cisco" expression="1-abc-Test-conditionsRule54c08753-e51b-497a-8396-2c520e064cc6Check1d1920d4-e6c0-45ab-8fc2-7a9c21102678" name="1-abc-Test-conditionsRule54c08753-e51b-497a-8396-2c520e064cc6" ruleType="Regular"/>
+<Rule description="SNMP_sysLocation_CONTAINS_af" expression="1-abc-Test-conditionsRuleb8bf6c79-09d8-42e2-9f4f-7af6e29f1d13Check6ed1f247-9ad1-4970-b448-42ace5fc1088" name="1-abc-Test-conditionsRuleb8bf6c79-09d8-42e2-9f4f-7af6e29f1d13" ruleType="Regular"/>
+<Rule description="ACIDEX_device-platform_CONTAINS_mac" expression="1-abc-Test-conditionsRule35c70be2-4fbb-48bb-bb90-6a25e276a906Checkf563426f-d2f4-4ab3-8f51-2916037f4a3c" name="1-abc-Test-conditionsRule35c70be2-4fbb-48bb-bb90-6a25e276a906" ruleType="Regular"/>
+<Rule description="LLDP_lldpCapabilitiesMapSupported_STARTSWITH_W" expression="1-abc-Test-conditionsRulebfacad34-65a4-4f80-b0a7-8bf9478ca0abCheck8bf6b858-4697-493e-9dd6-2aa311f40762" name="1-abc-Test-conditionsRulebfacad34-65a4-4f80-b0a7-8bf9478ca0ab" ruleType="Regular"/>
+<Rule description="ACTIVEDIRECTORY_PROBE_AD-Operating-System_CONTAINS_mac" expression="1-abc-Test-conditionsRule15dbacaa-3b8e-4c04-ad10-ee8c776aa2b4Checkc50dcd1f-5920-4e06-9d0a-6ea33ca2ad1a" name="1-abc-Test-conditionsRule15dbacaa-3b8e-4c04-ad10-ee8c776aa2b4" ruleType="Regular"/>
+<Rule description="LLDP_lldpSystemName_CONTAINS_bes" expression="1-abc-Test-conditionsRulef9cb9916-1373-490b-a69d-f60726b868d1Check8f0f92cc-35e4-4ef5-bd51-193e441ee898" name="1-abc-Test-conditionsRulef9cb9916-1373-490b-a69d-f60726b868d1" ruleType="Regular"/>
+<Rule description="SNMP_sysContact_CONTAINS_gsf" expression="1-abc-Test-conditionsRulea85d1e37-33d5-4b20-a2cb-a22713f305a5Check7af1024d-e4e8-4ea1-95ee-160ad70d5b4e" name="1-abc-Test-conditionsRulea85d1e37-33d5-4b20-a2cb-a22713f305a5" ruleType="Regular"/>
+<Rule description="CDP_cdpCacheVersion_CONTAINS_IOS" expression="1-abc-Test-conditionsRule5d9a70fa-35fe-4669-bb48-a5004841dd5cCheck3d1fb6d8-90ad-48fa-9ca3-e4ac0e6c5649" name="1-abc-Test-conditionsRule5d9a70fa-35fe-4669-bb48-a5004841dd5c" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_android-" expression="1-abc-Test-conditionsRuled1a6f546-1f2f-416b-8fa0-5a7a274282bfCheck0bf18247-a4bf-41cc-8e42-a0992922fc83" name="1-abc-Test-conditionsRuled1a6f546-1f2f-416b-8fa0-5a7a274282bf" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-parameter-request-list_CONTAINS_1" expression="Test-conditionsRulee9a0b978-0747-47e5-b949-08ca133e9400Check8e0945b8-232a-412a-947b-ccb9d11dfd5c" name="Test-conditionsRulee9a0b978-0747-47e5-b949-08ca133e9400" ruleType="Regular"/>
+<Rule description="LLDP_lldpCacheCapabilities_STARTSWITH_w" expression="1-abc-Test-conditionsRule671cf8bd-b16d-421e-a99c-89e6063c9d9eCheck7bf12a8b-1c2a-467b-93f4-16e28b6efdc4" name="1-abc-Test-conditionsRule671cf8bd-b16d-421e-a99c-89e6063c9d9e" ruleType="Regular"/>
+<Rule description="SNMP_sysName_CONTAINS_agag" expression="1-abc-Test-conditionsRuled6757845-e501-434e-b0f0-45723e17c81fCheck57c107ca-34a5-4a12-a077-eeacd0142f9a" name="1-abc-Test-conditionsRuled6757845-e501-434e-b0f0-45723e17c81f" ruleType="Regular"/>
+<Rule description="LLDP_lldpSystemDescription_ENDSWITH_W" expression="1-abc-Test-conditionsRuleaa4edd8c-adcf-4f98-88c5-8a45e618ae1cCheckb8dca5b1-68d1-490d-82e3-60b6e97e1c63" name="1-abc-Test-conditionsRuleaa4edd8c-adcf-4f98-88c5-8a45e618ae1c" ruleType="Regular"/>
+<Rule description="CDP_cdpCacheCapabilities_CONTAINS_B" expression="1-abc-Test-conditionsRulebce239ce-c5dd-47d1-89a7-b9c0f7c1cd97Check54afd413-d396-491c-b9b6-191299ab6dfc" name="1-abc-Test-conditionsRulebce239ce-c5dd-47d1-89a7-b9c0f7c1cd97" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Blah" expression="Test-conditionsRuleb945ef80-3b18-44eb-9b35-e145af1e6107Check7ef1df43-0710-4808-9406-3ea09610b992" name="Test-conditionsRuleb945ef80-3b18-44eb-9b35-e145af1e6107" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="cdpCacheDeviceId" attributeValue="2" description="CDP cdpCacheDeviceId CONTAINS 2" name="1-abc-Test-conditionsRulec1079e5b-0e4d-40c0-af2c-c57d38cb64dbCheckdafd5ad6-60e2-4850-b48d-477eb7d8173d" operator="Contains" type="CDP"/>
+<Check attributeName="sysDescr" attributeValue="QWRQ" description="SNMP sysDescr ENDSWITH QWRQ" name="1-abc-Test-conditionsRule493396f3-8b71-4e69-976c-e48795ba7ebfCheckdf5404c4-d22c-46c2-a90e-53db353ac36a" operator="Ends with" type="Snmp"/>
+<Check attributeName="hrDeviceDescr" attributeValue="blah" description="SNMP hrDeviceDescr EQUALS blah" name="1-abc-Test-conditionsRule634d200a-c32e-4c58-8a84-0556434789c7Check51e7a510-446e-4556-94c1-d6c798b760ab" operator="Equals" type="Snmp"/>
+<Check attributeName="User-Agent" attributeValue="Android" description="IP User-Agent CONTAINS Android" name="1-abc-Test-conditionsRule91d8c2ce-77ae-4212-9ec7-42f42c6834b9Checkdc4b54c1-a34a-45dc-b1b0-c448778353d8" operator="Contains" type="IP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="blah" description="DHCP dhcp-class-identifier CONTAINS blah" name="1-abc-Test-conditionsRule85239d46-4084-455b-87af-9181d616590bCheck375e617a-547a-48bd-8430-feba6166a293" operator="Contains" type="DHCP"/>
+<Check attributeName="device-type" attributeValue="ios" description="ACIDEX device-type CONTAINS ios" name="1-abc-Test-conditionsRule06e2bd28-5e07-4e8c-bf6c-533696af0765Check981e8f04-66e9-4b53-9066-5d286a455a3f" operator="Contains" type="ACIDEX"/>
+<Check attributeName="lldpChassisId" attributeValue="24" description="LLDP lldpChassisId CONTAINS 24" name="1-abc-Test-conditionsRulead0dd2b4-9cea-45af-b996-9fb2c5b90579Check756b8fb6-0887-4cdd-9837-692c17ecf731" operator="Contains" type="LLDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="cisco" description="CDP cdpCachePlatform CONTAINS cisco" name="1-abc-Test-conditionsRule54c08753-e51b-497a-8396-2c520e064cc6Check1d1920d4-e6c0-45ab-8fc2-7a9c21102678" operator="Contains" type="CDP"/>
+<Check attributeName="sysLocation" attributeValue="af" description="SNMP sysLocation CONTAINS af" name="1-abc-Test-conditionsRuleb8bf6c79-09d8-42e2-9f4f-7af6e29f1d13Check6ed1f247-9ad1-4970-b448-42ace5fc1088" operator="Contains" type="Snmp"/>
+<Check attributeName="device-platform" attributeValue="mac" description="ACIDEX device-platform CONTAINS mac" name="1-abc-Test-conditionsRule35c70be2-4fbb-48bb-bb90-6a25e276a906Checkf563426f-d2f4-4ab3-8f51-2916037f4a3c" operator="Contains" type="ACIDEX"/>
+<Check attributeName="lldpCapabilitiesMapSupported" attributeValue="W" description="LLDP lldpCapabilitiesMapSupported STARTSWITH W" name="1-abc-Test-conditionsRulebfacad34-65a4-4f80-b0a7-8bf9478ca0abCheck8bf6b858-4697-493e-9dd6-2aa311f40762" operator="Starts with" type="LLDP"/>
+<Check attributeName="AD-Operating-System" attributeValue="mac" description="ACTIVEDIRECTORY_PROBE AD-Operating-System CONTAINS mac" name="1-abc-Test-conditionsRule15dbacaa-3b8e-4c04-ad10-ee8c776aa2b4Checkc50dcd1f-5920-4e06-9d0a-6ea33ca2ad1a" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+<Check attributeName="lldpSystemName" attributeValue="bes" description="LLDP lldpSystemName CONTAINS bes" name="1-abc-Test-conditionsRulef9cb9916-1373-490b-a69d-f60726b868d1Check8f0f92cc-35e4-4ef5-bd51-193e441ee898" operator="Contains" type="LLDP"/>
+<Check attributeName="sysContact" attributeValue="gsf" description="SNMP sysContact CONTAINS gsf" name="1-abc-Test-conditionsRulea85d1e37-33d5-4b20-a2cb-a22713f305a5Check7af1024d-e4e8-4ea1-95ee-160ad70d5b4e" operator="Contains" type="Snmp"/>
+<Check attributeName="cdpCacheVersion" attributeValue="IOS" description="CDP cdpCacheVersion CONTAINS IOS" name="1-abc-Test-conditionsRule5d9a70fa-35fe-4669-bb48-a5004841dd5cCheck3d1fb6d8-90ad-48fa-9ca3-e4ac0e6c5649" operator="Contains" type="CDP"/>
+<Check attributeName="host-name" attributeValue="android-" description="DHCP host-name CONTAINS android-" name="1-abc-Test-conditionsRuled1a6f546-1f2f-416b-8fa0-5a7a274282bfCheck0bf18247-a4bf-41cc-8e42-a0992922fc83" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1" description="DHCP dhcp-parameter-request-list CONTAINS 1" name="Test-conditionsRulee9a0b978-0747-47e5-b949-08ca133e9400Check8e0945b8-232a-412a-947b-ccb9d11dfd5c" operator="Contains" type="DHCP"/>
+<Check attributeName="lldpCacheCapabilities" attributeValue="w" description="LLDP lldpCacheCapabilities STARTSWITH w" name="1-abc-Test-conditionsRule671cf8bd-b16d-421e-a99c-89e6063c9d9eCheck7bf12a8b-1c2a-467b-93f4-16e28b6efdc4" operator="Starts with" type="LLDP"/>
+<Check attributeName="sysName" attributeValue="agag" description="SNMP sysName CONTAINS agag" name="1-abc-Test-conditionsRuled6757845-e501-434e-b0f0-45723e17c81fCheck57c107ca-34a5-4a12-a077-eeacd0142f9a" operator="Contains" type="Snmp"/>
+<Check attributeName="lldpSystemDescription" attributeValue="W" description="LLDP lldpSystemDescription ENDSWITH W" name="1-abc-Test-conditionsRuleaa4edd8c-adcf-4f98-88c5-8a45e618ae1cCheckb8dca5b1-68d1-490d-82e3-60b6e97e1c63" operator="Ends with" type="LLDP"/>
+<Check attributeName="cdpCacheCapabilities" attributeValue="B" description="CDP cdpCacheCapabilities CONTAINS B" name="1-abc-Test-conditionsRulebce239ce-c5dd-47d1-89a7-b9c0f7c1cd97Check54afd413-d396-491c-b9b6-191299ab6dfc" operator="Contains" type="CDP"/>
+<Check attributeName="OUI" attributeValue="Blah" description="MAC OUI CONTAINS Blah" name="Test-conditionsRuleb945ef80-3b18-44eb-9b35-e145af1e6107Check7ef1df43-0710-4808-9406-3ea09610b992" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

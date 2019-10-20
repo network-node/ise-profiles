@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IoT Vendor that does Access Control, Video Survellance, etc&#9;https://www.pcs.com/en/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="PCS-Systemtechnik-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="PCS-Systemtechnik-DeviceRulee1790e23-5db9-4d83-9002-e954f8659c0e"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_PCS_Systemtechnik" expression="PCS-Systemtechnik-DeviceRulee1790e23-5db9-4d83-9002-e954f8659c0eCheck461dc389-4419-409f-a24f-634cf14cbfe6" name="PCS-Systemtechnik-DeviceRulee1790e23-5db9-4d83-9002-e954f8659c0e" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="PCS Systemtechnik" description="MAC OUI CONTAINS PCS Systemtechnik" name="PCS-Systemtechnik-DeviceRulee1790e23-5db9-4d83-9002-e954f8659c0eCheck461dc389-4419-409f-a24f-634cf14cbfe6" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

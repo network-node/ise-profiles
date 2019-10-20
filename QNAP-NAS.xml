@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="QNAP-NAS" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="QNAP-NASRuleea9dec9e-6c6f-4f00-b92d-33cba9adac39"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_QNAP_Systems" expression="QNAP-NASRuleea9dec9e-6c6f-4f00-b92d-33cba9adac39Check692952e7-e908-43bf-9cb1-3c805861c853" name="QNAP-NASRuleea9dec9e-6c6f-4f00-b92d-33cba9adac39" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="QNAP Systems" description="MAC OUI CONTAINS QNAP Systems" name="QNAP-NASRuleea9dec9e-6c6f-4f00-b92d-33cba9adac39Check692952e7-e908-43bf-9cb1-3c805861c853" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="AC motor company&#9;https://www.sanyodenki.com/america/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Sanyo-Denki-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Sanyo-Denki-DeviceRule5cf82479-122f-42ed-99ef-bfa465122740"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_SANYO_DENKI" expression="Sanyo-Denki-DeviceRule5cf82479-122f-42ed-99ef-bfa465122740Checkd6e85003-3e61-49cb-8b03-c08158b320f6" name="Sanyo-Denki-DeviceRule5cf82479-122f-42ed-99ef-bfa465122740" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="SANYO DENKI" description="MAC OUI CONTAINS SANYO DENKI" name="Sanyo-Denki-DeviceRule5cf82479-122f-42ed-99ef-bfa465122740Checkd6e85003-3e61-49cb-8b03-c08158b320f6" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

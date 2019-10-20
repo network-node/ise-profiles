@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Semiconductor vendors&#9;https://www.semiconductoronline.com/doc/scenix-semiconductor-0001" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Scenix-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Scenix-DeviceRule98e2be97-fb7e-4770-bbc2-b2defa7691de"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Scenix_Semiconductor" expression="Scenix-DeviceRule98e2be97-fb7e-4770-bbc2-b2defa7691deCheckac974bfb-f16a-4af9-a939-75a06fde3807" name="Scenix-DeviceRule98e2be97-fb7e-4770-bbc2-b2defa7691de" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Scenix Semiconductor" description="MAC OUI CONTAINS Scenix Semiconductor" name="Scenix-DeviceRule98e2be97-fb7e-4770-bbc2-b2defa7691deCheckac974bfb-f16a-4af9-a939-75a06fde3807" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

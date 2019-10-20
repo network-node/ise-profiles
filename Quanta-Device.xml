@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Quanta-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Quanta-DeviceRule730507be-60e8-4aa5-9a62-e7234883e22b"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Quanta" expression="Quanta-DeviceRule730507be-60e8-4aa5-9a62-e7234883e22bCheck9a51d191-51e2-4f1a-ba80-3d46db6b2548" name="Quanta-DeviceRule730507be-60e8-4aa5-9a62-e7234883e22b" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Quanta" description="MAC OUI CONTAINS Quanta" name="Quanta-DeviceRule730507be-60e8-4aa5-9a62-e7234883e22bCheck9a51d191-51e2-4f1a-ba80-3d46db6b2548" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

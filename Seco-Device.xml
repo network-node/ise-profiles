@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IoT Vendor&#9;https://www.seco.com/eu/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Seco-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Texas-Instruments-DeviceRulef0605f7c-0218-41dc-9c48-a178d44f0497_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_SECO_SRL" expression="Texas-Instruments-DeviceRulef0605f7c-0218-41dc-9c48-a178d44f0497Checkc8d8d18f-a0a9-4a6b-9a4c-18ba86abed47_copy" name="Texas-Instruments-DeviceRulef0605f7c-0218-41dc-9c48-a178d44f0497_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="SECO SRL" description="MAC OUI CONTAINS SECO SRL" name="Texas-Instruments-DeviceRulef0605f7c-0218-41dc-9c48-a178d44f0497Checkc8d8d18f-a0a9-4a6b-9a4c-18ba86abed47_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

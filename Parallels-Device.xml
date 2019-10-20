@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Parallels-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Parallels-DeviceRule485c6e1b-1bca-4a0d-8d8d-ee293d0f4480"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Parallels" expression="Parallels-DeviceRule485c6e1b-1bca-4a0d-8d8d-ee293d0f4480Checkb24eef5b-cd30-49c9-93b0-f3812d22910f" name="Parallels-DeviceRule485c6e1b-1bca-4a0d-8d8d-ee293d0f4480" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Parallels" description="MAC OUI CONTAINS Parallels" name="Parallels-DeviceRule485c6e1b-1bca-4a0d-8d8d-ee293d0f4480Checkb24eef5b-cd30-49c9-93b0-f3812d22910f" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Novell-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Novell-DeviceRule759b1132-98d4-4679-8e5f-035965719ff6"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Novell" expression="Novell-DeviceRule759b1132-98d4-4679-8e5f-035965719ff6Checkeea01443-49af-4e27-aa79-f3f902ecd355" name="Novell-DeviceRule759b1132-98d4-4679-8e5f-035965719ff6" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Novell" description="MAC OUI CONTAINS Novell" name="Novell-DeviceRule759b1132-98d4-4679-8e5f-035965719ff6Checkeea01443-49af-4e27-aa79-f3f902ecd355" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

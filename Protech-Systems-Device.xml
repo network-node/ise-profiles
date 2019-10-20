@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Industrial devices and tools&#9;https://protechsystems.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Protech-Systems-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Protech-Systems-DeviceRule3bb9579b-2bd2-48be-8e37-ebe21273d195"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_PROTECH_SYSTEMS" expression="Protech-Systems-DeviceRule3bb9579b-2bd2-48be-8e37-ebe21273d195Checkc7f405f3-ea54-4065-906f-fc76d77e60b1" name="Protech-Systems-DeviceRule3bb9579b-2bd2-48be-8e37-ebe21273d195" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="PROTECH SYSTEMS" description="MAC OUI CONTAINS PROTECH SYSTEMS" name="Protech-Systems-DeviceRule3bb9579b-2bd2-48be-8e37-ebe21273d195Checkc7f405f3-ea54-4065-906f-fc76d77e60b1" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

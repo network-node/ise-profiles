@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Normerel-Systems-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Normerel-Systems-DeviceRule9894a889-b39e-4d4c-9701-7fa07cc20105"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_NORMEREL_SYSTEMES" expression="Normerel-Systems-DeviceRule9894a889-b39e-4d4c-9701-7fa07cc20105Checke32c3555-65c7-4eac-9491-47a9d3cd30cb" name="Normerel-Systems-DeviceRule9894a889-b39e-4d4c-9701-7fa07cc20105" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="NORMEREL SYSTEMES" description="MAC OUI CONTAINS NORMEREL SYSTEMES" name="Normerel-Systems-DeviceRule9894a889-b39e-4d4c-9701-7fa07cc20105Checke32c3555-65c7-4eac-9491-47a9d3cd30cb" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

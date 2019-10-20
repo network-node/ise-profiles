@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Industrial and embedded computers&#9;http://portwell.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Portwell-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Portwell-DeviceRule7c3446c8-8f96-4f57-bb92-a0336b77a83a"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_PORTWELL" expression="Portwell-DeviceRule7c3446c8-8f96-4f57-bb92-a0336b77a83aCheck462807ee-d8ab-4798-92cd-808ba398a5b0" name="Portwell-DeviceRule7c3446c8-8f96-4f57-bb92-a0336b77a83a" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="PORTWELL" description="MAC OUI CONTAINS PORTWELL" name="Portwell-DeviceRule7c3446c8-8f96-4f57-bb92-a0336b77a83aCheck462807ee-d8ab-4798-92cd-808ba398a5b0" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

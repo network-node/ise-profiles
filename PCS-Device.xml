@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="PCS-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Part-II-DeviceRuleb49d281d-38c9-4ccc-b548-4605eee45b5b_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_MATCHES_PCS_Systemtechnik" expression="Part-II-DeviceRuleb49d281d-38c9-4ccc-b548-4605eee45b5bCheck45386c92-bf5d-4cb0-987f-0d045a49b3fc_copy" name="Part-II-DeviceRuleb49d281d-38c9-4ccc-b548-4605eee45b5b_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="PCS Systemtechnik" description="MAC OUI MATCHES PCS Systemtechnik" name="Part-II-DeviceRuleb49d281d-38c9-4ccc-b548-4605eee45b5bCheck45386c92-bf5d-4cb0-987f-0d045a49b3fc_copy" operator="Matches" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Riverbed-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Riverbed-DeviceRule53aa7c35-9bd6-4570-bddc-851e4e7803a8"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Riverbed_Technology" expression="Riverbed-DeviceRule53aa7c35-9bd6-4570-bddc-851e4e7803a8Check19c2b019-6df8-4fad-a02c-61e828737828" name="Riverbed-DeviceRule53aa7c35-9bd6-4570-bddc-851e4e7803a8" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Riverbed Technology" description="MAC OUI CONTAINS Riverbed Technology" name="Riverbed-DeviceRule53aa7c35-9bd6-4570-bddc-851e4e7803a8Check19c2b019-6df8-4fad-a02c-61e828737828" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

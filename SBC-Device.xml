@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Products are mainly used in heating, ventilation and air-conditioning systems as well as in energy management and water systems. - https://www.saia-pcd.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="SBC-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="SBC-DeviceRule4d39945d-df15-47db-82a3-afc1cf352142"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Saia-Burgess" expression="SBC-DeviceRule4d39945d-df15-47db-82a3-afc1cf352142Checka1161513-a593-44c3-bfc9-8607229e4d5f" name="SBC-DeviceRule4d39945d-df15-47db-82a3-afc1cf352142" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Saia-Burgess" description="MAC OUI CONTAINS Saia-Burgess" name="SBC-DeviceRule4d39945d-df15-47db-82a3-afc1cf352142Checka1161513-a593-44c3-bfc9-8607229e4d5f" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

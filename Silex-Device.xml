@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Company specializing in IoT connectivity&#9;https://www.silextechnology.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Silex-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Silex-DeviceRule7f4fff3b-6e0f-404f-b4b9-63cdbf97ef65"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Silex_Technology" expression="Silex-DeviceRule7f4fff3b-6e0f-404f-b4b9-63cdbf97ef65Check3223a4cd-3697-45f0-ad2b-6e31a6562dde" name="Silex-DeviceRule7f4fff3b-6e0f-404f-b4b9-63cdbf97ef65" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Silex Technology" description="MAC OUI CONTAINS Silex Technology" name="Silex-DeviceRule7f4fff3b-6e0f-404f-b4b9-63cdbf97ef65Check3223a4cd-3697-45f0-ad2b-6e31a6562dde" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

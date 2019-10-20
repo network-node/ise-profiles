@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IoT and Robotics manufacturer&#9;https://www.omron.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="25" name="Omron-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="25" name="Omron-DeviceRuleba987c07-e6b1-4d0a-ac38-125595714e34"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Omron-IPU" parentFQN="Omron-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Omron-IPURule1b4f3907-97f1-4577-a485-4eb1f0fcff21"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_OMRON_TATEISI" expression="Omron-DeviceRuleba987c07-e6b1-4d0a-ac38-125595714e34Checkb8b848cc-ce7c-484a-88d3-37d084c782d7" name="Omron-DeviceRuleba987c07-e6b1-4d0a-ac38-125595714e34" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_IPU" expression="Omron-IPURule1b4f3907-97f1-4577-a485-4eb1f0fcff21Check5f0a4874-c1e0-4191-94fa-4219854c222c" name="Omron-IPURule1b4f3907-97f1-4577-a485-4eb1f0fcff21" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="OMRON TATEISI" description="MAC OUI CONTAINS OMRON TATEISI" name="Omron-DeviceRuleba987c07-e6b1-4d0a-ac38-125595714e34Checkb8b848cc-ce7c-484a-88d3-37d084c782d7" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="IPU" description="DHCP host-name CONTAINS IPU" name="Omron-IPURule1b4f3907-97f1-4577-a485-4eb1f0fcff21Check5f0a4874-c1e0-4191-94fa-4219854c222c" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

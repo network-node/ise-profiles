@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Shure-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Shure-DeviceRule56f6d1aa-31ad-42c8-8180-71ae311f565a"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_SHURE_INCORPORATED" expression="Shure-DeviceRule56f6d1aa-31ad-42c8-8180-71ae311f565aCheckdabb65ca-f2a2-4d63-9cb9-f232be6fd155" name="Shure-DeviceRule56f6d1aa-31ad-42c8-8180-71ae311f565a" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="SHURE INCORPORATED" description="MAC OUI CONTAINS SHURE INCORPORATED" name="Shure-DeviceRule56f6d1aa-31ad-42c8-8180-71ae311f565aCheckdabb65ca-f2a2-4d63-9cb9-f232be6fd155" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Pronet-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Pronet-DeviceRule4ee4b661-10bb-4c01-80f7-b7cc422e5214"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Pronet" expression="Pronet-DeviceRule4ee4b661-10bb-4c01-80f7-b7cc422e5214Check8636bc1e-ad22-4c1e-8cf3-99e1639b45db" name="Pronet-DeviceRule4ee4b661-10bb-4c01-80f7-b7cc422e5214" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Pronet" description="MAC OUI CONTAINS Pronet" name="Pronet-DeviceRule4ee4b661-10bb-4c01-80f7-b7cc422e5214Check8636bc1e-ad22-4c1e-8cf3-99e1639b45db" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

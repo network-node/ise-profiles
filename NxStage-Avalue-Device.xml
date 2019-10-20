@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Small form factor devices for digitial hospitalizations&#9;https://www.avalue.com.tw/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="50" name="Avalue-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="50" name="Avalue-DeviceRule32eba1a6-a117-418a-82ae-901aa7530b3f"/>
+</PolicyRules>
+</Policy>
+<Policy description="Dialysis Equipment&#9;https://ww3.nxstage.com/patient-stories-122017/?c=adwords&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Branded&amp;utm_term=nx%20stage&amp;utm_content=Emotional&amp;device=c&amp;placement=&amp;adgroup=BrandTerm&amp;gclid=Cj0KCQjwrJ7nBRD5ARIsAATMxsuGoF8xvt4wZtAWy8R0OOYufTzYsqGjJifNXV5r9kWGHiVCVHYv3zQaAoH4EALw_wcB" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="NxStage-Avalue-Device" parentFQN="Avalue-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="NxStage-Avalue-DeviceRuled0899449-a779-4c8d-ac02-c758e00d15a1"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Avalue_Technology" expression="Avalue-DeviceRule32eba1a6-a117-418a-82ae-901aa7530b3fCheckf35bb184-5974-4bec-a4c2-d066cbbbd262" name="Avalue-DeviceRule32eba1a6-a117-418a-82ae-901aa7530b3f" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_NxStage" expression="NxStage-Avalue-DeviceRuled0899449-a779-4c8d-ac02-c758e00d15a1Check8dcbbd50-5cac-4659-b0ee-ed6833a5e1dc" name="NxStage-Avalue-DeviceRuled0899449-a779-4c8d-ac02-c758e00d15a1" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Avalue Technology" description="MAC OUI CONTAINS Avalue Technology" name="Avalue-DeviceRule32eba1a6-a117-418a-82ae-901aa7530b3fCheckf35bb184-5974-4bec-a4c2-d066cbbbd262" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="NxStage" description="DHCP host-name CONTAINS NxStage" name="NxStage-Avalue-DeviceRuled0899449-a779-4c8d-ac02-c758e00d15a1Check8dcbbd50-5cac-4659-b0ee-ed6833a5e1dc" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

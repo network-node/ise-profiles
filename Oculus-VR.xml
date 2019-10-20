@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Oculus-VR" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Oculus-VRRule3e71e661-2e3d-4021-a6e5-1f2aeec6e8a3"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Oculus_VR" expression="Oculus-VRRule3e71e661-2e3d-4021-a6e5-1f2aeec6e8a3Check56a583ed-c7d3-4961-a768-9708f8b3ace5" name="Oculus-VRRule3e71e661-2e3d-4021-a6e5-1f2aeec6e8a3" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Oculus VR" description="MAC OUI CONTAINS Oculus VR" name="Oculus-VRRule3e71e661-2e3d-4021-a6e5-1f2aeec6e8a3Check56a583ed-c7d3-4961-a768-9708f8b3ace5" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Solar Panel technology - https://www.sma.de/en/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="SMA-Regelsysteme-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="SMA-Regelsysteme-DeviceRuled8e6b4d2-d465-429b-863e-4b73f4c86b83"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_SMA_REGELSYSTEME" expression="SMA-Regelsysteme-DeviceRuled8e6b4d2-d465-429b-863e-4b73f4c86b83Checkdbd83ebd-d68a-4059-8ef3-771726a4a2bb" name="SMA-Regelsysteme-DeviceRuled8e6b4d2-d465-429b-863e-4b73f4c86b83" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="SMA REGELSYSTEME" description="MAC OUI CONTAINS SMA REGELSYSTEME" name="SMA-Regelsysteme-DeviceRuled8e6b4d2-d465-429b-863e-4b73f4c86b83Checkdbd83ebd-d68a-4059-8ef3-771726a4a2bb" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
