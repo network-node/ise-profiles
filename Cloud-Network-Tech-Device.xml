@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Cloud-Network-Tech-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Cloud-Network-Tech-DeviceRulea5415135-08fd-4b61-b516-60f1df6e95fd"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Cloud_Network_Technology" expression="Cloud-Network-Tech-DeviceRulea5415135-08fd-4b61-b516-60f1df6e95fdCheckc6c6cc29-84b8-4f71-886f-3100ba9fb866" name="Cloud-Network-Tech-DeviceRulea5415135-08fd-4b61-b516-60f1df6e95fd" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Cloud Network Technology" description="MAC OUI CONTAINS Cloud Network Technology" name="Cloud-Network-Tech-DeviceRulea5415135-08fd-4b61-b516-60f1df6e95fdCheckc6c6cc29-84b8-4f71-886f-3100ba9fb866" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

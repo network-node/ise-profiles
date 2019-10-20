@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="BizLink-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="BizLink-DeviceRule1f61459f-d00c-48e9-85bf-0f24080fe57d"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_BizLink" expression="BizLink-DeviceRule1f61459f-d00c-48e9-85bf-0f24080fe57dCheck2066be0b-3422-44ce-ad03-e6680289a263" name="BizLink-DeviceRule1f61459f-d00c-48e9-85bf-0f24080fe57d" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="BizLink" description="MAC OUI CONTAINS BizLink" name="BizLink-DeviceRule1f61459f-d00c-48e9-85bf-0f24080fe57dCheck2066be0b-3422-44ce-ad03-e6680289a263" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

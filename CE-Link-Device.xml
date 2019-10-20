@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="CE-Link-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="CE-Link-DeviceRule539887bb-c1c3-4b2b-a5c9-862b4ee54f96"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_CE_LINK" expression="CE-Link-DeviceRule539887bb-c1c3-4b2b-a5c9-862b4ee54f96Checkc9b5d313-4f49-4f36-99f8-0f49d770b97c" name="CE-Link-DeviceRule539887bb-c1c3-4b2b-a5c9-862b4ee54f96" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="CE LINK" description="MAC OUI CONTAINS CE LINK" name="CE-Link-DeviceRule539887bb-c1c3-4b2b-a5c9-862b4ee54f96Checkc9b5d313-4f49-4f36-99f8-0f49d770b97c" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

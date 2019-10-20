@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Biamp-Systems-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Biamp-Systems-DeviceRule0105d2b2-cecc-4872-aa49-97d80dde0ddc"/>
+<PolicyRule certaintyFactor="20" name="Biamp-Systems-DeviceRule24b9e70a-a904-46a6-af49-a8ecf7101833"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_Biamp_Systems" expression="Biamp-Systems-DeviceRule0105d2b2-cecc-4872-aa49-97d80dde0ddcCheckc3615b89-7830-47fd-a288-3674d604327d" name="Biamp-Systems-DeviceRule0105d2b2-cecc-4872-aa49-97d80dde0ddc" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Biamp_Systems" expression="Biamp-Systems-DeviceRule24b9e70a-a904-46a6-af49-a8ecf7101833Check16e6664d-7278-4763-b44f-f2e843c7f72c" name="Biamp-Systems-DeviceRule24b9e70a-a904-46a6-af49-a8ecf7101833" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="dhcp-class-identifier" attributeValue="Biamp Systems" description="DHCP dhcp-class-identifier CONTAINS Biamp Systems" name="Biamp-Systems-DeviceRule0105d2b2-cecc-4872-aa49-97d80dde0ddcCheckc3615b89-7830-47fd-a288-3674d604327d" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Biamp Systems" description="MAC OUI CONTAINS Biamp Systems" name="Biamp-Systems-DeviceRule24b9e70a-a904-46a6-af49-a8ecf7101833Check16e6664d-7278-4763-b44f-f2e843c7f72c" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

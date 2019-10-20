@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Clear-Com-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Clear-Com-DeviceRuleb27234aa-06e6-4f82-b251-2becb0a4b5c4"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_HME_Clear-Com" expression="Clear-Com-DeviceRuleb27234aa-06e6-4f82-b251-2becb0a4b5c4Check067ceea6-8fd7-487e-88c9-402abf9e1be4" name="Clear-Com-DeviceRuleb27234aa-06e6-4f82-b251-2becb0a4b5c4" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="HME Clear-Com" description="MAC OUI CONTAINS HME Clear-Com" name="Clear-Com-DeviceRuleb27234aa-06e6-4f82-b251-2becb0a4b5c4Check067ceea6-8fd7-487e-88c9-402abf9e1be4" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

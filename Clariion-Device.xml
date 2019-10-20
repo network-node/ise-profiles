@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Profile for SAN company&#9;https://en.wikipedia.org/wiki/Clariion" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Clariion-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Clariion-DeviceRule2aaeffaa-4a83-45c1-a9d4-d69c9c089a3a"/>
+<PolicyRule certaintyFactor="5" name="Clariion-DeviceRulecfdc9747-0acf-47ec-b764-85324e89a616"/>
+<PolicyRule certaintyFactor="30" name="Clariion-DeviceRule3e090fd2-54df-4a0a-b52e-6cf563fc3c56"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_udhcp_1.8.2" expression="Clariion-DeviceRule2aaeffaa-4a83-45c1-a9d4-d69c9c089a3aCheck20d8f9b8-8810-48c1-bc47-b095385e0109" name="Clariion-DeviceRule2aaeffaa-4a83-45c1-a9d4-d69c9c089a3a" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-parameter-request-list_EQUALS_1,_3,_6,_12,_15,_28,_42,_43" expression="Clariion-DeviceRulecfdc9747-0acf-47ec-b764-85324e89a616Check514f6b95-2d29-4eb3-9ad4-5d773f3c13c0" name="Clariion-DeviceRulecfdc9747-0acf-47ec-b764-85324e89a616" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_CLARIION" expression="Clariion-DeviceRule3e090fd2-54df-4a0a-b52e-6cf563fc3c56Check19dedd3c-97be-4c89-a6d2-1b9033cb3bc4" name="Clariion-DeviceRule3e090fd2-54df-4a0a-b52e-6cf563fc3c56" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="dhcp-class-identifier" attributeValue="udhcp 1.8.2" description="DHCP dhcp-class-identifier CONTAINS udhcp 1.8.2" name="Clariion-DeviceRule2aaeffaa-4a83-45c1-a9d4-d69c9c089a3aCheck20d8f9b8-8810-48c1-bc47-b095385e0109" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 3, 6, 12, 15, 28, 42, 43" description="DHCP dhcp-parameter-request-list EQUALS 1, 3, 6, 12, 15, 28, 42, 43" name="Clariion-DeviceRulecfdc9747-0acf-47ec-b764-85324e89a616Check514f6b95-2d29-4eb3-9ad4-5d773f3c13c0" operator="Equals" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="CLARIION" description="MAC OUI CONTAINS CLARIION" name="Clariion-DeviceRule3e090fd2-54df-4a0a-b52e-6cf563fc3c56Check19dedd3c-97be-4c89-a6d2-1b9033cb3bc4" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

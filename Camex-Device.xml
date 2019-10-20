@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Camex-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Camex-DeviceRule610d1ce2-b8bc-46e5-9012-56f6eddec9da"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_CAMEX" expression="Camex-DeviceRule610d1ce2-b8bc-46e5-9012-56f6eddec9daCheck2bade9b1-47a0-400e-b008-eaaa2e77e0ea" name="Camex-DeviceRule610d1ce2-b8bc-46e5-9012-56f6eddec9da" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="CAMEX" description="MAC OUI CONTAINS CAMEX" name="Camex-DeviceRule610d1ce2-b8bc-46e5-9012-56f6eddec9daCheck2bade9b1-47a0-400e-b008-eaaa2e77e0ea" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Projection System&#9;https://www.barco.com/en/clickshare" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Barco-Projection-System" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Barco-Projection-SystemRule9cd53782-1678-47e2-bdfe-2489ae4aa665"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Barco-Clickshare" parentFQN="Barco-Projection-System" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Barco-ClickshareRule2088ec33-4cd8-4a3d-aacb-00e96fe20e0d"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Barco_Projection_Systems" expression="Barco-Projection-SystemRule9cd53782-1678-47e2-bdfe-2489ae4aa665Check6907e7bf-dfbb-4c52-b131-aa5593e9182c" name="Barco-Projection-SystemRule9cd53782-1678-47e2-bdfe-2489ae4aa665" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_ClickShare" expression="Barco-ClickshareRule2088ec33-4cd8-4a3d-aacb-00e96fe20e0dChecka6e037ca-26e9-4fad-9419-90b1af043ea2" name="Barco-ClickshareRule2088ec33-4cd8-4a3d-aacb-00e96fe20e0d" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Barco Projection Systems" description="MAC OUI CONTAINS Barco Projection Systems" name="Barco-Projection-SystemRule9cd53782-1678-47e2-bdfe-2489ae4aa665Check6907e7bf-dfbb-4c52-b131-aa5593e9182c" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="ClickShare" description="DHCP host-name CONTAINS ClickShare" name="Barco-ClickshareRule2088ec33-4cd8-4a3d-aacb-00e96fe20e0dChecka6e037ca-26e9-4fad-9419-90b1af043ea2" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

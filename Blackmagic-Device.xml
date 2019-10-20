@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="High quality filming equipment&#9;https://www.blackmagicdesign.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Blackmagic-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Blackmagic-DeviceRuleb3376493-3d53-4c1d-b088-27d1fb3f9908"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Blackmagic" expression="Blackmagic-DeviceRuleb3376493-3d53-4c1d-b088-27d1fb3f9908Check633fc2b7-3a49-4756-9aa9-0a0e12b86e74" name="Blackmagic-DeviceRuleb3376493-3d53-4c1d-b088-27d1fb3f9908" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Blackmagic" description="MAC OUI CONTAINS Blackmagic" name="Blackmagic-DeviceRuleb3376493-3d53-4c1d-b088-27d1fb3f9908Check633fc2b7-3a49-4756-9aa9-0a0e12b86e74" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

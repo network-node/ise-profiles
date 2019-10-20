@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Barix-Instreamer" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Barix-InstreamerRulee940306e-06d7-4b68-a0eb-e35986beff96"/>
+<PolicyRule certaintyFactor="30" name="Barix-InstreamerRule9b1c6614-795f-4e52-98f7-c7eccb676dea"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Barix_AG" expression="Barix-InstreamerRulee940306e-06d7-4b68-a0eb-e35986beff96Checke63f479d-a995-45eb-ba18-2e2236e06a95" name="Barix-InstreamerRulee940306e-06d7-4b68-a0eb-e35986beff96" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_Barix_Instreamer" expression="Barix-InstreamerRule9b1c6614-795f-4e52-98f7-c7eccb676deaCheck0ab54f93-d1b2-4ac3-9b0e-e4aeb23c80fb" name="Barix-InstreamerRule9b1c6614-795f-4e52-98f7-c7eccb676dea" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Barix AG" description="MAC OUI CONTAINS Barix AG" name="Barix-InstreamerRulee940306e-06d7-4b68-a0eb-e35986beff96Checke63f479d-a995-45eb-ba18-2e2236e06a95" operator="Contains" type="Mac"/>
+<Check attributeName="sysDescr" attributeValue="Barix Instreamer" description="SNMP sysDescr CONTAINS Barix Instreamer" name="Barix-InstreamerRule9b1c6614-795f-4e52-98f7-c7eccb676deaCheck0ab54f93-d1b2-4ac3-9b0e-e4aeb23c80fb" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

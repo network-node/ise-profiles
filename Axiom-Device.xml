@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Axiom-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Axiom-DeviceRule8418c54a-9810-4da2-bb12-5fc83abd7834"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_AXIOM_TECHNOLOGY" expression="Axiom-DeviceRule8418c54a-9810-4da2-bb12-5fc83abd7834Check1db4e760-81ce-48a9-9c84-20a8f3e94314" name="Axiom-DeviceRule8418c54a-9810-4da2-bb12-5fc83abd7834" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="AXIOM TECHNOLOGY" description="MAC OUI CONTAINS AXIOM TECHNOLOGY" name="Axiom-DeviceRule8418c54a-9810-4da2-bb12-5fc83abd7834Check1db4e760-81ce-48a9-9c84-20a8f3e94314" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

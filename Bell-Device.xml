@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Bell-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Bell-DeviceRule46995b36-08ba-4c57-9b63-41e33f10200a"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_BELL_TECHNOLOGIES" expression="Bell-DeviceRule46995b36-08ba-4c57-9b63-41e33f10200aCheck5a4ddc8d-5a9d-4434-ac54-3f470fb074ba" name="Bell-DeviceRule46995b36-08ba-4c57-9b63-41e33f10200a" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="BELL TECHNOLOGIES" description="MAC OUI CONTAINS BELL TECHNOLOGIES" name="Bell-DeviceRule46995b36-08ba-4c57-9b63-41e33f10200aCheck5a4ddc8d-5a9d-4434-ac54-3f470fb074ba" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

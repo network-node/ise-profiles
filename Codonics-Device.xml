@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Safe label medical system&#9;https://www.codonics.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Codonics-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Codonics-DeviceRulea0b27d49-d731-4d4b-9ac9-4d886f7e783c"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_CODONICS" expression="Codonics-DeviceRulea0b27d49-d731-4d4b-9ac9-4d886f7e783cCheckda462f2f-bad9-4dbb-854d-6e79c1f3894b" name="Codonics-DeviceRulea0b27d49-d731-4d4b-9ac9-4d886f7e783c" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="CODONICS" description="MAC OUI CONTAINS CODONICS" name="Codonics-DeviceRulea0b27d49-d731-4d4b-9ac9-4d886f7e783cCheckda462f2f-bad9-4dbb-854d-6e79c1f3894b" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

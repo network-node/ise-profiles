@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Cabletron-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Cabletron-DeviceRule89bc5b98-460a-4530-8724-2014f78a4974"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Cabletron_Systems" expression="Cabletron-DeviceRule89bc5b98-460a-4530-8724-2014f78a4974Check9dd22a45-b274-4b5c-be2f-82004cc3079c" name="Cabletron-DeviceRule89bc5b98-460a-4530-8724-2014f78a4974" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Cabletron Systems" description="MAC OUI CONTAINS Cabletron Systems" name="Cabletron-DeviceRule89bc5b98-460a-4530-8724-2014f78a4974Check9dd22a45-b274-4b5c-be2f-82004cc3079c" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

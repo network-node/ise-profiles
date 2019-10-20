@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="15" name="Cameo-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="15" name="Cameo-DeviceRule20e65121-920a-47ce-9d2f-da3d5b19ec01"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Cameo_Communications" expression="Cameo-DeviceRule20e65121-920a-47ce-9d2f-da3d5b19ec01Checka3c4bd18-11a0-4ee6-8a1b-d0d57c59af43" name="Cameo-DeviceRule20e65121-920a-47ce-9d2f-da3d5b19ec01" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Cameo Communications" description="MAC OUI CONTAINS Cameo Communications" name="Cameo-DeviceRule20e65121-920a-47ce-9d2f-da3d5b19ec01Checka3c4bd18-11a0-4ee6-8a1b-d0d57c59af43" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Credit card and POS manufacturer&#9;https://www.clover.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Clover-POS-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Clover-POS-DeviceRule1b59b1d5-a7b7-4760-9e7f-8c61232bf04d"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Clover_Network" expression="Clover-POS-DeviceRule1b59b1d5-a7b7-4760-9e7f-8c61232bf04dChecke4eb48da-25ba-460f-8f4e-df34e9f5889b" name="Clover-POS-DeviceRule1b59b1d5-a7b7-4760-9e7f-8c61232bf04d" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Clover Network" description="MAC OUI CONTAINS Clover Network" name="Clover-POS-DeviceRule1b59b1d5-a7b7-4760-9e7f-8c61232bf04dChecke4eb48da-25ba-460f-8f4e-df34e9f5889b" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

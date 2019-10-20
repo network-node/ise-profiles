@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Laser and label printers&#9;https://www.cab.de/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="CAB-GMBH-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="CAB-GMBH-DeviceRuled34e6648-2b03-40aa-8e5b-51025c978311"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_CAB_GmbH" expression="CAB-GMBH-DeviceRuled34e6648-2b03-40aa-8e5b-51025c978311Check45eaa72d-e242-4e12-a736-6a98339a1757" name="CAB-GMBH-DeviceRuled34e6648-2b03-40aa-8e5b-51025c978311" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="CAB GmbH" description="MAC OUI CONTAINS CAB GmbH" name="CAB-GMBH-DeviceRuled34e6648-2b03-40aa-8e5b-51025c978311Check45eaa72d-e242-4e12-a736-6a98339a1757" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

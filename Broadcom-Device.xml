@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Broadcom-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Broadcom-DeviceRule4eb9ab2e-a4ec-412e-b684-0e66c848d22c"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Broadcom" expression="Broadcom-DeviceRule4eb9ab2e-a4ec-412e-b684-0e66c848d22cChecke5117399-1dba-4e45-b340-3a24a2e84a87" name="Broadcom-DeviceRule4eb9ab2e-a4ec-412e-b684-0e66c848d22c" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Broadcom" description="MAC OUI CONTAINS Broadcom" name="Broadcom-DeviceRule4eb9ab2e-a4ec-412e-b684-0e66c848d22cChecke5117399-1dba-4e45-b340-3a24a2e84a87" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

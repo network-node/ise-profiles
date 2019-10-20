@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Buffalo-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="AMPAK-DeviceRule7ac40f27-252e-4000-9e99-7f142ee353a0_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_BUFFALO" expression="AMPAK-DeviceRule7ac40f27-252e-4000-9e99-7f142ee353a0Check157773a3-9c0e-4f70-a1e2-0ea300293db3_copy" name="AMPAK-DeviceRule7ac40f27-252e-4000-9e99-7f142ee353a0_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="BUFFALO" description="MAC OUI CONTAINS BUFFALO" name="AMPAK-DeviceRule7ac40f27-252e-4000-9e99-7f142ee353a0Check157773a3-9c0e-4f70-a1e2-0ea300293db3_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Digital Signage Media Player - https://www.brightsign.biz/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="BrightSign-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="BrightSign-DeviceRule65bf6cc1-02de-4e4c-a9c0-2e7a154e2eb0"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_BrightSign" expression="BrightSign-DeviceRule65bf6cc1-02de-4e4c-a9c0-2e7a154e2eb0Check53bcaf4c-d909-4001-b5c0-1bf7cf9d0858" name="BrightSign-DeviceRule65bf6cc1-02de-4e4c-a9c0-2e7a154e2eb0" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="BrightSign" description="MAC OUI CONTAINS BrightSign" name="BrightSign-DeviceRule65bf6cc1-02de-4e4c-a9c0-2e7a154e2eb0Check53bcaf4c-d909-4001-b5c0-1bf7cf9d0858" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

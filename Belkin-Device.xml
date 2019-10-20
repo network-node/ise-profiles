@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for all Belkin Devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Belkin-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Belkin-DeviceRule71"/>
+<PolicyRule certaintyFactor="10" name="Belkin-DeviceRule51d4caf5-fab0-4ba0-96fe-eb8a60ff797f"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="BelkinRule1Check1" expression="BelkinRule1Check1" name="Belkin-DeviceRule71" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Belkin_International" expression="Belkin-DeviceRule51d4caf5-fab0-4ba0-96fe-eb8a60ff797fCheck727b4c85-53f6-4061-ad1c-453a087fc561" name="Belkin-DeviceRule51d4caf5-fab0-4ba0-96fe-eb8a60ff797f" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Belkin" description="BelkinRule1Check1" name="BelkinRule1Check1" operator="Equals" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Belkin International" description="MAC OUI CONTAINS Belkin International" name="Belkin-DeviceRule51d4caf5-fab0-4ba0-96fe-eb8a60ff797fCheck727b4c85-53f6-4061-ad1c-453a087fc561" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

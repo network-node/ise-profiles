@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="BIS-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="BIS-DeviceRule23c6f082-824f-43c2-af02-06e3afe52c33"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Bridge_Information_Systems" expression="BIS-DeviceRule23c6f082-824f-43c2-af02-06e3afe52c33Check701c77e7-c723-4a1d-b72d-989f8c5cb7ed" name="BIS-DeviceRule23c6f082-824f-43c2-af02-06e3afe52c33" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Bridge Information Systems" description="MAC OUI CONTAINS Bridge Information Systems" name="BIS-DeviceRule23c6f082-824f-43c2-af02-06e3afe52c33Check701c77e7-c723-4a1d-b72d-989f8c5cb7ed" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

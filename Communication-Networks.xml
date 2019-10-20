@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Communication-Networks" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Communication-NetworksRulea63aface-96cb-4e48-a97f-e6299ad3f4c6"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Communication_Networks" expression="Communication-NetworksRulea63aface-96cb-4e48-a97f-e6299ad3f4c6Check9df4a417-802b-4dca-87d9-6692bc2d43a2" name="Communication-NetworksRulea63aface-96cb-4e48-a97f-e6299ad3f4c6" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Communication Networks" description="MAC OUI CONTAINS Communication Networks" name="Communication-NetworksRulea63aface-96cb-4e48-a97f-e6299ad3f4c6Check9df4a417-802b-4dca-87d9-6692bc2d43a2" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
