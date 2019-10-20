@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="DigiBoard-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="DigiBoard-DeviceRulea38f644d-03be-4494-9699-284a5c70d192"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="DigiBoard-PortServer" parentFQN="DigiBoard-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="DigiBoard-PortServerRule25ba7c2e-1be7-443f-8ec7-619108883dc8"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_DigiBoard" expression="DigiBoard-DeviceRulea38f644d-03be-4494-9699-284a5c70d192Check02778715-93f3-485b-a7db-981cf7a036e3" name="DigiBoard-DeviceRulea38f644d-03be-4494-9699-284a5c70d192" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_PortServer" expression="DigiBoard-PortServerRule25ba7c2e-1be7-443f-8ec7-619108883dc8Checkcd7d87d0-a541-494c-b7af-495074560043" name="DigiBoard-PortServerRule25ba7c2e-1be7-443f-8ec7-619108883dc8" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="DigiBoard" description="MAC OUI CONTAINS DigiBoard" name="DigiBoard-DeviceRulea38f644d-03be-4494-9699-284a5c70d192Check02778715-93f3-485b-a7db-981cf7a036e3" operator="Contains" type="Mac"/>
+<Check attributeName="sysDescr" attributeValue="PortServer" description="SNMP sysDescr CONTAINS PortServer" name="DigiBoard-PortServerRule25ba7c2e-1be7-443f-8ec7-619108883dc8Checkcd7d87d0-a541-494c-b7af-495074560043" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

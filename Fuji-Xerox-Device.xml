@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="15" name="Fuji-Xerox-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="15" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eea_copy12"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_FUJI-XEROX" expression="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eeaCheckcabb93a6-385f-4b85-a274-3bd195801182_copy12" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eea_copy12" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="FUJI-XEROX" description="MAC OUI CONTAINS FUJI-XEROX" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eeaCheckcabb93a6-385f-4b85-a274-3bd195801182_copy12" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Wireless and IoT vendor&#9;https://www.gemteks.com/en" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Gemtek-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Gemtek-DeviceRule3c19cd01-91ad-40d3-a1f8-57e5d1bb81d6"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Gemtek" expression="Gemtek-DeviceRule3c19cd01-91ad-40d3-a1f8-57e5d1bb81d6Checke70d06ff-5542-44c8-a829-3585d1d2be73" name="Gemtek-DeviceRule3c19cd01-91ad-40d3-a1f8-57e5d1bb81d6" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Gemtek" description="MAC OUI CONTAINS Gemtek" name="Gemtek-DeviceRule3c19cd01-91ad-40d3-a1f8-57e5d1bb81d6Checke70d06ff-5542-44c8-a829-3585d1d2be73" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

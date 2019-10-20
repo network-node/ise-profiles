@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="3d printer vendor&#9;https://formlabs.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Formlabs-3d-Printer" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Formlabs-3d-PrinterRule4f464b46-01b9-4f46-9881-85ada1f6f9dc"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Formlabs" expression="Formlabs-3d-PrinterRule4f464b46-01b9-4f46-9881-85ada1f6f9dcCheck9061fe9f-651e-442b-b0f2-17919fcfe1fb" name="Formlabs-3d-PrinterRule4f464b46-01b9-4f46-9881-85ada1f6f9dc" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Formlabs" description="MAC OUI CONTAINS Formlabs" name="Formlabs-3d-PrinterRule4f464b46-01b9-4f46-9881-85ada1f6f9dcCheck9061fe9f-651e-442b-b0f2-17919fcfe1fb" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

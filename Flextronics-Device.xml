@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Global logistics vendor&#9;https://flex.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Flextronics-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eea_copy8"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Flextronics" expression="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eeaCheckcabb93a6-385f-4b85-a274-3bd195801182_copy8" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eea_copy8" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Flextronics" description="MAC OUI CONTAINS Flextronics" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eeaCheckcabb93a6-385f-4b85-a274-3bd195801182_copy8" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

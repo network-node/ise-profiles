@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Echelon-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Echelon-DeviceRulece73b5b9-b8cb-4c41-9ef0-f4fafe07a983"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_ECHELON" expression="Echelon-DeviceRulece73b5b9-b8cb-4c41-9ef0-f4fafe07a983Check8ec2ac14-b962-4433-aef0-424f47a13c54" name="Echelon-DeviceRulece73b5b9-b8cb-4c41-9ef0-f4fafe07a983" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="ECHELON" description="MAC OUI CONTAINS ECHELON" name="Echelon-DeviceRulece73b5b9-b8cb-4c41-9ef0-f4fafe07a983Check8ec2ac14-b962-4433-aef0-424f47a13c54" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

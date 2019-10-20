@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Emerson-Network-Power-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Emerson-Network-Power-DeviceRule29f933db-c5dd-4c38-b47f-9f8b258ee1ed"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Emerson_Network_Power" expression="Emerson-Network-Power-DeviceRule29f933db-c5dd-4c38-b47f-9f8b258ee1edCheck11f62dd9-6778-447d-bd5d-cfc0e0bc95ed" name="Emerson-Network-Power-DeviceRule29f933db-c5dd-4c38-b47f-9f8b258ee1ed" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Emerson Network Power" description="MAC OUI CONTAINS Emerson Network Power" name="Emerson-Network-Power-DeviceRule29f933db-c5dd-4c38-b47f-9f8b258ee1edCheck11f62dd9-6778-447d-bd5d-cfc0e0bc95ed" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

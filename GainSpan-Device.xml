@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Ultra low power WiFi Modules&#9;https://wifi.telit.com/secure/login" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="GainSpan-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="GainSpan-DeviceRule7a3bb5a9-6a2c-4089-9e25-41a8c13d8eb7"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_GainSpan" expression="GainSpan-DeviceRule7a3bb5a9-6a2c-4089-9e25-41a8c13d8eb7Checkaef4fd3f-543e-421e-b379-bac668575e00" name="GainSpan-DeviceRule7a3bb5a9-6a2c-4089-9e25-41a8c13d8eb7" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="GainSpan" description="MAC OUI CONTAINS GainSpan" name="GainSpan-DeviceRule7a3bb5a9-6a2c-4089-9e25-41a8c13d8eb7Checkaef4fd3f-543e-421e-b379-bac668575e00" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Small EMS manufacturing company&#9;https://www.domex.com.tw/en-global/products/index" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Domex-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Domex-DeviceRuleed1c0130-d1e9-4807-a0a0-7c7ee0c563f4"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_DOMEX_TECHNOLOGY" expression="Domex-DeviceRuleed1c0130-d1e9-4807-a0a0-7c7ee0c563f4Checkd3de5157-4d6e-428c-86a3-9cbea77418ce" name="Domex-DeviceRuleed1c0130-d1e9-4807-a0a0-7c7ee0c563f4" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="DOMEX TECHNOLOGY" description="MAC OUI CONTAINS DOMEX TECHNOLOGY" name="Domex-DeviceRuleed1c0130-d1e9-4807-a0a0-7c7ee0c563f4Checkd3de5157-4d6e-428c-86a3-9cbea77418ce" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

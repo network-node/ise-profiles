@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Server and IoT manufacturer - Also added SCAN action for SNMP&#9;http://www.kcodes.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="KCodes-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="KCodes-DeviceRule32348e9f-7d6e-4023-bdbb-25276b08532c"/>
+<PolicyRule certaintyFactor="-3" name="KCodes-DeviceRuled1988841-260e-4e94-adee-ce623608472e"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Dymo-Print-Server" parentFQN="KCodes-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Dymo-Print-ServerRule9e825822-35ca-429e-9404-2654e7d854d9"/>
+<PolicyRule certaintyFactor="10" name="Dymo-Print-ServerRule9cf62fc9-4b5a-41de-a7f0-6e2b23a5e301"/>
+<PolicyRule certaintyFactor="10" name="Dymo-Print-ServerRule1e65e383-60d4-4e6c-b374-ae2da05fc9a4"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_KCodes" expression="KCodes-DeviceRule32348e9f-7d6e-4023-bdbb-25276b08532cCheck8a7636bd-eb39-42e1-b0f6-7960e676602b" name="KCodes-DeviceRule32348e9f-7d6e-4023-bdbb-25276b08532c" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_KCodes" expression="KCodes-DeviceRuled1988841-260e-4e94-adee-ce623608472eCheck7d29ead0-f0b3-49c9-b416-ebbdfbde8102" name="KCodes-DeviceRuled1988841-260e-4e94-adee-ce623608472e" ruleType="Regular"/>
+<Rule description="SNMP_sysName_CONTAINS_LabelWriter_Print_Server" expression="Dymo-Print-ServerRule9e825822-35ca-429e-9404-2654e7d854d9Checkbf082e21-7ed4-45ac-a021-30e4dd22a564" name="Dymo-Print-ServerRule9e825822-35ca-429e-9404-2654e7d854d9" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_server" expression="Dymo-Print-ServerRule9cf62fc9-4b5a-41de-a7f0-6e2b23a5e301Checkfba01df3-60db-4d68-b3ce-82a4a9b9d2bf" name="Dymo-Print-ServerRule9cf62fc9-4b5a-41de-a7f0-6e2b23a5e301" ruleType="Regular"/>
+<Rule description="SNMP_sysContact_CONTAINS_www.dymo.com" expression="Dymo-Print-ServerRule1e65e383-60d4-4e6c-b374-ae2da05fc9a4Checke19b9dcc-9865-4be2-aba2-ab4c760e8705" name="Dymo-Print-ServerRule1e65e383-60d4-4e6c-b374-ae2da05fc9a4" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="KCodes" description="MAC OUI CONTAINS KCodes" name="KCodes-DeviceRule32348e9f-7d6e-4023-bdbb-25276b08532cCheck8a7636bd-eb39-42e1-b0f6-7960e676602b" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="KCodes" description="MAC OUI CONTAINS KCodes" name="KCodes-DeviceRuled1988841-260e-4e94-adee-ce623608472eCheck7d29ead0-f0b3-49c9-b416-ebbdfbde8102" operator="Contains" type="Mac"/>
+<Check attributeName="sysName" attributeValue="LabelWriter Print Server" description="SNMP sysName CONTAINS LabelWriter Print Server" name="Dymo-Print-ServerRule9e825822-35ca-429e-9404-2654e7d854d9Checkbf082e21-7ed4-45ac-a021-30e4dd22a564" operator="Contains" type="Snmp"/>
+<Check attributeName="host-name" attributeValue="server" description="DHCP host-name CONTAINS server" name="Dymo-Print-ServerRule9cf62fc9-4b5a-41de-a7f0-6e2b23a5e301Checkfba01df3-60db-4d68-b3ce-82a4a9b9d2bf" operator="Contains" type="DHCP"/>
+<Check attributeName="sysContact" attributeValue="www.dymo.com" description="SNMP sysContact CONTAINS www.dymo.com" name="Dymo-Print-ServerRule1e65e383-60d4-4e6c-b374-ae2da05fc9a4Checke19b9dcc-9865-4be2-aba2-ab4c760e8705" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Edimax-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eea_copy1"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Edimax_Technology" expression="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eeaCheckcabb93a6-385f-4b85-a274-3bd195801182_copy1" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eea_copy1" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Edimax Technology" description="MAC OUI CONTAINS Edimax Technology" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eeaCheckcabb93a6-385f-4b85-a274-3bd195801182_copy1" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

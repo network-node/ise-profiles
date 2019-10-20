@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Extron-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Extron-DeviceRulebf559b6f-c8fa-4d7d-8440-052ce4907741"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Extron-SMP" parentFQN="Extron-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Extron-SMPRule91e82427-fe15-41f7-86cf-a31164cb8c7a"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Extron_Electronics" expression="Extron-DeviceRulebf559b6f-c8fa-4d7d-8440-052ce4907741Checkdb6eb655-c3ef-4f73-886a-6f533eeb8aee" name="Extron-DeviceRulebf559b6f-c8fa-4d7d-8440-052ce4907741" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_smp" expression="Extron-SMPRule91e82427-fe15-41f7-86cf-a31164cb8c7aChecke3bc3805-f1ca-4b3d-8358-2096a2f9ae88" name="Extron-SMPRule91e82427-fe15-41f7-86cf-a31164cb8c7a" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Extron Electronics" description="MAC OUI CONTAINS Extron Electronics" name="Extron-DeviceRulebf559b6f-c8fa-4d7d-8440-052ce4907741Checkdb6eb655-c3ef-4f73-886a-6f533eeb8aee" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="smp" description="DHCP host-name CONTAINS smp" name="Extron-SMPRule91e82427-fe15-41f7-86cf-a31164cb8c7aChecke3bc3805-f1ca-4b3d-8358-2096a2f9ae88" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="AV Tech Vendor&#9;https://www.extron.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Extron-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Extron-DeviceRule1180f222-c031-41a4-96d3-1ea692980d73"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Extron_Electronics" expression="Extron-DeviceRule1180f222-c031-41a4-96d3-1ea692980d73Checkea79b4b1-8b37-4cd1-9aaa-b292438c0d54" name="Extron-DeviceRule1180f222-c031-41a4-96d3-1ea692980d73" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Extron Electronics" description="MAC OUI CONTAINS Extron Electronics" name="Extron-DeviceRule1180f222-c031-41a4-96d3-1ea692980d73Checkea79b4b1-8b37-4cd1-9aaa-b292438c0d54" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

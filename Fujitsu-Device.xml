@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Fujitsu-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eea_copy11"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Fujitsu_OR_MAC_OUI_CONTAINS_PFU_LIMITED" expression="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eeaCheckcabb93a6-385f-4b85-a274-3bd195801182_copy11 | DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eea_copy11Checke88024e4-be61-4aea-b8f3-ad0fa7285f74" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eea_copy11" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Fujitsu" description="MAC OUI CONTAINS Fujitsu" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eeaCheckcabb93a6-385f-4b85-a274-3bd195801182_copy11" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="PFU LIMITED" description="MAC OUI CONTAINS PFU LIMITED" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eea_copy11Checke88024e4-be61-4aea-b8f3-ad0fa7285f74" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

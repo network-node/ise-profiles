@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Epson-Device" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Epson-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Epson-DeviceRule1"/>
+<PolicyRule certaintyFactor="10" name="Epson-DeviceRule2"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Epson-Device-SC-T5200" parentFQN="Epson-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Epson-Device-SC-T5200Rulee3b7eb07-94dc-4650-be75-d5378420eb70"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Epson-Device-Rule1-Check1" expression="Epson-Device-Rule1-Check1" name="Epson-DeviceRule1" ruleType="Regular"/>
+<Rule description="Epson-Device-Rule2-Check1" expression="Epson-Device-Rule2-Check1" name="Epson-DeviceRule2" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_SC-T5200" expression="Epson-Device-SC-T5200Rulee3b7eb07-94dc-4650-be75-d5378420eb70Checkf7f1bcb4-c9bf-4359-83e3-5ca155f62610" name="Epson-Device-SC-T5200Rulee3b7eb07-94dc-4650-be75-d5378420eb70" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="EPSON" description="Condition for Epson-Device , based on MAC-OUI" name="Epson-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="EPSON" description="Condition for Epson-Device , based on HR-Device-Description." name="Epson-Device-Rule2-Check1" operator="Contains" type="Snmp"/>
+<Check attributeName="host-name" attributeValue="SC-T5200" description="DHCP host-name CONTAINS SC-T5200" name="Epson-Device-SC-T5200Rulee3b7eb07-94dc-4650-be75-d5378420eb70Checkf7f1bcb4-c9bf-4359-83e3-5ca155f62610" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

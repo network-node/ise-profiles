@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Digital Hospital Systems&#9;http://webcache.googleusercontent.com/search?q=cache:nSdgYoEosuEJ:www.flytech.com/&amp;hl=en&amp;gl=us&amp;strip=1&amp;vwsrc=0" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Flytech-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Flytech-DeviceRule28ff7565-2dc1-4281-aeb5-d041942a7c11"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Flytech-ZWM" parentFQN="Flytech-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Flytech-ZWTRule8ae132c1-8b82-4107-9cb1-d9a91b29bfd9_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_FLYTECH_TECHNOLOGY" expression="Flytech-DeviceRule28ff7565-2dc1-4281-aeb5-d041942a7c11Check5596cd5a-aea7-4742-a1de-06018ced96d2" name="Flytech-DeviceRule28ff7565-2dc1-4281-aeb5-d041942a7c11" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_zwm" expression="Flytech-ZWTRule8ae132c1-8b82-4107-9cb1-d9a91b29bfd9Check7ba0da30-de56-4eb1-97f0-3fe75e246e12_copy" name="Flytech-ZWTRule8ae132c1-8b82-4107-9cb1-d9a91b29bfd9_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="FLYTECH TECHNOLOGY" description="MAC OUI CONTAINS FLYTECH TECHNOLOGY" name="Flytech-DeviceRule28ff7565-2dc1-4281-aeb5-d041942a7c11Check5596cd5a-aea7-4742-a1de-06018ced96d2" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="zwm" description="DHCP host-name CONTAINS zwm" name="Flytech-ZWTRule8ae132c1-8b82-4107-9cb1-d9a91b29bfd9Check7ba0da30-de56-4eb1-97f0-3fe75e246e12_copy" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

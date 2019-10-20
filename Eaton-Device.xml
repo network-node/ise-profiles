@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Eaton-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Eaton-DeviceRulef6b07ce7-a235-4ae3-9e14-87d7e102a47f"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Eaton_Corporation" expression="Eaton-DeviceRulef6b07ce7-a235-4ae3-9e14-87d7e102a47fCheck5de035f9-d2e9-431e-bd1b-3e3ab043ccf4" name="Eaton-DeviceRulef6b07ce7-a235-4ae3-9e14-87d7e102a47f" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Eaton Corporation" description="MAC OUI CONTAINS Eaton Corporation" name="Eaton-DeviceRulef6b07ce7-a235-4ae3-9e14-87d7e102a47fCheck5de035f9-d2e9-431e-bd1b-3e3ab043ccf4" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

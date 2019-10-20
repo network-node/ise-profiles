@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Wheatek-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Wheatek-DeviceRule0cf3c2d8-5b53-4e73-8f2a-826034362d96"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Flame-X555" parentFQN="Wheatek-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Crush-X565Rule9dd66a22-d4ed-4d4e-b9a0-8f382186844f_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_HONG_KONG_WHEATEK_TECHNOLOGY" expression="Wheatek-DeviceRule0cf3c2d8-5b53-4e73-8f2a-826034362d96Check86a07b54-b6c9-45fe-bbc1-e7625ea188c0" name="Wheatek-DeviceRule0cf3c2d8-5b53-4e73-8f2a-826034362d96" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_FLAME_X555" expression="Crush-X565Rule9dd66a22-d4ed-4d4e-b9a0-8f382186844fCheck53b85724-eeb2-4af4-a548-564889f98638_copy" name="Crush-X565Rule9dd66a22-d4ed-4d4e-b9a0-8f382186844f_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="HONG KONG WHEATEK TECHNOLOGY" description="MAC OUI CONTAINS HONG KONG WHEATEK TECHNOLOGY" name="Wheatek-DeviceRule0cf3c2d8-5b53-4e73-8f2a-826034362d96Check86a07b54-b6c9-45fe-bbc1-e7625ea188c0" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="FLAME_X555" description="IP User-Agent CONTAINS FLAME_X555" name="Crush-X565Rule9dd66a22-d4ed-4d4e-b9a0-8f382186844fCheck53b85724-eeb2-4af4-a548-564889f98638_copy" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

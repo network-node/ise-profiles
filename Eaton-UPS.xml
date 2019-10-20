@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Eaton-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Eaton-DeviceRulef6b07ce7-a235-4ae3-9e14-87d7e102a47f"/>
+</PolicyRules>
+</Policy>
+<Policy description="Power Management Vendor - UPS&#9;https://www.eaton.com/us/en-us.html" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Eaton-UPS" parentFQN="Eaton-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Eaton-UPSRule2530764c-f43a-405d-8382-fcb1d7e09151"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Eaton_Corporation" expression="Eaton-DeviceRulef6b07ce7-a235-4ae3-9e14-87d7e102a47fCheck5de035f9-d2e9-431e-bd1b-3e3ab043ccf4" name="Eaton-DeviceRulef6b07ce7-a235-4ae3-9e14-87d7e102a47f" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_ups" expression="Eaton-UPSRule2530764c-f43a-405d-8382-fcb1d7e09151Checka597c150-7f06-4f67-9aa7-df3027638228" name="Eaton-UPSRule2530764c-f43a-405d-8382-fcb1d7e09151" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Eaton Corporation" description="MAC OUI CONTAINS Eaton Corporation" name="Eaton-DeviceRulef6b07ce7-a235-4ae3-9e14-87d7e102a47fCheck5de035f9-d2e9-431e-bd1b-3e3ab043ccf4" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="ups" description="DHCP host-name CONTAINS ups" name="Eaton-UPSRule2530764c-f43a-405d-8382-fcb1d7e09151Checka597c150-7f06-4f67-9aa7-df3027638228" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
