@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IP Telecom Manufacturer - https://www.2nusa.com/en_US/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="2n-Telekomunikace-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cd"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_2N_TELEKOMUNIKACE" expression="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cdCheck1a291cb9-b092-462b-a876-62edc49266c2" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cd" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="2N TELEKOMUNIKACE" description="MAC OUI CONTAINS 2N TELEKOMUNIKACE" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cdCheck1a291cb9-b092-462b-a876-62edc49266c2" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

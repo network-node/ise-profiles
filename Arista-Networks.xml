@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="25" name="Arista-Networks" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="25" name="Mojo-NetworksRule462e0015-1970-43c0-a364-e1cbad48a856"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Mojo_Networks_OR_MAC_OUI_CONTAINS_Arista" expression="Mojo-NetworksRule462e0015-1970-43c0-a364-e1cbad48a856Checkfb497b66-e1a3-4c56-a1ec-9fc9d6d1a1d4 | Mojo-NetworksRule462e0015-1970-43c0-a364-e1cbad48a856Check6888438e-95c9-41e0-af11-adf926e39e00" name="Mojo-NetworksRule462e0015-1970-43c0-a364-e1cbad48a856" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Mojo Networks" description="MAC OUI CONTAINS Mojo Networks" name="Mojo-NetworksRule462e0015-1970-43c0-a364-e1cbad48a856Checkfb497b66-e1a3-4c56-a1ec-9fc9d6d1a1d4" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Arista" description="MAC OUI CONTAINS Arista" name="Mojo-NetworksRule462e0015-1970-43c0-a364-e1cbad48a856Check6888438e-95c9-41e0-af11-adf926e39e00" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

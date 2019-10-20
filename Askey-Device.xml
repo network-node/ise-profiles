@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Broadband and set-top box technology&#9;https://www.askey.com.tw/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Askey-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Askey-DeviceRulee6524ef3-15dd-4949-af4d-a6d6c5004771"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_ASKEY_COMPUTER" expression="Askey-DeviceRulee6524ef3-15dd-4949-af4d-a6d6c5004771Checkb529d316-e3f6-4ec6-84db-002840ceee4d" name="Askey-DeviceRulee6524ef3-15dd-4949-af4d-a6d6c5004771" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="ASKEY COMPUTER" description="MAC OUI CONTAINS ASKEY COMPUTER" name="Askey-DeviceRulee6524ef3-15dd-4949-af4d-a6d6c5004771Checkb529d316-e3f6-4ec6-84db-002840ceee4d" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

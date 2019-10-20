@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="KVM Device&#9;https://www.adder.com/en" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Adder-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Adder-DeviceRule4a26c43d-94f9-4ce8-aba1-d228d5914265"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Adder_Technology" expression="Adder-DeviceRule4a26c43d-94f9-4ce8-aba1-d228d5914265Check344c7ace-14c5-4bbf-bcf5-18f465e7ed77" name="Adder-DeviceRule4a26c43d-94f9-4ce8-aba1-d228d5914265" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Adder Technology" description="MAC OUI CONTAINS Adder Technology" name="Adder-DeviceRule4a26c43d-94f9-4ce8-aba1-d228d5914265Check344c7ace-14c5-4bbf-bcf5-18f465e7ed77" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Manufacturer of ODM, EMS and Industrial Computing&#9;http://www.armorlink.com.cn/_index/en/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="50" name="Armorlink-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="50" name="Armorlink-DeviceRule8aa49cc5-9501-4f4e-8694-db916e10388f"/>
+<PolicyRule certaintyFactor="50" name="Armorlink-DeviceRule1be37b31-5438-4dbb-9ac0-20f4d3eb9326"/>
+<PolicyRule certaintyFactor="5" name="Armorlink-DeviceRule1885e069-2320-43b4-9fac-d569402192ac"/>
+<PolicyRule certaintyFactor="5" name="Armorlink-DeviceRulec38ce63b-56a7-4f9d-9e64-341e6dffac04"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="DHCP_dhcp-parameter-request-list_EQUALS_1,_15,_3,_6,_44,_46,_47,_31,_33,_121,_249,_43,_252" expression="Armorlink-DeviceRule8aa49cc5-9501-4f4e-8694-db916e10388fCheck617186e1-3aa2-4b35-a686-fcd3a75af0da" name="Armorlink-DeviceRule8aa49cc5-9501-4f4e-8694-db916e10388f" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Armorlink_Co" expression="Armorlink-DeviceRule1be37b31-5438-4dbb-9ac0-20f4d3eb9326Check9ba73e30-db05-45d0-8d59-208f9f3a60f1" name="Armorlink-DeviceRule1be37b31-5438-4dbb-9ac0-20f4d3eb9326" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_MSFT_5.0" expression="Armorlink-DeviceRule1885e069-2320-43b4-9fac-d569402192acCheck8201957e-2c0e-40bb-b840-6ae32ce1c9cb" name="Armorlink-DeviceRule1885e069-2320-43b4-9fac-d569402192ac" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-parameter-request-list_EQUALS_1,_15,_3,_6,_44,_46,_47,_31,_33,_121,_249,_43" expression="Armorlink-DeviceRulec38ce63b-56a7-4f9d-9e64-341e6dffac04Checkba8efb2f-6655-4106-ad4f-1aa34d398dfd" name="Armorlink-DeviceRulec38ce63b-56a7-4f9d-9e64-341e6dffac04" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 15, 3, 6, 44, 46, 47, 31, 33, 121, 249, 43, 252" description="DHCP dhcp-parameter-request-list EQUALS 1, 15, 3, 6, 44, 46, 47, 31, 33, 121, 249, 43, 252" name="Armorlink-DeviceRule8aa49cc5-9501-4f4e-8694-db916e10388fCheck617186e1-3aa2-4b35-a686-fcd3a75af0da" operator="Equals" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Armorlink Co" description="MAC OUI CONTAINS Armorlink Co" name="Armorlink-DeviceRule1be37b31-5438-4dbb-9ac0-20f4d3eb9326Check9ba73e30-db05-45d0-8d59-208f9f3a60f1" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="MSFT 5.0" description="DHCP dhcp-class-identifier CONTAINS MSFT 5.0" name="Armorlink-DeviceRule1885e069-2320-43b4-9fac-d569402192acCheck8201957e-2c0e-40bb-b840-6ae32ce1c9cb" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 15, 3, 6, 44, 46, 47, 31, 33, 121, 249, 43" description="DHCP dhcp-parameter-request-list EQUALS 1, 15, 3, 6, 44, 46, 47, 31, 33, 121, 249, 43" name="Armorlink-DeviceRulec38ce63b-56a7-4f9d-9e64-341e6dffac04Checkba8efb2f-6655-4106-ad4f-1aa34d398dfd" operator="Equals" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

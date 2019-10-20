@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Creator of ruggedized tablets and IoT&#9;https://www.aaeon.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="AAEON-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="AAEON-DeviceRule25157a6d-d1b5-440e-ab75-605943c08c70"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_AAEON_Technology" expression="AAEON-DeviceRule25157a6d-d1b5-440e-ab75-605943c08c70Check2a920519-222a-46fd-b0e2-c676ab1e5f8d" name="AAEON-DeviceRule25157a6d-d1b5-440e-ab75-605943c08c70" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="AAEON Technology" description="MAC OUI CONTAINS AAEON Technology" name="AAEON-DeviceRule25157a6d-d1b5-440e-ab75-605943c08c70Check2a920519-222a-46fd-b0e2-c676ab1e5f8d" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Embedded compute and power solution&#9;https://www.artesyn.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Artesyn-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Artesyn-DeviceRuleb64ee134-b203-4089-a612-d993ddb34983"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Artesyn_Embedded" expression="Artesyn-DeviceRuleb64ee134-b203-4089-a612-d993ddb34983Checkb3b9bf5f-18c3-4d02-ac86-da6f431d4dea" name="Artesyn-DeviceRuleb64ee134-b203-4089-a612-d993ddb34983" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Artesyn Embedded" description="MAC OUI CONTAINS Artesyn Embedded" name="Artesyn-DeviceRuleb64ee134-b203-4089-a612-d993ddb34983Checkb3b9bf5f-18c3-4d02-ac86-da6f431d4dea" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

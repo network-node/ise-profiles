@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Medical device&#9;https://seertechnology.com/faq" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Accusense-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Accusense-DeviceRule1d33dfcb-2970-4a44-8a36-d528e2b2405c"/>
+<PolicyRule certaintyFactor="20" name="Accusense-DeviceRulec6acc11b-93cd-4afa-ae68-d5307f6593f9"/>
+<PolicyRule certaintyFactor="5" name="Accusense-DeviceRulef4594d24-618e-442f-944b-78b262dc1ae2"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_uClinux" expression="Accusense-DeviceRule1d33dfcb-2970-4a44-8a36-d528e2b2405cCheck6045ae7b-9363-45ab-9f5f-e3bcee25fd04" name="Accusense-DeviceRule1d33dfcb-2970-4a44-8a36-d528e2b2405c" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Accsense" expression="Accusense-DeviceRulec6acc11b-93cd-4afa-ae68-d5307f6593f9Checkf4452c68-1fe9-4e7f-a5c4-af2913a746ec" name="Accusense-DeviceRulec6acc11b-93cd-4afa-ae68-d5307f6593f9" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-parameter-request-list_EQUALS_1,_3,_6,_12,_15,_17,_23,_28,_29,_31,_33,_40,_41,_42" expression="Accusense-DeviceRulef4594d24-618e-442f-944b-78b262dc1ae2Check09d4313e-2063-45bf-8b45-06befe07bcf1" name="Accusense-DeviceRulef4594d24-618e-442f-944b-78b262dc1ae2" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="dhcp-class-identifier" attributeValue="uClinux" description="DHCP dhcp-class-identifier CONTAINS uClinux" name="Accusense-DeviceRule1d33dfcb-2970-4a44-8a36-d528e2b2405cCheck6045ae7b-9363-45ab-9f5f-e3bcee25fd04" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Accsense" description="MAC OUI CONTAINS Accsense" name="Accusense-DeviceRulec6acc11b-93cd-4afa-ae68-d5307f6593f9Checkf4452c68-1fe9-4e7f-a5c4-af2913a746ec" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 3, 6, 12, 15, 17, 23, 28, 29, 31, 33, 40, 41, 42" description="DHCP dhcp-parameter-request-list EQUALS 1, 3, 6, 12, 15, 17, 23, 28, 29, 31, 33, 40, 41, 42" name="Accusense-DeviceRulef4594d24-618e-442f-944b-78b262dc1ae2Check09d4313e-2063-45bf-8b45-06befe07bcf1" operator="Equals" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Advantech-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Advantech-DeviceRulebab37fc5-ad53-4b7a-9c26-dccb6383a6c0"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Advantech_Technology_OR_MAC_OUI_CONTAINS_ADVANTECH_TECHNOLOGIES" expression="Advantech-DeviceRulebab37fc5-ad53-4b7a-9c26-dccb6383a6c0Checkd663db53-4f0f-4783-86bf-a02a52bf0c73 | Advantech-DeviceRulebab37fc5-ad53-4b7a-9c26-dccb6383a6c0Check26c0ca1d-f0b3-4d91-9a63-e49ebe640330" name="Advantech-DeviceRulebab37fc5-ad53-4b7a-9c26-dccb6383a6c0" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Advantech Technology" description="MAC OUI CONTAINS Advantech Technology" name="Advantech-DeviceRulebab37fc5-ad53-4b7a-9c26-dccb6383a6c0Checkd663db53-4f0f-4783-86bf-a02a52bf0c73" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="ADVANTECH TECHNOLOGIES" description="MAC OUI CONTAINS ADVANTECH TECHNOLOGIES" name="Advantech-DeviceRulebab37fc5-ad53-4b7a-9c26-dccb6383a6c0Check26c0ca1d-f0b3-4d91-9a63-e49ebe640330" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

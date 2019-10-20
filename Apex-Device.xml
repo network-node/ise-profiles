@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Apex-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Apex-DeviceRulea1e78022-5735-45ce-aa58-bcde4dd76c24"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Apex" expression="Apex-DeviceRulea1e78022-5735-45ce-aa58-bcde4dd76c24Check9dea4a8c-8972-48a6-8158-a88da06d3580" name="Apex-DeviceRulea1e78022-5735-45ce-aa58-bcde4dd76c24" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Apex" description="MAC OUI CONTAINS Apex" name="Apex-DeviceRulea1e78022-5735-45ce-aa58-bcde4dd76c24Check9dea4a8c-8972-48a6-8158-a88da06d3580" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

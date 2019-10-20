@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IoT devices&#9;http://www.actiaus.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Actia-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Actia-DeviceRule88147327-fae1-48e2-b51f-d84441861aac"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_ACTIA" expression="Actia-DeviceRule88147327-fae1-48e2-b51f-d84441861aacCheck1917eab4-e258-45d1-afbc-0c24f7ff1b77" name="Actia-DeviceRule88147327-fae1-48e2-b51f-d84441861aac" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="ACTIA" description="MAC OUI CONTAINS ACTIA" name="Actia-DeviceRule88147327-fae1-48e2-b51f-d84441861aacCheck1917eab4-e258-45d1-afbc-0c24f7ff1b77" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

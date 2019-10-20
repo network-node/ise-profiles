@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Pick-to-Light systems&#9;https://www.hello-aioi.com/en/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Aioi-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Aioi-DeviceRule1fbf907c-eb40-45be-8116-ade83f5825b4"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_AIOI_Systems" expression="Aioi-DeviceRule1fbf907c-eb40-45be-8116-ade83f5825b4Check1b1e62fe-3369-4726-aa07-e48bb69995ba" name="Aioi-DeviceRule1fbf907c-eb40-45be-8116-ade83f5825b4" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="AIOI Systems" description="MAC OUI CONTAINS AIOI Systems" name="Aioi-DeviceRule1fbf907c-eb40-45be-8116-ade83f5825b4Check1b1e62fe-3369-4726-aa07-e48bb69995ba" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

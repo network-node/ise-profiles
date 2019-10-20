@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="AMD devices&#9;https://www.amd.com/en" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="AMD-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="AMD-DeviceRule30973b60-7be4-4653-b8d6-e507508f369a"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_ADVANCED_MICRO_DEVICES" expression="AMD-DeviceRule30973b60-7be4-4653-b8d6-e507508f369aCheck32fa099e-e20b-443f-9856-edd05e2873ef" name="AMD-DeviceRule30973b60-7be4-4653-b8d6-e507508f369a" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="ADVANCED MICRO DEVICES" description="MAC OUI CONTAINS ADVANCED MICRO DEVICES" name="AMD-DeviceRule30973b60-7be4-4653-b8d6-e507508f369aCheck32fa099e-e20b-443f-9856-edd05e2873ef" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for 3M devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="3M-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="3M-Device-Rule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="Healthcare policy for 3M-Company devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="3M-Company-Device" parentFQN="3M-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="3M-Company-Device-Rule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Attest-Device" parentFQN="3M-Device:3M-Company-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Attest-DeviceRule9902c4c6-201f-429d-afde-0959dd949e03"/>
+<PolicyRule certaintyFactor="5" name="Attest-DeviceRule96ddbd8d-dc33-40b2-9cd0-91a9004054b1"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="3M-Device-Rule1" expression="3M-Device-OUI-Check1" name="3M-Device-Rule1" ruleType="Regular"/>
+<Rule description="3M-Company-Device-Rule1" expression="3M-Company-Device-OUI-Check1" name="3M-Company-Device-Rule1" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_ATTEST" expression="Attest-DeviceRule9902c4c6-201f-429d-afde-0959dd949e03Check604d7c60-ab3b-4b70-9215-c35ea074530c" name="Attest-DeviceRule9902c4c6-201f-429d-afde-0959dd949e03" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-parameter-request-list_EQUALS_1,_3,_6,_12" expression="Attest-DeviceRule96ddbd8d-dc33-40b2-9cd0-91a9004054b1Checkcc167bb4-037a-4543-9bec-f7ecc8acbef2" name="Attest-DeviceRule96ddbd8d-dc33-40b2-9cd0-91a9004054b1" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="3M" description="Condition for 3M devices based on OUI" name="3M-Device-OUI-Check1" operator="Starts with" type="Mac"/>
+<Check attributeName="OUI" attributeValue="3M COMPANY" description="Healthcare condition for 3M-Company devices based on OUI" name="3M-Company-Device-OUI-Check1" operator="Equals" type="Mac"/>
+<Check attributeName="host-name" attributeValue="ATTEST" description="DHCP host-name CONTAINS ATTEST" name="Attest-DeviceRule9902c4c6-201f-429d-afde-0959dd949e03Check604d7c60-ab3b-4b70-9215-c35ea074530c" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 3, 6, 12" description="DHCP dhcp-parameter-request-list EQUALS 1, 3, 6, 12" name="Attest-DeviceRule96ddbd8d-dc33-40b2-9cd0-91a9004054b1Checkcc167bb4-037a-4543-9bec-f7ecc8acbef2" operator="Equals" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

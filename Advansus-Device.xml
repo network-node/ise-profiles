@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Industrial motherboards for vertical applications, such as digital signage, gaming, kiosk, POS, storage, video surveillance, and other applications; and customer reference boards.&#9;https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=38712955" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Advansus-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Advansus-DeviceRulef9fc5fc9-995f-43d9-94dd-b54e1a06a20e"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Advansus_Corp" expression="Advansus-DeviceRulef9fc5fc9-995f-43d9-94dd-b54e1a06a20eCheckfcde57f7-c4cf-4c01-9753-5d1dc3fd5775" name="Advansus-DeviceRulef9fc5fc9-995f-43d9-94dd-b54e1a06a20e" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Advansus Corp" description="MAC OUI CONTAINS Advansus Corp" name="Advansus-DeviceRulef9fc5fc9-995f-43d9-94dd-b54e1a06a20eCheckfcde57f7-c4cf-4c01-9753-5d1dc3fd5775" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

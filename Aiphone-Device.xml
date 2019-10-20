@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Intercom and wireless video equipment&#9;https://www.aiphone.net/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Aiphone-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Aiphone-DeviceRule7e8c9ca3-5385-4239-970d-338114e5d475"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Aiphone_co" expression="Aiphone-DeviceRule7e8c9ca3-5385-4239-970d-338114e5d475Check6dc745a4-adce-4198-9454-003a702a67d0" name="Aiphone-DeviceRule7e8c9ca3-5385-4239-970d-338114e5d475" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Aiphone co" description="MAC OUI CONTAINS Aiphone co" name="Aiphone-DeviceRule7e8c9ca3-5385-4239-970d-338114e5d475Check6dc745a4-adce-4198-9454-003a702a67d0" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

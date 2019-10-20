@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Model-based integration systems&#9;https://www.adi.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="ADI-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="ADI-DeviceRule03b49b85-c8b6-4365-9ee6-f64e051c8905"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_APPLIED_DYNAMICS" expression="ADI-DeviceRule03b49b85-c8b6-4365-9ee6-f64e051c8905Check45d0ebbd-e07f-46ba-9cd4-cb02f3996939" name="ADI-DeviceRule03b49b85-c8b6-4365-9ee6-f64e051c8905" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="APPLIED DYNAMICS" description="MAC OUI CONTAINS APPLIED DYNAMICS" name="ADI-DeviceRule03b49b85-c8b6-4365-9ee6-f64e051c8905Check45d0ebbd-e07f-46ba-9cd4-cb02f3996939" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

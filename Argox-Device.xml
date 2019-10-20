@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Argox is one of the three suppliers who provide label printer, barcode scanner, and mobile computers&#9;http://www.argox.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Argox-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Argox-DeviceRule595f83d1-0869-4929-aeca-68789de0b977"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Argox_Information" expression="Argox-DeviceRule595f83d1-0869-4929-aeca-68789de0b977Checkb1fe3f00-72b1-4e9c-a768-545eafbab2df" name="Argox-DeviceRule595f83d1-0869-4929-aeca-68789de0b977" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Argox Information" description="MAC OUI CONTAINS Argox Information" name="Argox-DeviceRule595f83d1-0869-4929-aeca-68789de0b977Checkb1fe3f00-72b1-4e9c-a768-545eafbab2df" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

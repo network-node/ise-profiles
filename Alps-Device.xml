@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IoT Smart Modules&#9;https://www.alps.com/e/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Alps-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Alps-DeviceRulef82f5626-fa00-4391-9442-a14234623c17"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_ALPS_ELECTRIC" expression="Alps-DeviceRulef82f5626-fa00-4391-9442-a14234623c17Check66e29d83-8d4d-411a-b3a2-aae8c87ac590" name="Alps-DeviceRulef82f5626-fa00-4391-9442-a14234623c17" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="ALPS ELECTRIC" description="MAC OUI CONTAINS ALPS ELECTRIC" name="Alps-DeviceRulef82f5626-fa00-4391-9442-a14234623c17Check66e29d83-8d4d-411a-b3a2-aae8c87ac590" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

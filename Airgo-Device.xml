@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Airgo-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Airgo-DeviceRuleaac4b5bc-1cd9-4122-865c-0eba56d95485"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Airgo_Networks" expression="Airgo-DeviceRuleaac4b5bc-1cd9-4122-865c-0eba56d95485Checkb310acdf-4bba-40fd-9a41-e568242783c1" name="Airgo-DeviceRuleaac4b5bc-1cd9-4122-865c-0eba56d95485" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Airgo Networks" description="MAC OUI CONTAINS Airgo Networks" name="Airgo-DeviceRuleaac4b5bc-1cd9-4122-865c-0eba56d95485Checkb310acdf-4bba-40fd-9a41-e568242783c1" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

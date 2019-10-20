@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Wireless screen monitoring and digitial signage&#9;https://airtame.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Airtame-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Airtame-DeviceRule0444f4b5-9680-4175-b75c-0e6ba822d325"/>
+<PolicyRule certaintyFactor="5" name="Airtame-DeviceRule54006f14-8726-4f47-827f-604a7fcc0a9d"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_AIRTAME" expression="Airtame-DeviceRule0444f4b5-9680-4175-b75c-0e6ba822d325Checkae8b0304-3b99-455d-8488-abb583003736" name="Airtame-DeviceRule0444f4b5-9680-4175-b75c-0e6ba822d325" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_Linux" expression="Airtame-DeviceRule54006f14-8726-4f47-827f-604a7fcc0a9dCheck84affefb-3189-4142-bbc3-5ae3af496d1a" name="Airtame-DeviceRule54006f14-8726-4f47-827f-604a7fcc0a9d" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="AIRTAME" description="MAC OUI CONTAINS AIRTAME" name="Airtame-DeviceRule0444f4b5-9680-4175-b75c-0e6ba822d325Checkae8b0304-3b99-455d-8488-abb583003736" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="Linux" description="IP User-Agent CONTAINS Linux" name="Airtame-DeviceRule54006f14-8726-4f47-827f-604a7fcc0a9dCheck84affefb-3189-4142-bbc3-5ae3af496d1a" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

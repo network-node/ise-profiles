@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="These are small form factor computers used for a variety of IoT uses and industrial boards&#9;https://www.asrock.com/index.us.asp" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="ASRock-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="ASRock-DeviceRule2c1a805f-78a4-42c6-a7e1-6cc140cbdea9"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_ASRock" expression="ASRock-DeviceRule2c1a805f-78a4-42c6-a7e1-6cc140cbdea9Check69b3cf4d-0d3a-4359-9223-f28057e4673b" name="ASRock-DeviceRule2c1a805f-78a4-42c6-a7e1-6cc140cbdea9" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="ASRock" description="MAC OUI CONTAINS ASRock" name="ASRock-DeviceRule2c1a805f-78a4-42c6-a7e1-6cc140cbdea9Check69b3cf4d-0d3a-4359-9223-f28057e4673b" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

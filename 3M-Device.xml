@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for 3M devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="3M-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="3M-Device-Rule1"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="3M-Device-Rule1" expression="3M-Device-OUI-Check1" name="3M-Device-Rule1" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="3M" description="Condition for 3M devices based on OUI" name="3M-Device-OUI-Check1" operator="Starts with" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

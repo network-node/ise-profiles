@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Small form factor devices for digitial hospitalizations&#9;https://www.avalue.com.tw/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="50" name="Avalue-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="50" name="Avalue-DeviceRule32eba1a6-a117-418a-82ae-901aa7530b3f"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Avalue_Technology" expression="Avalue-DeviceRule32eba1a6-a117-418a-82ae-901aa7530b3fCheckf35bb184-5974-4bec-a4c2-d066cbbbd262" name="Avalue-DeviceRule32eba1a6-a117-418a-82ae-901aa7530b3f" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Avalue Technology" description="MAC OUI CONTAINS Avalue Technology" name="Avalue-DeviceRule32eba1a6-a117-418a-82ae-901aa7530b3fCheckf35bb184-5974-4bec-a4c2-d066cbbbd262" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Display and speaker company&#9;https://www.anetd.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="AND-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="AND-DeviceRule9254eedb-07c2-4250-9cab-e46c1c4246dd"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Advanced_Network_Devices" expression="AND-DeviceRule9254eedb-07c2-4250-9cab-e46c1c4246ddChecke1ee688b-c639-42b9-a148-6c31cb4d7af8" name="AND-DeviceRule9254eedb-07c2-4250-9cab-e46c1c4246dd" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Advanced Network Devices" description="MAC OUI CONTAINS Advanced Network Devices" name="AND-DeviceRule9254eedb-07c2-4250-9cab-e46c1c4246ddChecke1ee688b-c639-42b9-a148-6c31cb4d7af8" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

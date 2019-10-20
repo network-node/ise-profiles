@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="ASEM-SpA-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="ASEM-SpA-DeviceRule515c83d4-adde-4034-b26c-5931af760c52"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_ASEM_SpA" expression="ASEM-SpA-DeviceRule515c83d4-adde-4034-b26c-5931af760c52Check0c480a84-0b4e-4f39-9ed4-41d7714e7801" name="ASEM-SpA-DeviceRule515c83d4-adde-4034-b26c-5931af760c52" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="ASEM SpA" description="MAC OUI CONTAINS ASEM SpA" name="ASEM-SpA-DeviceRule515c83d4-adde-4034-b26c-5931af760c52Check0c480a84-0b4e-4f39-9ed4-41d7714e7801" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
