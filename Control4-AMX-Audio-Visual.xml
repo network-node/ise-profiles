@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Control4-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Control4-DeviceRulec20530b3-d0e5-438e-a411-6319a1fa5c9b"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Control4-AMX-Audio-Visual" parentFQN="Control4-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Control4-AMX-Audio-VisualRule870e1783-9846-4d17-b8f2-000a8ddb25b5"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_PHAST_CORPORATION" expression="Control4-DeviceRulec20530b3-d0e5-438e-a411-6319a1fa5c9bCheckccfef15f-ea44-47fc-b742-844a90de43d2" name="Control4-DeviceRulec20530b3-d0e5-438e-a411-6319a1fa5c9b" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_amx" expression="Control4-AMX-Audio-VisualRule870e1783-9846-4d17-b8f2-000a8ddb25b5Checkbb1a83bb-1d6f-4358-9eef-f248f92ed973" name="Control4-AMX-Audio-VisualRule870e1783-9846-4d17-b8f2-000a8ddb25b5" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="PHAST CORPORATION" description="MAC OUI CONTAINS PHAST CORPORATION" name="Control4-DeviceRulec20530b3-d0e5-438e-a411-6319a1fa5c9bCheckccfef15f-ea44-47fc-b742-844a90de43d2" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="amx" description="DHCP host-name CONTAINS amx" name="Control4-AMX-Audio-VisualRule870e1783-9846-4d17-b8f2-000a8ddb25b5Checkbb1a83bb-1d6f-4358-9eef-f248f92ed973" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

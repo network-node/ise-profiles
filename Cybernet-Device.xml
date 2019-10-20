@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Cybernet-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Cybernet-DeviceRule254cfd4f-241e-4ca4-8d24-de58e9568b9c"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_cybernet_manufacturing" expression="Cybernet-DeviceRule254cfd4f-241e-4ca4-8d24-de58e9568b9cCheckddd2fff4-f638-4f2b-80df-d894ef42cbd7" name="Cybernet-DeviceRule254cfd4f-241e-4ca4-8d24-de58e9568b9c" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="cybernet manufacturing" description="MAC OUI CONTAINS cybernet manufacturing" name="Cybernet-DeviceRule254cfd4f-241e-4ca4-8d24-de58e9568b9cCheckddd2fff4-f638-4f2b-80df-d894ef42cbd7" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

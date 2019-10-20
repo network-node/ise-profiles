@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="DEC-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="DEC-DeviceRulee2ead7af-264b-4368-acee-85c765085356"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_DIGITAL_EQUIPMENT_CORPORATION" expression="DEC-DeviceRulee2ead7af-264b-4368-acee-85c765085356Checked9beaac-0233-4f81-bd02-0410f2fd7c7c" name="DEC-DeviceRulee2ead7af-264b-4368-acee-85c765085356" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="DIGITAL EQUIPMENT CORPORATION" description="MAC OUI CONTAINS DIGITAL EQUIPMENT CORPORATION" name="DEC-DeviceRulee2ead7af-264b-4368-acee-85c765085356Checked9beaac-0233-4f81-bd02-0410f2fd7c7c" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

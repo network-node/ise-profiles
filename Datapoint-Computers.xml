@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Datapoint-Computers" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Datapoint-ComputersRule973e1287-1c03-4597-af58-cbb331b44c93"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_DATAPOINT_CORPORATION" expression="Datapoint-ComputersRule973e1287-1c03-4597-af58-cbb331b44c93Check54c44b35-be4b-47e0-90c8-7436ef9f4db4" name="Datapoint-ComputersRule973e1287-1c03-4597-af58-cbb331b44c93" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="DATAPOINT CORPORATION" description="MAC OUI CONTAINS DATAPOINT CORPORATION" name="Datapoint-ComputersRule973e1287-1c03-4597-af58-cbb331b44c93Check54c44b35-be4b-47e0-90c8-7436ef9f4db4" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

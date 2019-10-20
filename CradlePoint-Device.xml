@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Industrial routers and wifi&#9;https://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=DChcSEwjCp5D6vLXiAhVJH60GHWi9BVwYABAAGgJwdg&amp;ohost=www.google.com&amp;cid=CAESEeD2TqBIU8AueSPOQ5UQIW98&amp;sig=AOD64_1wcFX2jFyoSSA3DLlOCFFIR2j64Q&amp;q=&amp;ved=2ahUKEwilvYX6vLXiAhUmjVQKHe5fAiAQ0Qx6BAgLEAE&amp;adurl=&amp;bg=!t7SltKxEHihyyCqwAtECAAAAK1IAAAADCgAxUNgOWIPDczLE5yQeaZtVX6gHPRTUqraoVmnEcuTle5UmFklpfMLHqphHFalzCH2wa5kA-N0mSLdgswmHpsGtiPwYXiDE6swMZZ1gn2of8-kRNfGITFTj6jz1dMIMPUGxdUqCxN9CyyrGOUDLAj-w9XF47yvPJHTqrJwLEsk3d9JtF9QiWNtVhaWDs6E_kMEaASrEFOw-oh-R8xMcYAo0bKEGb5HQPFYFeUDQ7ySsPX7o6tVd7IGJB0I5kil5f4V2OtnXU0PAKjxRPp9rlYU8DyG-YjxTjS1gTaUBuirl5inH3oA2t-FL7c4E-wLgZTp1iQ2GKjf_o1ljfJqWFvNymu6_2agNnLTzRGtnU9J3Lrz__M--H9oVIFmVt5n8vAb3m-IfprjnQXV1-U1q" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="15" name="CradlePoint-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="15" name="CradlePoint-DeviceRule55628d2b-e80c-42f2-8bf5-8f117e91d5bc"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_CradlePoint" expression="CradlePoint-DeviceRule55628d2b-e80c-42f2-8bf5-8f117e91d5bcCheck3dc71c8a-aa1f-4864-97cf-4046058c0b81" name="CradlePoint-DeviceRule55628d2b-e80c-42f2-8bf5-8f117e91d5bc" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="CradlePoint" description="MAC OUI CONTAINS CradlePoint" name="CradlePoint-DeviceRule55628d2b-e80c-42f2-8bf5-8f117e91d5bcCheck3dc71c8a-aa1f-4864-97cf-4046058c0b81" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

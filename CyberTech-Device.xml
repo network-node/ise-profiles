@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Spatial analytics company&#9;https://www.cybertech.com/Product" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="CyberTech-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="CyberTech-DeviceRule6a9b6704-72b6-47ae-bd5f-06a1d295a6d7"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Sunniwell_Cyber_Tech" expression="CyberTech-DeviceRule6a9b6704-72b6-47ae-bd5f-06a1d295a6d7Checka0cee385-1f1e-4f72-b7ae-0629e0e71a05" name="CyberTech-DeviceRule6a9b6704-72b6-47ae-bd5f-06a1d295a6d7" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Sunniwell Cyber Tech" description="MAC OUI CONTAINS Sunniwell Cyber Tech" name="CyberTech-DeviceRule6a9b6704-72b6-47ae-bd5f-06a1d295a6d7Checka0cee385-1f1e-4f72-b7ae-0629e0e71a05" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

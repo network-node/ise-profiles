@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Infrastructure and automation vendor&#9;https://www.deltaww.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Delta-Electronics-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Delta-Electronics-DeviceRulec397fb2e-65e8-4649-a454-62ae2f020175"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Delta_Electronics" expression="Delta-Electronics-DeviceRulec397fb2e-65e8-4649-a454-62ae2f020175Check5e6b4283-9c17-4472-a93b-e9a1e23c5795" name="Delta-Electronics-DeviceRulec397fb2e-65e8-4649-a454-62ae2f020175" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Delta Electronics" description="MAC OUI CONTAINS Delta Electronics" name="Delta-Electronics-DeviceRulec397fb2e-65e8-4649-a454-62ae2f020175Check5e6b4283-9c17-4472-a93b-e9a1e23c5795" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

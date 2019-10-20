@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Mobile Phone Vendor" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Coolpad-Phone" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Coolpad-PhoneRule8a284866-1721-4d47-841f-f40a17b5400f"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Yulong_Computer_Telecommunication" expression="Coolpad-PhoneRule8a284866-1721-4d47-841f-f40a17b5400fCheck4fc61fe3-1426-4ef3-9d7a-45ee8f056bc0" name="Coolpad-PhoneRule8a284866-1721-4d47-841f-f40a17b5400f" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Yulong Computer Telecommunication" description="MAC OUI CONTAINS Yulong Computer Telecommunication" name="Coolpad-PhoneRule8a284866-1721-4d47-841f-f40a17b5400fCheck4fc61fe3-1426-4ef3-9d7a-45ee8f056bc0" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

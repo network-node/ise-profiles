@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Yulong-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Yulong-DeviceRule0f79cda6-bdb7-4685-97f1-7c34dda3fe55"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Coolpad" parentFQN="Yulong-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="CoolpadRule8648b0aa-f3f5-416d-abd5-354f320a7f4d"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Yulong_Computer" expression="Yulong-DeviceRule0f79cda6-bdb7-4685-97f1-7c34dda3fe55Check1ec3c13e-1408-4c89-82b9-f701fb3a7137" name="Yulong-DeviceRule0f79cda6-bdb7-4685-97f1-7c34dda3fe55" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_cp3705A_OR_IP_User-Agent_CONTAINS_Coolpad" expression="CoolpadRule8648b0aa-f3f5-416d-abd5-354f320a7f4dCheck62086e4b-4448-427d-b169-d463e46afaa4 | CoolpadRule8648b0aa-f3f5-416d-abd5-354f320a7f4dCheck7fb89331-a4ba-408c-8b4e-27579bf67be3" name="CoolpadRule8648b0aa-f3f5-416d-abd5-354f320a7f4d" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Yulong Computer" description="MAC OUI CONTAINS Yulong Computer" name="Yulong-DeviceRule0f79cda6-bdb7-4685-97f1-7c34dda3fe55Check1ec3c13e-1408-4c89-82b9-f701fb3a7137" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="cp3705A" description="IP User-Agent CONTAINS cp3705A" name="CoolpadRule8648b0aa-f3f5-416d-abd5-354f320a7f4dCheck62086e4b-4448-427d-b169-d463e46afaa4" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Coolpad" description="IP User-Agent CONTAINS Coolpad" name="CoolpadRule8648b0aa-f3f5-416d-abd5-354f320a7f4dCheck7fb89331-a4ba-408c-8b4e-27579bf67be3" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

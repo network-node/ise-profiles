@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Manufacturer of embedded systems and industrial PCS&#9;https://www.compulab.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="25" name="CompuLab-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="25" name="CompuLab-DeviceRulea44be89f-eaff-4109-b855-43ba716b83f5"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_CompuLab" expression="CompuLab-DeviceRulea44be89f-eaff-4109-b855-43ba716b83f5Checkf8c21c6a-6227-4f68-90af-7d7b2ce24d2e" name="CompuLab-DeviceRulea44be89f-eaff-4109-b855-43ba716b83f5" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="CompuLab" description="MAC OUI CONTAINS CompuLab" name="CompuLab-DeviceRulea44be89f-eaff-4109-b855-43ba716b83f5Checkf8c21c6a-6227-4f68-90af-7d7b2ce24d2e" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

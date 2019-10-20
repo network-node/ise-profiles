@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Datamax-Device" scanActionName="OS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="-3" name="Datamax-DeviceRulef94f0d5a-cdb5-4c27-8c40-1095f7f958bd"/>
+<PolicyRule certaintyFactor="20" name="Datamax-DeviceRule0e322a62-ca1e-4917-a951-c801cc1534c3"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Datamax" expression="Datamax-DeviceRulef94f0d5a-cdb5-4c27-8c40-1095f7f958bdCheck0d86871d-f4cd-4285-b634-cf301fa4f753" name="Datamax-DeviceRulef94f0d5a-cdb5-4c27-8c40-1095f7f958bd" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Datamax" expression="Datamax-DeviceRule0e322a62-ca1e-4917-a951-c801cc1534c3Checkce673b69-8c41-41f9-945b-637a1b5b2e6e" name="Datamax-DeviceRule0e322a62-ca1e-4917-a951-c801cc1534c3" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Datamax" description="MAC OUI CONTAINS Datamax" name="Datamax-DeviceRulef94f0d5a-cdb5-4c27-8c40-1095f7f958bdCheck0d86871d-f4cd-4285-b634-cf301fa4f753" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Datamax" description="MAC OUI CONTAINS Datamax" name="Datamax-DeviceRule0e322a62-ca1e-4917-a951-c801cc1534c3Checkce673b69-8c41-41f9-945b-637a1b5b2e6e" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system detection." name="OS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="false">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

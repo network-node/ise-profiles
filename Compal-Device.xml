@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Compal-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Blu-DeviceRule9d1c7eb5-02a6-4427-ab8e-7c152ad184d6_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_COMPAL_INFORMATION" expression="Blu-DeviceRule9d1c7eb5-02a6-4427-ab8e-7c152ad184d6Checkd3ddde23-6ecb-4891-9e3f-540774804de1_copy_copy_copy" name="Blu-DeviceRule9d1c7eb5-02a6-4427-ab8e-7c152ad184d6_copy_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="COMPAL INFORMATION" description="MAC OUI CONTAINS COMPAL INFORMATION" name="Blu-DeviceRule9d1c7eb5-02a6-4427-ab8e-7c152ad184d6Checkd3ddde23-6ecb-4891-9e3f-540774804de1_copy_copy_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

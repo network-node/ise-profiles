@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Supplier of industrial computer modules&#9;https://www.congatec.com/en.html" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Congatec-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Congatec-DeviceRule5eee72c4-8997-4280-8a56-579b0c24244b"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_congatec" expression="Congatec-DeviceRule5eee72c4-8997-4280-8a56-579b0c24244bCheck683731ee-3bc1-44bd-a808-7f5604dc87d5" name="Congatec-DeviceRule5eee72c4-8997-4280-8a56-579b0c24244b" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="congatec" description="MAC OUI CONTAINS congatec" name="Congatec-DeviceRule5eee72c4-8997-4280-8a56-579b0c24244bCheck683731ee-3bc1-44bd-a808-7f5604dc87d5" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

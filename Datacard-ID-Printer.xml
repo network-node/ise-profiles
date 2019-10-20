@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="ID Card printer&#9;https://www.datacard.com/index.jhtml" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Datacard-ID-Printer" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Datacard-ID-PrinterRule500f608e-6183-49c2-b1cb-b227e4707709"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Datacard_Group" expression="Datacard-ID-PrinterRule500f608e-6183-49c2-b1cb-b227e4707709Checkd7a785a6-ffdf-4ec3-a52f-0aa217624ca4" name="Datacard-ID-PrinterRule500f608e-6183-49c2-b1cb-b227e4707709" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Datacard Group" description="MAC OUI CONTAINS Datacard Group" name="Datacard-ID-PrinterRule500f608e-6183-49c2-b1cb-b227e4707709Checkd7a785a6-ffdf-4ec3-a52f-0aa217624ca4" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
