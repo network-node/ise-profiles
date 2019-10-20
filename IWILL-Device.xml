@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="IWILL-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="IWILL-DeviceRule2ba304a2-056b-414f-b892-023ffe39f427"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_IWILL_CORPORATION" expression="IWILL-DeviceRule2ba304a2-056b-414f-b892-023ffe39f427Check35de0dac-0c54-458e-b45a-47c28ce07da0" name="IWILL-DeviceRule2ba304a2-056b-414f-b892-023ffe39f427" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="IWILL CORPORATION" description="MAC OUI CONTAINS IWILL CORPORATION" name="IWILL-DeviceRule2ba304a2-056b-414f-b892-023ffe39f427Check35de0dac-0c54-458e-b45a-47c28ce07da0" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

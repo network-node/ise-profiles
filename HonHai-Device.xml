@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="HonHai-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="HonHai-DeviceRule5ec2efd7-d9fa-46ba-8b3e-c2aacca8dce0"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Hon_Hai_Precision" expression="HonHai-DeviceRule5ec2efd7-d9fa-46ba-8b3e-c2aacca8dce0Check674f9b9b-e97c-4bde-8ec4-42e6a4f8d7e0" name="HonHai-DeviceRule5ec2efd7-d9fa-46ba-8b3e-c2aacca8dce0" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Hon Hai Precision" description="MAC OUI CONTAINS Hon Hai Precision" name="HonHai-DeviceRule5ec2efd7-d9fa-46ba-8b3e-c2aacca8dce0Check674f9b9b-e97c-4bde-8ec4-42e6a4f8d7e0" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

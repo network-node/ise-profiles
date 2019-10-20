@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Gigabyte-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Advantech-DeviceRulebab37fc5-ad53-4b7a-9c26-dccb6383a6c0_copy_copy_copy_copy_copy_copy_copy_copy0"/>
+<PolicyRule certaintyFactor="10" name="Gigabyte-DeviceRule0483afff-9db2-475b-bfbb-0d066c661fd7"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_GIGA-BYTE" expression="Advantech-DeviceRulebab37fc5-ad53-4b7a-9c26-dccb6383a6c0Checkd663db53-4f0f-4783-86bf-a02a52bf0c73_copy_copy_copy_copy_copy_copy_copy_copy0" name="Advantech-DeviceRulebab37fc5-ad53-4b7a-9c26-dccb6383a6c0_copy_copy_copy_copy_copy_copy_copy_copy0" ruleType="Regular"/>
+<Rule description="ACIDEX_device-type_CONTAINS_Gigabyte_Technology" expression="Gigabyte-DeviceRule0483afff-9db2-475b-bfbb-0d066c661fd7Checkcf77edc0-d8ae-44c9-8bee-824ccc5e9b47" name="Gigabyte-DeviceRule0483afff-9db2-475b-bfbb-0d066c661fd7" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="GIGA-BYTE" description="MAC OUI CONTAINS GIGA-BYTE" name="Advantech-DeviceRulebab37fc5-ad53-4b7a-9c26-dccb6383a6c0Checkd663db53-4f0f-4783-86bf-a02a52bf0c73_copy_copy_copy_copy_copy_copy_copy_copy0" operator="Contains" type="Mac"/>
+<Check attributeName="device-type" attributeValue="Gigabyte Technology" description="ACIDEX device-type CONTAINS Gigabyte Technology" name="Gigabyte-DeviceRule0483afff-9db2-475b-bfbb-0d066c661fd7Checkcf77edc0-d8ae-44c9-8bee-824ccc5e9b47" operator="Contains" type="ACIDEX"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

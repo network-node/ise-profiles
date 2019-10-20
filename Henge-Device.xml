@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Henge-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eea_copy16"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Henge_Docks" expression="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eeaCheckcabb93a6-385f-4b85-a274-3bd195801182_copy16" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eea_copy16" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Henge Docks" description="MAC OUI CONTAINS Henge Docks" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eeaCheckcabb93a6-385f-4b85-a274-3bd195801182_copy16" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

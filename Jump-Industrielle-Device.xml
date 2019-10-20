@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Single board computer company&#9;https://www.find-us-here.com/businesses/Jump-Industrielle-Computertechnik-Gmbh-Hayward-California-USA/2268188/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Jump-Industrielle-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Johnson-ControlsRule214c8d26-835c-4c4b-bd9b-8d04e52da9f2_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_JUMP_INDUSTRIELLE" expression="Johnson-ControlsRule214c8d26-835c-4c4b-bd9b-8d04e52da9f2Checkd12fc4b7-bf54-4b90-8f98-19a9bd80ab40_copy" name="Johnson-ControlsRule214c8d26-835c-4c4b-bd9b-8d04e52da9f2_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="JUMP INDUSTRIELLE" description="MAC OUI CONTAINS JUMP INDUSTRIELLE" name="Johnson-ControlsRule214c8d26-835c-4c4b-bd9b-8d04e52da9f2Checkd12fc4b7-bf54-4b90-8f98-19a9bd80ab40_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

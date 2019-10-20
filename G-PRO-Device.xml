@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="G-PRO-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="G-PRO-DeviceRule5f67deb0-75ad-41ab-b3e6-6fcbe2488732"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_G-PRO" expression="G-PRO-DeviceRule5f67deb0-75ad-41ab-b3e6-6fcbe2488732Checkf1176089-74cd-4424-acbe-ab74c5ecaaaa" name="G-PRO-DeviceRule5f67deb0-75ad-41ab-b3e6-6fcbe2488732" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="G-PRO" description="MAC OUI CONTAINS G-PRO" name="G-PRO-DeviceRule5f67deb0-75ad-41ab-b3e6-6fcbe2488732Checkf1176089-74cd-4424-acbe-ab74c5ecaaaa" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

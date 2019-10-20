@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IPTV Vendor&#9;https://www.haivision.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Haivision-Video-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Haivision-Video-DeviceRuleb6dc5218-e252-4c7d-9fc1-68eee4aa9646"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Haivision" expression="Haivision-Video-DeviceRuleb6dc5218-e252-4c7d-9fc1-68eee4aa9646Checkc50a0647-169d-4fb4-a0e4-8269cf74318b" name="Haivision-Video-DeviceRuleb6dc5218-e252-4c7d-9fc1-68eee4aa9646" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Haivision" description="MAC OUI CONTAINS Haivision" name="Haivision-Video-DeviceRuleb6dc5218-e252-4c7d-9fc1-68eee4aa9646Checkc50a0647-169d-4fb4-a0e4-8269cf74318b" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

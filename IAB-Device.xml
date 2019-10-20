@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="IAB-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="IAB-DeviceRule23b8135b-3eb1-4613-873b-a34b96168642"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_IEEE_Registration" expression="IAB-DeviceRule23b8135b-3eb1-4613-873b-a34b96168642Check610d9dd9-c89d-4ac5-8f1d-785eaa2e3688" name="IAB-DeviceRule23b8135b-3eb1-4613-873b-a34b96168642" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="IEEE Registration" description="MAC OUI CONTAINS IEEE Registration" name="IAB-DeviceRule23b8135b-3eb1-4613-873b-a34b96168642Check610d9dd9-c89d-4ac5-8f1d-785eaa2e3688" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

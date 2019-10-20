@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Timeclock Vendor&#9;https://www.kronos.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="50" name="Kronos-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="50" name="Kronos-DeviceRule24e67791-bedb-4d22-a11d-524fcac780c2"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_KRONOS" expression="Kronos-DeviceRule24e67791-bedb-4d22-a11d-524fcac780c2Check9371a933-7e5d-455c-8471-9e014838a568" name="Kronos-DeviceRule24e67791-bedb-4d22-a11d-524fcac780c2" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="KRONOS" description="MAC OUI CONTAINS KRONOS" name="Kronos-DeviceRule24e67791-bedb-4d22-a11d-524fcac780c2Check9371a933-7e5d-455c-8471-9e014838a568" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

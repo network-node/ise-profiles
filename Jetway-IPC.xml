@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Large manufacturer of industrial PCs&#9;http://www.jetwayipc.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Jetway-IPC" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Jetway-IPCRulebc96d884-2a03-4422-9e74-0769a8b3ae24"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Jetway_Information" expression="Jetway-IPCRulebc96d884-2a03-4422-9e74-0769a8b3ae24Check06a82711-fe43-40f2-aa66-c453f0254064" name="Jetway-IPCRulebc96d884-2a03-4422-9e74-0769a8b3ae24" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Jetway Information" description="MAC OUI CONTAINS Jetway Information" name="Jetway-IPCRulebc96d884-2a03-4422-9e74-0769a8b3ae24Check06a82711-fe43-40f2-aa66-c453f0254064" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

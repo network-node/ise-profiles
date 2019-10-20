@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Server and IoT manufacturer - Also added SCAN action for SNMP&#9;http://www.kcodes.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="KCodes-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="KCodes-DeviceRule32348e9f-7d6e-4023-bdbb-25276b08532c"/>
+<PolicyRule certaintyFactor="-3" name="KCodes-DeviceRuled1988841-260e-4e94-adee-ce623608472e"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_KCodes" expression="KCodes-DeviceRule32348e9f-7d6e-4023-bdbb-25276b08532cCheck8a7636bd-eb39-42e1-b0f6-7960e676602b" name="KCodes-DeviceRule32348e9f-7d6e-4023-bdbb-25276b08532c" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_KCodes" expression="KCodes-DeviceRuled1988841-260e-4e94-adee-ce623608472eCheck7d29ead0-f0b3-49c9-b416-ebbdfbde8102" name="KCodes-DeviceRuled1988841-260e-4e94-adee-ce623608472e" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="KCodes" description="MAC OUI CONTAINS KCodes" name="KCodes-DeviceRule32348e9f-7d6e-4023-bdbb-25276b08532cCheck8a7636bd-eb39-42e1-b0f6-7960e676602b" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="KCodes" description="MAC OUI CONTAINS KCodes" name="KCodes-DeviceRuled1988841-260e-4e94-adee-ce623608472eCheck7d29ead0-f0b3-49c9-b416-ebbdfbde8102" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

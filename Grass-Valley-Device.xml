@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Grass-Valley-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Grass-Valley-DeviceRule5249cc65-05c9-4210-8f42-8707ae836f50"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Grass_Valley" expression="Grass-Valley-DeviceRule5249cc65-05c9-4210-8f42-8707ae836f50Check558ca4c6-5a8b-408a-b7d3-3e82d7065471" name="Grass-Valley-DeviceRule5249cc65-05c9-4210-8f42-8707ae836f50" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Grass Valley" description="MAC OUI CONTAINS Grass Valley" name="Grass-Valley-DeviceRule5249cc65-05c9-4210-8f42-8707ae836f50Check558ca4c6-5a8b-408a-b7d3-3e82d7065471" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

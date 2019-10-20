@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Good-Way-Docking-Station" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eea_copy14"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_GOOD_WAY_IND" expression="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eeaCheckcabb93a6-385f-4b85-a274-3bd195801182_copy14" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eea_copy14" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="GOOD WAY IND" description="MAC OUI CONTAINS GOOD WAY IND" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eeaCheckcabb93a6-385f-4b85-a274-3bd195801182_copy14" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

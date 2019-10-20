@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IP Telecom Manufacturer - https://www.2nusa.com/en_US/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="2n-Telekomunikace-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cd"/>
+</PolicyRules>
+</Policy>
+<Policy description="IP Telecom Manufacturer - https://www.2nusa.com/en_US/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Helios-Device" parentFQN="2n-Telekomunikace-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Helios-DeviceRule56588c33-1bb2-465b-8265-a57e14e8bf5b"/>
+<PolicyRule certaintyFactor="5" name="Helios-DeviceRule65e788d7-9f4c-4bdc-bdaf-1916e239b013"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_2N_TELEKOMUNIKACE" expression="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cdCheck1a291cb9-b092-462b-a876-62edc49266c2" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cd" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_2nhelios" expression="Helios-DeviceRule56588c33-1bb2-465b-8265-a57e14e8bf5bCheck0019310b-b2c2-4ca2-9b4d-d65b6446440b" name="Helios-DeviceRule56588c33-1bb2-465b-8265-a57e14e8bf5b" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-parameter-request-list_EQUALS_1,_3,_28,_6,_66,_150" expression="Helios-DeviceRule65e788d7-9f4c-4bdc-bdaf-1916e239b013Checkff00ada9-3f87-40b7-811d-877beca211f0" name="Helios-DeviceRule65e788d7-9f4c-4bdc-bdaf-1916e239b013" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="2N TELEKOMUNIKACE" description="MAC OUI CONTAINS 2N TELEKOMUNIKACE" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cdCheck1a291cb9-b092-462b-a876-62edc49266c2" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="2nhelios" description="DHCP host-name CONTAINS 2nhelios" name="Helios-DeviceRule56588c33-1bb2-465b-8265-a57e14e8bf5bCheck0019310b-b2c2-4ca2-9b4d-d65b6446440b" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 3, 28, 6, 66, 150" description="DHCP dhcp-parameter-request-list EQUALS 1, 3, 28, 6, 66, 150" name="Helios-DeviceRule65e788d7-9f4c-4bdc-bdaf-1916e239b013Checkff00ada9-3f87-40b7-811d-877beca211f0" operator="Equals" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

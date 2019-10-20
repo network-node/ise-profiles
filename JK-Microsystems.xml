@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Manufacturer of Single Board Computers for IoT&#9;http://www.jkmicro.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="JK-Microsystems" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Jetway-IPCRulebc96d884-2a03-4422-9e74-0769a8b3ae24_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_JK_microsystems" expression="Jetway-IPCRulebc96d884-2a03-4422-9e74-0769a8b3ae24Check06a82711-fe43-40f2-aa66-c453f0254064_copy" name="Jetway-IPCRulebc96d884-2a03-4422-9e74-0769a8b3ae24_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="JK microsystems" description="MAC OUI CONTAINS JK microsystems" name="Jetway-IPCRulebc96d884-2a03-4422-9e74-0769a8b3ae24Check06a82711-fe43-40f2-aa66-c453f0254064_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

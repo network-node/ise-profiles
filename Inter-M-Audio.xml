@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Inter-M-Audio" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Inter-M-AudioRulef9f73754-bd0d-40b8-ba2c-979959b4d16c"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Inter-M" expression="Inter-M-AudioRulef9f73754-bd0d-40b8-ba2c-979959b4d16cCheckf888348f-9a94-4853-8e72-5805ede67624" name="Inter-M-AudioRulef9f73754-bd0d-40b8-ba2c-979959b4d16c" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Inter-M" description="MAC OUI CONTAINS Inter-M" name="Inter-M-AudioRulef9f73754-bd0d-40b8-ba2c-979959b4d16cCheckf888348f-9a94-4853-8e72-5805ede67624" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

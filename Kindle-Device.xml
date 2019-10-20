@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for all Android SmartPhones" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Android" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="AndroidRule33"/>
+<PolicyRule certaintyFactor="30" name="AndroidRule2"/>
+<PolicyRule certaintyFactor="30" name="AndroidRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Android Amazon" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="70" name="Amazon-Device" parentFQN="Android" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="70" name="Amazon-DeviceRuleaaf31637-a3e7-4815-921b-8b15202f9721"/>
+<PolicyRule certaintyFactor="70" name="Amazon-DeviceRule6576b254-d465-4d86-a039-760669654214"/>
+<PolicyRule certaintyFactor="70" name="Amazon-DeviceRule85cae89a-d879-4d5b-90fe-c6582b0adbb0"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Kindle-Device" parentFQN="Android:Amazon-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Kindle-DeviceRulead577a27-c0e4-40ee-8234-859cf697cf0e"/>
+<PolicyRule certaintyFactor="10" name="Kindle-DeviceRule8e6b5c71-1e76-4683-bdf0-76755e76bf40"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Android-Rule2-Check1" expression="Android-Rule2-Check1" name="AndroidRule33" ruleType="Regular"/>
+<Rule description="AndroidRule1Check2" expression="AndroidRule1Check2" name="AndroidRule2" ruleType="Regular"/>
+<Rule description="AndroidRule1Check1" expression="AndroidRule1Check1" name="AndroidRule1" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_amazon-" expression="Amazon-DeviceRuleaaf31637-a3e7-4815-921b-8b15202f9721Checkf6d9daac-3406-48e0-b82d-2cb571042899" name="Amazon-DeviceRuleaaf31637-a3e7-4815-921b-8b15202f9721" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_kindle-" expression="Amazon-DeviceRule6576b254-d465-4d86-a039-760669654214Check13ae0239-15dd-4768-8bb7-76bb205df727" name="Amazon-DeviceRule6576b254-d465-4d86-a039-760669654214" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Amazon_Technologies" expression="Amazon-DeviceRule85cae89a-d879-4d5b-90fe-c6582b0adbb0Checka49dd864-2e32-4e49-adf9-015174b8b992" name="Amazon-DeviceRule85cae89a-d879-4d5b-90fe-c6582b0adbb0" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_kindle-" expression="Kindle-DeviceRulead577a27-c0e4-40ee-8234-859cf697cf0eCheckc174e137-9bd0-4f83-a245-a03897266245" name="Kindle-DeviceRulead577a27-c0e4-40ee-8234-859cf697cf0e" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_kindle" expression="Kindle-DeviceRule8e6b5c71-1e76-4683-bdf0-76755e76bf40Check191d45fc-0201-4609-ba25-023b744332ee" name="Kindle-DeviceRule8e6b5c71-1e76-4683-bdf0-76755e76bf40" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="device-platform" attributeValue="android" description="Condition for Android based on ACIDEX:device-platform" name="Android-Rule2-Check1" operator="Equals" type="ACIDEX"/>
+<Check attributeName="host-name" attributeValue="android" description="AndroidRule1Check2" name="AndroidRule1Check2" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="Android" description="AndroidRule1Check1" name="AndroidRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="amazon-" description="DHCP host-name CONTAINS amazon-" name="Amazon-DeviceRuleaaf31637-a3e7-4815-921b-8b15202f9721Checkf6d9daac-3406-48e0-b82d-2cb571042899" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="kindle-" description="DHCP host-name CONTAINS kindle-" name="Amazon-DeviceRule6576b254-d465-4d86-a039-760669654214Check13ae0239-15dd-4768-8bb7-76bb205df727" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Amazon Technologies" description="MAC OUI CONTAINS Amazon Technologies" name="Amazon-DeviceRule85cae89a-d879-4d5b-90fe-c6582b0adbb0Checka49dd864-2e32-4e49-adf9-015174b8b992" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="kindle-" description="DHCP host-name CONTAINS kindle-" name="Kindle-DeviceRulead577a27-c0e4-40ee-8234-859cf697cf0eCheckc174e137-9bd0-4f83-a245-a03897266245" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="kindle" description="IP FQDN CONTAINS kindle" name="Kindle-DeviceRule8e6b5c71-1e76-4683-bdf0-76755e76bf40Check191d45fc-0201-4609-ba25-023b744332ee" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

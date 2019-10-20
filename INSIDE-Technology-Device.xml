@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="INSIDE Technology A/S develops and manufactures, Single Board Computers (SBC's) for support of Flat Panel Displays.&#9;https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=890700" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="INSIDE-Technology-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Inter-M-AudioRulef9f73754-bd0d-40b8-ba2c-979959b4d16c_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_INSIDE_Technology" expression="Inter-M-AudioRulef9f73754-bd0d-40b8-ba2c-979959b4d16cCheckf888348f-9a94-4853-8e72-5805ede67624_copy" name="Inter-M-AudioRulef9f73754-bd0d-40b8-ba2c-979959b4d16c_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="INSIDE Technology" description="MAC OUI CONTAINS INSIDE Technology" name="Inter-M-AudioRulef9f73754-bd0d-40b8-ba2c-979959b4d16cCheckf888348f-9a94-4853-8e72-5805ede67624_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
