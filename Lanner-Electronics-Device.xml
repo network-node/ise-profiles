@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Lanner-Electronics-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Lanner-Electronics-DeviceRuleac5c3afc-a226-45af-a5e2-336c3bb6e41e"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_LANNER_ELECTRONICS" expression="Lanner-Electronics-DeviceRuleac5c3afc-a226-45af-a5e2-336c3bb6e41eCheck67abef43-a83e-4853-af3d-b45629c83ab2" name="Lanner-Electronics-DeviceRuleac5c3afc-a226-45af-a5e2-336c3bb6e41e" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LANNER ELECTRONICS" description="MAC OUI CONTAINS LANNER ELECTRONICS" name="Lanner-Electronics-DeviceRuleac5c3afc-a226-45af-a5e2-336c3bb6e41eCheck67abef43-a83e-4853-af3d-b45629c83ab2" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

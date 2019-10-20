@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Nintendo WII" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="NintendoWII" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="NintendoOUIRule"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Nintendo-Switch" parentFQN="NintendoWII" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Nintendo-3DSRule063339cf-2528-499a-9ffe-4633caa2b4b9_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="NintendoOUI" expression="NintendoOUI" name="NintendoOUIRule" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_Nintendo_Switch_OR_IP_FQDN_CONTAINS_Nintendo_Switch" expression="Nintendo-3DSRule063339cf-2528-499a-9ffe-4633caa2b4b9Checkd5ba00cb-42fb-4fb2-9146-ca14df2cbb3e_copy | Nintendo-3DSRule063339cf-2528-499a-9ffe-4633caa2b4b9Checkc4a5a48b-8a22-4454-a1b1-62d02c61a625_copy" name="Nintendo-3DSRule063339cf-2528-499a-9ffe-4633caa2b4b9_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Nintendo Co." description="Nintendo OUI" name="NintendoOUI" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="Nintendo Switch" description="DHCP host-name CONTAINS Nintendo Switch" name="Nintendo-3DSRule063339cf-2528-499a-9ffe-4633caa2b4b9Checkd5ba00cb-42fb-4fb2-9146-ca14df2cbb3e_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="Nintendo Switch" description="IP FQDN CONTAINS Nintendo Switch" name="Nintendo-3DSRule063339cf-2528-499a-9ffe-4633caa2b4b9Checkc4a5a48b-8a22-4454-a1b1-62d02c61a625_copy" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

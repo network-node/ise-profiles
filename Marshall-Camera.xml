@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="50" name="Marshall-Camera" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="50" name="Marshall-CameraRulea821076b-89f6-43e2-9e3f-0f4b7e90917a"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="SNMP_sysDescr_CONTAINS_IP_video_camera/server" expression="Marshall-CameraRulea821076b-89f6-43e2-9e3f-0f4b7e90917aCheck6b76e030-04d9-4acd-91e6-8e84dea9f2c4" name="Marshall-CameraRulea821076b-89f6-43e2-9e3f-0f4b7e90917a" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="sysDescr" attributeValue="IP video camera/server" description="SNMP sysDescr CONTAINS IP video camera/server" name="Marshall-CameraRulea821076b-89f6-43e2-9e3f-0f4b7e90917aCheck6b76e030-04d9-4acd-91e6-8e84dea9f2c4" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

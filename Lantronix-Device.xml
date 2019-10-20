@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Lantronix-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Lantronix-DeviceRuled892840b-8b35-4d11-ae89-f92d1de1044c"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Lantronix" expression="Lantronix-DeviceRuled892840b-8b35-4d11-ae89-f92d1de1044cCheck45412656-1fdd-4045-adeb-be5102a46ec6" name="Lantronix-DeviceRuled892840b-8b35-4d11-ae89-f92d1de1044c" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Lantronix" description="MAC OUI CONTAINS Lantronix" name="Lantronix-DeviceRuled892840b-8b35-4d11-ae89-f92d1de1044cCheck45412656-1fdd-4045-adeb-be5102a46ec6" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

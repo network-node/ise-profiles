@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IoT and Automation Vendor&#9;https://www.moxa.com/en/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Moxa-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Moxa-DeviceRule6f311bbb-177c-4d2c-b60b-9d2668eb88ad"/>
+<PolicyRule certaintyFactor="20" name="Moxa-DeviceRuledfb276d5-2319-4eaa-9646-ca471e99a866"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_MOXA_TECHNOLOGIES" expression="Moxa-DeviceRule6f311bbb-177c-4d2c-b60b-9d2668eb88adCheck95499ed9-de30-4f83-babe-cd7ea3c00b69" name="Moxa-DeviceRule6f311bbb-177c-4d2c-b60b-9d2668eb88ad" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_moxa_OR_DHCP_host-name_STARTSWITH_moxa_OR_IP_FQDN_CONTAINS_moxa_OR_IP_FQDN_STARTSWITH_moxa" expression="((Moxa-DeviceRuledfb276d5-2319-4eaa-9646-ca471e99a866Checkf8363fa6-6c7b-462c-a13f-19c6869eedb8 | Moxa-DeviceRuledfb276d5-2319-4eaa-9646-ca471e99a866Check16d39ddd-3c9f-4153-9fc1-b2a29fd71a30) | Moxa-DeviceRuledfb276d5-2319-4eaa-9646-ca471e99a866Check1c52d569-1cf0-4960-b59d-8302cb0b66a9) | Moxa-DeviceRuledfb276d5-2319-4eaa-9646-ca471e99a866Check894bfef3-9713-4102-a138-31878c21daa8" name="Moxa-DeviceRuledfb276d5-2319-4eaa-9646-ca471e99a866" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="MOXA TECHNOLOGIES" description="MAC OUI CONTAINS MOXA TECHNOLOGIES" name="Moxa-DeviceRule6f311bbb-177c-4d2c-b60b-9d2668eb88adCheck95499ed9-de30-4f83-babe-cd7ea3c00b69" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="moxa" description="DHCP host-name CONTAINS moxa" name="Moxa-DeviceRuledfb276d5-2319-4eaa-9646-ca471e99a866Checkf8363fa6-6c7b-462c-a13f-19c6869eedb8" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="moxa" description="DHCP host-name STARTSWITH moxa" name="Moxa-DeviceRuledfb276d5-2319-4eaa-9646-ca471e99a866Check16d39ddd-3c9f-4153-9fc1-b2a29fd71a30" operator="Starts with" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="moxa" description="IP FQDN CONTAINS moxa" name="Moxa-DeviceRuledfb276d5-2319-4eaa-9646-ca471e99a866Check1c52d569-1cf0-4960-b59d-8302cb0b66a9" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="moxa" description="IP FQDN STARTSWITH moxa" name="Moxa-DeviceRuledfb276d5-2319-4eaa-9646-ca471e99a866Check894bfef3-9713-4102-a138-31878c21daa8" operator="Starts with" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

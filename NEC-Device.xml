@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="NEC-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="NEC-DeviceRule6fa16afa-bf50-487b-a747-0966f038b379"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_NEC_Corporation" expression="NEC-DeviceRule6fa16afa-bf50-487b-a747-0966f038b379Check7ada3585-a060-4409-897a-1aa0f6210177" name="NEC-DeviceRule6fa16afa-bf50-487b-a747-0966f038b379" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="NEC Corporation" description="MAC OUI CONTAINS NEC Corporation" name="NEC-DeviceRule6fa16afa-bf50-487b-a747-0966f038b379Check7ada3585-a060-4409-897a-1aa0f6210177" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

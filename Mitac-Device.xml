@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Embedded computer and server manufacturer&#9;http://www.mitac.com/en-global" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Mitac-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Mitac-DeviceRuleb464898b-8f97-4b3b-8b91-9cc60807864a"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_MITAC_INTERNATIONAL" expression="Mitac-DeviceRuleb464898b-8f97-4b3b-8b91-9cc60807864aCheck0c8bd336-aa89-48ed-a9c4-81a8f09f61bb" name="Mitac-DeviceRuleb464898b-8f97-4b3b-8b91-9cc60807864a" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="MITAC INTERNATIONAL" description="MAC OUI CONTAINS MITAC INTERNATIONAL" name="Mitac-DeviceRuleb464898b-8f97-4b3b-8b91-9cc60807864aCheck0c8bd336-aa89-48ed-a9c4-81a8f09f61bb" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

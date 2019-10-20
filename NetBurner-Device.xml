@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IoT Vendor&#9;https://www.netburner.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="NetBurner-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="NetBurner-DeviceRule426db098-fed1-4c0a-a28d-7b3eaac520df"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_NetBurner" expression="NetBurner-DeviceRule426db098-fed1-4c0a-a28d-7b3eaac520dfCheckbe07e2e9-98fb-484e-9f21-fb20efac67fa" name="NetBurner-DeviceRule426db098-fed1-4c0a-a28d-7b3eaac520df" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="NetBurner" description="MAC OUI CONTAINS NetBurner" name="NetBurner-DeviceRule426db098-fed1-4c0a-a28d-7b3eaac520dfCheckbe07e2e9-98fb-484e-9f21-fb20efac67fa" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="LANBit-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="LANBit-DeviceRuled895c84b-b18a-475d-a7fb-7b70774db244"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_LANBit" expression="LANBit-DeviceRuled895c84b-b18a-475d-a7fb-7b70774db244Check42953b1f-fc21-43f2-99e3-a935329a8925" name="LANBit-DeviceRuled895c84b-b18a-475d-a7fb-7b70774db244" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LANBit" description="MAC OUI CONTAINS LANBit" name="LANBit-DeviceRuled895c84b-b18a-475d-a7fb-7b70774db244Check42953b1f-fc21-43f2-99e3-a935329a8925" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

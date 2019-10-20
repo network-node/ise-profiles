@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Axiom-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Axiom-DeviceRule8418c54a-9810-4da2-bb12-5fc83abd7834"/>
+</PolicyRules>
+</Policy>
+<Policy description="DNA Sequencer &#9;https://www.illumina.com/systems/sequencing-platforms/nextseq.html" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="NextSeq-Axiom-Device" parentFQN="Axiom-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="NextSeq-Axiom-DeviceRule2e0c97bb-45a8-4c5b-997e-7fe954a91269"/>
+<PolicyRule certaintyFactor="10" name="NextSeq-Axiom-DeviceRuleba9db947-40b8-44a1-b027-b9f207a15ccc"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_AXIOM_TECHNOLOGY" expression="Axiom-DeviceRule8418c54a-9810-4da2-bb12-5fc83abd7834Check1db4e760-81ce-48a9-9c84-20a8f3e94314" name="Axiom-DeviceRule8418c54a-9810-4da2-bb12-5fc83abd7834" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_nextseq" expression="NextSeq-Axiom-DeviceRule2e0c97bb-45a8-4c5b-997e-7fe954a91269Check00c5be98-316e-48e4-91d5-bd0ed7ca11e0" name="NextSeq-Axiom-DeviceRule2e0c97bb-45a8-4c5b-997e-7fe954a91269" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_NextSeq" expression="NextSeq-Axiom-DeviceRuleba9db947-40b8-44a1-b027-b9f207a15cccCheck3724dd4d-c582-46ec-96b0-87712e59c0bb" name="NextSeq-Axiom-DeviceRuleba9db947-40b8-44a1-b027-b9f207a15ccc" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="AXIOM TECHNOLOGY" description="MAC OUI CONTAINS AXIOM TECHNOLOGY" name="Axiom-DeviceRule8418c54a-9810-4da2-bb12-5fc83abd7834Check1db4e760-81ce-48a9-9c84-20a8f3e94314" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="nextseq" description="DHCP host-name CONTAINS nextseq" name="NextSeq-Axiom-DeviceRule2e0c97bb-45a8-4c5b-997e-7fe954a91269Check00c5be98-316e-48e4-91d5-bd0ed7ca11e0" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="NextSeq" description="DHCP host-name CONTAINS NextSeq" name="NextSeq-Axiom-DeviceRuleba9db947-40b8-44a1-b027-b9f207a15cccCheck3724dd4d-c582-46ec-96b0-87712e59c0bb" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

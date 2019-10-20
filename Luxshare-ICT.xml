@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Sells Connections and cable connectors&#9;http://en.luxshare-ict.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Luxshare-ICT" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Luxshare-ICTRulec9ec7c3f-aa00-42ae-b09e-8bc4b5c37b56"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Luxshare_Precision" expression="Luxshare-ICTRulec9ec7c3f-aa00-42ae-b09e-8bc4b5c37b56Check70549ced-d5bf-4d27-b411-330a096de033" name="Luxshare-ICTRulec9ec7c3f-aa00-42ae-b09e-8bc4b5c37b56" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Luxshare Precision" description="MAC OUI CONTAINS Luxshare Precision" name="Luxshare-ICTRulec9ec7c3f-aa00-42ae-b09e-8bc4b5c37b56Check70549ced-d5bf-4d27-b411-330a096de033" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

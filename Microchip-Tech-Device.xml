@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Provider of microcontroller, mixed-signal, analog and Flash-IP solutions&#9;https://www.microchip.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Microchip-Tech-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Microchip-Tech-DeviceRulec3520269-70ce-4195-b610-ddafbba5c297"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Microchip_Technology" expression="Microchip-Tech-DeviceRulec3520269-70ce-4195-b610-ddafbba5c297Check8306f1b6-5bd9-41e1-a8d2-0973039a1537" name="Microchip-Tech-DeviceRulec3520269-70ce-4195-b610-ddafbba5c297" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Microchip Technology" description="MAC OUI CONTAINS Microchip Technology" name="Microchip-Tech-DeviceRulec3520269-70ce-4195-b610-ddafbba5c297Check8306f1b6-5bd9-41e1-a8d2-0973039a1537" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Liteon-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Liteon-DeviceRule22af570e-7c0b-442d-b900-0437a357361b"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Liteon_Technology" expression="Liteon-DeviceRule22af570e-7c0b-442d-b900-0437a357361bCheck7abbd2f6-d1fb-4242-b0f6-821b91941a52" name="Liteon-DeviceRule22af570e-7c0b-442d-b900-0437a357361b" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Liteon Technology" description="MAC OUI CONTAINS Liteon Technology" name="Liteon-DeviceRule22af570e-7c0b-442d-b900-0437a357361bCheck7abbd2f6-d1fb-4242-b0f6-821b91941a52" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

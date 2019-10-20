@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Mega-Well-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Mega-Well-DeviceRule76272652-65e5-43d3-994c-1ca2397e1a9a"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Mega_Well_Limited" expression="Mega-Well-DeviceRule76272652-65e5-43d3-994c-1ca2397e1a9aCheck166222aa-b46f-4a05-9d29-e15c87dc781e" name="Mega-Well-DeviceRule76272652-65e5-43d3-994c-1ca2397e1a9a" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Mega Well Limited" description="MAC OUI CONTAINS Mega Well Limited" name="Mega-Well-DeviceRule76272652-65e5-43d3-994c-1ca2397e1a9aCheck166222aa-b46f-4a05-9d29-e15c87dc781e" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

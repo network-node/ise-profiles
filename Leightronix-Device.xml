@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Leightronix-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Leightronix-DeviceRule4cf5e4f6-83b2-4dc9-bb21-2ec0b1b3be7d"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_LEIGHTRONIX" expression="Leightronix-DeviceRule4cf5e4f6-83b2-4dc9-bb21-2ec0b1b3be7dCheck81701b4d-3238-41fc-bf75-7e39f8227677" name="Leightronix-DeviceRule4cf5e4f6-83b2-4dc9-bb21-2ec0b1b3be7d" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LEIGHTRONIX" description="MAC OUI CONTAINS LEIGHTRONIX" name="Leightronix-DeviceRule4cf5e4f6-83b2-4dc9-bb21-2ec0b1b3be7dCheck81701b4d-3238-41fc-bf75-7e39f8227677" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="LandingZone-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="LandingZone-DeviceRule54d0920a-4a5d-45d5-bbb9-82f0fe2d9e38"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_InfiniWing" expression="LandingZone-DeviceRule54d0920a-4a5d-45d5-bbb9-82f0fe2d9e38Check376c1adb-8e9e-409f-9cb5-5bff0d704426" name="LandingZone-DeviceRule54d0920a-4a5d-45d5-bbb9-82f0fe2d9e38" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="InfiniWing" description="MAC OUI CONTAINS InfiniWing" name="LandingZone-DeviceRule54d0920a-4a5d-45d5-bbb9-82f0fe2d9e38Check376c1adb-8e9e-409f-9cb5-5bff0d704426" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

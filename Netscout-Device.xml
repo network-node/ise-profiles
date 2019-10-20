@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Netscout-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Netscout-DeviceRule8cc81d16-8037-49a1-bfff-d2b09e5428b1"/>
+<PolicyRule certaintyFactor="20" name="Netscout-DeviceRule5f0b2a30-5319-40a7-ab96-2c84170bb177"/>
+<PolicyRule certaintyFactor="5" name="Netscout-DeviceRule06479eba-fa0a-4daf-9522-8347bb22944e"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_udhcp" expression="Netscout-DeviceRule8cc81d16-8037-49a1-bfff-d2b09e5428b1Check168b0135-1db2-4333-91dc-cc3916274406" name="Netscout-DeviceRule8cc81d16-8037-49a1-bfff-d2b09e5428b1" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_NetScout_Systems" expression="Netscout-DeviceRule5f0b2a30-5319-40a7-ab96-2c84170bb177Check3c23b2f4-6235-467d-901e-b39ddeb4b013" name="Netscout-DeviceRule5f0b2a30-5319-40a7-ab96-2c84170bb177" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-parameter-request-list_EQUALS_1,_3,_6,_12,_15,_28,_42,_51" expression="Netscout-DeviceRule06479eba-fa0a-4daf-9522-8347bb22944eCheckf0daf343-4f8e-4cfa-863b-59e1aafb0b89" name="Netscout-DeviceRule06479eba-fa0a-4daf-9522-8347bb22944e" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="dhcp-class-identifier" attributeValue="udhcp" description="DHCP dhcp-class-identifier CONTAINS udhcp" name="Netscout-DeviceRule8cc81d16-8037-49a1-bfff-d2b09e5428b1Check168b0135-1db2-4333-91dc-cc3916274406" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="NetScout Systems" description="MAC OUI CONTAINS NetScout Systems" name="Netscout-DeviceRule5f0b2a30-5319-40a7-ab96-2c84170bb177Check3c23b2f4-6235-467d-901e-b39ddeb4b013" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 3, 6, 12, 15, 28, 42, 51" description="DHCP dhcp-parameter-request-list EQUALS 1, 3, 6, 12, 15, 28, 42, 51" name="Netscout-DeviceRule06479eba-fa0a-4daf-9522-8347bb22944eCheckf0daf343-4f8e-4cfa-863b-59e1aafb0b89" operator="Equals" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

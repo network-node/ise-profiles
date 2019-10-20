@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="NetApp-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="NetApp-DeviceRuled7ef64e7-1cde-4b6d-b245-d48d3f1cc46f"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_NetApp" expression="NetApp-DeviceRuled7ef64e7-1cde-4b6d-b245-d48d3f1cc46fChecka1dc5a13-cefe-441c-a2b1-02d5648d1c4b" name="NetApp-DeviceRuled7ef64e7-1cde-4b6d-b245-d48d3f1cc46f" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="NetApp" description="MAC OUI CONTAINS NetApp" name="NetApp-DeviceRuled7ef64e7-1cde-4b6d-b245-d48d3f1cc46fChecka1dc5a13-cefe-441c-a2b1-02d5648d1c4b" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

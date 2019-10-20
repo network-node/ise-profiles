@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="SNMP Agents and Cards &#9;http://www.megatec.com.tw/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Mega-System-Tech" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="-3" name="Mega-System-TechRulee82fcf3d-46c1-4e11-bddb-296c93693840"/>
+<PolicyRule certaintyFactor="5" name="Luxshare-ICTRulec9ec7c3f-aa00-42ae-b09e-8bc4b5c37b56_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Mega_System_Technologies" expression="Mega-System-TechRulee82fcf3d-46c1-4e11-bddb-296c93693840Check71915457-3af1-4fb6-9a17-a7759518a713" name="Mega-System-TechRulee82fcf3d-46c1-4e11-bddb-296c93693840" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Mega_System_Technologies" expression="Luxshare-ICTRulec9ec7c3f-aa00-42ae-b09e-8bc4b5c37b56Check70549ced-d5bf-4d27-b411-330a096de033_copy_copy" name="Luxshare-ICTRulec9ec7c3f-aa00-42ae-b09e-8bc4b5c37b56_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Mega System Technologies" description="MAC OUI CONTAINS Mega System Technologies" name="Mega-System-TechRulee82fcf3d-46c1-4e11-bddb-296c93693840Check71915457-3af1-4fb6-9a17-a7759518a713" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Mega System Technologies" description="MAC OUI CONTAINS Mega System Technologies" name="Luxshare-ICTRulec9ec7c3f-aa00-42ae-b09e-8bc4b5c37b56Check70549ced-d5bf-4d27-b411-330a096de033_copy_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

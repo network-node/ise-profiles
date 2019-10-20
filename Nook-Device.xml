@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Barnes-And-Noble-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Apex-DeviceRulea1e78022-5735-45ce-aa58-bcde4dd76c24_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Nook-Device" parentFQN="Barnes-And-Noble-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Nook-DeviceRule39d10421-8b73-40fb-b99a-595922d2d790"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Barnes&amp;Noble" expression="Apex-DeviceRulea1e78022-5735-45ce-aa58-bcde4dd76c24Check9dea4a8c-8972-48a6-8158-a88da06d3580_copy_copy_copy_copy" name="Apex-DeviceRulea1e78022-5735-45ce-aa58-bcde4dd76c24_copy_copy_copy_copy" ruleType="Regular"/>
+<Rule description="IP_FQDN_STARTSWITH_nook-_OR_DHCP_host-name_STARTSWITH_nook-" expression="Nook-DeviceRule39d10421-8b73-40fb-b99a-595922d2d790Check2b3bc353-2b30-4277-92a8-973382976ad3 | Nook-DeviceRule39d10421-8b73-40fb-b99a-595922d2d790Check7b57ce70-c1db-4d6c-b21f-b1e1612ae18c" name="Nook-DeviceRule39d10421-8b73-40fb-b99a-595922d2d790" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Barnes&amp;Noble" description="MAC OUI CONTAINS Barnes&amp;Noble" name="Apex-DeviceRulea1e78022-5735-45ce-aa58-bcde4dd76c24Check9dea4a8c-8972-48a6-8158-a88da06d3580_copy_copy_copy_copy" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="nook-" description="IP FQDN STARTSWITH nook-" name="Nook-DeviceRule39d10421-8b73-40fb-b99a-595922d2d790Check2b3bc353-2b30-4277-92a8-973382976ad3" operator="Starts with" type="IP"/>
+<Check attributeName="host-name" attributeValue="nook-" description="DHCP host-name STARTSWITH nook-" name="Nook-DeviceRule39d10421-8b73-40fb-b99a-595922d2d790Check7b57ce70-c1db-4d6c-b21f-b1e1612ae18c" operator="Starts with" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

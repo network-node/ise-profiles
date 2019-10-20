@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="NetAlly-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="NetAlly-DeviceRulea770f08f-ed8a-4eed-93d3-9fe3daa152ca"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_NetAlly" expression="NetAlly-DeviceRulea770f08f-ed8a-4eed-93d3-9fe3daa152caCheck36056828-b655-4edc-b6d8-d36df0320348" name="NetAlly-DeviceRulea770f08f-ed8a-4eed-93d3-9fe3daa152ca" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="NetAlly" description="MAC OUI CONTAINS NetAlly" name="NetAlly-DeviceRulea770f08f-ed8a-4eed-93d3-9fe3daa152caCheck36056828-b655-4edc-b6d8-d36df0320348" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

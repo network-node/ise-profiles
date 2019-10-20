@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Marshall-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="-3" name="Marshall-DeviceRule29ccba9f-043d-48e4-b974-fb450d89b87d"/>
+<PolicyRule certaintyFactor="10" name="Marshall-DeviceRulec7e98bfb-8cea-4efd-ae10-aace202709a3"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Marshall_Electronics" expression="Marshall-DeviceRule29ccba9f-043d-48e4-b974-fb450d89b87dCheck411c42f6-72c0-4bb3-9127-aaa037dd7a0a" name="Marshall-DeviceRule29ccba9f-043d-48e4-b974-fb450d89b87d" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Marshall_Electronics" expression="Marshall-DeviceRulec7e98bfb-8cea-4efd-ae10-aace202709a3Check88b9d016-92f3-4ec2-9916-230f7f7448c9" name="Marshall-DeviceRulec7e98bfb-8cea-4efd-ae10-aace202709a3" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Marshall Electronics" description="MAC OUI CONTAINS Marshall Electronics" name="Marshall-DeviceRule29ccba9f-043d-48e4-b974-fb450d89b87dCheck411c42f6-72c0-4bb3-9127-aaa037dd7a0a" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Marshall Electronics" description="MAC OUI CONTAINS Marshall Electronics" name="Marshall-DeviceRulec7e98bfb-8cea-4efd-ae10-aace202709a3Check88b9d016-92f3-4ec2-9916-230f7f7448c9" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

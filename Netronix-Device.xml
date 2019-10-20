@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IoT Vendor&#9;https://netronix.io/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Netronix-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Quanta-DeviceRule730507be-60e8-4aa5-9a62-e7234883e22b_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_NETRONIX" expression="Quanta-DeviceRule730507be-60e8-4aa5-9a62-e7234883e22bCheck9a51d191-51e2-4f1a-ba80-3d46db6b2548_copy" name="Quanta-DeviceRule730507be-60e8-4aa5-9a62-e7234883e22b_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="NETRONIX" description="MAC OUI CONTAINS NETRONIX" name="Quanta-DeviceRule730507be-60e8-4aa5-9a62-e7234883e22bCheck9a51d191-51e2-4f1a-ba80-3d46db6b2548_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

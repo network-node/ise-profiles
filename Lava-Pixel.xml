@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Lava-Phone" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Lava-PhoneRuled2d019fb-9567-44c4-8aff-9813f775a6d0"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Lava-Pixel" parentFQN="Lava-Phone" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Lava-PixelRulef6e6cc9f-3cb2-44b4-bc01-8ee7b366f14b"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_LAVA_INTERNATIONAL" expression="Lava-PhoneRuled2d019fb-9567-44c4-8aff-9813f775a6d0Checkf2348e6b-6e52-48a9-8214-58d4d4c70368" name="Lava-PhoneRuled2d019fb-9567-44c4-8aff-9813f775a6d0" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_Pixel" expression="Lava-PixelRulef6e6cc9f-3cb2-44b4-bc01-8ee7b366f14bCheck47f1b1cd-ad1b-43b4-b8fa-95a2191e0e09" name="Lava-PixelRulef6e6cc9f-3cb2-44b4-bc01-8ee7b366f14b" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LAVA INTERNATIONAL" description="MAC OUI CONTAINS LAVA INTERNATIONAL" name="Lava-PhoneRuled2d019fb-9567-44c4-8aff-9813f775a6d0Checkf2348e6b-6e52-48a9-8214-58d4d4c70368" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="Pixel" description="IP User-Agent CONTAINS Pixel" name="Lava-PixelRulef6e6cc9f-3cb2-44b4-bc01-8ee7b366f14bCheck47f1b1cd-ad1b-43b4-b8fa-95a2191e0e09" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

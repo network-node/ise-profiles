@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="LANBit-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="LANBit-DeviceRuled895c84b-b18a-475d-a7fb-7b70774db244"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="LANBit-UPS" parentFQN="LANBit-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="LANBit-UPSRulec806dd5a-5238-4be9-b1aa-8f4a6bb25648"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_LANBit" expression="LANBit-DeviceRuled895c84b-b18a-475d-a7fb-7b70774db244Check42953b1f-fc21-43f2-99e3-a935329a8925" name="LANBit-DeviceRuled895c84b-b18a-475d-a7fb-7b70774db244" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_ups_OR_DHCP_host-name_STARTSWITH_ups_OR_IP_FQDN_CONTAINS_ups_OR_IP_FQDN_STARTSWITH_ups" expression="((LANBit-UPSRulec806dd5a-5238-4be9-b1aa-8f4a6bb25648Check0f8b721f-50c8-4ce4-8678-af1052258904 | LANBit-UPSRulec806dd5a-5238-4be9-b1aa-8f4a6bb25648Check641ddaee-c26f-4b7e-b2e2-80db92b64764) | LANBit-UPSRulec806dd5a-5238-4be9-b1aa-8f4a6bb25648Check594c3eda-dffc-432d-9de7-a9966c53f3fb) | LANBit-UPSRulec806dd5a-5238-4be9-b1aa-8f4a6bb25648Checke8cee5fd-7755-44b6-893e-e4ecf92b2bc2" name="LANBit-UPSRulec806dd5a-5238-4be9-b1aa-8f4a6bb25648" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LANBit" description="MAC OUI CONTAINS LANBit" name="LANBit-DeviceRuled895c84b-b18a-475d-a7fb-7b70774db244Check42953b1f-fc21-43f2-99e3-a935329a8925" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="ups" description="DHCP host-name CONTAINS ups" name="LANBit-UPSRulec806dd5a-5238-4be9-b1aa-8f4a6bb25648Check0f8b721f-50c8-4ce4-8678-af1052258904" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="ups" description="DHCP host-name STARTSWITH ups" name="LANBit-UPSRulec806dd5a-5238-4be9-b1aa-8f4a6bb25648Check641ddaee-c26f-4b7e-b2e2-80db92b64764" operator="Starts with" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="ups" description="IP FQDN CONTAINS ups" name="LANBit-UPSRulec806dd5a-5238-4be9-b1aa-8f4a6bb25648Check594c3eda-dffc-432d-9de7-a9966c53f3fb" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="ups" description="IP FQDN STARTSWITH ups" name="LANBit-UPSRulec806dd5a-5238-4be9-b1aa-8f4a6bb25648Checke8cee5fd-7755-44b6-893e-e4ecf92b2bc2" operator="Starts with" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

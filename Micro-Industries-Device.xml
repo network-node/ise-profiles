@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Company that sells components. This company also subcontracts with National Semicondictor, Siemens and Philips&#9;https://en.wikipedia.org/wiki/Micro_Industries" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Micro-Industries-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Micro-Industries-DeviceRuleae69ba21-c186-4ab5-a972-619173d969b3"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_MICRO_INDUSTRIES_" expression="Micro-Industries-DeviceRuleae69ba21-c186-4ab5-a972-619173d969b3Check43a93ade-b9af-4cb0-ad27-74fe39085772" name="Micro-Industries-DeviceRuleae69ba21-c186-4ab5-a972-619173d969b3" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="MICRO INDUSTRIES " description="MAC OUI CONTAINS MICRO INDUSTRIES " name="Micro-Industries-DeviceRuleae69ba21-c186-4ab5-a972-619173d969b3Check43a93ade-b9af-4cb0-ad27-74fe39085772" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

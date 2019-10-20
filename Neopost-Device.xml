@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Neopost-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Neopost-DeviceRule0ac3f0a4-99dd-41c9-8960-2926421729cf"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Neopost" expression="Neopost-DeviceRule0ac3f0a4-99dd-41c9-8960-2926421729cfCheck62e7ccd7-7406-44ce-99fb-8b41d5b691d0" name="Neopost-DeviceRule0ac3f0a4-99dd-41c9-8960-2926421729cf" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Neopost" description="MAC OUI CONTAINS Neopost" name="Neopost-DeviceRule0ac3f0a4-99dd-41c9-8960-2926421729cfCheck62e7ccd7-7406-44ce-99fb-8b41d5b691d0" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

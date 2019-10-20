@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Linksys Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Linksys-Device-Updated" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Linksys-Device-OUI-Rule2_copy"/>
+<PolicyRule certaintyFactor="5" name="Linksys-DeviceRule1_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="LinksysOUICheck" expression="LinksysOUICheck_copy" name="Linksys-Device-OUI-Rule2_copy" ruleType="Regular"/>
+<Rule description="Linksys-DeviceRule1Check1" expression="Linksys-DeviceRule1Check1_copy" name="Linksys-DeviceRule1_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Cisco-Linksys" description="Linksys OUI Check" name="LinksysOUICheck_copy" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="Linksys" description="Linksys-DeviceRule1Check1 " name="Linksys-DeviceRule1Check1_copy" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

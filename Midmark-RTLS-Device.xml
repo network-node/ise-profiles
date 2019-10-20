@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Real-time locator system for hospitals&#9;https://www.midmark.com/medical/products/rtls" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Midmark-RTLS-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Midmark-RTLS-DeviceRule4e71ea57-5512-4726-bade-c321657dbb92"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Midmark_RTLS" expression="Midmark-RTLS-DeviceRule4e71ea57-5512-4726-bade-c321657dbb92Checkaa486dae-3361-4004-9ddf-cbec50c2f369" name="Midmark-RTLS-DeviceRule4e71ea57-5512-4726-bade-c321657dbb92" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Midmark RTLS" description="MAC OUI CONTAINS Midmark RTLS" name="Midmark-RTLS-DeviceRule4e71ea57-5512-4726-bade-c321657dbb92Checkaa486dae-3361-4004-9ddf-cbec50c2f369" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
