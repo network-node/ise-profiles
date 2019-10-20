@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Xyplex-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Xyplex-DeviceRulec7c9bc22-3036-414a-987a-577c7853eefb"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Xyplex" expression="Xyplex-DeviceRulec7c9bc22-3036-414a-987a-577c7853eefbCheck623bbfe9-7f00-490b-9fa4-5d380a8867f7" name="Xyplex-DeviceRulec7c9bc22-3036-414a-987a-577c7853eefb" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Xyplex" description="MAC OUI CONTAINS Xyplex" name="Xyplex-DeviceRulec7c9bc22-3036-414a-987a-577c7853eefbCheck623bbfe9-7f00-490b-9fa4-5d380a8867f7" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

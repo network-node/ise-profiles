@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Embedded Systems&#9;https://www.winsystems.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Winsystem-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Winsystem-DeviceRulebdfe91e0-d312-45b0-a808-73e454a6935f"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_WINSYSTEMS" expression="Winsystem-DeviceRulebdfe91e0-d312-45b0-a808-73e454a6935fChecka6ebf46e-2146-491d-ac56-ef9573edd4a4" name="Winsystem-DeviceRulebdfe91e0-d312-45b0-a808-73e454a6935f" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="WINSYSTEMS" description="MAC OUI CONTAINS WINSYSTEMS" name="Winsystem-DeviceRulebdfe91e0-d312-45b0-a808-73e454a6935fChecka6ebf46e-2146-491d-ac56-ef9573edd4a4" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

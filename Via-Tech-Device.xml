@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IoT and Smart City Vendor&#9;https://www.viatech.com/en/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Via-Tech-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Via-Tech-DeviceRuledcf6ba40-7e53-4284-b7df-a2e603b42463"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_VIA_Technologies" expression="Via-Tech-DeviceRuledcf6ba40-7e53-4284-b7df-a2e603b42463Check8db09f63-9c2e-472b-8f3b-a60297ce4442" name="Via-Tech-DeviceRuledcf6ba40-7e53-4284-b7df-a2e603b42463" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="VIA Technologies" description="MAC OUI CONTAINS VIA Technologies" name="Via-Tech-DeviceRuledcf6ba40-7e53-4284-b7df-a2e603b42463Check8db09f63-9c2e-472b-8f3b-a60297ce4442" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

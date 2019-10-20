@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Spinetix-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Spinetix-DeviceRule4c8e42cd-39fc-46c5-910d-e976b9d48780"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Spinetix-Digital-Signage-Player" parentFQN="Spinetix-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Spinetix-Digital-Signage-PlayerRule3a5d9b4d-c0e2-4f54-857d-c350177368fa"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_SPINETIX" expression="Spinetix-DeviceRule4c8e42cd-39fc-46c5-910d-e976b9d48780Checkb9672fe0-b225-49f9-99f7-8013ffd04254" name="Spinetix-DeviceRule4c8e42cd-39fc-46c5-910d-e976b9d48780" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_hmp" expression="Spinetix-Digital-Signage-PlayerRule3a5d9b4d-c0e2-4f54-857d-c350177368faCheckef57aa79-0c04-459b-97bf-95e929aa5995" name="Spinetix-Digital-Signage-PlayerRule3a5d9b4d-c0e2-4f54-857d-c350177368fa" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="SPINETIX" description="MAC OUI CONTAINS SPINETIX" name="Spinetix-DeviceRule4c8e42cd-39fc-46c5-910d-e976b9d48780Checkb9672fe0-b225-49f9-99f7-8013ffd04254" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="hmp" description="DHCP host-name CONTAINS hmp" name="Spinetix-Digital-Signage-PlayerRule3a5d9b4d-c0e2-4f54-857d-c350177368faCheckef57aa79-0c04-459b-97bf-95e929aa5995" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

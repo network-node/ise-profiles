@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Point-of-Sale Vendor - https://www.utcretail.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="UTC-POS-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="UTC-POS-DeviceRulecddc6f92-9f94-4712-94b3-87821471a472"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_ULTIMATE_TECHNOLOGY" expression="UTC-POS-DeviceRulecddc6f92-9f94-4712-94b3-87821471a472Check09fc732d-f465-404d-a4c3-c1cfdc14b484" name="UTC-POS-DeviceRulecddc6f92-9f94-4712-94b3-87821471a472" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="ULTIMATE TECHNOLOGY" description="MAC OUI CONTAINS ULTIMATE TECHNOLOGY" name="UTC-POS-DeviceRulecddc6f92-9f94-4712-94b3-87821471a472Check09fc732d-f465-404d-a4c3-c1cfdc14b484" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

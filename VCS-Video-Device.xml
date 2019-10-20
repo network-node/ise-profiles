@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="VCS-Video-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="VCS-Video-DeviceRule27b88923-3df3-44a9-84ad-dc39e26e9c5b"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_MATCHES_VCS_Video_Communication" expression="VCS-Video-DeviceRule27b88923-3df3-44a9-84ad-dc39e26e9c5bCheck298e223e-113b-41a5-9d13-a880abbd20f8" name="VCS-Video-DeviceRule27b88923-3df3-44a9-84ad-dc39e26e9c5b" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="VCS Video Communication" description="MAC OUI MATCHES VCS Video Communication" name="VCS-Video-DeviceRule27b88923-3df3-44a9-84ad-dc39e26e9c5bCheck298e223e-113b-41a5-9d13-a880abbd20f8" operator="Matches" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

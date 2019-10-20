@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Texas-Instruments-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Texas-Instruments-DeviceRulef0605f7c-0218-41dc-9c48-a178d44f0497"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Texas_Instruments" expression="Texas-Instruments-DeviceRulef0605f7c-0218-41dc-9c48-a178d44f0497Checkc8d8d18f-a0a9-4a6b-9a4c-18ba86abed47" name="Texas-Instruments-DeviceRulef0605f7c-0218-41dc-9c48-a178d44f0497" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Texas Instruments" description="MAC OUI CONTAINS Texas Instruments" name="Texas-Instruments-DeviceRulef0605f7c-0218-41dc-9c48-a178d44f0497Checkc8d8d18f-a0a9-4a6b-9a4c-18ba86abed47" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

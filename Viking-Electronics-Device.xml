@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="VoIP and Intercom Vendor - https://www.vikingelectronics.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Viking-Electronics-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Viking-Electronics-DeviceRulec8b2c72d-9d75-4364-a1cb-5b10d6a25dab"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Viking_Electronics" expression="Viking-Electronics-DeviceRulec8b2c72d-9d75-4364-a1cb-5b10d6a25dabCheck614ea8c6-78b4-4abd-8c3e-6d5d3338cf0c" name="Viking-Electronics-DeviceRulec8b2c72d-9d75-4364-a1cb-5b10d6a25dab" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Viking Electronics" description="MAC OUI CONTAINS Viking Electronics" name="Viking-Electronics-DeviceRulec8b2c72d-9d75-4364-a1cb-5b10d6a25dabCheck614ea8c6-78b4-4abd-8c3e-6d5d3338cf0c" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

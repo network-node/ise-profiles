@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="WatchGuard-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="WatchGuard-DeviceRule6ddc8835-24e7-4739-8452-53ede3d012c5"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_WatchGuard_Technologies" expression="WatchGuard-DeviceRule6ddc8835-24e7-4739-8452-53ede3d012c5Checkd9133585-5526-41a7-8aaa-58b824e08a8a" name="WatchGuard-DeviceRule6ddc8835-24e7-4739-8452-53ede3d012c5" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="WatchGuard Technologies" description="MAC OUI CONTAINS WatchGuard Technologies" name="WatchGuard-DeviceRule6ddc8835-24e7-4739-8452-53ede3d012c5Checkd9133585-5526-41a7-8aaa-58b824e08a8a" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

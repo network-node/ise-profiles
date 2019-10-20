@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Teleepoch-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Teleepoch-DeviceRule404be5e2-8233-4edb-8565-aac026e03595"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Teleepoch" expression="Teleepoch-DeviceRule404be5e2-8233-4edb-8565-aac026e03595Checke85ec8ee-f8ba-4c69-8a12-ff7f6ffe4aca" name="Teleepoch-DeviceRule404be5e2-8233-4edb-8565-aac026e03595" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Teleepoch" description="MAC OUI CONTAINS Teleepoch" name="Teleepoch-DeviceRule404be5e2-8233-4edb-8565-aac026e03595Checke85ec8ee-f8ba-4c69-8a12-ff7f6ffe4aca" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

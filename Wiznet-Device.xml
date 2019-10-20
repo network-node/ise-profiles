@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IoT Embedded Device Vendor - https://www.wiznet.io/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Wiznet-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Wiznet-DeviceRule840e1bc1-eecc-4ec1-8ae3-9ae476688789"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Wiznet" expression="Wiznet-DeviceRule840e1bc1-eecc-4ec1-8ae3-9ae476688789Checkdc813b71-296c-404a-ae13-8136f668a861" name="Wiznet-DeviceRule840e1bc1-eecc-4ec1-8ae3-9ae476688789" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Wiznet" description="MAC OUI CONTAINS Wiznet" name="Wiznet-DeviceRule840e1bc1-eecc-4ec1-8ae3-9ae476688789Checkdc813b71-296c-404a-ae13-8136f668a861" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

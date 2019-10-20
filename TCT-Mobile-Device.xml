@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="TCT-Mobile-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="TCT-Mobile-DeviceRule143fa72a-5789-409a-b709-e836a2cf1ea6"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_TCT_mobile" expression="TCT-Mobile-DeviceRule143fa72a-5789-409a-b709-e836a2cf1ea6Checkea153a98-729b-486e-b5b5-eac64f84b17e" name="TCT-Mobile-DeviceRule143fa72a-5789-409a-b709-e836a2cf1ea6" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="TCT mobile" description="MAC OUI CONTAINS TCT mobile" name="TCT-Mobile-DeviceRule143fa72a-5789-409a-b709-e836a2cf1ea6Checkea153a98-729b-486e-b5b5-eac64f84b17e" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Yamaha-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Yamaha-DeviceRulea648fa5d-04bf-423a-9662-288320506371"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_YAMAHA" expression="Yamaha-DeviceRulea648fa5d-04bf-423a-9662-288320506371Checkc1746a52-8203-4875-993f-a796db1ba8f6" name="Yamaha-DeviceRulea648fa5d-04bf-423a-9662-288320506371" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="YAMAHA" description="MAC OUI CONTAINS YAMAHA" name="Yamaha-DeviceRulea648fa5d-04bf-423a-9662-288320506371Checkc1746a52-8203-4875-993f-a796db1ba8f6" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

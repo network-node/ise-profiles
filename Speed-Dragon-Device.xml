@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Speed-Dragon-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cd_copy3"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Speed_Dragon" expression="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cdCheck1a291cb9-b092-462b-a876-62edc49266c2_copy3" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cd_copy3" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Speed Dragon" description="MAC OUI CONTAINS Speed Dragon" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cdCheck1a291cb9-b092-462b-a876-62edc49266c2_copy3" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

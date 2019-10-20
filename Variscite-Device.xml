@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Embedded IoT Vendor&#9;https://www.variscite.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Variscite-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Variscite-DeviceRule2621d358-1828-4439-bed1-2ba8cebd3638"/>
+<PolicyRule certaintyFactor="20" name="Variscite-DeviceRule513df2e0-4a24-49b3-a4d0-0aef6bf6b810"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="DHCP_host-name_STARTSWITH_RL" expression="Variscite-DeviceRule2621d358-1828-4439-bed1-2ba8cebd3638Check8d504cb9-90e1-46f7-b8fd-7bb5ead74824" name="Variscite-DeviceRule2621d358-1828-4439-bed1-2ba8cebd3638" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Variscite" expression="Variscite-DeviceRule513df2e0-4a24-49b3-a4d0-0aef6bf6b810Checkb21164ab-1a9c-4faa-8cda-21f2612d2330" name="Variscite-DeviceRule513df2e0-4a24-49b3-a4d0-0aef6bf6b810" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="host-name" attributeValue="RL" description="DHCP host-name STARTSWITH RL" name="Variscite-DeviceRule2621d358-1828-4439-bed1-2ba8cebd3638Check8d504cb9-90e1-46f7-b8fd-7bb5ead74824" operator="Starts with" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Variscite" description="MAC OUI CONTAINS Variscite" name="Variscite-DeviceRule513df2e0-4a24-49b3-a4d0-0aef6bf6b810Checkb21164ab-1a9c-4faa-8cda-21f2612d2330" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

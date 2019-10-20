@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Wago-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Wago-DeviceRule0e44f404-330a-4016-8ac1-cee97c18cb3a"/>
+<PolicyRule certaintyFactor="10" name="Wago-DeviceRule3557ce56-c36b-4d86-a3fc-d2f03d267602"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_WAGO_Kontakttechnik" expression="Wago-DeviceRule0e44f404-330a-4016-8ac1-cee97c18cb3aCheckc15844fe-ceae-409a-b479-92af0a464419" name="Wago-DeviceRule0e44f404-330a-4016-8ac1-cee97c18cb3a" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_WAGO" expression="Wago-DeviceRule3557ce56-c36b-4d86-a3fc-d2f03d267602Check69987d7f-ca67-4315-928a-b1d317f79e9b" name="Wago-DeviceRule3557ce56-c36b-4d86-a3fc-d2f03d267602" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="WAGO Kontakttechnik" description="MAC OUI CONTAINS WAGO Kontakttechnik" name="Wago-DeviceRule0e44f404-330a-4016-8ac1-cee97c18cb3aCheckc15844fe-ceae-409a-b479-92af0a464419" operator="Contains" type="Mac"/>
+<Check attributeName="sysDescr" attributeValue="WAGO" description="SNMP sysDescr CONTAINS WAGO" name="Wago-DeviceRule3557ce56-c36b-4d86-a3fc-d2f03d267602Check69987d7f-ca67-4315-928a-b1d317f79e9b" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Communication-Networks" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Communication-NetworksRulea63aface-96cb-4e48-a97f-e6299ad3f4c6"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="SN-Switch" parentFQN="Communication-Networks" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="SN-SwitchRulead3b3a5f-cfee-4ca9-a094-21d9562e2899"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Communication_Networks" expression="Communication-NetworksRulea63aface-96cb-4e48-a97f-e6299ad3f4c6Check9df4a417-802b-4dca-87d9-6692bc2d43a2" name="Communication-NetworksRulea63aface-96cb-4e48-a97f-e6299ad3f4c6" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_Switch" expression="SN-SwitchRulead3b3a5f-cfee-4ca9-a094-21d9562e2899Check0ec73e5d-e3ff-4b11-9f27-7a642f3f9a32" name="SN-SwitchRulead3b3a5f-cfee-4ca9-a094-21d9562e2899" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Communication Networks" description="MAC OUI CONTAINS Communication Networks" name="Communication-NetworksRulea63aface-96cb-4e48-a97f-e6299ad3f4c6Check9df4a417-802b-4dca-87d9-6692bc2d43a2" operator="Contains" type="Mac"/>
+<Check attributeName="sysDescr" attributeValue="Switch" description="SNMP sysDescr CONTAINS Switch" name="SN-SwitchRulead3b3a5f-cfee-4ca9-a094-21d9562e2899Check0ec73e5d-e3ff-4b11-9f27-7a642f3f9a32" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

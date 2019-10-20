@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IoT Vendor&#9;https://www.tridium.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Tridium-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Tridium-DeviceRule32117833-8719-49cc-95ac-cf9c14a14835"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Tridium" expression="Tridium-DeviceRule32117833-8719-49cc-95ac-cf9c14a14835Checke396b17a-1630-4d97-a2a9-3076606a2a4c" name="Tridium-DeviceRule32117833-8719-49cc-95ac-cf9c14a14835" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Tridium" description="MAC OUI CONTAINS Tridium" name="Tridium-DeviceRule32117833-8719-49cc-95ac-cf9c14a14835Checke396b17a-1630-4d97-a2a9-3076606a2a4c" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="TickTalk3-Phone" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Platium-F5-PhoneRulee68f2d39-d584-4dc2-b3d5-6ca91d3ca0a5_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="IP_User-Agent_CONTAINS_TickTalk3" expression="Platium-F5-PhoneRulee68f2d39-d584-4dc2-b3d5-6ca91d3ca0a5Check6acc1bd3-64c8-4002-a0cc-d2b395b652cb_copy" name="Platium-F5-PhoneRulee68f2d39-d584-4dc2-b3d5-6ca91d3ca0a5_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="User-Agent" attributeValue="TickTalk3" description="IP User-Agent CONTAINS TickTalk3" name="Platium-F5-PhoneRulee68f2d39-d584-4dc2-b3d5-6ca91d3ca0a5Check6acc1bd3-64c8-4002-a0cc-d2b395b652cb_copy" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

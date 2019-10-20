@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Ultra Portable PC Vendor - https://www.umpcportal.com/products/WiBrain/B1L" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Wibrain-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Wibrain-DeviceRulef178386d-f708-4254-a2b8-6746e452fef4"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_WIBRAIN" expression="Wibrain-DeviceRulef178386d-f708-4254-a2b8-6746e452fef4Checkc3d08607-aef0-49a0-b601-1107fc1a199b" name="Wibrain-DeviceRulef178386d-f708-4254-a2b8-6746e452fef4" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="WIBRAIN" description="MAC OUI CONTAINS WIBRAIN" name="Wibrain-DeviceRulef178386d-f708-4254-a2b8-6746e452fef4Checkc3d08607-aef0-49a0-b601-1107fc1a199b" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

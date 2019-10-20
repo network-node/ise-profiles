@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IoT Vendor&#9;https://www.usiglobal.com/en" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="USI-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="USI-DeviceRule351fe5f0-4492-46e0-ba10-407344a8e485"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Universal_Global_Scientific" expression="USI-DeviceRule351fe5f0-4492-46e0-ba10-407344a8e485Check89c31c29-3f60-46cd-a2a6-1a614ff8f21f" name="USI-DeviceRule351fe5f0-4492-46e0-ba10-407344a8e485" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Universal Global Scientific" description="MAC OUI CONTAINS Universal Global Scientific" name="USI-DeviceRule351fe5f0-4492-46e0-ba10-407344a8e485Check89c31c29-3f60-46cd-a2a6-1a614ff8f21f" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

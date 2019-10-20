@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IoT Module computers&#9;https://www.toradex.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Toradex-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Toradex-DeviceRulee909954a-3e76-429f-b2d8-2e648c2149e6"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Toradex_AG" expression="Toradex-DeviceRulee909954a-3e76-429f-b2d8-2e648c2149e6Check00d75ced-0c6e-427d-9d06-f08603b05aef" name="Toradex-DeviceRulee909954a-3e76-429f-b2d8-2e648c2149e6" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Toradex AG" description="MAC OUI CONTAINS Toradex AG" name="Toradex-DeviceRulee909954a-3e76-429f-b2d8-2e648c2149e6Check00d75ced-0c6e-427d-9d06-f08603b05aef" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

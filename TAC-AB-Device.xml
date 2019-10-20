@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Building Automation vendor&#9;https://en.wikipedia.org/wiki/TAC_(building_automation)" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="TAC-AB-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="TAC-AB-DeviceRule989475b8-362d-4299-bc03-00ba321e6fb5"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_TAC_AB" expression="TAC-AB-DeviceRule989475b8-362d-4299-bc03-00ba321e6fb5Check0a6c5a13-48b4-41c9-83da-549658f1dcf4" name="TAC-AB-DeviceRule989475b8-362d-4299-bc03-00ba321e6fb5" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="TAC AB" description="MAC OUI CONTAINS TAC AB" name="TAC-AB-DeviceRule989475b8-362d-4299-bc03-00ba321e6fb5Check0a6c5a13-48b4-41c9-83da-549658f1dcf4" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IoT Vendor for Wireless&#9;http://www.sparklan.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="SparkLAN-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="SparkLAN-DeviceRuleaea86e38-ec0a-4cf1-afe5-e4d376886581"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_SparkLAN" expression="SparkLAN-DeviceRuleaea86e38-ec0a-4cf1-afe5-e4d376886581Check9b29c8fe-66f6-46c6-9300-2f4343100859" name="SparkLAN-DeviceRuleaea86e38-ec0a-4cf1-afe5-e4d376886581" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="SparkLAN" description="MAC OUI CONTAINS SparkLAN" name="SparkLAN-DeviceRuleaea86e38-ec0a-4cf1-afe5-e4d376886581Check9b29c8fe-66f6-46c6-9300-2f4343100859" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

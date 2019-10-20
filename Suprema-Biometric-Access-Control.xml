@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Biometric Access Control&#9;https://www.supremainc.com/en/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Suprema-Biometric-Access-Control" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Suprema-Biometric-Access-ControlRulecd23ab17-1e24-4f6b-9571-44f2db22c082"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Suprema" expression="Suprema-Biometric-Access-ControlRulecd23ab17-1e24-4f6b-9571-44f2db22c082Checkf172425a-3a0a-4604-9ff0-92ed7395076a" name="Suprema-Biometric-Access-ControlRulecd23ab17-1e24-4f6b-9571-44f2db22c082" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Suprema" description="MAC OUI CONTAINS Suprema" name="Suprema-Biometric-Access-ControlRulecd23ab17-1e24-4f6b-9571-44f2db22c082Checkf172425a-3a0a-4604-9ff0-92ed7395076a" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

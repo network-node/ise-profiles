@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Embedded ARM Vendor&#9;https://www.embeddedarm.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Technologic-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Technologic-DeviceRule34a99ace-855a-4fcf-ad8a-fabb2e15aed4"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_TECHNOLOGIC" expression="Technologic-DeviceRule34a99ace-855a-4fcf-ad8a-fabb2e15aed4Check29a5d781-08a4-4151-98d9-5f9605a027b6" name="Technologic-DeviceRule34a99ace-855a-4fcf-ad8a-fabb2e15aed4" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="TECHNOLOGIC" description="MAC OUI CONTAINS TECHNOLOGIC" name="Technologic-DeviceRule34a99ace-855a-4fcf-ad8a-fabb2e15aed4Check29a5d781-08a4-4151-98d9-5f9605a027b6" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

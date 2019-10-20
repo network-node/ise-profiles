@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Embedded circuit and server platforms&#9;https://www.tyan.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Tyan-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Tyan-DeviceRule5f3a0b7d-9e59-490c-817a-61339dbbd755"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_TYAN_COMPUTER" expression="Tyan-DeviceRule5f3a0b7d-9e59-490c-817a-61339dbbd755Checkc8c4722d-e226-42bb-8e06-cb2298d99dad" name="Tyan-DeviceRule5f3a0b7d-9e59-490c-817a-61339dbbd755" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="TYAN COMPUTER" description="MAC OUI CONTAINS TYAN COMPUTER" name="Tyan-DeviceRule5f3a0b7d-9e59-490c-817a-61339dbbd755Checkc8c4722d-e226-42bb-8e06-cb2298d99dad" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

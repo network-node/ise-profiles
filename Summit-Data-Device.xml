@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Summit-Data-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Summit-Data-DeviceRule223a8d35-07b3-49d6-b545-9cd4005921bc"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Summit_Data_Communications" expression="Summit-Data-DeviceRule223a8d35-07b3-49d6-b545-9cd4005921bcCheck2865b209-0b96-44ef-b3d3-ad4e043a2d70" name="Summit-Data-DeviceRule223a8d35-07b3-49d6-b545-9cd4005921bc" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Summit Data Communications" description="MAC OUI CONTAINS Summit Data Communications" name="Summit-Data-DeviceRule223a8d35-07b3-49d6-b545-9cd4005921bcCheck2865b209-0b96-44ef-b3d3-ad4e043a2d70" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

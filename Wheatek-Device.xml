@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Wheatek-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Wheatek-DeviceRule0cf3c2d8-5b53-4e73-8f2a-826034362d96"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_HONG_KONG_WHEATEK_TECHNOLOGY" expression="Wheatek-DeviceRule0cf3c2d8-5b53-4e73-8f2a-826034362d96Check86a07b54-b6c9-45fe-bbc1-e7625ea188c0" name="Wheatek-DeviceRule0cf3c2d8-5b53-4e73-8f2a-826034362d96" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="HONG KONG WHEATEK TECHNOLOGY" description="MAC OUI CONTAINS HONG KONG WHEATEK TECHNOLOGY" name="Wheatek-DeviceRule0cf3c2d8-5b53-4e73-8f2a-826034362d96Check86a07b54-b6c9-45fe-bbc1-e7625ea188c0" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Router and WiFi vendor   - https://www.zyxel.com/us/en/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Zyxel-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Zyxel-DeviceRuleece05fb8-ce04-4726-97e3-a9b8bf99c99f"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Zyxel" expression="Zyxel-DeviceRuleece05fb8-ce04-4726-97e3-a9b8bf99c99fCheck871b4071-eb12-4526-80d3-2455549d5d46" name="Zyxel-DeviceRuleece05fb8-ce04-4726-97e3-a9b8bf99c99f" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Zyxel" description="MAC OUI CONTAINS Zyxel" name="Zyxel-DeviceRuleece05fb8-ce04-4726-97e3-a9b8bf99c99fCheck871b4071-eb12-4526-80d3-2455549d5d46" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

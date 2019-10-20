@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Embedded IoT vendor&#9;https://www.soft-device.com/products.html" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="90" name="Soft-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="90" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cd_copy2"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Soft_Device_Sdn" expression="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cdCheck1a291cb9-b092-462b-a876-62edc49266c2_copy2" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cd_copy2" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Soft Device Sdn" description="MAC OUI CONTAINS Soft Device Sdn" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cdCheck1a291cb9-b092-462b-a876-62edc49266c2_copy2" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

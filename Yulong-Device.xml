@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Yulong-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Yulong-DeviceRule0f79cda6-bdb7-4685-97f1-7c34dda3fe55"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Yulong_Computer" expression="Yulong-DeviceRule0f79cda6-bdb7-4685-97f1-7c34dda3fe55Check1ec3c13e-1408-4c89-82b9-f701fb3a7137" name="Yulong-DeviceRule0f79cda6-bdb7-4685-97f1-7c34dda3fe55" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Yulong Computer" description="MAC OUI CONTAINS Yulong Computer" name="Yulong-DeviceRule0f79cda6-bdb7-4685-97f1-7c34dda3fe55Check1ec3c13e-1408-4c89-82b9-f701fb3a7137" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

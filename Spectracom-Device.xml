@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="GPS-synchronized clocks and simulators - https://www.orolia.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Spectracom-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cd_copy7"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Spectracom" expression="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cdCheck1a291cb9-b092-462b-a876-62edc49266c2_copy7" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cd_copy7" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Spectracom" description="MAC OUI CONTAINS Spectracom" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cdCheck1a291cb9-b092-462b-a876-62edc49266c2_copy7" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

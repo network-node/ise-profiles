@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Verifone-Payment-Systems" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Verifone-Payment-SystemsRule8caa52ae-ed17-4394-8202-30245f9a2454"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Verifone" expression="Verifone-Payment-SystemsRule8caa52ae-ed17-4394-8202-30245f9a2454Check3bbc4e28-a4a1-46ff-b042-f8325427edfa" name="Verifone-Payment-SystemsRule8caa52ae-ed17-4394-8202-30245f9a2454" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Verifone" description="MAC OUI CONTAINS Verifone" name="Verifone-Payment-SystemsRule8caa52ae-ed17-4394-8202-30245f9a2454Check3bbc4e28-a4a1-46ff-b042-f8325427edfa" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
