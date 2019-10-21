@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="50" name="Amazon-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Amazon-DeviceRuleffa92950-ce71-46eb-ad2d-15244ee0f7e9"/>
+<PolicyRule certaintyFactor="50" name="Amazon-DeviceRule97cfcfb0-e10f-45a7-848c-79f12b834c61"/>
+<PolicyRule certaintyFactor="50" name="Amazon-DeviceRule6da0f406-72c8-41e6-b7f2-e3216cdd4c9d"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Amazon-Kindle" parentFQN="Amazon-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Amazon-KindleRuleb73a1b10-3022-4ab2-a573-d721d2acee5c"/>
+<PolicyRule certaintyFactor="30" name="Amazon-KindleRule8ccfa203-8836-4ecf-9bb4-0701828ad08e"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="IP_FQDN_CONTAINS_kindle-_OR_IP_FQDN_CONTAINS_amazon-" expression="Amazon-DeviceRuleffa92950-ce71-46eb-ad2d-15244ee0f7e9Check9ae4f7ad-4209-44b2-bd0e-463db77e0732 | Amazon-DeviceRuleffa92950-ce71-46eb-ad2d-15244ee0f7e9Check93b7ed2b-a4a9-4781-87ba-66669e616c6b" name="Amazon-DeviceRuleffa92950-ce71-46eb-ad2d-15244ee0f7e9" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_kindle-_OR_DHCP_host-name_CONTAINS_amazon-" expression="Amazon-DeviceRule97cfcfb0-e10f-45a7-848c-79f12b834c61Check0df81231-5a68-4d06-8f2a-130b8b03a6fd | Amazon-DeviceRule97cfcfb0-e10f-45a7-848c-79f12b834c61Checkc8959f31-f2e1-42dc-80c7-84f58bf2508b" name="Amazon-DeviceRule97cfcfb0-e10f-45a7-848c-79f12b834c61" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Amazon_Technologies_OR_MAC_OUI_CONTAINS_Amazon.com_OR_MAC_OUI_CONTAINS_Amazon" expression="(Amazon-DeviceRule6da0f406-72c8-41e6-b7f2-e3216cdd4c9dCheck67b45346-071d-442f-9fdd-af60b17c97ec | Amazon-DeviceRule6da0f406-72c8-41e6-b7f2-e3216cdd4c9dCheck2e00cc6a-c5bb-459c-a2b6-494c6888baa7) | Amazon-DeviceRule6da0f406-72c8-41e6-b7f2-e3216cdd4c9dCheckb36f81ac-e5b8-4524-8d0f-1caad9483af6" name="Amazon-DeviceRule6da0f406-72c8-41e6-b7f2-e3216cdd4c9d" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_KFTHWI_OR_IP_User-Agent_CONTAINS_KFFOWI_OR_IP_User-Agent_CONTAINS_KFDOWI_OR_IP_User-Agent_CONTAINS_kindle" expression="((Amazon-KindleRuleb73a1b10-3022-4ab2-a573-d721d2acee5cCheck5211245f-50d1-4095-8317-96a2d6f451e8 | Amazon-KindleRuleb73a1b10-3022-4ab2-a573-d721d2acee5cCheckc84e5fec-ae46-45ac-b559-bd85c0ee4447) | Amazon-KindleRuleb73a1b10-3022-4ab2-a573-d721d2acee5cCheck4edac44b-5ae8-413e-897a-25ceec5f81f7) | Amazon-KindleRuleb73a1b10-3022-4ab2-a573-d721d2acee5cCheckc48f5a55-586d-4070-a540-bba730db8cdf" name="Amazon-KindleRuleb73a1b10-3022-4ab2-a573-d721d2acee5c" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_kindle-_OR_DHCP_host-name_CONTAINS_kindle-" expression="Amazon-KindleRule8ccfa203-8836-4ecf-9bb4-0701828ad08eCheck7564af40-b0e2-407f-bc7b-07ec6e428967 | Amazon-KindleRule8ccfa203-8836-4ecf-9bb4-0701828ad08eCheckfa2ffea3-2423-4387-810b-616bdeaa075c" name="Amazon-KindleRule8ccfa203-8836-4ecf-9bb4-0701828ad08e" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="FQDN" attributeValue="kindle-" description="IP FQDN CONTAINS kindle-" name="Amazon-DeviceRuleffa92950-ce71-46eb-ad2d-15244ee0f7e9Check9ae4f7ad-4209-44b2-bd0e-463db77e0732" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="amazon-" description="IP FQDN CONTAINS amazon-" name="Amazon-DeviceRuleffa92950-ce71-46eb-ad2d-15244ee0f7e9Check93b7ed2b-a4a9-4781-87ba-66669e616c6b" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="kindle-" description="DHCP host-name CONTAINS kindle-" name="Amazon-DeviceRule97cfcfb0-e10f-45a7-848c-79f12b834c61Check0df81231-5a68-4d06-8f2a-130b8b03a6fd" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="amazon-" description="DHCP host-name CONTAINS amazon-" name="Amazon-DeviceRule97cfcfb0-e10f-45a7-848c-79f12b834c61Checkc8959f31-f2e1-42dc-80c7-84f58bf2508b" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Amazon Technologies" description="MAC OUI CONTAINS Amazon Technologies" name="Amazon-DeviceRule6da0f406-72c8-41e6-b7f2-e3216cdd4c9dCheck67b45346-071d-442f-9fdd-af60b17c97ec" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Amazon.com" description="MAC OUI CONTAINS Amazon.com" name="Amazon-DeviceRule6da0f406-72c8-41e6-b7f2-e3216cdd4c9dCheck2e00cc6a-c5bb-459c-a2b6-494c6888baa7" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Amazon" description="MAC OUI CONTAINS Amazon" name="Amazon-DeviceRule6da0f406-72c8-41e6-b7f2-e3216cdd4c9dCheckb36f81ac-e5b8-4524-8d0f-1caad9483af6" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="KFTHWI" description="IP User-Agent CONTAINS KFTHWI" name="Amazon-KindleRuleb73a1b10-3022-4ab2-a573-d721d2acee5cCheck5211245f-50d1-4095-8317-96a2d6f451e8" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="KFFOWI" description="IP User-Agent CONTAINS KFFOWI" name="Amazon-KindleRuleb73a1b10-3022-4ab2-a573-d721d2acee5cCheckc84e5fec-ae46-45ac-b559-bd85c0ee4447" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="KFDOWI" description="IP User-Agent CONTAINS KFDOWI" name="Amazon-KindleRuleb73a1b10-3022-4ab2-a573-d721d2acee5cCheck4edac44b-5ae8-413e-897a-25ceec5f81f7" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="kindle" description="IP User-Agent CONTAINS kindle" name="Amazon-KindleRuleb73a1b10-3022-4ab2-a573-d721d2acee5cCheckc48f5a55-586d-4070-a540-bba730db8cdf" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="kindle-" description="IP FQDN CONTAINS kindle-" name="Amazon-KindleRule8ccfa203-8836-4ecf-9bb4-0701828ad08eCheck7564af40-b0e2-407f-bc7b-07ec6e428967" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="kindle-" description="DHCP host-name CONTAINS kindle-" name="Amazon-KindleRule8ccfa203-8836-4ecf-9bb4-0701828ad08eCheckfa2ffea3-2423-4387-810b-616bdeaa075c" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
