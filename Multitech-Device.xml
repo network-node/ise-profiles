@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Multitech-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="MTX-DeviceRule254b7a69-0ec6-4fec-a7dd-af43755f8f88_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_MULTITECH" expression="MTX-DeviceRule254b7a69-0ec6-4fec-a7dd-af43755f8f88Checkdf972eba-4a1a-450b-a384-7585c958a5db_copy" name="MTX-DeviceRule254b7a69-0ec6-4fec-a7dd-af43755f8f88_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="MULTITECH" description="MAC OUI CONTAINS MULTITECH" name="MTX-DeviceRule254b7a69-0ec6-4fec-a7dd-af43755f8f88Checkdf972eba-4a1a-450b-a384-7585c958a5db_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

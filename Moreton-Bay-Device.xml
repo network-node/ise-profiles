@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Moreton-Bay-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Moreton-Bay-DeviceRule4757aa97-4a71-44d4-bee9-11fc78fb94f6"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_MORETON_BAY" expression="Moreton-Bay-DeviceRule4757aa97-4a71-44d4-bee9-11fc78fb94f6Check92b71ac0-f866-4e21-a208-83a78e6e66a9" name="Moreton-Bay-DeviceRule4757aa97-4a71-44d4-bee9-11fc78fb94f6" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="MORETON BAY" description="MAC OUI CONTAINS MORETON BAY" name="Moreton-Bay-DeviceRule4757aa97-4a71-44d4-bee9-11fc78fb94f6Check92b71ac0-f866-4e21-a208-83a78e6e66a9" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

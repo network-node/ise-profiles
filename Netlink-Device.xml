@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Phast-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Panasonic-DeviceRule8bb4d148-4f5f-46fa-a844-f8708dff0735_copy_copy_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Netlink-Device" parentFQN="Phast-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Netlink-DeviceRule690d4da9-79b3-4359-8e90-055f522359e2"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_PHAST_CORPORATION" expression="Panasonic-DeviceRule8bb4d148-4f5f-46fa-a844-f8708dff0735Checkfd40fb02-f102-47bc-8f44-a140d82ae6d7_copy_copy_copy_copy_copy_copy" name="Panasonic-DeviceRule8bb4d148-4f5f-46fa-a844-f8708dff0735_copy_copy_copy_copy_copy_copy" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_NetLinx" expression="Netlink-DeviceRule690d4da9-79b3-4359-8e90-055f522359e2Check1aa6b73a-7ff9-4f46-926a-8bcd0d53eb90" name="Netlink-DeviceRule690d4da9-79b3-4359-8e90-055f522359e2" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="PHAST CORPORATION" description="MAC OUI CONTAINS PHAST CORPORATION" name="Panasonic-DeviceRule8bb4d148-4f5f-46fa-a844-f8708dff0735Checkfd40fb02-f102-47bc-8f44-a140d82ae6d7_copy_copy_copy_copy_copy_copy" operator="Contains" type="Mac"/>
+<Check attributeName="sysDescr" attributeValue="NetLinx" description="SNMP sysDescr CONTAINS NetLinx" name="Netlink-DeviceRule690d4da9-79b3-4359-8e90-055f522359e2Check1aa6b73a-7ff9-4f46-926a-8bcd0d53eb90" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
