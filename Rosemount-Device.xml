@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Rosemount-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Rosemount-DeviceRule169e36c5-6ef4-4261-940d-fea40ac53b88"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_ROSEMOUNT_CONTROLS" expression="Rosemount-DeviceRule169e36c5-6ef4-4261-940d-fea40ac53b88Check5098ef80-7839-4b48-8bd8-cc14945fba96" name="Rosemount-DeviceRule169e36c5-6ef4-4261-940d-fea40ac53b88" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="ROSEMOUNT CONTROLS" description="MAC OUI CONTAINS ROSEMOUNT CONTROLS" name="Rosemount-DeviceRule169e36c5-6ef4-4261-940d-fea40ac53b88Check5098ef80-7839-4b48-8bd8-cc14945fba96" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

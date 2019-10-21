@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Racal-Milgo-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Racal-Milgo-DeviceRule83481480-2698-495f-8773-dafd33ac37ae"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_RACAL-MILGO" expression="Racal-Milgo-DeviceRule83481480-2698-495f-8773-dafd33ac37aeCheckfb88ff90-4e6b-4399-8a69-0c8729226aad" name="Racal-Milgo-DeviceRule83481480-2698-495f-8773-dafd33ac37ae" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="RACAL-MILGO" description="MAC OUI CONTAINS RACAL-MILGO" name="Racal-Milgo-DeviceRule83481480-2698-495f-8773-dafd33ac37aeCheckfb88ff90-4e6b-4399-8a69-0c8729226aad" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

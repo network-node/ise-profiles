@@ -2,15 +2,15 @@
 <Policies>
 <Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Quanta-Device" version="2">
 <PolicyRules>
-<PolicyRule certaintyFactor="5" name="Quanta-DeviceRule730507be-60e8-4aa5-9a62-e7234883e22b"/>
+<PolicyRule certaintyFactor="5" name="Panasonic-DeviceRule8bb4d148-4f5f-46fa-a844-f8708dff0735_copy_copy_copy_copy_copy_copy_copy_copy_copy"/>
 </PolicyRules>
 </Policy>
 </Policies>
 <Rules>
-<Rule description="MAC_OUI_CONTAINS_Quanta" expression="Quanta-DeviceRule730507be-60e8-4aa5-9a62-e7234883e22bCheck9a51d191-51e2-4f1a-ba80-3d46db6b2548" name="Quanta-DeviceRule730507be-60e8-4aa5-9a62-e7234883e22b" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_QUANTA" expression="Panasonic-DeviceRule8bb4d148-4f5f-46fa-a844-f8708dff0735Checkfd40fb02-f102-47bc-8f44-a140d82ae6d7_copy_copy_copy_copy_copy_copy_copy_copy_copy" name="Panasonic-DeviceRule8bb4d148-4f5f-46fa-a844-f8708dff0735_copy_copy_copy_copy_copy_copy_copy_copy_copy" ruleType="Regular"/>
 </Rules>
 <Checks>
-<Check attributeName="OUI" attributeValue="Quanta" description="MAC OUI CONTAINS Quanta" name="Quanta-DeviceRule730507be-60e8-4aa5-9a62-e7234883e22bCheck9a51d191-51e2-4f1a-ba80-3d46db6b2548" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="QUANTA" description="MAC OUI CONTAINS QUANTA" name="Panasonic-DeviceRule8bb4d148-4f5f-46fa-a844-f8708dff0735Checkfd40fb02-f102-47bc-8f44-a140d82ae6d7_copy_copy_copy_copy_copy_copy_copy_copy_copy" operator="Contains" type="Mac"/>
 </Checks>
 <Actions/>
 <ScanActions/>

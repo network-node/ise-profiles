@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Salcomp-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Salcomp-DeviceRuleb16ad6a4-958d-4a68-bd17-9a953807e8e6"/>
+<PolicyRule certaintyFactor="5" name="Salcomp-DeviceRule6e1a38e6-4fe8-4592-a570-dd6c8422b14b"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Salcomp" expression="Salcomp-DeviceRuleb16ad6a4-958d-4a68-bd17-9a953807e8e6Checke067c37e-0f35-41a1-a551-84917d64016b" name="Salcomp-DeviceRuleb16ad6a4-958d-4a68-bd17-9a953807e8e6" ruleType="Regular"/>
+<Rule description="DHCP_host-name_STARTSWITH_Chromecast_OR_IP_FQDN_STARTSWITH_Chromecast" expression="Salcomp-DeviceRule6e1a38e6-4fe8-4592-a570-dd6c8422b14bCheckbd6874aa-85dd-4dc1-8ce1-03bfc7d06015 | Salcomp-DeviceRule6e1a38e6-4fe8-4592-a570-dd6c8422b14bCheck63a92782-2d24-42fa-9027-e77e975c9989" name="Salcomp-DeviceRule6e1a38e6-4fe8-4592-a570-dd6c8422b14b" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Salcomp" description="MAC OUI CONTAINS Salcomp" name="Salcomp-DeviceRuleb16ad6a4-958d-4a68-bd17-9a953807e8e6Checke067c37e-0f35-41a1-a551-84917d64016b" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="Chromecast" description="DHCP host-name STARTSWITH Chromecast" name="Salcomp-DeviceRule6e1a38e6-4fe8-4592-a570-dd6c8422b14bCheckbd6874aa-85dd-4dc1-8ce1-03bfc7d06015" operator="Starts with" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="Chromecast" description="IP FQDN STARTSWITH Chromecast" name="Salcomp-DeviceRule6e1a38e6-4fe8-4592-a570-dd6c8422b14bCheck63a92782-2d24-42fa-9027-e77e975c9989" operator="Starts with" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

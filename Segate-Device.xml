@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Segate-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Seco-DeviceRulee98215d6-b372-463e-aab1-da9e81e93383_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Segate_Technology" expression="Seco-DeviceRulee98215d6-b372-463e-aab1-da9e81e93383Check82d6af5c-08b8-4189-a11f-407a555e45e3_copy" name="Seco-DeviceRulee98215d6-b372-463e-aab1-da9e81e93383_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Segate Technology" description="MAC OUI CONTAINS Segate Technology" name="Seco-DeviceRulee98215d6-b372-463e-aab1-da9e81e93383Check82d6af5c-08b8-4189-a11f-407a555e45e3_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

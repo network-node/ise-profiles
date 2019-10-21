@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="AMPAK-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="AMPAK-DeviceRule7ac40f27-252e-4000-9e99-7f142ee353a0"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Remarkable-Device" parentFQN="AMPAK-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Remarkable-DeviceRuled5468290-c6c5-4e34-a558-4dcb3d2e943c"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_AMPAK" expression="AMPAK-DeviceRule7ac40f27-252e-4000-9e99-7f142ee353a0Check157773a3-9c0e-4f70-a1e2-0ea300293db3" name="AMPAK-DeviceRule7ac40f27-252e-4000-9e99-7f142ee353a0" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_remarkable_OR_IP_FQDN_CONTAINS_remarkable" expression="Remarkable-DeviceRuled5468290-c6c5-4e34-a558-4dcb3d2e943cCheck2250a63e-2886-4dd9-82b5-f65ffeac2243 | Remarkable-DeviceRuled5468290-c6c5-4e34-a558-4dcb3d2e943cCheck9d1de18c-6600-411c-b3aa-8ec1c426702e" name="Remarkable-DeviceRuled5468290-c6c5-4e34-a558-4dcb3d2e943c" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="AMPAK" description="MAC OUI CONTAINS AMPAK" name="AMPAK-DeviceRule7ac40f27-252e-4000-9e99-7f142ee353a0Check157773a3-9c0e-4f70-a1e2-0ea300293db3" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="remarkable" description="DHCP host-name CONTAINS remarkable" name="Remarkable-DeviceRuled5468290-c6c5-4e34-a558-4dcb3d2e943cCheck2250a63e-2886-4dd9-82b5-f65ffeac2243" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="remarkable" description="IP FQDN CONTAINS remarkable" name="Remarkable-DeviceRuled5468290-c6c5-4e34-a558-4dcb3d2e943cCheck9d1de18c-6600-411c-b3aa-8ec1c426702e" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

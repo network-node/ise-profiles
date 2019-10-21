@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Saejin-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Rosemount-DeviceRule169e36c5-6ef4-4261-940d-fea40ac53b88_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_SAEJIN" expression="Rosemount-DeviceRule169e36c5-6ef4-4261-940d-fea40ac53b88Check5098ef80-7839-4b48-8bd8-cc14945fba96_copy_copy" name="Rosemount-DeviceRule169e36c5-6ef4-4261-940d-fea40ac53b88_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="SAEJIN" description="MAC OUI CONTAINS SAEJIN" name="Rosemount-DeviceRule169e36c5-6ef4-4261-940d-fea40ac53b88Check5098ef80-7839-4b48-8bd8-cc14945fba96_copy_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
