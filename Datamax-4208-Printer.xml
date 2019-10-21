@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Datamax-4208-Printer" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Datamax-4208-PrinterRule09d2f29f-511f-4b90-9490-c8fa72944856"/>
+<PolicyRule certaintyFactor="20" name="Datamax-4208-PrinterRule7b671dce-392b-4adc-8a6a-9035fe845302"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="SNMP_hrDeviceDescr_CONTAINS_Datamax_I4208" expression="Datamax-4208-PrinterRule09d2f29f-511f-4b90-9490-c8fa72944856Check72d86941-863a-4b65-b795-5b1fc30a5f71" name="Datamax-4208-PrinterRule09d2f29f-511f-4b90-9490-c8fa72944856" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_Datamax_Corporation_I-Class_4208" expression="Datamax-4208-PrinterRule7b671dce-392b-4adc-8a6a-9035fe845302Check6d02454d-6105-489e-ad72-34e546ba8247" name="Datamax-4208-PrinterRule7b671dce-392b-4adc-8a6a-9035fe845302" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="hrDeviceDescr" attributeValue="Datamax I4208" description="SNMP hrDeviceDescr CONTAINS Datamax I4208" name="Datamax-4208-PrinterRule09d2f29f-511f-4b90-9490-c8fa72944856Check72d86941-863a-4b65-b795-5b1fc30a5f71" operator="Contains" type="Snmp"/>
+<Check attributeName="sysDescr" attributeValue="Datamax Corporation I-Class 4208" description="SNMP sysDescr CONTAINS Datamax Corporation I-Class 4208" name="Datamax-4208-PrinterRule7b671dce-392b-4adc-8a6a-9035fe845302Check6d02454d-6105-489e-ad72-34e546ba8247" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

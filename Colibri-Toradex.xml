@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Colibri-Toradex" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Colibri-ToradexRulee9513bc6-bc6b-4214-aab6-9f5796d63dc2"/>
+<PolicyRule certaintyFactor="10" name="Colibri-ToradexRule03fbf7b4-7774-4000-8017-92a348acdd40"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="IP_FQDN_CONTAINS_colibri_OR_DHCP_host-name_CONTAINS_colibri" expression="Colibri-ToradexRulee9513bc6-bc6b-4214-aab6-9f5796d63dc2Check8531dc2d-c021-4961-b38e-fc4dccc8087f | Colibri-ToradexRulee9513bc6-bc6b-4214-aab6-9f5796d63dc2Check37d77ee7-c212-4d18-951b-674c6bb3ec79" name="Colibri-ToradexRulee9513bc6-bc6b-4214-aab6-9f5796d63dc2" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Toradex_AG" expression="Colibri-ToradexRule03fbf7b4-7774-4000-8017-92a348acdd40Check5fe8f272-3cb3-411f-a3da-db12cd1018d6" name="Colibri-ToradexRule03fbf7b4-7774-4000-8017-92a348acdd40" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="FQDN" attributeValue="colibri" description="IP FQDN CONTAINS colibri" name="Colibri-ToradexRulee9513bc6-bc6b-4214-aab6-9f5796d63dc2Check8531dc2d-c021-4961-b38e-fc4dccc8087f" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="colibri" description="DHCP host-name CONTAINS colibri" name="Colibri-ToradexRulee9513bc6-bc6b-4214-aab6-9f5796d63dc2Check37d77ee7-c212-4d18-951b-674c6bb3ec79" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Toradex AG" description="MAC OUI CONTAINS Toradex AG" name="Colibri-ToradexRule03fbf7b4-7774-4000-8017-92a348acdd40Check5fe8f272-3cb3-411f-a3da-db12cd1018d6" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

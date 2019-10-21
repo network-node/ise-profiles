@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Data-Robotics-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Data-Robotics-DeviceRuleea0095be-9dc6-4499-878e-8c28a5ce9ff1"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Data_Robotics" expression="Data-Robotics-DeviceRuleea0095be-9dc6-4499-878e-8c28a5ce9ff1Check4d2f1753-46b1-45dc-8102-4dbe0571a86c" name="Data-Robotics-DeviceRuleea0095be-9dc6-4499-878e-8c28a5ce9ff1" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Data Robotics" description="MAC OUI CONTAINS Data Robotics" name="Data-Robotics-DeviceRuleea0095be-9dc6-4499-878e-8c28a5ce9ff1Check4d2f1753-46b1-45dc-8102-4dbe0571a86c" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="DVR-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="DVR-DeviceRuleacd2be33-a633-4e5e-bb97-d5e144d69dec"/>
+<PolicyRule certaintyFactor="10" name="DVR-DeviceRuled50ddec6-f738-4e38-9b00-898602de275a"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="DHCP_host-name_CONTAINS_DVR_OR_IP_FQDN_CONTAINS_DVR" expression="DVR-DeviceRuleacd2be33-a633-4e5e-bb97-d5e144d69decCheck1e9c9281-8555-4f9b-bbb4-82f1eba5cfcd | DVR-DeviceRuleacd2be33-a633-4e5e-bb97-d5e144d69decCheck2f8a4e65-3294-444a-8a35-32abe5d0f30f" name="DVR-DeviceRuleacd2be33-a633-4e5e-bb97-d5e144d69dec" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_HANGZHOU_ZENOINTEL" expression="DVR-DeviceRuled50ddec6-f738-4e38-9b00-898602de275aCheck4bea6ad5-53f9-4497-82bc-3de6328eade9" name="DVR-DeviceRuled50ddec6-f738-4e38-9b00-898602de275a" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="host-name" attributeValue="DVR" description="DHCP host-name CONTAINS DVR" name="DVR-DeviceRuleacd2be33-a633-4e5e-bb97-d5e144d69decCheck1e9c9281-8555-4f9b-bbb4-82f1eba5cfcd" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="DVR" description="IP FQDN CONTAINS DVR" name="DVR-DeviceRuleacd2be33-a633-4e5e-bb97-d5e144d69decCheck2f8a4e65-3294-444a-8a35-32abe5d0f30f" operator="Contains" type="IP"/>
+<Check attributeName="OUI" attributeValue="HANGZHOU ZENOINTEL" description="MAC OUI CONTAINS HANGZHOU ZENOINTEL" name="DVR-DeviceRuled50ddec6-f738-4e38-9b00-898602de275aCheck4bea6ad5-53f9-4497-82bc-3de6328eade9" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
