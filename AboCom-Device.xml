@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="AboCom-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="AAEON-DeviceRuled32bbcd3-e57f-4f0f-910d-bb26a9a639c6_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_AboCom" expression="AAEON-DeviceRuled32bbcd3-e57f-4f0f-910d-bb26a9a639c6Checkc6c2ab87-1401-4c79-bf0c-119802c800d4_copy" name="AAEON-DeviceRuled32bbcd3-e57f-4f0f-910d-bb26a9a639c6_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="AboCom" description="MAC OUI CONTAINS AboCom" name="AAEON-DeviceRuled32bbcd3-e57f-4f0f-910d-bb26a9a639c6Checkc6c2ab87-1401-4c79-bf0c-119802c800d4_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

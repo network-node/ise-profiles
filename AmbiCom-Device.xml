@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="AmbiCom-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="AmbiCom-DeviceRulec4becd15-8d69-4848-9b02-90dc8fdbe86b"/>
+<PolicyRule certaintyFactor="10" name="AmbiCom-DeviceRuleb57be604-c73d-4968-9cac-d3a5418eb4ae"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="DHCP_dhcp-parameter-request-list_CONTAINS_3,_1,_6" expression="AmbiCom-DeviceRulec4becd15-8d69-4848-9b02-90dc8fdbe86bCheck6390493c-c85e-44f2-8537-ccce3dc1d766" name="AmbiCom-DeviceRulec4becd15-8d69-4848-9b02-90dc8fdbe86b" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_AmbiCom" expression="AmbiCom-DeviceRuleb57be604-c73d-4968-9cac-d3a5418eb4aeCheck4b8e8e87-ee59-492d-93aa-13af6375e2da" name="AmbiCom-DeviceRuleb57be604-c73d-4968-9cac-d3a5418eb4ae" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="3, 1, 6" description="DHCP dhcp-parameter-request-list CONTAINS 3, 1, 6" name="AmbiCom-DeviceRulec4becd15-8d69-4848-9b02-90dc8fdbe86bCheck6390493c-c85e-44f2-8537-ccce3dc1d766" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="AmbiCom" description="MAC OUI CONTAINS AmbiCom" name="AmbiCom-DeviceRuleb57be604-c73d-4968-9cac-d3a5418eb4aeCheck4b8e8e87-ee59-492d-93aa-13af6375e2da" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

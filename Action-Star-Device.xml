@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Action-Star-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Action-Star-DeviceRulecb16a464-3da7-4e94-8836-3f2054d8751b"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Action_Star_Enterprise" expression="Action-Star-DeviceRulecb16a464-3da7-4e94-8836-3f2054d8751bCheck06c6d660-0b43-4038-8458-af0ae0e84d85" name="Action-Star-DeviceRulecb16a464-3da7-4e94-8836-3f2054d8751b" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Action Star Enterprise" description="MAC OUI CONTAINS Action Star Enterprise" name="Action-Star-DeviceRulecb16a464-3da7-4e94-8836-3f2054d8751bCheck06c6d660-0b43-4038-8458-af0ae0e84d85" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

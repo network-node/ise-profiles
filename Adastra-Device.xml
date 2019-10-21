@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Adastra-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Adastra-DeviceRule8c0003ba-fd74-4fdd-bb0c-0ddebb4638d6"/>
+<PolicyRule certaintyFactor="5" name="Adastra-DeviceRule89e0e1af-d21c-4bef-b5b3-e83e1af9c4ac"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_ADASTRA_SYSTEMS" expression="Adastra-DeviceRule8c0003ba-fd74-4fdd-bb0c-0ddebb4638d6Check244bbbf4-9c15-4191-acb7-a33e05379381" name="Adastra-DeviceRule8c0003ba-fd74-4fdd-bb0c-0ddebb4638d6" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-parameter-request-list_CONTAINS_1,_28,_2,_3,_15,_6,_12,_40,_41,_42" expression="Adastra-DeviceRule89e0e1af-d21c-4bef-b5b3-e83e1af9c4acCheck514caad9-3f9c-4ab7-8ae8-63ba959eae72" name="Adastra-DeviceRule89e0e1af-d21c-4bef-b5b3-e83e1af9c4ac" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="ADASTRA SYSTEMS" description="MAC OUI CONTAINS ADASTRA SYSTEMS" name="Adastra-DeviceRule8c0003ba-fd74-4fdd-bb0c-0ddebb4638d6Check244bbbf4-9c15-4191-acb7-a33e05379381" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 28, 2, 3, 15, 6, 12, 40, 41, 42" description="DHCP dhcp-parameter-request-list CONTAINS 1, 28, 2, 3, 15, 6, 12, 40, 41, 42" name="Adastra-DeviceRule89e0e1af-d21c-4bef-b5b3-e83e1af9c4acCheck514caad9-3f9c-4ab7-8ae8-63ba959eae72" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

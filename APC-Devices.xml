@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="APC-Devices" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="APC-DevicesRule3a4774d4-f987-42e7-8069-a93919a75efb"/>
+<PolicyRule certaintyFactor="20" name="APC-DevicesRulebc18bab0-256f-422c-bd9e-20c54f80a6d4"/>
+<PolicyRule certaintyFactor="20" name="APC-DevicesRule595ff95c-d71e-41cc-acf7-12cf78fed552"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="SNMP_sysDescr_CONTAINS_APC" expression="APC-DevicesRule3a4774d4-f987-42e7-8069-a93919a75efbCheckbbcbe066-880c-41c3-9cd6-aba45fad9e73" name="APC-DevicesRule3a4774d4-f987-42e7-8069-a93919a75efb" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_APC" expression="APC-DevicesRulebc18bab0-256f-422c-bd9e-20c54f80a6d4Checkc44efb76-596a-42e3-bf39-377245bc52f8" name="APC-DevicesRulebc18bab0-256f-422c-bd9e-20c54f80a6d4" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_AMERICAN_POWER_CONVERSION_OR_MAC_OUI_CONTAINS_APC" expression="APC-DevicesRule595ff95c-d71e-41cc-acf7-12cf78fed552Checkee87e3d3-964a-4b43-9a96-b566b583200f | APC-DevicesRule595ff95c-d71e-41cc-acf7-12cf78fed552Check4f767881-7ced-4e86-b223-694631791a85" name="APC-DevicesRule595ff95c-d71e-41cc-acf7-12cf78fed552" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="sysDescr" attributeValue="APC" description="SNMP sysDescr CONTAINS APC" name="APC-DevicesRule3a4774d4-f987-42e7-8069-a93919a75efbCheckbbcbe066-880c-41c3-9cd6-aba45fad9e73" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="APC" description="DHCP dhcp-class-identifier CONTAINS APC" name="APC-DevicesRulebc18bab0-256f-422c-bd9e-20c54f80a6d4Checkc44efb76-596a-42e3-bf39-377245bc52f8" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="AMERICAN POWER CONVERSION" description="MAC OUI CONTAINS AMERICAN POWER CONVERSION" name="APC-DevicesRule595ff95c-d71e-41cc-acf7-12cf78fed552Checkee87e3d3-964a-4b43-9a96-b566b583200f" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="APC" description="MAC OUI CONTAINS APC" name="APC-DevicesRule595ff95c-d71e-41cc-acf7-12cf78fed552Check4f767881-7ced-4e86-b223-694631791a85" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="AAEON-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="AAEON-DeviceRuled32bbcd3-e57f-4f0f-910d-bb26a9a639c6"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="AAEON-PLC" parentFQN="AAEON-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="AAEON-PLCRulecb519eb4-6344-4d6a-aeeb-3191489dbac6"/>
+<PolicyRule certaintyFactor="10" name="AAEON-PLCRuled3167eed-49f9-4abb-b713-ea73c12cda60"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_AAEON" expression="AAEON-DeviceRuled32bbcd3-e57f-4f0f-910d-bb26a9a639c6Checkc6c2ab87-1401-4c79-bf0c-119802c800d4" name="AAEON-DeviceRuled32bbcd3-e57f-4f0f-910d-bb26a9a639c6" ruleType="Regular"/>
+<Rule description="DHCP_client-identifier_CONTAINS_PLC" expression="AAEON-PLCRulecb519eb4-6344-4d6a-aeeb-3191489dbac6Checkce849c52-0129-4c4f-aab6-63d77bc702dc" name="AAEON-PLCRulecb519eb4-6344-4d6a-aeeb-3191489dbac6" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-parameter-request-list_CONTAINS_1,_121,_33,_3,_6,_12,_15,_26,_28,_42,_51,_54,_58,_59,_119" expression="AAEON-PLCRuled3167eed-49f9-4abb-b713-ea73c12cda60Checkfb05116b-11c1-449c-812d-ead1398f1956" name="AAEON-PLCRuled3167eed-49f9-4abb-b713-ea73c12cda60" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="AAEON" description="MAC OUI CONTAINS AAEON" name="AAEON-DeviceRuled32bbcd3-e57f-4f0f-910d-bb26a9a639c6Checkc6c2ab87-1401-4c79-bf0c-119802c800d4" operator="Contains" type="Mac"/>
+<Check attributeName="client-identifier" attributeValue="PLC" description="DHCP client-identifier CONTAINS PLC" name="AAEON-PLCRulecb519eb4-6344-4d6a-aeeb-3191489dbac6Checkce849c52-0129-4c4f-aab6-63d77bc702dc" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 121, 33, 3, 6, 12, 15, 26, 28, 42, 51, 54, 58, 59, 119" description="DHCP dhcp-parameter-request-list CONTAINS 1, 121, 33, 3, 6, 12, 15, 26, 28, 42, 51, 54, 58, 59, 119" name="AAEON-PLCRuled3167eed-49f9-4abb-b713-ea73c12cda60Checkfb05116b-11c1-449c-812d-ead1398f1956" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
