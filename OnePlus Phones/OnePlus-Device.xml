@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for all OnePlus devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="OnePlus-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="OnePlus-DeviceRule304b341a-e25a-4a95-baf3-6df773ffdd31"/>
+<PolicyRule certaintyFactor="20" name="OnePlus-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="IP_User-Agent_CONTAINS_ONEPLUS" expression="OnePlus-DeviceRule304b341a-e25a-4a95-baf3-6df773ffdd31Check83f10651-8c76-47bc-aebc-60334bbeae80" name="OnePlus-DeviceRule304b341a-e25a-4a95-baf3-6df773ffdd31" ruleType="Regular"/>
+<Rule description="OnePlus-Device-Rule1-Check1" expression="OnePlus-Device-Rule1-Check1" name="OnePlus-DeviceRule1" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="User-Agent" attributeValue="ONEPLUS" description="IP User-Agent CONTAINS ONEPLUS" name="OnePlus-DeviceRule304b341a-e25a-4a95-baf3-6df773ffdd31Check83f10651-8c76-47bc-aebc-60334bbeae80" operator="Contains" type="IP"/>
+<Check attributeName="OUI" attributeValue="OnePlus" description="Condition for OnePlus-Device,based on MAC-OUI" name="OnePlus-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Rauland-Borg-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Rauland-Borg-DeviceRule3671bf6e-2512-4d65-9e52-2e700d29c5b0"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Rauland-Biamp-AV" parentFQN="Rauland-Borg-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Rauland-Biamp-AVRule9f3ee4ba-151a-47e8-b3bd-11e50131fc70"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_RAULAND-BORG" expression="Rauland-Borg-DeviceRule3671bf6e-2512-4d65-9e52-2e700d29c5b0Check6389539e-d98b-40d0-954d-c8e5df1b0e5e" name="Rauland-Borg-DeviceRule3671bf6e-2512-4d65-9e52-2e700d29c5b0" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_biamp" expression="Rauland-Biamp-AVRule9f3ee4ba-151a-47e8-b3bd-11e50131fc70Checkee119063-e725-40d6-a561-484f4a1100bf" name="Rauland-Biamp-AVRule9f3ee4ba-151a-47e8-b3bd-11e50131fc70" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="RAULAND-BORG" description="MAC OUI CONTAINS RAULAND-BORG" name="Rauland-Borg-DeviceRule3671bf6e-2512-4d65-9e52-2e700d29c5b0Check6389539e-d98b-40d0-954d-c8e5df1b0e5e" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="biamp" description="DHCP host-name CONTAINS biamp" name="Rauland-Biamp-AVRule9f3ee4ba-151a-47e8-b3bd-11e50131fc70Checkee119063-e725-40d6-a561-484f4a1100bf" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

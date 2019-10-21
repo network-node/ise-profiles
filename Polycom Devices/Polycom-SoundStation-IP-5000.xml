@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Polycom devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Polycom-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Polycom-Device-OUI-Rule"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Polycom-SoundStation-IP-5000" parentFQN="Polycom-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Polycom-SoundStation-IP-5000Rule00f84f21-b31a-4995-8da3-740aad1e2197"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="PolycomOUICheck" expression="PolycomOUICheck" name="Polycom-Device-OUI-Rule" ruleType="Regular"/>
+<Rule description="CDP_cdpCachePlatform_CONTAINS_IP_5000" expression="Polycom-SoundStation-IP-5000Rule00f84f21-b31a-4995-8da3-740aad1e2197Check8f632a5a-1ccc-46bb-8cff-0b3d734112f9" name="Polycom-SoundStation-IP-5000Rule00f84f21-b31a-4995-8da3-740aad1e2197" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Polycom" description="Polycom OUI Check" name="PolycomOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="cdpCachePlatform" attributeValue="IP 5000" description="CDP cdpCachePlatform CONTAINS IP 5000" name="Polycom-SoundStation-IP-5000Rule00f84f21-b31a-4995-8da3-740aad1e2197Check8f632a5a-1ccc-46bb-8cff-0b3d734112f9" operator="Contains" type="CDP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

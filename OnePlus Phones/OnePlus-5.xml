@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for all OnePlus devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="OnePlus-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="OnePlus-DeviceRule304b341a-e25a-4a95-baf3-6df773ffdd31"/>
+<PolicyRule certaintyFactor="20" name="OnePlus-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="OnePlus-5" parentFQN="OnePlus-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OnePlus-2Rule1736d0d8-bf51-48af-9cd0-410c5c206f2e_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="IP_User-Agent_CONTAINS_ONEPLUS" expression="OnePlus-DeviceRule304b341a-e25a-4a95-baf3-6df773ffdd31Check83f10651-8c76-47bc-aebc-60334bbeae80" name="OnePlus-DeviceRule304b341a-e25a-4a95-baf3-6df773ffdd31" ruleType="Regular"/>
+<Rule description="OnePlus-Device-Rule1-Check1" expression="OnePlus-Device-Rule1-Check1" name="OnePlus-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_OnePlus_5_OR_IP_FQDN_CONTAINS_OnePlus_5T_OR_IP_FQDN_CONTAINS_OnePlus5_OR_DHCP_host-name_CONTAINS_OnePlus_5_OR_DHCP_host-name_CONTAINS_OnePlus_5T_OR_DHCP_host-name_CONTAINS_OnePlus5" expression="((((OnePlus-2Rule1736d0d8-bf51-48af-9cd0-410c5c206f2eCheckc4564118-4e69-4001-9632-6b3f4189941d_copy_copy | OnePlus-2Rule1736d0d8-bf51-48af-9cd0-410c5c206f2eCheckcb8c5729-de38-40c8-87c4-66ca20293dad_copy_copy) | OnePlus-2Rule1736d0d8-bf51-48af-9cd0-410c5c206f2eCheck2afc814b-c78e-4544-9ccc-99362815d975_copy_copy) | OnePlus-2Rule1736d0d8-bf51-48af-9cd0-410c5c206f2eCheck3f3402f3-eb61-443e-a8d0-fc4d8b0a4ea4_copy_copy) | OnePlus-2Rule1736d0d8-bf51-48af-9cd0-410c5c206f2eCheck1cdc9303-0881-4688-a633-3fc1cbcc43ae_copy_copy) | OnePlus-2Rule1736d0d8-bf51-48af-9cd0-410c5c206f2eCheck53e3d814-b0c4-486f-aefc-f8179beeabb2_copy_copy" name="OnePlus-2Rule1736d0d8-bf51-48af-9cd0-410c5c206f2e_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="User-Agent" attributeValue="ONEPLUS" description="IP User-Agent CONTAINS ONEPLUS" name="OnePlus-DeviceRule304b341a-e25a-4a95-baf3-6df773ffdd31Check83f10651-8c76-47bc-aebc-60334bbeae80" operator="Contains" type="IP"/>
+<Check attributeName="OUI" attributeValue="OnePlus" description="Condition for OnePlus-Device,based on MAC-OUI" name="OnePlus-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="OnePlus_5" description="IP FQDN CONTAINS OnePlus_5" name="OnePlus-2Rule1736d0d8-bf51-48af-9cd0-410c5c206f2eCheckc4564118-4e69-4001-9632-6b3f4189941d_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="OnePlus_5T" description="IP FQDN CONTAINS OnePlus_5T" name="OnePlus-2Rule1736d0d8-bf51-48af-9cd0-410c5c206f2eCheckcb8c5729-de38-40c8-87c4-66ca20293dad_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="OnePlus5" description="IP FQDN CONTAINS OnePlus5" name="OnePlus-2Rule1736d0d8-bf51-48af-9cd0-410c5c206f2eCheck2afc814b-c78e-4544-9ccc-99362815d975_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="OnePlus_5" description="DHCP host-name CONTAINS OnePlus_5" name="OnePlus-2Rule1736d0d8-bf51-48af-9cd0-410c5c206f2eCheck3f3402f3-eb61-443e-a8d0-fc4d8b0a4ea4_copy_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="OnePlus_5T" description="DHCP host-name CONTAINS OnePlus_5T" name="OnePlus-2Rule1736d0d8-bf51-48af-9cd0-410c5c206f2eCheck1cdc9303-0881-4688-a633-3fc1cbcc43ae_copy_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="OnePlus5" description="DHCP host-name CONTAINS OnePlus5" name="OnePlus-2Rule1736d0d8-bf51-48af-9cd0-410c5c206f2eCheck53e3d814-b0c4-486f-aefc-f8179beeabb2_copy_copy" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

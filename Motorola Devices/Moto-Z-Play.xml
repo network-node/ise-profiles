@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Motorola-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Motorola-DeviceRule51822f76-6453-40a0-910e-4d6a4de90093"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Moto-Z-Play" parentFQN="Motorola-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Moto-G6Rulee3878fd7-4e0d-4cca-a515-99eaabfb9aa9_copy_copy_copy_copy_copy_copy_copy0"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Motorola" expression="Motorola-DeviceRule51822f76-6453-40a0-910e-4d6a4de90093Check065cb010-90f6-4a52-a03d-b18cd625d0f4" name="Motorola-DeviceRule51822f76-6453-40a0-910e-4d6a4de90093" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_XT1635-01_OR_IP_User-Agent_CONTAINS_XT1650" expression="Moto-G6Rulee3878fd7-4e0d-4cca-a515-99eaabfb9aa9Check8d0bd198-59ba-46ea-85e2-c6a1b6fb09ec_copy_copy_copy_copy_copy_copy_copy0 | Moto-G6Rulee3878fd7-4e0d-4cca-a515-99eaabfb9aa9_copy_copy_copy_copy_copy_copy_copy0Checkaf790e7d-7c64-431a-a127-d2ae891faf13" name="Moto-G6Rulee3878fd7-4e0d-4cca-a515-99eaabfb9aa9_copy_copy_copy_copy_copy_copy_copy0" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Motorola" description="MAC OUI CONTAINS Motorola" name="Motorola-DeviceRule51822f76-6453-40a0-910e-4d6a4de90093Check065cb010-90f6-4a52-a03d-b18cd625d0f4" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="XT1635-01" description="IP User-Agent CONTAINS XT1635-01" name="Moto-G6Rulee3878fd7-4e0d-4cca-a515-99eaabfb9aa9Check8d0bd198-59ba-46ea-85e2-c6a1b6fb09ec_copy_copy_copy_copy_copy_copy_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="XT1650" description="IP User-Agent CONTAINS XT1650" name="Moto-G6Rulee3878fd7-4e0d-4cca-a515-99eaabfb9aa9_copy_copy_copy_copy_copy_copy_copy0Checkaf790e7d-7c64-431a-a127-d2ae891faf13" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

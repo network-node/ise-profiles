@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Oppo-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Oppo-DeviceRule7f987a02-c2e8-49ce-b21e-94ce4fe89f4d"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Oppo-R17" parentFQN="Oppo-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Oppo-A57Rule4da12d8f-b2e4-44da-9a9f-a6f59513b60d_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_GUANGDONG_OPPO" expression="Oppo-DeviceRule7f987a02-c2e8-49ce-b21e-94ce4fe89f4dCheck9f23bdc5-ebd3-45fe-8ad1-7dc757921567" name="Oppo-DeviceRule7f987a02-c2e8-49ce-b21e-94ce4fe89f4d" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_CPH1877" expression="Oppo-A57Rule4da12d8f-b2e4-44da-9a9f-a6f59513b60dCheck53d5b55e-9730-492c-8225-e30358fba2b7_copy_copy" name="Oppo-A57Rule4da12d8f-b2e4-44da-9a9f-a6f59513b60d_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="GUANGDONG OPPO" description="MAC OUI CONTAINS GUANGDONG OPPO" name="Oppo-DeviceRule7f987a02-c2e8-49ce-b21e-94ce4fe89f4dCheck9f23bdc5-ebd3-45fe-8ad1-7dc757921567" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="CPH1877" description="IP User-Agent CONTAINS CPH1877" name="Oppo-A57Rule4da12d8f-b2e4-44da-9a9f-a6f59513b60dCheck53d5b55e-9730-492c-8225-e30358fba2b7_copy_copy" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

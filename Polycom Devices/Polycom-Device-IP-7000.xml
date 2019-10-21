@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Polycom devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Polycom-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Polycom-DeviceRule650e6e5e-d2be-4edc-a68b-102975235d8c"/>
+<PolicyRule certaintyFactor="10" name="Polycom-Device-OUI-Rule"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Polycom-Device-IP-7000" parentFQN="Polycom-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Polycom-Device-IP-7000Ruled1ce7684-c840-4b0c-94f9-b4145669d7d8"/>
+<PolicyRule certaintyFactor="20" name="Polycom-Device-IP-7000Rule7d2eecc0-6b7e-47fc-ac96-477ef8e432b4"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_ViaVideo" expression="Polycom-DeviceRule650e6e5e-d2be-4edc-a68b-102975235d8cChecke1a61c5a-ad1e-4630-b556-da1742896916" name="Polycom-DeviceRule650e6e5e-d2be-4edc-a68b-102975235d8c" ruleType="Regular"/>
+<Rule description="PolycomOUICheck" expression="PolycomOUICheck" name="Polycom-Device-OUI-Rule" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_Polycom-SSIP7000" expression="Polycom-Device-IP-7000Ruled1ce7684-c840-4b0c-94f9-b4145669d7d8Check05e69e3f-35e9-4fdb-9ee1-d3c2d70e0065" name="Polycom-Device-IP-7000Ruled1ce7684-c840-4b0c-94f9-b4145669d7d8" ruleType="Regular"/>
+<Rule description="CDP_cdpCachePlatform_CONTAINS_Polycom_SoundStation_IP_7000" expression="Polycom-Device-IP-7000Rule7d2eecc0-6b7e-47fc-ac96-477ef8e432b4Check9529378f-6995-4802-b8f3-8bba305c899c" name="Polycom-Device-IP-7000Rule7d2eecc0-6b7e-47fc-ac96-477ef8e432b4" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="ViaVideo" description="MAC OUI CONTAINS ViaVideo" name="Polycom-DeviceRule650e6e5e-d2be-4edc-a68b-102975235d8cChecke1a61c5a-ad1e-4630-b556-da1742896916" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Polycom" description="Polycom OUI Check" name="PolycomOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Polycom-SSIP7000" description="DHCP dhcp-class-identifier CONTAINS Polycom-SSIP7000" name="Polycom-Device-IP-7000Ruled1ce7684-c840-4b0c-94f9-b4145669d7d8Check05e69e3f-35e9-4fdb-9ee1-d3c2d70e0065" operator="Contains" type="DHCP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="Polycom SoundStation IP 7000" description="CDP cdpCachePlatform CONTAINS Polycom SoundStation IP 7000" name="Polycom-Device-IP-7000Rule7d2eecc0-6b7e-47fc-ac96-477ef8e432b4Check9529378f-6995-4802-b8f3-8bba305c899c" operator="Contains" type="CDP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

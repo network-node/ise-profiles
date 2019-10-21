@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Motorola-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Motorola-DeviceRule51822f76-6453-40a0-910e-4d6a4de90093"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Droid-Turbo" parentFQN="Motorola-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Moto-RevvlryRulea4645c7e-506b-4140-91e0-a46f73dcec48_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Motorola" expression="Motorola-DeviceRule51822f76-6453-40a0-910e-4d6a4de90093Check065cb010-90f6-4a52-a03d-b18cd625d0f4" name="Motorola-DeviceRule51822f76-6453-40a0-910e-4d6a4de90093" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_XT1585_OR_IP_User-Agent_CONTAINS_XT1254" expression="Moto-RevvlryRulea4645c7e-506b-4140-91e0-a46f73dcec48Checka489949d-cab2-409c-904e-542041425a3e_copy | Moto-RevvlryRulea4645c7e-506b-4140-91e0-a46f73dcec48_copyCheck9dbc9a74-17d3-46a2-b339-a1c55d283a4f" name="Moto-RevvlryRulea4645c7e-506b-4140-91e0-a46f73dcec48_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Motorola" description="MAC OUI CONTAINS Motorola" name="Motorola-DeviceRule51822f76-6453-40a0-910e-4d6a4de90093Check065cb010-90f6-4a52-a03d-b18cd625d0f4" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="XT1585" description="IP User-Agent CONTAINS XT1585" name="Moto-RevvlryRulea4645c7e-506b-4140-91e0-a46f73dcec48Checka489949d-cab2-409c-904e-542041425a3e_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="XT1254" description="IP User-Agent CONTAINS XT1254" name="Moto-RevvlryRulea4645c7e-506b-4140-91e0-a46f73dcec48_copyCheck9dbc9a74-17d3-46a2-b339-a1c55d283a4f" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

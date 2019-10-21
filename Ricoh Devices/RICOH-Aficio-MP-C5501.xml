@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Ricoh devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="RICOH-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="RICOH-DeviceRule2"/>
+<PolicyRule certaintyFactor="10" name="RICOH-DeviceRule1"/>
+<PolicyRule certaintyFactor="-3" name="RICOH-DeviceRule1_SCAN"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for RICOH-Aficio-MP-Series-Printer" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="RICOH-Aficio-MP-Series-Printer" parentFQN="RICOH-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="RICOH-Aficio-MP-Series-PrinterRule28d1dce9-bc28-4b21-97e3-3717158f926d"/>
+<PolicyRule certaintyFactor="20" name="RICOH-Aficio-MP-Series-PrinterRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for RICOH-Aficio-MP-C5501-Printer" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="RICOH-Aficio-MP-C5501" parentFQN="RICOH-Device:RICOH-Aficio-MP-Series-Printer" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="RICOH-Aficio-MP-C5501Rule6a609cd5-5ba5-424e-8d2c-cc85fa08fdc8"/>
+<PolicyRule certaintyFactor="30" name="RICOH-Aficio-MP-C5501Rule1"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="RICOH-Device-Descr" expression="RICOH-Device-Descr" name="RICOH-DeviceRule2" ruleType="Regular"/>
+<Rule description="RICOH-Device-OUI" expression="RICOH-Device-OUI" name="RICOH-DeviceRule1" ruleType="Regular"/>
+<Rule description="RICOH-Device-SCAN" expression="RICOH-Device-OUI" name="RICOH-DeviceRule1_SCAN" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_RICOH_Aficio_MP" expression="RICOH-Aficio-MP-Series-PrinterRule28d1dce9-bc28-4b21-97e3-3717158f926dCheck336bed2c-8091-4e68-80eb-b9a37a22f12f" name="RICOH-Aficio-MP-Series-PrinterRule28d1dce9-bc28-4b21-97e3-3717158f926d" ruleType="Regular"/>
+<Rule description="RICOH-Aficio-MP-Series-Printer_Rule1_Check1" expression="RICOH-Aficio-MP-Series-Printer_Rule1_Check1" name="RICOH-Aficio-MP-Series-PrinterRule1" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_RICOH_Aficio_MP_C5501" expression="RICOH-Aficio-MP-C5501Rule6a609cd5-5ba5-424e-8d2c-cc85fa08fdc8Checkc37fb663-7b1d-45cf-a250-ef56378004a7" name="RICOH-Aficio-MP-C5501Rule6a609cd5-5ba5-424e-8d2c-cc85fa08fdc8" ruleType="Regular"/>
+<Rule description="RICOH-Aficio-MP-C5501-Printer_Rule1_Check1" expression="RICOH-Aficio-MP-C5501-Printer_Rule1_Check1" name="RICOH-Aficio-MP-C5501Rule1" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="hrDeviceDescr" attributeValue="ricoh" description="SNMP hrDeviceDescr CONTAINS ricoh" name="RICOH-Device-Descr" operator="Contains" type="Snmp"/>
+<Check attributeName="OUI" attributeValue="ricoh" description="MAC OUI CONTAINS ricoh" name="RICOH-Device-OUI" operator="Contains" type="Mac"/>
+<Check attributeName="sysDescr" attributeValue="RICOH Aficio MP" description="SNMP sysDescr CONTAINS RICOH Aficio MP" name="RICOH-Aficio-MP-Series-PrinterRule28d1dce9-bc28-4b21-97e3-3717158f926dCheck336bed2c-8091-4e68-80eb-b9a37a22f12f" operator="Contains" type="Snmp"/>
+<Check attributeName="hrDeviceDescr" attributeValue="RICOH Aficio MP" description="hrDeviceDescr CONTAINS RICOH Aficio MP" name="RICOH-Aficio-MP-Series-Printer_Rule1_Check1" operator="Contains" type="Snmp"/>
+<Check attributeName="sysDescr" attributeValue="RICOH Aficio MP C5501" description="SNMP sysDescr CONTAINS RICOH Aficio MP C5501" name="RICOH-Aficio-MP-C5501Rule6a609cd5-5ba5-424e-8d2c-cc85fa08fdc8Checkc37fb663-7b1d-45cf-a250-ef56378004a7" operator="Contains" type="Snmp"/>
+<Check attributeName="hrDeviceDescr" attributeValue="RICOH Aficio MP C5501" description="hrDeviceDescr CONTAINS RICOH Aficio MP C5501" name="RICOH-Aficio-MP-C5501-Printer_Rule1_Check1" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

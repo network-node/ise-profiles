@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Ricoh devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="RICOH-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="RICOH-DeviceRule2"/>
+<PolicyRule certaintyFactor="10" name="RICOH-DeviceRule1"/>
+<PolicyRule certaintyFactor="-3" name="RICOH-DeviceRule1_SCAN"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Ricoh-Printer" parentFQN="RICOH-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Ricoh-PrinterRule641ef309-71a4-47b9-bec1-5f37b928bbe8"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="RICOH-IM-C6000" parentFQN="RICOH-Device:Ricoh-Printer" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="RICOH-IM-C6000Rule464dfd16-6a0b-4aed-871f-5ef8b3de9f9c"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="RICOH-Device-Descr" expression="RICOH-Device-Descr" name="RICOH-DeviceRule2" ruleType="Regular"/>
+<Rule description="RICOH-Device-OUI" expression="RICOH-Device-OUI" name="RICOH-DeviceRule1" ruleType="Regular"/>
+<Rule description="RICOH-Device-SCAN" expression="RICOH-Device-OUI" name="RICOH-DeviceRule1_SCAN" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_RicohPrinter" expression="Ricoh-PrinterRule641ef309-71a4-47b9-bec1-5f37b928bbe8Check38013371-0f1d-409f-8150-878c3b7c105f" name="Ricoh-PrinterRule641ef309-71a4-47b9-bec1-5f37b928bbe8" ruleType="Regular"/>
+<Rule description="SNMP_hrDeviceDescr_CONTAINS_RICOH_IM_C6000_OR_SNMP_sysDescr_CONTAINS_RICOH_IM_C6000" expression="RICOH-IM-C6000Rule464dfd16-6a0b-4aed-871f-5ef8b3de9f9cCheck71ae3da4-d810-49b2-96f8-11e6ffedf731 | RICOH-IM-C6000Rule464dfd16-6a0b-4aed-871f-5ef8b3de9f9cCheck74c4cfe7-a624-4574-9d46-c398dbab283d" name="RICOH-IM-C6000Rule464dfd16-6a0b-4aed-871f-5ef8b3de9f9c" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="hrDeviceDescr" attributeValue="ricoh" description="SNMP hrDeviceDescr CONTAINS ricoh" name="RICOH-Device-Descr" operator="Contains" type="Snmp"/>
+<Check attributeName="OUI" attributeValue="ricoh" description="MAC OUI CONTAINS ricoh" name="RICOH-Device-OUI" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="RicohPrinter" description="DHCP dhcp-class-identifier CONTAINS RicohPrinter" name="Ricoh-PrinterRule641ef309-71a4-47b9-bec1-5f37b928bbe8Check38013371-0f1d-409f-8150-878c3b7c105f" operator="Contains" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="RICOH IM C6000" description="SNMP hrDeviceDescr CONTAINS RICOH IM C6000" name="RICOH-IM-C6000Rule464dfd16-6a0b-4aed-871f-5ef8b3de9f9cCheck71ae3da4-d810-49b2-96f8-11e6ffedf731" operator="Contains" type="Snmp"/>
+<Check attributeName="sysDescr" attributeValue="RICOH IM C6000" description="SNMP sysDescr CONTAINS RICOH IM C6000" name="RICOH-IM-C6000Rule464dfd16-6a0b-4aed-871f-5ef8b3de9f9cCheck74c4cfe7-a624-4574-9d46-c398dbab283d" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Lantronix-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Lantronix-DeviceRule506532b4-be72-4d67-a2f6-005a4270e9cb"/>
+<PolicyRule certaintyFactor="-3" name="Lantronix-DeviceRule822a9374-8951-49bb-8166-ce0b178af138"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Lantronix-UDS" parentFQN="Lantronix-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Lantronix-UDSRule3f9a13c9-e850-4384-a14f-facb9fcea02f"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Lantronix_OR_MAC_OUI_CONTAINS_PRONET_GMBH" expression="Lantronix-DeviceRule506532b4-be72-4d67-a2f6-005a4270e9cbChecka81330be-884d-4d99-9cfb-84ab8485facb | Lantronix-DeviceRule506532b4-be72-4d67-a2f6-005a4270e9cbCheck48188210-34bb-4a59-9f1e-d62b9ca1f45c" name="Lantronix-DeviceRule506532b4-be72-4d67-a2f6-005a4270e9cb" ruleType="Regular"/>
+<Rule description="MAC_OUI_MATCHES_PRONET_GMBH_OR_MAC_OUI_MATCHES_Lantronix" expression="Lantronix-DeviceRule822a9374-8951-49bb-8166-ce0b178af138Checkfab0094e-1409-40ed-84d6-146836a6eec1 | Lantronix-DeviceRule822a9374-8951-49bb-8166-ce0b178af138Check3e69d77e-edf7-4197-8ffb-f571a8859acf" name="Lantronix-DeviceRule822a9374-8951-49bb-8166-ce0b178af138" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_Lantronix_UDS" expression="Lantronix-UDSRule3f9a13c9-e850-4384-a14f-facb9fcea02fCheck6de16a3c-465b-4876-9e3c-b1241938c3e3" name="Lantronix-UDSRule3f9a13c9-e850-4384-a14f-facb9fcea02f" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Lantronix" description="MAC OUI CONTAINS Lantronix" name="Lantronix-DeviceRule506532b4-be72-4d67-a2f6-005a4270e9cbChecka81330be-884d-4d99-9cfb-84ab8485facb" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="PRONET GMBH" description="MAC OUI CONTAINS PRONET GMBH" name="Lantronix-DeviceRule506532b4-be72-4d67-a2f6-005a4270e9cbCheck48188210-34bb-4a59-9f1e-d62b9ca1f45c" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="PRONET GMBH" description="MAC OUI MATCHES PRONET GMBH" name="Lantronix-DeviceRule822a9374-8951-49bb-8166-ce0b178af138Checkfab0094e-1409-40ed-84d6-146836a6eec1" operator="Matches" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Lantronix" description="MAC OUI MATCHES Lantronix" name="Lantronix-DeviceRule822a9374-8951-49bb-8166-ce0b178af138Check3e69d77e-edf7-4197-8ffb-f571a8859acf" operator="Matches" type="Mac"/>
+<Check attributeName="sysDescr" attributeValue="Lantronix UDS" description="SNMP sysDescr CONTAINS Lantronix UDS" name="Lantronix-UDSRule3f9a13c9-e850-4384-a14f-facb9fcea02fCheck6de16a3c-465b-4876-9e3c-b1241938c3e3" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

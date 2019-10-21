@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Polycom devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Polycom-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Polycom-DeviceRule650e6e5e-d2be-4edc-a68b-102975235d8c"/>
+<PolicyRule certaintyFactor="10" name="Polycom-Device-OUI-Rule"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_ViaVideo" expression="Polycom-DeviceRule650e6e5e-d2be-4edc-a68b-102975235d8cChecke1a61c5a-ad1e-4630-b556-da1742896916" name="Polycom-DeviceRule650e6e5e-d2be-4edc-a68b-102975235d8c" ruleType="Regular"/>
+<Rule description="PolycomOUICheck" expression="PolycomOUICheck" name="Polycom-Device-OUI-Rule" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="ViaVideo" description="MAC OUI CONTAINS ViaVideo" name="Polycom-DeviceRule650e6e5e-d2be-4edc-a68b-102975235d8cChecke1a61c5a-ad1e-4630-b556-da1742896916" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Polycom" description="Polycom OUI Check" name="PolycomOUICheck" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
