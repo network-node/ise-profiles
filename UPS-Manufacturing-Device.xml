@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="UPS-Manufacturing-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="UPS-Manufacturing-DeviceRulec2be886f-b0c6-4dd7-9d88-f2de9f381747"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_UPS_Manufacturing_" expression="UPS-Manufacturing-DeviceRulec2be886f-b0c6-4dd7-9d88-f2de9f381747Check3152c2fa-34e1-4ce6-b35f-280605402d36" name="UPS-Manufacturing-DeviceRulec2be886f-b0c6-4dd7-9d88-f2de9f381747" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="UPS Manufacturing " description="MAC OUI CONTAINS UPS Manufacturing " name="UPS-Manufacturing-DeviceRulec2be886f-b0c6-4dd7-9d88-f2de9f381747Check3152c2fa-34e1-4ce6-b35f-280605402d36" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

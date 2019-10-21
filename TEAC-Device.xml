@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="TEAC-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="TEAC-DeviceRuled71d4209-2b2d-4389-9fcc-397da6c29582"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_TEAC_Corp" expression="TEAC-DeviceRuled71d4209-2b2d-4389-9fcc-397da6c29582Check5e82d603-fc7e-4fb1-a32d-acdd083aa81f" name="TEAC-DeviceRuled71d4209-2b2d-4389-9fcc-397da6c29582" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="TEAC Corp" description="MAC OUI CONTAINS TEAC Corp" name="TEAC-DeviceRuled71d4209-2b2d-4389-9fcc-397da6c29582Check5e82d603-fc7e-4fb1-a32d-acdd083aa81f" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

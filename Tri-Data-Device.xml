@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Tri-Data-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Sichuan-Changhong-DeviceRule9b1a1923-cd81-42a7-b0a5-97d7c41ec662_copy_copy_copy_copy_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_TRI-DATA" expression="Sichuan-Changhong-DeviceRule9b1a1923-cd81-42a7-b0a5-97d7c41ec662Checkd99305f8-01ec-41d4-839d-310f167fdc2c_copy_copy_copy_copy_copy_copy_copy_copy" name="Sichuan-Changhong-DeviceRule9b1a1923-cd81-42a7-b0a5-97d7c41ec662_copy_copy_copy_copy_copy_copy_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="TRI-DATA" description="MAC OUI CONTAINS TRI-DATA" name="Sichuan-Changhong-DeviceRule9b1a1923-cd81-42a7-b0a5-97d7c41ec662Checkd99305f8-01ec-41d4-839d-310f167fdc2c_copy_copy_copy_copy_copy_copy_copy_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

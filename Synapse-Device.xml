@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Synapse-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Synapse-DeviceRuleda017659-aac7-4a35-a02f-116ddf2bfbb2"/>
+<PolicyRule certaintyFactor="10" name="Supersonic-PhoneRule58cd5a3c-723e-4ca3-88d0-722c7a796ecd_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="DHCP_dhcp-parameter-request-list_EQUALS_1,_3,_6,_12,_15,_28,_42" expression="Synapse-DeviceRuleda017659-aac7-4a35-a02f-116ddf2bfbb2Check36ddf622-6475-42b4-992f-0d1f4d8e9a03" name="Synapse-DeviceRuleda017659-aac7-4a35-a02f-116ddf2bfbb2" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Synapse" expression="Supersonic-PhoneRule58cd5a3c-723e-4ca3-88d0-722c7a796ecdCheck5f6fbdce-aae6-42b7-beb9-c2c9312d356a_copy" name="Supersonic-PhoneRule58cd5a3c-723e-4ca3-88d0-722c7a796ecd_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 3, 6, 12, 15, 28, 42" description="DHCP dhcp-parameter-request-list EQUALS 1, 3, 6, 12, 15, 28, 42" name="Synapse-DeviceRuleda017659-aac7-4a35-a02f-116ddf2bfbb2Check36ddf622-6475-42b4-992f-0d1f4d8e9a03" operator="Equals" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Synapse" description="MAC OUI CONTAINS Synapse" name="Supersonic-PhoneRule58cd5a3c-723e-4ca3-88d0-722c7a796ecdCheck5f6fbdce-aae6-42b7-beb9-c2c9312d356a_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

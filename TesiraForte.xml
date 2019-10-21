@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Biamp-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Biamp-DeviceRule8c915f11-2594-44c7-9120-89cc79204ead"/>
+<PolicyRule certaintyFactor="10" name="Biamp-DeviceRule079d7404-dc5d-4d47-868d-21caa733656c"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="TesiraForte" parentFQN="Biamp-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="TesiraForteRule327434e2-a3af-409a-bb52-3b5e3457bff0"/>
+<PolicyRule certaintyFactor="40" name="TesiraForteRule072bbbda-c530-40cd-a8d6-403a7ad6b6bc"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Biamp_Systems" expression="Biamp-DeviceRule8c915f11-2594-44c7-9120-89cc79204eadCheck783427a3-538c-4966-8e19-02b70033a1ae" name="Biamp-DeviceRule8c915f11-2594-44c7-9120-89cc79204ead" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_Biamp_Systems_" expression="Biamp-DeviceRule079d7404-dc5d-4d47-868d-21caa733656cCheckbe3fff88-d780-4de9-8a4a-30458f516e24" name="Biamp-DeviceRule079d7404-dc5d-4d47-868d-21caa733656c" ruleType="Regular"/>
+<Rule description="IP_FQDN_STARTSWITH_TesiraForte_OR_DHCP_host-name_STARTSWITH_TesiraForte" expression="TesiraForteRule327434e2-a3af-409a-bb52-3b5e3457bff0Checkd87ee8a0-2b7d-4c6b-9a69-e4ce6df2e06b | TesiraForteRule327434e2-a3af-409a-bb52-3b5e3457bff0Check37f1e0da-7d3e-4c16-9aac-1d317c905208" name="TesiraForteRule327434e2-a3af-409a-bb52-3b5e3457bff0" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_TesiraForte" expression="TesiraForteRule072bbbda-c530-40cd-a8d6-403a7ad6b6bcCheck11bc26ef-cf84-40aa-9420-dadb74858bdf" name="TesiraForteRule072bbbda-c530-40cd-a8d6-403a7ad6b6bc" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Biamp Systems" description="MAC OUI CONTAINS Biamp Systems" name="Biamp-DeviceRule8c915f11-2594-44c7-9120-89cc79204eadCheck783427a3-538c-4966-8e19-02b70033a1ae" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Biamp Systems " description="DHCP dhcp-class-identifier CONTAINS Biamp Systems " name="Biamp-DeviceRule079d7404-dc5d-4d47-868d-21caa733656cCheckbe3fff88-d780-4de9-8a4a-30458f516e24" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="TesiraForte" description="IP FQDN STARTSWITH TesiraForte" name="TesiraForteRule327434e2-a3af-409a-bb52-3b5e3457bff0Checkd87ee8a0-2b7d-4c6b-9a69-e4ce6df2e06b" operator="Starts with" type="IP"/>
+<Check attributeName="host-name" attributeValue="TesiraForte" description="DHCP host-name STARTSWITH TesiraForte" name="TesiraForteRule327434e2-a3af-409a-bb52-3b5e3457bff0Check37f1e0da-7d3e-4c16-9aac-1d317c905208" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="TesiraForte" description="DHCP dhcp-class-identifier CONTAINS TesiraForte" name="TesiraForteRule072bbbda-c530-40cd-a8d6-403a7ad6b6bcCheck11bc26ef-cf84-40aa-9420-dadb74858bdf" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
