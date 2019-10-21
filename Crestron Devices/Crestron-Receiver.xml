@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Crestron-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Crestron-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Crestron-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Crestron-Receiver" parentFQN="Crestron-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Crestron-ReceiverRule71ca6c18-d00e-41b7-990a-741f08b073d6"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Crestron-Device-Rule1-Check1" expression="Crestron-Device-Rule1-Check1" name="Crestron-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_rmc_OR_DHCP_host-name_CONTAINS_rmc" expression="Crestron-ReceiverRule71ca6c18-d00e-41b7-990a-741f08b073d6Check24104d36-b53b-4649-8652-536d38e29268 | Crestron-ReceiverRule71ca6c18-d00e-41b7-990a-741f08b073d6Check7a2274aa-841f-4bd3-9b0b-30473c84ba35" name="Crestron-ReceiverRule71ca6c18-d00e-41b7-990a-741f08b073d6" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="CRESTRON" description="Policy for Crestron-Device,based on MAC-OUI" name="Crestron-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="rmc" description="IP FQDN CONTAINS rmc" name="Crestron-ReceiverRule71ca6c18-d00e-41b7-990a-741f08b073d6Check24104d36-b53b-4649-8652-536d38e29268" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="rmc" description="DHCP host-name CONTAINS rmc" name="Crestron-ReceiverRule71ca6c18-d00e-41b7-990a-741f08b073d6Check7a2274aa-841f-4bd3-9b0b-30473c84ba35" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

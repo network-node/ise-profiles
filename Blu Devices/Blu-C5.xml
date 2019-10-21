@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Blu-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Blu-DeviceRule9d1c7eb5-02a6-4427-ab8e-7c152ad184d6"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Blu-C5" parentFQN="Blu-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Blu-C5Rule77dd6185-bbfc-4bac-ab1a-b32864556e06"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_BLU_Products" expression="Blu-DeviceRule9d1c7eb5-02a6-4427-ab8e-7c152ad184d6Checkd3ddde23-6ecb-4891-9e3f-540774804de1" name="Blu-DeviceRule9d1c7eb5-02a6-4427-ab8e-7c152ad184d6" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_C5_Build" expression="Blu-C5Rule77dd6185-bbfc-4bac-ab1a-b32864556e06Check6531f8a3-2ce9-483e-ba34-cfdfa59d6770" name="Blu-C5Rule77dd6185-bbfc-4bac-ab1a-b32864556e06" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="BLU Products" description="MAC OUI CONTAINS BLU Products" name="Blu-DeviceRule9d1c7eb5-02a6-4427-ab8e-7c152ad184d6Checkd3ddde23-6ecb-4891-9e3f-540774804de1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="C5 Build" description="IP User-Agent CONTAINS C5 Build" name="Blu-C5Rule77dd6185-bbfc-4bac-ab1a-b32864556e06Check6531f8a3-2ce9-483e-ba34-cfdfa59d6770" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

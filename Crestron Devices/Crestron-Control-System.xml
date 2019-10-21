@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Crestron-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Crestron-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Crestron-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Crestron-Control-System" parentFQN="Crestron-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Crestron-Control-SystemRule87aabf92-c657-42c0-8352-f41ddfd3333f"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Crestron-Device-Rule1-Check1" expression="Crestron-Device-Rule1-Check1" name="Crestron-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_cp2e_OR_IP_FQDN_CONTAINS_pro2_OR_IP_FQDN_CONTAINS_pro3_OR_DHCP_host-name_CONTAINS_cp2e_OR_DHCP_host-name_CONTAINS_pro2_OR_DHCP_host-name_CONTAINS_pro3" expression="((((Crestron-Control-SystemRule87aabf92-c657-42c0-8352-f41ddfd3333fCheckb2ab1c04-b8e5-478c-8149-2ea1b2731a9d | Crestron-Control-SystemRule87aabf92-c657-42c0-8352-f41ddfd3333fCheck2dc72c08-3ee9-41a7-a701-fa5ba9aa13b8) | Crestron-Control-SystemRule87aabf92-c657-42c0-8352-f41ddfd3333fCheckf18e92d6-77da-411d-9d05-7b2783c6f5ca) | Crestron-Control-SystemRule87aabf92-c657-42c0-8352-f41ddfd3333fCheck21ce5f73-0f48-4382-9cdd-789ebcedc4a6) | Crestron-Control-SystemRule87aabf92-c657-42c0-8352-f41ddfd3333fCheckc565dfb1-c325-450e-81f1-c50ab78fda68) | Crestron-Control-SystemRule87aabf92-c657-42c0-8352-f41ddfd3333fCheckf6c8e6c7-91b2-4411-a672-05f20e318e37" name="Crestron-Control-SystemRule87aabf92-c657-42c0-8352-f41ddfd3333f" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="CRESTRON" description="Policy for Crestron-Device,based on MAC-OUI" name="Crestron-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="cp2e" description="IP FQDN CONTAINS cp2e" name="Crestron-Control-SystemRule87aabf92-c657-42c0-8352-f41ddfd3333fCheckb2ab1c04-b8e5-478c-8149-2ea1b2731a9d" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="pro2" description="IP FQDN CONTAINS pro2" name="Crestron-Control-SystemRule87aabf92-c657-42c0-8352-f41ddfd3333fCheck2dc72c08-3ee9-41a7-a701-fa5ba9aa13b8" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="pro3" description="IP FQDN CONTAINS pro3" name="Crestron-Control-SystemRule87aabf92-c657-42c0-8352-f41ddfd3333fCheckf18e92d6-77da-411d-9d05-7b2783c6f5ca" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="cp2e" description="DHCP host-name CONTAINS cp2e" name="Crestron-Control-SystemRule87aabf92-c657-42c0-8352-f41ddfd3333fCheck21ce5f73-0f48-4382-9cdd-789ebcedc4a6" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="pro2" description="DHCP host-name CONTAINS pro2" name="Crestron-Control-SystemRule87aabf92-c657-42c0-8352-f41ddfd3333fCheckc565dfb1-c325-450e-81f1-c50ab78fda68" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="pro3" description="DHCP host-name CONTAINS pro3" name="Crestron-Control-SystemRule87aabf92-c657-42c0-8352-f41ddfd3333fCheckf6c8e6c7-91b2-4411-a672-05f20e318e37" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

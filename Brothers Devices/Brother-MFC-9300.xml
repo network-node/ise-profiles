@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Brother devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Brother-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="-3" name="Brother-DeviceRule2_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Brother-DeviceRule1"/>
+<PolicyRule certaintyFactor="10" name="Brother-DeviceRule2"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Brother-MFC-9300" parentFQN="Brother-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Brother-MFP-E514DWRule0e1e1bf9-8fc8-4799-b596-1c1e1464083e_copy"/>
+<PolicyRule certaintyFactor="10" name="Brother-MFP-E514DWRuleaef543fc-f2af-4129-a45d-923804e402c6_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Brother-Device-SCAN" expression="Brother-Device-OUI" name="Brother-DeviceRule2_SCAN" ruleType="Regular"/>
+<Rule description="Brother-Device-Descr" expression="Brother-Device-Descr" name="Brother-DeviceRule1" ruleType="Regular"/>
+<Rule description="Brother-Device-OUI" expression="Brother-Device-OUI" name="Brother-DeviceRule2" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_NC-8500h" expression="Brother-MFP-E514DWRule0e1e1bf9-8fc8-4799-b596-1c1e1464083eCheck7f79bdc0-c1a1-4446-9630-6fb94a412492_copy" name="Brother-MFP-E514DWRule0e1e1bf9-8fc8-4799-b596-1c1e1464083e_copy" ruleType="Regular"/>
+<Rule description="SNMP_hrDeviceDescr_CONTAINS_MFC-9330CDW" expression="Brother-MFP-E514DWRuleaef543fc-f2af-4129-a45d-923804e402c6Check9503e229-f32c-452f-842d-d6f28a6d969d_copy" name="Brother-MFP-E514DWRuleaef543fc-f2af-4129-a45d-923804e402c6_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Brother" description="OUI CONTAINS Brother" name="Brother-Device-OUI" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Brother" description="hrDeviceDescr CONTAINS Brother" name="Brother-Device-Descr" operator="Contains" type="Snmp"/>
+<Check attributeName="sysDescr" attributeValue="NC-8500h" description="SNMP sysDescr CONTAINS NC-8500h" name="Brother-MFP-E514DWRule0e1e1bf9-8fc8-4799-b596-1c1e1464083eCheck7f79bdc0-c1a1-4446-9630-6fb94a412492_copy" operator="Contains" type="Snmp"/>
+<Check attributeName="hrDeviceDescr" attributeValue="MFC-9330CDW" description="SNMP hrDeviceDescr CONTAINS MFC-9330CDW" name="Brother-MFP-E514DWRuleaef543fc-f2af-4129-a45d-923804e402c6Check9503e229-f32c-452f-842d-d6f28a6d969d_copy" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

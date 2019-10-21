@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for HTC Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="40" name="HTC-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="HTC-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="HTC-DeviceRule1Check1" expression="HTC-DeviceRule1Check1" name="HTC-DeviceRule1" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="HTC Corporation" description="HTC-DeviceRule1Check1" name="HTC-DeviceRule1Check1" operator="Equals" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

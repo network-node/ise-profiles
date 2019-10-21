@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Crestron-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Crestron-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Crestron-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Crestron-TouchScreen" parentFQN="Crestron-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334b"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Crestron-Device-Rule1-Check1" expression="Crestron-Device-Rule1-Check1" name="Crestron-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_tss-_OR_IP_FQDN_CONTAINS_tsw-_OR_IP_FQDN_CONTAINS_tpmc-_OR_IP_FQDN_CONTAINS_tp-_OR_IP_FQDN_CONTAINS_tscw-_OR_IP_FQDN_CONTAINS_dge-_OR_DHCP_host-name_CONTAINS_tss-_OR_DHCP_host-name_CONTAINS_tsw-_OR_DHCP_host-name_CONTAINS_tpmc-_OR_DHCP_host-name_CONTAINS_tp-_OR_DHCP_host-name_CONTAINS_tscw-_OR_DHCP_host-name_CONTAINS_dge-" expression="((((((((((Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheckd78d3887-7702-4d17-85ea-15e63ff69008 | Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheckef4741be-51c5-47c1-b935-483904a017d1) | Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheck30fb6af0-8a09-4b1d-90a4-5f66dffbe4ee) | Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheck7cd560f3-f835-4035-92b9-aac729dced50) | Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheckce33b1a5-0d49-440b-a4d8-ec50bed85979) | Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheckdf4226e8-d6cd-4999-9bb8-c8e453007da9) | Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheckabf3bcf2-bcb4-40cc-a59c-85b6f6a8cc05) | Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheck6d77d0b0-e21e-416a-9878-c4cf54a4c397) | Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheckd622d60b-ea0a-44b9-8445-228aeaa0d027) | Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheck1daf5a40-44e4-43e5-8e4a-e78ec3f526dd) | Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bChecka208757d-1b89-48bb-935a-6788932f32ca) | Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheckb025257b-75f8-4fd4-a2c7-189578a8a894" name="Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334b" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="CRESTRON" description="Policy for Crestron-Device,based on MAC-OUI" name="Crestron-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="tss-" description="IP FQDN CONTAINS tss-" name="Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheckd78d3887-7702-4d17-85ea-15e63ff69008" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="tsw-" description="IP FQDN CONTAINS tsw-" name="Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheckef4741be-51c5-47c1-b935-483904a017d1" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="tpmc-" description="IP FQDN CONTAINS tpmc-" name="Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheck30fb6af0-8a09-4b1d-90a4-5f66dffbe4ee" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="tp-" description="IP FQDN CONTAINS tp-" name="Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheck7cd560f3-f835-4035-92b9-aac729dced50" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="tscw-" description="IP FQDN CONTAINS tscw-" name="Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheckce33b1a5-0d49-440b-a4d8-ec50bed85979" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="dge-" description="IP FQDN CONTAINS dge-" name="Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheckdf4226e8-d6cd-4999-9bb8-c8e453007da9" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="tss-" description="DHCP host-name CONTAINS tss-" name="Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheckabf3bcf2-bcb4-40cc-a59c-85b6f6a8cc05" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="tsw-" description="DHCP host-name CONTAINS tsw-" name="Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheck6d77d0b0-e21e-416a-9878-c4cf54a4c397" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="tpmc-" description="DHCP host-name CONTAINS tpmc-" name="Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheckd622d60b-ea0a-44b9-8445-228aeaa0d027" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="tp-" description="DHCP host-name CONTAINS tp-" name="Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheck1daf5a40-44e4-43e5-8e4a-e78ec3f526dd" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="tscw-" description="DHCP host-name CONTAINS tscw-" name="Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bChecka208757d-1b89-48bb-935a-6788932f32ca" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="dge-" description="DHCP host-name CONTAINS dge-" name="Crestron-TouchScreenRule9897a737-6e5c-4c52-81c0-e7209f82334bCheckb025257b-75f8-4fd4-a2c7-189578a8a894" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

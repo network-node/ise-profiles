@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Company specializing in IoT connectivity&#9;https://www.silextechnology.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Silex-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Silex-DeviceRule7f4fff3b-6e0f-404f-b4b9-63cdbf97ef65"/>
+</PolicyRules>
+</Policy>
+<Policy description="Coding printer for medical&#9;https://www.lexicontech.com/intermec/3400e?pi_ad_id=%7Bcreative%7D&amp;utm_source=googlepla&amp;utm_medium=adwords&amp;creative=50869298062&amp;keyword=&amp;matchtype=&#8800;twork=g&amp;device=c&amp;gclid=Cj0KCQjwrJ7nBRD5ARIsAATMxsvuH-P6TxSTOrMKZb4yTf7ob4PfBsNsLy6oJijsCftzVp5eLECzYk4aAgbLEALw_wcB" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Intermec-EasyLAN-10i2" parentFQN="Silex-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Intermec-EasyLAN-10i2Rule2a1ba2b5-ae3c-4ad2-8520-1bfcbfd29479"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Silex_Technology" expression="Silex-DeviceRule7f4fff3b-6e0f-404f-b4b9-63cdbf97ef65Check3223a4cd-3697-45f0-ad2b-6e31a6562dde" name="Silex-DeviceRule7f4fff3b-6e0f-404f-b4b9-63cdbf97ef65" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_Intermec_EasyLAN_10i2" expression="Intermec-EasyLAN-10i2Rule2a1ba2b5-ae3c-4ad2-8520-1bfcbfd29479Check854aaf80-fd57-4547-9b6e-baefee6395eb" name="Intermec-EasyLAN-10i2Rule2a1ba2b5-ae3c-4ad2-8520-1bfcbfd29479" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Silex Technology" description="MAC OUI CONTAINS Silex Technology" name="Silex-DeviceRule7f4fff3b-6e0f-404f-b4b9-63cdbf97ef65Check3223a4cd-3697-45f0-ad2b-6e31a6562dde" operator="Contains" type="Mac"/>
+<Check attributeName="sysDescr" attributeValue="Intermec EasyLAN 10i2" description="SNMP sysDescr CONTAINS Intermec EasyLAN 10i2" name="Intermec-EasyLAN-10i2Rule2a1ba2b5-ae3c-4ad2-8520-1bfcbfd29479Check854aaf80-fd57-4547-9b6e-baefee6395eb" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

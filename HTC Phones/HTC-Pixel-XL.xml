@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for HTC Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="HTC-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="HTC-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="HTC-Pixel-XL" parentFQN="HTC-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="HTC-10Rule84fb9971-d797-4b06-a174-f1217cc9a8ff_copy0_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="HTC-DeviceRule1Check1" expression="HTC-DeviceRule1Check1" name="HTC-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_Pixel_XL" expression="HTC-10Rule84fb9971-d797-4b06-a174-f1217cc9a8ffCheck351e0847-9923-4f57-b284-ba00f6ba1f71_copy0_copy_copy_copy" name="HTC-10Rule84fb9971-d797-4b06-a174-f1217cc9a8ff_copy0_copy_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="HTC Corporation" description="HTC-DeviceRule1Check1" name="HTC-DeviceRule1Check1" operator="Equals" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="Pixel XL" description="IP User-Agent CONTAINS Pixel XL" name="HTC-10Rule84fb9971-d797-4b06-a174-f1217cc9a8ffCheck351e0847-9923-4f57-b284-ba00f6ba1f71_copy0_copy_copy_copy" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

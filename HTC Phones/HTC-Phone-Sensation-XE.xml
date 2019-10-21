@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for HTC Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="HTC-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="HTC-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for HTC Phone" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="HTC-Phone" parentFQN="HTC-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="HTC-PhoneRule31d534f7-cc42-4f6f-bec5-9cefc5bdbde6"/>
+<PolicyRule certaintyFactor="20" name="HTC-PhoneRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Android-HTC-Phone-Sensation-XE" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="60" name="HTC-Phone-Sensation-XE" parentFQN="HTC-Device:HTC-Phone" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="60" name="Android-HTC-Phone-Sensation-XERule11_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="HTC-DeviceRule1Check1" expression="HTC-DeviceRule1Check1" name="HTC-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_HTC" expression="HTC-PhoneRule31d534f7-cc42-4f6f-bec5-9cefc5bdbde6Check519cbd3d-7178-4350-9407-1b94061936d0" name="HTC-PhoneRule31d534f7-cc42-4f6f-bec5-9cefc5bdbde6" ruleType="Regular"/>
+<Rule description="HTC-PhoneRule1Check1" expression="HTC-PhoneRule1Check1" name="HTC-PhoneRule1" ruleType="Regular"/>
+<Rule description="Android-HTC-Phone-Sensation-XE-Rule1-Check1" expression="Android-HTC-Phone-Sensation-XE-Rule1-Check1_copy0" name="Android-HTC-Phone-Sensation-XERule11_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="HTC Corporation" description="HTC-DeviceRule1Check1" name="HTC-DeviceRule1Check1" operator="Equals" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="HTC" description="IP User-Agent CONTAINS HTC" name="HTC-PhoneRule31d534f7-cc42-4f6f-bec5-9cefc5bdbde6Check519cbd3d-7178-4350-9407-1b94061936d0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Windows Phone" description="HTC-PhoneRule1Check1" name="HTC-PhoneRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Sensation XE" description="Condition for Android-HTC-Phone-Sensation-XE , based on IP-User-Agent" name="Android-HTC-Phone-Sensation-XE-Rule1-Check1_copy0" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Google-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Google-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Google-DeviceRule2"/>
+<PolicyRule certaintyFactor="20" name="Google-DeviceRule1"/>
+<PolicyRule certaintyFactor="20" name="Google-DeviceRule94ebb062-3f82-402e-a148-7edc7904f18b"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Google-Nest-Hub" parentFQN="Google-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Google-HomeRule64605991-402d-42d3-8719-a4c5c78904f5_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Google-Device-Rule2-Check1" expression="Google-Device-Rule2-Check1" name="Google-DeviceRule2" ruleType="Regular"/>
+<Rule description="Google-Device-Rule1-Check1" expression="Google-Device-Rule1-Check1" name="Google-DeviceRule1" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Google" expression="Google-DeviceRule94ebb062-3f82-402e-a148-7edc7904f18bCheck518c65a6-a60e-4416-9e03-5f025022a856" name="Google-DeviceRule94ebb062-3f82-402e-a148-7edc7904f18b" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_Google-Nest-Hub_OR_IP_FQDN_CONTAINS_Google-Nest-Hub" expression="Google-HomeRule64605991-402d-42d3-8719-a4c5c78904f5Check0fa876bd-3c62-4ac0-ab8e-a13d9bc9fea6_copy_copy | Google-HomeRule64605991-402d-42d3-8719-a4c5c78904f5Check6396e672-6212-41c2-bec2-10bf5b917065_copy_copy" name="Google-HomeRule64605991-402d-42d3-8719-a4c5c78904f5_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="User-Agent" attributeValue="CrKey" description="Condition for Google-Device , based on IP-User-Agent" name="Google-Device-Rule2-Check1" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="Chromecast" description="Condition for Google-Device , based on DHCP-Host-Name" name="Google-Device-Rule1-Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Google" description="MAC OUI CONTAINS Google" name="Google-DeviceRule94ebb062-3f82-402e-a148-7edc7904f18bCheck518c65a6-a60e-4416-9e03-5f025022a856" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="Google-Nest-Hub" description="DHCP host-name CONTAINS Google-Nest-Hub" name="Google-HomeRule64605991-402d-42d3-8719-a4c5c78904f5Check0fa876bd-3c62-4ac0-ab8e-a13d9bc9fea6_copy_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="Google-Nest-Hub" description="IP FQDN CONTAINS Google-Nest-Hub" name="Google-HomeRule64605991-402d-42d3-8719-a4c5c78904f5Check6396e672-6212-41c2-bec2-10bf5b917065_copy_copy" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

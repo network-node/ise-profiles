@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Google-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Google-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Google-DeviceRule2"/>
+<PolicyRule certaintyFactor="20" name="Google-DeviceRule1"/>
+<PolicyRule certaintyFactor="20" name="Google-DeviceRule94ebb062-3f82-402e-a148-7edc7904f18b"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Google-Wifi" parentFQN="Google-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Google-WifiRule7eee421a-e9d0-4e73-8a95-d4193106779a"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Google-Device-Rule2-Check1" expression="Google-Device-Rule2-Check1" name="Google-DeviceRule2" ruleType="Regular"/>
+<Rule description="Google-Device-Rule1-Check1" expression="Google-Device-Rule1-Check1" name="Google-DeviceRule1" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Google" expression="Google-DeviceRule94ebb062-3f82-402e-a148-7edc7904f18bCheck518c65a6-a60e-4416-9e03-5f025022a856" name="Google-DeviceRule94ebb062-3f82-402e-a148-7edc7904f18b" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_GoogleWifi" expression="Google-WifiRule7eee421a-e9d0-4e73-8a95-d4193106779aCheckf9048d37-8b14-4c06-b30d-37a4c224c3e6" name="Google-WifiRule7eee421a-e9d0-4e73-8a95-d4193106779a" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="User-Agent" attributeValue="CrKey" description="Condition for Google-Device , based on IP-User-Agent" name="Google-Device-Rule2-Check1" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="Chromecast" description="Condition for Google-Device , based on DHCP-Host-Name" name="Google-Device-Rule1-Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Google" description="MAC OUI CONTAINS Google" name="Google-DeviceRule94ebb062-3f82-402e-a148-7edc7904f18bCheck518c65a6-a60e-4416-9e03-5f025022a856" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="GoogleWifi" description="DHCP dhcp-class-identifier CONTAINS GoogleWifi" name="Google-WifiRule7eee421a-e9d0-4e73-8a95-d4193106779aCheckf9048d37-8b14-4c06-b30d-37a4c224c3e6" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

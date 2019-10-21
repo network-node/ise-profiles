@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="15" name="Fuji-Xerox-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="15" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eea_copy12"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Dell-3110cn-Printer" parentFQN="Fuji-Xerox-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Dell-C1760nw-PrinterRulead0f3592-06e1-459d-afa8-11ff4831908e_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_FUJI-XEROX" expression="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eeaCheckcabb93a6-385f-4b85-a274-3bd195801182_copy12" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eea_copy12" ruleType="Regular"/>
+<Rule description="SNMP_hrDeviceDescr_CONTAINS_3110cn_OR_SNMP_sysDescr_CONTAINS_3110cn" expression="Dell-C1760nw-PrinterRulead0f3592-06e1-459d-afa8-11ff4831908eCheck36b9c959-d837-4fa2-96af-f5572fd29179_copy_copy | Dell-C1760nw-PrinterRulead0f3592-06e1-459d-afa8-11ff4831908eCheck50474d5e-744a-4f66-9acf-371b23426db2_copy_copy" name="Dell-C1760nw-PrinterRulead0f3592-06e1-459d-afa8-11ff4831908e_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="FUJI-XEROX" description="MAC OUI CONTAINS FUJI-XEROX" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eeaCheckcabb93a6-385f-4b85-a274-3bd195801182_copy12" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="3110cn" description="SNMP hrDeviceDescr CONTAINS 3110cn" name="Dell-C1760nw-PrinterRulead0f3592-06e1-459d-afa8-11ff4831908eCheck36b9c959-d837-4fa2-96af-f5572fd29179_copy_copy" operator="Contains" type="Snmp"/>
+<Check attributeName="sysDescr" attributeValue="3110cn" description="SNMP sysDescr CONTAINS 3110cn" name="Dell-C1760nw-PrinterRulead0f3592-06e1-459d-afa8-11ff4831908eCheck50474d5e-744a-4f66-9acf-371b23426db2_copy_copy" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="50" name="BrightSign-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="BrightSign-DeviceRule5c94e37c-0a90-465c-8e70-614f9205dcef"/>
+<PolicyRule certaintyFactor="25" name="BrightSign-DeviceRule0af93391-d08b-4fe8-b660-5c1fd3ea5ce5"/>
+<PolicyRule certaintyFactor="25" name="BrightSign-DeviceRule98d5f2d6-2958-4192-a93c-bcc75c18d1d8"/>
+<PolicyRule certaintyFactor="25" name="BrightSign-DeviceRule001e215f-ed92-4f8b-ad71-53814a76cc87"/>
+<PolicyRule certaintyFactor="25" name="BrightSign-DeviceRule7626d0b6-0455-4a1d-8c40-be647a27e8df"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="100" name="BrightSign-XT1144" parentFQN="BrightSign-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="100" name="BrightSign-XT1144Rule1b5ae688-8252-4d6e-915e-2dab28587382"/>
+<PolicyRule certaintyFactor="100" name="BrightSign-XT1144Rule83ce3a48-68e6-42e0-8814-69aac4bacd4c"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="DHCP_host-name_STARTSWITH_BrightSign_OR_IP_FQDN_STARTSWITH_BrightSign" expression="BrightSign-DeviceRule5c94e37c-0a90-465c-8e70-614f9205dcefCheck13a767d3-24b1-4d76-93ab-8285421ec2a4 | BrightSign-DeviceRule5c94e37c-0a90-465c-8e70-614f9205dcefCheck84dcfa33-a8aa-47a0-bff9-765e910665e2" name="BrightSign-DeviceRule5c94e37c-0a90-465c-8e70-614f9205dcef" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_BrightSign" expression="BrightSign-DeviceRule0af93391-d08b-4fe8-b660-5c1fd3ea5ce5Checkb24c359f-4744-428c-bc62-59ec6951c362" name="BrightSign-DeviceRule0af93391-d08b-4fe8-b660-5c1fd3ea5ce5" ruleType="Regular"/>
+<Rule description="LLDP_lldpSystemDescription_CONTAINS_BrightSign" expression="BrightSign-DeviceRule98d5f2d6-2958-4192-a93c-bcc75c18d1d8Check38e012e5-b792-40e4-bbe1-d864aad1df50" name="BrightSign-DeviceRule98d5f2d6-2958-4192-a93c-bcc75c18d1d8" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_BrightSign" expression="BrightSign-DeviceRule001e215f-ed92-4f8b-ad71-53814a76cc87Check6c2ab512-1af7-4fe5-80f8-ce9acaaff8e1" name="BrightSign-DeviceRule001e215f-ed92-4f8b-ad71-53814a76cc87" ruleType="Regular"/>
+<Rule description="LLDP_lldpSystemName_CONTAINS_BrightSign" expression="BrightSign-DeviceRule7626d0b6-0455-4a1d-8c40-be647a27e8dfCheckcd98afcb-912f-4542-8d72-6246552bece3" name="BrightSign-DeviceRule7626d0b6-0455-4a1d-8c40-be647a27e8df" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_XT1144" expression="BrightSign-XT1144Rule1b5ae688-8252-4d6e-915e-2dab28587382Check2568733e-a7e6-43c9-96ea-bb32bf9cf775" name="BrightSign-XT1144Rule1b5ae688-8252-4d6e-915e-2dab28587382" ruleType="Regular"/>
+<Rule description="LLDP_lldpSystemDescription_CONTAINS_XT1144" expression="BrightSign-XT1144Rule83ce3a48-68e6-42e0-8814-69aac4bacd4cCheckdc00d6ba-6da1-4a5d-9817-3acaf4268652" name="BrightSign-XT1144Rule83ce3a48-68e6-42e0-8814-69aac4bacd4c" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="host-name" attributeValue="BrightSign" description="DHCP host-name STARTSWITH BrightSign" name="BrightSign-DeviceRule5c94e37c-0a90-465c-8e70-614f9205dcefCheck13a767d3-24b1-4d76-93ab-8285421ec2a4" operator="Starts with" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="BrightSign" description="IP FQDN STARTSWITH BrightSign" name="BrightSign-DeviceRule5c94e37c-0a90-465c-8e70-614f9205dcefCheck84dcfa33-a8aa-47a0-bff9-765e910665e2" operator="Starts with" type="IP"/>
+<Check attributeName="OUI" attributeValue="BrightSign" description="MAC OUI CONTAINS BrightSign" name="BrightSign-DeviceRule0af93391-d08b-4fe8-b660-5c1fd3ea5ce5Checkb24c359f-4744-428c-bc62-59ec6951c362" operator="Contains" type="Mac"/>
+<Check attributeName="lldpSystemDescription" attributeValue="BrightSign" description="LLDP lldpSystemDescription CONTAINS BrightSign" name="BrightSign-DeviceRule98d5f2d6-2958-4192-a93c-bcc75c18d1d8Check38e012e5-b792-40e4-bbe1-d864aad1df50" operator="Contains" type="LLDP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="BrightSign" description="DHCP dhcp-class-identifier CONTAINS BrightSign" name="BrightSign-DeviceRule001e215f-ed92-4f8b-ad71-53814a76cc87Check6c2ab512-1af7-4fe5-80f8-ce9acaaff8e1" operator="Contains" type="DHCP"/>
+<Check attributeName="lldpSystemName" attributeValue="BrightSign" description="LLDP lldpSystemName CONTAINS BrightSign" name="BrightSign-DeviceRule7626d0b6-0455-4a1d-8c40-be647a27e8dfCheckcd98afcb-912f-4542-8d72-6246552bece3" operator="Contains" type="LLDP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="XT1144" description="DHCP dhcp-class-identifier CONTAINS XT1144" name="BrightSign-XT1144Rule1b5ae688-8252-4d6e-915e-2dab28587382Check2568733e-a7e6-43c9-96ea-bb32bf9cf775" operator="Contains" type="DHCP"/>
+<Check attributeName="lldpSystemDescription" attributeValue="XT1144" description="LLDP lldpSystemDescription CONTAINS XT1144" name="BrightSign-XT1144Rule83ce3a48-68e6-42e0-8814-69aac4bacd4cCheckdc00d6ba-6da1-4a5d-9817-3acaf4268652" operator="Contains" type="LLDP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

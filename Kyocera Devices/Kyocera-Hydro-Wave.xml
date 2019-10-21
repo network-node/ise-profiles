@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Kyocera-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Kyocera-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Kyocera-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Kyocera-Hydro-Wave" parentFQN="Kyocera-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Kyocera-DuraForceRulef9125418-db7d-4782-9128-3d12337651e6_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Kyocera-Device-Rule1-Check1" expression="Kyocera-Device-Rule1-Check1" name="Kyocera-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_C6740N" expression="Kyocera-DuraForceRulef9125418-db7d-4782-9128-3d12337651e6Check6e88101c-ce91-4db0-b23e-73466dc8bedc_copy_copy" name="Kyocera-DuraForceRulef9125418-db7d-4782-9128-3d12337651e6_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="KYOCERA" description="Condition for Kyocera-Device,based on MAC-OUI" name="Kyocera-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="C6740N" description="IP User-Agent CONTAINS C6740N" name="Kyocera-DuraForceRulef9125418-db7d-4782-9128-3d12337651e6Check6e88101c-ce91-4db0-b23e-73466dc8bedc_copy_copy" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

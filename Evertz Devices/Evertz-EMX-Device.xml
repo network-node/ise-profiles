@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Manaufucture of embedded systems and end-to-end broadcasting" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Evertz-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eea_copy6"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Evertz-EMX-Device" parentFQN="Evertz-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Evertz-EMX-DeviceRuleec76ce78-4419-49a4-a864-28abf22f6be8"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Evertz_Microsystems" expression="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eeaCheckcabb93a6-385f-4b85-a274-3bd195801182_copy6" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eea_copy6" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_EMX" expression="Evertz-EMX-DeviceRuleec76ce78-4419-49a4-a864-28abf22f6be8Check1cfbaf8d-ba86-425b-84ac-48e7d4eca3c1" name="Evertz-EMX-DeviceRuleec76ce78-4419-49a4-a864-28abf22f6be8" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Evertz Microsystems" description="MAC OUI CONTAINS Evertz Microsystems" name="DT-Research-DeviceRuleee4205f1-2ae5-4ded-af2d-da6bc0e17eeaCheckcabb93a6-385f-4b85-a274-3bd195801182_copy6" operator="Contains" type="Mac"/>
+<Check attributeName="sysDescr" attributeValue="EMX" description="SNMP sysDescr CONTAINS EMX" name="Evertz-EMX-DeviceRuleec76ce78-4419-49a4-a864-28abf22f6be8Check1cfbaf8d-ba86-425b-84ac-48e7d4eca3c1" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

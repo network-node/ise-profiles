@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="15" name="Blu-Smartphone" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Blu-SmartphoneRulef846a43e-ec21-4fc5-a351-1bb211785dd3"/>
+<PolicyRule certaintyFactor="5" name="Blu-SmartphoneRulec7526226-db57-41e4-b7cc-b84b04ae4327"/>
+<PolicyRule certaintyFactor="15" name="Blu-SmartphoneRule196d4136-6588-4c6b-bcf9-69285069561a"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="DHCP_host-name_CONTAINS_android-" expression="Blu-SmartphoneRulef846a43e-ec21-4fc5-a351-1bb211785dd3Check7ebd0580-6e46-4e79-9c9d-2c41a182dfff" name="Blu-SmartphoneRulef846a43e-ec21-4fc5-a351-1bb211785dd3" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_android-" expression="Blu-SmartphoneRulec7526226-db57-41e4-b7cc-b84b04ae4327Checkd57a37d7-9a6c-432b-993f-cdd7fb4f5454" name="Blu-SmartphoneRulec7526226-db57-41e4-b7cc-b84b04ae4327" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_BLU_Products" expression="Blu-SmartphoneRule196d4136-6588-4c6b-bcf9-69285069561aCheck9b9a6203-dd02-411c-b9f0-6e7af2f289c8" name="Blu-SmartphoneRule196d4136-6588-4c6b-bcf9-69285069561a" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="host-name" attributeValue="android-" description="DHCP host-name CONTAINS android-" name="Blu-SmartphoneRulef846a43e-ec21-4fc5-a351-1bb211785dd3Check7ebd0580-6e46-4e79-9c9d-2c41a182dfff" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="android-" description="DHCP dhcp-class-identifier CONTAINS android-" name="Blu-SmartphoneRulec7526226-db57-41e4-b7cc-b84b04ae4327Checkd57a37d7-9a6c-432b-993f-cdd7fb4f5454" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="BLU Products" description="MAC OUI CONTAINS BLU Products" name="Blu-SmartphoneRule196d4136-6588-4c6b-bcf9-69285069561aCheck9b9a6203-dd02-411c-b9f0-6e7af2f289c8" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

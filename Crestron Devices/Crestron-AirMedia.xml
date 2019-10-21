@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Crestron-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Crestron-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Crestron-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Crestron-AirMedia" parentFQN="Crestron-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Crestron-AirMediaRuled4a62e3b-d364-4239-a51d-b478512d730c"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Crestron-Device-Rule1-Check1" expression="Crestron-Device-Rule1-Check1" name="Crestron-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_AirMedia_OR_IP_FQDN_CONTAINS_AM-100_OR_IP_FQDN_CONTAINS_AM-200_OR_IP_FQDN_CONTAINS_AM-300_OR_DHCP_host-name_CONTAINS_AirMedia_OR_DHCP_host-name_CONTAINS_AM-100_OR_DHCP_host-name_CONTAINS_AM-200_OR_DHCP_host-name_CONTAINS_AM-300" expression="((((((Crestron-AirMediaRuled4a62e3b-d364-4239-a51d-b478512d730cCheck5e1a3d6b-b2f8-4ddc-b678-da1fad8f556f | Crestron-AirMediaRuled4a62e3b-d364-4239-a51d-b478512d730cCheck9f7b5334-f46f-4d76-8206-f7075f0b14d7) | Crestron-AirMediaRuled4a62e3b-d364-4239-a51d-b478512d730cCheck000e768f-c4f9-4824-b23a-e80497a0c11e) | Crestron-AirMediaRuled4a62e3b-d364-4239-a51d-b478512d730cCheck4e993572-405c-4749-8d24-af6d474e7aca) | Crestron-AirMediaRuled4a62e3b-d364-4239-a51d-b478512d730cCheckfac41de8-f0bd-4227-bc22-904a0c339321) | Crestron-AirMediaRuled4a62e3b-d364-4239-a51d-b478512d730cCheck1676e1c6-546a-4a75-99dc-7307bacbe5c1) | Crestron-AirMediaRuled4a62e3b-d364-4239-a51d-b478512d730cCheck342a139f-5418-4661-9a41-cf3b632ee969) | Crestron-AirMediaRuled4a62e3b-d364-4239-a51d-b478512d730cCheckd2f666bc-7818-48e4-bb17-b6b1be85c377" name="Crestron-AirMediaRuled4a62e3b-d364-4239-a51d-b478512d730c" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="CRESTRON" description="Policy for Crestron-Device,based on MAC-OUI" name="Crestron-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="AirMedia" description="IP FQDN CONTAINS AirMedia" name="Crestron-AirMediaRuled4a62e3b-d364-4239-a51d-b478512d730cCheck5e1a3d6b-b2f8-4ddc-b678-da1fad8f556f" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="AM-100" description="IP FQDN CONTAINS AM-100" name="Crestron-AirMediaRuled4a62e3b-d364-4239-a51d-b478512d730cCheck9f7b5334-f46f-4d76-8206-f7075f0b14d7" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="AM-200" description="IP FQDN CONTAINS AM-200" name="Crestron-AirMediaRuled4a62e3b-d364-4239-a51d-b478512d730cCheck000e768f-c4f9-4824-b23a-e80497a0c11e" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="AM-300" description="IP FQDN CONTAINS AM-300" name="Crestron-AirMediaRuled4a62e3b-d364-4239-a51d-b478512d730cCheck4e993572-405c-4749-8d24-af6d474e7aca" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="AirMedia" description="DHCP host-name CONTAINS AirMedia" name="Crestron-AirMediaRuled4a62e3b-d364-4239-a51d-b478512d730cCheckfac41de8-f0bd-4227-bc22-904a0c339321" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="AM-100" description="DHCP host-name CONTAINS AM-100" name="Crestron-AirMediaRuled4a62e3b-d364-4239-a51d-b478512d730cCheck1676e1c6-546a-4a75-99dc-7307bacbe5c1" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="AM-200" description="DHCP host-name CONTAINS AM-200" name="Crestron-AirMediaRuled4a62e3b-d364-4239-a51d-b478512d730cCheck342a139f-5418-4661-9a41-cf3b632ee969" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="AM-300" description="DHCP host-name CONTAINS AM-300" name="Crestron-AirMediaRuled4a62e3b-d364-4239-a51d-b478512d730cCheckd2f666bc-7818-48e4-bb17-b6b1be85c377" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

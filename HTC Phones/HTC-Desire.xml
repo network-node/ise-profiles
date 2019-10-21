@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for HTC Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="HTC-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="HTC-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="HTC-Desire" parentFQN="HTC-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="HTC-10Rule84fb9971-d797-4b06-a174-f1217cc9a8ff_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="HTC-DeviceRule1Check1" expression="HTC-DeviceRule1Check1" name="HTC-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_HTC_Desire_OR_IP_User-Agent_CONTAINS_HTCD200LVW" expression="HTC-10Rule84fb9971-d797-4b06-a174-f1217cc9a8ffCheck351e0847-9923-4f57-b284-ba00f6ba1f71_copy | HTC-10Rule84fb9971-d797-4b06-a174-f1217cc9a8ff_copyChecka3bef5ac-5e1f-4519-a78d-5c4866fac892" name="HTC-10Rule84fb9971-d797-4b06-a174-f1217cc9a8ff_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="HTC Corporation" description="HTC-DeviceRule1Check1" name="HTC-DeviceRule1Check1" operator="Equals" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="HTC Desire" description="IP User-Agent CONTAINS HTC Desire" name="HTC-10Rule84fb9971-d797-4b06-a174-f1217cc9a8ffCheck351e0847-9923-4f57-b284-ba00f6ba1f71_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="HTCD200LVW" description="IP User-Agent CONTAINS HTCD200LVW" name="HTC-10Rule84fb9971-d797-4b06-a174-f1217cc9a8ff_copyChecka3bef5ac-5e1f-4519-a78d-5c4866fac892" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

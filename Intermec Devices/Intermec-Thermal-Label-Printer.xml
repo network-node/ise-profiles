@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Intermec-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Intermec-DeviceRule49be44e7-f9c2-4390-98b8-47cd5dde78a7"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Intermec-Thermal-Label-Printer" parentFQN="Intermec-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Intermec-Thermal-Label-PrinterRule42065a31-89c0-408e-a6ae-24f29f8bbc79"/>
+<PolicyRule certaintyFactor="10" name="Intermec-Thermal-Label-PrinterRule1c844a30-fa8e-46ec-a164-e4c8048ae6c3"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_INTERMEC" expression="Intermec-DeviceRule49be44e7-f9c2-4390-98b8-47cd5dde78a7Check42b5e3f1-c798-4fc6-9b32-700abddeb0cf" name="Intermec-DeviceRule49be44e7-f9c2-4390-98b8-47cd5dde78a7" ruleType="Regular"/>
+<Rule description="SNMP_hrDeviceDescr_CONTAINS_Thermal_Label_Printer" expression="Intermec-Thermal-Label-PrinterRule42065a31-89c0-408e-a6ae-24f29f8bbc79Checkffd9a26b-8339-4edf-973a-70d52096bfa3" name="Intermec-Thermal-Label-PrinterRule42065a31-89c0-408e-a6ae-24f29f8bbc79" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_Thermal_Label_Printer" expression="Intermec-Thermal-Label-PrinterRule1c844a30-fa8e-46ec-a164-e4c8048ae6c3Check545ad3a0-94b6-4561-ad44-0bc23c075d1d" name="Intermec-Thermal-Label-PrinterRule1c844a30-fa8e-46ec-a164-e4c8048ae6c3" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="INTERMEC" description="MAC OUI CONTAINS INTERMEC" name="Intermec-DeviceRule49be44e7-f9c2-4390-98b8-47cd5dde78a7Check42b5e3f1-c798-4fc6-9b32-700abddeb0cf" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Thermal Label Printer" description="SNMP hrDeviceDescr CONTAINS Thermal Label Printer" name="Intermec-Thermal-Label-PrinterRule42065a31-89c0-408e-a6ae-24f29f8bbc79Checkffd9a26b-8339-4edf-973a-70d52096bfa3" operator="Contains" type="Snmp"/>
+<Check attributeName="sysDescr" attributeValue="Thermal Label Printer" description="SNMP sysDescr CONTAINS Thermal Label Printer" name="Intermec-Thermal-Label-PrinterRule1c844a30-fa8e-46ec-a164-e4c8048ae6c3Check545ad3a0-94b6-4561-ad44-0bc23c075d1d" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

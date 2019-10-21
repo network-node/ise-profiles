@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="50" name="Intermec-Mobile-Computer" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="25" name="Intermec-Mobile-ComputerRulec09b5410-683c-4fef-834d-becd17fbec33"/>
+<PolicyRule certaintyFactor="25" name="Intermec-Mobile-ComputerRulec725b8b6-f701-48ff-8bc1-e006518e86dd"/>
+<PolicyRule certaintyFactor="25" name="Intermec-Mobile-ComputerRule0c294820-4393-4eba-9ece-2913a7784d28"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_Intermec.CK3B" expression="Intermec-Mobile-ComputerRulec09b5410-683c-4fef-834d-becd17fbec33Check1cfbaf19-4131-40d8-b609-1fcc12cbcaf3" name="Intermec-Mobile-ComputerRulec09b5410-683c-4fef-834d-becd17fbec33" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Wistron_Neweb" expression="Intermec-Mobile-ComputerRulec725b8b6-f701-48ff-8bc1-e006518e86ddCheck72401f4b-35bc-47da-8652-3fb7ab0a165d" name="Intermec-Mobile-ComputerRulec725b8b6-f701-48ff-8bc1-e006518e86dd" ruleType="Regular"/>
+<Rule description="DHCP_host-name_STARTSWITH_CK3" expression="Intermec-Mobile-ComputerRule0c294820-4393-4eba-9ece-2913a7784d28Check91abfaed-690b-48bd-a64e-3cc1cf8cc62c" name="Intermec-Mobile-ComputerRule0c294820-4393-4eba-9ece-2913a7784d28" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="dhcp-class-identifier" attributeValue="Intermec.CK3B" description="DHCP dhcp-class-identifier CONTAINS Intermec.CK3B" name="Intermec-Mobile-ComputerRulec09b5410-683c-4fef-834d-becd17fbec33Check1cfbaf19-4131-40d8-b609-1fcc12cbcaf3" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Wistron Neweb" description="MAC OUI CONTAINS Wistron Neweb" name="Intermec-Mobile-ComputerRulec725b8b6-f701-48ff-8bc1-e006518e86ddCheck72401f4b-35bc-47da-8652-3fb7ab0a165d" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="CK3" description="DHCP host-name STARTSWITH CK3" name="Intermec-Mobile-ComputerRule0c294820-4393-4eba-9ece-2913a7784d28Check91abfaed-690b-48bd-a64e-3cc1cf8cc62c" operator="Starts with" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

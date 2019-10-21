@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Intermec-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Intermec-DeviceRule14c35e9d-f1e3-4dd4-88f2-d993b6f0d840"/>
+<PolicyRule certaintyFactor="40" name="Intermec-DeviceRuleb2751a70-d2fa-4fc1-81b8-083ee8c2d17a"/>
+<PolicyRule certaintyFactor="20" name="Intermec-DeviceRuled8163b97-7e84-49fa-9739-4c3bd7ba1468"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_INTERMEC_CORPORATION" expression="Intermec-DeviceRule14c35e9d-f1e3-4dd4-88f2-d993b6f0d840Check0f47d88f-a9c1-4791-ae11-be12d8fbfda4" name="Intermec-DeviceRule14c35e9d-f1e3-4dd4-88f2-d993b6f0d840" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_Intermec" expression="Intermec-DeviceRuleb2751a70-d2fa-4fc1-81b8-083ee8c2d17aCheckd39885a8-e8aa-4c58-8bc1-0ce4cc926b63" name="Intermec-DeviceRuleb2751a70-d2fa-4fc1-81b8-083ee8c2d17a" ruleType="Regular"/>
+<Rule description="IP_FQDN_STARTSWITH_Intermec_OR_DHCP_host-name_STARTSWITH_Intermec" expression="Intermec-DeviceRuled8163b97-7e84-49fa-9739-4c3bd7ba1468Checkaec74ac5-f0d5-4621-9533-7b4a6155af0c | Intermec-DeviceRuled8163b97-7e84-49fa-9739-4c3bd7ba1468Checke7166fa1-ddbc-4f14-962d-6a657ec4a7eb" name="Intermec-DeviceRuled8163b97-7e84-49fa-9739-4c3bd7ba1468" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="INTERMEC CORPORATION" description="MAC OUI CONTAINS INTERMEC CORPORATION" name="Intermec-DeviceRule14c35e9d-f1e3-4dd4-88f2-d993b6f0d840Check0f47d88f-a9c1-4791-ae11-be12d8fbfda4" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Intermec" description="DHCP dhcp-class-identifier CONTAINS Intermec" name="Intermec-DeviceRuleb2751a70-d2fa-4fc1-81b8-083ee8c2d17aCheckd39885a8-e8aa-4c58-8bc1-0ce4cc926b63" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="Intermec" description="IP FQDN STARTSWITH Intermec" name="Intermec-DeviceRuled8163b97-7e84-49fa-9739-4c3bd7ba1468Checkaec74ac5-f0d5-4621-9533-7b4a6155af0c" operator="Starts with" type="IP"/>
+<Check attributeName="host-name" attributeValue="Intermec" description="DHCP host-name STARTSWITH Intermec" name="Intermec-DeviceRuled8163b97-7e84-49fa-9739-4c3bd7ba1468Checke7166fa1-ddbc-4f14-962d-6a657ec4a7eb" operator="Starts with" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Google-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Google-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Google-DeviceRule2"/>
+<PolicyRule certaintyFactor="20" name="Google-DeviceRule1"/>
+<PolicyRule certaintyFactor="20" name="Google-DeviceRule94ebb062-3f82-402e-a148-7edc7904f18b"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Google-Pixel-3-Phone" parentFQN="Google-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Google-Pixel-3-PhoneRuleb6e701a2-4446-42d8-9df6-e814ea774476"/>
+<PolicyRule certaintyFactor="30" name="Google-Pixel-3-PhoneRule6867cb28-4ae7-47b0-9ee2-b2f047345742"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Google-Device-Rule2-Check1" expression="Google-Device-Rule2-Check1" name="Google-DeviceRule2" ruleType="Regular"/>
+<Rule description="Google-Device-Rule1-Check1" expression="Google-Device-Rule1-Check1" name="Google-DeviceRule1" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Google" expression="Google-DeviceRule94ebb062-3f82-402e-a148-7edc7904f18bCheck518c65a6-a60e-4416-9e03-5f025022a856" name="Google-DeviceRule94ebb062-3f82-402e-a148-7edc7904f18b" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_Pixel_3" expression="Google-Pixel-3-PhoneRuleb6e701a2-4446-42d8-9df6-e814ea774476Checkb7dcf1dc-e738-4ffe-96b6-686cb94b3d2d" name="Google-Pixel-3-PhoneRuleb6e701a2-4446-42d8-9df6-e814ea774476" ruleType="Regular"/>
+<Rule description="ACIDEX_device-type_CONTAINS_Pixel_3" expression="Google-Pixel-3-PhoneRule6867cb28-4ae7-47b0-9ee2-b2f047345742Check2eb14b46-e171-4638-9bef-0b0874219fe5" name="Google-Pixel-3-PhoneRule6867cb28-4ae7-47b0-9ee2-b2f047345742" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="User-Agent" attributeValue="CrKey" description="Condition for Google-Device , based on IP-User-Agent" name="Google-Device-Rule2-Check1" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="Chromecast" description="Condition for Google-Device , based on DHCP-Host-Name" name="Google-Device-Rule1-Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Google" description="MAC OUI CONTAINS Google" name="Google-DeviceRule94ebb062-3f82-402e-a148-7edc7904f18bCheck518c65a6-a60e-4416-9e03-5f025022a856" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="Pixel 3" description="IP User-Agent CONTAINS Pixel 3" name="Google-Pixel-3-PhoneRuleb6e701a2-4446-42d8-9df6-e814ea774476Checkb7dcf1dc-e738-4ffe-96b6-686cb94b3d2d" operator="Contains" type="IP"/>
+<Check attributeName="device-type" attributeValue="Pixel 3" description="ACIDEX device-type CONTAINS Pixel 3" name="Google-Pixel-3-PhoneRule6867cb28-4ae7-47b0-9ee2-b2f047345742Check2eb14b46-e171-4638-9bef-0b0874219fe5" operator="Contains" type="ACIDEX"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

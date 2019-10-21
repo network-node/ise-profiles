@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Intermec-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Intermec-DeviceRule6b4c145e-2373-47b5-b2e7-53427ab4d3d0"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Intermec-EasyCoder" parentFQN="Intermec-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Intermec-EasyCoderRule5797522d-7dd0-4dc8-8017-e628a3d11028"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_INTERMEC" expression="Intermec-DeviceRule6b4c145e-2373-47b5-b2e7-53427ab4d3d0Check44ca1ee8-359c-4ef0-94e2-c915220c11e4" name="Intermec-DeviceRule6b4c145e-2373-47b5-b2e7-53427ab4d3d0" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_Intermec_EasyCoder" expression="Intermec-EasyCoderRule5797522d-7dd0-4dc8-8017-e628a3d11028Check25e288a7-33b3-4b77-a173-172aae1102d3" name="Intermec-EasyCoderRule5797522d-7dd0-4dc8-8017-e628a3d11028" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="INTERMEC" description="MAC OUI CONTAINS INTERMEC" name="Intermec-DeviceRule6b4c145e-2373-47b5-b2e7-53427ab4d3d0Check44ca1ee8-359c-4ef0-94e2-c915220c11e4" operator="Contains" type="Mac"/>
+<Check attributeName="sysDescr" attributeValue="Intermec EasyCoder" description="SNMP sysDescr CONTAINS Intermec EasyCoder" name="Intermec-EasyCoderRule5797522d-7dd0-4dc8-8017-e628a3d11028Check25e288a7-33b3-4b77-a173-172aae1102d3" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
