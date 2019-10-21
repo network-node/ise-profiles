@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Owl-Labs-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Oracle-DeviceRule4df07426-b633-48f2-ae42-21258f1eed54_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Owl_Labs" expression="Oracle-DeviceRule4df07426-b633-48f2-ae42-21258f1eed54Checkb92a4a63-248f-4e49-b1e4-dc7d6e912305_copy" name="Oracle-DeviceRule4df07426-b633-48f2-ae42-21258f1eed54_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Owl Labs" description="MAC OUI CONTAINS Owl Labs" name="Oracle-DeviceRule4df07426-b633-48f2-ae42-21258f1eed54Checkb92a4a63-248f-4e49-b1e4-dc7d6e912305_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

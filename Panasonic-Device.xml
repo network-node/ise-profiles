@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Panasonic-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Panasonic-DeviceRule7236b1d3-5178-46e3-8ebc-503d8902e16d"/>
+<PolicyRule certaintyFactor="5" name="Panasonic-DeviceRule442d4038-a09e-4e36-84a5-adb75b0f79f3"/>
+<PolicyRule certaintyFactor="5" name="Panasonic-DeviceRule8bb4d148-4f5f-46fa-a844-f8708dff0735"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_MATSUSHITA_ELECTRIC" expression="Panasonic-DeviceRule7236b1d3-5178-46e3-8ebc-503d8902e16dCheck73024f30-e41c-42a2-84cb-45a8d1beeb10" name="Panasonic-DeviceRule7236b1d3-5178-46e3-8ebc-503d8902e16d" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_Panasonic" expression="Panasonic-DeviceRule442d4038-a09e-4e36-84a5-adb75b0f79f3Checke9835318-4c89-4bb0-a330-c2b75a00a83c" name="Panasonic-DeviceRule442d4038-a09e-4e36-84a5-adb75b0f79f3" ruleType="Regular"/>
+<Rule description="Panasonic-DeviceRule8bb4d148-4f5f-46fa-a844-f8708dff0735Checkfd40fb02-f102-47bc-8f44-a140d82ae6d7" expression="Panasonic-DeviceRule8bb4d148-4f5f-46fa-a844-f8708dff0735Checkfd40fb02-f102-47bc-8f44-a140d82ae6d7" name="Panasonic-DeviceRule8bb4d148-4f5f-46fa-a844-f8708dff0735" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="MATSUSHITA ELECTRIC" description="MAC OUI CONTAINS MATSUSHITA ELECTRIC" name="Panasonic-DeviceRule7236b1d3-5178-46e3-8ebc-503d8902e16dCheck73024f30-e41c-42a2-84cb-45a8d1beeb10" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Panasonic" description="DHCP dhcp-class-identifier CONTAINS Panasonic" name="Panasonic-DeviceRule442d4038-a09e-4e36-84a5-adb75b0f79f3Checke9835318-4c89-4bb0-a330-c2b75a00a83c" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Panasonic" description="MAC OUI CONTAINS Panasonic" name="Panasonic-DeviceRule8bb4d148-4f5f-46fa-a844-f8708dff0735Checkfd40fb02-f102-47bc-8f44-a140d82ae6d7" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

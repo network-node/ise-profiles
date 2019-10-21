@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Panda-Wireless-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Panda-Wireless-DeviceRule49f2501e-b54b-4a9e-b803-b6c6e3be2b92"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Panda_Wireless" expression="Panda-Wireless-DeviceRule49f2501e-b54b-4a9e-b803-b6c6e3be2b92Check6acf7fcf-109d-4cb6-ad9f-c470aef71271" name="Panda-Wireless-DeviceRule49f2501e-b54b-4a9e-b803-b6c6e3be2b92" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Panda Wireless" description="MAC OUI CONTAINS Panda Wireless" name="Panda-Wireless-DeviceRule49f2501e-b54b-4a9e-b803-b6c6e3be2b92Check6acf7fcf-109d-4cb6-ad9f-c470aef71271" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

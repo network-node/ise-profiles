@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="OpenGear-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="OpenGear-DeviceRule7d5fa1bf-a54b-4c26-8201-fc9bbc8df48a"/>
+<PolicyRule certaintyFactor="10" name="OpenGear-DeviceRuleab5aaa59-6c1c-4830-9270-82e472c3ba18"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_Opengear" expression="OpenGear-DeviceRule7d5fa1bf-a54b-4c26-8201-fc9bbc8df48aCheck353c7fe4-a0dc-4e50-8b8c-d1075f772fa4" name="OpenGear-DeviceRule7d5fa1bf-a54b-4c26-8201-fc9bbc8df48a" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Opengear" expression="OpenGear-DeviceRuleab5aaa59-6c1c-4830-9270-82e472c3ba18Checke45ec1cf-b778-49bf-a7b4-434a65330c56" name="OpenGear-DeviceRuleab5aaa59-6c1c-4830-9270-82e472c3ba18" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="dhcp-class-identifier" attributeValue="Opengear" description="DHCP dhcp-class-identifier CONTAINS Opengear" name="OpenGear-DeviceRule7d5fa1bf-a54b-4c26-8201-fc9bbc8df48aCheck353c7fe4-a0dc-4e50-8b8c-d1075f772fa4" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Opengear" description="MAC OUI CONTAINS Opengear" name="OpenGear-DeviceRuleab5aaa59-6c1c-4830-9270-82e472c3ba18Checke45ec1cf-b778-49bf-a7b4-434a65330c56" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

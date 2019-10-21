@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Palo-Alto-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="MTX-DeviceRule254b7a69-0ec6-4fec-a7dd-af43755f8f88_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="PAN-3000-Series-FW" parentFQN="Palo-Alto-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="PAN-3000-Series-FWRule804426ff-d669-4475-aee3-80f4d4affba6"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Palo_Alto_Networks" expression="MTX-DeviceRule254b7a69-0ec6-4fec-a7dd-af43755f8f88Checkdf972eba-4a1a-450b-a384-7585c958a5db_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy" name="MTX-DeviceRule254b7a69-0ec6-4fec-a7dd-af43755f8f88_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_Palo_Alto_Networks_PA-3000" expression="PAN-3000-Series-FWRule804426ff-d669-4475-aee3-80f4d4affba6Checke836ee09-bfd0-4bd4-a4fe-84411d3f4a01" name="PAN-3000-Series-FWRule804426ff-d669-4475-aee3-80f4d4affba6" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Palo Alto Networks" description="MAC OUI CONTAINS Palo Alto Networks" name="MTX-DeviceRule254b7a69-0ec6-4fec-a7dd-af43755f8f88Checkdf972eba-4a1a-450b-a384-7585c958a5db_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy" operator="Contains" type="Mac"/>
+<Check attributeName="sysDescr" attributeValue="Palo Alto Networks PA-3000" description="SNMP sysDescr CONTAINS Palo Alto Networks PA-3000" name="PAN-3000-Series-FWRule804426ff-d669-4475-aee3-80f4d4affba6Checke836ee09-bfd0-4bd4-a4fe-84411d3f4a01" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for all Android SmartPhones" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Android" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="AndroidRule33"/>
+<PolicyRule certaintyFactor="30" name="AndroidRule2"/>
+<PolicyRule certaintyFactor="30" name="AndroidRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Pixel-3" parentFQN="Android" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Pixel-2Rulef46e42a5-a002-4d28-8c86-6b0375f8d5e3_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Android-Rule2-Check1" expression="Android-Rule2-Check1" name="AndroidRule33" ruleType="Regular"/>
+<Rule description="AndroidRule1Check2" expression="AndroidRule1Check2" name="AndroidRule2" ruleType="Regular"/>
+<Rule description="AndroidRule1Check1" expression="AndroidRule1Check1" name="AndroidRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_Pixel_3" expression="Pixel-2Rulef46e42a5-a002-4d28-8c86-6b0375f8d5e3Check9b1f0035-9bd9-495e-b1e6-54267cd32b92_copy" name="Pixel-2Rulef46e42a5-a002-4d28-8c86-6b0375f8d5e3_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="device-platform" attributeValue="android" description="Condition for Android based on ACIDEX:device-platform" name="Android-Rule2-Check1" operator="Equals" type="ACIDEX"/>
+<Check attributeName="host-name" attributeValue="android" description="AndroidRule1Check2" name="AndroidRule1Check2" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="Android" description="AndroidRule1Check1" name="AndroidRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Pixel 3" description="IP User-Agent CONTAINS Pixel 3" name="Pixel-2Rulef46e42a5-a002-4d28-8c86-6b0375f8d5e3Check9b1f0035-9bd9-495e-b1e6-54267cd32b92_copy" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
 <Policies>
-<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="QSC-Device" version="2">
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="QSC-Device" version="2">
 <PolicyRules>
-<PolicyRule certaintyFactor="10" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cd_copy4"/>
+<PolicyRule certaintyFactor="5" name="Panasonic-DeviceRule8bb4d148-4f5f-46fa-a844-f8708dff0735_copy_copy_copy_copy_copy_copy_copy_copy"/>
 </PolicyRules>
 </Policy>
 </Policies>
 <Rules>
-<Rule description="MAC_OUI_CONTAINS_QSC" expression="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cdCheck1a291cb9-b092-462b-a876-62edc49266c2_copy4" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cd_copy4" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_QSC_LLC" expression="Panasonic-DeviceRule8bb4d148-4f5f-46fa-a844-f8708dff0735Checkfd40fb02-f102-47bc-8f44-a140d82ae6d7_copy_copy_copy_copy_copy_copy_copy_copy" name="Panasonic-DeviceRule8bb4d148-4f5f-46fa-a844-f8708dff0735_copy_copy_copy_copy_copy_copy_copy_copy" ruleType="Regular"/>
 </Rules>
 <Checks>
-<Check attributeName="OUI" attributeValue="QSC" description="MAC OUI CONTAINS QSC" name="2n-Telekomunikace-DeviceRulefe25272d-03af-40da-894e-4547fb6e34cdCheck1a291cb9-b092-462b-a876-62edc49266c2_copy4" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="QSC LLC" description="MAC OUI CONTAINS QSC LLC" name="Panasonic-DeviceRule8bb4d148-4f5f-46fa-a844-f8708dff0735Checkfd40fb02-f102-47bc-8f44-a140d82ae6d7_copy_copy_copy_copy_copy_copy_copy_copy" operator="Contains" type="Mac"/>
 </Checks>
 <Actions/>
 <ScanActions/>
