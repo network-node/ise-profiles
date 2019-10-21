@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Emerson-Network-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Corder-DeviceRule9c953fcb-1c06-405a-bad1-715fc44f5bb5_copy_copy_copy_copy_copy_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Emerson-DSR-Device" parentFQN="Emerson-Network-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Emerson-DSR-DeviceRule4ff16491-4b5e-4abb-9676-a96de4690669"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Emerson_Network_Power" expression="Corder-DeviceRule9c953fcb-1c06-405a-bad1-715fc44f5bb5Check9943f45a-7e6c-4899-b4e9-405185b96014_copy_copy_copy_copy_copy_copy_copy_copy_copy" name="Corder-DeviceRule9c953fcb-1c06-405a-bad1-715fc44f5bb5_copy_copy_copy_copy_copy_copy_copy_copy_copy" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_DSR" expression="Emerson-DSR-DeviceRule4ff16491-4b5e-4abb-9676-a96de4690669Checkcdadf817-9f3c-485c-921e-04ee7c11eb43" name="Emerson-DSR-DeviceRule4ff16491-4b5e-4abb-9676-a96de4690669" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Emerson Network Power" description="MAC OUI CONTAINS Emerson Network Power" name="Corder-DeviceRule9c953fcb-1c06-405a-bad1-715fc44f5bb5Check9943f45a-7e6c-4899-b4e9-405185b96014_copy_copy_copy_copy_copy_copy_copy_copy_copy" operator="Contains" type="Mac"/>
+<Check attributeName="sysDescr" attributeValue="DSR" description="SNMP sysDescr CONTAINS DSR" name="Emerson-DSR-DeviceRule4ff16491-4b5e-4abb-9676-a96de4690669Checkcdadf817-9f3c-485c-921e-04ee7c11eb43" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

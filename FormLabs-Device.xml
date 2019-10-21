@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="FormLabs-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="FormLabs-DeviceRule9afd5669-d02f-4e50-a500-96787e26f123"/>
+<PolicyRule certaintyFactor="10" name="FormLabs-DeviceRulee0e9fda7-c634-465d-b4ea-22726701a19e"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Formlabs" expression="FormLabs-DeviceRule9afd5669-d02f-4e50-a500-96787e26f123Checkcf6a462b-9eed-4626-ae9a-3269edeaeed9" name="FormLabs-DeviceRule9afd5669-d02f-4e50-a500-96787e26f123" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_Ephyra_OR_DHCP_host-name_CONTAINS_Ephyra" expression="FormLabs-DeviceRulee0e9fda7-c634-465d-b4ea-22726701a19eCheckcc44efc1-1299-4860-80e5-6680343d7c3b | FormLabs-DeviceRulee0e9fda7-c634-465d-b4ea-22726701a19eCheck70f677c2-1d9b-4d25-80b6-cd034cee6aed" name="FormLabs-DeviceRulee0e9fda7-c634-465d-b4ea-22726701a19e" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Formlabs" description="MAC OUI CONTAINS Formlabs" name="FormLabs-DeviceRule9afd5669-d02f-4e50-a500-96787e26f123Checkcf6a462b-9eed-4626-ae9a-3269edeaeed9" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="Ephyra" description="IP FQDN CONTAINS Ephyra" name="FormLabs-DeviceRulee0e9fda7-c634-465d-b4ea-22726701a19eCheckcc44efc1-1299-4860-80e5-6680343d7c3b" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="Ephyra" description="DHCP host-name CONTAINS Ephyra" name="FormLabs-DeviceRulee0e9fda7-c634-465d-b4ea-22726701a19eCheck70f677c2-1d9b-4d25-80b6-cd034cee6aed" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

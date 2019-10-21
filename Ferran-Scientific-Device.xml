@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Ferran-Scientific-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Essential-Products-DeviceRuleeaee3887-8fb1-441c-bc06-fec93e69fd21_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_FERRAN_SCIENTIFIC" expression="Essential-Products-DeviceRuleeaee3887-8fb1-441c-bc06-fec93e69fd21Check65ee3ad6-c595-421e-910d-8d43f405ca97_copy_copy_copy" name="Essential-Products-DeviceRuleeaee3887-8fb1-441c-bc06-fec93e69fd21_copy_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="FERRAN SCIENTIFIC" description="MAC OUI CONTAINS FERRAN SCIENTIFIC" name="Essential-Products-DeviceRuleeaee3887-8fb1-441c-bc06-fec93e69fd21Check65ee3ad6-c595-421e-910d-8d43f405ca97_copy_copy_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
