@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for TrippLite-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="TrippLite-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="TrippLite-DeviceRulef6c7f907-6bee-4e5d-83c5-f6d7179af9f0"/>
+<PolicyRule certaintyFactor="10" name="TrippLite-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_TrippLite" expression="TrippLite-DeviceRulef6c7f907-6bee-4e5d-83c5-f6d7179af9f0Check60d3eff1-6703-40f8-a32f-9278ba8dc520" name="TrippLite-DeviceRulef6c7f907-6bee-4e5d-83c5-f6d7179af9f0" ruleType="Regular"/>
+<Rule description="TrippLite-Device-Rule1Check1" expression="TrippLite-Device-Rule1Check1" name="TrippLite-DeviceRule1" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="dhcp-class-identifier" attributeValue="TrippLite" description="DHCP dhcp-class-identifier CONTAINS TrippLite" name="TrippLite-DeviceRulef6c7f907-6bee-4e5d-83c5-f6d7179af9f0Check60d3eff1-6703-40f8-a32f-9278ba8dc520" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Tripp Lite" description="Condition for TrippLite-Device,based on MAC-OUI" name="TrippLite-Device-Rule1Check1" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Tiger-Netcom-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="TEAC-DeviceRuled71d4209-2b2d-4389-9fcc-397da6c29582_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Vonets-Device" parentFQN="Tiger-Netcom-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Vonets-DeviceRule1cb8b3e7-6f3d-4c02-b88a-6ee70a794077"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Tiger_NetCom" expression="TEAC-DeviceRuled71d4209-2b2d-4389-9fcc-397da6c29582Check5e82d603-fc7e-4fb1-a32d-acdd083aa81f_copy" name="TEAC-DeviceRuled71d4209-2b2d-4389-9fcc-397da6c29582_copy" ruleType="Regular"/>
+<Rule description="DHCP_host-name_STARTSWITH_vonets_OR_IP_FQDN_STARTSWITH_vonets" expression="Vonets-DeviceRule1cb8b3e7-6f3d-4c02-b88a-6ee70a794077Check12ad8a55-7e9d-4b84-b9f7-29e37042825b | Vonets-DeviceRule1cb8b3e7-6f3d-4c02-b88a-6ee70a794077Check569e5065-b203-4bf7-8a7b-d9563fed99b5" name="Vonets-DeviceRule1cb8b3e7-6f3d-4c02-b88a-6ee70a794077" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Tiger NetCom" description="MAC OUI CONTAINS Tiger NetCom" name="TEAC-DeviceRuled71d4209-2b2d-4389-9fcc-397da6c29582Check5e82d603-fc7e-4fb1-a32d-acdd083aa81f_copy" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="vonets" description="DHCP host-name STARTSWITH vonets" name="Vonets-DeviceRule1cb8b3e7-6f3d-4c02-b88a-6ee70a794077Check12ad8a55-7e9d-4b84-b9f7-29e37042825b" operator="Starts with" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="vonets" description="IP FQDN STARTSWITH vonets" name="Vonets-DeviceRule1cb8b3e7-6f3d-4c02-b88a-6ee70a794077Check569e5065-b203-4bf7-8a7b-d9563fed99b5" operator="Starts with" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

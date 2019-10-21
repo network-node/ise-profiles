@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for TrippLite-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="TrippLite-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="TrippLite-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Tripplite-PowerAlert" parentFQN="TrippLite-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Tripplite-PowerAlertRule974893d4-59a6-4b90-9682-3a1d4092767c"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="TrippLite-Device-Rule1Check1" expression="TrippLite-Device-Rule1Check1" name="TrippLite-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_FQDN_STARTSWITH_poweralert_OR_DHCP_host-name_STARTSWITH_poweralert" expression="Tripplite-PowerAlertRule974893d4-59a6-4b90-9682-3a1d4092767cCheck3cd3644c-a016-4162-aad8-ee75b3010435 | Tripplite-PowerAlertRule974893d4-59a6-4b90-9682-3a1d4092767cCheckb6521252-dc53-4c56-b332-d05a79c81bb0" name="Tripplite-PowerAlertRule974893d4-59a6-4b90-9682-3a1d4092767c" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Tripp Lite" description="Condition for TrippLite-Device,based on MAC-OUI" name="TrippLite-Device-Rule1Check1" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="poweralert" description="IP FQDN STARTSWITH poweralert" name="Tripplite-PowerAlertRule974893d4-59a6-4b90-9682-3a1d4092767cCheck3cd3644c-a016-4162-aad8-ee75b3010435" operator="Starts with" type="IP"/>
+<Check attributeName="host-name" attributeValue="poweralert" description="DHCP host-name STARTSWITH poweralert" name="Tripplite-PowerAlertRule974893d4-59a6-4b90-9682-3a1d4092767cCheckb6521252-dc53-4c56-b332-d05a79c81bb0" operator="Starts with" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

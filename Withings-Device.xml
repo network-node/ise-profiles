@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Withings-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Winstars-DeviceRule89a3266a-f6af-48c8-8f98-21b07b226458_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Withings" expression="Winstars-DeviceRule89a3266a-f6af-48c8-8f98-21b07b226458Checke50b085a-e381-448e-a8ea-f91412b19081_copy" name="Winstars-DeviceRule89a3266a-f6af-48c8-8f98-21b07b226458_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Withings" description="MAC OUI CONTAINS Withings" name="Winstars-DeviceRule89a3266a-f6af-48c8-8f98-21b07b226458Checke50b085a-e381-448e-a8ea-f91412b19081_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Sony-Device" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Sony-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Sony-DeviceRule1"/>
+<PolicyRule certaintyFactor="10" name="Sony-PlayStationRule3"/>
+<PolicyRule certaintyFactor="10" name="Sony-PlayStationRule2"/>
+<PolicyRule certaintyFactor="10" name="Sony-DeviceRule22"/>
+<PolicyRule certaintyFactor="10" name="Sony-DeviceRule33"/>
+<PolicyRule certaintyFactor="10" name="Sony-PlayStationRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Xperia-Device" parentFQN="Sony-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Xperia-DeviceRuleb601ef3a-434b-4b90-a031-b0a06ea9ff46"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Sony-Device-Rule1-Check1" expression="Sony-Device-Rule1-Check1" name="Sony-DeviceRule1" ruleType="Regular"/>
+<Rule description="Sony-PlayStation-Rule3-Check1" expression="Sony-PlayStation-Rule3-Check1" name="Sony-PlayStationRule3" ruleType="Regular"/>
+<Rule description="Sony-PlayStation-Rule2-Check1" expression="Sony-PlayStation-Rule2-Check1" name="Sony-PlayStationRule2" ruleType="Regular"/>
+<Rule description="Sony-Device-Rule2-Check1" expression="Sony-Device-Rule2-Check1" name="Sony-DeviceRule22" ruleType="Regular"/>
+<Rule description="Sony-Device-Rule3-Check1" expression="Sony-Device-Rule3-Check1" name="Sony-DeviceRule33" ruleType="Regular"/>
+<Rule description="Sony-PlayStation-Rule1-Check1" expression="Sony-PlayStation-Rule1-Check1" name="Sony-PlayStationRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_G3313_OR_IP_User-Agent_CONTAINS_D6616_OR_IP_User-Agent_CONTAINS_F3213_OR_IP_User-Agent_CONTAINS_F5121_OR_IP_User-Agent_CONTAINS_G3311" expression="(((Xperia-DeviceRuleb601ef3a-434b-4b90-a031-b0a06ea9ff46Checkaf385fe9-aa4b-409f-ab25-4aac52b7ffe1 | Xperia-DeviceRuleb601ef3a-434b-4b90-a031-b0a06ea9ff46Checka2ee479e-986c-40eb-9db3-7b53fb1947c4) | Xperia-DeviceRuleb601ef3a-434b-4b90-a031-b0a06ea9ff46Check41e3243e-44a8-42cf-a26e-ec662ce53016) | Xperia-DeviceRuleb601ef3a-434b-4b90-a031-b0a06ea9ff46Check425ac2be-3915-49d8-a2f7-047e6238e23b) | Xperia-DeviceRuleb601ef3a-434b-4b90-a031-b0a06ea9ff46Check05eeb39c-e5dd-47ee-b181-c133241a5082" name="Xperia-DeviceRuleb601ef3a-434b-4b90-a031-b0a06ea9ff46" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Sony" description="Condition for Sony-Device , based on MAC-OUI" name="Sony-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="PS3" description="Condition for Sony-PlayStation , based on DHCP-Class-identifier" name="Sony-PlayStation-Rule3-Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="PS4" description="Condition for Sony-PlayStation , based on DHCP-Class-Identifier" name="Sony-PlayStation-Rule2-Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcpv6-vendor-class" attributeValue="PS3" description="Condition for Sony-Device based on DHCP:dhcpv6-vendor-class" name="Sony-Device-Rule2-Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcpv6-vendor-class" attributeValue="PS4" description="Condition for Sony-Device based on DHCP:dhcpv6-vendor-class" name="Sony-Device-Rule3-Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="PlayStation" description="Condition for Sony-PlayStation , based on IP-User-Agent" name="Sony-PlayStation-Rule1-Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="G3313" description="IP User-Agent CONTAINS G3313" name="Xperia-DeviceRuleb601ef3a-434b-4b90-a031-b0a06ea9ff46Checkaf385fe9-aa4b-409f-ab25-4aac52b7ffe1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="D6616" description="IP User-Agent CONTAINS D6616" name="Xperia-DeviceRuleb601ef3a-434b-4b90-a031-b0a06ea9ff46Checka2ee479e-986c-40eb-9db3-7b53fb1947c4" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="F3213" description="IP User-Agent CONTAINS F3213" name="Xperia-DeviceRuleb601ef3a-434b-4b90-a031-b0a06ea9ff46Check41e3243e-44a8-42cf-a26e-ec662ce53016" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="F5121" description="IP User-Agent CONTAINS F5121" name="Xperia-DeviceRuleb601ef3a-434b-4b90-a031-b0a06ea9ff46Check425ac2be-3915-49d8-a2f7-047e6238e23b" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="G3311" description="IP User-Agent CONTAINS G3311" name="Xperia-DeviceRuleb601ef3a-434b-4b90-a031-b0a06ea9ff46Check05eeb39c-e5dd-47ee-b181-c133241a5082" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic Policy for all Xerox Devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Xerox-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Xerox-DeviceRule3"/>
+<PolicyRule certaintyFactor="10" name="Xerox-DeviceRule1"/>
+<PolicyRule certaintyFactor="10" name="Xerox-DeviceRule2"/>
+<PolicyRule certaintyFactor="-3" name="Xerox-DeviceRule1_NMAP"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Xerox-D125-Copier" parentFQN="Xerox-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Xerox-D125-CopierRule14e71ee6-747e-4c5b-85c3-7ff4e3e3192d"/>
+<PolicyRule certaintyFactor="20" name="Xerox-D125-CopierRule1a0c9a37-6d6c-4d84-973d-c3b227e1d07f"/>
+<PolicyRule certaintyFactor="20" name="Xerox-D125-CopierRuled08ada9a-997e-4779-a09a-a00821c9977e"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Xerox-Device-SNMP" expression="Xerox-Device-SNMP" name="Xerox-DeviceRule3" ruleType="Regular"/>
+<Rule description="Xerox-DeviceRule1Check1" expression="Xerox-DeviceRule1Check1" name="Xerox-DeviceRule1" ruleType="Regular"/>
+<Rule description="Xerox-Device-DHCP" expression="Xerox-Device-DHCP" name="Xerox-DeviceRule2" ruleType="Regular"/>
+<Rule description="Xerox-DeviceRule1-SCAN" expression="Xerox-DeviceRule1Check1" name="Xerox-DeviceRule1_NMAP" ruleType="Regular"/>
+<Rule description="SNMP_hrDeviceDescr_CONTAINS_Xerox_D125" expression="Xerox-D125-CopierRule14e71ee6-747e-4c5b-85c3-7ff4e3e3192dCheck37dcb304-f0c7-4a7f-be41-91518cb2263c" name="Xerox-D125-CopierRule14e71ee6-747e-4c5b-85c3-7ff4e3e3192d" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_Xerox_D125" expression="Xerox-D125-CopierRule1a0c9a37-6d6c-4d84-973d-c3b227e1d07fCheckf6430a1b-b2ec-45cb-adfe-8c753e530cb2" name="Xerox-D125-CopierRule1a0c9a37-6d6c-4d84-973d-c3b227e1d07f" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_Mod=Xerox_D125" expression="Xerox-D125-CopierRuled08ada9a-997e-4779-a09a-a00821c9977eCheckcfcc6c8d-e035-4319-b5d9-db2544a1c5d0" name="Xerox-D125-CopierRuled08ada9a-997e-4779-a09a-a00821c9977e" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox" description="SNMP hrDeviceDescr CONTAINS Xerox" name="Xerox-Device-SNMP" operator="Contains" type="Snmp"/>
+<Check attributeName="OUI" attributeValue="XEROX CORPORATION" description="Xerox-DeviceRule1Check1" name="Xerox-DeviceRule1Check1" operator="Equals" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Xerox" description="dhcp-class-identifier CONTAINS Xerox" name="Xerox-Device-DHCP" operator="Contains" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox D125" description="SNMP hrDeviceDescr CONTAINS Xerox D125" name="Xerox-D125-CopierRule14e71ee6-747e-4c5b-85c3-7ff4e3e3192dCheck37dcb304-f0c7-4a7f-be41-91518cb2263c" operator="Contains" type="Snmp"/>
+<Check attributeName="sysDescr" attributeValue="Xerox D125" description="SNMP sysDescr CONTAINS Xerox D125" name="Xerox-D125-CopierRule1a0c9a37-6d6c-4d84-973d-c3b227e1d07fCheckf6430a1b-b2ec-45cb-adfe-8c753e530cb2" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Mod=Xerox D125" description="DHCP dhcp-class-identifier CONTAINS Mod=Xerox D125" name="Xerox-D125-CopierRuled08ada9a-997e-4779-a09a-a00821c9977eCheckcfcc6c8d-e035-4319-b5d9-db2544a1c5d0" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

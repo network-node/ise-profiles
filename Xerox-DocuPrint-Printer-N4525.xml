@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic Policy for all Xerox Devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Xerox-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Xerox-DeviceRule3"/>
+<PolicyRule certaintyFactor="10" name="Xerox-DeviceRule1"/>
+<PolicyRule certaintyFactor="10" name="Xerox-DeviceRule2"/>
+<PolicyRule certaintyFactor="-3" name="Xerox-DeviceRule1_NMAP"/>
+</PolicyRules>
+</Policy>
+<Policy description="Generic Policy for all Xerox Printers" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Xerox-Printer" parentFQN="Xerox-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Xerox-D-Series-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-WorkCentre-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="5" name="Xerox-Versant-Printer-DHCP-Param-Request_Check3"/>
+<PolicyRule certaintyFactor="10" name="Xerox-ColorQube-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-C-Series-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-DocuCentre-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-C-Series-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-Impika-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-Versant-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-FaxCentre-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-DocuTech-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-Trivor-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-Color-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-WorkCentre-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-Brenva-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-4127-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-CiPress-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-DocuPrint-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-VersaLink-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-Rialto-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-Phaser-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-IGen-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-Nuvera-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-DocuTech-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-Brenva-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-Color-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-AltaLink-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-Trivor-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-DocuColor-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-DocuCentre-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-ColorQube-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="5" name="Xerox-DocuCentre-Printer-DHCP-Param-Request_Check1"/>
+<PolicyRule certaintyFactor="5" name="Xerox-VersaLink-Printer-DHCP-Param-Request_Check2"/>
+<PolicyRule certaintyFactor="5" name="Xerox-ColorQube-Printer-DHCP-Param-Request_Check1"/>
+<PolicyRule certaintyFactor="5" name="Xerox-Phaser-Printer-DHCP-Param-Request_Check2"/>
+<PolicyRule certaintyFactor="5" name="Xerox-ColorQube-Printer-DHCP-Param-Request_Check2"/>
+<PolicyRule certaintyFactor="5" name="Xerox-VersaLink-Printer-DHCP-Param-Request_Check1"/>
+<PolicyRule certaintyFactor="10" name="Xerox-Versant-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-Impika-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-VersaLink-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-DocuPrint-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="5" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check5"/>
+<PolicyRule certaintyFactor="10" name="Xerox-IGen-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="5" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check6"/>
+<PolicyRule certaintyFactor="5" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check7"/>
+<PolicyRule certaintyFactor="10" name="Xerox-Nuvera-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="5" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check1"/>
+<PolicyRule certaintyFactor="5" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check2"/>
+<PolicyRule certaintyFactor="5" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check3"/>
+<PolicyRule certaintyFactor="10" name="Xerox-AltaLink-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="5" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check4"/>
+<PolicyRule certaintyFactor="10" name="Xerox-D-Series-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-DocuColor-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="5" name="Xerox-AltaLink-Printer-DHCP-Param-Request_Check3"/>
+<PolicyRule certaintyFactor="10" name="Xerox-Rialto-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-CiPress-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-FaxCentre-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-4127-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="10" name="Xerox-Phaser-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="5" name="Xerox-AltaLink-Printer-DHCP-Param-Request_Check1"/>
+<PolicyRule certaintyFactor="5" name="Xerox-AltaLink-Printer-DHCP-Param-Request_Check2"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Xerox-DocuPrint-Printer" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Xerox-DocuPrint-Printer" parentFQN="Xerox-Device:Xerox-Printer" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Xerox-DocuPrint-Printer-DHCP_Check2"/>
+<PolicyRule certaintyFactor="20" name="Xerox-DocuPrint-Printer-SNMP_Check2"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Xerox-DocuPrint-Printer-N4525" parentFQN="Xerox-Device:Xerox-Printer:Xerox-DocuPrint-Printer" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Xerox-DocuPrint-Printer-N4525Rule53f56858-50d3-4a72-8e87-34e920ce9a6f"/>
+<PolicyRule certaintyFactor="30" name="Xerox-DocuPrint-Printer-N4525Rule14b3739d-f7a4-4a19-90ea-2de5d48d8603"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Xerox-Device-SNMP" expression="Xerox-Device-SNMP" name="Xerox-DeviceRule3" ruleType="Regular"/>
+<Rule description="Xerox-DeviceRule1Check1" expression="Xerox-DeviceRule1Check1" name="Xerox-DeviceRule1" ruleType="Regular"/>
+<Rule description="Xerox-Device-DHCP" expression="Xerox-Device-DHCP" name="Xerox-DeviceRule2" ruleType="Regular"/>
+<Rule description="Xerox-DeviceRule1-SCAN" expression="Xerox-DeviceRule1Check1" name="Xerox-DeviceRule1_NMAP" ruleType="Regular"/>
+<Rule description="Xerox-D-Series-Printer-DHCP_Check" expression="Xerox-D-Series-Printer-DHCP_Check" name="Xerox-D-Series-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-WorkCentre-Printer-SNMP_Check" expression="Xerox-WorkCentre-Printer-SNMP_Check" name="Xerox-WorkCentre-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-Versant-Printer-DHCP-Param-Request_Check3" expression="Xerox-Versant-Printer-DHCP-Param-Request_Check3" name="Xerox-Versant-Printer-DHCP-Param-Request_Check3" ruleType="Regular"/>
+<Rule description="Xerox-ColorQube-Printer-SNMP_Check" expression="Xerox-ColorQube-Printer-SNMP_Check" name="Xerox-ColorQube-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-C-Series-Printer-SNMP_Check" expression="Xerox-C-Series-Printer-SNMP_Check" name="Xerox-C-Series-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-DocuCentre-Printer-SNMP_Check" expression="Xerox-DocuCentre-Printer-SNMP_Check" name="Xerox-DocuCentre-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-C-Series-Printer-DHCP_Check" expression="Xerox-C-Series-Printer-DHCP_Check" name="Xerox-C-Series-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-Impika-Printer-DHCP_Check" expression="Xerox-Impika-Printer-DHCP_Check" name="Xerox-Impika-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-Versant-Printer-DHCP_Check" expression="Xerox-Versant-Printer-DHCP_Check" name="Xerox-Versant-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-FaxCentre-Printer-SNMP_Check" expression="Xerox-FaxCentre-Printer-SNMP_Check" name="Xerox-FaxCentre-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-DocuTech-Printer-SNMP_Check" expression="Xerox-DocuTech-Printer-SNMP_Check" name="Xerox-DocuTech-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-Trivor-Printer-SNMP_Check" expression="Xerox-Trivor-Printer-SNMP_Check" name="Xerox-Trivor-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-Color-Printer-SNMP_Check" expression="Xerox-Color-Printer-SNMP_Check" name="Xerox-Color-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-WorkCentre-Printer-DHCP_Check" expression="Xerox-WorkCentre-Printer-DHCP_Check" name="Xerox-WorkCentre-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-Brenva-Printer-DHCP_Check" expression="Xerox-Brenva-Printer-DHCP_Check" name="Xerox-Brenva-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-4127-Printer-DHCP_Check" expression="Xerox-4127-Printer-DHCP_Check" name="Xerox-4127-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-CiPress-Printer-DHCP_Check" expression="Xerox-CiPress-Printer-DHCP_Check" name="Xerox-CiPress-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-DocuPrint-Printer-DHCP_Check" expression="Xerox-DocuPrint-Printer-DHCP_Check" name="Xerox-DocuPrint-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-VersaLink-Printer-SNMP_Check" expression="Xerox-VersaLink-Printer-SNMP_Check" name="Xerox-VersaLink-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-Rialto-Printer-DHCP_Check" expression="Xerox-Rialto-Printer-DHCP_Check" name="Xerox-Rialto-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-Phaser-Printer-SNMP_Check" expression="Xerox-Phaser-Printer-SNMP_Check" name="Xerox-Phaser-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-IGen-Printer-DHCP_Check" expression="Xerox-IGen-Printer-DHCP_Check" name="Xerox-IGen-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-Nuvera-Printer-DHCP_Check" expression="Xerox-Nuvera-Printer-DHCP_Check" name="Xerox-Nuvera-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-DocuTech-Printer-DHCP_Check" expression="Xerox-DocuTech-Printer-DHCP_Check" name="Xerox-DocuTech-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-Brenva-Printer-SNMP_Check" expression="Xerox-Brenva-Printer-SNMP_Check" name="Xerox-Brenva-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-Color-Printer-DHCP_Check" expression="Xerox-Color-Printer-DHCP_Check" name="Xerox-Color-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-AltaLink-Printer-DHCP_Check" expression="Xerox-AltaLink-Printer-DHCP_Check" name="Xerox-AltaLink-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-Trivor-Printer-DHCP_Check" expression="Xerox-Trivor-Printer-DHCP_Check" name="Xerox-Trivor-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-DocuColor-Printer-SNMP_Check" expression="Xerox-DocuColor-Printer-SNMP_Check" name="Xerox-DocuColor-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-DocuCentre-Printer-DHCP_Check" expression="Xerox-DocuCentre-Printer-DHCP_Check" name="Xerox-DocuCentre-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-ColorQube-Printer-DHCP_Check" expression="Xerox-ColorQube-Printer-DHCP_Check" name="Xerox-ColorQube-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-DocuCentre-Printer-DHCP-Param-Request_Check1" expression="Xerox-DocuCentre-Printer-DHCP-Param-Request_Check1" name="Xerox-DocuCentre-Printer-DHCP-Param-Request_Check1" ruleType="Regular"/>
+<Rule description="Xerox-VersaLink-Printer-DHCP-Param-Request_Check2" expression="Xerox-VersaLink-Printer-DHCP-Param-Request_Check2" name="Xerox-VersaLink-Printer-DHCP-Param-Request_Check2" ruleType="Regular"/>
+<Rule description="Xerox-ColorQube-Printer-DHCP-Param-Request_Check1" expression="Xerox-ColorQube-Printer-DHCP-Param-Request_Check1" name="Xerox-ColorQube-Printer-DHCP-Param-Request_Check1" ruleType="Regular"/>
+<Rule description="Xerox-Phaser-Printer-DHCP-Param-Request_Check2" expression="Xerox-Phaser-Printer-DHCP-Param-Request_Check2" name="Xerox-Phaser-Printer-DHCP-Param-Request_Check2" ruleType="Regular"/>
+<Rule description="Xerox-ColorQube-Printer-DHCP-Param-Request_Check2" expression="Xerox-ColorQube-Printer-DHCP-Param-Request_Check2" name="Xerox-ColorQube-Printer-DHCP-Param-Request_Check2" ruleType="Regular"/>
+<Rule description="Xerox-VersaLink-Printer-DHCP-Param-Request_Check1" expression="Xerox-VersaLink-Printer-DHCP-Param-Request_Check1" name="Xerox-VersaLink-Printer-DHCP-Param-Request_Check1" ruleType="Regular"/>
+<Rule description="Xerox-Versant-Printer-SNMP_Check" expression="Xerox-Versant-Printer-SNMP_Check" name="Xerox-Versant-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-Impika-Printer-SNMP_Check" expression="Xerox-Impika-Printer-SNMP_Check" name="Xerox-Impika-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-VersaLink-Printer-DHCP_Check" expression="Xerox-VersaLink-Printer-DHCP_Check" name="Xerox-VersaLink-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-DocuPrint-Printer-SNMP_Check" expression="Xerox-DocuPrint-Printer-SNMP_Check" name="Xerox-DocuPrint-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check5" expression="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check5" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check5" ruleType="Regular"/>
+<Rule description="Xerox-IGen-Printer-SNMP_Check" expression="Xerox-IGen-Printer-SNMP_Check" name="Xerox-IGen-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check6" expression="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check6" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check6" ruleType="Regular"/>
+<Rule description="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check7" expression="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check7" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check7" ruleType="Regular"/>
+<Rule description="Xerox-Nuvera-Printer-SNMP_Check" expression="Xerox-Nuvera-Printer-SNMP_Check" name="Xerox-Nuvera-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check1" expression="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check1" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check1" ruleType="Regular"/>
+<Rule description="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check2" expression="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check2" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check2" ruleType="Regular"/>
+<Rule description="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check3" expression="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check3" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check3" ruleType="Regular"/>
+<Rule description="Xerox-AltaLink-Printer-SNMP_Check" expression="Xerox-AltaLink-Printer-SNMP_Check" name="Xerox-AltaLink-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check4" expression="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check4" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check4" ruleType="Regular"/>
+<Rule description="Xerox-D-Series-Printer-SNMP_Check" expression="Xerox-D-Series-Printer-SNMP_Check" name="Xerox-D-Series-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-DocuColor-Printer-DHCP_Check" expression="Xerox-DocuColor-Printer-DHCP_Check" name="Xerox-DocuColor-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-AltaLink-Printer-DHCP-Param-Request_Check3" expression="Xerox-AltaLink-Printer-DHCP-Param-Request_Check3" name="Xerox-AltaLink-Printer-DHCP-Param-Request_Check3" ruleType="Regular"/>
+<Rule description="Xerox-Rialto-Printer-SNMP_Check" expression="Xerox-Rialto-Printer-SNMP_Check" name="Xerox-Rialto-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-CiPress-Printer-SNMP_Check" expression="Xerox-CiPress-Printer-SNMP_Check" name="Xerox-CiPress-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-FaxCentre-Printer-DHCP_Check" expression="Xerox-FaxCentre-Printer-DHCP_Check" name="Xerox-FaxCentre-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-4127-Printer-SNMP_Check" expression="Xerox-4127-Printer-SNMP_Check" name="Xerox-4127-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Xerox-Phaser-Printer-DHCP_Check" expression="Xerox-Phaser-Printer-DHCP_Check" name="Xerox-Phaser-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Xerox-AltaLink-Printer-DHCP-Param-Request_Check1" expression="Xerox-AltaLink-Printer-DHCP-Param-Request_Check1" name="Xerox-AltaLink-Printer-DHCP-Param-Request_Check1" ruleType="Regular"/>
+<Rule description="Xerox-AltaLink-Printer-DHCP-Param-Request_Check2" expression="Xerox-AltaLink-Printer-DHCP-Param-Request_Check2" name="Xerox-AltaLink-Printer-DHCP-Param-Request_Check2" ruleType="Regular"/>
+<Rule description="Xerox-DocuPrint-Printer-DHCP_Check" expression="Xerox-DocuPrint-Printer-DHCP_Check" name="Xerox-DocuPrint-Printer-DHCP_Check2" ruleType="Regular"/>
+<Rule description="Xerox-DocuPrint-Printer-SNMP_Check" expression="Xerox-DocuPrint-Printer-SNMP_Check" name="Xerox-DocuPrint-Printer-SNMP_Check2" ruleType="Regular"/>
+<Rule description="SNMP_hrDeviceDescr_CONTAINS_Xerox_DocuPrint_N4525" expression="Xerox-DocuPrint-Printer-N4525Rule53f56858-50d3-4a72-8e87-34e920ce9a6fCheckc43b5c5e-8105-407e-b708-a871aa74fa0a" name="Xerox-DocuPrint-Printer-N4525Rule53f56858-50d3-4a72-8e87-34e920ce9a6f" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_Xerox_DocuPrint_N4525" expression="Xerox-DocuPrint-Printer-N4525Rule14b3739d-f7a4-4a19-90ea-2de5d48d8603Checka6c9ef60-ff89-40a8-9fe7-b4a3663230ed" name="Xerox-DocuPrint-Printer-N4525Rule14b3739d-f7a4-4a19-90ea-2de5d48d8603" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox" description="SNMP hrDeviceDescr CONTAINS Xerox" name="Xerox-Device-SNMP" operator="Contains" type="Snmp"/>
+<Check attributeName="OUI" attributeValue="XEROX CORPORATION" description="Xerox-DeviceRule1Check1" name="Xerox-DeviceRule1Check1" operator="Equals" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Xerox" description="dhcp-class-identifier CONTAINS Xerox" name="Xerox-Device-DHCP" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bD-Series\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bD-Series\b).*$" name="Xerox-D-Series-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox WorkCentre" description="hrDeviceDescr CONTAINS Xerox WorkCentre" name="Xerox-WorkCentre-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="6, 15, 252" description="dhcp-parameter-request-list EQUALS 6, 15, 252" name="Xerox-Versant-Printer-DHCP-Param-Request_Check3" operator="Equals" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox ColorQube" description="hrDeviceDescr CONTAINS Xerox ColorQube" name="Xerox-ColorQube-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox C-Series" description="hrDeviceDescr CONTAINS Xerox C-Series" name="Xerox-C-Series-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox DocuCentre" description="hrDeviceDescr CONTAINS Xerox DocuCentre" name="Xerox-DocuCentre-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bC-Series\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bC-Series\b).*$" name="Xerox-C-Series-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bImpika\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bImpika\b).*$" name="Xerox-Impika-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bVersant\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bVersant\b).*$" name="Xerox-Versant-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox FaxCentre" description="hrDeviceDescr CONTAINS Xerox FaxCentre" name="Xerox-FaxCentre-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox DocuTech" description="hrDeviceDescr CONTAINS Xerox DocuTech" name="Xerox-DocuTech-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox Trivor" description="hrDeviceDescr CONTAINS Xerox Trivor" name="Xerox-Trivor-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox Color" description="hrDeviceDescr CONTAINS Xerox Color" name="Xerox-Color-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bWorkCentre\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bWorkCentre\b).*$" name="Xerox-WorkCentre-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bBrenva\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bBrenva\b).*$" name="Xerox-Brenva-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\b4127\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\b4127\b).*$" name="Xerox-4127-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bCiPress\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bCiPress\b).*$" name="Xerox-CiPress-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bDocuPrint\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bDocuPrint\b).*$" name="Xerox-DocuPrint-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox VersaLink" description="hrDeviceDescr CONTAINS Xerox VersaLink" name="Xerox-VersaLink-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bRialto\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bRialto\b).*$" name="Xerox-Rialto-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox Phaser" description="hrDeviceDescr CONTAINS Xerox Phaser" name="Xerox-Phaser-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bIGen\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bIGen\b).*$" name="Xerox-IGen-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bNuvera\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bNuvera\b).*$" name="Xerox-Nuvera-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bDocuTech\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bDocuTech\b).*$" name="Xerox-DocuTech-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox Brenva" description="hrDeviceDescr CONTAINS Xerox Brenva" name="Xerox-Brenva-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bColor\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bColor\b).*$" name="Xerox-Color-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bAltaLink\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bAltaLink\b).*$" name="Xerox-AltaLink-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bTrivor\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bTrivor\b).*$" name="Xerox-Trivor-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox DocuColor" description="hrDeviceDescr CONTAINS Xerox DocuColor" name="Xerox-DocuColor-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bDocuCentre\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bDocuCentre\b).*$" name="Xerox-DocuCentre-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bColorQube\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bColorQube\b).*$" name="Xerox-ColorQube-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue=" 1, 2, 3, 6, 15, 26, 28, 88, 44, 45, 46, 47, 70, 69, 78, 79, 120" description="dhcp-parameter-request-list EQUALS  1, 2, 3, 6, 15, 26, 28, 88, 44, 45, 46, 47, 70, 69, 78, 79, 120" name="Xerox-DocuCentre-Printer-DHCP-Param-Request_Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 2, 3, 6, 15, 26, 28, 88, 44, 45, 46, 47, 70, 69, 78, 79, 120" description="dhcp-parameter-request-list EQUALS 1, 2, 3, 6, 15, 26, 28, 88, 44, 45, 46, 47, 70, 69, 78, 79, 120" name="Xerox-VersaLink-Printer-DHCP-Param-Request_Check2" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="116, 252, 67, 28, 59, 58, 15, 6, 119, 81, 12, 44, 46, 47, 42, 70, 3, 78, 79, 69, 1, 66, 2" description="dhcp-parameter-request-list EQUALS 116, 252, 67, 28, 59, 58, 15, 6, 119, 81, 12, 44, 46, 47, 42, 70, 3, 78, 79, 69, 1, 66, 2" name="Xerox-ColorQube-Printer-DHCP-Param-Request_Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 3, 6, 7, 12, 15, 18, 23, 26, 44, 46, 51, 54, 58, 59, 78, 79" description="dhcp-parameter-request-list CONTAINS 1, 3, 6, 7, 12, 15, 18, 23, 26, 44, 46, 51, 54, 58, 59, 78, 79" name="Xerox-Phaser-Printer-DHCP-Param-Request_Check2" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 15, 3, 6, 44, 46, 47, 31, 33, 249, 43, 252, 12 " description="dhcp-parameter-request-list EQUALS 1, 15, 3, 6, 44, 46, 47, 31, 33, 249, 43, 252, 12 " name="Xerox-ColorQube-Printer-DHCP-Param-Request_Check2" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="6, 15, 69, 252" description="dhcp-parameter-request-list EQUALS 6, 15, 69, 252" name="Xerox-VersaLink-Printer-DHCP-Param-Request_Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox Versant" description="hrDeviceDescr CONTAINS Xerox Versant" name="Xerox-Versant-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox Impika" description="hrDeviceDescr CONTAINS Xerox Impika" name="Xerox-Impika-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bVersaLink\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bVersaLink\b).*$" name="Xerox-VersaLink-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox DocuPrint" description="hrDeviceDescr CONTAINS Xerox DocuPrint" name="Xerox-DocuPrint-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 28, 3, 15, 6, 12, 44, 81, 78, 79, 116, 2, 42, 58, 59, 69, 119" description="dhcp-parameter-request-list EQUALS 1, 28, 3, 15, 6, 12, 44, 81, 78, 79, 116, 2, 42, 58, 59, 69, 119" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check5" operator="Equals" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox IGen" description="hrDeviceDescr CONTAINS Xerox IGen" name="Xerox-IGen-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="116, 252, 67, 28, 59, 58, 15, 6, 119, 81, 44, 46, 47, 42, 70, 3, 78, 79, 69, 1, 66, 2" description="dhcp-parameter-request-list EQUALS 116, 252, 67, 28, 59, 58, 15, 6, 119, 81, 44, 46, 47, 42, 70, 3, 78, 79, 69, 1, 66, 2" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check6" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 15, 3, 6, 44, 46, 47, 31, 33, 249, 43, 252, 12" description="dhcp-parameter-request-list EQUALS 1, 15, 3, 6, 44, 46, 47, 31, 33, 249, 43, 252, 12" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check7" operator="Equals" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox Nuvera" description="hrDeviceDescr CONTAINS Xerox Nuvera" name="Xerox-Nuvera-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 3, 6, 15, 28" description="dhcp-parameter-request-list EQUALS 1, 3, 6, 15, 28" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="252" description="dhcp-parameter-request-list EQUALS 252" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check2" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 28, 2, 3, 15, 6, 12" description="dhcp-parameter-request-list EQUALS 1, 28, 2, 3, 15, 6, 12" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check3" operator="Equals" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox AltaLink" description="hrDeviceDescr CONTAINS Xerox AltaLink" name="Xerox-AltaLink-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 28, 3, 15, 6, 12, 44, 78, 79, 2, 42" description="dhcp-parameter-request-list EQUALS 1, 28, 3, 15, 6, 12, 44, 78, 79, 2, 42" name="Xerox-WorkCentre-Printer-DHCP-Param-Request_Check4" operator="Equals" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox D-Series" description="hrDeviceDescr CONTAINS Xerox D-Series" name="Xerox-D-Series-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bDocuColor\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bDocuColor\b).*$" name="Xerox-DocuColor-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 28, 2, 3, 15, 6, 12" description="dhcp-parameter-request-list EQUALS 1, 28, 2, 3, 15, 6, 12" name="Xerox-AltaLink-Printer-DHCP-Param-Request_Check3" operator="Equals" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox Rialto" description="hrDeviceDescr CONTAINS Xerox Rialto" name="Xerox-Rialto-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox CiPress" description="hrDeviceDescr CONTAINS Xerox CiPress" name="Xerox-CiPress-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bFaxCentre\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bFaxCentre\b).*$" name="Xerox-FaxCentre-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox 4127" description="hrDeviceDescr CONTAINS Xerox 4127" name="Xerox-4127-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bPhaser\b).*$" description="dhcp-class-identifier MATCHES ^(?=.*\b([^\s]+)?(?i)Xerox(?-i)\b)(?=.*\bPhaser\b).*$" name="Xerox-Phaser-Printer-DHCP_Check" operator="Matches" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="116, 252, 67, 28, 59, 58, 15, 6, 119, 81, 12, 44, 46, 47, 42, 70, 3, 78, 79, 69, 1, 66, 2" description="dhcp-parameter-request-list EQUALS 116, 252, 67, 28, 59, 58, 15, 6, 119, 81, 12, 44, 46, 47, 42, 70, 3, 78, 79, 69, 1, 66, 2" name="Xerox-AltaLink-Printer-DHCP-Param-Request_Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 15, 3, 6, 44, 46, 47, 31, 33, 249, 43, 252, 12" description="dhcp-parameter-request-list EQUALS 1, 15, 3, 6, 44, 46, 47, 31, 33, 249, 43, 252, 12" name="Xerox-AltaLink-Printer-DHCP-Param-Request_Check2" operator="Equals" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Xerox DocuPrint N4525" description="SNMP hrDeviceDescr CONTAINS Xerox DocuPrint N4525" name="Xerox-DocuPrint-Printer-N4525Rule53f56858-50d3-4a72-8e87-34e920ce9a6fCheckc43b5c5e-8105-407e-b708-a871aa74fa0a" operator="Contains" type="Snmp"/>
+<Check attributeName="sysDescr" attributeValue="Xerox DocuPrint N4525" description="SNMP sysDescr CONTAINS Xerox DocuPrint N4525" name="Xerox-DocuPrint-Printer-N4525Rule14b3739d-f7a4-4a19-90ea-2de5d48d8603Checka6c9ef60-ff89-40a8-9fe7-b4a3663230ed" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

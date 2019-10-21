@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Webster-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Viking-Modular-DeviceRule3b1be203-aa9a-499a-91f3-87bfca0150c7_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_WEBSTER_COMPUTER" expression="Viking-Modular-DeviceRule3b1be203-aa9a-499a-91f3-87bfca0150c7Check14fb42a7-c438-464a-ab23-cfe5725a9be6_copy_copy" name="Viking-Modular-DeviceRule3b1be203-aa9a-499a-91f3-87bfca0150c7_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="WEBSTER COMPUTER" description="MAC OUI CONTAINS WEBSTER COMPUTER" name="Viking-Modular-DeviceRule3b1be203-aa9a-499a-91f3-87bfca0150c7Check14fb42a7-c438-464a-ab23-cfe5725a9be6_copy_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

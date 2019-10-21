@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for TrippLite-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="TrippLite-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="TrippLite-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="TrippLite-B095" parentFQN="TrippLite-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="TrippLite-B094Rule879312b6-fc7f-49a2-a081-55421f647a02_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="TrippLite-Device-Rule1Check1" expression="TrippLite-Device-Rule1Check1" name="TrippLite-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_TrippLite/B095" expression="TrippLite-B094Rule879312b6-fc7f-49a2-a081-55421f647a02Check12117946-f54f-47f6-82aa-49214a9d9603_copy" name="TrippLite-B094Rule879312b6-fc7f-49a2-a081-55421f647a02_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Tripp Lite" description="Condition for TrippLite-Device,based on MAC-OUI" name="TrippLite-Device-Rule1Check1" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="TrippLite/B095" description="DHCP dhcp-class-identifier CONTAINS TrippLite/B095" name="TrippLite-B094Rule879312b6-fc7f-49a2-a081-55421f647a02Check12117946-f54f-47f6-82aa-49214a9d9603_copy" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

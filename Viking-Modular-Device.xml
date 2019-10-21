@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Viking-Modular-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Viking-Modular-DeviceRule3b1be203-aa9a-499a-91f3-87bfca0150c7"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_VIKING_Modular" expression="Viking-Modular-DeviceRule3b1be203-aa9a-499a-91f3-87bfca0150c7Check14fb42a7-c438-464a-ab23-cfe5725a9be6" name="Viking-Modular-DeviceRule3b1be203-aa9a-499a-91f3-87bfca0150c7" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="VIKING Modular" description="MAC OUI CONTAINS VIKING Modular" name="Viking-Modular-DeviceRule3b1be203-aa9a-499a-91f3-87bfca0150c7Check14fb42a7-c438-464a-ab23-cfe5725a9be6" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
