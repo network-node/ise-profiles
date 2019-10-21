@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for ZTE-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="ZTE-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="ZTE-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="ZTE-ZMAX-Pro" parentFQN="ZTE-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="ZTE-ZmaxRule8b6db39d-98c5-49a7-9d4f-4059d0f9251c_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="ZTE-Devcie-Rule1-Check1" expression="ZTE-Devcie-Rule1-Check1" name="ZTE-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_Z981" expression="ZTE-ZmaxRule8b6db39d-98c5-49a7-9d4f-4059d0f9251cCheckad8f7dad-cfc9-4cf1-8fd6-b72ce0cea9eb_copy" name="ZTE-ZmaxRule8b6db39d-98c5-49a7-9d4f-4059d0f9251c_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="ZTE Corporation" description="Condition for ZTE-Device,based on MAC-OUI" name="ZTE-Devcie-Rule1-Check1" operator="Equals" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="Z981" description="IP User-Agent CONTAINS Z981" name="ZTE-ZmaxRule8b6db39d-98c5-49a7-9d4f-4059d0f9251cCheckad8f7dad-cfc9-4cf1-8fd6-b72ce0cea9eb_copy" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

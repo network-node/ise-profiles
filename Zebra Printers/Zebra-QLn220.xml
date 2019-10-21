@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Zebra Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="Zebra-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Zebra-DeviceRule4d127d0a-4847-4d3a-a398-c2d40f53992c"/>
+<PolicyRule certaintyFactor="30" name="Zebra-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Zebra-QLn220" parentFQN="Zebra-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Zebra-QLn220Ruledd75dd47-eaf2-4a9f-9fbf-275ee1c8bd6e"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Taiyo_Yuden" expression="Zebra-DeviceRule4d127d0a-4847-4d3a-a398-c2d40f53992cCheck763bb92d-c7de-4f0f-8406-faf86c4c87ed" name="Zebra-DeviceRule4d127d0a-4847-4d3a-a398-c2d40f53992c" ruleType="Regular"/>
+<Rule description="Zebra-Device-Rule1-Check1" expression="Zebra-Device-Rule1-Check1" name="Zebra-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_QLn220" expression="Zebra-QLn220Ruledd75dd47-eaf2-4a9f-9fbf-275ee1c8bd6eChecka797bb93-2e46-402f-953c-cd4bce39d556" name="Zebra-QLn220Ruledd75dd47-eaf2-4a9f-9fbf-275ee1c8bd6e" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Taiyo Yuden" description="MAC OUI CONTAINS Taiyo Yuden" name="Zebra-DeviceRule4d127d0a-4847-4d3a-a398-c2d40f53992cCheck763bb92d-c7de-4f0f-8406-faf86c4c87ed" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Zebra" description="Condition for Zebra-Device , based on MAC-OUI" name="Zebra-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="QLn220" description="DHCP dhcp-class-identifier CONTAINS QLn220" name="Zebra-QLn220Ruledd75dd47-eaf2-4a9f-9fbf-275ee1c8bd6eChecka797bb93-2e46-402f-953c-cd4bce39d556" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

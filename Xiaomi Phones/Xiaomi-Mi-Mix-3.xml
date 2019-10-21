@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Xiaomi-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Xiaomi-DeviceRule33cdf9b4-7d82-4426-9ef7-21233998e740"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Xiaomi-Mi-Mix-3" parentFQN="Xiaomi-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Redmi-Note-4Rulefa029431-b1ff-4a2c-ac6a-06478b8d3ee9_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Xiaomi_Communications" expression="Xiaomi-DeviceRule33cdf9b4-7d82-4426-9ef7-21233998e740Checkf956e3c9-2ccc-4a3b-b6eb-5ddad027a777" name="Xiaomi-DeviceRule33cdf9b4-7d82-4426-9ef7-21233998e740" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_MiMIX3" expression="Redmi-Note-4Rulefa029431-b1ff-4a2c-ac6a-06478b8d3ee9Check19a1a43e-ccfe-4f37-8b19-7a8ce3a85e3c_copy_copy_copy_copy" name="Redmi-Note-4Rulefa029431-b1ff-4a2c-ac6a-06478b8d3ee9_copy_copy_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Xiaomi Communications" description="MAC OUI CONTAINS Xiaomi Communications" name="Xiaomi-DeviceRule33cdf9b4-7d82-4426-9ef7-21233998e740Checkf956e3c9-2ccc-4a3b-b6eb-5ddad027a777" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="MiMIX3" description="DHCP host-name CONTAINS MiMIX3" name="Redmi-Note-4Rulefa029431-b1ff-4a2c-ac6a-06478b8d3ee9Check19a1a43e-ccfe-4f37-8b19-7a8ce3a85e3c_copy_copy_copy_copy" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

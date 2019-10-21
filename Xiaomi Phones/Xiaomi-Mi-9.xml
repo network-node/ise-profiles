@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Xiaomi-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Xiaomi-Mi-9" parentFQN="Xiaomi-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Xiaomi-MI-5SRuleb9439dcd-632a-481c-aa3b-faadeaccd139_copy_copy"/>
+<PolicyRule certaintyFactor="30" name="Xiaomi-Mi-6Rule58608ada-5f7a-4695-a255-3fcf1517c779_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Xiaomi-Device" expression="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59Checkee657eca-e703-47bb-92f7-0d89be8a4a68" name="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_MI_9_OR_IP_FQDN_CONTAINS_MI_9" expression="Xiaomi-MI-5SRuleb9439dcd-632a-481c-aa3b-faadeaccd139Check1cf2d176-ab20-4ffe-9f0e-e39bb4dd1fa0_copy_copy | Xiaomi-MI-5SRuleb9439dcd-632a-481c-aa3b-faadeaccd139Checkcc7b2211-1e8f-4990-85df-4b36be9c5976_copy_copy" name="Xiaomi-MI-5SRuleb9439dcd-632a-481c-aa3b-faadeaccd139_copy_copy" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_MI_9" expression="Xiaomi-Mi-6Rule58608ada-5f7a-4695-a255-3fcf1517c779Checkd8cc8e05-3982-4bc1-902f-4abf7d468b81_copy" name="Xiaomi-Mi-6Rule58608ada-5f7a-4695-a255-3fcf1517c779_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Xiaomi-Device" description="MAC OUI CONTAINS Xiaomi-Device" name="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59Checkee657eca-e703-47bb-92f7-0d89be8a4a68" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="MI 9" description="DHCP host-name CONTAINS MI 9" name="Xiaomi-MI-5SRuleb9439dcd-632a-481c-aa3b-faadeaccd139Check1cf2d176-ab20-4ffe-9f0e-e39bb4dd1fa0_copy_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="MI 9" description="IP FQDN CONTAINS MI 9" name="Xiaomi-MI-5SRuleb9439dcd-632a-481c-aa3b-faadeaccd139Checkcc7b2211-1e8f-4990-85df-4b36be9c5976_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="MI 9" description="IP User-Agent CONTAINS MI 9" name="Xiaomi-Mi-6Rule58608ada-5f7a-4695-a255-3fcf1517c779Checkd8cc8e05-3982-4bc1-902f-4abf7d468b81_copy" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

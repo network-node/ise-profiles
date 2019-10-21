@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Workstations" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="OS_X_MountainLion-WorkstationRule2"/>
+<PolicyRule certaintyFactor="5" name="OS_X_MountainLion-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="WorkstationRule79e3c3c1-47f3-4a4b-bd2a-53d5fb042763"/>
+<PolicyRule certaintyFactor="5" name="Microsoft-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="MacIntelRule"/>
+<PolicyRule certaintyFactor="5" name="Microsoft-WorkstationRule3"/>
+<PolicyRule certaintyFactor="5" name="Microsoft-WorkstationRule2"/>
+<PolicyRule certaintyFactor="5" name="PCLinuxOS-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="Windows7-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="WinPlatformRule"/>
+<PolicyRule certaintyFactor="5" name="WorkstationRulebe7dbcad-2bc4-4a09-8a13-24379627d104"/>
+<PolicyRule certaintyFactor="5" name="OS_X_SnowLeopard-WorkstationRule2"/>
+<PolicyRule certaintyFactor="5" name="Sun-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="Debian-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="OS_X_SnowLeopard-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="RedHat-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="WorkstationRulebf0bfafe-b1a3-4109-92c2-25be7ba21b03"/>
+<PolicyRule certaintyFactor="5" name="WorkstationRulec168b825-b702-4355-8e5d-fb91124eb50f"/>
+<PolicyRule certaintyFactor="5" name="WorkstationRule7f21ab6d-fa7e-4ef9-aadc-b50c9e46707e"/>
+<PolicyRule certaintyFactor="5" name="LinuxMint-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="Vista-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="WindowsXP-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="OracleEnterpriseLinux-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="Xandros-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="OpenBSD-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="Gentoo-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="WorkstationLinux64Rule"/>
+<PolicyRule certaintyFactor="5" name="Kubuntu-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="CentOS-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="Windows8-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="Windows8-WorkstationRule2"/>
+<PolicyRule certaintyFactor="5" name="WorkstationRule19648688-d684-483b-b26e-d4a0aba2252f"/>
+<PolicyRule certaintyFactor="5" name="Macintosh-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="Mandriva-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="OS_X_Mavericks-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="FreeBSD-WorkstationRule2"/>
+<PolicyRule certaintyFactor="5" name="FreeBSD-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="OS_X_Mavericks-WorkstaionRule2"/>
+<PolicyRule certaintyFactor="5" name="WorkstationRule42c98fbd-4708-4fc7-b1e8-4edd263a158d"/>
+<PolicyRule certaintyFactor="5" name="OS_X_Lion-WorkstationRule2"/>
+<PolicyRule certaintyFactor="5" name="OS_X_Lion-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="Windows10-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="WorkstationRuledbe365d7-71ff-4f15-8fcc-95e9666a8604"/>
+<PolicyRule certaintyFactor="5" name="SUSE-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="Linux-WorkstationRule4"/>
+<PolicyRule certaintyFactor="5" name="Linux-WorkstationRule2"/>
+<PolicyRule certaintyFactor="5" name="Linux-WorkstationRule3"/>
+<PolicyRule certaintyFactor="5" name="Linux-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="Ubuntu-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="Ubuntu-WorkstationRule2"/>
+<PolicyRule certaintyFactor="5" name="Ubuntu-WorkstationRule3"/>
+<PolicyRule certaintyFactor="5" name="Fedora-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="WorkstationRule3dbc4752-27f8-4de6-8dfe-e0abc3dfd978"/>
+<PolicyRule certaintyFactor="5" name="WorkstationRuleb54a3822-e7ac-454b-baa1-da96808d45db"/>
+<PolicyRule certaintyFactor="5" name="OS_X_Leopard-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="OS_X_Leopard-WorkstationRule2"/>
+<PolicyRule certaintyFactor="5" name="OS_X_Tiger-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="OS_X_Tiger-WorkstationRule2"/>
+<PolicyRule certaintyFactor="5" name="ChromeBook-WorkstationRule1"/>
+<PolicyRule certaintyFactor="5" name="ChromeBook-WorkstationRule2"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Domain-Joined-Workstation" parentFQN="Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bba"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for FreeBSD Unix workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="FreeBSD-Workstation" parentFQN="Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="FreeBSD-WorkstationRule11"/>
+<PolicyRule certaintyFactor="5" name="FreeBSD-WorkstationRule22"/>
+</PolicyRules>
+</Policy>
+<Policy description="Generic policy for Linux workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Linux-Workstation" parentFQN="Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Linux-WorkstationRule33"/>
+<PolicyRule certaintyFactor="5" name="Linux-WorkstationRule22"/>
+<PolicyRule certaintyFactor="5" name="Linux-WorkstationRule11"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Linux Mint workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="LinuxMint-Workstation" parentFQN="Workstation:Linux-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="LinuxMint-WorkstationRule11"/>
+</PolicyRules>
+</Policy>
+<Policy description="Generic policy for Macintosh workstation" isEnabled="false" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Macintosh-Workstation" parentFQN="Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Macintosh-WorkstationRulec3c805cf-3936-44ba-b64d-f32688e86390"/>
+<PolicyRule certaintyFactor="10" name="Macintosh-WorkstationRule11"/>
+<PolicyRule certaintyFactor="20" name="Macintosh-WorkstationRule22"/>
+<PolicyRule certaintyFactor="10" name="Macintosh-WorkstationRule3d229348-5e67-4897-9bbf-c6bbc2fb42e4"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Mandriva Linux workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Mandriva-Workstation" parentFQN="Workstation:Linux-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Mandriva-WorkstationRule11"/>
+</PolicyRules>
+</Policy>
+<Policy description="Generic policy for Microsoft workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="15" name="Microsoft-Workstation" parentFQN="Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="15" name="Microsoft-WorkstationRule67480f8b-0387-4621-91c1-127a4b46be83"/>
+<PolicyRule certaintyFactor="15" name="Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53"/>
+<PolicyRule certaintyFactor="15" name="Microsoft-WorkstationRulea9585ffd-2e8e-44da-8db2-6d8f3748fbe1"/>
+<PolicyRule certaintyFactor="15" name="Microsoft-WorkstationRule44"/>
+<PolicyRule certaintyFactor="15" name="Microsoft-WorkstationRule11"/>
+<PolicyRule certaintyFactor="15" name="Microsoft-WorkstationRule33"/>
+<PolicyRule certaintyFactor="15" name="Microsoft-WorkstationRule2036b574-7a3c-4743-a6d1-377674dd4f79"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for OpenBSD Unix workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="OpenBSD-Workstation" parentFQN="Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="OpenBSD-WorkstationRule11"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Oracle Enterprise Linux workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="OracleEnterpriseLinux-Workstation" parentFQN="Workstation:Linux-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="OracleEnterpriseLinux-WorkstationRule11"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for PCLinuxOS Linux workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="PCLinuxOS-Workstation" parentFQN="Workstation:Linux-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="PCLinuxOS-WorkstationRule11"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Red Hat Linux workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="RedHat-Workstation" parentFQN="Workstation:Linux-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="RedHat-WorkstationRule11"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for SUSE Linux workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="SUSE-Workstation" parentFQN="Workstation:Linux-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="SUSE-WorkstationRule11"/>
+</PolicyRules>
+</Policy>
+<Policy description="Generic policy for Sun workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Sun-Workstation" parentFQN="Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Sun-WorkstationRule11"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Ubuntu Linux workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Ubuntu-Workstation" parentFQN="Workstation:Linux-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Ubuntu-WorkstationRule11"/>
+<PolicyRule certaintyFactor="10" name="Ubuntu-WorkstationRule33"/>
+<PolicyRule certaintyFactor="10" name="Ubuntu-WorkstationRule22"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Microsoft Vista workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Vista-Workstation" parentFQN="Workstation:Microsoft-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Vista-WorkstationRule33"/>
+<PolicyRule certaintyFactor="20" name="Vista-WorkstationRule22"/>
+<PolicyRule certaintyFactor="20" name="Vista-WorkstationRule11"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Microsoft Windows 10 workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Windows10-Workstation" parentFQN="Workstation:Microsoft-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Windows10-WorkstationRule4"/>
+<PolicyRule certaintyFactor="20" name="Windows10-WorkstationRule5"/>
+<PolicyRule certaintyFactor="20" name="Windows10-WorkstationRule2"/>
+<PolicyRule certaintyFactor="20" name="Windows10-WorkstationRule3"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Microsoft Windows 7 workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Windows7-Workstation" parentFQN="Workstation:Microsoft-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Windows7-WorkstationRule55"/>
+<PolicyRule certaintyFactor="20" name="Windows7-WorkstationRule22"/>
+<PolicyRule certaintyFactor="20" name="Windows7-WorkstationRule11"/>
+<PolicyRule certaintyFactor="20" name="Windows7-WorkstationRule44"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Microsoft Windows 8 workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Windows8-Workstation" parentFQN="Workstation:Microsoft-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Windows8-WorkstationRule77"/>
+<PolicyRule certaintyFactor="20" name="Windows8-WorkstationRule66"/>
+<PolicyRule certaintyFactor="20" name="Windows8-WorkstationRule11"/>
+<PolicyRule certaintyFactor="20" name="Windows8-WorkstationRule22"/>
+<PolicyRule certaintyFactor="20" name="Windows8-WorkstationRule44"/>
+<PolicyRule certaintyFactor="20" name="Windows8-WorkstationRule55"/>
+<PolicyRule certaintyFactor="20" name="Windows8-WorkstationRulee4ff2439-b291-43c6-8166-b67050059d2d"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Microsoft Windows XP workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="WindowsXP-Workstation" parentFQN="Workstation:Microsoft-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="WindowsXP-WorkstationRule11"/>
+<PolicyRule certaintyFactor="20" name="WindowsXP-WorkstationRule33"/>
+<PolicyRule certaintyFactor="20" name="WindowsXP-WorkstationRule22"/>
+<PolicyRule certaintyFactor="20" name="WindowsXP-WorkstationRule926fbca8-7c41-4fb7-9b28-53248ffc3bcf"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Xandros Linux workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Xandros-Workstation" parentFQN="Workstation:Linux-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Xandros-WorkstationRule11"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for CentOS Linux workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="CentOS-Workstation" parentFQN="Workstation:Linux-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="CentOS-WorkstationRule11"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Debian Linux workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Debian-Workstation" parentFQN="Workstation:Linux-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Debian-WorkstationRule11"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Fedora Linux workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Fedora-Workstation" parentFQN="Workstation:Linux-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Fedora-WorkstationRule11"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Gentoo Linux workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Gentoo-Workstation" parentFQN="Workstation:Linux-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Gentoo-WorkstationRule11"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Kubuntu Linux workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Kubuntu-Workstation" parentFQN="Workstation:Linux-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Kubuntu-WorkstationRule11"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Microsoft-Domain-Workstation" parentFQN="Workstation:Microsoft-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bba_copy_copy_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Solaris workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Solaris-Workstation" parentFQN="Workstation:Sun-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="SolarisRule11"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Vista-Domain-Workstation" parentFQN="Workstation:Microsoft-Workstation:Vista-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bba_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Win10-Domain-Workstation" parentFQN="Workstation:Microsoft-Workstation:Windows10-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bba_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Win7-Domain-Workstation" parentFQN="Workstation:Microsoft-Workstation:Windows7-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bba_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Win8-Domain-Workstation" parentFQN="Workstation:Microsoft-Workstation:Windows8-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bba_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="WinXP-Domain-Workstation" parentFQN="Workstation:Microsoft-Workstation:WindowsXP-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bba_copy_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="OS_X_MountainLion-WorkstationRule1Check2" expression="OS_X_MountainLion-WorkstationRule1Check2" name="OS_X_MountainLion-WorkstationRule2" ruleType="Regular"/>
+<Rule description="OS_X_MountainLion-WorkstationRule1Check1" expression="OS_X_MountainLion-WorkstationRule1Check1" name="OS_X_MountainLion-WorkstationRule1" ruleType="Regular"/>
+<Rule description="OS_X_Sierra-Workstation-Rule2-Check1" expression="OS_X_Sierra-Workstation-Rule2-Check1" name="WorkstationRule79e3c3c1-47f3-4a4b-bd2a-53d5fb042763" ruleType="Regular"/>
+<Rule description="Microsoft-WorkstationRule1Check1" expression="Microsoft-WorkstationRule1Check1" name="Microsoft-WorkstationRule1" ruleType="Regular"/>
+<Rule description="MacIntel" expression="MacIntel" name="MacIntelRule" ruleType="Regular"/>
+<Rule description="Microsoft-WorkstationRule3Check1" expression="Microsoft-WorkstationRule3Check1" name="Microsoft-WorkstationRule3" ruleType="Regular"/>
+<Rule description="Microsoft-WorkstationRule2Check1" expression="Microsoft-WorkstationRule2Check1" name="Microsoft-WorkstationRule2" ruleType="Regular"/>
+<Rule description="PCLinuxOS-WorkstationRule1Check1" expression="PCLinuxOS-WorkstationRule1Check1" name="PCLinuxOS-WorkstationRule1" ruleType="Regular"/>
+<Rule description="Windows7-WorkstationRule1Check1" expression="Windows7-WorkstationRule1Check1" name="Windows7-WorkstationRule1" ruleType="Regular"/>
+<Rule description="WinPlatform" expression="WinPlatform" name="WinPlatformRule" ruleType="Regular"/>
+<Rule description="OS_X_Sierra-Workstation-Rule1-Check1" expression="OS_X_Sierra-Workstation-Rule1-Check1" name="WorkstationRulebe7dbcad-2bc4-4a09-8a13-24379627d104" ruleType="Regular"/>
+<Rule description="OS_X_SnowLeopard-WorkstationRule1Check2" expression="OS_X_SnowLeopard-WorkstationRule1Check2" name="OS_X_SnowLeopard-WorkstationRule2" ruleType="Regular"/>
+<Rule description="Sun-WorkstationRule1Check1" expression="Sun-WorkstationRule1Check1" name="Sun-WorkstationRule1" ruleType="Regular"/>
+<Rule description="Debian-WorkstationRule1Check1" expression="Debian-WorkstationRule1Check1" name="Debian-WorkstationRule1" ruleType="Regular"/>
+<Rule description="OS_X_SnowLeopard-WorkstationRule1Check1" expression="OS_X_SnowLeopard-WorkstationRule1Check1" name="OS_X_SnowLeopard-WorkstationRule1" ruleType="Regular"/>
+<Rule description="RedHat-WorkstationRule1Check1" expression="RedHat-WorkstationRule1Check1" name="RedHat-WorkstationRule1" ruleType="Regular"/>
+<Rule description="OS_X_El_Capitan-Workstation-Rule2-Check1" expression="OS_X_El_Capitan-Workstation-Rule2-Check1" name="WorkstationRulebf0bfafe-b1a3-4109-92c2-25be7ba21b03" ruleType="Regular"/>
+<Rule description="OS_X_Mojave-Workstation-Rule1-Check1" expression="OS_X_Mojave-Workstation-Rule1-Check1" name="WorkstationRulec168b825-b702-4355-8e5d-fb91124eb50f" ruleType="Regular"/>
+<Rule description="OS_X_Yosemite-WorkstationRule1Check1" expression="OS_X_Yosemite-WorkstationRule1Check1" name="WorkstationRule7f21ab6d-fa7e-4ef9-aadc-b50c9e46707e" ruleType="Regular"/>
+<Rule description="LinuxMint-WorkstationRule1Check1" expression="LinuxMint-WorkstationRule1Check1" name="LinuxMint-WorkstationRule1" ruleType="Regular"/>
+<Rule description="Vista-WorkstationRule1Check1" expression="Vista-WorkstationRule1Check1" name="Vista-WorkstationRule1" ruleType="Regular"/>
+<Rule description="WindowsXP-WorkstationRule1Check1" expression="WindowsXP-WorkstationRule1Check1" name="WindowsXP-WorkstationRule1" ruleType="Regular"/>
+<Rule description="OracleEnterpriseLinux-WorkstationRule1Check1" expression="OracleEnterpriseLinux-WorkstationRule1Check1" name="OracleEnterpriseLinux-WorkstationRule1" ruleType="Regular"/>
+<Rule description="Xandros-WorkstationRule1Check1" expression="Xandros-WorkstationRule1Check1" name="Xandros-WorkstationRule1" ruleType="Regular"/>
+<Rule description="OpenBSD-WorkstationRule1Check1" expression="OpenBSD-WorkstationRule1Check1" name="OpenBSD-WorkstationRule1" ruleType="Regular"/>
+<Rule description="Gentoo-WorkstationRule1Check1" expression="Gentoo-WorkstationRule1Check1" name="Gentoo-WorkstationRule1" ruleType="Regular"/>
+<Rule description="Linux64" expression="Linux64" name="WorkstationLinux64Rule" ruleType="Regular"/>
+<Rule description="Kubuntu-WorkstationRule1Check1" expression="Kubuntu-WorkstationRule1Check1" name="Kubuntu-WorkstationRule1" ruleType="Regular"/>
+<Rule description="CentOS-WorkstationRule1Check1" expression="CentOS-WorkstationRule1Check1" name="CentOS-WorkstationRule1" ruleType="Regular"/>
+<Rule description="Windows8-WorkstationRule1Check1" expression="Windows8-WorkstationRule1Check1" name="Windows8-WorkstationRule1" ruleType="Regular"/>
+<Rule description="Windows8-WorkstationRule2Check1" expression="Windows8-WorkstationRule2Check1" name="Windows8-WorkstationRule2" ruleType="Regular"/>
+<Rule description="OS_X_High_Sierra-Workstation-Rule2-Check1" expression="OS_X_High_Sierra-Workstation-Rule2-Check1" name="WorkstationRule19648688-d684-483b-b26e-d4a0aba2252f" ruleType="Regular"/>
+<Rule description="Macintosh-WorkstationRule1Check1" expression="Macintosh-WorkstationRule1Check1" name="Macintosh-WorkstationRule1" ruleType="Regular"/>
+<Rule description="Mandriva-WorkstationRule1Check1" expression="Mandriva-WorkstationRule1Check1" name="Mandriva-WorkstationRule1" ruleType="Regular"/>
+<Rule description="OS_X_Mavericks-WorkstationRule1Check1" expression="OS_X_Mavericks-WorkstationRule1Check1" name="OS_X_Mavericks-WorkstationRule1" ruleType="Regular"/>
+<Rule description="FreeBSD-WorkstationRule2Check1_AND_FreeBSD-Workstation-Rule2-Check2" expression="FreeBSD-WorkstationRule2Check1 &amp; FreeBSD-Workstation-Rule2-Check2" name="FreeBSD-WorkstationRule2" ruleType="Regular"/>
+<Rule description="FreeBSD-WorkstationRule1Check1" expression="FreeBSD-WorkstationRule1Check1" name="FreeBSD-WorkstationRule1" ruleType="Regular"/>
+<Rule description="OS_X_Mavericks-WorkstaionRule2Check1" expression="OS_X_Mavericks-WorkstaionRule2Check1" name="OS_X_Mavericks-WorkstaionRule2" ruleType="Regular"/>
+<Rule description="OS_X_El_Capitan-Workstation-Rule1-Check1" expression="OS_X_El_Capitan-Workstation-Rule1-Check1" name="WorkstationRule42c98fbd-4708-4fc7-b1e8-4edd263a158d" ruleType="Regular"/>
+<Rule description="OS_X_Lion-WorkstationRule1Check2" expression="OS_X_Lion-WorkstationRule1Check2" name="OS_X_Lion-WorkstationRule2" ruleType="Regular"/>
+<Rule description="OS_X_Lion-WorkstationRule1Check1" expression="OS_X_Lion-WorkstationRule1Check1" name="OS_X_Lion-WorkstationRule1" ruleType="Regular"/>
+<Rule description="Windows10-WorkstationRule1Check1" expression="Windows10-WorkstationRule1Check1" name="Windows10-WorkstationRule1" ruleType="Regular"/>
+<Rule description="OS_X_Yosemite-WorkstationRule1Check2" expression="OS_X_Yosemite-WorkstationRule1Check2" name="WorkstationRuledbe365d7-71ff-4f15-8fcc-95e9666a8604" ruleType="Regular"/>
+<Rule description="SUSE-WorkstationRule1Check1" expression="SUSE-WorkstationRule1Check1" name="SUSE-WorkstationRule1" ruleType="Regular"/>
+<Rule description="Linux-WorkstationRule4Check1" expression="Linux-WorkstationRule4Check1" name="Linux-WorkstationRule4" ruleType="Regular"/>
+<Rule description="Linux-WorkstationRule2Check1" expression="Linux-WorkstationRule2Check1" name="Linux-WorkstationRule2" ruleType="Regular"/>
+<Rule description="Linux-WorkstationRule3Check1" expression="Linux-WorkstationRule3Check1" name="Linux-WorkstationRule3" ruleType="Regular"/>
+<Rule description="Linux-WorkstationRule1Check1" expression="Linux-WorkstationRule1Check1" name="Linux-WorkstationRule1" ruleType="Regular"/>
+<Rule description="Ubuntu-WorkstationRule1Check1" expression="Ubuntu-WorkstationRule1Check1" name="Ubuntu-WorkstationRule1" ruleType="Regular"/>
+<Rule description="Ubuntu-WorkstationRule2Check1" expression="Ubuntu-WorkstationRule2Check1" name="Ubuntu-WorkstationRule2" ruleType="Regular"/>
+<Rule description="Ubuntu-WorkstationRule3Check1" expression="Ubuntu-WorkstationRule3Check1" name="Ubuntu-WorkstationRule3" ruleType="Regular"/>
+<Rule description="Fedora-WorkstationRule1Check1" expression="Fedora-WorkstationRule1Check1" name="Fedora-WorkstationRule1" ruleType="Regular"/>
+<Rule description="OS_X_Mojave-Workstation-Rule2-Check1" expression="OS_X_Mojave-Workstation-Rule2-Check1" name="WorkstationRule3dbc4752-27f8-4de6-8dfe-e0abc3dfd978" ruleType="Regular"/>
+<Rule description="OS_X_High_Sierra-Workstation-Rule1-Check1" expression="OS_X_High_Sierra-Workstation-Rule1-Check1" name="WorkstationRuleb54a3822-e7ac-454b-baa1-da96808d45db" ruleType="Regular"/>
+<Rule description="OS_X_Leopard-WorkstationRule1Check1" expression="OS_X_Leopard-WorkstationRule1Check1" name="OS_X_Leopard-WorkstationRule1" ruleType="Regular"/>
+<Rule description="OS_X_Leopard-WorkstationRule1Check2" expression="OS_X_Leopard-WorkstationRule1Check2" name="OS_X_Leopard-WorkstationRule2" ruleType="Regular"/>
+<Rule description="OS_X_Tiger-WorkstationRule1Check1" expression="OS_X_Tiger-WorkstationRule1Check1" name="OS_X_Tiger-WorkstationRule1" ruleType="Regular"/>
+<Rule description="OS_X_Tiger-WorkstationRule1Check2" expression="OS_X_Tiger-WorkstationRule1Check2" name="OS_X_Tiger-WorkstationRule2" ruleType="Regular"/>
+<Rule description="ChromeBook-WorkstationRule1Check1_AND_ChromeBook-WorkstationRule2Check1" expression="ChromeBook-WorkstationRule1Check1 &amp; ChromeBook-WorkstationRule2Check1" name="ChromeBook-WorkstationRule1" ruleType="Regular"/>
+<Rule description="ChromeBook-WorkstationRule2Check1" expression="ChromeBook-WorkstationRule2Check1" name="ChromeBook-WorkstationRule2" ruleType="Regular"/>
+<Rule description="ACTIVEDIRECTORY_PROBE_AD-Host-Exists_CONTAINS_TRUE" expression="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bbaCheck310f23b1-4316-4911-ac17-ddc0822e7f50" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bba" ruleType="Regular"/>
+<Rule description="FreeBSD-WorkstationRule1Check1" expression="FreeBSD-WorkstationRule1Check1" name="FreeBSD-WorkstationRule11" ruleType="Regular"/>
+<Rule description="FreeBSD-WorkstationRule2Check1" expression="FreeBSD-WorkstationRule2Check1" name="FreeBSD-WorkstationRule22" ruleType="Regular"/>
+<Rule description="Linux64" expression="Linux64" name="Linux-WorkstationRule33" ruleType="Regular"/>
+<Rule description="Linux-WorkstationRule2Check1" expression="Linux-WorkstationRule2Check1" name="Linux-WorkstationRule22" ruleType="Regular"/>
+<Rule description="Linux-WorkstationRule1Check1" expression="Linux-WorkstationRule1Check1" name="Linux-WorkstationRule11" ruleType="Regular"/>
+<Rule description="LinuxMint-WorkstationRule1Check1" expression="LinuxMint-WorkstationRule1Check1" name="LinuxMint-WorkstationRule11" ruleType="Regular"/>
+<Rule description="OS_X-WorkstationRule1Check2" expression="OS_X-WorkstationRule1Check2" name="Macintosh-WorkstationRulec3c805cf-3936-44ba-b64d-f32688e86390" ruleType="Regular"/>
+<Rule description="Macintosh-WorkstationRule1Check1" expression="Macintosh-WorkstationRule1Check1" name="Macintosh-WorkstationRule11" ruleType="Regular"/>
+<Rule description="MacBookPro" expression="MacBookPro" name="Macintosh-WorkstationRule22" ruleType="Regular"/>
+<Rule description="OS_X-WorkstationRule1Check1" expression="OS_X-WorkstationRule1Check1" name="Macintosh-WorkstationRule3d229348-5e67-4897-9bbf-c6bbc2fb42e4" ruleType="Regular"/>
+<Rule description="Mandriva-WorkstationRule1Check1" expression="Mandriva-WorkstationRule1Check1" name="Mandriva-WorkstationRule11" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_Windows_OR_IP_User-Agent_CONTAINS_Windows_NT_OR_IP_User-Agent_CONTAINS_WindowsNT_OR_IP_User-Agent_CONTAINS_WOW64_OR_IP_User-Agent_CONTAINS_Win64" expression="(((Microsoft-WorkstationRule67480f8b-0387-4621-91c1-127a4b46be83Checkeebb42a6-82a5-41de-b753-c2f73ef5dc1e | Microsoft-WorkstationRule67480f8b-0387-4621-91c1-127a4b46be83Checkf90051ff-5e8b-44a9-88a1-3c189927f6bb) | Microsoft-WorkstationRule67480f8b-0387-4621-91c1-127a4b46be83Check7e90dbbb-b04c-4d4c-a94e-c6a08f23d746) | Microsoft-WorkstationRule67480f8b-0387-4621-91c1-127a4b46be83Check92598474-df54-4fa2-9ef3-93487008feac) | Microsoft-WorkstationRule67480f8b-0387-4621-91c1-127a4b46be83Checkc26ac664-0172-46e4-90d9-5e3142ac735e" name="Microsoft-WorkstationRule67480f8b-0387-4621-91c1-127a4b46be83" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-parameter-request-list_EQUALS_1,15,3,6,44,46,47,31,33,249,43_OR_DHCP_dhcp-parameter-request-list_EQUALS_1,15,3,6,44,46,47,31,33,249,43,252_OR_DHCP_dhcp-parameter-request-list_EQUALS_1,15,3,6,44,46,47,31,33,249,43,252,12_OR_DHCP_dhcp-parameter-request-list_EQUALS_15,3,6,44,46,47,31,33,249,43_OR_DHCP_dhcp-parameter-request-list_EQUALS_15,3,6,44,46,47,31,33,249,43,252_OR_DHCP_dhcp-parameter-request-list_EQUALS_28,2,3,15,6,12,44,47_OR_DHCP_dhcp-parameter-request-list_EQUALS_1,15,3,6,44,46,47,31,33,121,249,252,43_OR_DHCP_dhcp-parameter-request-list_EQUALS_1,15,3,6,44,46,47,31,33,121,249,252,43_OR_DHCP_dhcp-parameter-request-list_EQUALS_1,15,3,6,44,46,47,31,33,121,249,43_OR_DHCP_dhcp-parameter-request-list_EQUALS_1,15,3,6,44,46,47,31,33,121,249,43,0,32,176,67_OR_DHCP_dhcp-parameter-request-list_EQUALS_1,15,3,6,44,46,47,31,33,121,249,43,0,176,67_OR_DHCP_dhcp-parameter-request-list_EQUALS_1,15,3,6,44,46,47,31,33,121,249,43,252_OR_DHCP_dhcp-parameter-request-list_EQUALS_1,15,3,6,44,46,47,31,33,121,249,43,195" expression="((((((((((Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Check23628381-6bfa-46a9-9834-e1180a24b73a | Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Check9a53bdba-fc61-4896-8d35-980f2b3797a2) | Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Check134abe97-63aa-4c9b-afb4-4ff1cb14c471) | Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Check2c1dfbc3-5d8c-4ad2-a6c9-eadabf31ea26) | Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Checkade59ad4-f425-4833-89c9-b08d1d50d18c) | Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Check22283c41-a3a5-40b9-9653-3f2df67ec042) | Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Check8373dd39-3679-43e7-8f95-f6404fe6e561) | Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Check0ceef2d0-0b17-4bd1-ab08-a86276ef7c4b) | Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Checkc876fb3f-f9ec-465f-b185-479d32dc2ccf) | Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Check0ac0a6fb-0845-4868-b206-38c36c5dece6) | Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Check953fb242-9127-47a7-9644-1f3cf17a83c6) | Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Checkd3697816-1ba9-49fd-9fd1-741a8e583223" name="Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53" ruleType="Regular"/>
+<Rule description="ACIDEX_device-platform_CONTAINS_win" expression="Microsoft-WorkstationRulea9585ffd-2e8e-44da-8db2-6d8f3748fbe1Check1bcd6993-4592-48db-a887-061220885f11" name="Microsoft-WorkstationRulea9585ffd-2e8e-44da-8db2-6d8f3748fbe1" ruleType="Regular"/>
+<Rule description="Microsoft-Workstation-Rule4-Check1" expression="Microsoft-Workstation-Rule4-Check1" name="Microsoft-WorkstationRule44" ruleType="Regular"/>
+<Rule description="Microsoft-WorkstationRule1Check1" expression="Microsoft-WorkstationRule1Check1" name="Microsoft-WorkstationRule11" ruleType="Regular"/>
+<Rule description="Microsoft-WorkstationRule3Check1" expression="Microsoft-WorkstationRule3Check1" name="Microsoft-WorkstationRule33" ruleType="Regular"/>
+<Rule description="ACTIVEDIRECTORY_PROBE_AD-Operating-System_CONTAINS_Windows" expression="Microsoft-WorkstationRule2036b574-7a3c-4743-a6d1-377674dd4f79Checkbe40982c-d435-44ce-a013-3539bd312b70" name="Microsoft-WorkstationRule2036b574-7a3c-4743-a6d1-377674dd4f79" ruleType="Regular"/>
+<Rule description="OpenBSD-WorkstationRule1Check1" expression="OpenBSD-WorkstationRule1Check1" name="OpenBSD-WorkstationRule11" ruleType="Regular"/>
+<Rule description="OracleEnterpriseLinux-WorkstationRule1Check1" expression="OracleEnterpriseLinux-WorkstationRule1Check1" name="OracleEnterpriseLinux-WorkstationRule11" ruleType="Regular"/>
+<Rule description="PCLinuxOS-WorkstationRule1Check1" expression="PCLinuxOS-WorkstationRule1Check1" name="PCLinuxOS-WorkstationRule11" ruleType="Regular"/>
+<Rule description="RedHat-WorkstationRule1Check1" expression="RedHat-WorkstationRule1Check1" name="RedHat-WorkstationRule11" ruleType="Regular"/>
+<Rule description="SUSE-WorkstationRule1Check1" expression="SUSE-WorkstationRule1Check1" name="SUSE-WorkstationRule11" ruleType="Regular"/>
+<Rule description="Sun-WorkstationRule1Check1" expression="Sun-WorkstationRule1Check1" name="Sun-WorkstationRule11" ruleType="Regular"/>
+<Rule description="Ubuntu-WorkstationRule1Check1" expression="Ubuntu-WorkstationRule1Check1" name="Ubuntu-WorkstationRule11" ruleType="Regular"/>
+<Rule description="Ubuntu-WorkstationRule3Check1" expression="Ubuntu-WorkstationRule3Check1" name="Ubuntu-WorkstationRule33" ruleType="Regular"/>
+<Rule description="Ubuntu-WorkstationRule2Check1" expression="Ubuntu-WorkstationRule2Check1" name="Ubuntu-WorkstationRule22" ruleType="Regular"/>
+<Rule description="Vista-Workstation-Rule3-Check1" expression="Vista-Workstation-Rule3-Check1" name="Vista-WorkstationRule33" ruleType="Regular"/>
+<Rule description="Vista-Workstation-Rule2-Check1" expression="Vista-Workstation-Rule2-Check1" name="Vista-WorkstationRule22" ruleType="Regular"/>
+<Rule description="Vista-WorkstationRule1Check1" expression="Vista-WorkstationRule1Check1" name="Vista-WorkstationRule11" ruleType="Regular"/>
+<Rule description="Windows10-Workstation-Rule4-Check1" expression="Windows10-Workstation-Rule4-Check1" name="Windows10-WorkstationRule4" ruleType="Regular"/>
+<Rule description="Windows10-Workstation-Rule5-Check1" expression="Windows10-Workstation-Rule5-Check1" name="Windows10-WorkstationRule5" ruleType="Regular"/>
+<Rule description="Windows10-Workstation-Rule2-Check1" expression="Windows10-Workstation-Rule2-Check1" name="Windows10-WorkstationRule2" ruleType="Regular"/>
+<Rule description="Windows10-Workstation-Rule3-Check1" expression="Windows10-Workstation-Rule3-Check1" name="Windows10-WorkstationRule3" ruleType="Regular"/>
+<Rule description="Windows7-Workstation-Rule3-Check1" expression="Windows7-Workstation-Rule3-Check1" name="Windows7-WorkstationRule55" ruleType="Regular"/>
+<Rule description="Win7" expression="Win7" name="Windows7-WorkstationRule22" ruleType="Regular"/>
+<Rule description="Windows7-WorkstationRule1Check1" expression="Windows7-WorkstationRule1Check1" name="Windows7-WorkstationRule11" ruleType="Regular"/>
+<Rule description="Windows7-Workstation-Rule2-Check1" expression="Windows7-Workstation-Rule2-Check1" name="Windows7-WorkstationRule44" ruleType="Regular"/>
+<Rule description="Windows8-Workstation-Rule7-Check1" expression="Windows8-Workstation-Rule7-Check1" name="Windows8-WorkstationRule77" ruleType="Regular"/>
+<Rule description="Windows8-Workstation-Rule6-Check1" expression="Windows8-Workstation-Rule6-Check1" name="Windows8-WorkstationRule66" ruleType="Regular"/>
+<Rule description="Windows8-WorkstationRule1Check1" expression="Windows8-WorkstationRule1Check1" name="Windows8-WorkstationRule11" ruleType="Regular"/>
+<Rule description="Windows8-WorkstationRule2Check1" expression="Windows8-WorkstationRule2Check1" name="Windows8-WorkstationRule22" ruleType="Regular"/>
+<Rule description="Windows8-Workstation-Rule4-Check1" expression="Windows8-Workstation-Rule4-Check1" name="Windows8-WorkstationRule44" ruleType="Regular"/>
+<Rule description="Windows8-Workstation-Rule5-Check1" expression="Windows8-Workstation-Rule5-Check1" name="Windows8-WorkstationRule55" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-parameter-request-list_EQUALS_1,15,3,6,44,46,47,31,33,121,249,252,43" expression="Windows8-WorkstationRulee4ff2439-b291-43c6-8166-b67050059d2dCheckff287939-2053-4a6c-94e5-32f5b6760cfe" name="Windows8-WorkstationRulee4ff2439-b291-43c6-8166-b67050059d2d" ruleType="Regular"/>
+<Rule description="WindowsXP-WorkstationRule1Check1" expression="WindowsXP-WorkstationRule1Check1" name="WindowsXP-WorkstationRule11" ruleType="Regular"/>
+<Rule description="WindowsXP-Workstation-Rule3-Check1" expression="WindowsXP-Workstation-Rule3-Check1" name="WindowsXP-WorkstationRule33" ruleType="Regular"/>
+<Rule description="WindowsXP-Workstation-Rule2-Check1" expression="WindowsXP-Workstation-Rule2-Check1" name="WindowsXP-WorkstationRule22" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-parameter-request-list_EQUALS_1,15,3,6,44,46,47,31,33,249,43_OR_DHCP_dhcp-parameter-request-list_EQUALS_1,15,3,6,44,46,47,31,33,249,43,252_OR_DHCP_dhcp-parameter-request-list_EQUALS_1,15,3,6,44,46,47,31,33,249,43,252,12_OR_DHCP_dhcp-parameter-request-list_EQUALS_15,3,6,44,46,47,31,33,249,43_OR_DHCP_dhcp-parameter-request-list_EQUALS_15,3,6,44,46,47,31,33,249,43,252_OR_DHCP_dhcp-parameter-request-list_EQUALS_28,2,3,15,6,12,44,47" expression="((((WindowsXP-WorkstationRule926fbca8-7c41-4fb7-9b28-53248ffc3bcfCheckee3dabdd-07af-4f89-9cec-59131afa4d34 | WindowsXP-WorkstationRule926fbca8-7c41-4fb7-9b28-53248ffc3bcfCheck65c9ee3c-9f91-4ac2-96b2-3c73859f4f54) | WindowsXP-WorkstationRule926fbca8-7c41-4fb7-9b28-53248ffc3bcfChecka511422c-48a2-4f1f-9267-46a460db6068) | WindowsXP-WorkstationRule926fbca8-7c41-4fb7-9b28-53248ffc3bcfCheck7fc94af9-fd2a-4d0d-a454-275922f87b02) | WindowsXP-WorkstationRule926fbca8-7c41-4fb7-9b28-53248ffc3bcfCheck4eb1624d-03ae-4eff-97cf-8c65a64e866b) | WindowsXP-WorkstationRule926fbca8-7c41-4fb7-9b28-53248ffc3bcfCheckdb38f0e2-049e-4733-868d-28a3d602762a" name="WindowsXP-WorkstationRule926fbca8-7c41-4fb7-9b28-53248ffc3bcf" ruleType="Regular"/>
+<Rule description="Xandros-WorkstationRule1Check1" expression="Xandros-WorkstationRule1Check1" name="Xandros-WorkstationRule11" ruleType="Regular"/>
+<Rule description="CentOS-WorkstationRule1Check1" expression="CentOS-WorkstationRule1Check1" name="CentOS-WorkstationRule11" ruleType="Regular"/>
+<Rule description="Debian-WorkstationRule1Check1" expression="Debian-WorkstationRule1Check1" name="Debian-WorkstationRule11" ruleType="Regular"/>
+<Rule description="Fedora-WorkstationRule1Check1" expression="Fedora-WorkstationRule1Check1" name="Fedora-WorkstationRule11" ruleType="Regular"/>
+<Rule description="Gentoo-WorkstationRule1Check1" expression="Gentoo-WorkstationRule1Check1" name="Gentoo-WorkstationRule11" ruleType="Regular"/>
+<Rule description="Kubuntu-WorkstationRule1Check1" expression="Kubuntu-WorkstationRule1Check1" name="Kubuntu-WorkstationRule11" ruleType="Regular"/>
+<Rule description="ACTIVEDIRECTORY_PROBE_AD-Host-Exists_CONTAINS_TRUE" expression="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bbaCheck310f23b1-4316-4911-ac17-ddc0822e7f50_copy_copy_copy_copy_copy_copy" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bba_copy_copy_copy_copy_copy_copy" ruleType="Regular"/>
+<Rule description="SolarisRule1Check1" expression="SolarisRule1Check1" name="SolarisRule11" ruleType="Regular"/>
+<Rule description="ACTIVEDIRECTORY_PROBE_AD-Host-Exists_CONTAINS_TRUE" expression="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bbaCheck310f23b1-4316-4911-ac17-ddc0822e7f50_copy_copy_copy_copy" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bba_copy_copy_copy_copy" ruleType="Regular"/>
+<Rule description="ACTIVEDIRECTORY_PROBE_AD-Host-Exists_CONTAINS_TRUE" expression="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bbaCheck310f23b1-4316-4911-ac17-ddc0822e7f50_copy_copy_copy" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bba_copy_copy_copy" ruleType="Regular"/>
+<Rule description="ACTIVEDIRECTORY_PROBE_AD-Host-Exists_CONTAINS_TRUE" expression="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bbaCheck310f23b1-4316-4911-ac17-ddc0822e7f50_copy" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bba_copy" ruleType="Regular"/>
+<Rule description="ACTIVEDIRECTORY_PROBE_AD-Host-Exists_CONTAINS_TRUE" expression="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bbaCheck310f23b1-4316-4911-ac17-ddc0822e7f50_copy_copy" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bba_copy_copy" ruleType="Regular"/>
+<Rule description="ACTIVEDIRECTORY_PROBE_AD-Host-Exists_CONTAINS_TRUE" expression="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bbaCheck310f23b1-4316-4911-ac17-ddc0822e7f50_copy_copy_copy_copy_copy" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bba_copy_copy_copy_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.8" description="OS_X_MountainLion-WorkstationRule1Check2" name="OS_X_MountainLion-WorkstationRule1Check2" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_8" description="OS_X_MountainLion-WorkstationRule1Check1" name="OS_X_MountainLion-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_12" description="Condition for OS_X-Sierra-Workstation based on IP:User-Agent" name="OS_X_Sierra-Workstation-Rule2-Check1" operator="Contains" type="IP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="MSFT" description="Microsoft-WorkstationRule1Check1" name="Microsoft-WorkstationRule1Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="device-platform" attributeValue="mac-intel" description="" name="MacIntel" operator="Equals" type="ACIDEX"/>
+<Check attributeName="operating-system" attributeValue="Microsoft Windows" description="Microsoft-WorkstationRule3Check1" name="Microsoft-WorkstationRule3Check1" operator="Contains" type="NMAP"/>
+<Check attributeName="User-Agent" attributeValue="Windows" description="Microsoft-WorkstationRule2Check1" name="Microsoft-WorkstationRule2Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="PCLinuxOS" description="PCLinuxOS-WorkstationRule1Check1" name="PCLinuxOS-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Windows NT 6.1" description="Windows7-WorkstationRule1Check1" name="Windows7-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="device-platform" attributeValue="win" description="ACIDEX device-platform EQUALS win" name="WinPlatform" operator="Equals" type="ACIDEX"/>
+<Check attributeName="User-Agent" attributeValue="10.12" description="Condition for OS_X_Sierra-Workstation based on IP:User-Agent" name="OS_X_Sierra-Workstation-Rule1-Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.6" description="OS_X_SnowLeopard-WorkstationRule1Check2" name="OS_X_SnowLeopard-WorkstationRule1Check2" operator="Contains" type="IP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="SUNW" description="Sun-WorkstationRule1Check1" name="Sun-WorkstationRule1Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="Debian" description="Debian-WorkstationRule1Check1" name="Debian-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_6" description="OS_X_SnowLeopard-WorkstationRule1Check1" name="OS_X_SnowLeopard-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Red Hat" description="RedHat-WorkstationRule1Check1" name="RedHat-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_11" description="Condition for OS_X_El_Capitan-Workstation based on IP:User-Agent" name="OS_X_El_Capitan-Workstation-Rule2-Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.14" description="Condition for OS_X_Mojave-Workstation based on IP:User-Agent" name="OS_X_Mojave-Workstation-Rule1-Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.10" description="OS_X_Yosemite-WorkstationRule1Check1" name="OS_X_Yosemite-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mint" description="LinuxMint-WorkstationRule1Check1" name="LinuxMint-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Windows NT 6.0" description="Vista-WorkstationRule1Check1" name="Vista-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Windows NT 5.1" description="WindowsXP-WorkstationRule1Check1" name="WindowsXP-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Oracle" description="OracleEnterpriseLinux-WorkstationRule1Check1" name="OracleEnterpriseLinux-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="xandros" description="Xandros-WorkstationRule1Check1" name="Xandros-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="OpenBSD" description="OpenBSD-WorkstationRule1Check1" name="OpenBSD-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Gentoo" description="Gentoo-WorkstationRule1Check1" name="Gentoo-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="device-platform" attributeValue="linux-64" description="" name="Linux64" operator="Equals" type="ACIDEX"/>
+<Check attributeName="User-Agent" attributeValue="Kubuntu" description="Kubuntu-WorkstationRule1Check1" name="Kubuntu-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="CentOS" description="CentOS-WorkstationRule1Check1" name="CentOS-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Windows NT 6.2" description="Windows8-WorkstationRule1Check1" name="Windows8-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Windows NT 6.3" description="Windows8-WorkstationRule2Check1" name="Windows8-WorkstationRule2Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_13" description="Condition for OS_X-High_Sierra-Workstation based on IP:User-Agent" name="OS_X_High_Sierra-Workstation-Rule2-Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Macintosh" description="Macintosh-WorkstationRule1Check1" name="Macintosh-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mandriva Linux" description="Mandriva-WorkstationRule1Check1" name="Mandriva-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.9" description="OS_X_Mavericks-WorkstaionRule1Check1" name="OS_X_Mavericks-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="operating-system" attributeValue="FreeBSD" description="FreeBSD-WorkstationRule2Check1" name="FreeBSD-WorkstationRule2Check1" operator="Contains" type="NMAP"/>
+<Check attributeName="OUI" attributeValue="Apple, Inc." description="Condition for FreeBSD-Workstation, based on MAC:OUI" name="FreeBSD-Workstation-Rule2-Check2" operator="Not Equal" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="FreeBSD" description="FreeBSD-WorkstationRule1Check1" name="FreeBSD-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_9" description="OS_X_Mavericks-WorkstaionRule2Check1" name="OS_X_Mavericks-WorkstaionRule2Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.11" description="Condition for OS_X_El_Capitan-Workstation based on IP:User-Agent" name="OS_X_El_Capitan-Workstation-Rule1-Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.7" description="OS_X_Lion-WorkstationRule1Check2" name="OS_X_Lion-WorkstationRule1Check2" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_7" description="OS_X_Lion-WorkstationRule1Check1" name="OS_X_Lion-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Windows NT 6.4" description="Windows10-WorkstationRule1Check1" name="Windows10-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_10" description="OS_X_Yosemite-WorkstationRule1Check2" name="OS_X_Yosemite-WorkstationRule1Check2" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SUSE" description="SUSE-WorkstationRule1Check1" name="SUSE-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 28, 2, 121, 15, 6, 12, 40, 41, 42, 26, 119, 3, 121, 249, 42" description="Linux-WorkstationRule4Check1" name="Linux-WorkstationRule4Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="Linux" description="Linux-WorkstationRule2Check1" name="Linux-WorkstationRule2Check1" operator="Contains" type="IP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 28, 2, 121, 15, 6, 12, 40, 41, 42, 26, 119, 3, 121, 249, 252, 42" description="Linux-WorkstationRule3Check1" name="Linux-WorkstationRule3Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Linux" description="Linux-WorkstationRule1Check1" name="Linux-WorkstationRule1Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="Ubuntu" description="Ubuntu-WorkstationRule1Check1" name="Ubuntu-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="ubuntu" description="Condition for Ubuntu Workstation, based on DHCP host-name" name="Ubuntu-WorkstationRule2Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 28, 2, 3, 15, 6, 119, 12, 44, 47, 26, 121, 42, 121, 249, 252, 42" description="Condition for Ubuntu Workstation, based on DHCP Parameter Request List" name="Ubuntu-WorkstationRule3Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="Fedora" description="Fedora-WorkstationRule1Check1" name="Fedora-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_14" description="Condition for OS_X-Mojave-Workstation based on IP:User-Agent" name="OS_X_Mojave-Workstation-Rule2-Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.13" description="Condition for OS_X_High_Sierra-Workstation based on IP:User-Agent" name="OS_X_High_Sierra-Workstation-Rule1-Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_5" description="OS_X_Leopard-WorkstationRule1Check1" name="OS_X_Leopard-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.5" description="OS_X_Leopard-WorkstationRule1Check2" name="OS_X_Leopard-WorkstationRule1Check2" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_4" description="OS_X_Tiger-WorkstationRule1Check1" name="OS_X_Tiger-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.4" description="OS_X_Tiger-WorkstationRule1Check2" name="OS_X_Tiger-WorkstationRule1Check2" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="X11" description="Condition for ChromeBook-Workstation , based on IP-User-Agent" name="ChromeBook-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="CrOS" description="Condition for ChromeBook-Workstation , based on IP-User-Agent" name="ChromeBook-WorkstationRule2Check1" operator="Contains" type="IP"/>
+<Check attributeName="AD-Host-Exists" attributeValue="TRUE" description="ACTIVEDIRECTORY_PROBE AD-Host-Exists CONTAINS TRUE" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bbaCheck310f23b1-4316-4911-ac17-ddc0822e7f50" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+<Check attributeName="User-Agent" attributeValue="MAC_OSX" description="OS_X-WorkstationRule1Check2" name="OS_X-WorkstationRule1Check2" operator="Contains" type="IP"/>
+<Check attributeName="device-type" attributeValue="MacBookPro" description="ACIDEX device-type CONTAINS MacBookPro" name="MacBookPro" operator="Contains" type="ACIDEX"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X" description="OS_X-WorkstationRule1Check1" name="OS_X-WorkstationRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Windows" description="IP User-Agent CONTAINS Windows" name="Microsoft-WorkstationRule67480f8b-0387-4621-91c1-127a4b46be83Checkeebb42a6-82a5-41de-b753-c2f73ef5dc1e" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Windows NT" description="IP User-Agent CONTAINS Windows NT" name="Microsoft-WorkstationRule67480f8b-0387-4621-91c1-127a4b46be83Checkf90051ff-5e8b-44a9-88a1-3c189927f6bb" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="WindowsNT" description="IP User-Agent CONTAINS WindowsNT" name="Microsoft-WorkstationRule67480f8b-0387-4621-91c1-127a4b46be83Check7e90dbbb-b04c-4d4c-a94e-c6a08f23d746" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="WOW64" description="IP User-Agent CONTAINS WOW64" name="Microsoft-WorkstationRule67480f8b-0387-4621-91c1-127a4b46be83Check92598474-df54-4fa2-9ef3-93487008feac" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Win64" description="IP User-Agent CONTAINS Win64" name="Microsoft-WorkstationRule67480f8b-0387-4621-91c1-127a4b46be83Checkc26ac664-0172-46e4-90d9-5e3142ac735e" operator="Contains" type="IP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,249,43" description="DHCP dhcp-parameter-request-list EQUALS 1,15,3,6,44,46,47,31,33,249,43" name="Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Check23628381-6bfa-46a9-9834-e1180a24b73a" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,249,43,252" description="DHCP dhcp-parameter-request-list EQUALS 1,15,3,6,44,46,47,31,33,249,43,252" name="Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Check9a53bdba-fc61-4896-8d35-980f2b3797a2" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,249,43,252,12" description="DHCP dhcp-parameter-request-list EQUALS 1,15,3,6,44,46,47,31,33,249,43,252,12" name="Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Check134abe97-63aa-4c9b-afb4-4ff1cb14c471" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="15,3,6,44,46,47,31,33,249,43" description="DHCP dhcp-parameter-request-list EQUALS 15,3,6,44,46,47,31,33,249,43" name="Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Check2c1dfbc3-5d8c-4ad2-a6c9-eadabf31ea26" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="15,3,6,44,46,47,31,33,249,43,252" description="DHCP dhcp-parameter-request-list EQUALS 15,3,6,44,46,47,31,33,249,43,252" name="Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Checkade59ad4-f425-4833-89c9-b08d1d50d18c" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="28,2,3,15,6,12,44,47" description="DHCP dhcp-parameter-request-list EQUALS 28,2,3,15,6,12,44,47" name="Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Check22283c41-a3a5-40b9-9653-3f2df67ec042" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,121,249,252,43" description="DHCP dhcp-parameter-request-list EQUALS 1,15,3,6,44,46,47,31,33,121,249,252,43" name="Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Check8373dd39-3679-43e7-8f95-f6404fe6e561" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,121,249,43" description="DHCP dhcp-parameter-request-list EQUALS 1,15,3,6,44,46,47,31,33,121,249,43" name="Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Check0ceef2d0-0b17-4bd1-ab08-a86276ef7c4b" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,121,249,43,0,32,176,67" description="DHCP dhcp-parameter-request-list EQUALS 1,15,3,6,44,46,47,31,33,121,249,43,0,32,176,67" name="Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Checkc876fb3f-f9ec-465f-b185-479d32dc2ccf" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,121,249,43,0,176,67" description="DHCP dhcp-parameter-request-list EQUALS 1,15,3,6,44,46,47,31,33,121,249,43,0,176,67" name="Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Check0ac0a6fb-0845-4868-b206-38c36c5dece6" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,121,249,43,252" description="DHCP dhcp-parameter-request-list EQUALS 1,15,3,6,44,46,47,31,33,121,249,43,252" name="Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Check953fb242-9127-47a7-9644-1f3cf17a83c6" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,121,249,43,195" description="DHCP dhcp-parameter-request-list EQUALS 1,15,3,6,44,46,47,31,33,121,249,43,195" name="Microsoft-WorkstationRulec8262598-9f6d-412f-97a7-62b72d732c53Checkd3697816-1ba9-49fd-9fd1-741a8e583223" operator="Equals" type="DHCP"/>
+<Check attributeName="device-platform" attributeValue="win" description="ACIDEX device-platform CONTAINS win" name="Microsoft-WorkstationRulea9585ffd-2e8e-44da-8db2-6d8f3748fbe1Check1bcd6993-4592-48db-a887-061220885f11" operator="Contains" type="ACIDEX"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="MS-UC-Client" description="Condition for Microsoft-Workstation, based on DHCP:dhcp-class-identifier" name="Microsoft-Workstation-Rule4-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="AD-Operating-System" attributeValue="Windows" description="ACTIVEDIRECTORY_PROBE AD-Operating-System CONTAINS Windows" name="Microsoft-WorkstationRule2036b574-7a3c-4743-a6d1-377674dd4f79Checkbe40982c-d435-44ce-a013-3539bd312b70" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+<Check attributeName="AD-Operating-System" attributeValue="Windows Vista" description="Condition for Vista-Workstation, based on ACTIVEDIRECTORY:AD-Operating-System" name="Vista-Workstation-Rule3-Check1" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+<Check attributeName="SMB.operating-system" attributeValue="Windows Vista" description="Condition for Vista-Workstation, based on NMAP:SMB.operating-system" name="Vista-Workstation-Rule2-Check1" operator="Contains" type="NMAP"/>
+<Check attributeName="SMB.operating-system" attributeValue="Windows 10" description="Condition for Windows10-Workstation, based on NMAP:SMB.operating-system" name="Windows10-Workstation-Rule4-Check1" operator="Contains" type="NMAP"/>
+<Check attributeName="AD-Operating-System" attributeValue="Windows 10" description="Condition for Windows10-Workstation, based on ACTIVEDIRECTORY:AD-Operating-System" name="Windows10-Workstation-Rule5-Check1" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+<Check attributeName="User-Agent" attributeValue="Windows NT 10.0" description="Condition for Windows10-Workstation based on IP:User-Agent" name="Windows10-Workstation-Rule2-Check1" operator="Contains" type="IP"/>
+<Check attributeName="device-platform-version" attributeValue="10.0" description="Condition for Windows10-Workstation based on ACIDEX:device-platform-version" name="Windows10-Workstation-Rule3-Check1" operator="Starts with" type="ACIDEX"/>
+<Check attributeName="AD-Operating-System" attributeValue="Windows 7" description="Condition for Windows7-Workstation, based on ACTIVEDIRECTORY:AD-Operating-System" name="Windows7-Workstation-Rule3-Check1" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+<Check attributeName="device-platform-version" attributeValue="6.1" description="ACIDEX device-platform-version STARTSWITH 6.1" name="Win7" operator="Starts with" type="ACIDEX"/>
+<Check attributeName="SMB.operating-system" attributeValue="Windows 7" description="Condition for Windows7-Workstation, based on NMAP:SMB.operating-system" name="Windows7-Workstation-Rule2-Check1" operator="Contains" type="NMAP"/>
+<Check attributeName="AD-Operating-System" attributeValue="Windows 8" description="Condition for Windows8-Workstation, based on ACTIVEDIRECTORY:AD-Operating-System" name="Windows8-Workstation-Rule7-Check1" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+<Check attributeName="SMB.operating-system" attributeValue="Windows 8" description="Condition for Windows8-Workstation, based on NMAP:SMB.operating-system" name="Windows8-Workstation-Rule6-Check1" operator="Contains" type="NMAP"/>
+<Check attributeName="device-platform-version" attributeValue="6.2" description="Condition for Windows8-Workstation based on ACIDEX:device-platform-version" name="Windows8-Workstation-Rule4-Check1" operator="Starts with" type="ACIDEX"/>
+<Check attributeName="device-platform-version" attributeValue="6.3" description="Condition for Windows8-Workstation based on ACIDEX:device-platform-version" name="Windows8-Workstation-Rule5-Check1" operator="Starts with" type="ACIDEX"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,121,249,252,43" description="DHCP dhcp-parameter-request-list EQUALS 1,15,3,6,44,46,47,31,33,121,249,252,43" name="Windows8-WorkstationRulee4ff2439-b291-43c6-8166-b67050059d2dCheckff287939-2053-4a6c-94e5-32f5b6760cfe" operator="Equals" type="DHCP"/>
+<Check attributeName="AD-Operating-System" attributeValue="Windows XP" description="Condition for WindowsXP-Workstation, based on ACTIVEDIRECTORY:AD-Operating-System" name="WindowsXP-Workstation-Rule3-Check1" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+<Check attributeName="SMB.operating-system" attributeValue="Windows XP" description="Condition for WindowsXP-Workstation, based on NMAP:SMB.operating-system" name="WindowsXP-Workstation-Rule2-Check1" operator="Contains" type="NMAP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,249,43" description="DHCP dhcp-parameter-request-list EQUALS 1,15,3,6,44,46,47,31,33,249,43" name="WindowsXP-WorkstationRule926fbca8-7c41-4fb7-9b28-53248ffc3bcfCheckee3dabdd-07af-4f89-9cec-59131afa4d34" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,249,43,252" description="DHCP dhcp-parameter-request-list EQUALS 1,15,3,6,44,46,47,31,33,249,43,252" name="WindowsXP-WorkstationRule926fbca8-7c41-4fb7-9b28-53248ffc3bcfCheck65c9ee3c-9f91-4ac2-96b2-3c73859f4f54" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,249,43,252,12" description="DHCP dhcp-parameter-request-list EQUALS 1,15,3,6,44,46,47,31,33,249,43,252,12" name="WindowsXP-WorkstationRule926fbca8-7c41-4fb7-9b28-53248ffc3bcfChecka511422c-48a2-4f1f-9267-46a460db6068" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="15,3,6,44,46,47,31,33,249,43" description="DHCP dhcp-parameter-request-list EQUALS 15,3,6,44,46,47,31,33,249,43" name="WindowsXP-WorkstationRule926fbca8-7c41-4fb7-9b28-53248ffc3bcfCheck7fc94af9-fd2a-4d0d-a454-275922f87b02" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="15,3,6,44,46,47,31,33,249,43,252" description="DHCP dhcp-parameter-request-list EQUALS 15,3,6,44,46,47,31,33,249,43,252" name="WindowsXP-WorkstationRule926fbca8-7c41-4fb7-9b28-53248ffc3bcfCheck4eb1624d-03ae-4eff-97cf-8c65a64e866b" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="28,2,3,15,6,12,44,47" description="DHCP dhcp-parameter-request-list EQUALS 28,2,3,15,6,12,44,47" name="WindowsXP-WorkstationRule926fbca8-7c41-4fb7-9b28-53248ffc3bcfCheckdb38f0e2-049e-4733-868d-28a3d602762a" operator="Equals" type="DHCP"/>
+<Check attributeName="AD-Host-Exists" attributeValue="TRUE" description="ACTIVEDIRECTORY_PROBE AD-Host-Exists CONTAINS TRUE" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bbaCheck310f23b1-4316-4911-ac17-ddc0822e7f50_copy_copy_copy_copy_copy_copy" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+<Check attributeName="User-Agent" attributeValue="SunOS" description="SolarisRule1Check1" name="SolarisRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="AD-Host-Exists" attributeValue="TRUE" description="ACTIVEDIRECTORY_PROBE AD-Host-Exists CONTAINS TRUE" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bbaCheck310f23b1-4316-4911-ac17-ddc0822e7f50_copy_copy_copy_copy" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+<Check attributeName="AD-Host-Exists" attributeValue="TRUE" description="ACTIVEDIRECTORY_PROBE AD-Host-Exists CONTAINS TRUE" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bbaCheck310f23b1-4316-4911-ac17-ddc0822e7f50_copy_copy_copy" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+<Check attributeName="AD-Host-Exists" attributeValue="TRUE" description="ACTIVEDIRECTORY_PROBE AD-Host-Exists CONTAINS TRUE" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bbaCheck310f23b1-4316-4911-ac17-ddc0822e7f50_copy" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+<Check attributeName="AD-Host-Exists" attributeValue="TRUE" description="ACTIVEDIRECTORY_PROBE AD-Host-Exists CONTAINS TRUE" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bbaCheck310f23b1-4316-4911-ac17-ddc0822e7f50_copy_copy" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+<Check attributeName="AD-Host-Exists" attributeValue="TRUE" description="ACTIVEDIRECTORY_PROBE AD-Host-Exists CONTAINS TRUE" name="Domain-Joined-WorkstationRule6d27e76f-9e79-453b-b0b1-978aaa3a5bbaCheck310f23b1-4316-4911-ac17-ddc0822e7f50_copy_copy_copy_copy_copy" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

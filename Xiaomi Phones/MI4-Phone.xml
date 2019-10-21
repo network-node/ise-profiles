@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Xiaomi-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Xiaomi-DeviceRulee22a24e3-1473-4a5f-8bb9-34c07f2c2c34"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="MI4-Phone" parentFQN="Xiaomi-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Mi-Mix-PhoneRulebcc440ca-1e16-46ed-bffd-792a3ec47a08_copy_copy0_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Xiaomi" expression="Xiaomi-DeviceRulee22a24e3-1473-4a5f-8bb9-34c07f2c2c34Check5f2403cf-27d1-4595-91fa-73272241aaeb" name="Xiaomi-DeviceRulee22a24e3-1473-4a5f-8bb9-34c07f2c2c34" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_MI4" expression="Mi-Mix-PhoneRulebcc440ca-1e16-46ed-bffd-792a3ec47a08Check8f50e11e-25ff-4e8b-b1b2-7f31d733d02d_copy_copy0_copy_copy" name="Mi-Mix-PhoneRulebcc440ca-1e16-46ed-bffd-792a3ec47a08_copy_copy0_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Xiaomi" description="MAC OUI CONTAINS Xiaomi" name="Xiaomi-DeviceRulee22a24e3-1473-4a5f-8bb9-34c07f2c2c34Check5f2403cf-27d1-4595-91fa-73272241aaeb" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="MI4" description="DHCP host-name CONTAINS MI4" name="Mi-Mix-PhoneRulebcc440ca-1e16-46ed-bffd-792a3ec47a08Check8f50e11e-25ff-4e8b-b1b2-7f31d733d02d_copy_copy0_copy_copy" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Xiaomi-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Redmi-Note-5" parentFQN="Xiaomi-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Mi-Max-2Ruleaf772025-5f20-420b-b403-adc085e90555_copy_copy_copy_copy_copy"/>
+<PolicyRule certaintyFactor="30" name="Mi-MaxRule400614c3-e3f8-4a60-b2f6-da75336af774_copy_copy_copy0_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Xiaomi-Device" expression="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59Checkee657eca-e703-47bb-92f7-0d89be8a4a68" name="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_RedmiNote5_OR_DHCP_host-name_CONTAINS_RedmiNote5" expression="Mi-Max-2Ruleaf772025-5f20-420b-b403-adc085e90555Check4d9e5157-c9eb-4d6b-8ad3-1cea0ce0dcce_copy_copy_copy_copy_copy | Mi-Max-2Ruleaf772025-5f20-420b-b403-adc085e90555Checkd3c1a9f7-29fa-4f78-9e34-5392f3e3b649_copy_copy_copy_copy_copy" name="Mi-Max-2Ruleaf772025-5f20-420b-b403-adc085e90555_copy_copy_copy_copy_copy" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_RedmiNote5_OR_IP_User-Agent_CONTAINS_Redmi_Note_5" expression="Mi-MaxRule400614c3-e3f8-4a60-b2f6-da75336af774Checkb0c25f19-22bb-4f12-87bd-51c086ecee8b_copy_copy_copy0_copy_copy_copy | Mi-MaxRule400614c3-e3f8-4a60-b2f6-da75336af774_copy_copy_copy0_copyCheck7bd233ff-4530-431d-807b-8558c3928fd6_copy_copy" name="Mi-MaxRule400614c3-e3f8-4a60-b2f6-da75336af774_copy_copy_copy0_copy_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Xiaomi-Device" description="MAC OUI CONTAINS Xiaomi-Device" name="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59Checkee657eca-e703-47bb-92f7-0d89be8a4a68" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="RedmiNote5" description="IP FQDN CONTAINS RedmiNote5" name="Mi-Max-2Ruleaf772025-5f20-420b-b403-adc085e90555Check4d9e5157-c9eb-4d6b-8ad3-1cea0ce0dcce_copy_copy_copy_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="RedmiNote5" description="DHCP host-name CONTAINS RedmiNote5" name="Mi-Max-2Ruleaf772025-5f20-420b-b403-adc085e90555Checkd3c1a9f7-29fa-4f78-9e34-5392f3e3b649_copy_copy_copy_copy_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="RedmiNote5" description="IP User-Agent CONTAINS RedmiNote5" name="Mi-MaxRule400614c3-e3f8-4a60-b2f6-da75336af774Checkb0c25f19-22bb-4f12-87bd-51c086ecee8b_copy_copy_copy0_copy_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Redmi Note 5" description="IP User-Agent CONTAINS Redmi Note 5" name="Mi-MaxRule400614c3-e3f8-4a60-b2f6-da75336af774_copy_copy_copy0_copyCheck7bd233ff-4530-431d-807b-8558c3928fd6_copy_copy" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

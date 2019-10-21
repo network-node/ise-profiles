@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Sharp-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Sharp-DeviceRule06705d47-5911-4709-adfb-66e918c9f322"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_SHARP_Corporation" expression="Sharp-DeviceRule06705d47-5911-4709-adfb-66e918c9f322Checkfb5f9820-6460-4281-aaba-f37940fba028" name="Sharp-DeviceRule06705d47-5911-4709-adfb-66e918c9f322" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="SHARP Corporation" description="MAC OUI CONTAINS SHARP Corporation" name="Sharp-DeviceRule06705d47-5911-4709-adfb-66e918c9f322Checkfb5f9820-6460-4281-aaba-f37940fba028" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

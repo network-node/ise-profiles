@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Zebra Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="Zebra-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Zebra-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Zebra Printer" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Zebra-Printer" parentFQN="Zebra-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Zebra-PrinterRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Zebra-ZD510-Printer" parentFQN="Zebra-Device:Zebra-Printer" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Zebra-ZD510-PrinterRule6dfc11dd-1b8c-456e-a310-48793208109e"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Zebra-Device-Rule1-Check1" expression="Zebra-Device-Rule1-Check1" name="Zebra-DeviceRule1" ruleType="Regular"/>
+<Rule description="Zebra-Printer-Rule1-Check1" expression="Zebra-Printer-Rule1-Check1" name="Zebra-PrinterRule1" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_ZD510" expression="Zebra-ZD510-PrinterRule6dfc11dd-1b8c-456e-a310-48793208109eCheck50fd2644-fd37-453a-8e88-6666a9573d3a" name="Zebra-ZD510-PrinterRule6dfc11dd-1b8c-456e-a310-48793208109e" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Zebra" description="Condition for Zebra-Device , based on MAC-OUI" name="Zebra-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="3, 22, 23, 1, 24, 33, 35, 6, 15, 44, 11" description="Condition for Zebra-Printer , based on DHCP-PRL" name="Zebra-Printer-Rule1-Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="ZD510" description="DHCP dhcp-class-identifier CONTAINS ZD510" name="Zebra-ZD510-PrinterRule6dfc11dd-1b8c-456e-a310-48793208109eCheck50fd2644-fd37-453a-8e88-6666a9573d3a" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

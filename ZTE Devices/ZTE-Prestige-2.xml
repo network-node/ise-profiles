@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for ZTE-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="ZTE-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="ZTE-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="ZTE-Prestige-2" parentFQN="ZTE-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="ZTE-Max-DuoRule3e88c610-8f2d-48eb-b55a-9f975f6db935_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="ZTE-Devcie-Rule1-Check1" expression="ZTE-Devcie-Rule1-Check1" name="ZTE-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_N9136" expression="ZTE-Max-DuoRule3e88c610-8f2d-48eb-b55a-9f975f6db935Checkbbc6f112-330c-4ebf-921a-831706162c55_copy_copy_copy" name="ZTE-Max-DuoRule3e88c610-8f2d-48eb-b55a-9f975f6db935_copy_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="ZTE Corporation" description="Condition for ZTE-Device,based on MAC-OUI" name="ZTE-Devcie-Rule1-Check1" operator="Equals" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="N9136" description="IP User-Agent CONTAINS N9136" name="ZTE-Max-DuoRule3e88c610-8f2d-48eb-b55a-9f975f6db935Checkbbc6f112-330c-4ebf-921a-831706162c55_copy_copy_copy" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Xiaomi-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Mi-Max" parentFQN="Xiaomi-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Mi-MaxRule400614c3-e3f8-4a60-b2f6-da75336af774"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Xiaomi-Device" expression="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59Checkee657eca-e703-47bb-92f7-0d89be8a4a68" name="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_MI_MAX" expression="Mi-MaxRule400614c3-e3f8-4a60-b2f6-da75336af774Checkb0c25f19-22bb-4f12-87bd-51c086ecee8b" name="Mi-MaxRule400614c3-e3f8-4a60-b2f6-da75336af774" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Xiaomi-Device" description="MAC OUI CONTAINS Xiaomi-Device" name="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59Checkee657eca-e703-47bb-92f7-0d89be8a4a68" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="MI MAX" description="IP User-Agent CONTAINS MI MAX" name="Mi-MaxRule400614c3-e3f8-4a60-b2f6-da75336af774Checkb0c25f19-22bb-4f12-87bd-51c086ecee8b" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

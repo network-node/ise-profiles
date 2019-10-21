@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Xiaomi-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Redmi-Pro" parentFQN="Xiaomi-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="RedmiProRule5c846619-2003-4708-b84f-6308c2da198e"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Xiaomi-Device" expression="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59Checkee657eca-e703-47bb-92f7-0d89be8a4a68" name="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_RedmiPro_OR_IP_FQDN_CONTAINS_RedmiPro" expression="RedmiProRule5c846619-2003-4708-b84f-6308c2da198eCheck488d6039-4675-4cdd-9356-bf69b6239d73 | RedmiProRule5c846619-2003-4708-b84f-6308c2da198eCheck25b62586-f687-4109-b6dc-464d0f3c3f09" name="RedmiProRule5c846619-2003-4708-b84f-6308c2da198e" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Xiaomi-Device" description="MAC OUI CONTAINS Xiaomi-Device" name="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59Checkee657eca-e703-47bb-92f7-0d89be8a4a68" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="RedmiPro" description="DHCP host-name CONTAINS RedmiPro" name="RedmiProRule5c846619-2003-4708-b84f-6308c2da198eCheck488d6039-4675-4cdd-9356-bf69b6239d73" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="RedmiPro" description="IP FQDN CONTAINS RedmiPro" name="RedmiProRule5c846619-2003-4708-b84f-6308c2da198eCheck25b62586-f687-4109-b6dc-464d0f3c3f09" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

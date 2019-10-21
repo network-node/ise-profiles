@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for ZTE-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="ZTE-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="ZTE-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="ZTE-Blade-Spark" parentFQN="ZTE-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="ZTE-Avid-4Rule4131372b-b2a9-4348-968d-252500b56b5e_copy_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="ZTE-Devcie-Rule1-Check1" expression="ZTE-Devcie-Rule1-Check1" name="ZTE-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_Z971" expression="ZTE-Avid-4Rule4131372b-b2a9-4348-968d-252500b56b5eCheck85ff0ae1-67ad-4721-9329-c306abfef7bd_copy_copy_copy_copy_copy" name="ZTE-Avid-4Rule4131372b-b2a9-4348-968d-252500b56b5e_copy_copy_copy_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="ZTE Corporation" description="Condition for ZTE-Device,based on MAC-OUI" name="ZTE-Devcie-Rule1-Check1" operator="Equals" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="Z971" description="IP User-Agent CONTAINS Z971" name="ZTE-Avid-4Rule4131372b-b2a9-4348-968d-252500b56b5eCheck85ff0ae1-67ad-4721-9329-c306abfef7bd_copy_copy_copy_copy_copy" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

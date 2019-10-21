@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Xiaomi-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Xiaomi-Mi-8" parentFQN="Xiaomi-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Xiaomi-MI-5SRuleb9439dcd-632a-481c-aa3b-faadeaccd139_copy0"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Xiaomi-Device" expression="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59Checkee657eca-e703-47bb-92f7-0d89be8a4a68" name="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_MI8_OR_IP_FQDN_CONTAINS_MI8" expression="Xiaomi-MI-5SRuleb9439dcd-632a-481c-aa3b-faadeaccd139Check1cf2d176-ab20-4ffe-9f0e-e39bb4dd1fa0_copy0 | Xiaomi-MI-5SRuleb9439dcd-632a-481c-aa3b-faadeaccd139Checkcc7b2211-1e8f-4990-85df-4b36be9c5976_copy0" name="Xiaomi-MI-5SRuleb9439dcd-632a-481c-aa3b-faadeaccd139_copy0" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Xiaomi-Device" description="MAC OUI CONTAINS Xiaomi-Device" name="Xiaomi-DeviceRulebd58789c-564b-475d-b191-bd0b4707de59Checkee657eca-e703-47bb-92f7-0d89be8a4a68" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="MI8" description="DHCP host-name CONTAINS MI8" name="Xiaomi-MI-5SRuleb9439dcd-632a-481c-aa3b-faadeaccd139Check1cf2d176-ab20-4ffe-9f0e-e39bb4dd1fa0_copy0" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="MI8" description="IP FQDN CONTAINS MI8" name="Xiaomi-MI-5SRuleb9439dcd-632a-481c-aa3b-faadeaccd139Checkcc7b2211-1e8f-4990-85df-4b36be9c5976_copy0" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

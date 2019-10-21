@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Sharp-MX-3050V" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Sharp-MX-M3570Rule72a3895e-5772-4907-8331-f40431be28d6_copy_copy0"/>
+<PolicyRule certaintyFactor="20" name="Sharp-MX-M3570Rulec2389fd4-9e5d-4a7f-b9eb-b04b98676d75_copy_copy0"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="SNMP_hrDeviceDescr_CONTAINS_MX-3050V" expression="Sharp-MX-M3570Rule72a3895e-5772-4907-8331-f40431be28d6Check22433910-28b9-4d0a-ba82-415912c79a41_copy_copy0" name="Sharp-MX-M3570Rule72a3895e-5772-4907-8331-f40431be28d6_copy_copy0" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_MX-3050V" expression="Sharp-MX-M3570Rulec2389fd4-9e5d-4a7f-b9eb-b04b98676d75Check3026fccd-ec68-4e61-8c08-bad6ea4d0555_copy_copy0" name="Sharp-MX-M3570Rulec2389fd4-9e5d-4a7f-b9eb-b04b98676d75_copy_copy0" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="hrDeviceDescr" attributeValue="MX-3050V" description="SNMP hrDeviceDescr CONTAINS MX-3050V" name="Sharp-MX-M3570Rule72a3895e-5772-4907-8331-f40431be28d6Check22433910-28b9-4d0a-ba82-415912c79a41_copy_copy0" operator="Contains" type="Snmp"/>
+<Check attributeName="sysDescr" attributeValue="MX-3050V" description="SNMP sysDescr CONTAINS MX-3050V" name="Sharp-MX-M3570Rulec2389fd4-9e5d-4a7f-b9eb-b04b98676d75Check3026fccd-ec68-4e61-8c08-bad6ea4d0555_copy_copy0" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
