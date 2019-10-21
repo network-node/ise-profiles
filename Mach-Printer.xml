@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Godex-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Genicom-DeviceRule4611aebd-c5d3-483b-9197-a1b6fca95dfe_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Mach-Printer" parentFQN="Godex-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Mach-PrinterRule24d498b0-b8c8-4160-8cfa-c398c1752fcd"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_GODEX_INTERNATIONAL" expression="Genicom-DeviceRule4611aebd-c5d3-483b-9197-a1b6fca95dfeCheckd7e8eaad-46c2-4ed6-b19a-f66ad4791fda_copy" name="Genicom-DeviceRule4611aebd-c5d3-483b-9197-a1b6fca95dfe_copy" ruleType="Regular"/>
+<Rule description="IP_FQDN_STARTSWITH_Mach_OR_DHCP_host-name_STARTSWITH_Mach" expression="Mach-PrinterRule24d498b0-b8c8-4160-8cfa-c398c1752fcdCheck918a904c-51a0-4330-9a21-2fb3966b76e6 | Mach-PrinterRule24d498b0-b8c8-4160-8cfa-c398c1752fcdCheck08eba5dd-5e52-410a-b2c1-ed35243f252a" name="Mach-PrinterRule24d498b0-b8c8-4160-8cfa-c398c1752fcd" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="GODEX INTERNATIONAL" description="MAC OUI CONTAINS GODEX INTERNATIONAL" name="Genicom-DeviceRule4611aebd-c5d3-483b-9197-a1b6fca95dfeCheckd7e8eaad-46c2-4ed6-b19a-f66ad4791fda_copy" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="Mach" description="IP FQDN STARTSWITH Mach" name="Mach-PrinterRule24d498b0-b8c8-4160-8cfa-c398c1752fcdCheck918a904c-51a0-4330-9a21-2fb3966b76e6" operator="Starts with" type="IP"/>
+<Check attributeName="host-name" attributeValue="Mach" description="DHCP host-name STARTSWITH Mach" name="Mach-PrinterRule24d498b0-b8c8-4160-8cfa-c398c1752fcdCheck08eba5dd-5e52-410a-b2c1-ed35243f252a" operator="Starts with" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

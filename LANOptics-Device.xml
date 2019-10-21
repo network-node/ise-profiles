@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="LANOptics-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Interphase-DeviceRule1f9a547e-31c5-48e6-a152-6a6b55cff143_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_LANOPTICS" expression="Interphase-DeviceRule1f9a547e-31c5-48e6-a152-6a6b55cff143Check811e8f36-80d5-4199-86cf-b688d6039a06_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy" name="Interphase-DeviceRule1f9a547e-31c5-48e6-a152-6a6b55cff143_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LANOPTICS" description="MAC OUI CONTAINS LANOPTICS" name="Interphase-DeviceRule1f9a547e-31c5-48e6-a152-6a6b55cff143Check811e8f36-80d5-4199-86cf-b688d6039a06_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

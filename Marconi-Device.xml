@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Marconi-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Marconi-DeviceRule638af9b5-5386-4257-bb62-48d4c3c1f299"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Marconi" expression="Marconi-DeviceRule638af9b5-5386-4257-bb62-48d4c3c1f299Check339ce4a9-b209-4779-ba90-590dc52bd339" name="Marconi-DeviceRule638af9b5-5386-4257-bb62-48d4c3c1f299" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Marconi" description="MAC OUI CONTAINS Marconi" name="Marconi-DeviceRule638af9b5-5386-4257-bb62-48d4c3c1f299Check339ce4a9-b209-4779-ba90-590dc52bd339" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

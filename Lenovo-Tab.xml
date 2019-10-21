@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for all Android SmartPhones" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Android" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="AndroidRule33"/>
+<PolicyRule certaintyFactor="30" name="AndroidRule2"/>
+<PolicyRule certaintyFactor="30" name="AndroidRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Lenovo-Tab" parentFQN="Android" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Lenovo-TabRule5333d64b-52fa-487a-94a1-693641a06776"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Android-Rule2-Check1" expression="Android-Rule2-Check1" name="AndroidRule33" ruleType="Regular"/>
+<Rule description="AndroidRule1Check2" expression="AndroidRule1Check2" name="AndroidRule2" ruleType="Regular"/>
+<Rule description="AndroidRule1Check1" expression="AndroidRule1Check1" name="AndroidRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_TB-8304F1_OR_IP_User-Agent_CONTAINS_TB2-X30F_OR_IP_User-Agent_CONTAINS_Tab2A7-20F_OR_IP_User-Agent_CONTAINS_LenovoTB-X103F_OR_IP_User-Agent_CONTAINS_LenovoTB_OR_IP_User-Agent_CONTAINS_TB-8304F1" expression="((((Lenovo-TabRule5333d64b-52fa-487a-94a1-693641a06776Checkd0b9e285-8f17-4683-874f-98f11b732001 | Lenovo-TabRule5333d64b-52fa-487a-94a1-693641a06776Check6f7fe666-1d3e-4a54-8d94-0ec9d4857107) | Lenovo-TabRule5333d64b-52fa-487a-94a1-693641a06776Check877a7eb2-4088-487a-b28d-78a959ab3f70) | Lenovo-TabRule5333d64b-52fa-487a-94a1-693641a06776Check06d2f541-0ea3-479d-a7aa-49f88211f6b1) | Lenovo-TabRule5333d64b-52fa-487a-94a1-693641a06776Checkae1b3448-5a4f-47e0-baab-15da71079535) | Lenovo-TabRule5333d64b-52fa-487a-94a1-693641a06776Checkcb4c7ed1-4114-496c-87dd-3b9a1b5ef044" name="Lenovo-TabRule5333d64b-52fa-487a-94a1-693641a06776" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="device-platform" attributeValue="android" description="Condition for Android based on ACIDEX:device-platform" name="Android-Rule2-Check1" operator="Equals" type="ACIDEX"/>
+<Check attributeName="host-name" attributeValue="android" description="AndroidRule1Check2" name="AndroidRule1Check2" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="Android" description="AndroidRule1Check1" name="AndroidRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="TB-8304F1" description="IP User-Agent CONTAINS TB-8304F1" name="Lenovo-TabRule5333d64b-52fa-487a-94a1-693641a06776Checkd0b9e285-8f17-4683-874f-98f11b732001" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="TB2-X30F" description="IP User-Agent CONTAINS TB2-X30F" name="Lenovo-TabRule5333d64b-52fa-487a-94a1-693641a06776Check6f7fe666-1d3e-4a54-8d94-0ec9d4857107" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Tab2A7-20F" description="IP User-Agent CONTAINS Tab2A7-20F" name="Lenovo-TabRule5333d64b-52fa-487a-94a1-693641a06776Check877a7eb2-4088-487a-b28d-78a959ab3f70" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LenovoTB-X103F" description="IP User-Agent CONTAINS LenovoTB-X103F" name="Lenovo-TabRule5333d64b-52fa-487a-94a1-693641a06776Check06d2f541-0ea3-479d-a7aa-49f88211f6b1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LenovoTB" description="IP User-Agent CONTAINS LenovoTB" name="Lenovo-TabRule5333d64b-52fa-487a-94a1-693641a06776Checkae1b3448-5a4f-47e0-baab-15da71079535" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="TB-8304F1" description="IP User-Agent CONTAINS TB-8304F1" name="Lenovo-TabRule5333d64b-52fa-487a-94a1-693641a06776Checkcb4c7ed1-4114-496c-87dd-3b9a1b5ef044" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

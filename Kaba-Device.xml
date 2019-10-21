@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Kaba-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Iwill-DeviceRule1473234f-8dc1-4872-a1c3-6b79ffffd75f_copy"/>
+<PolicyRule certaintyFactor="10" name="Iwill-DeviceRule3ba8bb26-6117-4f3c-b4be-1adf45fc8303_copy"/>
+<PolicyRule certaintyFactor="20" name="Iwill-DeviceRulefc578e2d-c198-4add-828a-3aca64b37df6_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="IP_FQDN_STARTSWITH_Kaba_OR_DHCP_host-name_STARTSWITH_Kaba" expression="Iwill-DeviceRule1473234f-8dc1-4872-a1c3-6b79ffffd75fCheck6fe5a680-3265-4341-9d33-0ce07d25db30_copy | Iwill-DeviceRule1473234f-8dc1-4872-a1c3-6b79ffffd75fChecke3582440-41bf-406e-b9fa-db9e756c67b4_copy" name="Iwill-DeviceRule1473234f-8dc1-4872-a1c3-6b79ffffd75f_copy" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-parameter-request-list_EQUALS_1,_3,_6,_12,_15" expression="Iwill-DeviceRule3ba8bb26-6117-4f3c-b4be-1adf45fc8303Check42226ebf-ace1-4542-b220-fbffd74fb0b3_copy" name="Iwill-DeviceRule3ba8bb26-6117-4f3c-b4be-1adf45fc8303_copy" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Kaba_Benzing" expression="Iwill-DeviceRulefc578e2d-c198-4add-828a-3aca64b37df6Checkc91970f9-a10f-4f7a-843c-e9652cbad7fd_copy" name="Iwill-DeviceRulefc578e2d-c198-4add-828a-3aca64b37df6_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="FQDN" attributeValue="Kaba" description="IP FQDN STARTSWITH Kaba" name="Iwill-DeviceRule1473234f-8dc1-4872-a1c3-6b79ffffd75fCheck6fe5a680-3265-4341-9d33-0ce07d25db30_copy" operator="Starts with" type="IP"/>
+<Check attributeName="host-name" attributeValue="Kaba" description="DHCP host-name STARTSWITH Kaba" name="Iwill-DeviceRule1473234f-8dc1-4872-a1c3-6b79ffffd75fChecke3582440-41bf-406e-b9fa-db9e756c67b4_copy" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 3, 6, 12, 15" description="DHCP dhcp-parameter-request-list EQUALS 1, 3, 6, 12, 15" name="Iwill-DeviceRule3ba8bb26-6117-4f3c-b4be-1adf45fc8303Check42226ebf-ace1-4542-b220-fbffd74fb0b3_copy" operator="Equals" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Kaba Benzing" description="MAC OUI CONTAINS Kaba Benzing" name="Iwill-DeviceRulefc578e2d-c198-4add-828a-3aca64b37df6Checkc91970f9-a10f-4f7a-843c-e9652cbad7fd_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

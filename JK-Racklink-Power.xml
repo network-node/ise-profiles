@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="JK-Microsystems-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Interphase-DeviceRule1f9a547e-31c5-48e6-a152-6a6b55cff143_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="JK-Racklink-Power" parentFQN="JK-Microsystems-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Honeywell-Network-ControllerRule533addbb-f8fd-458c-9662-de36c16e9075_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_JK_microsystems" expression="Interphase-DeviceRule1f9a547e-31c5-48e6-a152-6a6b55cff143Check811e8f36-80d5-4199-86cf-b688d6039a06_copy_copy_copy_copy" name="Interphase-DeviceRule1f9a547e-31c5-48e6-a152-6a6b55cff143_copy_copy_copy_copy" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_STARTSWITH_RackLink" expression="Honeywell-Network-ControllerRule533addbb-f8fd-458c-9662-de36c16e9075Checkc050ecf4-f142-45e2-b092-569d20f07ea1_copy" name="Honeywell-Network-ControllerRule533addbb-f8fd-458c-9662-de36c16e9075_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="JK microsystems" description="MAC OUI CONTAINS JK microsystems" name="Interphase-DeviceRule1f9a547e-31c5-48e6-a152-6a6b55cff143Check811e8f36-80d5-4199-86cf-b688d6039a06_copy_copy_copy_copy" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="RackLink" description="DHCP dhcp-class-identifier STARTSWITH RackLink" name="Honeywell-Network-ControllerRule533addbb-f8fd-458c-9662-de36c16e9075Checkc050ecf4-f142-45e2-b092-569d20f07ea1_copy" operator="Starts with" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
