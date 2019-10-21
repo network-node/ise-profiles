@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Digital camera and security system products&#9;https://en.wikipedia.org/wiki/Avigilon" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Avigilon-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Avigilon-DeviceRulea3084b85-2c09-4f1c-a009-c36703af44e2"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Avigilon-DP20-Camera" parentFQN="Avigilon-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Avigilon-DP20-CameraRulef167cfbb-3b2b-44f1-a48e-41a81970b604"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Avigilon" expression="Avigilon-DeviceRulea3084b85-2c09-4f1c-a009-c36703af44e2Checkb2bbbe6b-3b33-4d92-9bdb-b63deee29779" name="Avigilon-DeviceRulea3084b85-2c09-4f1c-a009-c36703af44e2" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_DP20" expression="Avigilon-DP20-CameraRulef167cfbb-3b2b-44f1-a48e-41a81970b604Checkd0723021-6fb7-4ae8-9e4a-6ee9faa52353" name="Avigilon-DP20-CameraRulef167cfbb-3b2b-44f1-a48e-41a81970b604" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Avigilon" description="MAC OUI CONTAINS Avigilon" name="Avigilon-DeviceRulea3084b85-2c09-4f1c-a009-c36703af44e2Checkb2bbbe6b-3b33-4d92-9bdb-b63deee29779" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="DP20" description="DHCP host-name CONTAINS DP20" name="Avigilon-DP20-CameraRulef167cfbb-3b2b-44f1-a48e-41a81970b604Checkd0723021-6fb7-4ae8-9e4a-6ee9faa52353" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

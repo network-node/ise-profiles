@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Axis-Device" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Axis-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Axis-DeviceRule3"/>
+<PolicyRule certaintyFactor="10" name="Axis-DeviceRule2"/>
+<PolicyRule certaintyFactor="10" name="Axis-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Axis-Network-Camera" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Axis-Network-Camera" parentFQN="Axis-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Axis-Network-CameraRule22"/>
+<PolicyRule certaintyFactor="20" name="Axis-Network-CameraRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Axis-F41" parentFQN="Axis-Device:Axis-Network-Camera" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Axis-216FDRule8ae8ca93-90f3-4cde-8cde-7a046cf46650_copy_copy"/>
+<PolicyRule certaintyFactor="20" name="Axis-216FDRule2561ea91-525d-4cd1-8b75-f0be48d5f895_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Axis-Device-Rule3-Check1" expression="Axis-Device-Rule3-Check1" name="Axis-DeviceRule3" ruleType="Regular"/>
+<Rule description="Axis-Device-Rule2-Check1" expression="Axis-Device-Rule2-Check1" name="Axis-DeviceRule2" ruleType="Regular"/>
+<Rule description="Axis-Device-Rule1-Check1" expression="Axis-Device-Rule1-Check1" name="Axis-DeviceRule1" ruleType="Regular"/>
+<Rule description="Axis-Network-Camera-Rule2-Check1" expression="Axis-Network-Camera-Rule2-Check1" name="Axis-Network-CameraRule22" ruleType="Regular"/>
+<Rule description="Axis-Network-Camera-Rule1Check1" expression="Axis-Network-Camera-Rule1Check1" name="Axis-Network-CameraRule1" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_F41" expression="Axis-216FDRule8ae8ca93-90f3-4cde-8cde-7a046cf46650Check5a5e3d1b-572d-4b2b-bdbd-3c718d9f2082_copy_copy" name="Axis-216FDRule8ae8ca93-90f3-4cde-8cde-7a046cf46650_copy_copy" ruleType="Regular"/>
+<Rule description="LLDP_lldpSystemDescription_CONTAINS_F41" expression="Axis-216FDRule2561ea91-525d-4cd1-8b75-f0be48d5f895Checkffe2fd61-073c-4c59-9567-421124f48297_copy_copy" name="Axis-216FDRule2561ea91-525d-4cd1-8b75-f0be48d5f895_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="host-name" attributeValue="axis" description="Condition for Axis-Device , based on DHCP-Host-Name" name="Axis-Device-Rule3-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="AXIS" description="Condition for Axis-Device ,  based on DHCP-Class-Identifier" name="Axis-Device-Rule2-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="AXIS" description="Condition for Axis-Device , based on MAC-OUI" name="Axis-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="dhcpv6-vendor-class" attributeValue="Network Camera" description="Condition for Axis-Network-Camera based on DHCP:dhcpv6-vendor-class" name="Axis-Network-Camera-Rule2-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Network Camera" description="Condition for Axis-Network-Camera,based on DHCP-Class-Identifier" name="Axis-Network-Camera-Rule1Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="F41" description="DHCP dhcp-class-identifier CONTAINS F41" name="Axis-216FDRule8ae8ca93-90f3-4cde-8cde-7a046cf46650Check5a5e3d1b-572d-4b2b-bdbd-3c718d9f2082_copy_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="lldpSystemDescription" attributeValue="F41" description="LLDP lldpSystemDescription CONTAINS F41" name="Axis-216FDRule2561ea91-525d-4cd1-8b75-f0be48d5f895Checkffe2fd61-073c-4c59-9567-421124f48297_copy_copy" operator="Contains" type="LLDP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

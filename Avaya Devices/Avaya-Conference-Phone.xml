@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Polycom devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Polycom-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Polycom-DeviceRule650e6e5e-d2be-4edc-a68b-102975235d8c"/>
+<PolicyRule certaintyFactor="10" name="Polycom-Device-OUI-Rule"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Avaya-Conference-Phone" parentFQN="Polycom-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Avaya-Conference-PhoneRule0c2f0ae8-cc74-437a-8c2c-77048a052595"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_ViaVideo" expression="Polycom-DeviceRule650e6e5e-d2be-4edc-a68b-102975235d8cChecke1a61c5a-ad1e-4630-b556-da1742896916" name="Polycom-DeviceRule650e6e5e-d2be-4edc-a68b-102975235d8c" ruleType="Regular"/>
+<Rule description="PolycomOUICheck" expression="PolycomOUICheck" name="Polycom-Device-OUI-Rule" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_Avaya_Conference_Phone_OR_DHCP_host-name_CONTAINS_Avaya_Conference_Phone" expression="Avaya-Conference-PhoneRule0c2f0ae8-cc74-437a-8c2c-77048a052595Check942cbb23-4409-4a2f-952e-5a2a775d78f6 | Avaya-Conference-PhoneRule0c2f0ae8-cc74-437a-8c2c-77048a052595Checkbe634fff-5be7-447a-aac5-e2643c6713e6" name="Avaya-Conference-PhoneRule0c2f0ae8-cc74-437a-8c2c-77048a052595" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="ViaVideo" description="MAC OUI CONTAINS ViaVideo" name="Polycom-DeviceRule650e6e5e-d2be-4edc-a68b-102975235d8cChecke1a61c5a-ad1e-4630-b556-da1742896916" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Polycom" description="Polycom OUI Check" name="PolycomOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="Avaya Conference Phone" description="IP FQDN CONTAINS Avaya Conference Phone" name="Avaya-Conference-PhoneRule0c2f0ae8-cc74-437a-8c2c-77048a052595Check942cbb23-4409-4a2f-952e-5a2a775d78f6" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="Avaya Conference Phone" description="DHCP host-name CONTAINS Avaya Conference Phone" name="Avaya-Conference-PhoneRule0c2f0ae8-cc74-437a-8c2c-77048a052595Checkbe634fff-5be7-447a-aac5-e2643c6713e6" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

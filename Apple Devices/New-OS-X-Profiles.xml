@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="80" name="Apple-Mac-OS-X" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="80" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4"/>
+<PolicyRule certaintyFactor="80" name="Apple-Mac-OS-XRule5eece96d-9917-402f-9816-4b377a079f87"/>
+<PolicyRule certaintyFactor="80" name="Apple-Mac-OS-XRule3ed01d89-9601-40ea-a1a0-e7e1096f5e6c"/>
+<PolicyRule certaintyFactor="80" name="Apple-Mac-OS-XRule4d18aefc-a9ed-4b9a-8160-5ccb3979a4a2"/>
+<PolicyRule certaintyFactor="80" name="Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840d"/>
+<PolicyRule certaintyFactor="80" name="Apple-Mac-OS-XRuleb9db30cf-78c0-4cb0-a22e-8f20fb884c51"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for all Apple MacBooks" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="3000" name="Apple-MacBook-Air" parentFQN="Apple-Mac-OS-X" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="3000" name="Apple-MacBook-AirRule513f32a3-cb06-40d3-8a3c-3e6bc2c17b71"/>
+<PolicyRule certaintyFactor="3000" name="Apple-MacBook-AirRuleb1ae3aa9-727f-4486-b4cf-69abb15196cf"/>
+<PolicyRule certaintyFactor="3000" name="Apple-MacBook-AirRule10fda461-a506-4ef4-b32f-a97e303668ed"/>
+<PolicyRule certaintyFactor="3000" name="Apple-MacBook-AirRule5ac503e3-67d3-422e-8c9b-7d0c0df144d1"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Mac OS X 10.10 (Yosemite) Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Mac-OS_X_Yosemite-Workstation" parentFQN="Apple-Mac-OS-X" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="OS_X_Yosemite-WorkstationRule1_copy_copy_copy"/>
+<PolicyRule certaintyFactor="5" name="OS_X_Yosemite-WorkstationRule2_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Mac OS X 10.4 (Tiger) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Mac-OS_X_Tiger-Workstation" parentFQN="Apple-Mac-OS-X" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="OS_X_Tiger-WorkstationRule22_copy_copy0_copy"/>
+<PolicyRule certaintyFactor="5" name="OS_X_Tiger-WorkstationRule11_copy_copy0_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Macintosh OS X 10.6 (Snow Leopard) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Mac-OS_X_SnowLeopard-Workstation" parentFQN="Apple-Mac-OS-X" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="OS_X_SnowLeopard-WorkstationRule11_copy_copy_copy"/>
+<PolicyRule certaintyFactor="5" name="OS_X_SnowLeopard-WorkstationRule22_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for OS_X_Sierra-Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Mac-OS_X_Sierra-Workstation" parentFQN="Apple-Mac-OS-X" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="OS_X_El_Capitan-WorkstationRule22_copy_copy_copy_copy"/>
+<PolicyRule certaintyFactor="5" name="OS_X_El_Capitan-WorkstationRule11_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Macintosh OS X 10.8 (Mountain Lion) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Mac-OS_X_MountainLion-Workstation" parentFQN="Apple-Mac-OS-X" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="OS_X_MountainLion-WorkstationRule11_copy_copy_copy"/>
+<PolicyRule certaintyFactor="5" name="OS_X_MountainLion-WorkstationRule22_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for OS_X_Mojave-Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Mac-OS_X_Mojave-Workstation" parentFQN="Apple-Mac-OS-X" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="OS_X_Mojave-WorkstationRule2_copy_copy_copy"/>
+<PolicyRule certaintyFactor="5" name="OS_X_Mojave-WorkstationRule1_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Mac OS X 10.9 (Mavericks) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Mac-OS_X_Mavericks-Workstation" parentFQN="Apple-Mac-OS-X" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="OS_X_Mavericks-WorkstationRule22_copy_copy_copy"/>
+<PolicyRule certaintyFactor="5" name="OS_X_Mavericks-WorkstationRule11_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Macintosh OS X 10.7 (Lion) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Mac-OS_X_Lion-Workstation" parentFQN="Apple-Mac-OS-X" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="OS_X_Lion-WorkstationRule11_copy_copy_copy"/>
+<PolicyRule certaintyFactor="5" name="OS_X_Lion-WorkstationRule22_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Mac OS X 10.5 (Leopard) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Mac-OS_X_Leopard-Workstation" parentFQN="Apple-Mac-OS-X" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="OS_X_Leopard-WorkstationRule11_copy_copy0_copy"/>
+<PolicyRule certaintyFactor="5" name="OS_X_Leopard-WorkstationRule22_copy_copy0_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for OS_X_High_Sierra-Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Mac-OS_X_High_Sierra-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Air" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="OS_X_High_Sierra-WorkstationRule1_copy_copy_copy0"/>
+<PolicyRule certaintyFactor="5" name="OS_X_High_Sierra-WorkstationRule2_copy_copy_copy0"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for OS_X_El_Capitan-Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Mac-OS_X_El_Capitan-Workstation" parentFQN="Apple-Mac-OS-X" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="OS_X_El_Capitan-WorkstationRule11_copy0_copy_copy0"/>
+<PolicyRule certaintyFactor="5" name="OS_X_El_Capitan-WorkstationRule22_copy0_copy_copy0"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Macintosh OS X workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Mac-OS_X-Workstation" parentFQN="Apple-Mac-OS-X" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="OS_X-WorkstationRule11_copy_copy_copy_copy"/>
+<PolicyRule certaintyFactor="5" name="OS_X-WorkstationRuleabb19c9f-6742-4de1-a375-e3c983720081_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Mac OS X 10.10 (Yosemite) Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="Air-OS_X_Yosemite-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Air" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_Yosemite-WorkstationRule2_copy_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_Yosemite-WorkstationRule1_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Mac OS X 10.4 (Tiger) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="Air-OS_X_Tiger-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Air" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_Tiger-WorkstationRule22_copy_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_Tiger-WorkstationRule11_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Macintosh OS X 10.6 (Snow Leopard) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="Air-OS_X_SnowLeopard-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Air" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_SnowLeopard-WorkstationRule22_copy_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_SnowLeopard-WorkstationRule11_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for OS_X_Sierra-Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="Air-OS_X_Sierra-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Air" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_El_Capitan-WorkstationRule11_copy_copy_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_El_Capitan-WorkstationRule22_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Macintosh OS X 10.8 (Mountain Lion) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="Air-OS_X_MountainLion-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Air" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_MountainLion-WorkstationRule11_copy_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_MountainLion-WorkstationRule22_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for OS_X_Mojave-Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="Air-OS_X_Mojave-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Air" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_Mojave-WorkstationRule2_copy_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_Mojave-WorkstationRule1_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Mac OS X 10.9 (Mavericks) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="Air-OS_X_Mavericks-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Air" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_Mavericks-WorkstationRule22_copy_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_Mavericks-WorkstationRule11_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Macintosh OS X 10.7 (Lion) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="Air-OS_X_Lion-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Air" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_Lion-WorkstationRule22_copy_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_Lion-WorkstationRule11_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Mac OS X 10.5 (Leopard) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="Air-OS_X_Leopard-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Air" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_Leopard-WorkstationRule11_copy_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_Leopard-WorkstationRule22_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for OS_X_High_Sierra-Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="Air-OS_X_High_Sierra-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Air" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_High_Sierra-WorkstationRule2_copy_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_High_Sierra-WorkstationRule1_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for OS_X_El_Capitan-Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="Air-OS_X_El_Capitan-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Air" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_El_Capitan-WorkstationRule11_copy0_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_El_Capitan-WorkstationRule22_copy0_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Macintosh OS X workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Air-OS_X-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Air" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="OS_X-WorkstationRuleabb19c9f-6742-4de1-a375-e3c983720081_copy_copy"/>
+<PolicyRule certaintyFactor="20" name="OS_X-WorkstationRule11_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for all Apple MacBooks" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="3000" name="Apple-iMac" parentFQN="Apple-Mac-OS-X" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="3000" name="Apple-iMacRuleb8c80ed1-0b69-4b8b-840b-8436e8e185e0"/>
+<PolicyRule certaintyFactor="3000" name="Apple-iMacRule6d93c23d-220b-43ae-b8dc-f45373192d27"/>
+<PolicyRule certaintyFactor="3000" name="Apple-iMacRule034d5054-bf57-42b8-803a-72fa3a8e0dbe"/>
+<PolicyRule certaintyFactor="3000" name="Apple-iMacRule700d1457-f275-4262-975e-664d1745e21f"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for all Apple MacBooks" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="500" name="Apple-MacBook-Updated" parentFQN="Apple-Mac-OS-X" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="500" name="Apple-MacBook-UpdatedRule9c3563b8-86fb-482a-868b-a225443284fa"/>
+<PolicyRule certaintyFactor="500" name="Apple-MacBook-UpdatedRule16969fd4-21d7-486d-8789-f29dc9693de6"/>
+<PolicyRule certaintyFactor="500" name="Apple-MacBook-UpdatedRule2d7cd1e1-21e8-49ea-9ead-ac2d791a7b01"/>
+<PolicyRule certaintyFactor="500" name="Apple-MacBook-UpdatedRule02ec775e-066e-478d-b40b-53e87b5cdd1b"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Mac OS X 10.10 (Yosemite) Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="iMAC-OS_X_Yosemite-Workstation" parentFQN="Apple-Mac-OS-X:Apple-iMac" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_Yosemite-WorkstationRule2_copy_copy0"/>
+<PolicyRule certaintyFactor="30" name="OS_X_Yosemite-WorkstationRule1_copy_copy0"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Mac OS X 10.4 (Tiger) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="iMAC-OS_X_Tiger-Workstation" parentFQN="Apple-Mac-OS-X:Apple-iMac" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_Tiger-WorkstationRule11_copy_copy0"/>
+<PolicyRule certaintyFactor="30" name="OS_X_Tiger-WorkstationRule22_copy_copy0"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Macintosh OS X 10.6 (Snow Leopard) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="iMAC-OS_X_SnowLeopard-Workstation" parentFQN="Apple-Mac-OS-X:Apple-iMac" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_SnowLeopard-WorkstationRule11_copy_copy0"/>
+<PolicyRule certaintyFactor="30" name="OS_X_SnowLeopard-WorkstationRule22_copy_copy0"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Macintosh OS X 10.8 (Mountain Lion) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="iMAC-OS_X_MountainLion-Workstation" parentFQN="Apple-Mac-OS-X:Apple-iMac" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_MountainLion-WorkstationRule11_copy_copy0"/>
+<PolicyRule certaintyFactor="30" name="OS_X_MountainLion-WorkstationRule22_copy_copy0"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for OS_X_Mojave-Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="iMAC-OS_X_Mojave-Workstation" parentFQN="Apple-Mac-OS-X:Apple-iMac" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_Mojave-WorkstationRule1_copy_copy0"/>
+<PolicyRule certaintyFactor="30" name="OS_X_Mojave-WorkstationRule2_copy_copy0"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Mac OS X 10.9 (Mavericks) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="iMAC-OS_X_Mavericks-Workstation" parentFQN="Apple-Mac-OS-X:Apple-iMac" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_Mavericks-WorkstationRule22_copy_copy0"/>
+<PolicyRule certaintyFactor="30" name="OS_X_Mavericks-WorkstationRule11_copy_copy0"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Macintosh OS X 10.7 (Lion) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="iMAC-OS_X_Lion-Workstation" parentFQN="Apple-Mac-OS-X:Apple-iMac" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_Lion-WorkstationRule22_copy_copy0"/>
+<PolicyRule certaintyFactor="30" name="OS_X_Lion-WorkstationRule11_copy_copy0"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Mac OS X 10.5 (Leopard) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="iMAC-OS_X_Leopard-Workstation" parentFQN="Apple-Mac-OS-X:Apple-iMac" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_Leopard-WorkstationRule22_copy_copy0"/>
+<PolicyRule certaintyFactor="30" name="OS_X_Leopard-WorkstationRule11_copy_copy0"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for OS_X_High_Sierra-Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="iMAC-OS_X_High_Sierra-Workstation" parentFQN="Apple-Mac-OS-X:Apple-iMac" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_High_Sierra-WorkstationRule2_copy_copy_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_High_Sierra-WorkstationRule1_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for OS_X_El_Capitan-Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="iMAC-OS_X_El_Capitan-Workstation" parentFQN="Apple-Mac-OS-X:Apple-iMac" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_El_Capitan-WorkstationRule22_copy0_copy_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_El_Capitan-WorkstationRule11_copy0_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Macintosh OS X workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="iMAC-OS_X-Workstation" parentFQN="Apple-Mac-OS-X:Apple-iMac" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="OS_X-WorkstationRule11_copy_copy_copy"/>
+<PolicyRule certaintyFactor="20" name="OS_X-WorkstationRuleabb19c9f-6742-4de1-a375-e3c983720081_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Macintosh OS X workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="MacbookPro-OS_X-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Updated" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="OS_X-WorkstationRule11_copy"/>
+<PolicyRule certaintyFactor="20" name="OS_X-WorkstationRuleabb19c9f-6742-4de1-a375-e3c983720081_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for OS_X_Sierra-Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="iMAC-OS_X_Sierra-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Updated:MacbookPro-OS_X-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_El_Capitan-WorkstationRule22_copy_copy_copy0"/>
+<PolicyRule certaintyFactor="30" name="OS_X_El_Capitan-WorkstationRule11_copy_copy_copy0"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Mac OS X 10.10 (Yosemite) Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="MacbookPro-OS_X_Yosemite-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Updated:MacbookPro-OS_X-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_Yosemite-WorkstationRule1_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_Yosemite-WorkstationRule2_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Mac OS X 10.4 (Tiger) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="MacbookPro-OS_X_Tiger-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Updated:MacbookPro-OS_X-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_Tiger-WorkstationRule11_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_Tiger-WorkstationRule22_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Macintosh OS X 10.6 (Snow Leopard) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="MacbookPro-OS_X_SnowLeopard-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Updated:MacbookPro-OS_X-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_SnowLeopard-WorkstationRule22_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_SnowLeopard-WorkstationRule11_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for OS_X_Sierra-Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="MacbookPro-OS_X_Sierra-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Updated:MacbookPro-OS_X-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_El_Capitan-WorkstationRule11_copy_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_El_Capitan-WorkstationRule22_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Macintosh OS X 10.8 (Mountain Lion) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="MacbookPro-OS_X_MountainLion-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Updated:MacbookPro-OS_X-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_MountainLion-WorkstationRule22_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_MountainLion-WorkstationRule11_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for OS_X_Mojave-Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="MacbookPro-OS_X_Mojave-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Updated:MacbookPro-OS_X-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_Mojave-WorkstationRule2_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_Mojave-WorkstationRule1_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Mac OS X 10.9 (Mavericks) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="MacbookPro-OS_X_Mavericks-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Updated:MacbookPro-OS_X-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_Mavericks-WorkstationRule22_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_Mavericks-WorkstationRule11_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Macintosh OS X 10.7 (Lion) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="MacbookPro-OS_X_Lion-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Updated:MacbookPro-OS_X-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_Lion-WorkstationRule11_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_Lion-WorkstationRule22_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Mac OS X 10.5 (Leopard) workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="MacbookPro-OS_X_Leopard-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Updated:MacbookPro-OS_X-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_Leopard-WorkstationRule22_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_Leopard-WorkstationRule11_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for OS_X_El_Capitan-Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="MacbookPro-OS_X_El_Capitan-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Updated:MacbookPro-OS_X-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_El_Capitan-WorkstationRule11_copy0"/>
+<PolicyRule certaintyFactor="30" name="OS_X_El_Capitan-WorkstationRule22_copy0"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for OS_X_High_Sierra-Workstation" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="MacbookPro-OS_X_High_Sierra-Workstation" parentFQN="Apple-Mac-OS-X:Apple-MacBook-Updated:MacbookPro-OS_X-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="OS_X_High_Sierra-WorkstationRule1_copy"/>
+<PolicyRule certaintyFactor="30" name="OS_X_High_Sierra-WorkstationRule2_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="DHCP_dhcp-parameter-request-list_STARTSWITH_1,_121,_3,_6,_15,_119,_252,_95,_44,_46_OR_DHCP_dhcp-parameter-request-list_STARTSWITH_1,_3,_6,_15,_119,_95,_252,_44,_46_OR_DHCP_dhcp-parameter-request-list_STARTSWITH_1,_3,_6,_15,_67,_43,_60_OR_DHCP_dhcp-parameter-request-list_STARTSWITH_1,3,12,6,15,112,113,78,79_OR_DHCP_dhcp-parameter-request-list_STARTSWITH_1,3,6,15,112,113,78,79_OR_DHCP_dhcp-parameter-request-list_STARTSWITH_1,3,6,15,112,113,78,79,95_OR_DHCP_dhcp-parameter-request-list_STARTSWITH_1,3,6,15,112,113,78,79,95,252_OR_DHCP_dhcp-parameter-request-list_STARTSWITH_1,3,6,15,112,113,78,79,95,252,44,47_OR_DHCP_dhcp-parameter-request-list_STARTSWITH_1,3,6,15,119,112,113,78,79,95,252_OR_DHCP_dhcp-parameter-request-list_STARTSWITH_1,3,6,15,112,113,78,79,95,44,47_OR_DHCP_dhcp-parameter-request-list_STARTSWITH_1,3,6,15,119,95,252,44,46,101_OR_DHCP_dhcp-parameter-request-list_STARTSWITH_1,3,6,15,119,95,252,44,46,47_OR_DHCP_dhcp-parameter-request-list_STARTSWITH_1,3,6,15,119,95,252,44,46,47,101_OR_DHCP_dhcp-parameter-request-list_STARTSWITH_3,6,15,112,113,78,79,95_OR_DHCP_dhcp-parameter-request-list_STARTSWITH_3,6,15,112,113,78,79,95,252_OR_DHCP_dhcp-parameter-request-list_STARTSWITH_3,6,15,112,113,78,79,95,252,44,47_OR_DHCP_dhcp-parameter-request-list_STARTSWITH_3,6,15,112,113,78,79,95,44,47_OR_DHCP_dhcp-parameter-request-list_STARTSWITH_43,60_OR_DHCP_dhcp-parameter-request-list_STARTSWITH_60,43" expression="(((((((((((((((((Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Checkd066c01a-2c67-425a-bedd-8f3b000d959b | Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check31578dcb-be1c-4803-8b45-57e4b0fdc1ed) | Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check41827906-7d44-4546-8548-7e9274eab8bb) | Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Checkddec45c3-385f-433f-8b8f-ba446cb6516e) | Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Checkb6fbf82c-266c-455c-84ad-fda9d538e248) | Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check8bbd5d39-1d1b-41d2-9396-dd9bafe24704) | Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check46ba788a-331c-4823-acc4-00a572b74164) | Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check35eae22f-62f9-4d99-be86-daa11ed28d48) | Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check148ea57b-dc99-46ee-918e-7b1ecf602425) | Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check1b968d22-d32e-4ab6-813a-a21c191ebb15) | Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check77dfbba1-8c47-4862-9218-b4c0097b0d17) | Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check8185fd94-c964-4fae-99d0-dbd0b8ff1bf0) | Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Checkd66be63f-5a40-46fc-9c6b-355f53c1507b) | Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check5e8ca22d-56d4-404f-8131-fbe5e5578b7b) | Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Checkad239f97-7cfc-4425-ba25-14e5834ad32d) | Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Checka0f14545-46e7-41f5-950c-6ff7da22c9a8) | Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Checkb6986d80-34aa-4278-aeb1-2afd2e8eeb20) | Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Checkade65ead-ed33-4660-8957-10da83007193) | Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Checkd0ae398d-e38e-4e58-9217-31b9e14353cd" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4" ruleType="Regular"/>
+<Rule description="ACTIVEDIRECTORY_PROBE_AD-Operating-System_CONTAINS_Mac_OS" expression="Apple-Mac-OS-XRule5eece96d-9917-402f-9816-4b377a079f87Checkc63c8f59-7688-45bc-aeb7-44cce65c7e1f" name="Apple-Mac-OS-XRule5eece96d-9917-402f-9816-4b377a079f87" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_iMac_OR_DHCP_dhcp-class-identifier_CONTAINS_MacBook_OR_DHCP_dhcp-class-identifier_CONTAINS_MacBookPro_OR_DHCP_dhcp-class-identifier_CONTAINS_MacPro_OR_DHCP_dhcp-class-identifier_CONTAINS_Macmini_OR_DHCP_dhcp-class-identifier_CONTAINS_PowerMac_OR_DHCP_dhcp-class-identifier_CONTAINS_MacBookAir" expression="(((((Apple-Mac-OS-XRule3ed01d89-9601-40ea-a1a0-e7e1096f5e6cCheckdff5ba50-7b74-4251-a9ae-a331632570e8 | Apple-Mac-OS-XRule3ed01d89-9601-40ea-a1a0-e7e1096f5e6cCheck949fcda4-5200-4aca-bad8-45da16dbb341) | Apple-Mac-OS-XRule3ed01d89-9601-40ea-a1a0-e7e1096f5e6cCheck207ff8d9-2d6c-4a89-9eec-174e80a57769) | Apple-Mac-OS-XRule3ed01d89-9601-40ea-a1a0-e7e1096f5e6cCheckfca00a63-e50d-4b3a-96a0-97e6d22d8aca) | Apple-Mac-OS-XRule3ed01d89-9601-40ea-a1a0-e7e1096f5e6cCheck556f4136-73cf-4219-80c2-90d8dc07657f) | Apple-Mac-OS-XRule3ed01d89-9601-40ea-a1a0-e7e1096f5e6cCheck4676f896-889a-48c7-8b49-976b5a90c100) | Apple-Mac-OS-XRule3ed01d89-9601-40ea-a1a0-e7e1096f5e6cCheck4571cd90-530f-43ef-bccf-f6c998989517" name="Apple-Mac-OS-XRule3ed01d89-9601-40ea-a1a0-e7e1096f5e6c" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_MacbookPro_OR_IP_User-Agent_CONTAINS_Macbook_OR_IP_User-Agent_CONTAINS_MAC+OS+X_OR_IP_User-Agent_CONTAINS_MacBookAir_OR_IP_User-Agent_CONTAINS_iMac_OR_IP_User-Agent_CONTAINS_Macintosh" expression="((((Apple-Mac-OS-XRule4d18aefc-a9ed-4b9a-8160-5ccb3979a4a2Check2baaa21c-a89d-4c24-9ab6-044658c6e7ba | Apple-Mac-OS-XRule4d18aefc-a9ed-4b9a-8160-5ccb3979a4a2Check86b8ff04-f3ad-44f4-a8b6-042b51884b9b) | Apple-Mac-OS-XRule4d18aefc-a9ed-4b9a-8160-5ccb3979a4a2Checkc2166a79-8f04-4a51-a970-5f04fe00bdc9) | Apple-Mac-OS-XRule4d18aefc-a9ed-4b9a-8160-5ccb3979a4a2Check6c3486f3-f997-4ce0-951b-50532d3e5909) | Apple-Mac-OS-XRule4d18aefc-a9ed-4b9a-8160-5ccb3979a4a2Check1351833e-690c-47d9-98cc-b9b365e8c674) | Apple-Mac-OS-XRule4d18aefc-a9ed-4b9a-8160-5ccb3979a4a2Check6aae73e0-8e14-4c23-a8d3-bcc9a1e63c8b" name="Apple-Mac-OS-XRule4d18aefc-a9ed-4b9a-8160-5ccb3979a4a2" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_MBP_OR_DHCP_host-name_CONTAINS_MacBook_OR_DHCP_host-name_CONTAINS_MacBookPro_OR_DHCP_host-name_CONTAINS_macbook-Air_OR_DHCP_host-name_CONTAINS_iMac_OR_IP_FQDN_CONTAINS_MBP_OR_IP_FQDN_CONTAINS_MacBook_OR_IP_FQDN_CONTAINS_MacBookPro_OR_IP_FQDN_CONTAINS_macbook-Air_OR_IP_FQDN_CONTAINS_iMac" expression="((((((((Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dCheckd361d232-fdcd-4014-99d7-32c9a19dfb33 | Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dCheck130e238a-76cf-412d-b1f3-23ad81ea7019) | Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dCheck3eabe4d2-03bb-4e46-8641-7dd3df7f0069) | Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dChecke614c9ff-3437-414d-962f-033285e5a55b) | Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dCheck3207b37f-4ac3-43cf-8c4e-fdf8b43c9fe7) | Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dCheckba5075aa-c004-4841-a29f-88ad126c2b3b) | Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dCheckb1256eda-7527-427c-895d-a83b73ceefcd) | Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dCheck21e849da-12d7-417a-a9f4-379d78ab76d3) | Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dCheckc4910410-4f17-4a61-a5ef-2b9e58217a01) | Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dCheck5595625e-2cd2-44ce-b062-9e73e1cb91a4" name="Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840d" ruleType="Regular"/>
+<Rule description="ACIDEX_device-type_CONTAINS_Macbook_OR_ACIDEX_device-type_CONTAINS_iMac_OR_ACIDEX_device-type_CONTAINS_MacPro_OR_ACIDEX_device-type_CONTAINS_MacbookPro" expression="((Apple-Mac-OS-XRuleb9db30cf-78c0-4cb0-a22e-8f20fb884c51Check74e0d2ad-cd71-40a7-a4b3-f6fbb87b0391 | Apple-Mac-OS-XRuleb9db30cf-78c0-4cb0-a22e-8f20fb884c51Check39bb30db-bb50-4980-8a82-99b6b1ff4782) | Apple-Mac-OS-XRuleb9db30cf-78c0-4cb0-a22e-8f20fb884c51Check57b6a5dd-d8f0-4d7c-9883-9cb6c5a99571) | Apple-Mac-OS-XRuleb9db30cf-78c0-4cb0-a22e-8f20fb884c51Check9017efd2-5e1f-48b9-b806-c9e57d568ad7" name="Apple-Mac-OS-XRuleb9db30cf-78c0-4cb0-a22e-8f20fb884c51" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_MacBookAir" expression="Apple-MacBook-AirRule513f32a3-cb06-40d3-8a3c-3e6bc2c17b71Checkf96f1e1f-aedf-45f0-9d07-c5596f9edbbe" name="Apple-MacBook-AirRule513f32a3-cb06-40d3-8a3c-3e6bc2c17b71" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_macbook-Air_OR_IP_FQDN_CONTAINS_macbook-Air" expression="Apple-MacBook-AirRuleb1ae3aa9-727f-4486-b4cf-69abb15196cfCheckc5cb982f-e466-422c-9cb1-b961410d4c26 | Apple-MacBook-AirRuleb1ae3aa9-727f-4486-b4cf-69abb15196cfCheckc2d61582-32ef-4707-a6a2-1af687c56f7e" name="Apple-MacBook-AirRuleb1ae3aa9-727f-4486-b4cf-69abb15196cf" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_MacBookAir" expression="Apple-MacBook-AirRule10fda461-a506-4ef4-b32f-a97e303668edCheck66b43927-7bf9-4de4-8f38-218f88f4f8b1" name="Apple-MacBook-AirRule10fda461-a506-4ef4-b32f-a97e303668ed" ruleType="Regular"/>
+<Rule description="ACIDEX_device-type_CONTAINS_MacBookAir" expression="Apple-MacBook-AirRule5ac503e3-67d3-422e-8c9b-7d0c0df144d1Check6bd1f43b-e854-47fd-bbd2-121a8b6be8f0" name="Apple-MacBook-AirRule5ac503e3-67d3-422e-8c9b-7d0c0df144d1" ruleType="Regular"/>
+<Rule description="OS_X_Yosemite-WorkstationRule1Check1" expression="OS_X_Yosemite-WorkstationRule1Check1_copy_copy_copy" name="OS_X_Yosemite-WorkstationRule1_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Yosemite-WorkstationRule1Check2" expression="OS_X_Yosemite-WorkstationRule1Check2_copy_copy_copy" name="OS_X_Yosemite-WorkstationRule2_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Tiger-WorkstationRule1Check2" expression="OS_X_Tiger-WorkstationRule1Check2_copy_copy0_copy" name="OS_X_Tiger-WorkstationRule22_copy_copy0_copy" ruleType="Regular"/>
+<Rule description="OS_X_Tiger-WorkstationRule1Check1" expression="OS_X_Tiger-WorkstationRule1Check1_copy_copy0_copy" name="OS_X_Tiger-WorkstationRule11_copy_copy0_copy" ruleType="Regular"/>
+<Rule description="OS_X_SnowLeopard-WorkstationRule1Check1" expression="OS_X_SnowLeopard-WorkstationRule1Check1_copy_copy_copy" name="OS_X_SnowLeopard-WorkstationRule11_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_SnowLeopard-WorkstationRule1Check2" expression="OS_X_SnowLeopard-WorkstationRule1Check2_copy_copy_copy" name="OS_X_SnowLeopard-WorkstationRule22_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Sierra-Workstation-Rule2-Check1" expression="OS_X_Sierra-Workstation-Rule2-Check1_copy_copy_copy" name="OS_X_El_Capitan-WorkstationRule22_copy_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Sierra-Workstation-Rule1-Check1" expression="OS_X_Sierra-Workstation-Rule1-Check1_copy_copy_copy" name="OS_X_El_Capitan-WorkstationRule11_copy_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_MountainLion-WorkstationRule1Check1" expression="OS_X_MountainLion-WorkstationRule1Check1_copy0_copy_copy" name="OS_X_MountainLion-WorkstationRule11_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_MountainLion-WorkstationRule1Check2" expression="OS_X_MountainLion-WorkstationRule1Check2_copy0_copy_copy" name="OS_X_MountainLion-WorkstationRule22_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Mojave-Workstation-Rule2-Check1" expression="OS_X_Mojave-Workstation-Rule2-Check1_copy_copy_copy" name="OS_X_Mojave-WorkstationRule2_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Mojave-Workstation-Rule1-Check1" expression="OS_X_Mojave-Workstation-Rule1-Check1_copy_copy_copy" name="OS_X_Mojave-WorkstationRule1_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Mavericks-WorkstationRule22" expression="OS_X_Mavericks-WorkstationCheck2_copy0_copy_copy" name="OS_X_Mavericks-WorkstationRule22_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Mavericks-WorkstationRule11" expression="OS_X_Mavericks-WorkstationCheck1_copy0_copy_copy" name="OS_X_Mavericks-WorkstationRule11_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Lion-WorkstationRule1Check1" expression="OS_X_Lion-WorkstationRule1Check1_copy0_copy_copy" name="OS_X_Lion-WorkstationRule11_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Lion-WorkstationRule1Check2" expression="OS_X_Lion-WorkstationRule1Check2_copy0_copy_copy" name="OS_X_Lion-WorkstationRule22_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Leopard-WorkstationRule1Check1" expression="OS_X_Leopard-WorkstationRule1Check1_copy0_copy0_copy" name="OS_X_Leopard-WorkstationRule11_copy_copy0_copy" ruleType="Regular"/>
+<Rule description="OS_X_Leopard-WorkstationRule1Check2" expression="OS_X_Leopard-WorkstationRule1Check2_copy0_copy0_copy" name="OS_X_Leopard-WorkstationRule22_copy_copy0_copy" ruleType="Regular"/>
+<Rule description="OS_X_High_Sierra-Workstation-Rule1-Check1" expression="OS_X_High_Sierra-Workstation-Rule1-Check1_copy0_copy_copy0" name="OS_X_High_Sierra-WorkstationRule1_copy_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_High_Sierra-Workstation-Rule2-Check1" expression="OS_X_High_Sierra-Workstation-Rule2-Check1_copy0_copy_copy0" name="OS_X_High_Sierra-WorkstationRule2_copy_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_El_Capitan-Workstation-Rule1-Check1" expression="OS_X_El_Capitan-Workstation-Rule1-Check1_copy1_copy_copy0" name="OS_X_El_Capitan-WorkstationRule11_copy0_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_El_Capitan-Workstation-Rule2-Check1" expression="OS_X_El_Capitan-Workstation-Rule2-Check1_copy1_copy_copy0" name="OS_X_El_Capitan-WorkstationRule22_copy0_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X-WorkstationRule1Check1" expression="OS_X-WorkstationRule1Check1_copy1_copy_copy_copy" name="OS_X-WorkstationRule11_copy_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X-WorkstationRule1Check2" expression="OS_X-WorkstationRule1Check2_copy1_copy_copy_copy" name="OS_X-WorkstationRuleabb19c9f-6742-4de1-a375-e3c983720081_copy_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Yosemite-WorkstationRule1Check2" expression="OS_X_Yosemite-WorkstationRule1Check2_copy_copy" name="OS_X_Yosemite-WorkstationRule2_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Yosemite-WorkstationRule1Check1" expression="OS_X_Yosemite-WorkstationRule1Check1_copy_copy" name="OS_X_Yosemite-WorkstationRule1_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Tiger-WorkstationRule1Check2" expression="OS_X_Tiger-WorkstationRule1Check2_copy_copy" name="OS_X_Tiger-WorkstationRule22_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Tiger-WorkstationRule1Check1" expression="OS_X_Tiger-WorkstationRule1Check1_copy_copy" name="OS_X_Tiger-WorkstationRule11_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_SnowLeopard-WorkstationRule1Check2" expression="OS_X_SnowLeopard-WorkstationRule1Check2_copy_copy" name="OS_X_SnowLeopard-WorkstationRule22_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_SnowLeopard-WorkstationRule1Check1" expression="OS_X_SnowLeopard-WorkstationRule1Check1_copy_copy" name="OS_X_SnowLeopard-WorkstationRule11_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Sierra-Workstation-Rule1-Check1" expression="OS_X_Sierra-Workstation-Rule1-Check1_copy_copy" name="OS_X_El_Capitan-WorkstationRule11_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Sierra-Workstation-Rule2-Check1" expression="OS_X_Sierra-Workstation-Rule2-Check1_copy_copy" name="OS_X_El_Capitan-WorkstationRule22_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_MountainLion-WorkstationRule1Check1" expression="OS_X_MountainLion-WorkstationRule1Check1_copy0_copy" name="OS_X_MountainLion-WorkstationRule11_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_MountainLion-WorkstationRule1Check2" expression="OS_X_MountainLion-WorkstationRule1Check2_copy0_copy" name="OS_X_MountainLion-WorkstationRule22_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Mojave-Workstation-Rule2-Check1" expression="OS_X_Mojave-Workstation-Rule2-Check1_copy_copy" name="OS_X_Mojave-WorkstationRule2_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Mojave-Workstation-Rule1-Check1" expression="OS_X_Mojave-Workstation-Rule1-Check1_copy_copy" name="OS_X_Mojave-WorkstationRule1_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Mavericks-WorkstationRule22" expression="OS_X_Mavericks-WorkstationCheck2_copy0_copy" name="OS_X_Mavericks-WorkstationRule22_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Mavericks-WorkstationRule11" expression="OS_X_Mavericks-WorkstationCheck1_copy0_copy" name="OS_X_Mavericks-WorkstationRule11_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Lion-WorkstationRule1Check2" expression="OS_X_Lion-WorkstationRule1Check2_copy0_copy" name="OS_X_Lion-WorkstationRule22_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Lion-WorkstationRule1Check1" expression="OS_X_Lion-WorkstationRule1Check1_copy0_copy" name="OS_X_Lion-WorkstationRule11_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Leopard-WorkstationRule1Check1" expression="OS_X_Leopard-WorkstationRule1Check1_copy0_copy" name="OS_X_Leopard-WorkstationRule11_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Leopard-WorkstationRule1Check2" expression="OS_X_Leopard-WorkstationRule1Check2_copy0_copy" name="OS_X_Leopard-WorkstationRule22_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_High_Sierra-Workstation-Rule2-Check1" expression="OS_X_High_Sierra-Workstation-Rule2-Check1_copy0_copy" name="OS_X_High_Sierra-WorkstationRule2_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_High_Sierra-Workstation-Rule1-Check1" expression="OS_X_High_Sierra-Workstation-Rule1-Check1_copy0_copy" name="OS_X_High_Sierra-WorkstationRule1_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_El_Capitan-Workstation-Rule1-Check1" expression="OS_X_El_Capitan-Workstation-Rule1-Check1_copy1_copy" name="OS_X_El_Capitan-WorkstationRule11_copy0_copy" ruleType="Regular"/>
+<Rule description="OS_X_El_Capitan-Workstation-Rule2-Check1" expression="OS_X_El_Capitan-Workstation-Rule2-Check1_copy1_copy" name="OS_X_El_Capitan-WorkstationRule22_copy0_copy" ruleType="Regular"/>
+<Rule description="OS_X-WorkstationRule1Check2" expression="OS_X-WorkstationRule1Check2_copy1_copy" name="OS_X-WorkstationRuleabb19c9f-6742-4de1-a375-e3c983720081_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X-WorkstationRule1Check1" expression="OS_X-WorkstationRule1Check1_copy1_copy" name="OS_X-WorkstationRule11_copy_copy" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_iMac_OR_DHCP_host-name_CONTAINS_iMac" expression="Apple-iMacRuleb8c80ed1-0b69-4b8b-840b-8436e8e185e0Check6c942b7d-ab66-457c-ac4a-cd0fd5971061 | Apple-iMacRuleb8c80ed1-0b69-4b8b-840b-8436e8e185e0Checke8418e59-eea1-4456-8200-436b31787a04" name="Apple-iMacRuleb8c80ed1-0b69-4b8b-840b-8436e8e185e0" ruleType="Regular"/>
+<Rule description="DHCP_client-identifier_CONTAINS_iMac" expression="Apple-iMacRule6d93c23d-220b-43ae-b8dc-f45373192d27Check834f027f-34a1-441f-903c-65269322ed44" name="Apple-iMacRule6d93c23d-220b-43ae-b8dc-f45373192d27" ruleType="Regular"/>
+<Rule description="ACIDEX_device-type_CONTAINS_iMac" expression="Apple-iMacRule034d5054-bf57-42b8-803a-72fa3a8e0dbeChecka1cf7363-fdbe-4a86-93a8-f75da3389477" name="Apple-iMacRule034d5054-bf57-42b8-803a-72fa3a8e0dbe" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_iMac" expression="Apple-iMacRule700d1457-f275-4262-975e-664d1745e21fCheckf90be801-1634-4a7e-9a75-1e0403d91ca4" name="Apple-iMacRule700d1457-f275-4262-975e-664d1745e21f" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_MacBook_OR_DHCP_dhcp-class-identifier_CONTAINS_MacBookPro" expression="Apple-MacBook-UpdatedRule9c3563b8-86fb-482a-868b-a225443284faCheckdd0d4f7b-89c7-49b2-96a7-18cbb41962c9 | Apple-MacBook-UpdatedRule9c3563b8-86fb-482a-868b-a225443284faCheck69666464-8811-4d4a-917e-58ae98a7dbf1" name="Apple-MacBook-UpdatedRule9c3563b8-86fb-482a-868b-a225443284fa" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_Macbook_OR_IP_User-Agent_CONTAINS_MacbookPro" expression="Apple-MacBook-UpdatedRule16969fd4-21d7-486d-8789-f29dc9693de6Check429dacec-1586-4fe2-b93d-f586b120b8dc | Apple-MacBook-UpdatedRule16969fd4-21d7-486d-8789-f29dc9693de6Check077cd216-70aa-494c-99e7-d49840c24fb1" name="Apple-MacBook-UpdatedRule16969fd4-21d7-486d-8789-f29dc9693de6" ruleType="Regular"/>
+<Rule description="ACIDEX_device-type_CONTAINS_Macbook_OR_ACIDEX_device-type_CONTAINS_MacbookPro" expression="Apple-MacBook-UpdatedRule2d7cd1e1-21e8-49ea-9ead-ac2d791a7b01Check2bdfd8be-1c7b-4b37-a2ab-0e98f435f013 | Apple-MacBook-UpdatedRule2d7cd1e1-21e8-49ea-9ead-ac2d791a7b01Checkea857c03-a781-4a0a-847d-99e95545d2e7" name="Apple-MacBook-UpdatedRule2d7cd1e1-21e8-49ea-9ead-ac2d791a7b01" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_MacBook_OR_IP_FQDN_CONTAINS_MBP_OR_IP_FQDN_CONTAINS_MacBookPro_OR_DHCP_host-name_CONTAINS_MacBook_OR_DHCP_host-name_CONTAINS_MBP_OR_DHCP_host-name_CONTAINS_MacBookPro" expression="((((Apple-MacBook-UpdatedRule02ec775e-066e-478d-b40b-53e87b5cdd1bCheck4648bff0-59b0-4af6-94f0-5becda51c083 | Apple-MacBook-UpdatedRule02ec775e-066e-478d-b40b-53e87b5cdd1bCheck265b1be3-bef9-44d2-87ae-0b112bc53052) | Apple-MacBook-UpdatedRule02ec775e-066e-478d-b40b-53e87b5cdd1bCheckf959860b-e920-4d0c-b46b-01a00ddd0c03) | Apple-MacBook-UpdatedRule02ec775e-066e-478d-b40b-53e87b5cdd1bCheckc471eca7-9486-4da4-8357-02bd0eb649e6) | Apple-MacBook-UpdatedRule02ec775e-066e-478d-b40b-53e87b5cdd1bCheck323fcfb5-ab54-4a70-97b7-cde5e866fc3c) | Apple-MacBook-UpdatedRule02ec775e-066e-478d-b40b-53e87b5cdd1bCheck7187c341-003e-4898-9f7b-c3738a17e19e" name="Apple-MacBook-UpdatedRule02ec775e-066e-478d-b40b-53e87b5cdd1b" ruleType="Regular"/>
+<Rule description="OS_X_Yosemite-WorkstationRule1Check2" expression="OS_X_Yosemite-WorkstationRule1Check2_copy_copy0" name="OS_X_Yosemite-WorkstationRule2_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_Yosemite-WorkstationRule1Check1" expression="OS_X_Yosemite-WorkstationRule1Check1_copy_copy0" name="OS_X_Yosemite-WorkstationRule1_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_Tiger-WorkstationRule1Check1" expression="OS_X_Tiger-WorkstationRule1Check1_copy_copy0" name="OS_X_Tiger-WorkstationRule11_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_Tiger-WorkstationRule1Check2" expression="OS_X_Tiger-WorkstationRule1Check2_copy_copy0" name="OS_X_Tiger-WorkstationRule22_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_SnowLeopard-WorkstationRule1Check1" expression="OS_X_SnowLeopard-WorkstationRule1Check1_copy_copy0" name="OS_X_SnowLeopard-WorkstationRule11_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_SnowLeopard-WorkstationRule1Check2" expression="OS_X_SnowLeopard-WorkstationRule1Check2_copy_copy0" name="OS_X_SnowLeopard-WorkstationRule22_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_MountainLion-WorkstationRule1Check1" expression="OS_X_MountainLion-WorkstationRule1Check1_copy0_copy0" name="OS_X_MountainLion-WorkstationRule11_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_MountainLion-WorkstationRule1Check2" expression="OS_X_MountainLion-WorkstationRule1Check2_copy0_copy0" name="OS_X_MountainLion-WorkstationRule22_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_Mojave-Workstation-Rule1-Check1" expression="OS_X_Mojave-Workstation-Rule1-Check1_copy_copy0" name="OS_X_Mojave-WorkstationRule1_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_Mojave-Workstation-Rule2-Check1" expression="OS_X_Mojave-Workstation-Rule2-Check1_copy_copy0" name="OS_X_Mojave-WorkstationRule2_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_Mavericks-WorkstationRule22" expression="OS_X_Mavericks-WorkstationCheck2_copy0_copy0" name="OS_X_Mavericks-WorkstationRule22_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_Mavericks-WorkstationRule11" expression="OS_X_Mavericks-WorkstationCheck1_copy0_copy0" name="OS_X_Mavericks-WorkstationRule11_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_Lion-WorkstationRule1Check2" expression="OS_X_Lion-WorkstationRule1Check2_copy0_copy0" name="OS_X_Lion-WorkstationRule22_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_Lion-WorkstationRule1Check1" expression="OS_X_Lion-WorkstationRule1Check1_copy0_copy0" name="OS_X_Lion-WorkstationRule11_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_Leopard-WorkstationRule1Check2" expression="OS_X_Leopard-WorkstationRule1Check2_copy0_copy0" name="OS_X_Leopard-WorkstationRule22_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_Leopard-WorkstationRule1Check1" expression="OS_X_Leopard-WorkstationRule1Check1_copy0_copy0" name="OS_X_Leopard-WorkstationRule11_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_High_Sierra-Workstation-Rule2-Check1" expression="OS_X_High_Sierra-Workstation-Rule2-Check1_copy0_copy_copy" name="OS_X_High_Sierra-WorkstationRule2_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_High_Sierra-Workstation-Rule1-Check1" expression="OS_X_High_Sierra-Workstation-Rule1-Check1_copy0_copy_copy" name="OS_X_High_Sierra-WorkstationRule1_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_El_Capitan-Workstation-Rule2-Check1" expression="OS_X_El_Capitan-Workstation-Rule2-Check1_copy1_copy_copy" name="OS_X_El_Capitan-WorkstationRule22_copy0_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_El_Capitan-Workstation-Rule1-Check1" expression="OS_X_El_Capitan-Workstation-Rule1-Check1_copy1_copy_copy" name="OS_X_El_Capitan-WorkstationRule11_copy0_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X-WorkstationRule1Check1" expression="OS_X-WorkstationRule1Check1_copy1_copy_copy" name="OS_X-WorkstationRule11_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X-WorkstationRule1Check2" expression="OS_X-WorkstationRule1Check2_copy1_copy_copy" name="OS_X-WorkstationRuleabb19c9f-6742-4de1-a375-e3c983720081_copy_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X-WorkstationRule1Check1" expression="OS_X-WorkstationRule1Check1_copy1" name="OS_X-WorkstationRule11_copy" ruleType="Regular"/>
+<Rule description="OS_X-WorkstationRule1Check2" expression="OS_X-WorkstationRule1Check2_copy1" name="OS_X-WorkstationRuleabb19c9f-6742-4de1-a375-e3c983720081_copy" ruleType="Regular"/>
+<Rule description="OS_X_Sierra-Workstation-Rule2-Check1" expression="OS_X_Sierra-Workstation-Rule2-Check1_copy_copy0" name="OS_X_El_Capitan-WorkstationRule22_copy_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_Sierra-Workstation-Rule1-Check1" expression="OS_X_Sierra-Workstation-Rule1-Check1_copy_copy0" name="OS_X_El_Capitan-WorkstationRule11_copy_copy_copy0" ruleType="Regular"/>
+<Rule description="OS_X_Yosemite-WorkstationRule1Check1" expression="OS_X_Yosemite-WorkstationRule1Check1_copy" name="OS_X_Yosemite-WorkstationRule1_copy" ruleType="Regular"/>
+<Rule description="OS_X_Yosemite-WorkstationRule1Check2" expression="OS_X_Yosemite-WorkstationRule1Check2_copy" name="OS_X_Yosemite-WorkstationRule2_copy" ruleType="Regular"/>
+<Rule description="OS_X_Tiger-WorkstationRule1Check1" expression="OS_X_Tiger-WorkstationRule1Check1_copy" name="OS_X_Tiger-WorkstationRule11_copy" ruleType="Regular"/>
+<Rule description="OS_X_Tiger-WorkstationRule1Check2" expression="OS_X_Tiger-WorkstationRule1Check2_copy" name="OS_X_Tiger-WorkstationRule22_copy" ruleType="Regular"/>
+<Rule description="OS_X_SnowLeopard-WorkstationRule1Check2" expression="OS_X_SnowLeopard-WorkstationRule1Check2_copy" name="OS_X_SnowLeopard-WorkstationRule22_copy" ruleType="Regular"/>
+<Rule description="OS_X_SnowLeopard-WorkstationRule1Check1" expression="OS_X_SnowLeopard-WorkstationRule1Check1_copy" name="OS_X_SnowLeopard-WorkstationRule11_copy" ruleType="Regular"/>
+<Rule description="OS_X_Sierra-Workstation-Rule1-Check1" expression="OS_X_Sierra-Workstation-Rule1-Check1_copy" name="OS_X_El_Capitan-WorkstationRule11_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_Sierra-Workstation-Rule2-Check1" expression="OS_X_Sierra-Workstation-Rule2-Check1_copy" name="OS_X_El_Capitan-WorkstationRule22_copy_copy" ruleType="Regular"/>
+<Rule description="OS_X_MountainLion-WorkstationRule1Check2" expression="OS_X_MountainLion-WorkstationRule1Check2_copy0" name="OS_X_MountainLion-WorkstationRule22_copy" ruleType="Regular"/>
+<Rule description="OS_X_MountainLion-WorkstationRule1Check1" expression="OS_X_MountainLion-WorkstationRule1Check1_copy0" name="OS_X_MountainLion-WorkstationRule11_copy" ruleType="Regular"/>
+<Rule description="OS_X_Mojave-Workstation-Rule2-Check1" expression="OS_X_Mojave-Workstation-Rule2-Check1_copy" name="OS_X_Mojave-WorkstationRule2_copy" ruleType="Regular"/>
+<Rule description="OS_X_Mojave-Workstation-Rule1-Check1" expression="OS_X_Mojave-Workstation-Rule1-Check1_copy" name="OS_X_Mojave-WorkstationRule1_copy" ruleType="Regular"/>
+<Rule description="OS_X_Mavericks-WorkstationRule22" expression="OS_X_Mavericks-WorkstationCheck2_copy0" name="OS_X_Mavericks-WorkstationRule22_copy" ruleType="Regular"/>
+<Rule description="OS_X_Mavericks-WorkstationRule11" expression="OS_X_Mavericks-WorkstationCheck1_copy0" name="OS_X_Mavericks-WorkstationRule11_copy" ruleType="Regular"/>
+<Rule description="OS_X_Lion-WorkstationRule1Check1" expression="OS_X_Lion-WorkstationRule1Check1_copy0" name="OS_X_Lion-WorkstationRule11_copy" ruleType="Regular"/>
+<Rule description="OS_X_Lion-WorkstationRule1Check2" expression="OS_X_Lion-WorkstationRule1Check2_copy0" name="OS_X_Lion-WorkstationRule22_copy" ruleType="Regular"/>
+<Rule description="OS_X_Leopard-WorkstationRule1Check2" expression="OS_X_Leopard-WorkstationRule1Check2_copy0" name="OS_X_Leopard-WorkstationRule22_copy" ruleType="Regular"/>
+<Rule description="OS_X_Leopard-WorkstationRule1Check1" expression="OS_X_Leopard-WorkstationRule1Check1_copy0" name="OS_X_Leopard-WorkstationRule11_copy" ruleType="Regular"/>
+<Rule description="OS_X_El_Capitan-Workstation-Rule1-Check1" expression="OS_X_El_Capitan-Workstation-Rule1-Check1_copy1" name="OS_X_El_Capitan-WorkstationRule11_copy0" ruleType="Regular"/>
+<Rule description="OS_X_El_Capitan-Workstation-Rule2-Check1" expression="OS_X_El_Capitan-Workstation-Rule2-Check1_copy1" name="OS_X_El_Capitan-WorkstationRule22_copy0" ruleType="Regular"/>
+<Rule description="OS_X_High_Sierra-Workstation-Rule1-Check1" expression="OS_X_High_Sierra-Workstation-Rule1-Check1_copy0" name="OS_X_High_Sierra-WorkstationRule1_copy" ruleType="Regular"/>
+<Rule description="OS_X_High_Sierra-Workstation-Rule2-Check1" expression="OS_X_High_Sierra-Workstation-Rule2-Check1_copy0" name="OS_X_High_Sierra-WorkstationRule2_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 121, 3, 6, 15, 119, 252, 95, 44, 46" description="DHCP dhcp-parameter-request-list STARTSWITH 1, 121, 3, 6, 15, 119, 252, 95, 44, 46" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Checkd066c01a-2c67-425a-bedd-8f3b000d959b" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 3, 6, 15, 119, 95, 252, 44, 46" description="DHCP dhcp-parameter-request-list STARTSWITH 1, 3, 6, 15, 119, 95, 252, 44, 46" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check31578dcb-be1c-4803-8b45-57e4b0fdc1ed" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 3, 6, 15, 67, 43, 60" description="DHCP dhcp-parameter-request-list STARTSWITH 1, 3, 6, 15, 67, 43, 60" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check41827906-7d44-4546-8548-7e9274eab8bb" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,3,12,6,15,112,113,78,79" description="DHCP dhcp-parameter-request-list STARTSWITH 1,3,12,6,15,112,113,78,79" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Checkddec45c3-385f-433f-8b8f-ba446cb6516e" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,3,6,15,112,113,78,79" description="DHCP dhcp-parameter-request-list STARTSWITH 1,3,6,15,112,113,78,79" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Checkb6fbf82c-266c-455c-84ad-fda9d538e248" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,3,6,15,112,113,78,79,95" description="DHCP dhcp-parameter-request-list STARTSWITH 1,3,6,15,112,113,78,79,95" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check8bbd5d39-1d1b-41d2-9396-dd9bafe24704" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,3,6,15,112,113,78,79,95,252" description="DHCP dhcp-parameter-request-list STARTSWITH 1,3,6,15,112,113,78,79,95,252" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check46ba788a-331c-4823-acc4-00a572b74164" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,3,6,15,112,113,78,79,95,252,44,47" description="DHCP dhcp-parameter-request-list STARTSWITH 1,3,6,15,112,113,78,79,95,252,44,47" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check35eae22f-62f9-4d99-be86-daa11ed28d48" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,3,6,15,119,112,113,78,79,95,252" description="DHCP dhcp-parameter-request-list STARTSWITH 1,3,6,15,119,112,113,78,79,95,252" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check148ea57b-dc99-46ee-918e-7b1ecf602425" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,3,6,15,112,113,78,79,95,44,47" description="DHCP dhcp-parameter-request-list STARTSWITH 1,3,6,15,112,113,78,79,95,44,47" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check1b968d22-d32e-4ab6-813a-a21c191ebb15" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,3,6,15,119,95,252,44,46,101" description="DHCP dhcp-parameter-request-list STARTSWITH 1,3,6,15,119,95,252,44,46,101" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check77dfbba1-8c47-4862-9218-b4c0097b0d17" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,3,6,15,119,95,252,44,46,47" description="DHCP dhcp-parameter-request-list STARTSWITH 1,3,6,15,119,95,252,44,46,47" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check8185fd94-c964-4fae-99d0-dbd0b8ff1bf0" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,3,6,15,119,95,252,44,46,47,101" description="DHCP dhcp-parameter-request-list STARTSWITH 1,3,6,15,119,95,252,44,46,47,101" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Checkd66be63f-5a40-46fc-9c6b-355f53c1507b" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="3,6,15,112,113,78,79,95" description="DHCP dhcp-parameter-request-list STARTSWITH 3,6,15,112,113,78,79,95" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Check5e8ca22d-56d4-404f-8131-fbe5e5578b7b" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="3,6,15,112,113,78,79,95,252" description="DHCP dhcp-parameter-request-list STARTSWITH 3,6,15,112,113,78,79,95,252" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Checkad239f97-7cfc-4425-ba25-14e5834ad32d" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="3,6,15,112,113,78,79,95,252,44,47" description="DHCP dhcp-parameter-request-list STARTSWITH 3,6,15,112,113,78,79,95,252,44,47" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Checka0f14545-46e7-41f5-950c-6ff7da22c9a8" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="3,6,15,112,113,78,79,95,44,47" description="DHCP dhcp-parameter-request-list STARTSWITH 3,6,15,112,113,78,79,95,44,47" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Checkb6986d80-34aa-4278-aeb1-2afd2e8eeb20" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="43,60" description="DHCP dhcp-parameter-request-list STARTSWITH 43,60" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Checkade65ead-ed33-4660-8957-10da83007193" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="60,43" description="DHCP dhcp-parameter-request-list STARTSWITH 60,43" name="Apple-Mac-OS-XRule67391d45-19f6-4531-87bc-63eec65080e4Checkd0ae398d-e38e-4e58-9217-31b9e14353cd" operator="Starts with" type="DHCP"/>
+<Check attributeName="AD-Operating-System" attributeValue="Mac OS" description="ACTIVEDIRECTORY_PROBE AD-Operating-System CONTAINS Mac OS" name="Apple-Mac-OS-XRule5eece96d-9917-402f-9816-4b377a079f87Checkc63c8f59-7688-45bc-aeb7-44cce65c7e1f" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="iMac" description="DHCP dhcp-class-identifier CONTAINS iMac" name="Apple-Mac-OS-XRule3ed01d89-9601-40ea-a1a0-e7e1096f5e6cCheckdff5ba50-7b74-4251-a9ae-a331632570e8" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="MacBook" description="DHCP dhcp-class-identifier CONTAINS MacBook" name="Apple-Mac-OS-XRule3ed01d89-9601-40ea-a1a0-e7e1096f5e6cCheck949fcda4-5200-4aca-bad8-45da16dbb341" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="MacBookPro" description="DHCP dhcp-class-identifier CONTAINS MacBookPro" name="Apple-Mac-OS-XRule3ed01d89-9601-40ea-a1a0-e7e1096f5e6cCheck207ff8d9-2d6c-4a89-9eec-174e80a57769" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="MacPro" description="DHCP dhcp-class-identifier CONTAINS MacPro" name="Apple-Mac-OS-XRule3ed01d89-9601-40ea-a1a0-e7e1096f5e6cCheckfca00a63-e50d-4b3a-96a0-97e6d22d8aca" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Macmini" description="DHCP dhcp-class-identifier CONTAINS Macmini" name="Apple-Mac-OS-XRule3ed01d89-9601-40ea-a1a0-e7e1096f5e6cCheck556f4136-73cf-4219-80c2-90d8dc07657f" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="PowerMac" description="DHCP dhcp-class-identifier CONTAINS PowerMac" name="Apple-Mac-OS-XRule3ed01d89-9601-40ea-a1a0-e7e1096f5e6cCheck4676f896-889a-48c7-8b49-976b5a90c100" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="MacBookAir" description="DHCP dhcp-class-identifier CONTAINS MacBookAir" name="Apple-Mac-OS-XRule3ed01d89-9601-40ea-a1a0-e7e1096f5e6cCheck4571cd90-530f-43ef-bccf-f6c998989517" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="MacbookPro" description="IP User-Agent CONTAINS MacbookPro" name="Apple-Mac-OS-XRule4d18aefc-a9ed-4b9a-8160-5ccb3979a4a2Check2baaa21c-a89d-4c24-9ab6-044658c6e7ba" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Macbook" description="IP User-Agent CONTAINS Macbook" name="Apple-Mac-OS-XRule4d18aefc-a9ed-4b9a-8160-5ccb3979a4a2Check86b8ff04-f3ad-44f4-a8b6-042b51884b9b" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="MAC+OS+X" description="IP User-Agent CONTAINS MAC+OS+X" name="Apple-Mac-OS-XRule4d18aefc-a9ed-4b9a-8160-5ccb3979a4a2Checkc2166a79-8f04-4a51-a970-5f04fe00bdc9" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="MacBookAir" description="IP User-Agent CONTAINS MacBookAir" name="Apple-Mac-OS-XRule4d18aefc-a9ed-4b9a-8160-5ccb3979a4a2Check6c3486f3-f997-4ce0-951b-50532d3e5909" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="iMac" description="IP User-Agent CONTAINS iMac" name="Apple-Mac-OS-XRule4d18aefc-a9ed-4b9a-8160-5ccb3979a4a2Check1351833e-690c-47d9-98cc-b9b365e8c674" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Macintosh" description="IP User-Agent CONTAINS Macintosh" name="Apple-Mac-OS-XRule4d18aefc-a9ed-4b9a-8160-5ccb3979a4a2Check6aae73e0-8e14-4c23-a8d3-bcc9a1e63c8b" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="MBP" description="DHCP host-name CONTAINS MBP" name="Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dCheckd361d232-fdcd-4014-99d7-32c9a19dfb33" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="MacBook" description="DHCP host-name CONTAINS MacBook" name="Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dCheck130e238a-76cf-412d-b1f3-23ad81ea7019" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="MacBookPro" description="DHCP host-name CONTAINS MacBookPro" name="Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dCheck3eabe4d2-03bb-4e46-8641-7dd3df7f0069" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="macbook-Air" description="DHCP host-name CONTAINS macbook-Air" name="Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dChecke614c9ff-3437-414d-962f-033285e5a55b" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="iMac" description="DHCP host-name CONTAINS iMac" name="Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dCheck3207b37f-4ac3-43cf-8c4e-fdf8b43c9fe7" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="MBP" description="IP FQDN CONTAINS MBP" name="Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dCheckba5075aa-c004-4841-a29f-88ad126c2b3b" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="MacBook" description="IP FQDN CONTAINS MacBook" name="Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dCheckb1256eda-7527-427c-895d-a83b73ceefcd" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="MacBookPro" description="IP FQDN CONTAINS MacBookPro" name="Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dCheck21e849da-12d7-417a-a9f4-379d78ab76d3" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="macbook-Air" description="IP FQDN CONTAINS macbook-Air" name="Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dCheckc4910410-4f17-4a61-a5ef-2b9e58217a01" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="iMac" description="IP FQDN CONTAINS iMac" name="Apple-Mac-OS-XRulec9161d9f-ec9c-47a8-8eb3-da9e2595840dCheck5595625e-2cd2-44ce-b062-9e73e1cb91a4" operator="Contains" type="IP"/>
+<Check attributeName="device-type" attributeValue="Macbook" description="ACIDEX device-type CONTAINS Macbook" name="Apple-Mac-OS-XRuleb9db30cf-78c0-4cb0-a22e-8f20fb884c51Check74e0d2ad-cd71-40a7-a4b3-f6fbb87b0391" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="iMac" description="ACIDEX device-type CONTAINS iMac" name="Apple-Mac-OS-XRuleb9db30cf-78c0-4cb0-a22e-8f20fb884c51Check39bb30db-bb50-4980-8a82-99b6b1ff4782" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="MacPro" description="ACIDEX device-type CONTAINS MacPro" name="Apple-Mac-OS-XRuleb9db30cf-78c0-4cb0-a22e-8f20fb884c51Check57b6a5dd-d8f0-4d7c-9883-9cb6c5a99571" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="MacbookPro" description="ACIDEX device-type CONTAINS MacbookPro" name="Apple-Mac-OS-XRuleb9db30cf-78c0-4cb0-a22e-8f20fb884c51Check9017efd2-5e1f-48b9-b806-c9e57d568ad7" operator="Contains" type="ACIDEX"/>
+<Check attributeName="User-Agent" attributeValue="MacBookAir" description="IP User-Agent CONTAINS MacBookAir" name="Apple-MacBook-AirRule513f32a3-cb06-40d3-8a3c-3e6bc2c17b71Checkf96f1e1f-aedf-45f0-9d07-c5596f9edbbe" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="macbook-Air" description="DHCP host-name CONTAINS macbook-Air" name="Apple-MacBook-AirRuleb1ae3aa9-727f-4486-b4cf-69abb15196cfCheckc5cb982f-e466-422c-9cb1-b961410d4c26" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="macbook-Air" description="IP FQDN CONTAINS macbook-Air" name="Apple-MacBook-AirRuleb1ae3aa9-727f-4486-b4cf-69abb15196cfCheckc2d61582-32ef-4707-a6a2-1af687c56f7e" operator="Contains" type="IP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="MacBookAir" description="DHCP dhcp-class-identifier CONTAINS MacBookAir" name="Apple-MacBook-AirRule10fda461-a506-4ef4-b32f-a97e303668edCheck66b43927-7bf9-4de4-8f38-218f88f4f8b1" operator="Contains" type="DHCP"/>
+<Check attributeName="device-type" attributeValue="MacBookAir" description="ACIDEX device-type CONTAINS MacBookAir" name="Apple-MacBook-AirRule5ac503e3-67d3-422e-8c9b-7d0c0df144d1Check6bd1f43b-e854-47fd-bbd2-121a8b6be8f0" operator="Contains" type="ACIDEX"/>
+<Check attributeName="User-Agent" attributeValue="10.10" description="OS_X_Yosemite-WorkstationRule1Check1" name="OS_X_Yosemite-WorkstationRule1Check1_copy_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_10" description="OS_X_Yosemite-WorkstationRule1Check2" name="OS_X_Yosemite-WorkstationRule1Check2_copy_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.4" description="OS_X_Tiger-WorkstationRule1Check2" name="OS_X_Tiger-WorkstationRule1Check2_copy_copy0_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_4" description="OS_X_Tiger-WorkstationRule1Check1" name="OS_X_Tiger-WorkstationRule1Check1_copy_copy0_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_6" description="OS_X_SnowLeopard-WorkstationRule1Check1" name="OS_X_SnowLeopard-WorkstationRule1Check1_copy_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.6" description="OS_X_SnowLeopard-WorkstationRule1Check2" name="OS_X_SnowLeopard-WorkstationRule1Check2_copy_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_12" description="Condition for OS_X-Sierra-Workstation based on IP:User-Agent" name="OS_X_Sierra-Workstation-Rule2-Check1_copy_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.12" description="Condition for OS_X_Sierra-Workstation based on IP:User-Agent" name="OS_X_Sierra-Workstation-Rule1-Check1_copy_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_8" description="OS_X_MountainLion-WorkstationRule1Check1" name="OS_X_MountainLion-WorkstationRule1Check1_copy0_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.8" description="OS_X_MountainLion-WorkstationRule1Check2" name="OS_X_MountainLion-WorkstationRule1Check2_copy0_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_14" description="Condition for OS_X-Mojave-Workstation based on IP:User-Agent" name="OS_X_Mojave-Workstation-Rule2-Check1_copy_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.14" description="Condition for OS_X_Mojave-Workstation based on IP:User-Agent" name="OS_X_Mojave-Workstation-Rule1-Check1_copy_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.9" description="OS_X_Mavericks-WorkstationCheck2" name="OS_X_Mavericks-WorkstationCheck2_copy0_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_9" description="OS_X_Mavericks-WorkstationCheck1" name="OS_X_Mavericks-WorkstationCheck1_copy0_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_7" description="OS_X_Lion-WorkstationRule1Check1" name="OS_X_Lion-WorkstationRule1Check1_copy0_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.7" description="OS_X_Lion-WorkstationRule1Check2" name="OS_X_Lion-WorkstationRule1Check2_copy0_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_5" description="OS_X_Leopard-WorkstationRule1Check1" name="OS_X_Leopard-WorkstationRule1Check1_copy0_copy0_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.5" description="OS_X_Leopard-WorkstationRule1Check2" name="OS_X_Leopard-WorkstationRule1Check2_copy0_copy0_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.13" description="Condition for OS_X_High_Sierra-Workstation based on IP:User-Agent" name="OS_X_High_Sierra-Workstation-Rule1-Check1_copy0_copy_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_13" description="Condition for OS_X-High_Sierra-Workstation based on IP:User-Agent" name="OS_X_High_Sierra-Workstation-Rule2-Check1_copy0_copy_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.11" description="Condition for OS_X_El_Capitan-Workstation based on IP:User-Agent" name="OS_X_El_Capitan-Workstation-Rule1-Check1_copy1_copy_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_11" description="Condition for OS_X_El_Capitan-Workstation based on IP:User-Agent" name="OS_X_El_Capitan-Workstation-Rule2-Check1_copy1_copy_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X" description="OS_X-WorkstationRule1Check1" name="OS_X-WorkstationRule1Check1_copy1_copy_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="MAC_OSX" description="OS_X-WorkstationRule1Check2" name="OS_X-WorkstationRule1Check2_copy1_copy_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_10" description="OS_X_Yosemite-WorkstationRule1Check2" name="OS_X_Yosemite-WorkstationRule1Check2_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.10" description="OS_X_Yosemite-WorkstationRule1Check1" name="OS_X_Yosemite-WorkstationRule1Check1_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.4" description="OS_X_Tiger-WorkstationRule1Check2" name="OS_X_Tiger-WorkstationRule1Check2_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_4" description="OS_X_Tiger-WorkstationRule1Check1" name="OS_X_Tiger-WorkstationRule1Check1_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.6" description="OS_X_SnowLeopard-WorkstationRule1Check2" name="OS_X_SnowLeopard-WorkstationRule1Check2_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_6" description="OS_X_SnowLeopard-WorkstationRule1Check1" name="OS_X_SnowLeopard-WorkstationRule1Check1_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.12" description="Condition for OS_X_Sierra-Workstation based on IP:User-Agent" name="OS_X_Sierra-Workstation-Rule1-Check1_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_12" description="Condition for OS_X-Sierra-Workstation based on IP:User-Agent" name="OS_X_Sierra-Workstation-Rule2-Check1_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_8" description="OS_X_MountainLion-WorkstationRule1Check1" name="OS_X_MountainLion-WorkstationRule1Check1_copy0_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.8" description="OS_X_MountainLion-WorkstationRule1Check2" name="OS_X_MountainLion-WorkstationRule1Check2_copy0_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_14" description="Condition for OS_X-Mojave-Workstation based on IP:User-Agent" name="OS_X_Mojave-Workstation-Rule2-Check1_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.14" description="Condition for OS_X_Mojave-Workstation based on IP:User-Agent" name="OS_X_Mojave-Workstation-Rule1-Check1_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.9" description="OS_X_Mavericks-WorkstationCheck2" name="OS_X_Mavericks-WorkstationCheck2_copy0_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_9" description="OS_X_Mavericks-WorkstationCheck1" name="OS_X_Mavericks-WorkstationCheck1_copy0_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.7" description="OS_X_Lion-WorkstationRule1Check2" name="OS_X_Lion-WorkstationRule1Check2_copy0_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_7" description="OS_X_Lion-WorkstationRule1Check1" name="OS_X_Lion-WorkstationRule1Check1_copy0_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_5" description="OS_X_Leopard-WorkstationRule1Check1" name="OS_X_Leopard-WorkstationRule1Check1_copy0_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.5" description="OS_X_Leopard-WorkstationRule1Check2" name="OS_X_Leopard-WorkstationRule1Check2_copy0_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_13" description="Condition for OS_X-High_Sierra-Workstation based on IP:User-Agent" name="OS_X_High_Sierra-Workstation-Rule2-Check1_copy0_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.13" description="Condition for OS_X_High_Sierra-Workstation based on IP:User-Agent" name="OS_X_High_Sierra-Workstation-Rule1-Check1_copy0_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.11" description="Condition for OS_X_El_Capitan-Workstation based on IP:User-Agent" name="OS_X_El_Capitan-Workstation-Rule1-Check1_copy1_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_11" description="Condition for OS_X_El_Capitan-Workstation based on IP:User-Agent" name="OS_X_El_Capitan-Workstation-Rule2-Check1_copy1_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="MAC_OSX" description="OS_X-WorkstationRule1Check2" name="OS_X-WorkstationRule1Check2_copy1_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X" description="OS_X-WorkstationRule1Check1" name="OS_X-WorkstationRule1Check1_copy1_copy" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="iMac" description="IP FQDN CONTAINS iMac" name="Apple-iMacRuleb8c80ed1-0b69-4b8b-840b-8436e8e185e0Check6c942b7d-ab66-457c-ac4a-cd0fd5971061" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="iMac" description="DHCP host-name CONTAINS iMac" name="Apple-iMacRuleb8c80ed1-0b69-4b8b-840b-8436e8e185e0Checke8418e59-eea1-4456-8200-436b31787a04" operator="Contains" type="DHCP"/>
+<Check attributeName="client-identifier" attributeValue="iMac" description="DHCP client-identifier CONTAINS iMac" name="Apple-iMacRule6d93c23d-220b-43ae-b8dc-f45373192d27Check834f027f-34a1-441f-903c-65269322ed44" operator="Contains" type="DHCP"/>
+<Check attributeName="device-type" attributeValue="iMac" description="ACIDEX device-type CONTAINS iMac" name="Apple-iMacRule034d5054-bf57-42b8-803a-72fa3a8e0dbeChecka1cf7363-fdbe-4a86-93a8-f75da3389477" operator="Contains" type="ACIDEX"/>
+<Check attributeName="User-Agent" attributeValue="iMac" description="IP User-Agent CONTAINS iMac" name="Apple-iMacRule700d1457-f275-4262-975e-664d1745e21fCheckf90be801-1634-4a7e-9a75-1e0403d91ca4" operator="Contains" type="IP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="MacBook" description="DHCP dhcp-class-identifier CONTAINS MacBook" name="Apple-MacBook-UpdatedRule9c3563b8-86fb-482a-868b-a225443284faCheckdd0d4f7b-89c7-49b2-96a7-18cbb41962c9" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="MacBookPro" description="DHCP dhcp-class-identifier CONTAINS MacBookPro" name="Apple-MacBook-UpdatedRule9c3563b8-86fb-482a-868b-a225443284faCheck69666464-8811-4d4a-917e-58ae98a7dbf1" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="Macbook" description="IP User-Agent CONTAINS Macbook" name="Apple-MacBook-UpdatedRule16969fd4-21d7-486d-8789-f29dc9693de6Check429dacec-1586-4fe2-b93d-f586b120b8dc" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="MacbookPro" description="IP User-Agent CONTAINS MacbookPro" name="Apple-MacBook-UpdatedRule16969fd4-21d7-486d-8789-f29dc9693de6Check077cd216-70aa-494c-99e7-d49840c24fb1" operator="Contains" type="IP"/>
+<Check attributeName="device-type" attributeValue="Macbook" description="ACIDEX device-type CONTAINS Macbook" name="Apple-MacBook-UpdatedRule2d7cd1e1-21e8-49ea-9ead-ac2d791a7b01Check2bdfd8be-1c7b-4b37-a2ab-0e98f435f013" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="MacbookPro" description="ACIDEX device-type CONTAINS MacbookPro" name="Apple-MacBook-UpdatedRule2d7cd1e1-21e8-49ea-9ead-ac2d791a7b01Checkea857c03-a781-4a0a-847d-99e95545d2e7" operator="Contains" type="ACIDEX"/>
+<Check attributeName="FQDN" attributeValue="MacBook" description="IP FQDN CONTAINS MacBook" name="Apple-MacBook-UpdatedRule02ec775e-066e-478d-b40b-53e87b5cdd1bCheck4648bff0-59b0-4af6-94f0-5becda51c083" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="MBP" description="IP FQDN CONTAINS MBP" name="Apple-MacBook-UpdatedRule02ec775e-066e-478d-b40b-53e87b5cdd1bCheck265b1be3-bef9-44d2-87ae-0b112bc53052" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="MacBookPro" description="IP FQDN CONTAINS MacBookPro" name="Apple-MacBook-UpdatedRule02ec775e-066e-478d-b40b-53e87b5cdd1bCheckf959860b-e920-4d0c-b46b-01a00ddd0c03" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="MacBook" description="DHCP host-name CONTAINS MacBook" name="Apple-MacBook-UpdatedRule02ec775e-066e-478d-b40b-53e87b5cdd1bCheckc471eca7-9486-4da4-8357-02bd0eb649e6" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="MBP" description="DHCP host-name CONTAINS MBP" name="Apple-MacBook-UpdatedRule02ec775e-066e-478d-b40b-53e87b5cdd1bCheck323fcfb5-ab54-4a70-97b7-cde5e866fc3c" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="MacBookPro" description="DHCP host-name CONTAINS MacBookPro" name="Apple-MacBook-UpdatedRule02ec775e-066e-478d-b40b-53e87b5cdd1bCheck7187c341-003e-4898-9f7b-c3738a17e19e" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="10_10" description="OS_X_Yosemite-WorkstationRule1Check2" name="OS_X_Yosemite-WorkstationRule1Check2_copy_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.10" description="OS_X_Yosemite-WorkstationRule1Check1" name="OS_X_Yosemite-WorkstationRule1Check1_copy_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_4" description="OS_X_Tiger-WorkstationRule1Check1" name="OS_X_Tiger-WorkstationRule1Check1_copy_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.4" description="OS_X_Tiger-WorkstationRule1Check2" name="OS_X_Tiger-WorkstationRule1Check2_copy_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_6" description="OS_X_SnowLeopard-WorkstationRule1Check1" name="OS_X_SnowLeopard-WorkstationRule1Check1_copy_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.6" description="OS_X_SnowLeopard-WorkstationRule1Check2" name="OS_X_SnowLeopard-WorkstationRule1Check2_copy_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_8" description="OS_X_MountainLion-WorkstationRule1Check1" name="OS_X_MountainLion-WorkstationRule1Check1_copy0_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.8" description="OS_X_MountainLion-WorkstationRule1Check2" name="OS_X_MountainLion-WorkstationRule1Check2_copy0_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.14" description="Condition for OS_X_Mojave-Workstation based on IP:User-Agent" name="OS_X_Mojave-Workstation-Rule1-Check1_copy_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_14" description="Condition for OS_X-Mojave-Workstation based on IP:User-Agent" name="OS_X_Mojave-Workstation-Rule2-Check1_copy_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.9" description="OS_X_Mavericks-WorkstationCheck2" name="OS_X_Mavericks-WorkstationCheck2_copy0_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_9" description="OS_X_Mavericks-WorkstationCheck1" name="OS_X_Mavericks-WorkstationCheck1_copy0_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.7" description="OS_X_Lion-WorkstationRule1Check2" name="OS_X_Lion-WorkstationRule1Check2_copy0_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_7" description="OS_X_Lion-WorkstationRule1Check1" name="OS_X_Lion-WorkstationRule1Check1_copy0_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.5" description="OS_X_Leopard-WorkstationRule1Check2" name="OS_X_Leopard-WorkstationRule1Check2_copy0_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_5" description="OS_X_Leopard-WorkstationRule1Check1" name="OS_X_Leopard-WorkstationRule1Check1_copy0_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_13" description="Condition for OS_X-High_Sierra-Workstation based on IP:User-Agent" name="OS_X_High_Sierra-Workstation-Rule2-Check1_copy0_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.13" description="Condition for OS_X_High_Sierra-Workstation based on IP:User-Agent" name="OS_X_High_Sierra-Workstation-Rule1-Check1_copy0_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_11" description="Condition for OS_X_El_Capitan-Workstation based on IP:User-Agent" name="OS_X_El_Capitan-Workstation-Rule2-Check1_copy1_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.11" description="Condition for OS_X_El_Capitan-Workstation based on IP:User-Agent" name="OS_X_El_Capitan-Workstation-Rule1-Check1_copy1_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X" description="OS_X-WorkstationRule1Check1" name="OS_X-WorkstationRule1Check1_copy1_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="MAC_OSX" description="OS_X-WorkstationRule1Check2" name="OS_X-WorkstationRule1Check2_copy1_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X" description="OS_X-WorkstationRule1Check1" name="OS_X-WorkstationRule1Check1_copy1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="MAC_OSX" description="OS_X-WorkstationRule1Check2" name="OS_X-WorkstationRule1Check2_copy1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_12" description="Condition for OS_X-Sierra-Workstation based on IP:User-Agent" name="OS_X_Sierra-Workstation-Rule2-Check1_copy_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.12" description="Condition for OS_X_Sierra-Workstation based on IP:User-Agent" name="OS_X_Sierra-Workstation-Rule1-Check1_copy_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.10" description="OS_X_Yosemite-WorkstationRule1Check1" name="OS_X_Yosemite-WorkstationRule1Check1_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_10" description="OS_X_Yosemite-WorkstationRule1Check2" name="OS_X_Yosemite-WorkstationRule1Check2_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_4" description="OS_X_Tiger-WorkstationRule1Check1" name="OS_X_Tiger-WorkstationRule1Check1_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.4" description="OS_X_Tiger-WorkstationRule1Check2" name="OS_X_Tiger-WorkstationRule1Check2_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.6" description="OS_X_SnowLeopard-WorkstationRule1Check2" name="OS_X_SnowLeopard-WorkstationRule1Check2_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_6" description="OS_X_SnowLeopard-WorkstationRule1Check1" name="OS_X_SnowLeopard-WorkstationRule1Check1_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.12" description="Condition for OS_X_Sierra-Workstation based on IP:User-Agent" name="OS_X_Sierra-Workstation-Rule1-Check1_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_12" description="Condition for OS_X-Sierra-Workstation based on IP:User-Agent" name="OS_X_Sierra-Workstation-Rule2-Check1_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.8" description="OS_X_MountainLion-WorkstationRule1Check2" name="OS_X_MountainLion-WorkstationRule1Check2_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_8" description="OS_X_MountainLion-WorkstationRule1Check1" name="OS_X_MountainLion-WorkstationRule1Check1_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_14" description="Condition for OS_X-Mojave-Workstation based on IP:User-Agent" name="OS_X_Mojave-Workstation-Rule2-Check1_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.14" description="Condition for OS_X_Mojave-Workstation based on IP:User-Agent" name="OS_X_Mojave-Workstation-Rule1-Check1_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.9" description="OS_X_Mavericks-WorkstationCheck2" name="OS_X_Mavericks-WorkstationCheck2_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_9" description="OS_X_Mavericks-WorkstationCheck1" name="OS_X_Mavericks-WorkstationCheck1_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_7" description="OS_X_Lion-WorkstationRule1Check1" name="OS_X_Lion-WorkstationRule1Check1_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.7" description="OS_X_Lion-WorkstationRule1Check2" name="OS_X_Lion-WorkstationRule1Check2_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10.5" description="OS_X_Leopard-WorkstationRule1Check2" name="OS_X_Leopard-WorkstationRule1Check2_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS X 10_5" description="OS_X_Leopard-WorkstationRule1Check1" name="OS_X_Leopard-WorkstationRule1Check1_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.11" description="Condition for OS_X_El_Capitan-Workstation based on IP:User-Agent" name="OS_X_El_Capitan-Workstation-Rule1-Check1_copy1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_11" description="Condition for OS_X_El_Capitan-Workstation based on IP:User-Agent" name="OS_X_El_Capitan-Workstation-Rule2-Check1_copy1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10.13" description="Condition for OS_X_High_Sierra-Workstation based on IP:User-Agent" name="OS_X_High_Sierra-Workstation-Rule1-Check1_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="10_13" description="Condition for OS_X-High_Sierra-Workstation based on IP:User-Agent" name="OS_X_High_Sierra-Workstation-Rule2-Check1_copy0" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

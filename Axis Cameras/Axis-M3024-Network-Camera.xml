@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Axis-Device" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Axis-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Axis-DeviceRule3"/>
+<PolicyRule certaintyFactor="10" name="Axis-DeviceRule2"/>
+<PolicyRule certaintyFactor="10" name="Axis-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Axis-Network-Camera" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Axis-Network-Camera" parentFQN="Axis-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Axis-Network-CameraRule22"/>
+<PolicyRule certaintyFactor="20" name="Axis-Network-CameraRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Axis-M3024-Network-Camera" parentFQN="Axis-Device:Axis-Network-Camera" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Axis-M3024-Network-CameraRule5bfa0f2d-d417-4d3e-bd31-08ec4cb6454a"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Axis-Device-Rule3-Check1" expression="Axis-Device-Rule3-Check1" name="Axis-DeviceRule3" ruleType="Regular"/>
+<Rule description="Axis-Device-Rule2-Check1" expression="Axis-Device-Rule2-Check1" name="Axis-DeviceRule2" ruleType="Regular"/>
+<Rule description="Axis-Device-Rule1-Check1" expression="Axis-Device-Rule1-Check1" name="Axis-DeviceRule1" ruleType="Regular"/>
+<Rule description="Axis-Network-Camera-Rule2-Check1" expression="Axis-Network-Camera-Rule2-Check1" name="Axis-Network-CameraRule22" ruleType="Regular"/>
+<Rule description="Axis-Network-Camera-Rule1Check1" expression="Axis-Network-Camera-Rule1Check1" name="Axis-Network-CameraRule1" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_M3024" expression="Axis-M3024-Network-CameraRule5bfa0f2d-d417-4d3e-bd31-08ec4cb6454aCheck83176ddb-aec2-4349-b43a-bc36629bfa65" name="Axis-M3024-Network-CameraRule5bfa0f2d-d417-4d3e-bd31-08ec4cb6454a" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="host-name" attributeValue="axis" description="Condition for Axis-Device , based on DHCP-Host-Name" name="Axis-Device-Rule3-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="AXIS" description="Condition for Axis-Device ,  based on DHCP-Class-Identifier" name="Axis-Device-Rule2-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="AXIS" description="Condition for Axis-Device , based on MAC-OUI" name="Axis-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="dhcpv6-vendor-class" attributeValue="Network Camera" description="Condition for Axis-Network-Camera based on DHCP:dhcpv6-vendor-class" name="Axis-Network-Camera-Rule2-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Network Camera" description="Condition for Axis-Network-Camera,based on DHCP-Class-Identifier" name="Axis-Network-Camera-Rule1Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="M3024" description="DHCP dhcp-class-identifier CONTAINS M3024" name="Axis-M3024-Network-CameraRule5bfa0f2d-d417-4d3e-bd31-08ec4cb6454aCheck83176ddb-aec2-4349-b43a-bc36629bfa65" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

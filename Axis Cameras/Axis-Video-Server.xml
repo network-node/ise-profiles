@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Axis-Device" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Axis-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Axis-DeviceRule3"/>
+<PolicyRule certaintyFactor="10" name="Axis-DeviceRule2"/>
+<PolicyRule certaintyFactor="10" name="Axis-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Axis-Video-Server" parentFQN="Axis-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Axis-Video-ServerRule69b3d253-4a25-4443-a966-1987feda9395"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Axis-Device-Rule3-Check1" expression="Axis-Device-Rule3-Check1" name="Axis-DeviceRule3" ruleType="Regular"/>
+<Rule description="Axis-Device-Rule2-Check1" expression="Axis-Device-Rule2-Check1" name="Axis-DeviceRule2" ruleType="Regular"/>
+<Rule description="Axis-Device-Rule1-Check1" expression="Axis-Device-Rule1-Check1" name="Axis-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_Video_Server" expression="Axis-Video-ServerRule69b3d253-4a25-4443-a966-1987feda9395Check50ce9a1c-d0d7-478e-8f7e-7ca73c9b5ebc" name="Axis-Video-ServerRule69b3d253-4a25-4443-a966-1987feda9395" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="host-name" attributeValue="axis" description="Condition for Axis-Device , based on DHCP-Host-Name" name="Axis-Device-Rule3-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="AXIS" description="Condition for Axis-Device ,  based on DHCP-Class-Identifier" name="Axis-Device-Rule2-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="AXIS" description="Condition for Axis-Device , based on MAC-OUI" name="Axis-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Video Server" description="DHCP dhcp-class-identifier CONTAINS Video Server" name="Axis-Video-ServerRule69b3d253-4a25-4443-a966-1987feda9395Check50ce9a1c-d0d7-478e-8f7e-7ca73c9b5ebc" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

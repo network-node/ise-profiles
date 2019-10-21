@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for all Aruba devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Aruba-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Aruba-DeviceRule"/>
+<PolicyRule certaintyFactor="20" name="Aruba-DeviceRulee76b5f63-104a-4b76-bac5-529dbe92ab89"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Aruba-DeviceRuleCheck1" expression="Aruba-DeviceRuleCheck1" name="Aruba-DeviceRule" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Aruba" expression="Aruba-DeviceRulee76b5f63-104a-4b76-bac5-529dbe92ab89Check6f94efe9-c3e7-42b0-87a7-bc3ea1f9925b" name="Aruba-DeviceRulee76b5f63-104a-4b76-bac5-529dbe92ab89" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="ARUBA NETWORKS" description="Aruba-DeviceRuleCheck1" name="Aruba-DeviceRuleCheck1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Aruba" description="MAC OUI CONTAINS Aruba" name="Aruba-DeviceRulee76b5f63-104a-4b76-bac5-529dbe92ab89Check6f94efe9-c3e7-42b0-87a7-bc3ea1f9925b" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

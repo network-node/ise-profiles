@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Digital camera and security system products&#9;https://en.wikipedia.org/wiki/Avigilon" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Avigilon-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Avigilon-DeviceRulea3084b85-2c09-4f1c-a009-c36703af44e2"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Avigilon" expression="Avigilon-DeviceRulea3084b85-2c09-4f1c-a009-c36703af44e2Checkb2bbbe6b-3b33-4d92-9bdb-b63deee29779" name="Avigilon-DeviceRulea3084b85-2c09-4f1c-a009-c36703af44e2" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Avigilon" description="MAC OUI CONTAINS Avigilon" name="Avigilon-DeviceRulea3084b85-2c09-4f1c-a009-c36703af44e2Checkb2bbbe6b-3b33-4d92-9bdb-b63deee29779" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
