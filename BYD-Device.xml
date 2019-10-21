@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="BYD-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Asix-DeviceRulefb1bedfc-99c5-489a-9f80-bd65ad4a4f93_copy_copy_copy0_copy_copy_copy_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_MATCHES_BYD_Precision" expression="Asix-DeviceRulefb1bedfc-99c5-489a-9f80-bd65ad4a4f93Check5b60efa2-f71f-4b25-bf5b-4025422aefd2_copy_copy_copy0_copy_copy_copy_copy_copy_copy_copy" name="Asix-DeviceRulefb1bedfc-99c5-489a-9f80-bd65ad4a4f93_copy_copy_copy0_copy_copy_copy_copy_copy_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="BYD Precision" description="MAC OUI MATCHES BYD Precision" name="Asix-DeviceRulefb1bedfc-99c5-489a-9f80-bd65ad4a4f93Check5b60efa2-f71f-4b25-bf5b-4025422aefd2_copy_copy_copy0_copy_copy_copy_copy_copy_copy_copy" operator="Matches" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

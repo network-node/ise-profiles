@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Clarity-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Clarity-DeviceRule97c2c981-895b-4687-b6a2-0fbcdaf6d0e1"/>
+<PolicyRule certaintyFactor="5" name="Clarity-DeviceRuleb73344c8-c781-4ab2-8b92-a6417a8f567b"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Active_Silicon" expression="Clarity-DeviceRule97c2c981-895b-4687-b6a2-0fbcdaf6d0e1Check0f0e9890-3df5-4ec8-93a7-080cade04928" name="Clarity-DeviceRule97c2c981-895b-4687-b6a2-0fbcdaf6d0e1" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_clarity_OR_DHCP_host-name_CONTAINS_clarity" expression="Clarity-DeviceRuleb73344c8-c781-4ab2-8b92-a6417a8f567bCheck01db3e89-05f5-467c-9b4d-66da86058fe3 | Clarity-DeviceRuleb73344c8-c781-4ab2-8b92-a6417a8f567bCheckce3b383e-e12e-489d-8a52-0c9d87b217d0" name="Clarity-DeviceRuleb73344c8-c781-4ab2-8b92-a6417a8f567b" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Active Silicon" description="MAC OUI CONTAINS Active Silicon" name="Clarity-DeviceRule97c2c981-895b-4687-b6a2-0fbcdaf6d0e1Check0f0e9890-3df5-4ec8-93a7-080cade04928" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="clarity" description="IP FQDN CONTAINS clarity" name="Clarity-DeviceRuleb73344c8-c781-4ab2-8b92-a6417a8f567bCheck01db3e89-05f5-467c-9b4d-66da86058fe3" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="clarity" description="DHCP host-name CONTAINS clarity" name="Clarity-DeviceRuleb73344c8-c781-4ab2-8b92-a6417a8f567bCheckce3b383e-e12e-489d-8a52-0c9d87b217d0" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

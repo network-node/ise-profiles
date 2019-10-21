@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Armorlink-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="AAEON-DeviceRuled32bbcd3-e57f-4f0f-910d-bb26a9a639c6_copy_copy_copy_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="CE-Dialysis-Device" parentFQN="Armorlink-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="CE-Dialysis-DeviceRuled140a139-73d8-446b-b0a5-a4ab5ce1b675"/>
+<PolicyRule certaintyFactor="10" name="CE-Dialysis-DeviceRule288b82b2-d24f-43f5-ac9f-b72c0604b43b"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Armorlink_Co" expression="AAEON-DeviceRuled32bbcd3-e57f-4f0f-910d-bb26a9a639c6Checkc6c2ab87-1401-4c79-bf0c-119802c800d4_copy_copy_copy_copy_copy_copy_copy" name="AAEON-DeviceRuled32bbcd3-e57f-4f0f-910d-bb26a9a639c6_copy_copy_copy_copy_copy_copy_copy" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_EQUALS_CCE" expression="CE-Dialysis-DeviceRuled140a139-73d8-446b-b0a5-a4ab5ce1b675Check421be63d-5a7a-4605-8e44-06c529f65fbe" name="CE-Dialysis-DeviceRuled140a139-73d8-446b-b0a5-a4ab5ce1b675" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_ce-dialysis_OR_IP_FQDN_CONTAINS_ce-anes_OR_DHCP_host-name_CONTAINS_ce-anes_OR_DHCP_host-name_CONTAINS_ce-dialysis" expression="((CE-Dialysis-DeviceRule288b82b2-d24f-43f5-ac9f-b72c0604b43bCheck836f495e-6acd-4080-a07f-312a38ad46fb | CE-Dialysis-DeviceRule288b82b2-d24f-43f5-ac9f-b72c0604b43bCheck38ec9943-5f9c-42ca-89bc-d4e8b0d46082) | CE-Dialysis-DeviceRule288b82b2-d24f-43f5-ac9f-b72c0604b43bCheck226115cf-e3fd-4ed4-a80b-84ac2b722af0) | CE-Dialysis-DeviceRule288b82b2-d24f-43f5-ac9f-b72c0604b43bCheckc25bcdaa-ca8d-44cf-87ea-37deadcb3f77" name="CE-Dialysis-DeviceRule288b82b2-d24f-43f5-ac9f-b72c0604b43b" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Armorlink Co" description="MAC OUI CONTAINS Armorlink Co" name="AAEON-DeviceRuled32bbcd3-e57f-4f0f-910d-bb26a9a639c6Checkc6c2ab87-1401-4c79-bf0c-119802c800d4_copy_copy_copy_copy_copy_copy_copy" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="CCE" description="DHCP dhcp-class-identifier EQUALS CCE" name="CE-Dialysis-DeviceRuled140a139-73d8-446b-b0a5-a4ab5ce1b675Check421be63d-5a7a-4605-8e44-06c529f65fbe" operator="Equals" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="ce-dialysis" description="IP FQDN CONTAINS ce-dialysis" name="CE-Dialysis-DeviceRule288b82b2-d24f-43f5-ac9f-b72c0604b43bCheck836f495e-6acd-4080-a07f-312a38ad46fb" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="ce-anes" description="IP FQDN CONTAINS ce-anes" name="CE-Dialysis-DeviceRule288b82b2-d24f-43f5-ac9f-b72c0604b43bCheck38ec9943-5f9c-42ca-89bc-d4e8b0d46082" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="ce-anes" description="DHCP host-name CONTAINS ce-anes" name="CE-Dialysis-DeviceRule288b82b2-d24f-43f5-ac9f-b72c0604b43bCheck226115cf-e3fd-4ed4-a80b-84ac2b722af0" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="ce-dialysis" description="DHCP host-name CONTAINS ce-dialysis" name="CE-Dialysis-DeviceRule288b82b2-d24f-43f5-ac9f-b72c0604b43bCheckc25bcdaa-ca8d-44cf-87ea-37deadcb3f77" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

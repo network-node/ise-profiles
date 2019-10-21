@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Planet-Industrial-Switches" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Planet-Industrial-SwitchesRuled418117c-2133-4cb6-ac2c-b823b056b4e3"/>
+<PolicyRule certaintyFactor="5" name="Planet-Industrial-SwitchesRule005a0f6b-bc45-4a0d-892d-22142464a6ff"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="CM500-Cable-Modem" parentFQN="Planet-Industrial-Switches" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="CM500-Cable-ModemRule8e7df553-ac72-4df6-a24d-9e383a82e1a1"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_PLANET_Technology_Corporation" expression="Planet-Industrial-SwitchesRuled418117c-2133-4cb6-ac2c-b823b056b4e3Checke5f2b5f0-5a93-4b2b-95bc-09ebeee2e3c8" name="Planet-Industrial-SwitchesRuled418117c-2133-4cb6-ac2c-b823b056b4e3" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-parameter-request-list_EQUALS_3,_6,_1" expression="Planet-Industrial-SwitchesRule005a0f6b-bc45-4a0d-892d-22142464a6ffCheck8d27f175-5a15-4b3d-a711-b156cec24822" name="Planet-Industrial-SwitchesRule005a0f6b-bc45-4a0d-892d-22142464a6ff" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_CM5000" expression="CM500-Cable-ModemRule8e7df553-ac72-4df6-a24d-9e383a82e1a1Check8a17dab3-a140-479a-b660-b0be31e31c8c" name="CM500-Cable-ModemRule8e7df553-ac72-4df6-a24d-9e383a82e1a1" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="PLANET Technology Corporation" description="MAC OUI CONTAINS PLANET Technology Corporation" name="Planet-Industrial-SwitchesRuled418117c-2133-4cb6-ac2c-b823b056b4e3Checke5f2b5f0-5a93-4b2b-95bc-09ebeee2e3c8" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="3, 6, 1" description="DHCP dhcp-parameter-request-list EQUALS 3, 6, 1" name="Planet-Industrial-SwitchesRule005a0f6b-bc45-4a0d-892d-22142464a6ffCheck8d27f175-5a15-4b3d-a711-b156cec24822" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="CM5000" description="DHCP dhcp-class-identifier CONTAINS CM5000" name="CM500-Cable-ModemRule8e7df553-ac72-4df6-a24d-9e383a82e1a1Check8a17dab3-a140-479a-b660-b0be31e31c8c" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

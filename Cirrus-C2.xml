@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Shenzhen-Along-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Seco-DeviceRulee98215d6-b372-463e-aab1-da9e81e93383_copy_copy_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Cirrus-C2" parentFQN="Shenzhen-Along-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Cirrus-C2Rule50f6eeb1-9357-427b-9b6c-8667b5dc68f9"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_SHENZHEN_ALONG_INVESTMENT" expression="Seco-DeviceRulee98215d6-b372-463e-aab1-da9e81e93383Check82d6af5c-08b8-4189-a11f-407a555e45e3_copy_copy_copy_copy_copy_copy" name="Seco-DeviceRulee98215d6-b372-463e-aab1-da9e81e93383_copy_copy_copy_copy_copy_copy" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_Cirrus_C2" expression="Cirrus-C2Rule50f6eeb1-9357-427b-9b6c-8667b5dc68f9Check829cc41d-ec7e-4ecd-a18a-79147c2faf18" name="Cirrus-C2Rule50f6eeb1-9357-427b-9b6c-8667b5dc68f9" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="SHENZHEN ALONG INVESTMENT" description="MAC OUI CONTAINS SHENZHEN ALONG INVESTMENT" name="Seco-DeviceRulee98215d6-b372-463e-aab1-da9e81e93383Check82d6af5c-08b8-4189-a11f-407a555e45e3_copy_copy_copy_copy_copy_copy" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="Cirrus_C2" description="IP User-Agent CONTAINS Cirrus_C2" name="Cirrus-C2Rule50f6eeb1-9357-427b-9b6c-8667b5dc68f9Check829cc41d-ec7e-4ecd-a18a-79147c2faf18" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

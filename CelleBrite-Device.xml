@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="CelleBrite-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Cary-DeviceRule0a24fb5a-00d6-4893-81d9-057fd2d8bf34_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_CelleBrite" expression="Cary-DeviceRule0a24fb5a-00d6-4893-81d9-057fd2d8bf34Check5a4bf73b-396a-4f8b-adb1-4294be03c05e_copy" name="Cary-DeviceRule0a24fb5a-00d6-4893-81d9-057fd2d8bf34_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="CelleBrite" description="MAC OUI CONTAINS CelleBrite" name="Cary-DeviceRule0a24fb5a-00d6-4893-81d9-057fd2d8bf34Check5a4bf73b-396a-4f8b-adb1-4294be03c05e_copy" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
