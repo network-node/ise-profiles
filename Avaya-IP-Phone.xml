@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for all Avaya Devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Avaya-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Tenovis-DeviceRule"/>
+<PolicyRule certaintyFactor="10" name="Avaya-DeviceRule"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Avaya IP Phone" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Avaya-IP-Phone" parentFQN="Avaya-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Avaya-IP-PhoneRuleef0b72e5-a370-4ede-920c-ae60dacbf73f"/>
+<PolicyRule certaintyFactor="20" name="LLDP-IP-PhoneRule"/>
+<PolicyRule certaintyFactor="20" name="Avaya-IP-PhoneRulec7107837-0d62-46c6-a75e-2300bd73f0dc"/>
+<PolicyRule certaintyFactor="20" name="AvayaIPPhoneRule1"/>
+<PolicyRule certaintyFactor="20" name="LLDP-IP-PhoneRule1"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Tenovis-DeviceRuleCheck1" expression="Tenovis-DeviceRuleCheck1" name="Tenovis-DeviceRule" ruleType="Regular"/>
+<Rule description="Avaya-DeviceRuleCheck1" expression="Avaya-DeviceRuleCheck1" name="Avaya-DeviceRule" ruleType="Regular"/>
+<Rule description="IP_FQDN_STARTSWITH_AVX_OR_DHCP_host-name_STARTSWITH_AVX_OR_LLDP_lldpSystemName_STARTSWITH_AVX" expression="(Avaya-IP-PhoneRuleef0b72e5-a370-4ede-920c-ae60dacbf73fCheck6816700b-5422-4ab2-ad17-534fb6588fd9 | Avaya-IP-PhoneRuleef0b72e5-a370-4ede-920c-ae60dacbf73fCheckb36e5ac4-ef4f-4e45-8470-c09d56580ec3) | Avaya-IP-PhoneRuleef0b72e5-a370-4ede-920c-ae60dacbf73fCheckdd07435a-f225-4d84-89d2-a2ea3d8e2877" name="Avaya-IP-PhoneRuleef0b72e5-a370-4ede-920c-ae60dacbf73f" ruleType="Regular"/>
+<Rule description="IPPhoneLLDPCapabilitiesCheck" expression="IPPhoneLLDPCapabilitiesCheck" name="LLDP-IP-PhoneRule" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_ccp.avaya.com" expression="Avaya-IP-PhoneRulec7107837-0d62-46c6-a75e-2300bd73f0dcCheck7bf694c2-169d-4e03-aa48-b4fd62b9bb4f" name="Avaya-IP-PhoneRulec7107837-0d62-46c6-a75e-2300bd73f0dc" ruleType="Regular"/>
+<Rule description="AvayaIPPhoneCheck" expression="AvayaIPPhoneCheck" name="AvayaIPPhoneRule1" ruleType="Regular"/>
+<Rule description="IPPhoneLLDPCapabilitiesCheck1" expression="IPPhoneLLDPCapabilitiesCheck1 | IPPhoneLLDPCapabilitiesCheck2" name="LLDP-IP-PhoneRule1" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Tenovis" description="Tenovis-DeviceRuleCheck1" name="Tenovis-DeviceRuleCheck1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Avaya" description="Avaya-DeviceRuleCheck1" name="Avaya-DeviceRuleCheck1" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="AVX" description="IP FQDN STARTSWITH AVX" name="Avaya-IP-PhoneRuleef0b72e5-a370-4ede-920c-ae60dacbf73fCheck6816700b-5422-4ab2-ad17-534fb6588fd9" operator="Starts with" type="IP"/>
+<Check attributeName="host-name" attributeValue="AVX" description="DHCP host-name STARTSWITH AVX" name="Avaya-IP-PhoneRuleef0b72e5-a370-4ede-920c-ae60dacbf73fCheckb36e5ac4-ef4f-4e45-8470-c09d56580ec3" operator="Starts with" type="DHCP"/>
+<Check attributeName="lldpSystemName" attributeValue="AVX" description="LLDP lldpSystemName STARTSWITH AVX" name="Avaya-IP-PhoneRuleef0b72e5-a370-4ede-920c-ae60dacbf73fCheckdd07435a-f225-4d84-89d2-a2ea3d8e2877" operator="Starts with" type="LLDP"/>
+<Check attributeName="lldpCacheCapabilities" attributeValue="00:20" description="IP Phones capabilities Check" name="IPPhoneLLDPCapabilitiesCheck" operator="Contains" type="LLDP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="ccp.avaya.com" description="DHCP dhcp-class-identifier CONTAINS ccp.avaya.com" name="Avaya-IP-PhoneRulec7107837-0d62-46c6-a75e-2300bd73f0dcCheck7bf694c2-169d-4e03-aa48-b4fd62b9bb4f" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="ccp.avaya.com" description="Check for Avaya IP Phone" name="AvayaIPPhoneCheck" operator="Equals" type="DHCP"/>
+<Check attributeName="lldpCacheCapabilities" attributeValue="T" description="IP Phones capabilities Check1" name="IPPhoneLLDPCapabilitiesCheck1" operator="Contains" type="LLDP"/>
+<Check attributeName="lldpCapabilitiesMapSupported" attributeValue="T" description="IP Phones capabilities Check2" name="IPPhoneLLDPCapabilitiesCheck2" operator="Contains" type="LLDP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

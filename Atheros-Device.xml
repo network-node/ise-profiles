@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Atheros-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Atheros-DeviceRule975fc7eb-77c1-4e22-86e3-1de58b54f17d"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Atheros_Communications" expression="Atheros-DeviceRule975fc7eb-77c1-4e22-86e3-1de58b54f17dCheck65e7816e-d4ac-4ef1-8e2e-679772497d5f" name="Atheros-DeviceRule975fc7eb-77c1-4e22-86e3-1de58b54f17d" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Atheros Communications" description="MAC OUI CONTAINS Atheros Communications" name="Atheros-DeviceRule975fc7eb-77c1-4e22-86e3-1de58b54f17dCheck65e7816e-d4ac-4ef1-8e2e-679772497d5f" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

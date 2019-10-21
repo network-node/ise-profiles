@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for all Aruba devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Aruba-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Aruba-DeviceRule"/>
+<PolicyRule certaintyFactor="20" name="Aruba-DeviceRulee76b5f63-104a-4b76-bac5-529dbe92ab89"/>
+</PolicyRules>
+</Policy>
+<Policy description="Generic policy for Aruba Access Points" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Aruba-AP" parentFQN="Aruba-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Aruba-APRule22"/>
+<PolicyRule certaintyFactor="20" name="Aruba-APRule1"/>
+<PolicyRule certaintyFactor="20" name="Aruba-APRule8eae4f30-8768-4a68-bcb5-29ed9613fd7d"/>
+<PolicyRule certaintyFactor="20" name="Aruba-APRuleba31ba34-fecb-4a37-9ef5-9c1680af4e0e"/>
+<PolicyRule certaintyFactor="10" name="Aruba-APRule4a38c705-3176-4f3c-a33c-1efc69778ec9"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Aruba-DeviceRuleCheck1" expression="Aruba-DeviceRuleCheck1" name="Aruba-DeviceRule" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Aruba" expression="Aruba-DeviceRulee76b5f63-104a-4b76-bac5-529dbe92ab89Check6f94efe9-c3e7-42b0-87a7-bc3ea1f9925b" name="Aruba-DeviceRulee76b5f63-104a-4b76-bac5-529dbe92ab89" ruleType="Regular"/>
+<Rule description="Aruba-APRule2Check1_OR_Aruba-AP-Rule3-Check1" expression="Aruba-APRule2Check1 | Aruba-AP-Rule3-Check1" name="Aruba-APRule22" ruleType="Regular"/>
+<Rule description="Aruba-APRule1Check1" expression="Aruba-APRule1Check1" name="Aruba-APRule1" ruleType="Regular"/>
+<Rule description="LLDP_lldpSystemDescription_CONTAINS_ArubaOS" expression="Aruba-APRule8eae4f30-8768-4a68-bcb5-29ed9613fd7dCheck3f94a164-6b82-4025-a406-398ebf03d4cf" name="Aruba-APRule8eae4f30-8768-4a68-bcb5-29ed9613fd7d" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_ArubaAP" expression="Aruba-APRuleba31ba34-fecb-4a37-9ef5-9c1680af4e0eCheck8615248f-ea49-40c8-a576-c6845b31800a" name="Aruba-APRuleba31ba34-fecb-4a37-9ef5-9c1680af4e0e" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-parameter-request-list_EQUALS_1,_3,_4,_6,_12,_15,_28,_42,_43,_60" expression="Aruba-APRule4a38c705-3176-4f3c-a33c-1efc69778ec9Check632d072c-103c-4bb4-8408-043bfc7bbb0a" name="Aruba-APRule4a38c705-3176-4f3c-a33c-1efc69778ec9" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="ARUBA NETWORKS" description="Aruba-DeviceRuleCheck1" name="Aruba-DeviceRuleCheck1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Aruba" description="MAC OUI CONTAINS Aruba" name="Aruba-DeviceRulee76b5f63-104a-4b76-bac5-529dbe92ab89Check6f94efe9-c3e7-42b0-87a7-bc3ea1f9925b" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="ArubaInstantAP" description="Condition for Aruba-Access-Point , based on DHCP-Class-Identifier" name="Aruba-APRule2Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcpv6-vendor-class" attributeValue="ArubaInstantAP" description="Condition for Aruba-AP based on DHCP:dhcpv6-vendor-class" name="Aruba-AP-Rule3-Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="ArubaAP" description="Aruba-APRule1Check1" name="Aruba-APRule1Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="lldpSystemDescription" attributeValue="ArubaOS" description="LLDP lldpSystemDescription CONTAINS ArubaOS" name="Aruba-APRule8eae4f30-8768-4a68-bcb5-29ed9613fd7dCheck3f94a164-6b82-4025-a406-398ebf03d4cf" operator="Contains" type="LLDP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="ArubaAP" description="DHCP dhcp-class-identifier CONTAINS ArubaAP" name="Aruba-APRuleba31ba34-fecb-4a37-9ef5-9c1680af4e0eCheck8615248f-ea49-40c8-a576-c6845b31800a" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 3, 4, 6, 12, 15, 28, 42, 43, 60" description="DHCP dhcp-parameter-request-list EQUALS 1, 3, 4, 6, 12, 15, 28, 42, 43, 60" name="Aruba-APRule4a38c705-3176-4f3c-a33c-1efc69778ec9Check632d072c-103c-4bb4-8408-043bfc7bbb0a" operator="Equals" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

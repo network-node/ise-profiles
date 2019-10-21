@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="AudioCodes-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="HeFei-DeviceRule11b3e584-c811-4d15-b98b-206e8bce118a_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="AudioCodes-420HD-Phone" parentFQN="AudioCodes-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="AudioCodes-420HD-PhoneRule7c89f20e-aa15-4caf-b702-8f58fdbfcd2a"/>
+<PolicyRule certaintyFactor="30" name="AudioCodes-420HD-PhoneRule6dea6c59-ac64-46ca-af9f-8a9a9a9d166b"/>
+<PolicyRule certaintyFactor="30" name="AudioCodes-420HD-PhoneRule7cf20bee-5aa3-4b49-995c-61223e401dfe"/>
+<PolicyRule certaintyFactor="30" name="AudioCodes-420HD-PhoneRule9166d986-760e-4770-a53e-a138d21ec342"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_AUDIO_CODES" expression="HeFei-DeviceRule11b3e584-c811-4d15-b98b-206e8bce118aCheck77a4f39f-cd29-4ee8-9985-6a413df73f90_copy" name="HeFei-DeviceRule11b3e584-c811-4d15-b98b-206e8bce118a_copy" ruleType="Regular"/>
+<Rule description="CDP_cdpCachePlatform_CONTAINS_420HD" expression="AudioCodes-420HD-PhoneRule7c89f20e-aa15-4caf-b702-8f58fdbfcd2aCheckdedb7ae5-8734-4602-bdbb-d1c894acec8b" name="AudioCodes-420HD-PhoneRule7c89f20e-aa15-4caf-b702-8f58fdbfcd2a" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_420HD" expression="AudioCodes-420HD-PhoneRule6dea6c59-ac64-46ca-af9f-8a9a9a9d166bCheck838d9035-cabe-46aa-bbfe-aa1c0ae14d9e" name="AudioCodes-420HD-PhoneRule6dea6c59-ac64-46ca-af9f-8a9a9a9d166b" ruleType="Regular"/>
+<Rule description="LLDP_lldpSystemDescription_CONTAINS_(420HD" expression="AudioCodes-420HD-PhoneRule7cf20bee-5aa3-4b49-995c-61223e401dfeCheck902772bc-f9f4-4390-9fe6-045fd99d6209" name="AudioCodes-420HD-PhoneRule7cf20bee-5aa3-4b49-995c-61223e401dfe" ruleType="Regular"/>
+<Rule description="LLDP_lldpSystemName_STARTSWITH_420HD" expression="AudioCodes-420HD-PhoneRule9166d986-760e-4770-a53e-a138d21ec342Check8af33a45-0f5a-47c9-bdff-fb3a8ffe308e" name="AudioCodes-420HD-PhoneRule9166d986-760e-4770-a53e-a138d21ec342" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="AUDIO CODES" description="MAC OUI CONTAINS AUDIO CODES" name="HeFei-DeviceRule11b3e584-c811-4d15-b98b-206e8bce118aCheck77a4f39f-cd29-4ee8-9985-6a413df73f90_copy" operator="Contains" type="Mac"/>
+<Check attributeName="cdpCachePlatform" attributeValue="420HD" description="CDP cdpCachePlatform CONTAINS 420HD" name="AudioCodes-420HD-PhoneRule7c89f20e-aa15-4caf-b702-8f58fdbfcd2aCheckdedb7ae5-8734-4602-bdbb-d1c894acec8b" operator="Contains" type="CDP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="420HD" description="DHCP dhcp-class-identifier CONTAINS 420HD" name="AudioCodes-420HD-PhoneRule6dea6c59-ac64-46ca-af9f-8a9a9a9d166bCheck838d9035-cabe-46aa-bbfe-aa1c0ae14d9e" operator="Contains" type="DHCP"/>
+<Check attributeName="lldpSystemDescription" attributeValue="(420HD" description="LLDP lldpSystemDescription CONTAINS (420HD" name="AudioCodes-420HD-PhoneRule7cf20bee-5aa3-4b49-995c-61223e401dfeCheck902772bc-f9f4-4390-9fe6-045fd99d6209" operator="Contains" type="LLDP"/>
+<Check attributeName="lldpSystemName" attributeValue="420HD" description="LLDP lldpSystemName STARTSWITH 420HD" name="AudioCodes-420HD-PhoneRule9166d986-760e-4770-a53e-a138d21ec342Check8af33a45-0f5a-47c9-bdff-fb3a8ffe308e" operator="Starts with" type="LLDP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

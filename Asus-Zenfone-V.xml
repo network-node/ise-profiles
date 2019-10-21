@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Asus-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Asus-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Asus-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Asus-Zenfone-V" parentFQN="Asus-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Askey-Nexus-7Rule3b5e9555-534e-4b22-bb30-4155d1509701_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Asus-Device-Rule1-Check1" expression="Asus-Device-Rule1-Check1" name="Asus-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_ASUS_A006" expression="Askey-Nexus-7Rule3b5e9555-534e-4b22-bb30-4155d1509701Check8bb46c22-6005-42d3-ad7e-da902d3706bf_copy_copy" name="Askey-Nexus-7Rule3b5e9555-534e-4b22-bb30-4155d1509701_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Asustek" description="Condition for Asus-Device,based on MAC-OUI" name="Asus-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="ASUS_A006" description="IP User-Agent CONTAINS ASUS_A006" name="Askey-Nexus-7Rule3b5e9555-534e-4b22-bb30-4155d1509701Check8bb46c22-6005-42d3-ad7e-da902d3706bf_copy_copy" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

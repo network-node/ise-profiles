@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Areca-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Areca-DeviceRulea4c6b62f-06c0-4bbe-8d15-9403bcf1d237"/>
+<PolicyRule certaintyFactor="20" name="Areca-DeviceRule79488b07-a196-4c9e-8069-5f9bc7e109e5"/>
+<PolicyRule certaintyFactor="20" name="Areca-DeviceRuleb5d21db1-7d19-477f-b073-962c365a376b"/>
+<PolicyRule certaintyFactor="20" name="Areca-DeviceRuleef0ae0ae-3b5a-4f60-b95b-d624eb8e147a"/>
+<PolicyRule certaintyFactor="20" name="Areca-DeviceRulef1a72616-7da4-42b1-b4e4-f0781b015cc6"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="DHCP_dhcp-parameter-request-list_CONTAINS_1,_3,_6,_15,_31,_33" expression="Areca-DeviceRulea4c6b62f-06c0-4bbe-8d15-9403bcf1d237Check7a7674d0-5f7c-46d8-907b-3778acc8042e" name="Areca-DeviceRulea4c6b62f-06c0-4bbe-8d15-9403bcf1d237" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Areca_Technology" expression="Areca-DeviceRule79488b07-a196-4c9e-8069-5f9bc7e109e5Check281bbd3b-8936-405f-86c0-39b763808af8" name="Areca-DeviceRule79488b07-a196-4c9e-8069-5f9bc7e109e5" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_areca" expression="Areca-DeviceRuleb5d21db1-7d19-477f-b073-962c365a376bChecke7a55fd0-7a95-407f-9ee6-7f98302b4981" name="Areca-DeviceRuleb5d21db1-7d19-477f-b073-962c365a376b" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_areca" expression="Areca-DeviceRuleef0ae0ae-3b5a-4f60-b95b-d624eb8e147aCheck7fcf0a98-0d76-4091-b8f6-ca7bab41001e" name="Areca-DeviceRuleef0ae0ae-3b5a-4f60-b95b-d624eb8e147a" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_ARECA" expression="Areca-DeviceRulef1a72616-7da4-42b1-b4e4-f0781b015cc6Check6208c4c3-ef97-43d4-b104-f16f5a182af1" name="Areca-DeviceRulef1a72616-7da4-42b1-b4e4-f0781b015cc6" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 3, 6, 15, 31, 33" description="DHCP dhcp-parameter-request-list CONTAINS 1, 3, 6, 15, 31, 33" name="Areca-DeviceRulea4c6b62f-06c0-4bbe-8d15-9403bcf1d237Check7a7674d0-5f7c-46d8-907b-3778acc8042e" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Areca Technology" description="MAC OUI CONTAINS Areca Technology" name="Areca-DeviceRule79488b07-a196-4c9e-8069-5f9bc7e109e5Check281bbd3b-8936-405f-86c0-39b763808af8" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="areca" description="IP FQDN CONTAINS areca" name="Areca-DeviceRuleb5d21db1-7d19-477f-b073-962c365a376bChecke7a55fd0-7a95-407f-9ee6-7f98302b4981" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="areca" description="DHCP host-name CONTAINS areca" name="Areca-DeviceRuleef0ae0ae-3b5a-4f60-b95b-d624eb8e147aCheck7fcf0a98-0d76-4091-b8f6-ca7bab41001e" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="ARECA" description="DHCP dhcp-class-identifier CONTAINS ARECA" name="Areca-DeviceRulef1a72616-7da4-42b1-b4e4-f0781b015cc6Check6208c4c3-ef97-43d4-b104-f16f5a182af1" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Biamp-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Biamp-DeviceRule079d7404-dc5d-4d47-868d-21caa733656c"/>
+<PolicyRule certaintyFactor="10" name="Biamp-DeviceRule8c915f11-2594-44c7-9120-89cc79204ead"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Biamp-System" parentFQN="Biamp-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Biamp-HD1-DialerRulef993fc9e-f0de-4667-9600-80fc907b0b52_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_Biamp_Systems_" expression="Biamp-DeviceRule079d7404-dc5d-4d47-868d-21caa733656cCheckbe3fff88-d780-4de9-8a4a-30458f516e24" name="Biamp-DeviceRule079d7404-dc5d-4d47-868d-21caa733656c" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Biamp_Systems" expression="Biamp-DeviceRule8c915f11-2594-44c7-9120-89cc79204eadCheck783427a3-538c-4966-8e19-02b70033a1ae" name="Biamp-DeviceRule8c915f11-2594-44c7-9120-89cc79204ead" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_TesiraForte_OR_DHCP_host-name_CONTAINS_TesiraForte" expression="Biamp-HD1-DialerRulef993fc9e-f0de-4667-9600-80fc907b0b52Check63470150-10ba-4d4b-9529-0035bf57b9d0_copy | Biamp-HD1-DialerRulef993fc9e-f0de-4667-9600-80fc907b0b52Check9814e3ca-3991-4323-9d2a-69b5ae39a344_copy" name="Biamp-HD1-DialerRulef993fc9e-f0de-4667-9600-80fc907b0b52_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="dhcp-class-identifier" attributeValue="Biamp Systems " description="DHCP dhcp-class-identifier CONTAINS Biamp Systems " name="Biamp-DeviceRule079d7404-dc5d-4d47-868d-21caa733656cCheckbe3fff88-d780-4de9-8a4a-30458f516e24" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Biamp Systems" description="MAC OUI CONTAINS Biamp Systems" name="Biamp-DeviceRule8c915f11-2594-44c7-9120-89cc79204eadCheck783427a3-538c-4966-8e19-02b70033a1ae" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="TesiraForte" description="IP FQDN CONTAINS TesiraForte" name="Biamp-HD1-DialerRulef993fc9e-f0de-4667-9600-80fc907b0b52Check63470150-10ba-4d4b-9529-0035bf57b9d0_copy" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="TesiraForte" description="DHCP host-name CONTAINS TesiraForte" name="Biamp-HD1-DialerRulef993fc9e-f0de-4667-9600-80fc907b0b52Check9814e3ca-3991-4323-9d2a-69b5ae39a344_copy" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
