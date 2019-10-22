@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Canon devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Canon-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="-3" name="Canon-DeviceRule1_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Canon-DeviceRule2"/>
+<PolicyRule certaintyFactor="10" name="Canon-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Canon-Printer" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Canon-Printer" parentFQN="Canon-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Canon-PrinterRulef9da3d9a-b0c4-42a3-9182-5e80f73f43f0"/>
+<PolicyRule certaintyFactor="20" name="Canon-PrinterRule7168510b-3de1-45a0-9271-f26a5968dd62"/>
+<PolicyRule certaintyFactor="20" name="Canon-PrinterRule3"/>
+<PolicyRule certaintyFactor="20" name="Canon-PrinterRule2"/>
+<PolicyRule certaintyFactor="20" name="Canon-PrinterRule1f59d9b1-ca13-4e34-a292-f0879e2bc076"/>
+<PolicyRule certaintyFactor="20" name="Canon-PrinterRule1"/>
+<PolicyRule certaintyFactor="20" name="Canon-PrinterRule4"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Canon-iR-C5255" parentFQN="Canon-Device:Canon-Printer" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Canon-iR-1435Rule03f79a74-414e-4632-bb47-07b39e36dfd7_copy_copy_copy_copy_copy_copy_copy"/>
+<PolicyRule certaintyFactor="20" name="Canon-iR-1435Rule9de39c7e-887a-40ef-ae80-5f72cd479bb6_copy_copy_copy_copy_copy_copy_copy"/>
+<PolicyRule certaintyFactor="20" name="Canon-iR-1435Rule57b9242d-6dd5-4edc-ba46-22ee561c3d2d_copy_copy_copy_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Canon-Device-SCAN" expression="Canon-Device-OUI" name="Canon-DeviceRule1_SCAN" ruleType="Regular"/>
+<Rule description="Canon-Device-Rule2-Check1" expression="Canon-Device-Rule2-Check1" name="Canon-DeviceRule2" ruleType="Regular"/>
+<Rule description="Canon-Device-OUI" expression="Canon-Device-OUI" name="Canon-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_Canon_iR-" expression="Canon-PrinterRulef9da3d9a-b0c4-42a3-9182-5e80f73f43f0Check364d3e2a-589b-437b-80ea-3e36733571cf" name="Canon-PrinterRulef9da3d9a-b0c4-42a3-9182-5e80f73f43f0" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_Canon_iR-" expression="Canon-PrinterRule7168510b-3de1-45a0-9271-f26a5968dd62Checkb5441645-3162-4c1f-b543-133fdeef3906" name="Canon-PrinterRule7168510b-3de1-45a0-9271-f26a5968dd62" ruleType="Regular"/>
+<Rule description="Canon-Printer-Rule3-Check1" expression="Canon-Printer-Rule3-Check1" name="Canon-PrinterRule3" ruleType="Regular"/>
+<Rule description="Canon-Printer-Rule2-Check1" expression="Canon-Printer-Rule2-Check1" name="Canon-PrinterRule2" ruleType="Regular"/>
+<Rule description="SNMP_hrDeviceDescr_CONTAINS_Canon_iR-" expression="Canon-PrinterRule1f59d9b1-ca13-4e34-a292-f0879e2bc076Check97297174-c287-4f23-960e-156cb2280c17" name="Canon-PrinterRule1f59d9b1-ca13-4e34-a292-f0879e2bc076" ruleType="Regular"/>
+<Rule description="Canon-Printer-Rule1-Check1" expression="Canon-Printer-Rule1-Check1" name="Canon-PrinterRule1" ruleType="Regular"/>
+<Rule description="Canon-Printer-Rule4-Check1" expression="Canon-Printer-Rule4-Check1" name="Canon-PrinterRule4" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_Canon_iR-ADV_C5255" expression="Canon-iR-1435Rule03f79a74-414e-4632-bb47-07b39e36dfd7Checkc706a2f8-d7bd-4717-b1bc-051d3d082d6d_copy_copy_copy_copy_copy_copy_copy" name="Canon-iR-1435Rule03f79a74-414e-4632-bb47-07b39e36dfd7_copy_copy_copy_copy_copy_copy_copy" ruleType="Regular"/>
+<Rule description="SNMP_hrDeviceDescr_CONTAINS_Canon_iR-ADV_C5255" expression="Canon-iR-1435Rule9de39c7e-887a-40ef-ae80-5f72cd479bb6Checkf754ac37-aa62-4f28-a901-a9f052f8185b_copy_copy_copy_copy_copy_copy_copy" name="Canon-iR-1435Rule9de39c7e-887a-40ef-ae80-5f72cd479bb6_copy_copy_copy_copy_copy_copy_copy" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_Canon_iR-ADV_C5255" expression="Canon-iR-1435Rule57b9242d-6dd5-4edc-ba46-22ee561c3d2dCheck727870a8-9266-4f94-b027-a1cbd9400892_copy_copy_copy_copy_copy_copy_copy" name="Canon-iR-1435Rule57b9242d-6dd5-4edc-ba46-22ee561c3d2d_copy_copy_copy_copy_copy_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Canon" description="OUI CONTAINS Canon" name="Canon-Device-OUI" operator="Contains" type="Mac"/>
+<Check attributeName="operating-system" attributeValue="Canon" description="operating-system CONTAINS Canon" name="Canon-Device-Rule2-Check1" operator="Contains" type="NMAP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Canon iR-" description="DHCP dhcp-class-identifier CONTAINS Canon iR-" name="Canon-PrinterRulef9da3d9a-b0c4-42a3-9182-5e80f73f43f0Check364d3e2a-589b-437b-80ea-3e36733571cf" operator="Contains" type="DHCP"/>
+<Check attributeName="sysDescr" attributeValue="Canon iR-" description="SNMP sysDescr CONTAINS Canon iR-" name="Canon-PrinterRule7168510b-3de1-45a0-9271-f26a5968dd62Checkb5441645-3162-4c1f-b543-133fdeef3906" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 3, 6, 15, 44, 47" description="dhcp-parameter-request-list EQUALS 1, 3, 6, 15, 44, 47" name="Canon-Printer-Rule3-Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 3, 12, 23, 6, 15" description="dhcp-parameter-request-list EQUALS 1, 3, 12, 23, 6, 15" name="Canon-Printer-Rule2-Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Canon iR-" description="SNMP hrDeviceDescr CONTAINS Canon iR-" name="Canon-PrinterRule1f59d9b1-ca13-4e34-a292-f0879e2bc076Check97297174-c287-4f23-960e-156cb2280c17" operator="Contains" type="Snmp"/>
+<Check attributeName="operating-system" attributeValue="printer" description="operating-system CONTAINS printer" name="Canon-Printer-Rule1-Check1" operator="Contains" type="NMAP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="3, 6, 15, 44, 47" description="dhcp-parameter-request-list EQUALS 3, 6, 15, 44, 47" name="Canon-Printer-Rule4-Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Canon iR-ADV C5255" description="DHCP dhcp-class-identifier CONTAINS Canon iR-ADV C5255" name="Canon-iR-1435Rule03f79a74-414e-4632-bb47-07b39e36dfd7Checkc706a2f8-d7bd-4717-b1bc-051d3d082d6d_copy_copy_copy_copy_copy_copy_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Canon iR-ADV C5255" description="SNMP hrDeviceDescr CONTAINS Canon iR-ADV C5255" name="Canon-iR-1435Rule9de39c7e-887a-40ef-ae80-5f72cd479bb6Checkf754ac37-aa62-4f28-a901-a9f052f8185b_copy_copy_copy_copy_copy_copy_copy" operator="Contains" type="Snmp"/>
+<Check attributeName="sysDescr" attributeValue="Canon iR-ADV C5255" description="SNMP sysDescr CONTAINS Canon iR-ADV C5255" name="Canon-iR-1435Rule57b9242d-6dd5-4edc-ba46-22ee561c3d2dCheck727870a8-9266-4f94-b027-a1cbd9400892_copy_copy_copy_copy_copy_copy_copy" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>
