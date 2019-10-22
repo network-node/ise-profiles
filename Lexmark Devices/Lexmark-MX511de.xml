@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for all Lexmark devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Lexmark-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Lexmark-DeviceRule3"/>
+<PolicyRule certaintyFactor="10" name="Lexmark-DeviceRule4"/>
+<PolicyRule certaintyFactor="10" name="Lexmark-DeviceRule5"/>
+<PolicyRule certaintyFactor="10" name="Lexmark-DeviceRule1"/>
+<PolicyRule certaintyFactor="10" name="Lexmark-DeviceRule2"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Lexmark-Printer" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Lexmark-Printer" parentFQN="Lexmark-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Lexmark-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="20" name="Lexmark-Printer-DHCP_Check2"/>
+<PolicyRule certaintyFactor="20" name="Lexmark-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="20" name="Lexmark-Printer-SNMP_Check2"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Lexmark-MX511de" parentFQN="Lexmark-Device:Lexmark-Printer" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Lexmark-MX410deRulef54aba19-2727-45df-8563-59ba644c7016_copy"/>
+<PolicyRule certaintyFactor="30" name="Lexmark-MX410deRulea00eaf49-8654-41f0-ac4e-ee183f58245f_copy"/>
+<PolicyRule certaintyFactor="30" name="Lexmark-MX410deRulef053cc18-d682-43c7-a10c-e759f8ad560c_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Lexmark-DeviceRule3Check1" expression="Lexmark-DeviceRule3Check1" name="Lexmark-DeviceRule3" ruleType="Regular"/>
+<Rule description="Lexmark-DeviceRule4Check1" expression="Lexmark-DeviceRule4Check1" name="Lexmark-DeviceRule4" ruleType="Regular"/>
+<Rule description="Lexmark-DeviceRule5Check1" expression="Lexmark-DeviceRule5Check1" name="Lexmark-DeviceRule5" ruleType="Regular"/>
+<Rule description="Lexmark-DeviceRule1Check1" expression="Lexmark-DeviceRule1Check1" name="Lexmark-DeviceRule1" ruleType="Regular"/>
+<Rule description="Lexmark-Device-DESCR" expression="Lexmark-Device-DESCR" name="Lexmark-DeviceRule2" ruleType="Regular"/>
+<Rule description="Lexmark-Printer-SNMP_Check" expression="Lexmark-Printer-SNMP_Check" name="Lexmark-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="Lexmark-Printer-DHCP_Check2" expression="Lexmark-Printer-DHCP_Check2" name="Lexmark-Printer-DHCP_Check2" ruleType="Regular"/>
+<Rule description="Lexmark-Printer-DHCP_Check" expression="Lexmark-Printer-DHCP_Check" name="Lexmark-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="Lexmark-Printer-SNMP_Check2" expression="Lexmark-Printer-SNMP_Check2" name="Lexmark-Printer-SNMP_Check2" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_MX511de" expression="Lexmark-MX410deRulef54aba19-2727-45df-8563-59ba644c7016Checkdb010ee7-33e6-4155-bf6a-92ce4bb501d8_copy" name="Lexmark-MX410deRulef54aba19-2727-45df-8563-59ba644c7016_copy" ruleType="Regular"/>
+<Rule description="SNMP_hrDeviceDescr_CONTAINS_MX511de" expression="Lexmark-MX410deRulea00eaf49-8654-41f0-ac4e-ee183f58245fCheck35672cfb-6426-4841-b13e-d81adc4f92d4_copy" name="Lexmark-MX410deRulea00eaf49-8654-41f0-ac4e-ee183f58245f_copy" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_MX511de" expression="Lexmark-MX410deRulef053cc18-d682-43c7-a10c-e759f8ad560cCheck84c5fa2e-cd77-4a76-86a5-5d50e0a1329e_copy" name="Lexmark-MX410deRulef053cc18-d682-43c7-a10c-e759f8ad560c_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="dhcp-class-identifier" attributeValue="Lexmark" description="DHCP dhcp-class-identifier CONTAINS Lexmark" name="Lexmark-DeviceRule3Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Optra" description="SNMP hrDeviceDescr CONTAINS Optra" name="Lexmark-DeviceRule4Check1" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Optra" description="DHCP dhcp-class-identifier CONTAINS Optra" name="Lexmark-DeviceRule5Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Lexmark" description="Lexmark-DeviceRule1Check1" name="Lexmark-DeviceRule1Check1" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Lexmark" description="SNMP hrDeviceDescr CONTAINS Lexmark" name="Lexmark-Device-DESCR" operator="Contains" type="Snmp"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Lexmark" description="SNMP hrDeviceDescr CONTAINS Lexmark" name="Lexmark-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Optra" description="DHCP dhcp-class-identifier CONTAINS Optra" name="Lexmark-Printer-DHCP_Check2" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Lexmark" description="DHCP dhcp-class-identifier CONTAINS Lexmark" name="Lexmark-Printer-DHCP_Check" operator="Contains" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Optra" description="SNMP hrDeviceDescr CONTAINS Optra" name="Lexmark-Printer-SNMP_Check2" operator="Contains" type="Snmp"/>
+<Check attributeName="sysDescr" attributeValue="MX511de" description="SNMP sysDescr CONTAINS MX511de" name="Lexmark-MX410deRulef54aba19-2727-45df-8563-59ba644c7016Checkdb010ee7-33e6-4155-bf6a-92ce4bb501d8_copy" operator="Contains" type="Snmp"/>
+<Check attributeName="hrDeviceDescr" attributeValue="MX511de" description="SNMP hrDeviceDescr CONTAINS MX511de" name="Lexmark-MX410deRulea00eaf49-8654-41f0-ac4e-ee183f58245fCheck35672cfb-6426-4841-b13e-d81adc4f92d4_copy" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="MX511de" description="DHCP dhcp-class-identifier CONTAINS MX511de" name="Lexmark-MX410deRulef053cc18-d682-43c7-a10c-e759f8ad560cCheck84c5fa2e-cd77-4a76-86a5-5d50e0a1329e_copy" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
