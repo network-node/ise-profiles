@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for LG-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="LG-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="LG-Optimus" parentFQN="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="LG-K8Rule52c0552a-51d8-4198-915c-8846f6c04be4_copy_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="LG-Device-Rule1-Check1" expression="LG-Device-Rule1-Check1" name="LG-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_LGMS323_OR_IP_User-Agent_CONTAINS_VS415PP_OR_IP_User-Agent_CONTAINS_LG-D415" expression="(LG-K8Rule52c0552a-51d8-4198-915c-8846f6c04be4Checkcbd86bf5-ec1c-41e7-9394-8717bfac32b0_copy_copy_copy_copy_copy | LG-K8Rule52c0552a-51d8-4198-915c-8846f6c04be4_copy_copy_copy_copy_copyCheck005085f3-2cbc-4992-918c-a124215fde4c) | LG-K8Rule52c0552a-51d8-4198-915c-8846f6c04be4_copy_copy_copy_copy_copyCheckcd05cb20-f10c-4bd8-b0cc-8c419248a89d" name="LG-K8Rule52c0552a-51d8-4198-915c-8846f6c04be4_copy_copy_copy_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LG Electronics" description="Condition for LG-Device,based on MAC-OUI" name="LG-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="LGMS323" description="IP User-Agent CONTAINS LGMS323" name="LG-K8Rule52c0552a-51d8-4198-915c-8846f6c04be4Checkcbd86bf5-ec1c-41e7-9394-8717bfac32b0_copy_copy_copy_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="VS415PP" description="IP User-Agent CONTAINS VS415PP" name="LG-K8Rule52c0552a-51d8-4198-915c-8846f6c04be4_copy_copy_copy_copy_copyCheck005085f3-2cbc-4992-918c-a124215fde4c" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LG-D415" description="IP User-Agent CONTAINS LG-D415" name="LG-K8Rule52c0552a-51d8-4198-915c-8846f6c04be4_copy_copy_copy_copy_copyCheckcd05cb20-f10c-4bd8-b0cc-8c419248a89d" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

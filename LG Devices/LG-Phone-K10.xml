@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for LG-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="LG-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="LG-Phone-K10" parentFQN="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="LG-Phone-V30Rule45cde812-fd32-47af-963b-12019a8a0105_copy_copy_copy0"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="LG-Device-Rule1-Check1" expression="LG-Device-Rule1-Check1" name="LG-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_LG-K428" expression="LG-Phone-V30Rule45cde812-fd32-47af-963b-12019a8a0105Check97048fb5-3e9d-44df-b507-634784d6846a_copy_copy_copy0" name="LG-Phone-V30Rule45cde812-fd32-47af-963b-12019a8a0105_copy_copy_copy0" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LG Electronics" description="Condition for LG-Device,based on MAC-OUI" name="LG-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="LG-K428" description="IP User-Agent CONTAINS LG-K428" name="LG-Phone-V30Rule45cde812-fd32-47af-963b-12019a8a0105Check97048fb5-3e9d-44df-b507-634784d6846a_copy_copy_copy0" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

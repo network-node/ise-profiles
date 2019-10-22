@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for LG-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="LG-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="LG-Phone-G6" parentFQN="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="LG-Phone-V30Rule45cde812-fd32-47af-963b-12019a8a0105_copy1"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="LG-Device-Rule1-Check1" expression="LG-Device-Rule1-Check1" name="LG-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_VS988_OR_IP_User-Agent_CONTAINS_LG-H872_OR_IP_User-Agent_CONTAINS_LG-LS993" expression="(LG-Phone-V30Rule45cde812-fd32-47af-963b-12019a8a0105Check97048fb5-3e9d-44df-b507-634784d6846a_copy1 | LG-Phone-V30Rule45cde812-fd32-47af-963b-12019a8a0105Checkc76a1695-3c8f-4ef4-bda3-f8d2e60cfe90_copy0) | LG-Phone-V30Rule45cde812-fd32-47af-963b-12019a8a0105Check3aba5884-a88a-414f-b048-a23eff1051b2_copy" name="LG-Phone-V30Rule45cde812-fd32-47af-963b-12019a8a0105_copy1" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LG Electronics" description="Condition for LG-Device,based on MAC-OUI" name="LG-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="VS988" description="IP User-Agent CONTAINS VS988" name="LG-Phone-V30Rule45cde812-fd32-47af-963b-12019a8a0105Check97048fb5-3e9d-44df-b507-634784d6846a_copy1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LG-H872" description="IP User-Agent CONTAINS LG-H872" name="LG-Phone-V30Rule45cde812-fd32-47af-963b-12019a8a0105Checkc76a1695-3c8f-4ef4-bda3-f8d2e60cfe90_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LG-LS993" description="IP User-Agent CONTAINS LG-LS993" name="LG-Phone-V30Rule45cde812-fd32-47af-963b-12019a8a0105Check3aba5884-a88a-414f-b048-a23eff1051b2_copy" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

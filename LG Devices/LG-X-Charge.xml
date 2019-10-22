@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for LG-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="LG-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="LG-X-Charge" parentFQN="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="LG-V35Rule9b3a0d3a-a9ec-45fb-abc0-7e2115e9787b_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="LG-Device-Rule1-Check1" expression="LG-Device-Rule1-Check1" name="LG-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_LG-SP320_OR_IP_User-Agent_CONTAINS_LG-M327_OR_IP_User-Agent_CONTAINS_LG-M322" expression="(LG-V35Rule9b3a0d3a-a9ec-45fb-abc0-7e2115e9787bCheck5c7ea5d9-666e-4a0c-a6fa-e124f71ebc1b_copy_copy_copy | LG-V35Rule9b3a0d3a-a9ec-45fb-abc0-7e2115e9787b_copy_copyCheckf861886c-ff3a-413c-af06-ae6c8a413ad2_copy) | LG-V35Rule9b3a0d3a-a9ec-45fb-abc0-7e2115e9787b_copy_copy_copyChecka2335164-0b7b-4b55-8dc6-184dfccb639b" name="LG-V35Rule9b3a0d3a-a9ec-45fb-abc0-7e2115e9787b_copy_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LG Electronics" description="Condition for LG-Device,based on MAC-OUI" name="LG-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="LG-SP320" description="IP User-Agent CONTAINS LG-SP320" name="LG-V35Rule9b3a0d3a-a9ec-45fb-abc0-7e2115e9787bCheck5c7ea5d9-666e-4a0c-a6fa-e124f71ebc1b_copy_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LG-M327" description="IP User-Agent CONTAINS LG-M327" name="LG-V35Rule9b3a0d3a-a9ec-45fb-abc0-7e2115e9787b_copy_copyCheckf861886c-ff3a-413c-af06-ae6c8a413ad2_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LG-M322" description="IP User-Agent CONTAINS LG-M322" name="LG-V35Rule9b3a0d3a-a9ec-45fb-abc0-7e2115e9787b_copy_copy_copyChecka2335164-0b7b-4b55-8dc6-184dfccb639b" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

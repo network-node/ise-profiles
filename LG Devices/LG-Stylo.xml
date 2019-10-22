@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for LG-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="LG-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="LG-Stylo" parentFQN="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="LG-Device-Rule1-Check1" expression="LG-Device-Rule1-Check1" name="LG-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_LG-Q710AL_OR_IP_User-Agent_CONTAINS_LG-K550_OR_IP_User-Agent_CONTAINS_LGMS550_OR_IP_User-Agent_CONTAINS_LGL84VL_OR_IP_User-Agent_CONTAINS_LGLS775_OR_IP_User-Agent_CONTAINS_LG-LS777_OR_IP_User-Agent_CONTAINS_LML713DL_OR_IP_User-Agent_CONTAINS_LG-M430_OR_IP_User-Agent_CONTAINS_LGMP450_OR_IP_User-Agent_CONTAINS_LG-TP450_OR_IP_User-Agent_CONTAINS_LGL83BL" expression="(((((((((LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Checke7f4fe2b-7f9f-4f41-913c-ce4b081da061 | LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Checkf6dc0606-ad8f-4792-ac86-6268117a2145) | LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Check47f5846b-b82f-45ca-be8e-5a5f15360e53) | LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Checke016ecfd-5656-47d4-a06d-a3101aa0efaa) | LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Check800ed0b8-70c7-448e-81ba-7540a5f796f2) | LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Check7623e501-6f44-4d91-ad9d-cd2524edc33b) | LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Checkc5611ef9-5fdd-40fd-b4ff-1ee9b30bc47b) | LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Check7bb518f6-937f-4553-98e9-d099773d2f6d) | LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Checka8eb4e49-763e-4d06-83e3-dd7cca2048d1) | LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Checke20eb22a-560a-44b9-925f-59c9f6134f3c) | LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Check0959f0bd-33a9-410a-91aa-2437f9419a7d" name="LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LG Electronics" description="Condition for LG-Device,based on MAC-OUI" name="LG-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="LG-Q710AL" description="IP User-Agent CONTAINS LG-Q710AL" name="LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Checke7f4fe2b-7f9f-4f41-913c-ce4b081da061" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LG-K550" description="IP User-Agent CONTAINS LG-K550" name="LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Checkf6dc0606-ad8f-4792-ac86-6268117a2145" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LGMS550" description="IP User-Agent CONTAINS LGMS550" name="LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Check47f5846b-b82f-45ca-be8e-5a5f15360e53" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LGL84VL" description="IP User-Agent CONTAINS LGL84VL" name="LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Checke016ecfd-5656-47d4-a06d-a3101aa0efaa" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LGLS775" description="IP User-Agent CONTAINS LGLS775" name="LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Check800ed0b8-70c7-448e-81ba-7540a5f796f2" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LG-LS777" description="IP User-Agent CONTAINS LG-LS777" name="LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Check7623e501-6f44-4d91-ad9d-cd2524edc33b" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LML713DL" description="IP User-Agent CONTAINS LML713DL" name="LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Checkc5611ef9-5fdd-40fd-b4ff-1ee9b30bc47b" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LG-M430" description="IP User-Agent CONTAINS LG-M430" name="LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Check7bb518f6-937f-4553-98e9-d099773d2f6d" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LGMP450" description="IP User-Agent CONTAINS LGMP450" name="LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Checka8eb4e49-763e-4d06-83e3-dd7cca2048d1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LG-TP450" description="IP User-Agent CONTAINS LG-TP450" name="LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Checke20eb22a-560a-44b9-925f-59c9f6134f3c" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LGL83BL" description="IP User-Agent CONTAINS LGL83BL" name="LG-StyloRuleaf3c6f78-7845-476e-bdc1-a367518200c4Check0959f0bd-33a9-410a-91aa-2437f9419a7d" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

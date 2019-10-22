@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for LG-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="LG-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="LG-V30" parentFQN="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2_copy_copy"/>
+<PolicyRule certaintyFactor="40" name="LG-V30Rule0f39278c-9fcc-4c0b-a757-f92d50a3cd38"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="LG-Device-Rule1-Check1" expression="LG-Device-Rule1-Check1" name="LG-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_LG-US998_OR_IP_User-Agent_CONTAINS_LG-H931_OR_IP_User-Agent_CONTAINS_LG-H932_OR_IP_User-Agent_CONTAINS_LG-H933" expression="((LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2Check16b40fa9-e3b8-4412-87ce-5eab83f8b080_copy_copy | LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2_copyCheck37bec363-5ecc-4eb9-8fbd-fe010b8867eb_copy) | LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2_copyCheck5cef9ef3-9ddd-43f5-a5d1-1ea7f967f34f_copy) | LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2_copyCheck6229f396-7c0c-4764-91d4-dc14c2a4b2c5_copy" name="LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2_copy_copy" ruleType="Regular"/>
+<Rule description="DHCP_host-name_STARTSWITH_V30_OR_IP_FQDN_STARTSWITH_V30" expression="LG-V30Rule0f39278c-9fcc-4c0b-a757-f92d50a3cd38Check78c490fa-0bfd-4474-96b4-a85942461975 | LG-V30Rule0f39278c-9fcc-4c0b-a757-f92d50a3cd38Check61bb1cd8-e55f-47e6-a757-187f673cfd12" name="LG-V30Rule0f39278c-9fcc-4c0b-a757-f92d50a3cd38" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LG Electronics" description="Condition for LG-Device,based on MAC-OUI" name="LG-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="LG-US998" description="IP User-Agent CONTAINS LG-US998" name="LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2Check16b40fa9-e3b8-4412-87ce-5eab83f8b080_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LG-H931" description="IP User-Agent CONTAINS LG-H931" name="LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2_copyCheck37bec363-5ecc-4eb9-8fbd-fe010b8867eb_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LG-H932" description="IP User-Agent CONTAINS LG-H932" name="LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2_copyCheck5cef9ef3-9ddd-43f5-a5d1-1ea7f967f34f_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LG-H933" description="IP User-Agent CONTAINS LG-H933" name="LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2_copyCheck6229f396-7c0c-4764-91d4-dc14c2a4b2c5_copy" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="V30" description="DHCP host-name STARTSWITH V30" name="LG-V30Rule0f39278c-9fcc-4c0b-a757-f92d50a3cd38Check78c490fa-0bfd-4474-96b4-a85942461975" operator="Starts with" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="V30" description="IP FQDN STARTSWITH V30" name="LG-V30Rule0f39278c-9fcc-4c0b-a757-f92d50a3cd38Check61bb1cd8-e55f-47e6-a757-187f673cfd12" operator="Starts with" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for LG-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="LG-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="LG-V20" parentFQN="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="LG-Device-Rule1-Check1" expression="LG-Device-Rule1-Check1" name="LG-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_LG-H918_OR_IP_User-Agent_CONTAINS_LG-LS997_OR_IP_User-Agent_CONTAINS_LG-H910_OR_IP_User-Agent_CONTAINS_VS995" expression="((LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2Check16b40fa9-e3b8-4412-87ce-5eab83f8b080_copy | LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2_copyCheck37bec363-5ecc-4eb9-8fbd-fe010b8867eb) | LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2_copyCheck5cef9ef3-9ddd-43f5-a5d1-1ea7f967f34f) | LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2_copyCheck6229f396-7c0c-4764-91d4-dc14c2a4b2c5" name="LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LG Electronics" description="Condition for LG-Device,based on MAC-OUI" name="LG-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="LG-H918" description="IP User-Agent CONTAINS LG-H918" name="LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2Check16b40fa9-e3b8-4412-87ce-5eab83f8b080_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LG-LS997" description="IP User-Agent CONTAINS LG-LS997" name="LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2_copyCheck37bec363-5ecc-4eb9-8fbd-fe010b8867eb" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LG-H910" description="IP User-Agent CONTAINS LG-H910" name="LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2_copyCheck5cef9ef3-9ddd-43f5-a5d1-1ea7f967f34f" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="VS995" description="IP User-Agent CONTAINS VS995" name="LG-V10Rule25d89182-716c-4410-92f5-5f908fd266e2_copyCheck6229f396-7c0c-4764-91d4-dc14c2a4b2c5" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

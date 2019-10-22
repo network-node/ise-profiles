@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for LG-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="LG-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="LG-Tribute" parentFQN="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="LG-TributeRule2fba11ac-16ba-4f65-94d8-13600e0c66d2"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="LG-Device-Rule1-Check1" expression="LG-Device-Rule1-Check1" name="LG-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_LGLS676_OR_IP_User-Agent_CONTAINS_LG-SP200_OR_IP_User-Agent_CONTAINS_LM-X220PM_OR_IP_User-Agent_CONTAINS_LGLS675" expression="((LG-TributeRule2fba11ac-16ba-4f65-94d8-13600e0c66d2Check9e92b3e5-e9f1-480f-93ce-35e480de7027 | LG-TributeRule2fba11ac-16ba-4f65-94d8-13600e0c66d2Check9eda770d-6620-4532-9da2-04bccfe70418) | LG-TributeRule2fba11ac-16ba-4f65-94d8-13600e0c66d2Checked9388c0-abb3-4143-a183-cabadf22334a) | LG-TributeRule2fba11ac-16ba-4f65-94d8-13600e0c66d2Checkdc3b033d-acc5-464a-9fe5-f01e8fe0293d" name="LG-TributeRule2fba11ac-16ba-4f65-94d8-13600e0c66d2" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LG Electronics" description="Condition for LG-Device,based on MAC-OUI" name="LG-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="LGLS676" description="IP User-Agent CONTAINS LGLS676" name="LG-TributeRule2fba11ac-16ba-4f65-94d8-13600e0c66d2Check9e92b3e5-e9f1-480f-93ce-35e480de7027" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LG-SP200" description="IP User-Agent CONTAINS LG-SP200" name="LG-TributeRule2fba11ac-16ba-4f65-94d8-13600e0c66d2Check9eda770d-6620-4532-9da2-04bccfe70418" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LM-X220PM" description="IP User-Agent CONTAINS LM-X220PM" name="LG-TributeRule2fba11ac-16ba-4f65-94d8-13600e0c66d2Checked9388c0-abb3-4143-a183-cabadf22334a" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LGLS675" description="IP User-Agent CONTAINS LGLS675" name="LG-TributeRule2fba11ac-16ba-4f65-94d8-13600e0c66d2Checkdc3b033d-acc5-464a-9fe5-f01e8fe0293d" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

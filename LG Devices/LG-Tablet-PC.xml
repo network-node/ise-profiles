@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="LG-Tablet-PC" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="LG-Tablet-PCRule388046c0-50aa-40c7-bb8b-80213aef34a1"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="IP_User-Agent_CONTAINS_LPT_200AR" expression="LG-Tablet-PCRule388046c0-50aa-40c7-bb8b-80213aef34a1Checkd12fe686-2b4f-4e71-8ff8-e1eac1f30486" name="LG-Tablet-PCRule388046c0-50aa-40c7-bb8b-80213aef34a1" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="User-Agent" attributeValue="LPT_200AR" description="IP User-Agent CONTAINS LPT_200AR" name="LG-Tablet-PCRule388046c0-50aa-40c7-bb8b-80213aef34a1Checkd12fe686-2b4f-4e71-8ff8-e1eac1f30486" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

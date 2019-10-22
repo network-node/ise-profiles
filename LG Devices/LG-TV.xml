@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for LG-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="LG-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="LG-TV" parentFQN="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="LG-TVRule49e2c5b1-acf8-4b3e-a300-77a7b50a8652"/>
+<PolicyRule certaintyFactor="10" name="LG-TVRuleac7adc18-406b-4122-91e7-4f6356f2e3b5"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="LG-Device-Rule1-Check1" expression="LG-Device-Rule1-Check1" name="LG-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_LGwebOSTV" expression="LG-TVRule49e2c5b1-acf8-4b3e-a300-77a7b50a8652Check0e40a424-012b-4cdc-b9ff-e3824e1e461f" name="LG-TVRule49e2c5b1-acf8-4b3e-a300-77a7b50a8652" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_LGwebOSTV" expression="LG-TVRuleac7adc18-406b-4122-91e7-4f6356f2e3b5Check43b6a435-51ee-4bb7-b776-9286d2a16bfa" name="LG-TVRuleac7adc18-406b-4122-91e7-4f6356f2e3b5" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LG Electronics" description="Condition for LG-Device,based on MAC-OUI" name="LG-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="LGwebOSTV" description="IP FQDN CONTAINS LGwebOSTV" name="LG-TVRule49e2c5b1-acf8-4b3e-a300-77a7b50a8652Check0e40a424-012b-4cdc-b9ff-e3824e1e461f" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="LGwebOSTV" description="DHCP host-name CONTAINS LGwebOSTV" name="LG-TVRuleac7adc18-406b-4122-91e7-4f6356f2e3b5Check43b6a435-51ee-4bb7-b776-9286d2a16bfa" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for LG-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="LG-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="LG-K40" parentFQN="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="LG-HarmonyRule08834292-6a99-4488-b114-f3795c10b5e9_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="LG-Device-Rule1-Check1" expression="LG-Device-Rule1-Check1" name="LG-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_LM-X420_OR_IP_User-Agent_CONTAINS_LG-M151" expression="LG-HarmonyRule08834292-6a99-4488-b114-f3795c10b5e9Check1299ab5d-efac-4f52-9360-c8b27fef818e_copy | LG-HarmonyRule08834292-6a99-4488-b114-f3795c10b5e9_copyCheck4d9c08da-8fe4-47cb-b2f6-2200e1d516d4" name="LG-HarmonyRule08834292-6a99-4488-b114-f3795c10b5e9_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LG Electronics" description="Condition for LG-Device,based on MAC-OUI" name="LG-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="LM-X420" description="IP User-Agent CONTAINS LM-X420" name="LG-HarmonyRule08834292-6a99-4488-b114-f3795c10b5e9Check1299ab5d-efac-4f52-9360-c8b27fef818e_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LG-M151" description="IP User-Agent CONTAINS LG-M151" name="LG-HarmonyRule08834292-6a99-4488-b114-f3795c10b5e9_copyCheck4d9c08da-8fe4-47cb-b2f6-2200e1d516d4" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

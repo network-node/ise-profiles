@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for LG-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="LG-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="LG-K20" parentFQN="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="LG-HarmonyRule08834292-6a99-4488-b114-f3795c10b5e9_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="LG-Device-Rule1-Check1" expression="LG-Device-Rule1-Check1" name="LG-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_LGMP260_OR_IP_User-Agent_CONTAINS_LG-TP260_OR_IP_User-Agent_CONTAINS_VS501" expression="(LG-HarmonyRule08834292-6a99-4488-b114-f3795c10b5e9Check1299ab5d-efac-4f52-9360-c8b27fef818e_copy_copy_copy | LG-HarmonyRule08834292-6a99-4488-b114-f3795c10b5e9_copy_copyCheck899eb2c0-189d-416f-9298-a27b27bd9b67_copy) | LG-HarmonyRule08834292-6a99-4488-b114-f3795c10b5e9_copy_copy_copyCheckb137a762-ff64-4d09-b644-d20a07fe59d5" name="LG-HarmonyRule08834292-6a99-4488-b114-f3795c10b5e9_copy_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LG Electronics" description="Condition for LG-Device,based on MAC-OUI" name="LG-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="LGMP260" description="IP User-Agent CONTAINS LGMP260" name="LG-HarmonyRule08834292-6a99-4488-b114-f3795c10b5e9Check1299ab5d-efac-4f52-9360-c8b27fef818e_copy_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LG-TP260" description="IP User-Agent CONTAINS LG-TP260" name="LG-HarmonyRule08834292-6a99-4488-b114-f3795c10b5e9_copy_copyCheck899eb2c0-189d-416f-9298-a27b27bd9b67_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="VS501" description="IP User-Agent CONTAINS VS501" name="LG-HarmonyRule08834292-6a99-4488-b114-f3795c10b5e9_copy_copy_copyCheckb137a762-ff64-4d09-b644-d20a07fe59d5" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

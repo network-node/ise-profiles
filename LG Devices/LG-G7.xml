@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for LG-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="LG-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="LG-G7" parentFQN="LG-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="LG-FortuneRuleede5e4e9-21d2-4eaf-8316-16e86590e388_copy_copy_copy_copy_copy0"/>
+<PolicyRule certaintyFactor="40" name="LG-G7Rule190acc4a-9dcb-4421-b4a0-667cd0fb026d"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="LG-Device-Rule1-Check1" expression="LG-Device-Rule1-Check1" name="LG-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_LM-G710_OR_IP_User-Agent_CONTAINS_LM-G710VM" expression="LG-FortuneRuleede5e4e9-21d2-4eaf-8316-16e86590e388Checke256a305-4345-416e-b5de-fa07cdb20627_copy_copy_copy_copy_copy0 | LG-FortuneRuleede5e4e9-21d2-4eaf-8316-16e86590e388_copy_copy_copyCheckcaadb4bb-f2f9-494c-acf6-e4f15b2f2ed6_copy_copy0" name="LG-FortuneRuleede5e4e9-21d2-4eaf-8316-16e86590e388_copy_copy_copy_copy_copy0" ruleType="Regular"/>
+<Rule description="DHCP_host-name_STARTSWITH_G7_OR_IP_FQDN_STARTSWITH_G7" expression="LG-G7Rule190acc4a-9dcb-4421-b4a0-667cd0fb026dCheckf34a0178-f1c9-4fc3-9d3a-194c10afc413 | LG-G7Rule190acc4a-9dcb-4421-b4a0-667cd0fb026dCheckae46b4a7-d994-43e1-8ec3-1a5c93da20e4" name="LG-G7Rule190acc4a-9dcb-4421-b4a0-667cd0fb026d" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LG Electronics" description="Condition for LG-Device,based on MAC-OUI" name="LG-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="LM-G710" description="IP User-Agent CONTAINS LM-G710" name="LG-FortuneRuleede5e4e9-21d2-4eaf-8316-16e86590e388Checke256a305-4345-416e-b5de-fa07cdb20627_copy_copy_copy_copy_copy0" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LM-G710VM" description="IP User-Agent CONTAINS LM-G710VM" name="LG-FortuneRuleede5e4e9-21d2-4eaf-8316-16e86590e388_copy_copy_copyCheckcaadb4bb-f2f9-494c-acf6-e4f15b2f2ed6_copy_copy0" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="G7" description="DHCP host-name STARTSWITH G7" name="LG-G7Rule190acc4a-9dcb-4421-b4a0-667cd0fb026dCheckf34a0178-f1c9-4fc3-9d3a-194c10afc413" operator="Starts with" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="G7" description="IP FQDN STARTSWITH G7" name="LG-G7Rule190acc4a-9dcb-4421-b4a0-667cd0fb026dCheckae46b4a7-d994-43e1-8ec3-1a5c93da20e4" operator="Starts with" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
