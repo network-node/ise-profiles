@@ -1,0 +1,29 @@
+NOTE: Please test these profiles before putting them on a production ISE environment. These profiles are not officially endorsed or provided by Cisco in any way.
+
+These profiles should change the structure, fidelity, and granularity of Apple devices profiled by ISE. In order to use these profiles efficiently, please disable the following built-in Cisco-provided profile policies in ISE:
+Apple-iPad
+Apple-iPod	
+Apple-MacBook
+Apple-Watch
+Apple-iPhone
+Apple-TV
+OS_X_Mavericks-Workstation
+OS_X_High_Sierra-Workstation	
+OS_X-Workstation
+OS_X_Leopard-Workstation
+OS_X_Tiger-Workstation
+OS_X_El_Capitan-Workstation
+OS_X_MountainLion-Workstation
+OS_X_Mojave-Workstation
+OS_X_Yosemite-Workstation
+OS_X_Sierra-Workstation
+OS_X_SnowLeopard-Workstation
+OS_X_Lion-Workstation
+Macintosh-Workstation
+
+
+After those profiles are disabled, import Apple-Import-1. This will update the existing Apple-Device profile policy to include many other attributes to help identify an Apple device even when a 3rd party dongle is used.
+
+
+Then you will upload the second Apple-Import-2 xml file. This will add many new Apple device profiles that will hopefully provide additional granular information on the types of Apple devices connecting to your network.
+
