@@ -1,5 +1,7 @@
 NOTE: Please test these profiles before putting them on a production ISE environment. These profiles are not officially endorsed or provided by Cisco in any way.
 
+You will need to import both Apple XML files into your ISE node in order to get the maximum value from these profiles.
+
 These profiles should change the structure, fidelity, and granularity of Apple devices profiled by ISE. In order to use these profiles efficiently, please disable the following built-in Cisco-provided profile policies in ISE:
 Apple-iPad
 Apple-iPod	
