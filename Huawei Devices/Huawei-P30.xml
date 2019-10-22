@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-P30" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100"/>
+<PolicyRule certaintyFactor="40" name="Huawei-P30Rulee5f2c9fb-fff5-4a61-b266-d092587ed423"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_VOG-AL10" expression="Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100Check354cd518-4cc0-4bdc-867c-1c5b32c1ba07" name="Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_HUAWEI_P30_OR_IP_FQDN_CONTAINS_HUAWEI_P30" expression="Huawei-P30Rulee5f2c9fb-fff5-4a61-b266-d092587ed423Checkc29c19e8-c513-4fde-8d60-bfa04ae102ba | Huawei-P30Rulee5f2c9fb-fff5-4a61-b266-d092587ed423Check9c2c9c85-14e2-4902-9b03-5079b72b8b5e" name="Huawei-P30Rulee5f2c9fb-fff5-4a61-b266-d092587ed423" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="VOG-AL10" description="IP User-Agent CONTAINS VOG-AL10" name="Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100Check354cd518-4cc0-4bdc-867c-1c5b32c1ba07" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="HUAWEI_P30" description="DHCP host-name CONTAINS HUAWEI_P30" name="Huawei-P30Rulee5f2c9fb-fff5-4a61-b266-d092587ed423Checkc29c19e8-c513-4fde-8d60-bfa04ae102ba" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="HUAWEI_P30" description="IP FQDN CONTAINS HUAWEI_P30" name="Huawei-P30Rulee5f2c9fb-fff5-4a61-b266-d092587ed423Check9c2c9c85-14e2-4902-9b03-5079b72b8b5e" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-Mate-8" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-Mate-8Rulebff25ad2-49f9-4846-8c5f-c435318de070"/>
+<PolicyRule certaintyFactor="40" name="Huawei-Mate-8Rulebb2e0404-baf0-41ab-a0b0-1b854b7837a4"/>
+<PolicyRule certaintyFactor="40" name="Huawei-Mate-8Ruleb7587436-ef5c-40f1-a4eb-b74aadf75be8"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_NXT-AL10" expression="Huawei-Mate-8Rulebff25ad2-49f9-4846-8c5f-c435318de070Check6bba7a7e-b3af-4c3f-b78c-278156268aa3" name="Huawei-Mate-8Rulebff25ad2-49f9-4846-8c5f-c435318de070" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_HUAWEI_Mate_8_OR_IP_FQDN_CONTAINS_HUAWEI_Mate_8" expression="Huawei-Mate-8Rulebb2e0404-baf0-41ab-a0b0-1b854b7837a4Checkdd413f0c-0579-4779-9ada-43c827f2cffe | Huawei-Mate-8Rulebb2e0404-baf0-41ab-a0b0-1b854b7837a4Check70c16cd7-65ac-4d9c-aad6-8b85fbeaeb51" name="Huawei-Mate-8Rulebb2e0404-baf0-41ab-a0b0-1b854b7837a4" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_HUAWEI_android_NXT-AL10" expression="Huawei-Mate-8Ruleb7587436-ef5c-40f1-a4eb-b74aadf75be8Check8d79c6c3-e756-4a60-852d-16b2091d2d7d" name="Huawei-Mate-8Ruleb7587436-ef5c-40f1-a4eb-b74aadf75be8" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="NXT-AL10" description="IP User-Agent CONTAINS NXT-AL10" name="Huawei-Mate-8Rulebff25ad2-49f9-4846-8c5f-c435318de070Check6bba7a7e-b3af-4c3f-b78c-278156268aa3" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="HUAWEI_Mate_8" description="DHCP host-name CONTAINS HUAWEI_Mate_8" name="Huawei-Mate-8Rulebb2e0404-baf0-41ab-a0b0-1b854b7837a4Checkdd413f0c-0579-4779-9ada-43c827f2cffe" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="HUAWEI_Mate_8" description="IP FQDN CONTAINS HUAWEI_Mate_8" name="Huawei-Mate-8Rulebb2e0404-baf0-41ab-a0b0-1b854b7837a4Check70c16cd7-65ac-4d9c-aad6-8b85fbeaeb51" operator="Contains" type="IP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="HUAWEI:android:NXT-AL10" description="DHCP dhcp-class-identifier CONTAINS HUAWEI:android:NXT-AL10" name="Huawei-Mate-8Ruleb7587436-ef5c-40f1-a4eb-b74aadf75be8Check8d79c6c3-e756-4a60-852d-16b2091d2d7d" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

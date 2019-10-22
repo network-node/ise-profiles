@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-Enjoy-9" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-Enjoy-9Ruleec1ea3fd-5f6b-4de8-82f4-25054b149791"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_JKM-AL00b" expression="Huawei-Enjoy-9Ruleec1ea3fd-5f6b-4de8-82f4-25054b149791Check8f383552-5ebd-4d9c-a0f0-5ee633416a4e" name="Huawei-Enjoy-9Ruleec1ea3fd-5f6b-4de8-82f4-25054b149791" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="JKM-AL00b" description="IP User-Agent CONTAINS JKM-AL00b" name="Huawei-Enjoy-9Ruleec1ea3fd-5f6b-4de8-82f4-25054b149791Check8f383552-5ebd-4d9c-a0f0-5ee633416a4e" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

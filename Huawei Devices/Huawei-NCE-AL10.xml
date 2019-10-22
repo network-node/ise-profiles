@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-NCE-AL10" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-NCE-AL10Rule7b8eaf2a-f98a-4c8a-844a-c7324f078808"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_HUAWEI_NCE-AL10_OR_IP_FQDN_CONTAINS_HUAWEI_NCE-AL10" expression="Huawei-NCE-AL10Rule7b8eaf2a-f98a-4c8a-844a-c7324f078808Check0556b405-cb61-427d-b201-487bacf2970d | Huawei-NCE-AL10Rule7b8eaf2a-f98a-4c8a-844a-c7324f078808Check849937a1-b114-4802-a90b-9f1cfe00695a" name="Huawei-NCE-AL10Rule7b8eaf2a-f98a-4c8a-844a-c7324f078808" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="HUAWEI_NCE-AL10" description="DHCP host-name CONTAINS HUAWEI_NCE-AL10" name="Huawei-NCE-AL10Rule7b8eaf2a-f98a-4c8a-844a-c7324f078808Check0556b405-cb61-427d-b201-487bacf2970d" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="HUAWEI_NCE-AL10" description="IP FQDN CONTAINS HUAWEI_NCE-AL10" name="Huawei-NCE-AL10Rule7b8eaf2a-f98a-4c8a-844a-c7324f078808Check849937a1-b114-4802-a90b-9f1cfe00695a" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

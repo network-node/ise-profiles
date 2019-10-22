@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-MediaPad" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-MediaPadRuled1ffbe46-9778-44e6-8790-c270302de2cf"/>
+<PolicyRule certaintyFactor="40" name="Huawei-MediaPadRule5f5921c6-e963-40f0-93e2-ce7a7ffa573b"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_MediaPad_OR_DHCP_host-name_CONTAINS_MediaPad" expression="Huawei-MediaPadRuled1ffbe46-9778-44e6-8790-c270302de2cfCheckb0998e16-e909-417d-9d80-1deb534a31a2 | Huawei-MediaPadRuled1ffbe46-9778-44e6-8790-c270302de2cfCheck3f6d94cc-6100-49ac-b12f-d3e737036496" name="Huawei-MediaPadRuled1ffbe46-9778-44e6-8790-c270302de2cf" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_BTV-W09_OR_IP_User-Agent_CONTAINS_AGS2-W09" expression="Huawei-MediaPadRule5f5921c6-e963-40f0-93e2-ce7a7ffa573bCheck376dc3b1-83a0-493b-8976-8819f9806446 | Huawei-MediaPadRule5f5921c6-e963-40f0-93e2-ce7a7ffa573bCheck7c401113-0441-42e0-8f4a-23944cedc9e6" name="Huawei-MediaPadRule5f5921c6-e963-40f0-93e2-ce7a7ffa573b" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="MediaPad" description="IP FQDN CONTAINS MediaPad" name="Huawei-MediaPadRuled1ffbe46-9778-44e6-8790-c270302de2cfCheckb0998e16-e909-417d-9d80-1deb534a31a2" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="MediaPad" description="DHCP host-name CONTAINS MediaPad" name="Huawei-MediaPadRuled1ffbe46-9778-44e6-8790-c270302de2cfCheck3f6d94cc-6100-49ac-b12f-d3e737036496" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="BTV-W09" description="IP User-Agent CONTAINS BTV-W09" name="Huawei-MediaPadRule5f5921c6-e963-40f0-93e2-ce7a7ffa573bCheck376dc3b1-83a0-493b-8976-8819f9806446" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="AGS2-W09" description="IP User-Agent CONTAINS AGS2-W09" name="Huawei-MediaPadRule5f5921c6-e963-40f0-93e2-ce7a7ffa573bCheck7c401113-0441-42e0-8f4a-23944cedc9e6" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

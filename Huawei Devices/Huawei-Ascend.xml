@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-Ascend" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-AscendRule23981316-55da-4a25-ad62-b24f32dac5d2"/>
+<PolicyRule certaintyFactor="40" name="Huawei-AscendRulecb15d147-766d-4738-a589-6f8653e7313c"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_H1711_OR_IP_User-Agent_CONTAINS_MT2L03_OR_IP_User-Agent_CONTAINS_H1611" expression="(Huawei-AscendRule23981316-55da-4a25-ad62-b24f32dac5d2Checkd5492aee-e38a-4924-b7a9-d4c91e53d587 | Huawei-AscendRule23981316-55da-4a25-ad62-b24f32dac5d2Checke0f89b8e-4fcc-4ff1-a9c9-39cd0b30bb49) | Huawei-AscendRule23981316-55da-4a25-ad62-b24f32dac5d2Check33914e1a-c845-4d81-a79e-f6442fa7decf" name="Huawei-AscendRule23981316-55da-4a25-ad62-b24f32dac5d2" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_H1611_OR_DHCP_host-name_CONTAINS_H1623_OR_DHCP_host-name_CONTAINS_Huawei_Ascend_OR_IP_FQDN_CONTAINS_H1611_OR_IP_FQDN_CONTAINS_H1623_OR_IP_FQDN_CONTAINS_Huawei_Ascend" expression="((((Huawei-AscendRulecb15d147-766d-4738-a589-6f8653e7313cCheck6739864a-a6c1-4849-b287-e75a986ac5ec | Huawei-AscendRulecb15d147-766d-4738-a589-6f8653e7313cCheckeec98474-d0ee-49a5-9e42-703c71b88a35) | Huawei-AscendRulecb15d147-766d-4738-a589-6f8653e7313cCheck9442c1f4-2ed5-43d2-86c6-9b66487a49ff) | Huawei-AscendRulecb15d147-766d-4738-a589-6f8653e7313cCheck4a913263-b41f-4adc-8957-35dd354fdde3) | Huawei-AscendRulecb15d147-766d-4738-a589-6f8653e7313cChecka703f3c0-f717-4f64-864e-5bb067773db0) | Huawei-AscendRulecb15d147-766d-4738-a589-6f8653e7313cCheck30ae6f80-b564-4b66-bb3f-54091e20e9db" name="Huawei-AscendRulecb15d147-766d-4738-a589-6f8653e7313c" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="H1711" description="IP User-Agent CONTAINS H1711" name="Huawei-AscendRule23981316-55da-4a25-ad62-b24f32dac5d2Checkd5492aee-e38a-4924-b7a9-d4c91e53d587" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="MT2L03" description="IP User-Agent CONTAINS MT2L03" name="Huawei-AscendRule23981316-55da-4a25-ad62-b24f32dac5d2Checke0f89b8e-4fcc-4ff1-a9c9-39cd0b30bb49" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="H1611" description="IP User-Agent CONTAINS H1611" name="Huawei-AscendRule23981316-55da-4a25-ad62-b24f32dac5d2Check33914e1a-c845-4d81-a79e-f6442fa7decf" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="H1611" description="DHCP host-name CONTAINS H1611" name="Huawei-AscendRulecb15d147-766d-4738-a589-6f8653e7313cCheck6739864a-a6c1-4849-b287-e75a986ac5ec" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="H1623" description="DHCP host-name CONTAINS H1623" name="Huawei-AscendRulecb15d147-766d-4738-a589-6f8653e7313cCheckeec98474-d0ee-49a5-9e42-703c71b88a35" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="Huawei_Ascend" description="DHCP host-name CONTAINS Huawei_Ascend" name="Huawei-AscendRulecb15d147-766d-4738-a589-6f8653e7313cCheck9442c1f4-2ed5-43d2-86c6-9b66487a49ff" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="H1611" description="IP FQDN CONTAINS H1611" name="Huawei-AscendRulecb15d147-766d-4738-a589-6f8653e7313cCheck4a913263-b41f-4adc-8957-35dd354fdde3" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="H1623" description="IP FQDN CONTAINS H1623" name="Huawei-AscendRulecb15d147-766d-4738-a589-6f8653e7313cChecka703f3c0-f717-4f64-864e-5bb067773db0" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="Huawei_Ascend" description="IP FQDN CONTAINS Huawei_Ascend" name="Huawei-AscendRulecb15d147-766d-4738-a589-6f8653e7313cCheck30ae6f80-b564-4b66-bb3f-54091e20e9db" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

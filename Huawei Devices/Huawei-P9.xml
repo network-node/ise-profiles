@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-P9" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-P30Rulee5f2c9fb-fff5-4a61-b266-d092587ed423_copy_copy"/>
+<PolicyRule certaintyFactor="40" name="Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100_copy_copy"/>
+<PolicyRule certaintyFactor="40" name="Huawei-P9Rulef2e10857-13c9-4ad1-934c-1214165181fd"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_huawei_p9_OR_IP_FQDN_CONTAINS_huawei_p9" expression="Huawei-P30Rulee5f2c9fb-fff5-4a61-b266-d092587ed423Checkc29c19e8-c513-4fde-8d60-bfa04ae102ba_copy_copy | Huawei-P30Rulee5f2c9fb-fff5-4a61-b266-d092587ed423Check9c2c9c85-14e2-4902-9b03-5079b72b8b5e_copy_copy" name="Huawei-P30Rulee5f2c9fb-fff5-4a61-b266-d092587ed423_copy_copy" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_VIE-AL10_OR_IP_User-Agent_CONTAINS_EVA-L09_OR_IP_User-Agent_CONTAINS_VNS-L21_OR_IP_User-Agent_CONTAINS_VNS-L23_OR_IP_User-Agent_CONTAINS_VNS-L31_OR_IP_User-Agent_CONTAINS_SLA-L02_OR_IP_User-Agent_CONTAINS_SLA-L03_OR_IP_User-Agent_CONTAINS_EVA-AL10_OR_IP_User-Agent_CONTAINS_VNS-L52" expression="(((((((Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100Check354cd518-4cc0-4bdc-867c-1c5b32c1ba07_copy_copy | Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100_copy_copyCheck7643b2f3-8aed-466e-bcea-c3b3bb543f86) | Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100_copy_copyCheckfdd8d142-0c37-4999-bba6-f1a618334b7e) | Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100_copy_copyChecke353dccf-d1da-40b6-a16c-10693d253bfd) | Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100_copy_copyCheck955b61fb-1930-412f-b119-7cc74bc989cc) | Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100_copy_copyCheck4ac72974-bf60-4092-b693-76c7bd6b9d6c) | Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100_copy_copyCheckdfb1b3a3-e80f-4794-b819-c33b2515ae3f) | Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100_copy_copyCheckfbefbe52-1ca4-419c-9b8c-4b81dc8f7689) | Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100_copy_copyCheckd7ae90c2-df85-4658-842b-3d77c1075a36" name="Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100_copy_copy" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_HUAWEI_android_VIE-AL10" expression="Huawei-P9Rulef2e10857-13c9-4ad1-934c-1214165181fdCheckf0d05bb8-46ef-426a-819f-d84db842e6cc" name="Huawei-P9Rulef2e10857-13c9-4ad1-934c-1214165181fd" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="huawei_p9" description="DHCP host-name CONTAINS huawei_p9" name="Huawei-P30Rulee5f2c9fb-fff5-4a61-b266-d092587ed423Checkc29c19e8-c513-4fde-8d60-bfa04ae102ba_copy_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="huawei_p9" description="IP FQDN CONTAINS huawei_p9" name="Huawei-P30Rulee5f2c9fb-fff5-4a61-b266-d092587ed423Check9c2c9c85-14e2-4902-9b03-5079b72b8b5e_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="VIE-AL10" description="IP User-Agent CONTAINS VIE-AL10" name="Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100Check354cd518-4cc0-4bdc-867c-1c5b32c1ba07_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="EVA-L09" description="IP User-Agent CONTAINS EVA-L09" name="Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100_copy_copyCheck7643b2f3-8aed-466e-bcea-c3b3bb543f86" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="VNS-L21" description="IP User-Agent CONTAINS VNS-L21" name="Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100_copy_copyCheckfdd8d142-0c37-4999-bba6-f1a618334b7e" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="VNS-L23" description="IP User-Agent CONTAINS VNS-L23" name="Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100_copy_copyChecke353dccf-d1da-40b6-a16c-10693d253bfd" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="VNS-L31" description="IP User-Agent CONTAINS VNS-L31" name="Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100_copy_copyCheck955b61fb-1930-412f-b119-7cc74bc989cc" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SLA-L02" description="IP User-Agent CONTAINS SLA-L02" name="Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100_copy_copyCheck4ac72974-bf60-4092-b693-76c7bd6b9d6c" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SLA-L03" description="IP User-Agent CONTAINS SLA-L03" name="Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100_copy_copyCheckdfb1b3a3-e80f-4794-b819-c33b2515ae3f" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="EVA-AL10" description="IP User-Agent CONTAINS EVA-AL10" name="Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100_copy_copyCheckfbefbe52-1ca4-419c-9b8c-4b81dc8f7689" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="VNS-L52" description="IP User-Agent CONTAINS VNS-L52" name="Huawei-P30Rule167677bb-6283-456f-a6f3-75c0f1ebb100_copy_copyCheckd7ae90c2-df85-4658-842b-3d77c1075a36" operator="Contains" type="IP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="HUAWEI:android:VIE-AL10" description="DHCP dhcp-class-identifier CONTAINS HUAWEI:android:VIE-AL10" name="Huawei-P9Rulef2e10857-13c9-4ad1-934c-1214165181fdCheckf0d05bb8-46ef-426a-819f-d84db842e6cc" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

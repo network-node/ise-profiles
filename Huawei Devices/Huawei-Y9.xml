@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-Y9" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-Y9Rule90a267da-54d8-45b0-9341-779d14155d49"/>
+<PolicyRule certaintyFactor="40" name="Huawei-Y9Rulee1a734df-22b5-43dc-a3e7-b9a4ad47a196"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_HUAWEI_Y9_OR_IP_FQDN_CONTAINS_HUAWEI_Y9" expression="Huawei-Y9Rule90a267da-54d8-45b0-9341-779d14155d49Check9810d3e3-7f7a-4729-9a0b-7102c2e15514 | Huawei-Y9Rule90a267da-54d8-45b0-9341-779d14155d49Check65d6db2b-e525-433b-ad24-73224d1f4021" name="Huawei-Y9Rule90a267da-54d8-45b0-9341-779d14155d49" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_JKM-LX3_OR_IP_User-Agent_CONTAINS_JKM-AL00" expression="Huawei-Y9Rulee1a734df-22b5-43dc-a3e7-b9a4ad47a196Check39babe1b-a446-48d7-8875-306b5e87827e | Huawei-Y9Rulee1a734df-22b5-43dc-a3e7-b9a4ad47a196Check0fe51ae6-2ac2-41f0-81cc-88b05fcc3c17" name="Huawei-Y9Rulee1a734df-22b5-43dc-a3e7-b9a4ad47a196" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="HUAWEI_Y9" description="DHCP host-name CONTAINS HUAWEI_Y9" name="Huawei-Y9Rule90a267da-54d8-45b0-9341-779d14155d49Check9810d3e3-7f7a-4729-9a0b-7102c2e15514" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="HUAWEI_Y9" description="IP FQDN CONTAINS HUAWEI_Y9" name="Huawei-Y9Rule90a267da-54d8-45b0-9341-779d14155d49Check65d6db2b-e525-433b-ad24-73224d1f4021" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="JKM-LX3" description="IP User-Agent CONTAINS JKM-LX3" name="Huawei-Y9Rulee1a734df-22b5-43dc-a3e7-b9a4ad47a196Check39babe1b-a446-48d7-8875-306b5e87827e" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="JKM-AL00" description="IP User-Agent CONTAINS JKM-AL00" name="Huawei-Y9Rulee1a734df-22b5-43dc-a3e7-b9a4ad47a196Check0fe51ae6-2ac2-41f0-81cc-88b05fcc3c17" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

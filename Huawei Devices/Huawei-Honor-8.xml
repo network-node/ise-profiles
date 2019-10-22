@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-Honor-8" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-Honor-7Rulee594a742-dafc-443a-acc1-528ff3cb380a_copy"/>
+<PolicyRule certaintyFactor="40" name="Huawei-Honor-7Rule74e615c1-14b5-4095-aaa6-4b3f84fff528_copy"/>
+<PolicyRule certaintyFactor="40" name="Huawei-GR5Rulebe06ca44-bd2a-4207-b6c2-5b4b4b176604_copy_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_HUAWEI_android_JSN-L21" expression="Huawei-Honor-7Rulee594a742-dafc-443a-acc1-528ff3cb380aCheckd4fbf52b-bf24-4a30-b941-12314fb409a8_copy" name="Huawei-Honor-7Rulee594a742-dafc-443a-acc1-528ff3cb380a_copy" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_Honor_8_OR_IP_FQDN_CONTAINS_Honor_8" expression="Huawei-Honor-7Rule74e615c1-14b5-4095-aaa6-4b3f84fff528Check297fa5d3-1816-4755-9e31-e97a12492b34_copy | Huawei-Honor-7Rule74e615c1-14b5-4095-aaa6-4b3f84fff528Check0288bb7e-eac7-4846-ac06-d82acc0adbe7_copy" name="Huawei-Honor-7Rule74e615c1-14b5-4095-aaa6-4b3f84fff528_copy" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_FRD-L14_OR_IP_User-Agent_CONTAINS_FRD-L04_OR_IP_User-Agent_CONTAINS_ARE-AL00_OR_IP_User-Agent_CONTAINS_FRD-AL10_OR_IP_User-Agent_CONTAINS_JSN-L21" expression="(((Huawei-GR5Rulebe06ca44-bd2a-4207-b6c2-5b4b4b176604Check98c0e8ae-fd91-4759-8a75-e6424d6b2011_copy_copy_copy_copy_copy | Huawei-GR5Rulebe06ca44-bd2a-4207-b6c2-5b4b4b176604_copy_copy_copyCheck4c7a7b07-8331-417f-bd06-4d23502662c1_copy_copy) | Huawei-GR5Rulebe06ca44-bd2a-4207-b6c2-5b4b4b176604_copy_copy_copyCheck7103ba6b-c694-4e9d-b807-4aa68305e4b6_copy_copy) | Huawei-GR5Rulebe06ca44-bd2a-4207-b6c2-5b4b4b176604_copy_copy_copy_copy_copyChecke248320e-a470-4831-86ce-3f12270b6eed) | Huawei-GR5Rulebe06ca44-bd2a-4207-b6c2-5b4b4b176604_copy_copy_copy_copy_copyCheckbe1e7c0d-2d39-4a29-8d7f-34908507d0cb" name="Huawei-GR5Rulebe06ca44-bd2a-4207-b6c2-5b4b4b176604_copy_copy_copy_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="HUAWEI:android:JSN-L21" description="DHCP dhcp-class-identifier CONTAINS HUAWEI:android:JSN-L21" name="Huawei-Honor-7Rulee594a742-dafc-443a-acc1-528ff3cb380aCheckd4fbf52b-bf24-4a30-b941-12314fb409a8_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="Honor_8" description="DHCP host-name CONTAINS Honor_8" name="Huawei-Honor-7Rule74e615c1-14b5-4095-aaa6-4b3f84fff528Check297fa5d3-1816-4755-9e31-e97a12492b34_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="Honor_8" description="IP FQDN CONTAINS Honor_8" name="Huawei-Honor-7Rule74e615c1-14b5-4095-aaa6-4b3f84fff528Check0288bb7e-eac7-4846-ac06-d82acc0adbe7_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="FRD-L14" description="IP User-Agent CONTAINS FRD-L14" name="Huawei-GR5Rulebe06ca44-bd2a-4207-b6c2-5b4b4b176604Check98c0e8ae-fd91-4759-8a75-e6424d6b2011_copy_copy_copy_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="FRD-L04" description="IP User-Agent CONTAINS FRD-L04" name="Huawei-GR5Rulebe06ca44-bd2a-4207-b6c2-5b4b4b176604_copy_copy_copyCheck4c7a7b07-8331-417f-bd06-4d23502662c1_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="ARE-AL00" description="IP User-Agent CONTAINS ARE-AL00" name="Huawei-GR5Rulebe06ca44-bd2a-4207-b6c2-5b4b4b176604_copy_copy_copyCheck7103ba6b-c694-4e9d-b807-4aa68305e4b6_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="FRD-AL10" description="IP User-Agent CONTAINS FRD-AL10" name="Huawei-GR5Rulebe06ca44-bd2a-4207-b6c2-5b4b4b176604_copy_copy_copy_copy_copyChecke248320e-a470-4831-86ce-3f12270b6eed" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="JSN-L21" description="IP User-Agent CONTAINS JSN-L21" name="Huawei-GR5Rulebe06ca44-bd2a-4207-b6c2-5b4b4b176604_copy_copy_copy_copy_copyCheckbe1e7c0d-2d39-4a29-8d7f-34908507d0cb" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-G-Elite" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-G8Rule861d51c5-f717-4d11-8417-3a237c3965c8_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_HUAWEI_G_Elite_OR_DHCP_host-name_CONTAINS_HUAWEI_G_Elite" expression="Huawei-G8Rule861d51c5-f717-4d11-8417-3a237c3965c8Check4d9666dc-6c35-4181-8dc1-44ac0e669ba3_copy | Huawei-G8Rule861d51c5-f717-4d11-8417-3a237c3965c8Check05910016-2b46-45c0-8b79-db15b9cc5c27_copy" name="Huawei-G8Rule861d51c5-f717-4d11-8417-3a237c3965c8_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="HUAWEI_G_Elite" description="IP FQDN CONTAINS HUAWEI_G_Elite" name="Huawei-G8Rule861d51c5-f717-4d11-8417-3a237c3965c8Check4d9666dc-6c35-4181-8dc1-44ac0e669ba3_copy" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="HUAWEI_G_Elite" description="DHCP host-name CONTAINS HUAWEI_G_Elite" name="Huawei-G8Rule861d51c5-f717-4d11-8417-3a237c3965c8Check05910016-2b46-45c0-8b79-db15b9cc5c27_copy" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

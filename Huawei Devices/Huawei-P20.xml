@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-P20" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1d"/>
+<PolicyRule certaintyFactor="40" name="Huawei-P20Rulecfc4b182-26f0-43e7-b9bf-75507e9a3b98"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_CLT-L09_OR_IP_User-Agent_CONTAINS_CLT-L29_OR_IP_User-Agent_CONTAINS_ANE-LX1_OR_IP_User-Agent_CONTAINS_ANE-LX3_OR_IP_User-Agent_CONTAINS_EML-AL00_OR_IP_User-Agent_CONTAINS_CLT-AL00_OR_IP_User-Agent_CONTAINS_ANE-LX2J_OR_IP_User-Agent_CONTAINS_EML-L09_OR_IP_User-Agent_CONTAINS_EML-L29" expression="(((((((Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1dCheck4e97ef42-c996-4183-96c2-9ef7d3693a52 | Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1dCheck44a1f0da-f8b5-4f2a-b743-3fe6f7935ef5) | Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1dCheck3a3b6263-8aef-41ae-b665-528272ba94ec) | Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1dCheck652f4f9f-8263-4d42-bd0c-7d6c2811b393) | Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1dChecka1fd250b-c5e7-4e4a-b0d7-adea893291a6) | Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1dCheck44237e5d-5067-4516-b7bd-ec1d206998c9) | Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1dCheck240d6d3f-13d1-4528-9491-c0f02de9ab96) | Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1dCheckcb10b236-94ce-4949-bb8d-e38b6fd4cb6d) | Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1dCheck0bbe3fed-d768-4317-8413-5e5f2622fd4d" name="Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1d" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_HUAWEI_P20_OR_DHCP_host-name_CONTAINS_HUAWEI_P20" expression="Huawei-P20Rulecfc4b182-26f0-43e7-b9bf-75507e9a3b98Checkc3e80479-98ed-40ec-aa14-9ed93ca2f3eb | Huawei-P20Rulecfc4b182-26f0-43e7-b9bf-75507e9a3b98Check7645fdea-ee0e-46d4-8e4a-5a7928a9260b" name="Huawei-P20Rulecfc4b182-26f0-43e7-b9bf-75507e9a3b98" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="CLT-L09" description="IP User-Agent CONTAINS CLT-L09" name="Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1dCheck4e97ef42-c996-4183-96c2-9ef7d3693a52" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="CLT-L29" description="IP User-Agent CONTAINS CLT-L29" name="Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1dCheck44a1f0da-f8b5-4f2a-b743-3fe6f7935ef5" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="ANE-LX1" description="IP User-Agent CONTAINS ANE-LX1" name="Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1dCheck3a3b6263-8aef-41ae-b665-528272ba94ec" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="ANE-LX3" description="IP User-Agent CONTAINS ANE-LX3" name="Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1dCheck652f4f9f-8263-4d42-bd0c-7d6c2811b393" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="EML-AL00" description="IP User-Agent CONTAINS EML-AL00" name="Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1dChecka1fd250b-c5e7-4e4a-b0d7-adea893291a6" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="CLT-AL00" description="IP User-Agent CONTAINS CLT-AL00" name="Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1dCheck44237e5d-5067-4516-b7bd-ec1d206998c9" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="ANE-LX2J" description="IP User-Agent CONTAINS ANE-LX2J" name="Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1dCheck240d6d3f-13d1-4528-9491-c0f02de9ab96" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="EML-L09" description="IP User-Agent CONTAINS EML-L09" name="Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1dCheckcb10b236-94ce-4949-bb8d-e38b6fd4cb6d" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="EML-L29" description="IP User-Agent CONTAINS EML-L29" name="Huawei-P20Rule4fa7ccfa-63a7-4350-b876-d523f7ea6e1dCheck0bbe3fed-d768-4317-8413-5e5f2622fd4d" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="HUAWEI_P20" description="IP FQDN CONTAINS HUAWEI_P20" name="Huawei-P20Rulecfc4b182-26f0-43e7-b9bf-75507e9a3b98Checkc3e80479-98ed-40ec-aa14-9ed93ca2f3eb" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="HUAWEI_P20" description="DHCP host-name CONTAINS HUAWEI_P20" name="Huawei-P20Rulecfc4b182-26f0-43e7-b9bf-75507e9a3b98Check7645fdea-ee0e-46d4-8e4a-5a7928a9260b" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

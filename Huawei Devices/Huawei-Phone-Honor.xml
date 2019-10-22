@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-Phone" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-PhoneRule635fa525-6299-402a-bf10-d8f758e7f394"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Huawei-Phone-Honor" parentFQN="Huawei-Device:Huawei-Phone" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-Phone-HonorRule2f925b54-9c56-4e3c-8459-205c3bd260f7"/>
+<PolicyRule certaintyFactor="20" name="Huawei-Phone-HonorRule763f7a1b-bc10-40ed-953a-8edd7333473a"/>
+<PolicyRule certaintyFactor="20" name="Huawei-Phone-HonorRuleea8d2b89-bbc8-45ea-8e3a-cd42b47d40f9"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_Honor__OR_DHCP_host-name_STARTSWITH_Honor__OR_DHCP_host-name_STARTSWITH_Huawei__OR_DHCP_host-name_CONTAINS_Huawei__OR_DHCP_dhcp-class-identifier_STARTSWITH_HUAWEI_android_OR_DHCP_dhcp-class-identifier_CONTAINS_HUAWEI_android" expression="((((Huawei-PhoneRule635fa525-6299-402a-bf10-d8f758e7f394Checkb00eea0b-25ae-402f-8c27-56876ee5e0eb | Huawei-PhoneRule635fa525-6299-402a-bf10-d8f758e7f394Check47db4d8e-53c7-48c7-aa64-4363a037b37a) | Huawei-PhoneRule635fa525-6299-402a-bf10-d8f758e7f394Checkaa4d5df3-fda8-4e6e-8c7d-968063e52f20) | Huawei-PhoneRule635fa525-6299-402a-bf10-d8f758e7f394Check5e696938-005f-40c5-8788-6740b5c04a9e) | Huawei-PhoneRule635fa525-6299-402a-bf10-d8f758e7f394Checkac95874b-377e-4fad-9714-6e3af8b41659) | Huawei-PhoneRule635fa525-6299-402a-bf10-d8f758e7f394Check34549a73-4de6-4c9b-9d43-71f1564d6fc7" name="Huawei-PhoneRule635fa525-6299-402a-bf10-d8f758e7f394" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_honor__OR_IP_FQDN_STARTSWITH_honor_" expression="Huawei-Phone-HonorRule2f925b54-9c56-4e3c-8459-205c3bd260f7Checkdbf92a14-5930-48ca-a984-bee5f5997802 | Huawei-Phone-HonorRule2f925b54-9c56-4e3c-8459-205c3bd260f7Checka22b1a69-a358-42ff-b8c0-3bccf5a7467b" name="Huawei-Phone-HonorRule2f925b54-9c56-4e3c-8459-205c3bd260f7" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_HONORBND" expression="Huawei-Phone-HonorRule763f7a1b-bc10-40ed-953a-8edd7333473aCheck99685b27-351f-41d9-9b1b-a2c827a8069b" name="Huawei-Phone-HonorRule763f7a1b-bc10-40ed-953a-8edd7333473a" ruleType="Regular"/>
+<Rule description="DHCP_host-name_STARTSWITH_Honor__OR_DHCP_host-name_CONTAINS_Honor_" expression="Huawei-Phone-HonorRuleea8d2b89-bbc8-45ea-8e3a-cd42b47d40f9Check24375192-5f9b-475c-b23c-d7572767746c | Huawei-Phone-HonorRuleea8d2b89-bbc8-45ea-8e3a-cd42b47d40f9Checkfce700d6-277a-4ba8-a37a-dba5ce234675" name="Huawei-Phone-HonorRuleea8d2b89-bbc8-45ea-8e3a-cd42b47d40f9" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="Honor_" description="DHCP host-name CONTAINS Honor_" name="Huawei-PhoneRule635fa525-6299-402a-bf10-d8f758e7f394Checkb00eea0b-25ae-402f-8c27-56876ee5e0eb" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="HUAWEI:android" description="DHCP dhcp-class-identifier STARTSWITH HUAWEI:android" name="Huawei-PhoneRule635fa525-6299-402a-bf10-d8f758e7f394Check47db4d8e-53c7-48c7-aa64-4363a037b37a" operator="Starts with" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="Honor_" description="DHCP host-name STARTSWITH Honor_" name="Huawei-PhoneRule635fa525-6299-402a-bf10-d8f758e7f394Checkaa4d5df3-fda8-4e6e-8c7d-968063e52f20" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="HUAWEI:android" description="DHCP dhcp-class-identifier CONTAINS HUAWEI:android" name="Huawei-PhoneRule635fa525-6299-402a-bf10-d8f758e7f394Check5e696938-005f-40c5-8788-6740b5c04a9e" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="Huawei_" description="DHCP host-name STARTSWITH Huawei_" name="Huawei-PhoneRule635fa525-6299-402a-bf10-d8f758e7f394Checkac95874b-377e-4fad-9714-6e3af8b41659" operator="Starts with" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="Huawei_" description="DHCP host-name CONTAINS Huawei_" name="Huawei-PhoneRule635fa525-6299-402a-bf10-d8f758e7f394Check34549a73-4de6-4c9b-9d43-71f1564d6fc7" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="honor_" description="IP FQDN CONTAINS honor_" name="Huawei-Phone-HonorRule2f925b54-9c56-4e3c-8459-205c3bd260f7Checkdbf92a14-5930-48ca-a984-bee5f5997802" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="honor_" description="IP FQDN STARTSWITH honor_" name="Huawei-Phone-HonorRule2f925b54-9c56-4e3c-8459-205c3bd260f7Checka22b1a69-a358-42ff-b8c0-3bccf5a7467b" operator="Starts with" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="HONORBND" description="IP User-Agent CONTAINS HONORBND" name="Huawei-Phone-HonorRule763f7a1b-bc10-40ed-953a-8edd7333473aCheck99685b27-351f-41d9-9b1b-a2c827a8069b" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="Honor_" description="DHCP host-name STARTSWITH Honor_" name="Huawei-Phone-HonorRuleea8d2b89-bbc8-45ea-8e3a-cd42b47d40f9Check24375192-5f9b-475c-b23c-d7572767746c" operator="Starts with" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="Honor_" description="DHCP host-name CONTAINS Honor_" name="Huawei-Phone-HonorRuleea8d2b89-bbc8-45ea-8e3a-cd42b47d40f9Checkfce700d6-277a-4ba8-a37a-dba5ce234675" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

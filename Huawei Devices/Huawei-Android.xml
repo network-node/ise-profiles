@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Huawei-Android" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-AndroidRuled2122697-54d9-4d7c-b9e2-7df0059b12d8"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_STARTSWITH_HUAWEI_android" expression="Huawei-AndroidRuled2122697-54d9-4d7c-b9e2-7df0059b12d8Checkb838d21c-5d66-467f-9dfe-778f7170100d" name="Huawei-AndroidRuled2122697-54d9-4d7c-b9e2-7df0059b12d8" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="HUAWEI:android" description="DHCP dhcp-class-identifier STARTSWITH HUAWEI:android" name="Huawei-AndroidRuled2122697-54d9-4d7c-b9e2-7df0059b12d8Checkb838d21c-5d66-467f-9dfe-778f7170100d" operator="Starts with" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

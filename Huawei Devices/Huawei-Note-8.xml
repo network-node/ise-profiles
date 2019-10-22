@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-Note-8" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-Note-10Rulee8ea3acc-c579-44a0-9e94-7437baf99e2d_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_Honor_NOTE_8_OR_DHCP_host-name_CONTAINS_Honor_NOTE_8" expression="Huawei-Note-10Rulee8ea3acc-c579-44a0-9e94-7437baf99e2dCheckaa57f01d-49a4-42bc-970b-1ec93adb3945_copy | Huawei-Note-10Rulee8ea3acc-c579-44a0-9e94-7437baf99e2dCheck6b45d352-63b2-49b2-8645-ae66ef8e8319_copy" name="Huawei-Note-10Rulee8ea3acc-c579-44a0-9e94-7437baf99e2d_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="Honor_NOTE_8" description="IP FQDN CONTAINS Honor_NOTE_8" name="Huawei-Note-10Rulee8ea3acc-c579-44a0-9e94-7437baf99e2dCheckaa57f01d-49a4-42bc-970b-1ec93adb3945_copy" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="Honor_NOTE_8" description="DHCP host-name CONTAINS Honor_NOTE_8" name="Huawei-Note-10Rulee8ea3acc-c579-44a0-9e94-7437baf99e2dCheck6b45d352-63b2-49b2-8645-ae66ef8e8319_copy" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

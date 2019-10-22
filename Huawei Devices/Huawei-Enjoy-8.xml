@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-Enjoy-8" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-Enjoy-8Rule52afb8e1-6b4b-4f8d-8b3a-1f0eadb9846e"/>
+<PolicyRule certaintyFactor="40" name="Huawei-Enjoy-8Rule5a63450b-514b-4391-9bed-5be2f74f6ce2"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="IP_User-Agent_CONTAINS_JSN-AL00a_OR_IP_User-Agent_CONTAINS_ATU-AL10_OR_IP_User-Agent_CONTAINS_FLA-TL10" expression="(Huawei-Enjoy-8Rule52afb8e1-6b4b-4f8d-8b3a-1f0eadb9846eCheckeb041f52-0f8a-423e-8a72-63996c0ea7e2 | Huawei-Enjoy-8Rule52afb8e1-6b4b-4f8d-8b3a-1f0eadb9846eCheck18277513-6b8d-45b3-b984-11c7344fd859) | Huawei-Enjoy-8Rule52afb8e1-6b4b-4f8d-8b3a-1f0eadb9846eCheck08369acd-986a-4c59-8ba7-524744e944c6" name="Huawei-Enjoy-8Rule52afb8e1-6b4b-4f8d-8b3a-1f0eadb9846e" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_ATU-AL10_OR_DHCP_host-name_CONTAINS_FLA-TL10_OR_IP_FQDN_CONTAINS_ATU-AL10_OR_IP_FQDN_CONTAINS_FLA-TL10" expression="((Huawei-Enjoy-8Rule5a63450b-514b-4391-9bed-5be2f74f6ce2Check4ec21cd7-423d-47a3-a89f-bb49805b9f05 | Huawei-Enjoy-8Rule5a63450b-514b-4391-9bed-5be2f74f6ce2Check84f3ed6a-fca1-482a-8c74-33befb3128f8) | Huawei-Enjoy-8Rule5a63450b-514b-4391-9bed-5be2f74f6ce2Checkad182f3e-51a8-4a98-bdb9-a58af03af6c5) | Huawei-Enjoy-8Rule5a63450b-514b-4391-9bed-5be2f74f6ce2Checkddf4a96b-e2bb-43d9-b7f6-a3fd6cf8d185" name="Huawei-Enjoy-8Rule5a63450b-514b-4391-9bed-5be2f74f6ce2" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="User-Agent" attributeValue="JSN-AL00a" description="IP User-Agent CONTAINS JSN-AL00a" name="Huawei-Enjoy-8Rule52afb8e1-6b4b-4f8d-8b3a-1f0eadb9846eCheckeb041f52-0f8a-423e-8a72-63996c0ea7e2" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="ATU-AL10" description="IP User-Agent CONTAINS ATU-AL10" name="Huawei-Enjoy-8Rule52afb8e1-6b4b-4f8d-8b3a-1f0eadb9846eCheck18277513-6b8d-45b3-b984-11c7344fd859" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="FLA-TL10" description="IP User-Agent CONTAINS FLA-TL10" name="Huawei-Enjoy-8Rule52afb8e1-6b4b-4f8d-8b3a-1f0eadb9846eCheck08369acd-986a-4c59-8ba7-524744e944c6" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="ATU-AL10" description="DHCP host-name CONTAINS ATU-AL10" name="Huawei-Enjoy-8Rule5a63450b-514b-4391-9bed-5be2f74f6ce2Check4ec21cd7-423d-47a3-a89f-bb49805b9f05" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="FLA-TL10" description="DHCP host-name CONTAINS FLA-TL10" name="Huawei-Enjoy-8Rule5a63450b-514b-4391-9bed-5be2f74f6ce2Check84f3ed6a-fca1-482a-8c74-33befb3128f8" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="ATU-AL10" description="IP FQDN CONTAINS ATU-AL10" name="Huawei-Enjoy-8Rule5a63450b-514b-4391-9bed-5be2f74f6ce2Checkad182f3e-51a8-4a98-bdb9-a58af03af6c5" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="FLA-TL10" description="IP FQDN CONTAINS FLA-TL10" name="Huawei-Enjoy-8Rule5a63450b-514b-4391-9bed-5be2f74f6ce2Checkddf4a96b-e2bb-43d9-b7f6-a3fd6cf8d185" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

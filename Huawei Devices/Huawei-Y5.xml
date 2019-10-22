@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-Y5" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-Y5Rule4fa3da86-485e-4a28-86df-ec9e5089b59e"/>
+<PolicyRule certaintyFactor="40" name="Huawei-Y5Rule7574b300-e113-4a71-8939-155b1aa7e0aa"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_CUN-L03_OR_IP_User-Agent_CONTAINS_MYA-L03_OR_IP_User-Agent_CONTAINS_MYA-L13_OR_IP_User-Agent_CONTAINS_MYA-L22_OR_IP_User-Agent_CONTAINS_DRA-LX3_OR_IP_User-Agent_CONTAINS_CUN-L21" expression="((((Huawei-Y5Rule4fa3da86-485e-4a28-86df-ec9e5089b59eCheck2b51d487-ca51-48f2-ac10-4c2502282f98 | Huawei-Y5Rule4fa3da86-485e-4a28-86df-ec9e5089b59eChecka48e7846-22fc-4d92-bd63-441e3181a523) | Huawei-Y5Rule4fa3da86-485e-4a28-86df-ec9e5089b59eCheck0a445409-4266-4632-a867-aff451b26dd5) | Huawei-Y5Rule4fa3da86-485e-4a28-86df-ec9e5089b59eCheck0cc6b545-98e0-472a-92aa-d7e4a8be9177) | Huawei-Y5Rule4fa3da86-485e-4a28-86df-ec9e5089b59eCheck9b568120-aa95-4991-ad8b-0f0266cee32c) | Huawei-Y5Rule4fa3da86-485e-4a28-86df-ec9e5089b59eCheck3ba02ab5-65b9-4a6b-b045-c0a3085a816f" name="Huawei-Y5Rule4fa3da86-485e-4a28-86df-ec9e5089b59e" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_HUAWEI_Y5_OR_IP_User-Agent_CONTAINS_HUAWEI_Y5" expression="Huawei-Y5Rule7574b300-e113-4a71-8939-155b1aa7e0aaCheckc8966904-5392-4c99-9fc5-e390c06868cc | Huawei-Y5Rule7574b300-e113-4a71-8939-155b1aa7e0aaCheck6b41f35b-c404-47e5-bb43-5de11f73e0f6" name="Huawei-Y5Rule7574b300-e113-4a71-8939-155b1aa7e0aa" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="CUN-L03" description="IP User-Agent CONTAINS CUN-L03" name="Huawei-Y5Rule4fa3da86-485e-4a28-86df-ec9e5089b59eCheck2b51d487-ca51-48f2-ac10-4c2502282f98" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="MYA-L03" description="IP User-Agent CONTAINS MYA-L03" name="Huawei-Y5Rule4fa3da86-485e-4a28-86df-ec9e5089b59eChecka48e7846-22fc-4d92-bd63-441e3181a523" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="MYA-L13" description="IP User-Agent CONTAINS MYA-L13" name="Huawei-Y5Rule4fa3da86-485e-4a28-86df-ec9e5089b59eCheck0a445409-4266-4632-a867-aff451b26dd5" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="MYA-L22" description="IP User-Agent CONTAINS MYA-L22" name="Huawei-Y5Rule4fa3da86-485e-4a28-86df-ec9e5089b59eCheck0cc6b545-98e0-472a-92aa-d7e4a8be9177" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="DRA-LX3" description="IP User-Agent CONTAINS DRA-LX3" name="Huawei-Y5Rule4fa3da86-485e-4a28-86df-ec9e5089b59eCheck9b568120-aa95-4991-ad8b-0f0266cee32c" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="CUN-L21" description="IP User-Agent CONTAINS CUN-L21" name="Huawei-Y5Rule4fa3da86-485e-4a28-86df-ec9e5089b59eCheck3ba02ab5-65b9-4a6b-b045-c0a3085a816f" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="HUAWEI_Y5" description="DHCP host-name CONTAINS HUAWEI_Y5" name="Huawei-Y5Rule7574b300-e113-4a71-8939-155b1aa7e0aaCheckc8966904-5392-4c99-9fc5-e390c06868cc" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="HUAWEI_Y5" description="IP User-Agent CONTAINS HUAWEI_Y5" name="Huawei-Y5Rule7574b300-e113-4a71-8939-155b1aa7e0aaCheck6b41f35b-c404-47e5-bb43-5de11f73e0f6" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

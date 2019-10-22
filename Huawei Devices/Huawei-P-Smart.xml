@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-P-Smart" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-Porsche-DesignRule1b7f9f78-9406-4902-a89d-eaa45401b5ae_copy"/>
+<PolicyRule certaintyFactor="40" name="Huawei-P-SmartRulee56b3d69-22b6-4e9b-be95-aec9f55b764f"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_HUAWEI_P_smart_OR_IP_FQDN_CONTAINS_HUAWEI_P_smart" expression="Huawei-Porsche-DesignRule1b7f9f78-9406-4902-a89d-eaa45401b5aeCheckcd26d6f6-845c-464d-8dc0-353303678d86_copy | Huawei-Porsche-DesignRule1b7f9f78-9406-4902-a89d-eaa45401b5aeCheckc4c2cab7-36c2-4118-975c-7696deb87a56_copy" name="Huawei-Porsche-DesignRule1b7f9f78-9406-4902-a89d-eaa45401b5ae_copy" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_FIG-LX1_OR_IP_User-Agent_CONTAINS_FIG-LX3" expression="Huawei-P-SmartRulee56b3d69-22b6-4e9b-be95-aec9f55b764fCheck094dedbe-f6cf-4e26-817d-f4ad0948fc34 | Huawei-P-SmartRulee56b3d69-22b6-4e9b-be95-aec9f55b764fChecke69d317d-5041-4779-9b88-291fd0c89666" name="Huawei-P-SmartRulee56b3d69-22b6-4e9b-be95-aec9f55b764f" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="HUAWEI_P_smart" description="DHCP host-name CONTAINS HUAWEI_P_smart" name="Huawei-Porsche-DesignRule1b7f9f78-9406-4902-a89d-eaa45401b5aeCheckcd26d6f6-845c-464d-8dc0-353303678d86_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="HUAWEI_P_smart" description="IP FQDN CONTAINS HUAWEI_P_smart" name="Huawei-Porsche-DesignRule1b7f9f78-9406-4902-a89d-eaa45401b5aeCheckc4c2cab7-36c2-4118-975c-7696deb87a56_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="FIG-LX1" description="IP User-Agent CONTAINS FIG-LX1" name="Huawei-P-SmartRulee56b3d69-22b6-4e9b-be95-aec9f55b764fCheck094dedbe-f6cf-4e26-817d-f4ad0948fc34" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="FIG-LX3" description="IP User-Agent CONTAINS FIG-LX3" name="Huawei-P-SmartRulee56b3d69-22b6-4e9b-be95-aec9f55b764fChecke69d317d-5041-4779-9b88-291fd0c89666" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

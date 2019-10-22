@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-Y7" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-Y7Rule2e036c7f-781b-4402-8ce0-43d0c12b0f22"/>
+<PolicyRule certaintyFactor="40" name="Huawei-Y7Ruled471dcad-efde-4fd0-b64d-030fdfb2ce26"/>
+<PolicyRule certaintyFactor="40" name="Huawei-Y7Rule4d362cfe-04cf-4722-9690-3454007fdee7"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_HUAWEI_Y7_OR_IP_FQDN_CONTAINS_HUAWEI_Y7" expression="Huawei-Y7Rule2e036c7f-781b-4402-8ce0-43d0c12b0f22Checkf5a542c5-78c5-4618-beac-7cba48358984 | Huawei-Y7Rule2e036c7f-781b-4402-8ce0-43d0c12b0f22Checkd617fbb0-0199-4171-9d78-a69bbb94d8e2" name="Huawei-Y7Rule2e036c7f-781b-4402-8ce0-43d0c12b0f22" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_TRT-L21A_OR_IP_User-Agent_CONTAINS_LDN-L21_OR_IP_User-Agent_CONTAINS_LDN-LX3_OR_IP_User-Agent_CONTAINS_DUB-LX2_OR_IP_User-Agent_CONTAINS_LDN-L01_OR_IP_User-Agent_CONTAINS_LDN-TL10" expression="((((Huawei-Y7Ruled471dcad-efde-4fd0-b64d-030fdfb2ce26Checkf9dad64c-f44f-427d-9a87-a32024bdd9a9 | Huawei-Y7Ruled471dcad-efde-4fd0-b64d-030fdfb2ce26Check7d17f62f-c714-4cb6-966d-679e86d67763) | Huawei-Y7Ruled471dcad-efde-4fd0-b64d-030fdfb2ce26Check5fad3bd5-6a49-454e-8140-fd9fa04e9085) | Huawei-Y7Ruled471dcad-efde-4fd0-b64d-030fdfb2ce26Check33b080ca-3d5b-4a68-b30e-7f565c39313c) | Huawei-Y7Ruled471dcad-efde-4fd0-b64d-030fdfb2ce26Check348e7288-5561-40e5-9389-a70e39347168) | Huawei-Y7Ruled471dcad-efde-4fd0-b64d-030fdfb2ce26Check49046d67-8cf2-42cf-9987-e8002e48b558" name="Huawei-Y7Ruled471dcad-efde-4fd0-b64d-030fdfb2ce26" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_HUAWEI_android_LDN-L21A_OR_DHCP_dhcp-class-identifier_CONTAINS_HUAWEI_android_LDN-L01_OR_DHCP_dhcp-class-identifier_CONTAINS_HUAWEI_android_LDN-L21B" expression="(Huawei-Y7Rule4d362cfe-04cf-4722-9690-3454007fdee7Check0a9688c3-861b-4e34-8ae0-7044437f9e1c | Huawei-Y7Rule4d362cfe-04cf-4722-9690-3454007fdee7Check9227864f-88fa-47fd-8d53-f67a0040175a) | Huawei-Y7Rule4d362cfe-04cf-4722-9690-3454007fdee7Checke2c631b3-af0c-477e-b34d-2c7b51b02b4d" name="Huawei-Y7Rule4d362cfe-04cf-4722-9690-3454007fdee7" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="HUAWEI_Y7" description="DHCP host-name CONTAINS HUAWEI_Y7" name="Huawei-Y7Rule2e036c7f-781b-4402-8ce0-43d0c12b0f22Checkf5a542c5-78c5-4618-beac-7cba48358984" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="HUAWEI_Y7" description="IP FQDN CONTAINS HUAWEI_Y7" name="Huawei-Y7Rule2e036c7f-781b-4402-8ce0-43d0c12b0f22Checkd617fbb0-0199-4171-9d78-a69bbb94d8e2" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="TRT-L21A" description="IP User-Agent CONTAINS TRT-L21A" name="Huawei-Y7Ruled471dcad-efde-4fd0-b64d-030fdfb2ce26Checkf9dad64c-f44f-427d-9a87-a32024bdd9a9" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LDN-L21" description="IP User-Agent CONTAINS LDN-L21" name="Huawei-Y7Ruled471dcad-efde-4fd0-b64d-030fdfb2ce26Check7d17f62f-c714-4cb6-966d-679e86d67763" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LDN-LX3" description="IP User-Agent CONTAINS LDN-LX3" name="Huawei-Y7Ruled471dcad-efde-4fd0-b64d-030fdfb2ce26Check5fad3bd5-6a49-454e-8140-fd9fa04e9085" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="DUB-LX2" description="IP User-Agent CONTAINS DUB-LX2" name="Huawei-Y7Ruled471dcad-efde-4fd0-b64d-030fdfb2ce26Check33b080ca-3d5b-4a68-b30e-7f565c39313c" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LDN-L01" description="IP User-Agent CONTAINS LDN-L01" name="Huawei-Y7Ruled471dcad-efde-4fd0-b64d-030fdfb2ce26Check348e7288-5561-40e5-9389-a70e39347168" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="LDN-TL10" description="IP User-Agent CONTAINS LDN-TL10" name="Huawei-Y7Ruled471dcad-efde-4fd0-b64d-030fdfb2ce26Check49046d67-8cf2-42cf-9987-e8002e48b558" operator="Contains" type="IP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="HUAWEI:android:LDN-L21A" description="DHCP dhcp-class-identifier CONTAINS HUAWEI:android:LDN-L21A" name="Huawei-Y7Rule4d362cfe-04cf-4722-9690-3454007fdee7Check0a9688c3-861b-4e34-8ae0-7044437f9e1c" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="HUAWEI:android:LDN-L01" description="DHCP dhcp-class-identifier CONTAINS HUAWEI:android:LDN-L01" name="Huawei-Y7Rule4d362cfe-04cf-4722-9690-3454007fdee7Check9227864f-88fa-47fd-8d53-f67a0040175a" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="HUAWEI:android:LDN-L21B" description="DHCP dhcp-class-identifier CONTAINS HUAWEI:android:LDN-L21B" name="Huawei-Y7Rule4d362cfe-04cf-4722-9690-3454007fdee7Checke2c631b3-af0c-477e-b34d-2c7b51b02b4d" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

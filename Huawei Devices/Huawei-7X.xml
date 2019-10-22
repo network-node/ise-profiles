@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-7X" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-7XRule032f5051-36db-421c-8b51-0e94e99267f4"/>
+<PolicyRule certaintyFactor="40" name="Huawei-7XRuled0c1a2d2-edaa-4f6e-8e13-dcde0e5ef2e0"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_HUAWEI_android_BND-L21_OR_DHCP_dhcp-class-identifier_CONTAINS_HUAWEI_android_BND-L24" expression="Huawei-7XRule032f5051-36db-421c-8b51-0e94e99267f4Check74c2a8c6-407d-40f8-90b4-0a6eaf3ada12 | Huawei-7XRule032f5051-36db-421c-8b51-0e94e99267f4Checkdcbeb507-1a15-4d9e-83ad-55cc0c4ff167" name="Huawei-7XRule032f5051-36db-421c-8b51-0e94e99267f4" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_BND-L24_OR_IP_User-Agent_CONTAINS_BND-L21_OR_IP_User-Agent_STARTSWITH_BND-L24_OR_IP_User-Agent_STARTSWITH_BND-L21" expression="((Huawei-7XRuled0c1a2d2-edaa-4f6e-8e13-dcde0e5ef2e0Checkc888df96-ea1f-48c4-8440-6404f401692c | Huawei-7XRuled0c1a2d2-edaa-4f6e-8e13-dcde0e5ef2e0Check50dd65d4-e931-4f79-9d4f-2634637d4b55) | Huawei-7XRuled0c1a2d2-edaa-4f6e-8e13-dcde0e5ef2e0Check879ad94b-10bd-4c75-9516-07ac8a62c8ea) | Huawei-7XRuled0c1a2d2-edaa-4f6e-8e13-dcde0e5ef2e0Checkb6df3cb6-0558-404a-8ae2-71e84b66851c" name="Huawei-7XRuled0c1a2d2-edaa-4f6e-8e13-dcde0e5ef2e0" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="HUAWEI:android:BND-L21" description="DHCP dhcp-class-identifier CONTAINS HUAWEI:android:BND-L21" name="Huawei-7XRule032f5051-36db-421c-8b51-0e94e99267f4Check74c2a8c6-407d-40f8-90b4-0a6eaf3ada12" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="HUAWEI:android:BND-L24" description="DHCP dhcp-class-identifier CONTAINS HUAWEI:android:BND-L24" name="Huawei-7XRule032f5051-36db-421c-8b51-0e94e99267f4Checkdcbeb507-1a15-4d9e-83ad-55cc0c4ff167" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="BND-L24" description="IP User-Agent CONTAINS BND-L24" name="Huawei-7XRuled0c1a2d2-edaa-4f6e-8e13-dcde0e5ef2e0Checkc888df96-ea1f-48c4-8440-6404f401692c" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="BND-L24" description="IP User-Agent STARTSWITH BND-L24" name="Huawei-7XRuled0c1a2d2-edaa-4f6e-8e13-dcde0e5ef2e0Check50dd65d4-e931-4f79-9d4f-2634637d4b55" operator="Starts with" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="BND-L21" description="IP User-Agent STARTSWITH BND-L21" name="Huawei-7XRuled0c1a2d2-edaa-4f6e-8e13-dcde0e5ef2e0Check879ad94b-10bd-4c75-9516-07ac8a62c8ea" operator="Starts with" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="BND-L21" description="IP User-Agent CONTAINS BND-L21" name="Huawei-7XRuled0c1a2d2-edaa-4f6e-8e13-dcde0e5ef2e0Checkb6df3cb6-0558-404a-8ae2-71e84b66851c" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

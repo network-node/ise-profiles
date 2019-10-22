@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-Honor-V9" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-Honor-V9Rule3b7a827b-a98b-47d9-80fa-9f603d143f44"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_Honor_V9_OR_IP_FQDN_CONTAINS_Honor_V9" expression="Huawei-Honor-V9Rule3b7a827b-a98b-47d9-80fa-9f603d143f44Checke1c7469a-16f0-4777-9934-79fc90c9648b | Huawei-Honor-V9Rule3b7a827b-a98b-47d9-80fa-9f603d143f44Check6b3165b4-ac02-496c-8f1e-4be49c806842" name="Huawei-Honor-V9Rule3b7a827b-a98b-47d9-80fa-9f603d143f44" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="Honor_V9" description="DHCP host-name CONTAINS Honor_V9" name="Huawei-Honor-V9Rule3b7a827b-a98b-47d9-80fa-9f603d143f44Checke1c7469a-16f0-4777-9934-79fc90c9648b" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="Honor_V9" description="IP FQDN CONTAINS Honor_V9" name="Huawei-Honor-V9Rule3b7a827b-a98b-47d9-80fa-9f603d143f44Check6b3165b4-ac02-496c-8f1e-4be49c806842" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

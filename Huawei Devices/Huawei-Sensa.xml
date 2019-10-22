@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-Sensa" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-SensaRule386ab30e-b07b-42b1-8c33-c36652e71b34"/>
+<PolicyRule certaintyFactor="40" name="Huawei-SensaRulefa9f829c-efc6-46e6-9246-5c84a1c38cfc"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_H710VL" expression="Huawei-SensaRule386ab30e-b07b-42b1-8c33-c36652e71b34Check5a31ebe4-2ded-4b7d-b381-7620a87cdd4e" name="Huawei-SensaRule386ab30e-b07b-42b1-8c33-c36652e71b34" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_H715BL_OR_IP_FQDN_CONTAINS_H715BL" expression="Huawei-SensaRulefa9f829c-efc6-46e6-9246-5c84a1c38cfcCheck8789e3cb-12e3-43d7-925c-e169c3f91479 | Huawei-SensaRulefa9f829c-efc6-46e6-9246-5c84a1c38cfcCheck425ecdf4-87f1-4d48-aaba-49b2365d6238" name="Huawei-SensaRulefa9f829c-efc6-46e6-9246-5c84a1c38cfc" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="H710VL" description="IP User-Agent CONTAINS H710VL" name="Huawei-SensaRule386ab30e-b07b-42b1-8c33-c36652e71b34Check5a31ebe4-2ded-4b7d-b381-7620a87cdd4e" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="H715BL" description="DHCP host-name CONTAINS H715BL" name="Huawei-SensaRulefa9f829c-efc6-46e6-9246-5c84a1c38cfcCheck8789e3cb-12e3-43d7-925c-e169c3f91479" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="H715BL" description="IP FQDN CONTAINS H715BL" name="Huawei-SensaRulefa9f829c-efc6-46e6-9246-5c84a1c38cfcCheck425ecdf4-87f1-4d48-aaba-49b2365d6238" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

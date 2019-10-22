@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-Mate-SE" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-Mate-SERulef8ebb3dd-52af-4c36-823b-d9729db2c9de"/>
+<PolicyRule certaintyFactor="40" name="Huawei-Mate-SERule9de6c4af-28c5-4362-b80b-d3f94e26f833"/>
+<PolicyRule certaintyFactor="40" name="Huawei-Mate-SERulec72881f8-6863-4437-b05c-c15405db3109"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_HUAWEI_android_BND-L34" expression="Huawei-Mate-SERulef8ebb3dd-52af-4c36-823b-d9729db2c9deCheck55c7970b-bae4-42c9-9cbc-f268c803c4fc" name="Huawei-Mate-SERulef8ebb3dd-52af-4c36-823b-d9729db2c9de" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_HUAWEI_Mate_SE_OR_DHCP_host-name_CONTAINS_HUAWEI_Mate_SE" expression="Huawei-Mate-SERule9de6c4af-28c5-4362-b80b-d3f94e26f833Checkee2e722f-a0fc-4952-80f0-8e50892dcf8d | Huawei-Mate-SERule9de6c4af-28c5-4362-b80b-d3f94e26f833Check70f82a86-d811-4575-b763-e3529ecc6b0f" name="Huawei-Mate-SERule9de6c4af-28c5-4362-b80b-d3f94e26f833" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_BND-L34" expression="Huawei-Mate-SERulec72881f8-6863-4437-b05c-c15405db3109Check79048040-9ea6-4d9a-a715-fa6c63dcd085" name="Huawei-Mate-SERulec72881f8-6863-4437-b05c-c15405db3109" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="HUAWEI:android:BND-L34" description="DHCP dhcp-class-identifier CONTAINS HUAWEI:android:BND-L34" name="Huawei-Mate-SERulef8ebb3dd-52af-4c36-823b-d9729db2c9deCheck55c7970b-bae4-42c9-9cbc-f268c803c4fc" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="HUAWEI_Mate_SE" description="IP FQDN CONTAINS HUAWEI_Mate_SE" name="Huawei-Mate-SERule9de6c4af-28c5-4362-b80b-d3f94e26f833Checkee2e722f-a0fc-4952-80f0-8e50892dcf8d" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="HUAWEI_Mate_SE" description="DHCP host-name CONTAINS HUAWEI_Mate_SE" name="Huawei-Mate-SERule9de6c4af-28c5-4362-b80b-d3f94e26f833Check70f82a86-d811-4575-b763-e3529ecc6b0f" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="BND-L34" description="IP User-Agent CONTAINS BND-L34" name="Huawei-Mate-SERulec72881f8-6863-4437-b05c-c15405db3109Check79048040-9ea6-4d9a-a715-fa6c63dcd085" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-Mate-3" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-Mate-3Rule34b6e469-4dac-49df-913b-137c882701e2"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_HUAWEI_nova_3_OR_IP_FQDN_CONTAINS_HUAWEI_nova_3" expression="Huawei-Mate-3Rule34b6e469-4dac-49df-913b-137c882701e2Checkcb6797e4-ff19-4af0-ba8f-c049b5228a0c | Huawei-Mate-3Rule34b6e469-4dac-49df-913b-137c882701e2Check55eafddc-34e9-460a-bcc6-b336460588e6" name="Huawei-Mate-3Rule34b6e469-4dac-49df-913b-137c882701e2" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="HUAWEI_nova_3" description="DHCP host-name CONTAINS HUAWEI_nova_3" name="Huawei-Mate-3Rule34b6e469-4dac-49df-913b-137c882701e2Checkcb6797e4-ff19-4af0-ba8f-c049b5228a0c" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="HUAWEI_nova_3" description="IP FQDN CONTAINS HUAWEI_nova_3" name="Huawei-Mate-3Rule34b6e469-4dac-49df-913b-137c882701e2Check55eafddc-34e9-460a-bcc6-b336460588e6" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

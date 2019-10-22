@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-Honor-10" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-GR5Rulebe06ca44-bd2a-4207-b6c2-5b4b4b176604_copy"/>
+<PolicyRule certaintyFactor="40" name="Huawei-G8Rule861d51c5-f717-4d11-8417-3a237c3965c8_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_HRY-AL00a_OR_IP_User-Agent_CONTAINS_COL-L29" expression="Huawei-GR5Rulebe06ca44-bd2a-4207-b6c2-5b4b4b176604Check98c0e8ae-fd91-4759-8a75-e6424d6b2011_copy | Huawei-GR5Rulebe06ca44-bd2a-4207-b6c2-5b4b4b176604_copyCheck8dc95ec2-d335-4ab6-84e1-c0f1d722802f" name="Huawei-GR5Rulebe06ca44-bd2a-4207-b6c2-5b4b4b176604_copy" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_Honor_10_OR_DHCP_host-name_CONTAINS_Honor_10" expression="Huawei-G8Rule861d51c5-f717-4d11-8417-3a237c3965c8Check4d9666dc-6c35-4181-8dc1-44ac0e669ba3_copy_copy_copy_copy | Huawei-G8Rule861d51c5-f717-4d11-8417-3a237c3965c8Check05910016-2b46-45c0-8b79-db15b9cc5c27_copy_copy_copy_copy" name="Huawei-G8Rule861d51c5-f717-4d11-8417-3a237c3965c8_copy_copy_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="HRY-AL00a" description="IP User-Agent CONTAINS HRY-AL00a" name="Huawei-GR5Rulebe06ca44-bd2a-4207-b6c2-5b4b4b176604Check98c0e8ae-fd91-4759-8a75-e6424d6b2011_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="COL-L29" description="IP User-Agent CONTAINS COL-L29" name="Huawei-GR5Rulebe06ca44-bd2a-4207-b6c2-5b4b4b176604_copyCheck8dc95ec2-d335-4ab6-84e1-c0f1d722802f" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="Honor_10" description="IP FQDN CONTAINS Honor_10" name="Huawei-G8Rule861d51c5-f717-4d11-8417-3a237c3965c8Check4d9666dc-6c35-4181-8dc1-44ac0e669ba3_copy_copy_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="Honor_10" description="DHCP host-name CONTAINS Honor_10" name="Huawei-G8Rule861d51c5-f717-4d11-8417-3a237c3965c8Check05910016-2b46-45c0-8b79-db15b9cc5c27_copy_copy_copy_copy" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

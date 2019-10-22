@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-Mate-10" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-Maimang-5Rule775a20bb-c89b-4829-afd5-0ec5d13cb421_copy_copy"/>
+<PolicyRule certaintyFactor="40" name="Huawei-Honor-7Rule74e615c1-14b5-4095-aaa6-4b3f84fff528_copy_copy_copy_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_RNE-L03_OR_IP_User-Agent_CONTAINS_RNE-L21_OR_IP_User-Agent_CONTAINS_BLA-AL00_OR_IP_User-Agent_CONTAINS_RNE-L23_OR_IP_User-Agent_CONTAINS_BLA-A09_OR_IP_User-Agent_CONTAINS_ALP-L29" expression="((((Huawei-Maimang-5Rule775a20bb-c89b-4829-afd5-0ec5d13cb421Check701ee8e8-0e1b-402e-af44-cb1bfa4c4d00_copy_copy | Huawei-Maimang-5Rule775a20bb-c89b-4829-afd5-0ec5d13cb421_copy_copyCheck7becab9a-fe81-4c2a-a0fc-a6b68bf3f149) | Huawei-Maimang-5Rule775a20bb-c89b-4829-afd5-0ec5d13cb421_copy_copyCheck7033c51e-2f54-4654-bef8-857eaecdfa9b) | Huawei-Maimang-5Rule775a20bb-c89b-4829-afd5-0ec5d13cb421_copy_copyCheck19c19b13-99c3-40fc-92c1-df90a9c3f392) | Huawei-Maimang-5Rule775a20bb-c89b-4829-afd5-0ec5d13cb421_copy_copyCheckc278d65a-e60d-4636-8fac-3fbc8946ff59) | Huawei-Maimang-5Rule775a20bb-c89b-4829-afd5-0ec5d13cb421_copy_copyCheck78899b74-ac8c-41a8-8def-fdcba25b324e" name="Huawei-Maimang-5Rule775a20bb-c89b-4829-afd5-0ec5d13cb421_copy_copy" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_HUAWEI_Mate_10_OR_IP_FQDN_CONTAINS_HUAWEI_Mate_10" expression="Huawei-Honor-7Rule74e615c1-14b5-4095-aaa6-4b3f84fff528Check297fa5d3-1816-4755-9e31-e97a12492b34_copy_copy_copy_copy_copy | Huawei-Honor-7Rule74e615c1-14b5-4095-aaa6-4b3f84fff528Check0288bb7e-eac7-4846-ac06-d82acc0adbe7_copy_copy_copy_copy_copy" name="Huawei-Honor-7Rule74e615c1-14b5-4095-aaa6-4b3f84fff528_copy_copy_copy_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="RNE-L03" description="IP User-Agent CONTAINS RNE-L03" name="Huawei-Maimang-5Rule775a20bb-c89b-4829-afd5-0ec5d13cb421Check701ee8e8-0e1b-402e-af44-cb1bfa4c4d00_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="RNE-L21" description="IP User-Agent CONTAINS RNE-L21" name="Huawei-Maimang-5Rule775a20bb-c89b-4829-afd5-0ec5d13cb421_copy_copyCheck7becab9a-fe81-4c2a-a0fc-a6b68bf3f149" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="BLA-AL00" description="IP User-Agent CONTAINS BLA-AL00" name="Huawei-Maimang-5Rule775a20bb-c89b-4829-afd5-0ec5d13cb421_copy_copyCheck7033c51e-2f54-4654-bef8-857eaecdfa9b" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="RNE-L23" description="IP User-Agent CONTAINS RNE-L23" name="Huawei-Maimang-5Rule775a20bb-c89b-4829-afd5-0ec5d13cb421_copy_copyCheck19c19b13-99c3-40fc-92c1-df90a9c3f392" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="BLA-A09" description="IP User-Agent CONTAINS BLA-A09" name="Huawei-Maimang-5Rule775a20bb-c89b-4829-afd5-0ec5d13cb421_copy_copyCheckc278d65a-e60d-4636-8fac-3fbc8946ff59" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="ALP-L29" description="IP User-Agent CONTAINS ALP-L29" name="Huawei-Maimang-5Rule775a20bb-c89b-4829-afd5-0ec5d13cb421_copy_copyCheck78899b74-ac8c-41a8-8def-fdcba25b324e" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="HUAWEI_Mate_10" description="DHCP host-name CONTAINS HUAWEI_Mate_10" name="Huawei-Honor-7Rule74e615c1-14b5-4095-aaa6-4b3f84fff528Check297fa5d3-1816-4755-9e31-e97a12492b34_copy_copy_copy_copy_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="HUAWEI_Mate_10" description="IP FQDN CONTAINS HUAWEI_Mate_10" name="Huawei-Honor-7Rule74e615c1-14b5-4095-aaa6-4b3f84fff528Check0288bb7e-eac7-4846-ac06-d82acc0adbe7_copy_copy_copy_copy_copy" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

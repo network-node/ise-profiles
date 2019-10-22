@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Huawei-Nova" parentFQN="Huawei-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Huawei-NovaRule0f5955ea-340d-44eb-94f1-2becae2161bd"/>
+<PolicyRule certaintyFactor="40" name="Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Huawei-Device-Rule1-Check1" expression="Huawei-Device-Rule1-Check1" name="Huawei-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_HUAWEI_nova_OR_IP_FQDN_CONTAINS_HUAWEI_nova" expression="Huawei-NovaRule0f5955ea-340d-44eb-94f1-2becae2161bdChecka933ff1d-0bf6-4452-a033-9d5b2bddd091 | Huawei-NovaRule0f5955ea-340d-44eb-94f1-2becae2161bdCheck235e2d1d-955a-4e6e-83fa-d7675c03d749" name="Huawei-NovaRule0f5955ea-340d-44eb-94f1-2becae2161bd" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_CAN-L01_OR_IP_User-Agent_CONTAINS_BAC-L23_OR_IP_User-Agent_CONTAINS_PRA-LX2_OR_IP_User-Agent_CONTAINS_608HW_OR_IP_User-Agent_CONTAINS_BAC-L21_OR_IP_User-Agent_CONTAINS_INE-LX1_OR_IP_User-Agent_CONTAINS_INE-LX2_OR_IP_User-Agent_CONTAINS_PIC-LX9_OR_IP_User-Agent_CONTAINS_RNE-L22" expression="(((((((Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483Checkbbc0a155-311b-445d-b04a-25cab0e4f932 | Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483Check49ac0e3f-8d90-4153-a271-e4bded86409a) | Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483Checkfc1ea420-4338-4d42-91f5-42aac9fd9031) | Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483Check596e33e8-b7cf-472b-ad64-de4ff0afdfde) | Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483Checkcc04a999-dd5e-4879-b350-3f50c8e93a67) | Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483Checkf1021ca0-a6ae-4e53-bf75-2c546e3d253d) | Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483Check0c979450-8ac8-44a7-a001-17e9a6099ae9) | Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483Checka2199934-6d84-4162-9172-b56998fed12d) | Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483Check77df35ec-43e5-44f7-bdcf-8da768c0c0cc" name="Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Huawei" description="Condition for Huawei-Device,based on MAC-OUI" name="Huawei-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="HUAWEI_nova" description="DHCP host-name CONTAINS HUAWEI_nova" name="Huawei-NovaRule0f5955ea-340d-44eb-94f1-2becae2161bdChecka933ff1d-0bf6-4452-a033-9d5b2bddd091" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="HUAWEI_nova" description="IP FQDN CONTAINS HUAWEI_nova" name="Huawei-NovaRule0f5955ea-340d-44eb-94f1-2becae2161bdCheck235e2d1d-955a-4e6e-83fa-d7675c03d749" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="CAN-L01" description="IP User-Agent CONTAINS CAN-L01" name="Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483Checkbbc0a155-311b-445d-b04a-25cab0e4f932" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="BAC-L23" description="IP User-Agent CONTAINS BAC-L23" name="Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483Check49ac0e3f-8d90-4153-a271-e4bded86409a" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="PRA-LX2" description="IP User-Agent CONTAINS PRA-LX2" name="Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483Checkfc1ea420-4338-4d42-91f5-42aac9fd9031" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="608HW" description="IP User-Agent CONTAINS 608HW" name="Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483Check596e33e8-b7cf-472b-ad64-de4ff0afdfde" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="BAC-L21" description="IP User-Agent CONTAINS BAC-L21" name="Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483Checkcc04a999-dd5e-4879-b350-3f50c8e93a67" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="INE-LX1" description="IP User-Agent CONTAINS INE-LX1" name="Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483Checkf1021ca0-a6ae-4e53-bf75-2c546e3d253d" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="INE-LX2" description="IP User-Agent CONTAINS INE-LX2" name="Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483Check0c979450-8ac8-44a7-a001-17e9a6099ae9" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="PIC-LX9" description="IP User-Agent CONTAINS PIC-LX9" name="Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483Checka2199934-6d84-4162-9172-b56998fed12d" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="RNE-L22" description="IP User-Agent CONTAINS RNE-L22" name="Huawei-NovaRule8a3ea7ed-ec0d-43bd-ba1f-b213821ce483Check77df35ec-43e5-44f7-bdcf-8da768c0c0cc" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
