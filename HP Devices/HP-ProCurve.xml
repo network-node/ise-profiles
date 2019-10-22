@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic Policy for HP Devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="HP-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="HP-DeviceRule2"/>
+<PolicyRule certaintyFactor="10" name="HP-DeviceRule3"/>
+<PolicyRule certaintyFactor="-3" name="HP-DeviceRule2_SCAN"/>
+<PolicyRule certaintyFactor="10" name="HP-DeviceRule65d9f85d-636c-4dcd-959b-cae123ef3d00"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="HP-ProCurve" parentFQN="HP-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="HP-ProCurveRule15551a9f-bdf8-4a60-b520-9ad6def4e27c"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="HP-DeviceRule2Check1" expression="HP-DeviceRule2Check1" name="HP-DeviceRule2" ruleType="Regular"/>
+<Rule description="HP-Device-DESCR" expression="HP-Device-DESCR" name="HP-DeviceRule3" ruleType="Regular"/>
+<Rule description="HP-DeviceRule2-SCAN" expression="HP-DeviceRule2Check1" name="HP-DeviceRule2_SCAN" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_ProCurve" expression="HP-DeviceRule65d9f85d-636c-4dcd-959b-cae123ef3d00Check0833788b-55c2-41a8-92bb-731a8dfd706d" name="HP-DeviceRule65d9f85d-636c-4dcd-959b-cae123ef3d00" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_ProCurve_Networking" expression="HP-ProCurveRule15551a9f-bdf8-4a60-b520-9ad6def4e27cCheck5f2fea54-9551-4564-a4b4-f6931a46a805" name="HP-ProCurveRule15551a9f-bdf8-4a60-b520-9ad6def4e27c" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Hewlett" description="HP-DeviceRule2Check1" name="HP-DeviceRule2Check1" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="HP" description="SNMP hrDeviceDescr CONTAINS HP" name="HP-Device-DESCR" operator="Contains" type="Snmp"/>
+<Check attributeName="OUI" attributeValue="ProCurve" description="MAC OUI CONTAINS ProCurve" name="HP-DeviceRule65d9f85d-636c-4dcd-959b-cae123ef3d00Check0833788b-55c2-41a8-92bb-731a8dfd706d" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="ProCurve Networking" description="MAC OUI CONTAINS ProCurve Networking" name="HP-ProCurveRule15551a9f-bdf8-4a60-b520-9ad6def4e27cCheck5f2fea54-9551-4564-a4b4-f6931a46a805" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

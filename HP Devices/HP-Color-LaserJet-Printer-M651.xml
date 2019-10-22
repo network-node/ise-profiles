@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic Policy for HP Devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="HP-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="HP-DeviceRule2"/>
+<PolicyRule certaintyFactor="10" name="HP-DeviceRule3"/>
+<PolicyRule certaintyFactor="-3" name="HP-DeviceRule2_SCAN"/>
+<PolicyRule certaintyFactor="10" name="HP-DeviceRule65d9f85d-636c-4dcd-959b-cae123ef3d00"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for HP-Printer" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="HP-Printer" parentFQN="HP-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="HP-Color-LaserJet-Printer-SNMP_Check"/>
+<PolicyRule certaintyFactor="10" name="HP-PrinterRule111"/>
+<PolicyRule certaintyFactor="10" name="HP-Color-LaserJet-Printer-DHCP_Check"/>
+<PolicyRule certaintyFactor="10" name="HP-PrinterRule66"/>
+<PolicyRule certaintyFactor="10" name="HP-PrinterRule44"/>
+<PolicyRule certaintyFactor="10" name="HP-PrinterRule22"/>
+<PolicyRule certaintyFactor="10" name="HP-PrinterRule77"/>
+<PolicyRule certaintyFactor="10" name="HP-PrinterRule99"/>
+<PolicyRule certaintyFactor="10" name="HP-PrinterRule11"/>
+<PolicyRule certaintyFactor="10" name="HP-PrinterRule33"/>
+<PolicyRule certaintyFactor="10" name="HP-PrinterRule55"/>
+<PolicyRule certaintyFactor="10" name="HP-PrinterRule88"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for HP-Color-LaserJet-Printer" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="25" name="HP-Color-LaserJet-Printer" parentFQN="HP-Device:HP-Printer" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="25" name="HP-Color-LaserJet-Printer-SNMP_Check2"/>
+<PolicyRule certaintyFactor="25" name="HP-Color-LaserJet-Printer-DHCP_Check2"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="HP-Color-LaserJet-Printer-M651" parentFQN="HP-Device:HP-Printer:HP-Color-LaserJet-Printer" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="HP-Color-LaserJet-Printer-M553Rulef3451a5f-6a59-4f79-a4a8-611ecde9b4be_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="HP-DeviceRule2Check1" expression="HP-DeviceRule2Check1" name="HP-DeviceRule2" ruleType="Regular"/>
+<Rule description="HP-Device-DESCR" expression="HP-Device-DESCR" name="HP-DeviceRule3" ruleType="Regular"/>
+<Rule description="HP-DeviceRule2-SCAN" expression="HP-DeviceRule2Check1" name="HP-DeviceRule2_SCAN" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_ProCurve" expression="HP-DeviceRule65d9f85d-636c-4dcd-959b-cae123ef3d00Check0833788b-55c2-41a8-92bb-731a8dfd706d" name="HP-DeviceRule65d9f85d-636c-4dcd-959b-cae123ef3d00" ruleType="Regular"/>
+<Rule description="HP-Color-LaserJet-Printer-SNMP_Check" expression="HP-Color-LaserJet-Printer-SNMP_Check" name="HP-Color-LaserJet-Printer-SNMP_Check" ruleType="Regular"/>
+<Rule description="HP-Printer-Rule4-Check1" expression="HP-Printer-Rule4-Check1" name="HP-PrinterRule111" ruleType="Regular"/>
+<Rule description="HP-Color-LaserJet-Printer-DHCP_Check" expression="HP-Color-LaserJet-Printer-DHCP_Check" name="HP-Color-LaserJet-Printer-DHCP_Check" ruleType="Regular"/>
+<Rule description="HP-Printer-Rule2-Check4" expression="HP-Printer-Rule2-Check4" name="HP-PrinterRule66" ruleType="Regular"/>
+<Rule description="HP-Printer-Rule1-Check4" expression="HP-Printer-Rule1-Check4" name="HP-PrinterRule44" ruleType="Regular"/>
+<Rule description="HP-Printer-Rule2-Check1" expression="HP-Printer-Rule2-Check1" name="HP-PrinterRule22" ruleType="Regular"/>
+<Rule description="HP-Printer-Rule1-Check1" expression="HP-Printer-Rule1-Check1" name="HP-PrinterRule77" ruleType="Regular"/>
+<Rule description="HP-Printer-Rule2-Check3" expression="HP-Printer-Rule2-Check3" name="HP-PrinterRule99" ruleType="Regular"/>
+<Rule description="HP-Printer-Rule1-Check3" expression="HP-Printer-Rule1-Check3" name="HP-PrinterRule11" ruleType="Regular"/>
+<Rule description="HP-Printer-Rule3-Check1" expression="HP-Printer-Rule3-Check1" name="HP-PrinterRule33" ruleType="Regular"/>
+<Rule description="HP-Printer-Rule2-Check2" expression="HP-Printer-Rule2-Check2" name="HP-PrinterRule55" ruleType="Regular"/>
+<Rule description="HP-Printer-Rule1-Check2" expression="HP-Printer-Rule1-Check2" name="HP-PrinterRule88" ruleType="Regular"/>
+<Rule description="HP-Color-LaserJet-Printer-SNMP_Check" expression="HP-Color-LaserJet-Printer-SNMP_Check" name="HP-Color-LaserJet-Printer-SNMP_Check2" ruleType="Regular"/>
+<Rule description="HP-Color-LaserJet-Printer-DHCP_Check" expression="HP-Color-LaserJet-Printer-DHCP_Check" name="HP-Color-LaserJet-Printer-DHCP_Check2" ruleType="Regular"/>
+<Rule description="SNMP_hrDeviceDescr_CONTAINS_M651" expression="HP-Color-LaserJet-Printer-M553Rulef3451a5f-6a59-4f79-a4a8-611ecde9b4beCheck9b74ed7c-4520-42e1-ae1f-ba300decb64b_copy" name="HP-Color-LaserJet-Printer-M553Rulef3451a5f-6a59-4f79-a4a8-611ecde9b4be_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Hewlett" description="HP-DeviceRule2Check1" name="HP-DeviceRule2Check1" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="HP" description="SNMP hrDeviceDescr CONTAINS HP" name="HP-Device-DESCR" operator="Contains" type="Snmp"/>
+<Check attributeName="OUI" attributeValue="ProCurve" description="MAC OUI CONTAINS ProCurve" name="HP-DeviceRule65d9f85d-636c-4dcd-959b-cae123ef3d00Check0833788b-55c2-41a8-92bb-731a8dfd706d" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Color LaserJet" description="Condition for HP-Printer, based on SNMP:hrDeviceDescr" name="HP-Color-LaserJet-Printer-SNMP_Check" operator="Contains" type="Snmp"/>
+<Check attributeName="User-Agent" attributeValue="HP-Inkjet" description="Condition for HP-Printer, based on IP:User-Agent" name="HP-Printer-Rule4-Check1" operator="Contains" type="IP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Color LaserJet" description="Condition for HP-Printer, based on DHCP:dhcp-class-identifier" name="HP-Color-LaserJet-Printer-DHCP_Check" operator="Contains" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Jetdirect" description="Condition for HP-Printer, based on SNMP:hrDeviceDescr" name="HP-Printer-Rule2-Check4" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="DesignJet" description="Condition for HP-Printer, based on DHCP:dhcp-class-identifier" name="HP-Printer-Rule1-Check4" operator="Contains" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="LaserJet" description="Condition for HP-Printer, based on SNMP:hrDeviceDescr" name="HP-Printer-Rule2-Check1" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="JetDirect" description="Condition for HP-Printer, based on DHCP:dhcp-class-identifier" name="HP-Printer-Rule1-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Officejet" description="Condition for HP-Printer, based on SNMP:hrDeviceDescr" name="HP-Printer-Rule2-Check3" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="OfficeJet" description="Condition for HP-Printer, based on DHCP:dhcp-class-identifier" name="HP-Printer-Rule1-Check3" operator="Contains" type="DHCP"/>
+<Check attributeName="operating-system" attributeValue="printer" description="Condition for HP-Printer, based on NMAP:operating-system" name="HP-Printer-Rule3-Check1" operator="Contains" type="NMAP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Designjet" description="Condition for HP-Printer, based on SNMP:hrDeviceDescr" name="HP-Printer-Rule2-Check2" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="LaserJet" description="Condition for HP-Printer, based on DHCP:dhcp-class-identifier" name="HP-Printer-Rule1-Check2" operator="Contains" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="M651" description="SNMP hrDeviceDescr CONTAINS M651" name="HP-Color-LaserJet-Printer-M553Rulef3451a5f-6a59-4f79-a4a8-611ecde9b4beCheck9b74ed7c-4520-42e1-ae1f-ba300decb64b_copy" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>
