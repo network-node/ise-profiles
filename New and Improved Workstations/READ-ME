@@ -1,0 +1,10 @@
+This is my swing at correcting some of the built-in workstation profiles. I did the following:
+- Changed some of the certainty factors on less relevant profiles
+- Adding relevant DHCP parameter requests 
+- Added DHCP class identifiers
+- Added User-Agent information
+- Added device-type information
+- Added AD operating system probe
+- Added a new nested profile under each Windows type for domain-joined PC to differentiate between domain-joined PCs and non-domain-joined PCs.
+
+As always, these are not profiles officially endorsed or pushed by Cisco so test it out in a lab before putting it into production. 
