@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for all Cisco devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Cisco-Device" scanActionName="OS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule3"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule2"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DHCP-Class-Id-Rule"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule-SNMP"/>
+<PolicyRule certaintyFactor="5" name="Cisco-DeviceRule4"/>
+<PolicyRule certaintyFactor="10" name="Cisco-CDP-Platform-Rule"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule1"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule7"/>
+<PolicyRule certaintyFactor="10" name="Cisco-Meraki-DeviceRule1"/>
+<PolicyRule certaintyFactor="5" name="Cisco-DeviceRule9"/>
+<PolicyRule certaintyFactor="-3" name="Cisco-DeviceRule1_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule8"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule-LLDP"/>
+<PolicyRule certaintyFactor="10" name="Cisco-TelePresence-CDP-Platform-Rule"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRulef5824e17-def8-46f0-8bd7-1ef108d013a9"/>
+<PolicyRule certaintyFactor="10" name="NMAP-Cisco-Rule"/>
+</PolicyRules>
+</Policy>
+<Policy description="Generic policy for all Cisco Switches" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="Cisco-Switch" parentFQN="Cisco-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Cisco-SwitchRuleba79d605-8786-4d11-90cd-9f2ef41cd5c1"/>
+<PolicyRule certaintyFactor="30" name="NMAP-Cisco-Catalyst-Rule"/>
+<PolicyRule certaintyFactor="30" name="Cisco-SwitchRule8fb7548a-502e-43f3-9f09-dc73571add22"/>
+<PolicyRule certaintyFactor="5" name="NMAP-SwitchRule"/>
+<PolicyRule certaintyFactor="20" name="Cisco-SwitchRule2"/>
+<PolicyRule certaintyFactor="30" name="NMAP-Cisco-CatOS-Rule"/>
+<PolicyRule certaintyFactor="20" name="Cisco-SwitchRule4-LLDP"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="50" name="Cisco-Switch-Cat3K" parentFQN="Cisco-Device:Cisco-Switch" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="50" name="Cisco-Switch-Cat9KRuleb53d27df-878a-4cd9-a599-a8c52d9e0192_copy"/>
+<PolicyRule certaintyFactor="50" name="Cisco-Switch-Cat9KRule32c04842-c16d-441e-877d-5387e32fa191_copy"/>
+<PolicyRule certaintyFactor="50" name="Cisco-Switch-Cat9KRule31234cb7-6a81-4e60-927f-821c1cd8b56f_copy"/>
+<PolicyRule certaintyFactor="50" name="Cisco-Switch-Cat9KRule9dc5bdc8-0090-44c7-a0d7-b7a712153657_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Cisco-DeviceRule3Check1" expression="Cisco-DeviceRule3Check1" name="Cisco-DeviceRule3" ruleType="Regular"/>
+<Rule description="VerilinkOUICheck" expression="VerilinkOUICheck" name="Cisco-DeviceRule2" ruleType="Regular"/>
+<Rule description="Rule for Cisco DHCP Class Identifier" expression="CiscoDhcpClassIdentifierCheck" name="Cisco-DHCP-Class-Id-Rule" ruleType="Regular"/>
+<Rule description="Rule for Cisco Device - SNMP" expression="CiscoDeviceSnmpSysCheck" name="Cisco-DeviceRule-SNMP" ruleType="Regular"/>
+<Rule description="Cisco-DeviceRule4Check1" expression="Cisco-DeviceRule4Check1" name="Cisco-DeviceRule4" ruleType="Regular"/>
+<Rule description="Rule for Cisco CDP Cache Platform" expression="CiscoCdpCachePlatformCheck" name="Cisco-CDP-Platform-Rule" ruleType="Regular"/>
+<Rule description="Cisco-DeviceRule1Check1" expression="Cisco-DeviceRule1Check1" name="Cisco-DeviceRule1" ruleType="Regular"/>
+<Rule description="LinksysOUICheck" expression="LinksysOUICheck" name="Cisco-DeviceRule7" ruleType="Regular"/>
+<Rule description="Cisco-Meraki-Device-Rule1Check1" expression="Cisco-Meraki-Device-Rule1Check1" name="Cisco-Meraki-DeviceRule1" ruleType="Regular"/>
+<Rule description="PolycomOUICheck" expression="PolycomOUICheck" name="Cisco-DeviceRule9" ruleType="Regular"/>
+<Rule description="Cisco-DeviceRule1-SCAN" expression="Cisco-DeviceRule1Check1" name="Cisco-DeviceRule1_SCAN" ruleType="Regular"/>
+<Rule description="TivellaOUICheck" expression="TivellaOUICheck" name="Cisco-DeviceRule8" ruleType="Regular"/>
+<Rule description="Rule for Cisco Device - LLDP" expression="CiscoDeviceLldpSysCheck" name="Cisco-DeviceRule-LLDP" ruleType="Regular"/>
+<Rule description="Rule for Cisco TelePresence" expression="CiscoTelePresencePlatformCheck" name="Cisco-TelePresence-CDP-Platform-Rule" ruleType="Regular"/>
+<Rule description="Cisco-Tandberg-Device-Rule1-Check1" expression="Cisco-Tandberg-Device-Rule1-Check1" name="Cisco-DeviceRulef5824e17-def8-46f0-8bd7-1ef108d013a9" ruleType="Regular"/>
+<Rule description="Cisco-NMAPOSCheck" expression="Cisco-NMAPOSCheck" name="NMAP-Cisco-Rule" ruleType="Regular"/>
+<Rule description="CDP_cdpCachePlatform_CONTAINS_cisco_WS-C_OR_CDP_cdpCachePlatform_STARTSWITH_cisco_WS-C" expression="Cisco-SwitchRuleba79d605-8786-4d11-90cd-9f2ef41cd5c1Check674a44b7-0d07-44e5-80f8-a427fe7f1638 | Cisco-SwitchRuleba79d605-8786-4d11-90cd-9f2ef41cd5c1Checkc1974609-0a80-43db-8945-7a2b08a2f9d0" name="Cisco-SwitchRuleba79d605-8786-4d11-90cd-9f2ef41cd5c1" ruleType="Regular"/>
+<Rule description="Cisco-Catalyst-NMAPOSCheck" expression="Cisco-Catalyst-NMAPOSCheck" name="NMAP-Cisco-Catalyst-Rule" ruleType="Regular"/>
+<Rule description="CDP_cdpCacheVersion_CONTAINS_Switch_Software_OR_CDP_cdpCacheVersion_CONTAINS_Catalyst_" expression="Cisco-SwitchRule8fb7548a-502e-43f3-9f09-dc73571add22Check22f6e74c-1ac0-44f5-a347-659f14573b9e | Cisco-SwitchRule8fb7548a-502e-43f3-9f09-dc73571add22Check64301333-8c79-4a97-a0ed-ed0ad0ef26f9" name="Cisco-SwitchRule8fb7548a-502e-43f3-9f09-dc73571add22" ruleType="Regular"/>
+<Rule description="SwitchNMAPOSCheck" expression="SwitchNMAPOSCheck" name="NMAP-SwitchRule" ruleType="Regular"/>
+<Rule description="Rule for Cisco Switch" expression="CiscoSwitchPlatformCheck" name="Cisco-SwitchRule2" ruleType="Regular"/>
+<Rule description="Cisco-CatOS-NMAPOSCheck" expression="Cisco-CatOS-NMAPOSCheck" name="NMAP-Cisco-CatOS-Rule" ruleType="Regular"/>
+<Rule description="Rule for Cisco Switch - LLDP" expression="CiscoSwitchLldpSysCheck" name="Cisco-SwitchRule4-LLDP" ruleType="Regular"/>
+<Rule description="CDP_cdpCachePlatform_CONTAINS_cisco_WS-C3_OR_CDP_cdpCachePlatform_CONTAINS_cisco_WS-C36_OR_CDP_cdpCachePlatform_STARTSWITH_cisco_WS-C36_OR_CDP_cdpCachePlatform_STARTSWITH_cisco_WS-C3_OR_CDP_cdpCachePlatform_STARTSWITH_cisco_WS-C38_OR_CDP_cdpCachePlatform_CONTAINS_cisco_WS-C36" expression="((((Cisco-Switch-Cat9KRuleb53d27df-878a-4cd9-a599-a8c52d9e0192Check7e438b94-0f83-41dd-9aef-c0e06680efdd_copy | Cisco-Switch-Cat9KRuleb53d27df-878a-4cd9-a599-a8c52d9e0192_copyCheckcac156ab-d6b5-476e-a650-4e4373a3999f) | Cisco-Switch-Cat9KRuleb53d27df-878a-4cd9-a599-a8c52d9e0192_copyCheckf6833036-7f04-4016-af90-08c444dc530a) | Cisco-Switch-Cat9KRuleb53d27df-878a-4cd9-a599-a8c52d9e0192_copyCheck2fb38a70-3e02-40dd-bd49-841e876bea16) | Cisco-Switch-Cat9KRuleb53d27df-878a-4cd9-a599-a8c52d9e0192_copyCheck077c8a08-cd5e-4729-9801-fb07d0cc0fb8) | Cisco-Switch-Cat9KRuleb53d27df-878a-4cd9-a599-a8c52d9e0192_copyCheck3dea4259-79be-46ed-a928-84a5b7c71b44" name="Cisco-Switch-Cat9KRuleb53d27df-878a-4cd9-a599-a8c52d9e0192_copy" ruleType="Regular"/>
+<Rule description="LLDP_lldpSystemDescription_CONTAINS_Catalyst_L3_Switch_Software_(CAT3K_CAA-UNIVERSALK9-M)_OR_LLDP_lldpSystemDescription_CONTAINS_Catalyst_L3_Switch_Software_(CAT3K_OR_LLDP_lldpSystemDescription_CONTAINS_(CAT3K_CAA-UNIVERSALK9-M)" expression="(Cisco-Switch-Cat9KRule32c04842-c16d-441e-877d-5387e32fa191Checka34c6f5a-0194-4d2b-bdd6-0f6e2888c622_copy | Cisco-Switch-Cat9KRule32c04842-c16d-441e-877d-5387e32fa191Checkb454377f-f3c4-41eb-9306-b9d973b84e1c_copy) | Cisco-Switch-Cat9KRule32c04842-c16d-441e-877d-5387e32fa191_copyCheckc6df1ff8-70e3-42c8-a3df-79468000b622" name="Cisco-Switch-Cat9KRule32c04842-c16d-441e-877d-5387e32fa191_copy" ruleType="Regular"/>
+<Rule description="CDP_cdpCacheVersion_CONTAINS_Catalyst_L3_Switch_Software_(CAT3K_CAA-UNIVERSALK9-M)_OR_CDP_cdpCacheVersion_CONTAINS_(CAT3K_CAA-UNIVERSALK9-M)_OR_CDP_cdpCacheVersion_CONTAINS_Cisco_IOS_Software,_C3750E_Software_OR_CDP_cdpCacheVersion_CONTAINS_Cisco_IOS_Software,_C3560_Software_OR_CDP_cdpCacheVersion_STARTSWITH_Cisco_IOS_Software,_C3750E_Software_OR_CDP_cdpCacheVersion_STARTSWITH_Cisco_IOS_Software,_C3560_Software" expression="((((Cisco-Switch-Cat9KRule31234cb7-6a81-4e60-927f-821c1cd8b56fCheckac8622b5-ca87-4036-8c45-24b03ec9c164_copy | Cisco-Switch-Cat9KRule31234cb7-6a81-4e60-927f-821c1cd8b56fCheckdcd544a7-9bcc-455c-bcd4-c2133d0feb91_copy) | Cisco-Switch-Cat9KRule31234cb7-6a81-4e60-927f-821c1cd8b56f_copyCheckbfe981bc-e2d9-4bb6-8851-7f332bb9539a) | Cisco-Switch-Cat9KRule31234cb7-6a81-4e60-927f-821c1cd8b56f_copyCheck80f7880b-a299-40bf-a70f-0a8223abbd38) | Cisco-Switch-Cat9KRule31234cb7-6a81-4e60-927f-821c1cd8b56f_copyCheck0dee6ad7-4474-4f0f-ab0e-516345f482de) | Cisco-Switch-Cat9KRule31234cb7-6a81-4e60-927f-821c1cd8b56f_copyCheck17655487-72dd-4b4a-8e66-ae7438552012" name="Cisco-Switch-Cat9KRule31234cb7-6a81-4e60-927f-821c1cd8b56f_copy" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_Catalyst_L3_Switch_Software_(CAT3K_OR_SNMP_sysDescr_STARTSWITH_Catalyst_L3_Switch_Software_(CAT3K_OR_SNMP_sysDescr_STARTSWITH_Catalyst_L3_Switch_Software_(CAT3K_CAA-UNIVERSALK9-M)_OR_SNMP_sysDescr_CONTAINS_Catalyst_L3_Switch_Software_(CAT3K_CAA-UNIVERSALK9-M)" expression="((Cisco-Switch-Cat9KRule9dc5bdc8-0090-44c7-a0d7-b7a712153657Checkfe173831-a884-4fdb-b7aa-7c7b35394d86_copy | Cisco-Switch-Cat9KRule9dc5bdc8-0090-44c7-a0d7-b7a712153657Check2a45c73c-7941-4ee6-bfa0-5ad0c68da634_copy) | Cisco-Switch-Cat9KRule9dc5bdc8-0090-44c7-a0d7-b7a712153657Check2b77c8cf-ce3c-455c-837e-e968ea48c11c_copy) | Cisco-Switch-Cat9KRule9dc5bdc8-0090-44c7-a0d7-b7a712153657Check08e1d670-40b7-4639-a00e-1e48c4d23708_copy" name="Cisco-Switch-Cat9KRule9dc5bdc8-0090-44c7-a0d7-b7a712153657_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Scientific Atlanta" description="Cisco-DeviceRule3Check1" name="Cisco-DeviceRule3Check1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Verilink Corporation" description="Verilink OUI Check" name="VerilinkOUICheck" operator="Equals" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Cisco" description="Cisco DHCP class identifier Check" name="CiscoDhcpClassIdentifierCheck" operator="Contains" type="DHCP"/>
+<Check attributeName="sysDescr" attributeValue="Cisco" description="Cisco Device SNMP sysDescr Check" name="CiscoDeviceSnmpSysCheck" operator="Contains" type="Snmp"/>
+<Check attributeName="cdpCacheVersion" attributeValue="Cisco Systems" description="Cisco-DeviceRule4Check1" name="Cisco-DeviceRule4Check1" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="Cisco" description="Cisco CDP Platform Check" name="CiscoCdpCachePlatformCheck" operator="Contains" type="CDP"/>
+<Check attributeName="OUI" attributeValue="CISCO" description="Cisco-DeviceRule1Check1" name="Cisco-DeviceRule1Check1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Cisco-Linksys" description="Linksys OUI Check" name="LinksysOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Meraki" description="Condition for Cisco-Meraki-Device,based on MAC-OUI" name="Cisco-Meraki-Device-Rule1Check1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Polycom" description="Polycom OUI Check" name="PolycomOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Tivella" description="Tivella OUI Check" name="TivellaOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="lldpSystemDescription" attributeValue="Cisco" description="Cisco Device LLDP System Description Check" name="CiscoDeviceLldpSysCheck" operator="Contains" type="LLDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="CTS" description="Cisco TelePresence CDP Platform Check" name="CiscoTelePresencePlatformCheck" operator="Contains" type="CDP"/>
+<Check attributeName="OUI" attributeValue="Tandberg" description="Condition for Cisco-Tandberg-Device , based on MAC-OUI" name="Cisco-Tandberg-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="operating-system" attributeValue="Cisco" description="NMAP operating-system (Vendor) CONTAINS Cisco" name="Cisco-NMAPOSCheck" operator="Contains" type="NMAP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="cisco WS-C" description="CDP cdpCachePlatform CONTAINS cisco WS-C" name="Cisco-SwitchRuleba79d605-8786-4d11-90cd-9f2ef41cd5c1Check674a44b7-0d07-44e5-80f8-a427fe7f1638" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="cisco WS-C" description="CDP cdpCachePlatform STARTSWITH cisco WS-C" name="Cisco-SwitchRuleba79d605-8786-4d11-90cd-9f2ef41cd5c1Checkc1974609-0a80-43db-8945-7a2b08a2f9d0" operator="Starts with" type="CDP"/>
+<Check attributeName="operating-system" attributeValue="Catalyst" description="NMAP operating-system CONTAINS Catalyst" name="Cisco-Catalyst-NMAPOSCheck" operator="Contains" type="NMAP"/>
+<Check attributeName="cdpCacheVersion" attributeValue="Switch Software" description="CDP cdpCacheVersion CONTAINS Switch Software" name="Cisco-SwitchRule8fb7548a-502e-43f3-9f09-dc73571add22Check22f6e74c-1ac0-44f5-a347-659f14573b9e" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCacheVersion" attributeValue="Catalyst " description="CDP cdpCacheVersion CONTAINS Catalyst " name="Cisco-SwitchRule8fb7548a-502e-43f3-9f09-dc73571add22Check64301333-8c79-4a97-a0ed-ed0ad0ef26f9" operator="Contains" type="CDP"/>
+<Check attributeName="operating-system" attributeValue="switch" description="NMAP operating-system (Type) CONTAINS switch" name="SwitchNMAPOSCheck" operator="Contains" type="NMAP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="Catalyst" description="Cisco Switch CDP Platform Check" name="CiscoSwitchPlatformCheck" operator="Contains" type="CDP"/>
+<Check attributeName="operating-system" attributeValue="CatOS" description="NMAP operating-system (Family) CONTAINS CatOS" name="Cisco-CatOS-NMAPOSCheck" operator="Contains" type="NMAP"/>
+<Check attributeName="lldpSystemDescription" attributeValue="Cisco IOS Software, C" description="Cisco Switch LLDP System Description Check" name="CiscoSwitchLldpSysCheck" operator="Contains" type="LLDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="cisco WS-C3" description="CDP cdpCachePlatform CONTAINS cisco WS-C3" name="Cisco-Switch-Cat9KRuleb53d27df-878a-4cd9-a599-a8c52d9e0192Check7e438b94-0f83-41dd-9aef-c0e06680efdd_copy" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="cisco WS-C36" description="CDP cdpCachePlatform CONTAINS cisco WS-C36" name="Cisco-Switch-Cat9KRuleb53d27df-878a-4cd9-a599-a8c52d9e0192_copyCheckcac156ab-d6b5-476e-a650-4e4373a3999f" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="cisco WS-C36" description="CDP cdpCachePlatform STARTSWITH cisco WS-C36" name="Cisco-Switch-Cat9KRuleb53d27df-878a-4cd9-a599-a8c52d9e0192_copyCheckf6833036-7f04-4016-af90-08c444dc530a" operator="Starts with" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="cisco WS-C3" description="CDP cdpCachePlatform STARTSWITH cisco WS-C3" name="Cisco-Switch-Cat9KRuleb53d27df-878a-4cd9-a599-a8c52d9e0192_copyCheck2fb38a70-3e02-40dd-bd49-841e876bea16" operator="Starts with" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="cisco WS-C38" description="CDP cdpCachePlatform STARTSWITH cisco WS-C38" name="Cisco-Switch-Cat9KRuleb53d27df-878a-4cd9-a599-a8c52d9e0192_copyCheck077c8a08-cd5e-4729-9801-fb07d0cc0fb8" operator="Starts with" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="cisco WS-C36" description="CDP cdpCachePlatform CONTAINS cisco WS-C36" name="Cisco-Switch-Cat9KRuleb53d27df-878a-4cd9-a599-a8c52d9e0192_copyCheck3dea4259-79be-46ed-a928-84a5b7c71b44" operator="Contains" type="CDP"/>
+<Check attributeName="lldpSystemDescription" attributeValue="Catalyst L3 Switch Software (CAT3K_CAA-UNIVERSALK9-M)" description="LLDP lldpSystemDescription CONTAINS Catalyst L3 Switch Software (CAT3K_CAA-UNIVERSALK9-M)" name="Cisco-Switch-Cat9KRule32c04842-c16d-441e-877d-5387e32fa191Checka34c6f5a-0194-4d2b-bdd6-0f6e2888c622_copy" operator="Contains" type="LLDP"/>
+<Check attributeName="lldpSystemDescription" attributeValue="(CAT3K_CAA-UNIVERSALK9-M)" description="LLDP lldpSystemDescription CONTAINS (CAT3K_CAA-UNIVERSALK9-M)" name="Cisco-Switch-Cat9KRule32c04842-c16d-441e-877d-5387e32fa191Checkb454377f-f3c4-41eb-9306-b9d973b84e1c_copy" operator="Contains" type="LLDP"/>
+<Check attributeName="lldpSystemDescription" attributeValue="Catalyst L3 Switch Software (CAT3K" description="LLDP lldpSystemDescription CONTAINS Catalyst L3 Switch Software (CAT3K" name="Cisco-Switch-Cat9KRule32c04842-c16d-441e-877d-5387e32fa191_copyCheckc6df1ff8-70e3-42c8-a3df-79468000b622" operator="Contains" type="LLDP"/>
+<Check attributeName="cdpCacheVersion" attributeValue="Catalyst L3 Switch Software (CAT3K_CAA-UNIVERSALK9-M)" description="CDP cdpCacheVersion CONTAINS Catalyst L3 Switch Software (CAT3K_CAA-UNIVERSALK9-M)" name="Cisco-Switch-Cat9KRule31234cb7-6a81-4e60-927f-821c1cd8b56fCheckac8622b5-ca87-4036-8c45-24b03ec9c164_copy" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCacheVersion" attributeValue="(CAT3K_CAA-UNIVERSALK9-M)" description="CDP cdpCacheVersion CONTAINS (CAT3K_CAA-UNIVERSALK9-M)" name="Cisco-Switch-Cat9KRule31234cb7-6a81-4e60-927f-821c1cd8b56fCheckdcd544a7-9bcc-455c-bcd4-c2133d0feb91_copy" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCacheVersion" attributeValue="Cisco IOS Software, C3750E Software" description="CDP cdpCacheVersion CONTAINS Cisco IOS Software, C3750E Software" name="Cisco-Switch-Cat9KRule31234cb7-6a81-4e60-927f-821c1cd8b56f_copyCheckbfe981bc-e2d9-4bb6-8851-7f332bb9539a" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCacheVersion" attributeValue="Cisco IOS Software, C3750E Software" description="CDP cdpCacheVersion STARTSWITH Cisco IOS Software, C3750E Software" name="Cisco-Switch-Cat9KRule31234cb7-6a81-4e60-927f-821c1cd8b56f_copyCheck80f7880b-a299-40bf-a70f-0a8223abbd38" operator="Starts with" type="CDP"/>
+<Check attributeName="cdpCacheVersion" attributeValue="Cisco IOS Software, C3560 Software" description="CDP cdpCacheVersion CONTAINS Cisco IOS Software, C3560 Software" name="Cisco-Switch-Cat9KRule31234cb7-6a81-4e60-927f-821c1cd8b56f_copyCheck0dee6ad7-4474-4f0f-ab0e-516345f482de" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCacheVersion" attributeValue="Cisco IOS Software, C3560 Software" description="CDP cdpCacheVersion STARTSWITH Cisco IOS Software, C3560 Software" name="Cisco-Switch-Cat9KRule31234cb7-6a81-4e60-927f-821c1cd8b56f_copyCheck17655487-72dd-4b4a-8e66-ae7438552012" operator="Starts with" type="CDP"/>
+<Check attributeName="sysDescr" attributeValue="Catalyst L3 Switch Software (CAT3K" description="SNMP sysDescr CONTAINS Catalyst L3 Switch Software (CAT3K" name="Cisco-Switch-Cat9KRule9dc5bdc8-0090-44c7-a0d7-b7a712153657Checkfe173831-a884-4fdb-b7aa-7c7b35394d86_copy" operator="Contains" type="Snmp"/>
+<Check attributeName="sysDescr" attributeValue="Catalyst L3 Switch Software (CAT3K" description="SNMP sysDescr STARTSWITH Catalyst L3 Switch Software (CAT3K" name="Cisco-Switch-Cat9KRule9dc5bdc8-0090-44c7-a0d7-b7a712153657Check2a45c73c-7941-4ee6-bfa0-5ad0c68da634_copy" operator="Starts with" type="Snmp"/>
+<Check attributeName="sysDescr" attributeValue="Catalyst L3 Switch Software (CAT3K_CAA-UNIVERSALK9-M)" description="SNMP sysDescr STARTSWITH Catalyst L3 Switch Software (CAT3K_CAA-UNIVERSALK9-M)" name="Cisco-Switch-Cat9KRule9dc5bdc8-0090-44c7-a0d7-b7a712153657Check2b77c8cf-ce3c-455c-837e-e968ea48c11c_copy" operator="Starts with" type="Snmp"/>
+<Check attributeName="sysDescr" attributeValue="Catalyst L3 Switch Software (CAT3K_CAA-UNIVERSALK9-M)" description="SNMP sysDescr CONTAINS Catalyst L3 Switch Software (CAT3K_CAA-UNIVERSALK9-M)" name="Cisco-Switch-Cat9KRule9dc5bdc8-0090-44c7-a0d7-b7a712153657Check08e1d670-40b7-4639-a00e-1e48c4d23708_copy" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system detection." name="OS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="false">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

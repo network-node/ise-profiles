@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for all Cisco devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Cisco-Device" scanActionName="OS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule3"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule2"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DHCP-Class-Id-Rule"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule-SNMP"/>
+<PolicyRule certaintyFactor="5" name="Cisco-DeviceRule4"/>
+<PolicyRule certaintyFactor="10" name="Cisco-CDP-Platform-Rule"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule1"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule7"/>
+<PolicyRule certaintyFactor="10" name="Cisco-Meraki-DeviceRule1"/>
+<PolicyRule certaintyFactor="5" name="Cisco-DeviceRule9"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule8"/>
+<PolicyRule certaintyFactor="-3" name="Cisco-DeviceRule1_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule-LLDP"/>
+<PolicyRule certaintyFactor="10" name="Cisco-TelePresence-CDP-Platform-Rule"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRulef5824e17-def8-46f0-8bd7-1ef108d013a9"/>
+<PolicyRule certaintyFactor="10" name="NMAP-Cisco-Rule"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for all Cisco Access Points" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Cisco-Access-Point" parentFQN="Cisco-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Cisco-Access-PointRule3"/>
+<PolicyRule certaintyFactor="10" name="Cisco-Access-PointRule1"/>
+<PolicyRule certaintyFactor="10" name="Cisco-Access-PointRule2"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="50" name="Cisco-AP-Aironet-1810" parentFQN="Cisco-Device:Cisco-Access-Point" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="50" name="Cisco-AP-Aironet-1810Rule2ccb66ef-c3cb-4b07-a9fd-a0e0b28a5ec3"/>
+<PolicyRule certaintyFactor="50" name="Cisco-AP-Aironet-1810Rule8815200a-4b99-4f6a-a1cb-175d6f9f990c"/>
+<PolicyRule certaintyFactor="50" name="Cisco-AP-Aironet-1810Rulea67f5a66-2ebe-4d1a-8634-8cb45f9925e5"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Cisco-DeviceRule3Check1" expression="Cisco-DeviceRule3Check1" name="Cisco-DeviceRule3" ruleType="Regular"/>
+<Rule description="VerilinkOUICheck" expression="VerilinkOUICheck" name="Cisco-DeviceRule2" ruleType="Regular"/>
+<Rule description="Rule for Cisco DHCP Class Identifier" expression="CiscoDhcpClassIdentifierCheck" name="Cisco-DHCP-Class-Id-Rule" ruleType="Regular"/>
+<Rule description="Rule for Cisco Device - SNMP" expression="CiscoDeviceSnmpSysCheck" name="Cisco-DeviceRule-SNMP" ruleType="Regular"/>
+<Rule description="Cisco-DeviceRule4Check1" expression="Cisco-DeviceRule4Check1" name="Cisco-DeviceRule4" ruleType="Regular"/>
+<Rule description="Rule for Cisco CDP Cache Platform" expression="CiscoCdpCachePlatformCheck" name="Cisco-CDP-Platform-Rule" ruleType="Regular"/>
+<Rule description="Cisco-DeviceRule1Check1" expression="Cisco-DeviceRule1Check1" name="Cisco-DeviceRule1" ruleType="Regular"/>
+<Rule description="LinksysOUICheck" expression="LinksysOUICheck" name="Cisco-DeviceRule7" ruleType="Regular"/>
+<Rule description="Cisco-Meraki-Device-Rule1Check1" expression="Cisco-Meraki-Device-Rule1Check1" name="Cisco-Meraki-DeviceRule1" ruleType="Regular"/>
+<Rule description="PolycomOUICheck" expression="PolycomOUICheck" name="Cisco-DeviceRule9" ruleType="Regular"/>
+<Rule description="TivellaOUICheck" expression="TivellaOUICheck" name="Cisco-DeviceRule8" ruleType="Regular"/>
+<Rule description="Cisco-DeviceRule1-SCAN" expression="Cisco-DeviceRule1Check1" name="Cisco-DeviceRule1_SCAN" ruleType="Regular"/>
+<Rule description="Rule for Cisco Device - LLDP" expression="CiscoDeviceLldpSysCheck" name="Cisco-DeviceRule-LLDP" ruleType="Regular"/>
+<Rule description="Rule for Cisco TelePresence" expression="CiscoTelePresencePlatformCheck" name="Cisco-TelePresence-CDP-Platform-Rule" ruleType="Regular"/>
+<Rule description="Cisco-Tandberg-Device-Rule1-Check1" expression="Cisco-Tandberg-Device-Rule1-Check1" name="Cisco-DeviceRulef5824e17-def8-46f0-8bd7-1ef108d013a9" ruleType="Regular"/>
+<Rule description="Cisco-NMAPOSCheck" expression="Cisco-NMAPOSCheck" name="NMAP-Cisco-Rule" ruleType="Regular"/>
+<Rule description="Cisco-Access-PointRule3Check3" expression="Cisco-Access-PointRule3Check3" name="Cisco-Access-PointRule3" ruleType="Regular"/>
+<Rule description="Cisco-Access-PointRule1Check1" expression="Cisco-Access-PointRule1Check1" name="Cisco-Access-PointRule1" ruleType="Regular"/>
+<Rule description="Cisco-Access-PointRule2Check2" expression="Cisco-Access-PointRule2Check2" name="Cisco-Access-PointRule2" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_Cisco_AP_c1810_OR_DHCP_dhcp-class-identifier_STARTSWITH_Cisco_AP_c1810" expression="Cisco-AP-Aironet-1810Rule2ccb66ef-c3cb-4b07-a9fd-a0e0b28a5ec3Check15a110b4-57d0-497a-8e22-ffb73821b64e | Cisco-AP-Aironet-1810Rule2ccb66ef-c3cb-4b07-a9fd-a0e0b28a5ec3Checkacda8aba-16c9-424c-a38e-c6d8b50e73c7" name="Cisco-AP-Aironet-1810Rule2ccb66ef-c3cb-4b07-a9fd-a0e0b28a5ec3" ruleType="Regular"/>
+<Rule description="CDP_cdpCachePlatform_CONTAINS_AIR-AP1810_OR_CDP_cdpCachePlatform_STARTSWITH_AIR-AP1810" expression="Cisco-AP-Aironet-1810Rule8815200a-4b99-4f6a-a1cb-175d6f9f990cCheck529ee898-b6f2-45f2-b4c9-5b98e9348eba | Cisco-AP-Aironet-1810Rule8815200a-4b99-4f6a-a1cb-175d6f9f990cCheck97963bb8-ca42-4980-84eb-edb9a368d57f" name="Cisco-AP-Aironet-1810Rule8815200a-4b99-4f6a-a1cb-175d6f9f990c" ruleType="Regular"/>
+<Rule description="CDP_cdpCacheDeviceId_CONTAINS_AIR-AP1810_OR_CDP_cdpCacheDeviceId_STARTSWITH_AIR-AP1810" expression="Cisco-AP-Aironet-1810Rulea67f5a66-2ebe-4d1a-8634-8cb45f9925e5Checkfa9413cb-67a0-4d38-9a58-68b3226155b9 | Cisco-AP-Aironet-1810Rulea67f5a66-2ebe-4d1a-8634-8cb45f9925e5Check3d7f8ef6-88cc-4630-b5bf-47c66a4926b6" name="Cisco-AP-Aironet-1810Rulea67f5a66-2ebe-4d1a-8634-8cb45f9925e5" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Scientific Atlanta" description="Cisco-DeviceRule3Check1" name="Cisco-DeviceRule3Check1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Verilink Corporation" description="Verilink OUI Check" name="VerilinkOUICheck" operator="Equals" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Cisco" description="Cisco DHCP class identifier Check" name="CiscoDhcpClassIdentifierCheck" operator="Contains" type="DHCP"/>
+<Check attributeName="sysDescr" attributeValue="Cisco" description="Cisco Device SNMP sysDescr Check" name="CiscoDeviceSnmpSysCheck" operator="Contains" type="Snmp"/>
+<Check attributeName="cdpCacheVersion" attributeValue="Cisco Systems" description="Cisco-DeviceRule4Check1" name="Cisco-DeviceRule4Check1" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="Cisco" description="Cisco CDP Platform Check" name="CiscoCdpCachePlatformCheck" operator="Contains" type="CDP"/>
+<Check attributeName="OUI" attributeValue="CISCO" description="Cisco-DeviceRule1Check1" name="Cisco-DeviceRule1Check1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Cisco-Linksys" description="Linksys OUI Check" name="LinksysOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Meraki" description="Condition for Cisco-Meraki-Device,based on MAC-OUI" name="Cisco-Meraki-Device-Rule1Check1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Polycom" description="Polycom OUI Check" name="PolycomOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Tivella" description="Tivella OUI Check" name="TivellaOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="lldpSystemDescription" attributeValue="Cisco" description="Cisco Device LLDP System Description Check" name="CiscoDeviceLldpSysCheck" operator="Contains" type="LLDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="CTS" description="Cisco TelePresence CDP Platform Check" name="CiscoTelePresencePlatformCheck" operator="Contains" type="CDP"/>
+<Check attributeName="OUI" attributeValue="Tandberg" description="Condition for Cisco-Tandberg-Device , based on MAC-OUI" name="Cisco-Tandberg-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="operating-system" attributeValue="Cisco" description="NMAP operating-system (Vendor) CONTAINS Cisco" name="Cisco-NMAPOSCheck" operator="Contains" type="NMAP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Cisco AP" description="Cisco-Access-PointRule3Check3" name="Cisco-Access-PointRule3Check3" operator="Contains" type="DHCP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="CISCO AIR" description="Cisco-Access-PointRule1Check1" name="Cisco-Access-PointRule1Check1" operator="Contains" type="CDP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 6, 15, 44, 3, 7, 33, 150, 43" description="Cisco-Access-PointRule2Check2" name="Cisco-Access-PointRule2Check2" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Cisco AP c1810" description="DHCP dhcp-class-identifier CONTAINS Cisco AP c1810" name="Cisco-AP-Aironet-1810Rule2ccb66ef-c3cb-4b07-a9fd-a0e0b28a5ec3Check15a110b4-57d0-497a-8e22-ffb73821b64e" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Cisco AP c1810" description="DHCP dhcp-class-identifier STARTSWITH Cisco AP c1810" name="Cisco-AP-Aironet-1810Rule2ccb66ef-c3cb-4b07-a9fd-a0e0b28a5ec3Checkacda8aba-16c9-424c-a38e-c6d8b50e73c7" operator="Starts with" type="DHCP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="AIR-AP1810" description="CDP cdpCachePlatform CONTAINS AIR-AP1810" name="Cisco-AP-Aironet-1810Rule8815200a-4b99-4f6a-a1cb-175d6f9f990cCheck529ee898-b6f2-45f2-b4c9-5b98e9348eba" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="AIR-AP1810" description="CDP cdpCachePlatform STARTSWITH AIR-AP1810" name="Cisco-AP-Aironet-1810Rule8815200a-4b99-4f6a-a1cb-175d6f9f990cCheck97963bb8-ca42-4980-84eb-edb9a368d57f" operator="Starts with" type="CDP"/>
+<Check attributeName="cdpCacheDeviceId" attributeValue="AIR-AP1810" description="CDP cdpCacheDeviceId CONTAINS AIR-AP1810" name="Cisco-AP-Aironet-1810Rulea67f5a66-2ebe-4d1a-8634-8cb45f9925e5Checkfa9413cb-67a0-4d38-9a58-68b3226155b9" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCacheDeviceId" attributeValue="AIR-AP1810" description="CDP cdpCacheDeviceId STARTSWITH AIR-AP1810" name="Cisco-AP-Aironet-1810Rulea67f5a66-2ebe-4d1a-8634-8cb45f9925e5Check3d7f8ef6-88cc-4630-b5bf-47c66a4926b6" operator="Starts with" type="CDP"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system detection." name="OS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="false">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

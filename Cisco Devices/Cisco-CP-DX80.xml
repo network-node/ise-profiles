@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for all Cisco devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Cisco-Device" scanActionName="OS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule3"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule2"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DHCP-Class-Id-Rule"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule-SNMP"/>
+<PolicyRule certaintyFactor="5" name="Cisco-DeviceRule4"/>
+<PolicyRule certaintyFactor="10" name="Cisco-CDP-Platform-Rule"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule1"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule7"/>
+<PolicyRule certaintyFactor="10" name="Cisco-Meraki-DeviceRule1"/>
+<PolicyRule certaintyFactor="5" name="Cisco-DeviceRule9"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule8"/>
+<PolicyRule certaintyFactor="-3" name="Cisco-DeviceRule1_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule-LLDP"/>
+<PolicyRule certaintyFactor="10" name="Cisco-TelePresence-CDP-Platform-Rule"/>
+<PolicyRule certaintyFactor="10" name="NMAP-Cisco-Rule"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRulef5824e17-def8-46f0-8bd7-1ef108d013a9"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for all Cisco IP Phones" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Cisco-IP-Phone" parentFQN="Cisco-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Cisco-IP-PhoneRule4"/>
+<PolicyRule certaintyFactor="5" name="Cisco-IP-PhoneRule5"/>
+<PolicyRule certaintyFactor="20" name="Cisco-IP-PhoneRule6"/>
+<PolicyRule certaintyFactor="20" name="Cisco-IP-PhoneRule7"/>
+<PolicyRule certaintyFactor="20" name="Cisco-IP-PhoneRule1"/>
+<PolicyRule certaintyFactor="20" name="Cisco-IP-PhoneRule2"/>
+<PolicyRule certaintyFactor="20" name="Cisco-IP-PhoneRule3"/>
+<PolicyRule certaintyFactor="20" name="Cisco-IP-PhoneRule77"/>
+<PolicyRule certaintyFactor="20" name="Cisco-IP-PhoneRule44"/>
+<PolicyRule certaintyFactor="20" name="Cisco-IP-PhoneRule66"/>
+<PolicyRule certaintyFactor="20" name="Cisco-IP-PhoneRule55"/>
+<PolicyRule certaintyFactor="20" name="Cisco-IP-PhoneRule88"/>
+<PolicyRule certaintyFactor="20" name="LLDP-IP-PhoneRule2"/>
+<PolicyRule certaintyFactor="20" name="LLDP-IP-PhoneRule5"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Cisco IP Phone 6921" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="70" name="Cisco-CP-DX80" parentFQN="Cisco-Device:Cisco-IP-Phone" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="70" name="Cisco-CP-DX80Rule3f8b3561-e29a-431b-b75a-1ff3c6b1497f"/>
+<PolicyRule certaintyFactor="70" name="Cisco-CP-DX80Rule087f644a-8382-4f8f-ab6e-c6fb617a04a0"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Cisco-DeviceRule3Check1" expression="Cisco-DeviceRule3Check1" name="Cisco-DeviceRule3" ruleType="Regular"/>
+<Rule description="VerilinkOUICheck" expression="VerilinkOUICheck" name="Cisco-DeviceRule2" ruleType="Regular"/>
+<Rule description="Rule for Cisco DHCP Class Identifier" expression="CiscoDhcpClassIdentifierCheck" name="Cisco-DHCP-Class-Id-Rule" ruleType="Regular"/>
+<Rule description="Rule for Cisco Device - SNMP" expression="CiscoDeviceSnmpSysCheck" name="Cisco-DeviceRule-SNMP" ruleType="Regular"/>
+<Rule description="Cisco-DeviceRule4Check1" expression="Cisco-DeviceRule4Check1" name="Cisco-DeviceRule4" ruleType="Regular"/>
+<Rule description="Rule for Cisco CDP Cache Platform" expression="CiscoCdpCachePlatformCheck" name="Cisco-CDP-Platform-Rule" ruleType="Regular"/>
+<Rule description="Cisco-DeviceRule1Check1" expression="Cisco-DeviceRule1Check1" name="Cisco-DeviceRule1" ruleType="Regular"/>
+<Rule description="LinksysOUICheck" expression="LinksysOUICheck" name="Cisco-DeviceRule7" ruleType="Regular"/>
+<Rule description="Cisco-Meraki-Device-Rule1Check1" expression="Cisco-Meraki-Device-Rule1Check1" name="Cisco-Meraki-DeviceRule1" ruleType="Regular"/>
+<Rule description="PolycomOUICheck" expression="PolycomOUICheck" name="Cisco-DeviceRule9" ruleType="Regular"/>
+<Rule description="TivellaOUICheck" expression="TivellaOUICheck" name="Cisco-DeviceRule8" ruleType="Regular"/>
+<Rule description="Cisco-DeviceRule1-SCAN" expression="Cisco-DeviceRule1Check1" name="Cisco-DeviceRule1_SCAN" ruleType="Regular"/>
+<Rule description="Rule for Cisco Device - LLDP" expression="CiscoDeviceLldpSysCheck" name="Cisco-DeviceRule-LLDP" ruleType="Regular"/>
+<Rule description="Rule for Cisco TelePresence" expression="CiscoTelePresencePlatformCheck" name="Cisco-TelePresence-CDP-Platform-Rule" ruleType="Regular"/>
+<Rule description="Cisco-NMAPOSCheck" expression="Cisco-NMAPOSCheck" name="NMAP-Cisco-Rule" ruleType="Regular"/>
+<Rule description="Cisco-Tandberg-Device-Rule1-Check1" expression="Cisco-Tandberg-Device-Rule1-Check1" name="Cisco-DeviceRulef5824e17-def8-46f0-8bd7-1ef108d013a9" ruleType="Regular"/>
+<Rule description="CiscoIPPhoneDHCPClassIdentifierCheck" expression="CiscoIPPhoneDHCPClassIdentifierCheck" name="Cisco-IP-PhoneRule4" ruleType="Regular"/>
+<Rule description="CiscoIPPhoneCDPDeviceIdCheck" expression="CiscoIPPhoneCDPDeviceIdCheck" name="Cisco-IP-PhoneRule5" ruleType="Regular"/>
+<Rule description="CiscoIPPhoneDHCPClassIdentifierCheck2" expression="CiscoIPPhoneDHCPClassIdentifierCheck2" name="Cisco-IP-PhoneRule6" ruleType="Regular"/>
+<Rule description="Cisco-IP-Phone-Rule2Check1" expression="Cisco-IP-Phone-Rule2Check1" name="Cisco-IP-PhoneRule7" ruleType="Regular"/>
+<Rule description="CiscoIPPhoneCdpCachePlatformCheck" expression="CiscoIPPhoneCdpCachePlatformCheck" name="Cisco-IP-PhoneRule1" ruleType="Regular"/>
+<Rule description="CiscoIPPhoneCapabilitiesCheck" expression="CiscoIPPhoneCapabilitiesCheck" name="Cisco-IP-PhoneRule2" ruleType="Regular"/>
+<Rule description="Cisco-IP-PhoneRule3Check1" expression="Cisco-IP-PhoneRule3Check1" name="Cisco-IP-PhoneRule3" ruleType="Regular"/>
+<Rule description="Cisco-IP-Phone-Rule7-Check1" expression="Cisco-IP-Phone-Rule7-Check1" name="Cisco-IP-PhoneRule77" ruleType="Regular"/>
+<Rule description="Cisco-IP-Phone-Rule4-Check1" expression="Cisco-IP-Phone-Rule4-Check1" name="Cisco-IP-PhoneRule44" ruleType="Regular"/>
+<Rule description="Cisco-IP-Phone-Rule6-Check1" expression="Cisco-IP-Phone-Rule6-Check1" name="Cisco-IP-PhoneRule66" ruleType="Regular"/>
+<Rule description="Cisco-IP-Phone-Rule5-Check1" expression="Cisco-IP-Phone-Rule5-Check1" name="Cisco-IP-PhoneRule55" ruleType="Regular"/>
+<Rule description="Cisco-IP-Phone-Rule8-Check1" expression="Cisco-IP-Phone-Rule8-Check1" name="Cisco-IP-PhoneRule88" ruleType="Regular"/>
+<Rule description="IPPhoneLLDPCapabilitiesCheck" expression="IPPhoneLLDPCapabilitiesCheck" name="LLDP-IP-PhoneRule2" ruleType="Regular"/>
+<Rule description="IPPhoneLLDPCapabilitiesCheck1" expression="IPPhoneLLDPCapabilitiesCheck1 | IPPhoneLLDPCapabilitiesCheck2" name="LLDP-IP-PhoneRule5" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_CP-DX80" expression="Cisco-CP-DX80Rule3f8b3561-e29a-431b-b75a-1ff3c6b1497fCheckeb464dc3-450a-4d7c-bc67-becf65c37051" name="Cisco-CP-DX80Rule3f8b3561-e29a-431b-b75a-1ff3c6b1497f" ruleType="Regular"/>
+<Rule description="CDP_cdpCachePlatform_CONTAINS_DX80" expression="Cisco-CP-DX80Rule087f644a-8382-4f8f-ab6e-c6fb617a04a0Checkdba5fa69-45bf-4874-8830-d6c077f302d5" name="Cisco-CP-DX80Rule087f644a-8382-4f8f-ab6e-c6fb617a04a0" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Scientific Atlanta" description="Cisco-DeviceRule3Check1" name="Cisco-DeviceRule3Check1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Verilink Corporation" description="Verilink OUI Check" name="VerilinkOUICheck" operator="Equals" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Cisco" description="Cisco DHCP class identifier Check" name="CiscoDhcpClassIdentifierCheck" operator="Contains" type="DHCP"/>
+<Check attributeName="sysDescr" attributeValue="Cisco" description="Cisco Device SNMP sysDescr Check" name="CiscoDeviceSnmpSysCheck" operator="Contains" type="Snmp"/>
+<Check attributeName="cdpCacheVersion" attributeValue="Cisco Systems" description="Cisco-DeviceRule4Check1" name="Cisco-DeviceRule4Check1" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="Cisco" description="Cisco CDP Platform Check" name="CiscoCdpCachePlatformCheck" operator="Contains" type="CDP"/>
+<Check attributeName="OUI" attributeValue="CISCO" description="Cisco-DeviceRule1Check1" name="Cisco-DeviceRule1Check1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Cisco-Linksys" description="Linksys OUI Check" name="LinksysOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Meraki" description="Condition for Cisco-Meraki-Device,based on MAC-OUI" name="Cisco-Meraki-Device-Rule1Check1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Polycom" description="Polycom OUI Check" name="PolycomOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Tivella" description="Tivella OUI Check" name="TivellaOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="lldpSystemDescription" attributeValue="Cisco" description="Cisco Device LLDP System Description Check" name="CiscoDeviceLldpSysCheck" operator="Contains" type="LLDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="CTS" description="Cisco TelePresence CDP Platform Check" name="CiscoTelePresencePlatformCheck" operator="Contains" type="CDP"/>
+<Check attributeName="operating-system" attributeValue="Cisco" description="NMAP operating-system (Vendor) CONTAINS Cisco" name="Cisco-NMAPOSCheck" operator="Contains" type="NMAP"/>
+<Check attributeName="OUI" attributeValue="Tandberg" description="Condition for Cisco-Tandberg-Device , based on MAC-OUI" name="Cisco-Tandberg-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Cisco Systems, Inc. IP Phone" description="Cisco IP Phone DHCP class identifier Check" name="CiscoIPPhoneDHCPClassIdentifierCheck" operator="Contains" type="DHCP"/>
+<Check attributeName="cdpCacheDeviceId" attributeValue="SEP" description="Cisco IP Phone CDP Device Id Check" name="CiscoIPPhoneCDPDeviceIdCheck" operator="Contains" type="CDP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Cisco Systems Inc. Wireless Phone" description="Cisco Wireless Phone DHCP class identifier Check" name="CiscoIPPhoneDHCPClassIdentifierCheck2" operator="Contains" type="DHCP"/>
+<Check attributeName="lldpSystemDescription" attributeValue="Cisco IP Phone" description="Condition for Cisco-IP-Phone, based on LLDP-System-Description" name="Cisco-IP-Phone-Rule2Check1" operator="Contains" type="LLDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="Cisco IP Phone" description="Cisco IP Phone CDP Cache Platform Check" name="CiscoIPPhoneCdpCachePlatformCheck" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCacheCapabilities" attributeValue="P" description="Cisco IP Phones capabilities Check" name="CiscoIPPhoneCapabilitiesCheck" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="Cisco IP Conference Station" description="Cisco-IP-PhoneRule3Check1" name="Cisco-IP-PhoneRule3Check1" operator="Contains" type="CDP"/>
+<Check attributeName="operating-system" attributeValue="^Cisco.*IP Phone.*" description="Condition for Cisco-IP-Phone, based on NMAP:operating-system" name="Cisco-IP-Phone-Rule7-Check1" operator="Matches" type="NMAP"/>
+<Check attributeName="dhcpv6-vendor-class" attributeValue="Cisco Systems, Inc. IP Phone" description="Condition for Cisco-IP-Phone based on DHCP:dhcpv6-vendor-class" name="Cisco-IP-Phone-Rule4-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="^Cisco.*IP Phone.*" description="Condition for Cisco-IP-Phone, based on DHCP:dhcp-class-identifier" name="Cisco-IP-Phone-Rule6-Check1" operator="Matches" type="DHCP"/>
+<Check attributeName="dhcpv6-vendor-class" attributeValue="Cisco Systems Inc. Wireless Phone" description="Condition for Cisco-IP-Phone based on DHCP:dhcpv6-vendor-class" name="Cisco-IP-Phone-Rule5-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="^CP-79.*" description="Condition for Cisco-IP-Phone, based on CDP:cdpCachePlatform" name="Cisco-IP-Phone-Rule8-Check1" operator="Matches" type="CDP"/>
+<Check attributeName="lldpCacheCapabilities" attributeValue="00:20" description="IP Phones capabilities Check" name="IPPhoneLLDPCapabilitiesCheck" operator="Contains" type="LLDP"/>
+<Check attributeName="lldpCacheCapabilities" attributeValue="T" description="IP Phones capabilities Check1" name="IPPhoneLLDPCapabilitiesCheck1" operator="Contains" type="LLDP"/>
+<Check attributeName="lldpCapabilitiesMapSupported" attributeValue="T" description="IP Phones capabilities Check2" name="IPPhoneLLDPCapabilitiesCheck2" operator="Contains" type="LLDP"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="CP-DX80" description="DHCP dhcp-class-identifier CONTAINS CP-DX80" name="Cisco-CP-DX80Rule3f8b3561-e29a-431b-b75a-1ff3c6b1497fCheckeb464dc3-450a-4d7c-bc67-becf65c37051" operator="Contains" type="DHCP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="DX80" description="CDP cdpCachePlatform CONTAINS DX80" name="Cisco-CP-DX80Rule087f644a-8382-4f8f-ab6e-c6fb617a04a0Checkdba5fa69-45bf-4874-8830-d6c077f302d5" operator="Contains" type="CDP"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system detection." name="OS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="false">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for all Cisco devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Cisco-Device" scanActionName="OS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule3"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule2"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DHCP-Class-Id-Rule"/>
+<PolicyRule certaintyFactor="5" name="Cisco-DeviceRule4"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule-SNMP"/>
+<PolicyRule certaintyFactor="10" name="Cisco-CDP-Platform-Rule"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule1"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule7"/>
+<PolicyRule certaintyFactor="10" name="Cisco-Meraki-DeviceRule1"/>
+<PolicyRule certaintyFactor="5" name="Cisco-DeviceRule9"/>
+<PolicyRule certaintyFactor="-3" name="Cisco-DeviceRule1_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule8"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule-LLDP"/>
+<PolicyRule certaintyFactor="10" name="Cisco-TelePresence-CDP-Platform-Rule"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRulef5824e17-def8-46f0-8bd7-1ef108d013a9"/>
+<PolicyRule certaintyFactor="10" name="NMAP-Cisco-Rule"/>
+</PolicyRules>
+</Policy>
+<Policy description="Generic policy for all Cisco Routers" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Cisco-Router" parentFQN="Cisco-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Cisco-RouterRuleb5fadc3b-3084-431e-a124-e0871781e0ec"/>
+<PolicyRule certaintyFactor="10" name="Cisco-RouterRule81f20c35-5ea6-418c-8c67-8cb4ea202364"/>
+<PolicyRule certaintyFactor="5" name="LLDP-RouterRule"/>
+<PolicyRule certaintyFactor="5" name="NMAP-RouterRule"/>
+<PolicyRule certaintyFactor="10" name="Cisco-RouterRulea98a7698-1bfc-46ab-af19-02805ad0aada"/>
+</PolicyRules>
+</Policy>
+<Policy description="Generic policy for all Cisco Routers" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="50" name="Cisco-Router-ASR" parentFQN="Cisco-Device:Cisco-Router" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="50" name="Cisco-RouterRulea98a7698-1bfc-46ab-af19-02805ad0aada_copy"/>
+<PolicyRule certaintyFactor="50" name="Cisco-Router-ASRRule8dda101f-062e-4176-a77a-221cdad098f2"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Cisco-DeviceRule3Check1" expression="Cisco-DeviceRule3Check1" name="Cisco-DeviceRule3" ruleType="Regular"/>
+<Rule description="VerilinkOUICheck" expression="VerilinkOUICheck" name="Cisco-DeviceRule2" ruleType="Regular"/>
+<Rule description="Rule for Cisco DHCP Class Identifier" expression="CiscoDhcpClassIdentifierCheck" name="Cisco-DHCP-Class-Id-Rule" ruleType="Regular"/>
+<Rule description="Cisco-DeviceRule4Check1" expression="Cisco-DeviceRule4Check1" name="Cisco-DeviceRule4" ruleType="Regular"/>
+<Rule description="Rule for Cisco Device - SNMP" expression="CiscoDeviceSnmpSysCheck" name="Cisco-DeviceRule-SNMP" ruleType="Regular"/>
+<Rule description="Rule for Cisco CDP Cache Platform" expression="CiscoCdpCachePlatformCheck" name="Cisco-CDP-Platform-Rule" ruleType="Regular"/>
+<Rule description="Cisco-DeviceRule1Check1" expression="Cisco-DeviceRule1Check1" name="Cisco-DeviceRule1" ruleType="Regular"/>
+<Rule description="LinksysOUICheck" expression="LinksysOUICheck" name="Cisco-DeviceRule7" ruleType="Regular"/>
+<Rule description="Cisco-Meraki-Device-Rule1Check1" expression="Cisco-Meraki-Device-Rule1Check1" name="Cisco-Meraki-DeviceRule1" ruleType="Regular"/>
+<Rule description="PolycomOUICheck" expression="PolycomOUICheck" name="Cisco-DeviceRule9" ruleType="Regular"/>
+<Rule description="Cisco-DeviceRule1-SCAN" expression="Cisco-DeviceRule1Check1" name="Cisco-DeviceRule1_SCAN" ruleType="Regular"/>
+<Rule description="TivellaOUICheck" expression="TivellaOUICheck" name="Cisco-DeviceRule8" ruleType="Regular"/>
+<Rule description="Rule for Cisco Device - LLDP" expression="CiscoDeviceLldpSysCheck" name="Cisco-DeviceRule-LLDP" ruleType="Regular"/>
+<Rule description="Rule for Cisco TelePresence" expression="CiscoTelePresencePlatformCheck" name="Cisco-TelePresence-CDP-Platform-Rule" ruleType="Regular"/>
+<Rule description="Cisco-Tandberg-Device-Rule1-Check1" expression="Cisco-Tandberg-Device-Rule1-Check1" name="Cisco-DeviceRulef5824e17-def8-46f0-8bd7-1ef108d013a9" ruleType="Regular"/>
+<Rule description="Cisco-NMAPOSCheck" expression="Cisco-NMAPOSCheck" name="NMAP-Cisco-Rule" ruleType="Regular"/>
+<Rule description="CDP_cdpCacheCapabilities_STARTSWITH_Router_IGMP" expression="Cisco-RouterRuleb5fadc3b-3084-431e-a124-e0871781e0ecCheckaf6a0ba2-629e-4250-8485-a9280baaf776" name="Cisco-RouterRuleb5fadc3b-3084-431e-a124-e0871781e0ec" ruleType="Regular"/>
+<Rule description="CDP_cdpCachePlatform_STARTSWITH_cisco_ASR_OR_CDP_cdpCachePlatform_CONTAINS_cisco_ASR" expression="Cisco-RouterRule81f20c35-5ea6-418c-8c67-8cb4ea202364Check7d8d5cca-9d90-4464-b511-14180a233af4 | Cisco-RouterRule81f20c35-5ea6-418c-8c67-8cb4ea202364Checkb8768357-994c-4801-88cf-5a28f73d2fe3" name="Cisco-RouterRule81f20c35-5ea6-418c-8c67-8cb4ea202364" ruleType="Regular"/>
+<Rule description="RouterLLDPCapabilitiesCheck" expression="RouterLLDPCapabilitiesCheck" name="LLDP-RouterRule" ruleType="Regular"/>
+<Rule description="RouterNMAPOSCheck" expression="RouterNMAPOSCheck" name="NMAP-RouterRule" ruleType="Regular"/>
+<Rule description="CDP_cdpCacheVersion_CONTAINS_ISR_Software" expression="Cisco-RouterRulea98a7698-1bfc-46ab-af19-02805ad0aadaCheckbcdd0ba7-2c4f-4751-b635-2633330dbcf3" name="Cisco-RouterRulea98a7698-1bfc-46ab-af19-02805ad0aada" ruleType="Regular"/>
+<Rule description="CDP_cdpCacheVersion_CONTAINS_Cisco_IOS_Software,_ASR1000_Software_OR_CDP_cdpCacheVersion_STARTSWITH_Cisco_IOS_Software,_ASR1000_Software_OR_CDP_cdpCacheVersion_CONTAINS_ASR1000" expression="(Cisco-RouterRulea98a7698-1bfc-46ab-af19-02805ad0aadaCheckbcdd0ba7-2c4f-4751-b635-2633330dbcf3_copy | Cisco-RouterRulea98a7698-1bfc-46ab-af19-02805ad0aada_copyCheck43d61f73-8d84-42c8-aae1-91ca950349c5) | Cisco-RouterRulea98a7698-1bfc-46ab-af19-02805ad0aada_copyCheck1680d392-2343-443e-a077-00c56181b643" name="Cisco-RouterRulea98a7698-1bfc-46ab-af19-02805ad0aada_copy" ruleType="Regular"/>
+<Rule description="CDP_cdpCachePlatform_CONTAINS_cisco_ASR1001_OR_CDP_cdpCachePlatform_STARTSWITH_cisco_ASR_OR_CDP_cdpCachePlatform_CONTAINS_cisco_ASR" expression="(Cisco-Router-ASRRule8dda101f-062e-4176-a77a-221cdad098f2Check7dc9f4f5-567e-4f86-884a-d196d27a5f01 | Cisco-Router-ASRRule8dda101f-062e-4176-a77a-221cdad098f2Checkca738a8b-2adc-4b27-94a9-3fd312551bbe) | Cisco-Router-ASRRule8dda101f-062e-4176-a77a-221cdad098f2Check8f130ecd-e37d-4ebb-a8bd-59a10e213b63" name="Cisco-Router-ASRRule8dda101f-062e-4176-a77a-221cdad098f2" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Scientific Atlanta" description="Cisco-DeviceRule3Check1" name="Cisco-DeviceRule3Check1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Verilink Corporation" description="Verilink OUI Check" name="VerilinkOUICheck" operator="Equals" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Cisco" description="Cisco DHCP class identifier Check" name="CiscoDhcpClassIdentifierCheck" operator="Contains" type="DHCP"/>
+<Check attributeName="cdpCacheVersion" attributeValue="Cisco Systems" description="Cisco-DeviceRule4Check1" name="Cisco-DeviceRule4Check1" operator="Contains" type="CDP"/>
+<Check attributeName="sysDescr" attributeValue="Cisco" description="Cisco Device SNMP sysDescr Check" name="CiscoDeviceSnmpSysCheck" operator="Contains" type="Snmp"/>
+<Check attributeName="cdpCachePlatform" attributeValue="Cisco" description="Cisco CDP Platform Check" name="CiscoCdpCachePlatformCheck" operator="Contains" type="CDP"/>
+<Check attributeName="OUI" attributeValue="CISCO" description="Cisco-DeviceRule1Check1" name="Cisco-DeviceRule1Check1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Cisco-Linksys" description="Linksys OUI Check" name="LinksysOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Meraki" description="Condition for Cisco-Meraki-Device,based on MAC-OUI" name="Cisco-Meraki-Device-Rule1Check1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Polycom" description="Polycom OUI Check" name="PolycomOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Tivella" description="Tivella OUI Check" name="TivellaOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="lldpSystemDescription" attributeValue="Cisco" description="Cisco Device LLDP System Description Check" name="CiscoDeviceLldpSysCheck" operator="Contains" type="LLDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="CTS" description="Cisco TelePresence CDP Platform Check" name="CiscoTelePresencePlatformCheck" operator="Contains" type="CDP"/>
+<Check attributeName="OUI" attributeValue="Tandberg" description="Condition for Cisco-Tandberg-Device , based on MAC-OUI" name="Cisco-Tandberg-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="operating-system" attributeValue="Cisco" description="NMAP operating-system (Vendor) CONTAINS Cisco" name="Cisco-NMAPOSCheck" operator="Contains" type="NMAP"/>
+<Check attributeName="cdpCacheCapabilities" attributeValue="Router IGMP" description="CDP cdpCacheCapabilities STARTSWITH Router IGMP" name="Cisco-RouterRuleb5fadc3b-3084-431e-a124-e0871781e0ecCheckaf6a0ba2-629e-4250-8485-a9280baaf776" operator="Starts with" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="cisco ASR" description="CDP cdpCachePlatform STARTSWITH cisco ASR" name="Cisco-RouterRule81f20c35-5ea6-418c-8c67-8cb4ea202364Check7d8d5cca-9d90-4464-b511-14180a233af4" operator="Starts with" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="cisco ASR" description="CDP cdpCachePlatform CONTAINS cisco ASR" name="Cisco-RouterRule81f20c35-5ea6-418c-8c67-8cb4ea202364Checkb8768357-994c-4801-88cf-5a28f73d2fe3" operator="Contains" type="CDP"/>
+<Check attributeName="lldpCacheCapabilities" attributeValue="00:10" description="Generic Router capabilities Check" name="RouterLLDPCapabilitiesCheck" operator="Contains" type="LLDP"/>
+<Check attributeName="operating-system" attributeValue="router" description="NMAP operating-system (Type) CONTAINS router" name="RouterNMAPOSCheck" operator="Contains" type="NMAP"/>
+<Check attributeName="cdpCacheVersion" attributeValue="ISR Software" description="CDP cdpCacheVersion CONTAINS ISR Software" name="Cisco-RouterRulea98a7698-1bfc-46ab-af19-02805ad0aadaCheckbcdd0ba7-2c4f-4751-b635-2633330dbcf3" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCacheVersion" attributeValue="Cisco IOS Software, ASR1000 Software" description="CDP cdpCacheVersion CONTAINS Cisco IOS Software, ASR1000 Software" name="Cisco-RouterRulea98a7698-1bfc-46ab-af19-02805ad0aadaCheckbcdd0ba7-2c4f-4751-b635-2633330dbcf3_copy" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCacheVersion" attributeValue="Cisco IOS Software, ASR1000 Software" description="CDP cdpCacheVersion STARTSWITH Cisco IOS Software, ASR1000 Software" name="Cisco-RouterRulea98a7698-1bfc-46ab-af19-02805ad0aada_copyCheck43d61f73-8d84-42c8-aae1-91ca950349c5" operator="Starts with" type="CDP"/>
+<Check attributeName="cdpCacheVersion" attributeValue="ASR1000" description="CDP cdpCacheVersion CONTAINS ASR1000" name="Cisco-RouterRulea98a7698-1bfc-46ab-af19-02805ad0aada_copyCheck1680d392-2343-443e-a077-00c56181b643" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="cisco ASR1001" description="CDP cdpCachePlatform CONTAINS cisco ASR1001" name="Cisco-Router-ASRRule8dda101f-062e-4176-a77a-221cdad098f2Check7dc9f4f5-567e-4f86-884a-d196d27a5f01" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="cisco ASR" description="CDP cdpCachePlatform STARTSWITH cisco ASR" name="Cisco-Router-ASRRule8dda101f-062e-4176-a77a-221cdad098f2Checkca738a8b-2adc-4b27-94a9-3fd312551bbe" operator="Starts with" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="cisco ASR" description="CDP cdpCachePlatform CONTAINS cisco ASR" name="Cisco-Router-ASRRule8dda101f-062e-4176-a77a-221cdad098f2Check8f130ecd-e37d-4ebb-a8bd-59a10e213b63" operator="Contains" type="CDP"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system detection." name="OS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="false">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

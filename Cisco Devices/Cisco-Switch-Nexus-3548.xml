@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for all Cisco devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Cisco-Device" scanActionName="OS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule3"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule2"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DHCP-Class-Id-Rule"/>
+<PolicyRule certaintyFactor="5" name="Cisco-DeviceRule4"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule-SNMP"/>
+<PolicyRule certaintyFactor="10" name="Cisco-CDP-Platform-Rule"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule1"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule7"/>
+<PolicyRule certaintyFactor="10" name="Cisco-Meraki-DeviceRule1"/>
+<PolicyRule certaintyFactor="5" name="Cisco-DeviceRule9"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule8"/>
+<PolicyRule certaintyFactor="-3" name="Cisco-DeviceRule1_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule-LLDP"/>
+<PolicyRule certaintyFactor="10" name="Cisco-TelePresence-CDP-Platform-Rule"/>
+<PolicyRule certaintyFactor="10" name="NMAP-Cisco-Rule"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRulef5824e17-def8-46f0-8bd7-1ef108d013a9"/>
+</PolicyRules>
+</Policy>
+<Policy description="Generic policy for all Cisco Switches" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Cisco-Switch" parentFQN="Cisco-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="NMAP-Cisco-IOS-Rule1"/>
+<PolicyRule certaintyFactor="20" name="NMAP-Cisco-Catalyst-Rule"/>
+<PolicyRule certaintyFactor="20" name="NMAP-SwitchRule"/>
+<PolicyRule certaintyFactor="20" name="TransBridgeRule1"/>
+<PolicyRule certaintyFactor="20" name="Cisco-SwitchRule3-SNMP"/>
+<PolicyRule certaintyFactor="20" name="Cisco-SwitchRule2"/>
+<PolicyRule certaintyFactor="20" name="Cisco-SwitchRule1"/>
+<PolicyRule certaintyFactor="20" name="NMAP-Cisco-CatOS-Rule"/>
+<PolicyRule certaintyFactor="20" name="Cisco-SwitchRule4-LLDP"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Cisco-Switch-Nexus-3548" parentFQN="Cisco-Device:Cisco-Switch" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Cisco-Switch-3750Rule1b905109-7f39-435d-9169-bc73b082e456_copy_copy"/>
+<PolicyRule certaintyFactor="20" name="Cisco-Switch-3750Rule7c673d6c-dd4c-4c5f-86a9-2457b0191727_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Cisco-DeviceRule3Check1" expression="Cisco-DeviceRule3Check1" name="Cisco-DeviceRule3" ruleType="Regular"/>
+<Rule description="VerilinkOUICheck" expression="VerilinkOUICheck" name="Cisco-DeviceRule2" ruleType="Regular"/>
+<Rule description="Rule for Cisco DHCP Class Identifier" expression="CiscoDhcpClassIdentifierCheck" name="Cisco-DHCP-Class-Id-Rule" ruleType="Regular"/>
+<Rule description="Cisco-DeviceRule4Check1" expression="Cisco-DeviceRule4Check1" name="Cisco-DeviceRule4" ruleType="Regular"/>
+<Rule description="Rule for Cisco Device - SNMP" expression="CiscoDeviceSnmpSysCheck" name="Cisco-DeviceRule-SNMP" ruleType="Regular"/>
+<Rule description="Rule for Cisco CDP Cache Platform" expression="CiscoCdpCachePlatformCheck" name="Cisco-CDP-Platform-Rule" ruleType="Regular"/>
+<Rule description="Cisco-DeviceRule1Check1" expression="Cisco-DeviceRule1Check1" name="Cisco-DeviceRule1" ruleType="Regular"/>
+<Rule description="LinksysOUICheck" expression="LinksysOUICheck" name="Cisco-DeviceRule7" ruleType="Regular"/>
+<Rule description="Cisco-Meraki-Device-Rule1Check1" expression="Cisco-Meraki-Device-Rule1Check1" name="Cisco-Meraki-DeviceRule1" ruleType="Regular"/>
+<Rule description="PolycomOUICheck" expression="PolycomOUICheck" name="Cisco-DeviceRule9" ruleType="Regular"/>
+<Rule description="TivellaOUICheck" expression="TivellaOUICheck" name="Cisco-DeviceRule8" ruleType="Regular"/>
+<Rule description="Cisco-DeviceRule1-SCAN" expression="Cisco-DeviceRule1Check1" name="Cisco-DeviceRule1_SCAN" ruleType="Regular"/>
+<Rule description="Rule for Cisco Device - LLDP" expression="CiscoDeviceLldpSysCheck" name="Cisco-DeviceRule-LLDP" ruleType="Regular"/>
+<Rule description="Rule for Cisco TelePresence" expression="CiscoTelePresencePlatformCheck" name="Cisco-TelePresence-CDP-Platform-Rule" ruleType="Regular"/>
+<Rule description="Cisco-NMAPOSCheck" expression="Cisco-NMAPOSCheck" name="NMAP-Cisco-Rule" ruleType="Regular"/>
+<Rule description="Cisco-Tandberg-Device-Rule1-Check1" expression="Cisco-Tandberg-Device-Rule1-Check1" name="Cisco-DeviceRulef5824e17-def8-46f0-8bd7-1ef108d013a9" ruleType="Regular"/>
+<Rule description="Cisco-IOS-NMAPOSCheck" expression="Cisco-IOS-NMAPOSCheck" name="NMAP-Cisco-IOS-Rule1" ruleType="Regular"/>
+<Rule description="Cisco-Catalyst-NMAPOSCheck" expression="Cisco-Catalyst-NMAPOSCheck" name="NMAP-Cisco-Catalyst-Rule" ruleType="Regular"/>
+<Rule description="SwitchNMAPOSCheck" expression="SwitchNMAPOSCheck" name="NMAP-SwitchRule" ruleType="Regular"/>
+<Rule description="TransparentBridgeLLDPCapabilitiesCheck1" expression="TransparentBridgeLLDPCapabilitiesCheck1" name="TransBridgeRule1" ruleType="Regular"/>
+<Rule description="Rule for Cisco Switch - SNMP" expression="CiscoSwitchSnmpSysCheck" name="Cisco-SwitchRule3-SNMP" ruleType="Regular"/>
+<Rule description="Rule for Cisco Switch" expression="CiscoSwitchPlatformCheck" name="Cisco-SwitchRule2" ruleType="Regular"/>
+<Rule description="Rule for Cisco Switch" expression="CiscoSwitchCapabilitiesCheck" name="Cisco-SwitchRule1" ruleType="Regular"/>
+<Rule description="Cisco-CatOS-NMAPOSCheck" expression="Cisco-CatOS-NMAPOSCheck" name="NMAP-Cisco-CatOS-Rule" ruleType="Regular"/>
+<Rule description="Rule for Cisco Switch - LLDP" expression="CiscoSwitchLldpSysCheck" name="Cisco-SwitchRule4-LLDP" ruleType="Regular"/>
+<Rule description="CDP_cdpCacheVersion_CONTAINS_NX-OS" expression="Cisco-Switch-3750Rule1b905109-7f39-435d-9169-bc73b082e456Check7868fd3b-1b79-4086-927b-edf4e9cfb50c_copy_copy" name="Cisco-Switch-3750Rule1b905109-7f39-435d-9169-bc73b082e456_copy_copy" ruleType="Regular"/>
+<Rule description="CDP_cdpCachePlatform_CONTAINS_N3K-C3548" expression="Cisco-Switch-3750Rule7c673d6c-dd4c-4c5f-86a9-2457b0191727Check1d862f16-51c9-4715-bde9-38319b1aaed5_copy_copy" name="Cisco-Switch-3750Rule7c673d6c-dd4c-4c5f-86a9-2457b0191727_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Scientific Atlanta" description="Cisco-DeviceRule3Check1" name="Cisco-DeviceRule3Check1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Verilink Corporation" description="Verilink OUI Check" name="VerilinkOUICheck" operator="Equals" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Cisco" description="Cisco DHCP class identifier Check" name="CiscoDhcpClassIdentifierCheck" operator="Contains" type="DHCP"/>
+<Check attributeName="cdpCacheVersion" attributeValue="Cisco Systems" description="Cisco-DeviceRule4Check1" name="Cisco-DeviceRule4Check1" operator="Contains" type="CDP"/>
+<Check attributeName="sysDescr" attributeValue="Cisco" description="Cisco Device SNMP sysDescr Check" name="CiscoDeviceSnmpSysCheck" operator="Contains" type="Snmp"/>
+<Check attributeName="cdpCachePlatform" attributeValue="Cisco" description="Cisco CDP Platform Check" name="CiscoCdpCachePlatformCheck" operator="Contains" type="CDP"/>
+<Check attributeName="OUI" attributeValue="CISCO" description="Cisco-DeviceRule1Check1" name="Cisco-DeviceRule1Check1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Cisco-Linksys" description="Linksys OUI Check" name="LinksysOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Meraki" description="Condition for Cisco-Meraki-Device,based on MAC-OUI" name="Cisco-Meraki-Device-Rule1Check1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Polycom" description="Polycom OUI Check" name="PolycomOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Tivella" description="Tivella OUI Check" name="TivellaOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="lldpSystemDescription" attributeValue="Cisco" description="Cisco Device LLDP System Description Check" name="CiscoDeviceLldpSysCheck" operator="Contains" type="LLDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="CTS" description="Cisco TelePresence CDP Platform Check" name="CiscoTelePresencePlatformCheck" operator="Contains" type="CDP"/>
+<Check attributeName="operating-system" attributeValue="Cisco" description="NMAP operating-system (Vendor) CONTAINS Cisco" name="Cisco-NMAPOSCheck" operator="Contains" type="NMAP"/>
+<Check attributeName="OUI" attributeValue="Tandberg" description="Condition for Cisco-Tandberg-Device , based on MAC-OUI" name="Cisco-Tandberg-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="operating-system" attributeValue="IOS" description="NMAP operating-system (Family) CONTAINS IOS" name="Cisco-IOS-NMAPOSCheck" operator="Contains" type="NMAP"/>
+<Check attributeName="operating-system" attributeValue="Catalyst" description="NMAP operating-system CONTAINS Catalyst" name="Cisco-Catalyst-NMAPOSCheck" operator="Contains" type="NMAP"/>
+<Check attributeName="operating-system" attributeValue="switch" description="NMAP operating-system (Type) CONTAINS switch" name="SwitchNMAPOSCheck" operator="Contains" type="NMAP"/>
+<Check attributeName="lldpCacheCapabilities" attributeValue="B" description="Generic Transparent Bridge capabilities Check1" name="TransparentBridgeLLDPCapabilitiesCheck1" operator="Contains" type="LLDP"/>
+<Check attributeName="sysDescr" attributeValue="Cisco IOS Software, C" description="Cisco Switch SNMP sysDescr Check" name="CiscoSwitchSnmpSysCheck" operator="Contains" type="Snmp"/>
+<Check attributeName="cdpCachePlatform" attributeValue="Catalyst" description="Cisco Switch CDP Platform Check" name="CiscoSwitchPlatformCheck" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCacheCapabilities" attributeValue="S" description="Cisco Switch CDP Capabilities Check" name="CiscoSwitchCapabilitiesCheck" operator="Contains" type="CDP"/>
+<Check attributeName="operating-system" attributeValue="CatOS" description="NMAP operating-system (Family) CONTAINS CatOS" name="Cisco-CatOS-NMAPOSCheck" operator="Contains" type="NMAP"/>
+<Check attributeName="lldpSystemDescription" attributeValue="Cisco IOS Software, C" description="Cisco Switch LLDP System Description Check" name="CiscoSwitchLldpSysCheck" operator="Contains" type="LLDP"/>
+<Check attributeName="cdpCacheVersion" attributeValue="NX-OS" description="CDP cdpCacheVersion CONTAINS NX-OS" name="Cisco-Switch-3750Rule1b905109-7f39-435d-9169-bc73b082e456Check7868fd3b-1b79-4086-927b-edf4e9cfb50c_copy_copy" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="N3K-C3548" description="CDP cdpCachePlatform CONTAINS N3K-C3548" name="Cisco-Switch-3750Rule7c673d6c-dd4c-4c5f-86a9-2457b0191727Check1d862f16-51c9-4715-bde9-38319b1aaed5_copy_copy" operator="Contains" type="CDP"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system detection." name="OS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="false">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

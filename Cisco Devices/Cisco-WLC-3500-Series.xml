@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for all Cisco devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Cisco-Device" scanActionName="OS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule3"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule2"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DHCP-Class-Id-Rule"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule-SNMP"/>
+<PolicyRule certaintyFactor="5" name="Cisco-DeviceRule4"/>
+<PolicyRule certaintyFactor="10" name="Cisco-CDP-Platform-Rule"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule1"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule7"/>
+<PolicyRule certaintyFactor="10" name="Cisco-Meraki-DeviceRule1"/>
+<PolicyRule certaintyFactor="5" name="Cisco-DeviceRule9"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule8"/>
+<PolicyRule certaintyFactor="-3" name="Cisco-DeviceRule1_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRule-LLDP"/>
+<PolicyRule certaintyFactor="10" name="Cisco-TelePresence-CDP-Platform-Rule"/>
+<PolicyRule certaintyFactor="10" name="Cisco-DeviceRulef5824e17-def8-46f0-8bd7-1ef108d013a9"/>
+<PolicyRule certaintyFactor="10" name="NMAP-Cisco-Rule"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Cisco Wireless Lan Controllers" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Cisco-WLC" parentFQN="Cisco-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Cisco-WLC-Rule1"/>
+<PolicyRule certaintyFactor="20" name="Cisco-WLCRule33"/>
+<PolicyRule certaintyFactor="20" name="Cisco-WLCRule22"/>
+<PolicyRule certaintyFactor="20" name="Cisco-WLCRule55"/>
+<PolicyRule certaintyFactor="20" name="Cisco-WLCRule44"/>
+<PolicyRule certaintyFactor="20" name="NMAP-Cisco-WLC-Rule"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Cisco Wireless Lan Controller 3500 Series" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="40" name="Cisco-WLC-3500-Series" parentFQN="Cisco-Device:Cisco-WLC" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Cisco-WLC-3500-SeriesRuleab014634-d610-43cc-a1fd-109befd11bec"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Cisco-DeviceRule3Check1" expression="Cisco-DeviceRule3Check1" name="Cisco-DeviceRule3" ruleType="Regular"/>
+<Rule description="VerilinkOUICheck" expression="VerilinkOUICheck" name="Cisco-DeviceRule2" ruleType="Regular"/>
+<Rule description="Rule for Cisco DHCP Class Identifier" expression="CiscoDhcpClassIdentifierCheck" name="Cisco-DHCP-Class-Id-Rule" ruleType="Regular"/>
+<Rule description="Rule for Cisco Device - SNMP" expression="CiscoDeviceSnmpSysCheck" name="Cisco-DeviceRule-SNMP" ruleType="Regular"/>
+<Rule description="Cisco-DeviceRule4Check1" expression="Cisco-DeviceRule4Check1" name="Cisco-DeviceRule4" ruleType="Regular"/>
+<Rule description="Rule for Cisco CDP Cache Platform" expression="CiscoCdpCachePlatformCheck" name="Cisco-CDP-Platform-Rule" ruleType="Regular"/>
+<Rule description="Cisco-DeviceRule1Check1" expression="Cisco-DeviceRule1Check1" name="Cisco-DeviceRule1" ruleType="Regular"/>
+<Rule description="LinksysOUICheck" expression="LinksysOUICheck" name="Cisco-DeviceRule7" ruleType="Regular"/>
+<Rule description="Cisco-Meraki-Device-Rule1Check1" expression="Cisco-Meraki-Device-Rule1Check1" name="Cisco-Meraki-DeviceRule1" ruleType="Regular"/>
+<Rule description="PolycomOUICheck" expression="PolycomOUICheck" name="Cisco-DeviceRule9" ruleType="Regular"/>
+<Rule description="TivellaOUICheck" expression="TivellaOUICheck" name="Cisco-DeviceRule8" ruleType="Regular"/>
+<Rule description="Cisco-DeviceRule1-SCAN" expression="Cisco-DeviceRule1Check1" name="Cisco-DeviceRule1_SCAN" ruleType="Regular"/>
+<Rule description="Rule for Cisco Device - LLDP" expression="CiscoDeviceLldpSysCheck" name="Cisco-DeviceRule-LLDP" ruleType="Regular"/>
+<Rule description="Rule for Cisco TelePresence" expression="CiscoTelePresencePlatformCheck" name="Cisco-TelePresence-CDP-Platform-Rule" ruleType="Regular"/>
+<Rule description="Cisco-Tandberg-Device-Rule1-Check1" expression="Cisco-Tandberg-Device-Rule1-Check1" name="Cisco-DeviceRulef5824e17-def8-46f0-8bd7-1ef108d013a9" ruleType="Regular"/>
+<Rule description="Cisco-NMAPOSCheck" expression="Cisco-NMAPOSCheck" name="NMAP-Cisco-Rule" ruleType="Regular"/>
+<Rule description="Cisco-WLC-Rule1Check1" expression="Cisco-WLC-Rule1Check1" name="Cisco-WLC-Rule1" ruleType="Regular"/>
+<Rule description="Cisco-WLC-Rule2-Check1" expression="Cisco-WLC-Rule2-Check1" name="Cisco-WLCRule33" ruleType="Regular"/>
+<Rule description="Cisco-WLC-Rule2-Check2" expression="Cisco-WLC-Rule2-Check2" name="Cisco-WLCRule22" ruleType="Regular"/>
+<Rule description="Cisco-WLC-Rule4-Check1" expression="Cisco-WLC-Rule4-Check1" name="Cisco-WLCRule55" ruleType="Regular"/>
+<Rule description="Cisco-WLC-Rule3-Check1_AND_Cisco-WLC-Rule3-Check2" expression="Cisco-WLC-Rule3-Check1 &amp; Cisco-WLC-Rule3-Check2" name="Cisco-WLCRule44" ruleType="Regular"/>
+<Rule description="Cisco-WLC-NMAPOSCheck" expression="Cisco-WLC-NMAPOSCheck" name="NMAP-Cisco-WLC-Rule" ruleType="Regular"/>
+<Rule description="CDP_cdpCachePlatform_CONTAINS_AIR-CT350_OR_CDP_cdpCachePlatform_STARTSWITH_AIR-CT350_OR_CDP_cdpCachePlatform_CONTAINS_AIR-CT3504" expression="(Cisco-WLC-3500-SeriesRuleab014634-d610-43cc-a1fd-109befd11becCheck92f2a8bb-0238-4376-807e-e3d8f68feda4 | Cisco-WLC-3500-SeriesRuleab014634-d610-43cc-a1fd-109befd11becCheckecd95e7d-802d-42ef-aca5-b442b789b81a) | Cisco-WLC-3500-SeriesRuleab014634-d610-43cc-a1fd-109befd11becCheckb8c26ac4-45bb-4795-a68a-e1ae5088b544" name="Cisco-WLC-3500-SeriesRuleab014634-d610-43cc-a1fd-109befd11bec" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Scientific Atlanta" description="Cisco-DeviceRule3Check1" name="Cisco-DeviceRule3Check1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Verilink Corporation" description="Verilink OUI Check" name="VerilinkOUICheck" operator="Equals" type="Mac"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Cisco" description="Cisco DHCP class identifier Check" name="CiscoDhcpClassIdentifierCheck" operator="Contains" type="DHCP"/>
+<Check attributeName="sysDescr" attributeValue="Cisco" description="Cisco Device SNMP sysDescr Check" name="CiscoDeviceSnmpSysCheck" operator="Contains" type="Snmp"/>
+<Check attributeName="cdpCacheVersion" attributeValue="Cisco Systems" description="Cisco-DeviceRule4Check1" name="Cisco-DeviceRule4Check1" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="Cisco" description="Cisco CDP Platform Check" name="CiscoCdpCachePlatformCheck" operator="Contains" type="CDP"/>
+<Check attributeName="OUI" attributeValue="CISCO" description="Cisco-DeviceRule1Check1" name="Cisco-DeviceRule1Check1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Cisco-Linksys" description="Linksys OUI Check" name="LinksysOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Meraki" description="Condition for Cisco-Meraki-Device,based on MAC-OUI" name="Cisco-Meraki-Device-Rule1Check1" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Polycom" description="Polycom OUI Check" name="PolycomOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Tivella" description="Tivella OUI Check" name="TivellaOUICheck" operator="Contains" type="Mac"/>
+<Check attributeName="lldpSystemDescription" attributeValue="Cisco" description="Cisco Device LLDP System Description Check" name="CiscoDeviceLldpSysCheck" operator="Contains" type="LLDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="CTS" description="Cisco TelePresence CDP Platform Check" name="CiscoTelePresencePlatformCheck" operator="Contains" type="CDP"/>
+<Check attributeName="OUI" attributeValue="Tandberg" description="Condition for Cisco-Tandberg-Device , based on MAC-OUI" name="Cisco-Tandberg-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="operating-system" attributeValue="Cisco" description="NMAP operating-system (Vendor) CONTAINS Cisco" name="Cisco-NMAPOSCheck" operator="Contains" type="NMAP"/>
+<Check attributeName="cdpCacheVersion" attributeValue="Cisco Controller" description="Cisco-WLC-Rule1Check1" name="Cisco-WLC-Rule1Check1" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="AIR-WLC" description="Condition for Cisco-WLC, based on CDP:cdpCachePlatform" name="Cisco-WLC-Rule2-Check1" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="AIR-CT" description="Condition for Cisco-WLC, based on CDP:cdpCachePlatform" name="Cisco-WLC-Rule2-Check2" operator="Contains" type="CDP"/>
+<Check attributeName="sysDescr" attributeValue="Cisco Controller" description="Condition for Cisco-WLC, Based on SNMP:sysDescr" name="Cisco-WLC-Rule4-Check1" operator="Contains" type="Snmp"/>
+<Check attributeName="operating-system" attributeValue="Cisco" description="Condition for Cisco-WLC, based on NMAP:operating-system" name="Cisco-WLC-Rule3-Check1" operator="Contains" type="NMAP"/>
+<Check attributeName="operating-system" attributeValue="Wireless Controller" description="Condition for Cisco-WLC, based on NMAP:operating-system" name="Cisco-WLC-Rule3-Check2" operator="Contains" type="NMAP"/>
+<Check attributeName="operating-system" attributeValue="wireless LAN controller" description="NMAP operating-system CONTAINS wireless LAN controller" name="Cisco-WLC-NMAPOSCheck" operator="Contains" type="NMAP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="AIR-CT350" description="CDP cdpCachePlatform CONTAINS AIR-CT350" name="Cisco-WLC-3500-SeriesRuleab014634-d610-43cc-a1fd-109befd11becCheck92f2a8bb-0238-4376-807e-e3d8f68feda4" operator="Contains" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="AIR-CT350" description="CDP cdpCachePlatform STARTSWITH AIR-CT350" name="Cisco-WLC-3500-SeriesRuleab014634-d610-43cc-a1fd-109befd11becCheckecd95e7d-802d-42ef-aca5-b442b789b81a" operator="Starts with" type="CDP"/>
+<Check attributeName="cdpCachePlatform" attributeValue="AIR-CT3504" description="CDP cdpCachePlatform CONTAINS AIR-CT3504" name="Cisco-WLC-3500-SeriesRuleab014634-d610-43cc-a1fd-109befd11becCheckb8c26ac4-45bb-4795-a68a-e1ae5088b544" operator="Contains" type="CDP"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system detection." name="OS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="false">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>
